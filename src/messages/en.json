@@ -185,16 +185,16 @@
       "us": "Budapest Labs"
     },
     "rows": {
-      "delivery": { "label": "Delivery time", "diy": "Days–weeks", "agency": "4–8 weeks", "us": "≤6 hours" },
-      "price": { "label": "Price", "diy": "5–30k HUF/month", "agency": "500k–2M+ HUF", "us": "From 149k HUF" },
-      "quality": { "label": "Design quality", "diy": "Template", "agency": "Custom", "us": "Professional" },
+      "delivery": { "label": "Delivery time", "diy": "Weeks–months", "agency": "4–8 weeks", "us": "≤6 hours" },
+      "price": { "label": "Price", "diy": "~30k HUF/month, forever", "agency": "500k–2M+ HUF", "us": "From 149k HUF" },
+      "quality": { "label": "Design quality", "diy": "Generic template", "agency": "Custom", "us": "Professional" },
       "tech": { "label": "Technology", "diy": "Closed platform", "agency": "Often outdated", "us": "Latest & future-proof" },
-      "security": { "label": "Security", "diy": "Basic", "agency": "Varies", "us": "Fully secure, unhackable" },
-      "performance": { "label": "Page speed", "diy": "Slow", "agency": "Varies", "us": "Lightning fast" },
-      "mobile": { "label": "Mobile optimized", "diy": "Varies", "agency": "Usually yes", "us": "Always" },
-      "seo": { "label": "SEO", "diy": "Basic", "agency": "Extra cost", "us": "Included" },
+      "security": { "label": "Security", "diy": "Your responsibility", "agency": "Varies", "us": "Fully secure" },
+      "performance": { "label": "Page speed", "diy": "Slow, bloated", "agency": "Varies", "us": "Lightning fast" },
+      "mobile": { "label": "Mobile optimized", "diy": "Often broken", "agency": "Usually yes", "us": "Always" },
+      "seo": { "label": "SEO", "diy": "Minimal", "agency": "Extra cost", "us": "Included" },
       "booking": { "label": "Booking & payments", "diy": "Extra cost", "agency": "Extra cost", "us": "Built-in" },
-      "effort": { "label": "Your effort", "diy": "Everything", "agency": "Meetings, approvals", "us": "Fill one form" }
+      "effort": { "label": "Your effort", "diy": "All on you", "agency": "Meetings, approvals", "us": "Fill one form" }
     }
   },
   "contact": {

@@ -185,16 +185,16 @@
       "us": "Budapest Labs"
     },
     "rows": {
-      "delivery": { "label": "Elkészítési idő", "diy": "Napok–hetek", "agency": "4–8 hét", "us": "≤6 óra" },
-      "price": { "label": "Ár", "diy": "5–30k HUF/hó", "agency": "500k–2M+ HUF", "us": "149k HUF-tól" },
+      "delivery": { "label": "Elkészítési idő", "diy": "Hetek–hónapok", "agency": "4–8 hét", "us": "≤6 óra" },
+      "price": { "label": "Ár", "diy": "~30k HUF/hó, örökre", "agency": "500k–2M+ HUF", "us": "149k HUF-tól" },
       "quality": { "label": "Dizájn minőség", "diy": "Sablon", "agency": "Egyedi", "us": "Professzionális" },
       "tech": { "label": "Technológia", "diy": "Zárt platform", "agency": "Gyakran elavult", "us": "Legmodernebb és jövőálló" },
-      "security": { "label": "Biztonság", "diy": "Alap", "agency": "Változó", "us": "Teljesen biztonságos" },
-      "performance": { "label": "Betöltési sebesség", "diy": "Lassú", "agency": "Változó", "us": "Villámgyors" },
-      "mobile": { "label": "Mobilbarát", "diy": "Változó", "agency": "Általában igen", "us": "Mindig" },
-      "seo": { "label": "SEO", "diy": "Alap", "agency": "Külön költség", "us": "Tartalmazza" },
+      "security": { "label": "Biztonság", "diy": "Az Ön felelőssége", "agency": "Változó", "us": "Teljesen biztonságos" },
+      "performance": { "label": "Betöltési sebesség", "diy": "Lassú, nehézkes", "agency": "Változó", "us": "Villámgyors" },
+      "mobile": { "label": "Mobilbarát", "diy": "Gyakran hibás", "agency": "Általában igen", "us": "Mindig" },
+      "seo": { "label": "SEO", "diy": "Minimális", "agency": "Külön költség", "us": "Tartalmazza" },
       "booking": { "label": "Foglalás és fizetés", "diy": "Külön költség", "agency": "Külön költség", "us": "Beépített" },
-      "effort": { "label": "Az Ön feladata", "diy": "Minden", "agency": "Megbeszélések, jóváhagyások", "us": "Egy űrlap kitöltése" }
+      "effort": { "label": "Az Ön feladata", "diy": "Minden Önön múlik", "agency": "Megbeszélések, jóváhagyások", "us": "Egy űrlap kitöltése" }
     }
   },
   "contact": {
