@@ -12,7 +12,7 @@ Landing page for Budapest Labs — a service delivering professional websites fo
 
 ## Tech stack
 
-- Next.js 15 (App Router), React 19, TypeScript
+- Next.js 16 (App Router, Turbopack), React 19, TypeScript
 - Tailwind CSS v4 (uses `@import "tailwindcss"`, `@theme inline`, `@custom-variant` — NOT v3 syntax)
 - ShadCN UI + Radix UI components in `src/components/ui/`
 - Framer Motion for scroll animations
@@ -67,7 +67,7 @@ src/
 ├── messages/
 │   ├── en.json               # English translations
 │   └── hu.json               # Hungarian translations
-├── middleware.ts              # Locale detection
+├── proxy.ts                  # Locale detection (renamed from middleware.ts in Next.js 16)
 └── lib/utils.ts              # cn() helper
 ```
 
