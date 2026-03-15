@@ -35,7 +35,7 @@ Landing page for Budapest Labs — a service delivering professional websites fo
 
 ### Design system
 - **Dark/light mode** via `next-themes` with class strategy (`<html class="dark">`)
-  - Default theme: dark. Toggle in navbar (Sun/Moon icon) next to language switcher.
+  - Default theme: light. Toggle in navbar (Sun/Moon icon) next to language switcher.
   - `globals.css` has `:root` (light) and `.dark` (dark) CSS variable blocks
   - Glass card classes are scoped: `.dark .glass` and `:root:not(.dark) .glass`
   - Other theme-dependent CSS (gradient-border, step-number-bg, selection) also scoped by `.dark` / `:root:not(.dark)`
@@ -51,7 +51,7 @@ Landing page for Budapest Labs — a service delivering professional websites fo
 - Component: `src/components/landing/theme-toggle.tsx` (Sun/Moon icon button)
 - Placed in navbar between language switcher and CTA
 - Uses `useTheme()` from `next-themes`, guards against hydration mismatch with `mounted` state
-- `layout.tsx` wraps content in `<ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>`
+- `layout.tsx` wraps content in `<ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>`
 - `<html>` has `suppressHydrationWarning` (required by next-themes)
 
 ### Messaging priorities
@@ -97,7 +97,7 @@ src/
 6. Pricing — 3 plans, Business highlighted as popular
 7. Add-ons — 5 optional extras
 8. Testimonials — 3 client quotes
-9. FAQ — 9 accordion items (sales-focused: guarantees, pay-after, revisions, custom features, security, speed, maintenance, payment)
+9. FAQ — 8 accordion items (sales-focused: guarantees, pay-after, revisions, custom features, security, speed, maintenance, payment)
 10. Contact — form (name, email, phone, business, plan, message)
 11. Footer — brand, navigation, legal, contact
 

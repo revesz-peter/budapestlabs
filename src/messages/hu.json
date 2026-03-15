@@ -146,35 +146,31 @@
       },
       "q2": {
         "question": "Tényleg csak átadás után kell fizetnem?",
-        "answer": "Igen. A megrendeléskor 50%-ot fizet, a maradék 50%-ot pedig csak akkor, ha látta és jóváhagyta a végeredményt. Ha nem elégedett, ingyen módosítjuk."
+        "answer": "Igen. Előre semmit nem kell fizetnie. Elkészítjük a weboldalt, Ön megnézi, és csak akkor fizet, ha elégedett az eredménnyel. Ha nem tetszik, módosítjuk — ingyen."
       },
       "q3": {
         "question": "Mi van, ha nem tetszik az eredmény?",
-        "answer": "Minden csomag tartalmaz egy ingyenes módosítási kört. Addig igazítjuk a dizájnt, elrendezést vagy tartalmat, amíg elégedett nem lesz. Az elégedettsége garantált a végső fizetés előtt."
+        "answer": "Minden csomag tartalmaz egy ingyenes módosítási kört. Addig igazítjuk a dizájnt, elrendezést vagy tartalmat, amíg elégedett nem lesz. Az elégedettsége garantált a fizetés előtt."
       },
       "q4": {
-        "question": "Mit kell előre elküldenem?",
-        "answer": "Csak töltsön ki egy egyszerű űrlapot a vállalkozás nevével, logójával, szövegeivel, képeivel és márkaszíneivel. Nincs még minden kész? Nem gond — azzal dolgozunk, ami van."
-      },
-      "q5": {
         "question": "Kérhetek egyedi funkciókat?",
         "answer": "Természetesen. Foglalási rendszer, fizetési felület, kapcsolati űrlapok, galéria, többnyelvű támogatás — mondja el, mire van szüksége, és beépítjük."
       },
-      "q6": {
+      "q5": {
         "question": "Biztonságos és megbízható lesz a weboldalam?",
         "answer": "Igen. Weboldala ugyanazon a technológián fut, amelyben az Apple, Netflix, Spotify, Airbnb és Porsche is megbízik. Teljesen titkosított, világszerte azonnal betölt, és 99,99%-os üzemidővel rendelkezik."
       },
-      "q7": {
+      "q6": {
         "question": "Gyors lesz a weboldalam?",
         "answer": "Rendkívül. Az elejétől fogva a teljesítményre építünk. Weboldala egy másodperc alatt betölt — ami jobb Google helyezést és kevesebb elvesztett látogatót jelent."
       },
-      "q8": {
+      "q7": {
         "question": "Van folyamatos karbantartás?",
         "answer": "Igen, havi 19 000 Ft-tól elérhető a tárhely, biztonsági frissítések és mentések. Haladó támogatás 49 000 Ft/hó, prioritásos módosításokkal és monitorozással."
       },
-      "q9": {
+      "q8": {
         "question": "Milyen fizetési módokat fogadnak el?",
-        "answer": "Banki átutalás és online kártyás fizetés. Egyszerű, biztonságos, gond nélkül."
+        "answer": "Banki átutalás, online kártyás fizetés vagy készpénz. Egyszerű, biztonságos, gond nélkül."
       }
     }
   },

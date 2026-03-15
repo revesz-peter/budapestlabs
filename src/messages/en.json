@@ -146,35 +146,31 @@
       },
       "q2": {
         "question": "Do I really only pay after delivery?",
-        "answer": "Yes. You pay 50% upfront to start, and the remaining 50% only after you've seen and approved the final result. If you're not satisfied, we revise it for free."
+        "answer": "Yes. You don't pay anything upfront. We build your website, you review it, and you only pay if you're happy with the result. Not satisfied? We'll revise it — for free."
       },
       "q3": {
         "question": "What if I don't like the result?",
-        "answer": "Every plan includes a free revision round. We'll adjust the design, layout, or content until you're happy. Your satisfaction is guaranteed before final payment."
+        "answer": "Every plan includes a free revision round. We'll adjust the design, layout, or content until you're happy. Your satisfaction is guaranteed before payment."
       },
       "q4": {
-        "question": "What do I need to provide?",
-        "answer": "Just fill out a simple form with your business name, logo, text, images, and brand colors. Don't have everything ready? No problem — we can work with what you have."
-      },
-      "q5": {
         "question": "Can I request custom features?",
         "answer": "Absolutely. Booking systems, payment processing, contact forms, galleries, multi-language support — tell us what you need and we'll build it in."
       },
-      "q6": {
+      "q5": {
         "question": "Is my website secure and reliable?",
         "answer": "Yes. Your site runs on the same technology trusted by Apple, Netflix, Spotify, Airbnb, and Porsche. It's fully encrypted, loads instantly worldwide, and has 99.99% uptime."
       },
-      "q7": {
+      "q6": {
         "question": "Will my website be fast?",
         "answer": "Extremely. We build for performance from the start. Your site will load in under a second — which means better Google rankings and fewer visitors leaving."
       },
-      "q8": {
+      "q7": {
         "question": "Do you offer ongoing maintenance?",
         "answer": "Yes, starting at 19,000 HUF/month for hosting, security updates, and backups. We also offer advanced support at 49,000 HUF/month with priority changes and monitoring."
       },
-      "q9": {
+      "q8": {
         "question": "What payment methods do you accept?",
-        "answer": "Bank transfer and online card payment. Simple, secure, no hassle."
+        "answer": "Bank transfer, online card payment, or cash. Simple, secure, no hassle."
       }
     }
   },
