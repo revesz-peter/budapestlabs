@@ -214,14 +214,27 @@ The `MeshGradientBackground` creates 4 animated gradient orbs. To customize:
 
 ---
 
-## Glass card accent customization
+## Accent color reference
 
-The gradient border on featured cards uses violet by default. To change:
+The site uses three accent colors on an otherwise monochrome base:
+
+| Color | Hex | Where used |
+|-------|-----|------------|
+| Violet | `rgba(167, 139, 250, x)` | Gradient border + glow shadow on popular pricing card |
+| Blue | `#2563eb` | Hero mesh gradient orbs |
+| Teal | `#0d9488` | Hero mesh gradient orbs |
+
+Everything else (cards, step circles, borders, text) stays monochrome using semantic tokens.
+
+### Changing the pricing card accent
 
 In `globals.css`, find `.gradient-border::before` and replace:
 ```css
-rgba(167, 139, 250, 0.4)  /* → your accent color at 40% opacity */
-rgba(129, 140, 248, 0.15) /* → your accent color at 15% opacity */
+rgba(167, 139, 250, 0.6)  /* → your accent color at 60% opacity */
+rgba(129, 140, 248, 0.25) /* → your accent color at 25% opacity */
 ```
 
-Same for step number backgrounds in `.step-number-bg` if present.
+And in `pricing.tsx`, update the shadow color:
+```tsx
+shadow-[0_0_80px_-20px_rgba(139,92,246,0.25)]  /* → your accent at 25% */
+```

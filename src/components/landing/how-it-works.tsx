@@ -87,7 +87,7 @@ export function HowItWorks() {
                         },
                       },
                     }}
-                    className="step-number-bg flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-foreground/15 text-lg font-bold text-foreground/80"
+                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-foreground/15 text-lg font-bold text-foreground/80"
                   >
                     {i + 1}
                   </motion.div>

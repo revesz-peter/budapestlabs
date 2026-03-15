@@ -29,20 +29,20 @@
     "subtitle": "A megrendeléstől a kész weboldalig — 6 órán belül.",
     "steps": {
       "choose": {
-        "title": "Csomag kiválasztása",
-        "description": "Válassza ki az Önnek megfelelő csomagot és kiegészítőket."
+        "title": "Kapcsolatfelvétel",
+        "description": "Töltse ki az űrlapot — meséljen a vállalkozásáról és az igényeiről."
       },
       "content": {
-        "title": "Tartalom megadása",
-        "description": "Töltse ki az űrlapot a szövegekkel, képekkel és márkajelzésekkel."
+        "title": "Egyeztetés",
+        "description": "Közösen átbeszéljük a részleteket és összegyűjtjük a tartalmakat."
       },
       "build": {
         "title": "Elkészítjük",
         "description": "Csapatunk azonnal munkába áll — a legmodernebb technológiával, gyors és biztonságos eredménnyel."
       },
       "launch": {
-        "title": "Indulhat",
-        "description": "Weboldala biztonságos, megbízható tárhelyen megy élesbe 99,99%-os üzemidővel — kész az ügyfelei fogadására."
+        "title": "Élesítés",
+        "description": "Kész a weboldal — átnézi, jóváhagyja, és máris elérhető az ügyfelei számára."
       }
     }
   },
@@ -57,7 +57,7 @@
       "name": "Starter",
       "price": "149 000",
       "delivery": "Elkészítés: ≤6 óra",
-      "description": "Egyéni vállalkozóknak és kisvállalkozásoknak",
+      "description": "Egyszerű, professzionális weboldal",
       "features": [
         "3–5 oldal (Főoldal, Rólunk, Szolgáltatások, Kapcsolat)",
         "Mobilbarát dizájn",
@@ -71,7 +71,7 @@
       "name": "Business",
       "price": "329 000",
       "delivery": "Elkészítés: ≤6 óra",
-      "description": "Szolgáltatóknak és időpont-alapú vállalkozásoknak",
+      "description": "Szolgáltatóknak és helyi vállalkozásoknak",
       "features": [
         "Minden, ami a Starter-ben, és még:",
         "6–10 oldal",

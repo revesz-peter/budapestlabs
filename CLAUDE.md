@@ -38,11 +38,14 @@ Landing page for Budapest Labs — a service delivering professional websites fo
   - Default theme: light. Toggle in navbar (Sun/Moon icon) next to language switcher.
   - `globals.css` has `:root` (light) and `.dark` (dark) CSS variable blocks
   - Glass card classes are scoped: `.dark .glass` and `:root:not(.dark) .glass`
-  - Other theme-dependent CSS (gradient-border, step-number-bg, selection) also scoped by `.dark` / `:root:not(.dark)`
+  - Other theme-dependent CSS (gradient-border, selection) also scoped by `.dark` / `:root:not(.dark)`
 - **Dark mode**: Black background (`oklch(0 0 0)`), white text (`oklch(0.97 0 0)`), subtle white-alpha card panels
 - **Light mode**: Near-white background (`oklch(0.985 0 0)`), near-black text (`oklch(0.09 0 0)`), subtle black-alpha card panels
 - Scandinavian minimalism — clean, not flashy — applies to both modes
-- Subtle violet accents (`rgba(167, 139, 250, x)`) only for: gradient borders on popular pricing card, step number backgrounds — same in both modes
+- **Accent colors**:
+  - Violet (`rgba(167, 139, 250, x)` / `rgba(129, 140, 248, x)`) — gradient border + glow shadow on popular pricing card. Opacity: 0.6 top, 0.25 mid, 0.25 shadow.
+  - Blue (`#2563eb`) + Teal (`#0d9488`) — hero mesh gradient orbs
+  - These are the only non-monochrome colors on the site. Step number circles, cards, and all other elements stay monochrome.
 - **Hero background**: Animated mesh gradient (`MeshGradientBackground` from Magic UI) with slowly drifting orbs
   - Current: Blue + Teal `["#2563eb", "#0d9488", "#3b82f6", "#06b6d4"]`
   - Alt – Violet/Indigo: `["#7c3aed", "#6366f1", "#8b5cf6", "#a78bfa"]`
@@ -61,7 +64,7 @@ Landing page for Budapest Labs — a service delivering professional websites fo
 ### Messaging priorities
 
 The landing page sells on four pillars equally:
-1. **Pay after delivery** — 50/50 split, satisfaction guaranteed
+1. **Pay after delivery** — 15% deposit, rest after satisfaction guaranteed
 2. **Speed** — ≤6 hours delivery, sub-second page loads
 3. **Security & reliability** — encrypted, enterprise infrastructure, 99.99% uptime
 4. **Simplicity** — fill one form, we handle everything
@@ -103,7 +106,7 @@ src/
 5. Comparison — 10-row table (delivery, price, quality, tech, security, speed, mobile, SEO, booking, effort)
 6. Pricing — 3 plans, Business highlighted as popular
 7. Add-ons — 5 optional extras
-8. Testimonials — 3 client quotes
+8. ~~Testimonials~~ — commented out until real testimonials available
 9. FAQ — 9 accordion items (process, payment, revisions, custom features, technology, SEO, hosting/maintenance, content intake, payment methods)
 10. Contact — form (name, email, phone, business, plan, message)
 11. Footer — brand, navigation, legal, contact
