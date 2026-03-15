@@ -11,14 +11,20 @@ import {
   Clock,
   CreditCard,
 } from "lucide-react";
+import { MeshGradientBackground } from "@/components/ui/mesh-gradient";
 
 export function Hero() {
   const t = useTranslations("hero");
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20">
-      {/* Dot grid background */}
-      <div className="dot-grid pointer-events-none absolute inset-0" />
+      {/* Mesh gradient background */}
+      <MeshGradientBackground
+        className="pointer-events-none"
+        colors={["#2563eb", "#0d9488", "#3b82f6", "#06b6d4"]}
+        speed={0.5}
+        backgroundColor="transparent"
+      />
 
       <div className="relative mx-auto max-w-5xl text-center">
         {/* Badge pill */}

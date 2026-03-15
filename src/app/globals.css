@@ -176,14 +176,6 @@
   background: rgba(0, 0, 0, 0.03);
 }
 
-/* Dot grid background */
-.dot-grid {
-  background-image: radial-gradient(rgba(167, 139, 250, 0.2) 1px, transparent 1px);
-  background-size: 32px 32px;
-  mask-image: radial-gradient(ellipse 60% 50% at 50% 40%, black 20%, transparent 70%);
-  -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 40%, black 20%, transparent 70%);
-}
-
 /* Noise grain overlay */
 body::before {
   content: "";

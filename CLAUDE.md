@@ -14,7 +14,7 @@ Landing page for Budapest Labs — a service delivering professional websites fo
 
 - Next.js 16 (App Router, Turbopack), React 19, TypeScript
 - Tailwind CSS v4 (uses `@import "tailwindcss"`, `@theme inline`, `@custom-variant` — NOT v3 syntax)
-- ShadCN UI + Radix UI components in `src/components/ui/`
+- ShadCN UI + Radix UI + Magic UI components in `src/components/ui/`
 - Framer Motion for scroll animations
 - next-intl for i18n (HU/EN, proxy-based locale detection)
 - next-themes for dark/light mode (class-based toggling on `<html>`)
@@ -42,7 +42,11 @@ Landing page for Budapest Labs — a service delivering professional websites fo
 - **Dark mode**: Black background (`oklch(0 0 0)`), white text (`oklch(0.97 0 0)`), subtle white-alpha card panels
 - **Light mode**: Near-white background (`oklch(0.985 0 0)`), near-black text (`oklch(0.09 0 0)`), subtle black-alpha card panels
 - Scandinavian minimalism — clean, not flashy — applies to both modes
-- Subtle violet accents (`rgba(167, 139, 250, x)`) only for: gradient borders on popular pricing card, dot grid background — same in both modes
+- Subtle violet accents (`rgba(167, 139, 250, x)`) only for: gradient borders on popular pricing card, step number backgrounds — same in both modes
+- **Hero background**: Animated mesh gradient (`MeshGradientBackground` from Magic UI) with slowly drifting orbs
+  - Current: Blue + Teal `["#2563eb", "#0d9488", "#3b82f6", "#06b6d4"]`
+  - Alt – Violet/Indigo: `["#7c3aed", "#6366f1", "#8b5cf6", "#a78bfa"]`
+  - Alt – Monochrome: `["#404040", "#525252", "#6b7280", "#9ca3af"]`
 - Do NOT add glow effects, text shimmer, or heavy visual effects — user explicitly removed these
 - Framer Motion animations use `whileInView` with `once: true`
 - **Color classes**: Use semantic Tailwind tokens (`text-foreground`, `text-muted-foreground`, `bg-foreground/5`, `border-border`) — do NOT hardcode `text-white`, `bg-black`, `text-white/60` etc. These break in the opposite theme.
@@ -75,10 +79,10 @@ src/
 │   │   ├── privacy/page.tsx  # Privacy Policy (minimal layout)
 │   │   ├── terms/page.tsx    # Terms of Service (minimal layout)
 │   │   └── imprint/page.tsx  # Imprint (minimal layout)
-│   └── globals.css           # Tailwind v4 config, glass classes, dot grid, gradient border
+│   └── globals.css           # Tailwind v4 config, glass classes, gradient border
 ├── components/
 │   ├── landing/              # 11 section components + theme-toggle (navbar, hero, stats, how-it-works, comparison, pricing, addons, testimonials, faq, contact, footer, theme-toggle)
-│   └── ui/                   # ShadCN components (button, badge, accordion, etc.)
+│   └── ui/                   # ShadCN + Magic UI components (button, badge, accordion, mesh-gradient, flickering-grid, etc.)
 ├── i18n/
 │   ├── routing.ts            # Locale config (hu, en)
 │   ├── request.ts            # Server request config
@@ -93,14 +97,14 @@ src/
 ## Section order on page
 
 1. Navbar — fixed, scroll-aware, language switcher, theme toggle, mobile menu
-2. Hero — badge, headline, subtitle, CTA + demo booking (cal.com), trust signals
+2. Hero — badge, headline, subtitle, CTA + demo booking (cal.com), trust signals, animated mesh gradient background
 3. Stats — animated counters (50+ sites, ≤6h, 100% satisfaction)
 4. How It Works — 4 steps with staggered card animation
 5. Comparison — 10-row table (delivery, price, quality, tech, security, speed, mobile, SEO, booking, effort)
 6. Pricing — 3 plans, Business highlighted as popular
 7. Add-ons — 5 optional extras
 8. Testimonials — 3 client quotes
-9. FAQ — 8 accordion items (sales-focused: guarantees, pay-after, revisions, custom features, security, speed, maintenance, payment)
+9. FAQ — 9 accordion items (process, payment, revisions, custom features, technology, SEO, hosting/maintenance, content intake, payment methods)
 10. Contact — form (name, email, phone, business, plan, message)
 11. Footer — brand, navigation, legal, contact
 
