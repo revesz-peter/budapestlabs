@@ -129,7 +129,7 @@
       "domainEmail": {
         "name": "Custom domain + professional email",
         "description": "Your own .hu or .com domain with a branded email address",
-        "price": "50"
+        "price": "100"
       }
     }
   },
@@ -147,28 +147,28 @@
         "answer": "1. Fill out the contact form below — tell us as much as you can about your business and what you need.\n2. We get back to you within 24 hours. We'll send you a short intake form to gather the details (business info, content, branding) — or we can hop on a quick call if you prefer.\n3. You send us your content (text, images, logo) via email — we help if you don't have everything ready.\n4. We build your website and send you a preview.\n5. You review it and request changes if needed — one revision round is free.\n6. Once you're happy, you pay and we go live."
       },
       "q3": {
-        "question": "Do I really only pay after delivery?",
-        "answer": "Yes. You don't pay anything upfront. We build your website, you review it, and you only pay if you're happy with the result. Not satisfied? We'll revise it — for free."
-      },
-      "q4": {
         "question": "What if I don't like the result?",
         "answer": "Every plan includes a free revision round. We'll adjust the design, layout, or content until you're happy. Your satisfaction is guaranteed before payment."
       },
-      "q5": {
-        "question": "What if I need a booking system or online payments?",
-        "answer": "We can build it in. Booking systems, payment processing, contact forms, galleries, multi-language support — tell us what you need during the intake process."
+      "q4": {
+        "question": "What if I need a booking system, online payments, or a custom solution?",
+        "answer": "We build it. Just tell us what you need — we'll take care of the rest."
       },
-      "q6": {
+      "q5": {
         "question": "What technology does the website run on?",
         "answer": "The same technology trusted by Apple, Netflix, Spotify, Airbnb, and Porsche. Your site is fully encrypted, loads instantly worldwide, and has 99.99% uptime."
       },
-      "q7": {
+      "q6": {
         "question": "Will my site show up on Google?",
         "answer": "Yes. Every site we build is optimized for search engines — fast loading, mobile-friendly, and properly structured. These are the key factors Google uses to rank websites."
       },
-      "q8": {
+      "q7": {
         "question": "Who handles hosting and maintenance after launch?",
         "answer": "We do. Your first year of secure hosting is included in the price. After that, our maintenance plan is 25 EUR/month — covering hosting, content updates, security patches, and uptime monitoring."
+      },
+      "q8": {
+        "question": "Do I really only pay after delivery?",
+        "answer": "Yes. You don't pay anything upfront. We build your website, you review it, and you only pay if you're happy with the result. Not satisfied? We'll revise it — for free."
       },
       "q9": {
         "question": "What payment methods do you accept?",

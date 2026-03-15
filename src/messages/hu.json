@@ -129,7 +129,7 @@
       "domainEmail": {
         "name": "Saját domain + céges email",
         "description": "Saját .hu vagy .com domain, professzionális email címmel",
-        "price": "19 000"
+        "price": "39 000"
       }
     }
   },
@@ -147,28 +147,28 @@
         "answer": "1. Töltse ki a lenti kapcsolati űrlapot — meséljen minél többet a vállalkozásáról és az igényeiről.\n2. 24 órán belül felvesszük Önnel a kapcsolatot. Küldünk egy rövid kérdőívet a részletekhez (céginformáció, tartalom, arculat) — vagy ha kényelmesebb, egy rövid telefonhívásban is megbeszélhetjük.\n3. Elküldi nekünk a tartalmakat (szöveg, képek, logó) emailben — segítünk, ha nincs minden kéznél.\n4. Elkészítjük a weboldalt és küldünk egy előnézetet.\n5. Átnézi, és kérhet módosításokat — egy módosítási kör ingyenes.\n6. Ha elégedett, fizet, és élesítjük az oldalt."
       },
       "q3": {
-        "question": "Tényleg csak átadás után kell fizetnem?",
-        "answer": "Igen. Előre semmit nem kell fizetnie. Elkészítjük a weboldalt, Ön megnézi, és csak akkor fizet, ha elégedett az eredménnyel. Ha nem tetszik, módosítjuk — ingyen."
-      },
-      "q4": {
         "question": "Mi van, ha nem tetszik az eredmény?",
         "answer": "Minden csomag tartalmaz egy ingyenes módosítási kört. Addig igazítjuk a dizájnt, elrendezést vagy tartalmat, amíg elégedett nem lesz. Az elégedettsége garantált a fizetés előtt."
       },
-      "q5": {
-        "question": "Mi van, ha foglalási rendszerre vagy online fizetésre van szükségem?",
-        "answer": "Beépítjük. Foglalási rendszer, fizetési felület, kapcsolati űrlapok, galéria, többnyelvű támogatás — mondja el, mire van szüksége az intake űrlapon."
+      "q4": {
+        "question": "Mi van, ha foglalási rendszerre, online fizetésre vagy egyedi megoldásra van szükségem?",
+        "answer": "Megoldjuk. Mondja el, mire van szüksége — a többit mi intézzük."
       },
-      "q6": {
+      "q5": {
         "question": "Milyen technológiával készül a weboldal?",
         "answer": "Ugyanazzal, amelyben az Apple, Netflix, Spotify, Airbnb és Porsche is megbízik. Weboldala teljesen titkosított, világszerte azonnal betölt, és 99,99%-os üzemidővel rendelkezik."
       },
-      "q7": {
+      "q6": {
         "question": "Megjelenik az oldalam a Google-ben?",
         "answer": "Igen. Minden weboldalunkat keresőoptimalizáltan építjük — gyors betöltés, mobilbarát, megfelelő struktúra. Ezek a kulcstényezők, amelyek alapján a Google rangsorolja a weboldalakat."
       },
-      "q8": {
+      "q7": {
         "question": "Ki kezeli a tárhelyet és karbantartást az indulás után?",
         "answer": "Mi. Az első év biztonságos tárhelyet az ár tartalmazza. Ezt követően karbantartási csomagunk 9 900 Ft/hó — amely tartalmazza a tárhelyet, tartalomfrissítést, biztonsági javításokat és rendelkezésre állás figyelést."
+      },
+      "q8": {
+        "question": "Tényleg csak átadás után kell fizetnem?",
+        "answer": "Igen. Előre semmit nem kell fizetnie. Elkészítjük a weboldalt, Ön megnézi, és csak akkor fizet, ha elégedett az eredménnyel. Ha nem tetszik, módosítjuk — ingyen."
       },
       "q9": {
         "question": "Milyen fizetési módokat fogadnak el?",
