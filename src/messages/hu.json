@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "howItWorks": "Hogyan működik",
+    "pricing": "Árak",
+    "faq": "GYIK",
+    "contact": "Kapcsolat",
+    "getStarted": "Kezdjük el"
+  },
+  "hero": {
+    "title": "Weboldal 6 óra alatt.",
+    "subtitle": "Professzionális, mobilbarát weboldalak kisvállalkozásoknak — villámgyorsan elkészítve.",
+    "cta": "Kérjen ajánlatot",
+    "secondaryCta": "Árak megtekintése"
+  },
+  "howItWorks": {
+    "label": "Hogyan működik",
+    "title": "Négy egyszerű lépés",
+    "subtitle": "A megrendeléstől a kész weboldalig — 6 órán belül.",
+    "steps": {
+      "choose": {
+        "title": "Csomag kiválasztása",
+        "description": "Válassza ki az Önnek megfelelő csomagot és kiegészítőket."
+      },
+      "content": {
+        "title": "Tartalom megadása",
+        "description": "Töltse ki az űrlapot a szövegekkel, képekkel és márkajelzésekkel."
+      },
+      "build": {
+        "title": "Elkészítjük",
+        "description": "Csapatunk azonnal munkába áll és felépíti a weboldalát."
+      },
+      "launch": {
+        "title": "Indulhat",
+        "description": "Tesztelt, optimalizált weboldalát élesítjük és átadjuk."
+      }
+    }
+  },
+  "pricing": {
+    "label": "Árak",
+    "title": "Egyszerű, átlátható árazás",
+    "subtitle": "Minden csomag tartalmazza a mobil optimalizálást, SEO-t és 1 hónap tárhelyet.",
+    "delivery": "Elkészítés: ≤6 óra",
+    "choosePlan": "Csomag választása",
+    "popular": "Népszerű",
+    "starter": {
+      "name": "Starter",
+      "price": "149 000",
+      "description": "Egyéni vállalkozóknak és kisvállalkozásoknak",
+      "features": [
+        "3–5 oldal (Főoldal, Rólunk, Szolgáltatások, Kapcsolat)",
+        "Mobilbarát dizájn",
+        "SEO optimalizálás",
+        "Kapcsolati űrlap",
+        "1 hónap tárhely + SSL",
+        "Magyar nyelv alapértelmezett",
+        "Opcionális angol nyelv"
+      ]
+    },
+    "business": {
+      "name": "Business",
+      "price": "329 000",
+      "description": "Szolgáltatóknak és időpont-alapú vállalkozásoknak",
+      "features": [
+        "6–10 oldal",
+        "Foglalási / időpontfoglaló rendszer",
+        "Kapcsolati és lead űrlapok",
+        "Analitikai dashboard",
+        "Mobilbarát dizájn",
+        "SEO optimalizálás",
+        "Magyar nyelv alapértelmezett",
+        "Opcionális angol nyelv"
+      ]
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "499 000",
+      "description": "Prémium szolgáltatásoknak és kis webshopoknak",
+      "features": [
+        "10+ oldal",
+        "Foglalási rendszer",
+        "Online fizetés (Stripe)",
+        "Termék- vagy szolgáltatáskatalógus",
+        "Blog vagy hírek szekció",
+        "Analitikai dashboard (rendelések, konverziók)",
+        "Ügyfélszolgálati modul",
+        "Mobilbarát dizájn",
+        "SEO optimalizálás",
+        "Magyar és angol nyelv",
+        "Automatikus nyelvfelismerés"
+      ]
+    }
+  },
+  "addons": {
+    "label": "Kiegészítők",
+    "title": "Opcionális kiegészítők",
+    "subtitle": "Bővítse weboldalát további funkciókkal.",
+    "items": {
+      "multilang": {
+        "name": "Többnyelvű támogatás",
+        "description": "További nyelvek a magyar és angol mellett",
+        "price": "49 000"
+      },
+      "blog": {
+        "name": "Blog vagy hírlevél",
+        "description": "Blog integráció vagy hírlevél rendszer",
+        "price": "19 000"
+      },
+      "analytics": {
+        "name": "Haladó analitika",
+        "description": "Konverziókövetés és részletes statisztikák",
+        "price": "29 000"
+      },
+      "branding": {
+        "name": "Logó és arculat",
+        "description": "Egyedi logó és arculati csomag",
+        "price": "69 000"
+      },
+      "extraPages": {
+        "name": "Extra oldalak",
+        "description": "A csomaghatáron felüli további oldalak",
+        "price": "15 000 / oldal"
+      }
+    }
+  },
+  "faq": {
+    "label": "Gyakori kérdések",
+    "title": "Kérdései vannak?",
+    "subtitle": "Találja meg a válaszokat a leggyakoribb kérdésekre.",
+    "items": {
+      "q1": {
+        "question": "Tényleg 6 óra alatt elkészül a weboldal?",
+        "answer": "Igen. A kész sablonjaink és optimalizált munkafolyamatunk lehetővé teszi, hogy a tartalom beérkezésétől számítva 6 órán belül átadjuk a kész weboldalt."
+      },
+      "q2": {
+        "question": "Mit kell előre elküldenem?",
+        "answer": "A megrendelés után egy egyszerű űrlapot kap, ahol megadhatja a vállalkozás nevét, logóját, szövegeit, képeit és márkaszíneit. Minél teljesebb a kitöltés, annál gyorsabb az elkészítés."
+      },
+      "q3": {
+        "question": "Milyen technológiákat használnak?",
+        "answer": "Next.js, React, Tailwind CSS és Vercel hosting — modern, gyors és biztonságos megoldások."
+      },
+      "q4": {
+        "question": "Kaphatok módosításokat az átadás után?",
+        "answer": "Igen, minden csomag tartalmaz egy kör revíziót az átadás után. További módosítások a karbantartási csomagban érhetők el."
+      },
+      "q5": {
+        "question": "Van karbantartási szolgáltatás?",
+        "answer": "Igen, havi 19 000 Ft-tól elérhető a hosting, biztonsági frissítések és mentések csomagunk. Haladó támogatás 49 000 Ft/hó."
+      },
+      "q6": {
+        "question": "Milyen fizetési módokat fogadnak el?",
+        "answer": "Banki átutalás és online fizetés (Stripe). A megrendelés 50%-a előre fizetendő, 50% az átadáskor."
+      }
+    }
+  },
+  "contact": {
+    "label": "Kapcsolat",
+    "title": "Kezdjük el a projektet",
+    "subtitle": "Töltse ki az alábbi űrlapot és 24 órán belül felvesszük Önnel a kapcsolatot.",
+    "form": {
+      "name": "Név",
+      "namePlaceholder": "Az Ön neve",
+      "email": "E-mail",
+      "emailPlaceholder": "pelda@email.com",
+      "phone": "Telefonszám",
+      "phonePlaceholder": "+36 ...",
+      "business": "Vállalkozás neve",
+      "businessPlaceholder": "Vállalkozás Kft.",
+      "plan": "Érdeklődés",
+      "planPlaceholder": "Válasszon csomagot...",
+      "planOptions": {
+        "starter": "Starter – 149 000 HUF",
+        "business": "Business – 329 000 HUF",
+        "pro": "Pro – 499 000 HUF",
+        "unsure": "Még nem tudom"
+      },
+      "message": "Üzenet",
+      "messagePlaceholder": "Írja le projektjét röviden...",
+      "submit": "Üzenet küldése",
+      "success": "Köszönjük! Hamarosan felvesszük Önnel a kapcsolatot."
+    }
+  },
+  "footer": {
+    "description": "Professzionális weboldalak kisvállalkozásoknak, 6 órán belül elkészítve.",
+    "navigation": "Navigáció",
+    "legal": "Jogi",
+    "privacy": "Adatvédelem",
+    "terms": "ÁSZF",
+    "imprint": "Impresszum",
+    "rights": "Minden jog fenntartva."
+  }
+}

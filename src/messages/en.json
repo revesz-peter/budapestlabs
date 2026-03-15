@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "howItWorks": "How It Works",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title": "Your website in 6 hours.",
+    "subtitle": "Professional, mobile-friendly websites for small businesses — delivered lightning fast.",
+    "cta": "Get a Quote",
+    "secondaryCta": "View Pricing"
+  },
+  "howItWorks": {
+    "label": "How It Works",
+    "title": "Four simple steps",
+    "subtitle": "From order to live website — within 6 hours.",
+    "steps": {
+      "choose": {
+        "title": "Choose a plan",
+        "description": "Select the plan and optional add-ons that fit your needs."
+      },
+      "content": {
+        "title": "Provide content",
+        "description": "Fill out our intake form with your text, images, and branding."
+      },
+      "build": {
+        "title": "We build it",
+        "description": "Our team gets to work immediately and builds your website."
+      },
+      "launch": {
+        "title": "Go live",
+        "description": "Your tested, optimized website goes live and is handed off to you."
+      }
+    }
+  },
+  "pricing": {
+    "label": "Pricing",
+    "title": "Simple, transparent pricing",
+    "subtitle": "Every plan includes mobile optimization, SEO, and 1 month of hosting.",
+    "delivery": "Delivery: ≤6 hours",
+    "choosePlan": "Choose Plan",
+    "popular": "Popular",
+    "starter": {
+      "name": "Starter",
+      "price": "149,000",
+      "description": "For freelancers and small businesses",
+      "features": [
+        "3–5 pages (Home, About, Services, Contact)",
+        "Mobile responsive design",
+        "SEO optimized",
+        "Contact form",
+        "1 month hosting + SSL",
+        "Hungarian default language",
+        "Optional English toggle"
+      ]
+    },
+    "business": {
+      "name": "Business",
+      "price": "329,000",
+      "description": "For service providers and appointment-based businesses",
+      "features": [
+        "6–10 pages",
+        "Booking / appointment system",
+        "Contact and lead forms",
+        "Analytics dashboard",
+        "Mobile responsive design",
+        "SEO optimized",
+        "Hungarian default language",
+        "Optional English toggle"
+      ]
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "499,000",
+      "description": "For premium services and small online shops",
+      "features": [
+        "10+ pages",
+        "Booking system",
+        "Online payments (Stripe)",
+        "Product or service catalog",
+        "Blog or news section",
+        "Analytics dashboard (orders, conversions)",
+        "Customer support module",
+        "Mobile responsive design",
+        "SEO optimized",
+        "Hungarian and English language",
+        "Automatic language detection"
+      ]
+    }
+  },
+  "addons": {
+    "label": "Add-ons",
+    "title": "Optional add-ons",
+    "subtitle": "Extend your website with additional features.",
+    "items": {
+      "multilang": {
+        "name": "Multi-language support",
+        "description": "Additional languages beyond Hungarian and English",
+        "price": "49,000"
+      },
+      "blog": {
+        "name": "Blog or newsletter",
+        "description": "Blog integration or newsletter system",
+        "price": "19,000"
+      },
+      "analytics": {
+        "name": "Advanced analytics",
+        "description": "Conversion tracking and detailed statistics",
+        "price": "29,000"
+      },
+      "branding": {
+        "name": "Logo and branding",
+        "description": "Custom logo and branding package",
+        "price": "69,000"
+      },
+      "extraPages": {
+        "name": "Extra pages",
+        "description": "Additional pages beyond the plan limits",
+        "price": "15,000 / page"
+      }
+    }
+  },
+  "faq": {
+    "label": "Frequently Asked Questions",
+    "title": "Got questions?",
+    "subtitle": "Find answers to the most common questions.",
+    "items": {
+      "q1": {
+        "question": "Is the website really delivered in 6 hours?",
+        "answer": "Yes. Our ready-made templates and optimized workflow allow us to deliver your finished website within 6 hours of receiving your content."
+      },
+      "q2": {
+        "question": "What do I need to provide?",
+        "answer": "After ordering, you'll receive a simple intake form where you can provide your business name, logo, text content, images, and brand colors. The more complete the form, the faster we can deliver."
+      },
+      "q3": {
+        "question": "What technologies do you use?",
+        "answer": "Next.js, React, Tailwind CSS, and Vercel hosting — modern, fast, and secure solutions."
+      },
+      "q4": {
+        "question": "Can I get changes after delivery?",
+        "answer": "Yes, every plan includes one round of revisions after delivery. Additional changes are available through our maintenance packages."
+      },
+      "q5": {
+        "question": "Do you offer maintenance?",
+        "answer": "Yes, starting at 19,000 HUF/month for hosting, security updates, and backups. Advanced support is available at 49,000 HUF/month."
+      },
+      "q6": {
+        "question": "What payment methods do you accept?",
+        "answer": "Bank transfer and online payment (Stripe). 50% is due upfront with the order, and 50% upon delivery."
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Let's start your project",
+    "subtitle": "Fill out the form below and we'll get back to you within 24 hours.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "phone": "Phone",
+      "phonePlaceholder": "+36 ...",
+      "business": "Business name",
+      "businessPlaceholder": "Your Business Ltd.",
+      "plan": "Interested in",
+      "planPlaceholder": "Select a plan...",
+      "planOptions": {
+        "starter": "Starter – 149,000 HUF",
+        "business": "Business – 329,000 HUF",
+        "pro": "Pro – 499,000 HUF",
+        "unsure": "Not sure yet"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Briefly describe your project...",
+      "submit": "Send Message",
+      "success": "Thank you! We'll get back to you soon."
+    }
+  },
+  "footer": {
+    "description": "Professional websites for small businesses, delivered within 6 hours.",
+    "navigation": "Navigation",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "imprint": "Imprint",
+    "rights": "All rights reserved."
+  }
+}
