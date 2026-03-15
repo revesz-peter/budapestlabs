@@ -29,20 +29,20 @@
     "subtitle": "From order to live website — within 6 hours.",
     "steps": {
       "choose": {
-        "title": "Choose a plan",
-        "description": "Select the plan and optional add-ons that fit your needs."
+        "title": "Get in touch",
+        "description": "Fill out the form — tell us about your business and what you need."
       },
       "content": {
-        "title": "We get in touch",
-        "description": "We reach out to you and gather everything we need to get started."
+        "title": "We align on details",
+        "description": "We go over the details together and gather the content."
       },
       "build": {
         "title": "We build it",
-        "description": "Our team gets to work immediately — using the latest technology for a fast, secure result."
+        "description": "Our team gets to work immediately — fast, secure, professional result."
       },
       "launch": {
         "title": "Go live",
-        "description": "Your website goes live on secure, reliable hosting with 99.99% uptime — ready for your customers."
+        "description": "Your website is ready — you review it, approve it, and it's live for your customers."
       }
     }
   },
