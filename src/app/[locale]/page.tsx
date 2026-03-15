@@ -5,7 +5,7 @@ import { HowItWorks } from "@/components/landing/how-it-works";
 import { Comparison } from "@/components/landing/comparison";
 import { Pricing } from "@/components/landing/pricing";
 import { Addons } from "@/components/landing/addons";
-import { Testimonials } from "@/components/landing/testimonials";
+// import { Testimonials } from "@/components/landing/testimonials";
 import { FAQ } from "@/components/landing/faq";
 import { Contact } from "@/components/landing/contact";
 import { Footer } from "@/components/landing/footer";
@@ -25,8 +25,7 @@ export default function HomePage() {
       <div className="border-t border-border" />
       <Addons />
       <div className="border-t border-border" />
-      <Testimonials />
-      <div className="border-t border-border" />
+      {/* TODO: Add <Testimonials /> back when real testimonials are available */}
       <FAQ />
       <div className="border-t border-border" />
       <Contact />
