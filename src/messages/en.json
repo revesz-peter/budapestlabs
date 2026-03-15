@@ -50,56 +50,52 @@
     "label": "Pricing",
     "title": "Simple, transparent pricing",
     "subtitle": "Every plan includes secure hosting, mobile optimization, SEO, and only pay after delivery.",
-    "delivery": "Delivery: ≤6 hours",
     "choosePlan": "Choose Plan",
     "popular": "Popular",
     "starter": {
       "name": "Starter",
       "price": "149,000",
+      "delivery": "Delivery: ≤6 hours",
       "description": "For freelancers and small businesses",
       "features": [
         "3–5 pages (Home, About, Services, Contact)",
         "Mobile responsive design",
         "SEO optimized",
         "Contact form",
-        "Secure hosting included",
-        "Hungarian default language",
-        "Optional English toggle"
+        "Secure hosting included (1 year)",
+        "Hungarian and English included"
       ]
     },
     "business": {
       "name": "Business",
       "price": "329,000",
+      "delivery": "Delivery: ≤6 hours",
       "description": "For service providers and appointment-based businesses",
       "features": [
+        "Everything in Starter, plus:",
         "6–10 pages",
         "Booking / appointment system",
         "Contact and lead forms",
-        "Analytics dashboard",
-        "Mobile responsive design",
-        "SEO optimized",
-        "Secure hosting included",
-        "Hungarian default language",
-        "Optional English toggle"
+        "Analytics integration"
       ]
     },
     "pro": {
       "name": "Pro",
-      "price": "499,000",
-      "description": "For premium services and small online shops",
+      "price": "699,000",
+      "delivery": "Delivery: 1–2 days",
+      "description": "For premium services and growing businesses",
       "features": [
-        "10+ pages",
-        "Booking system",
-        "Online payments (Stripe)",
+        "Everything in Business, plus:",
+        "Short consultation to understand your needs",
+        "Installment payment available",
+        "Custom design tailored to your brand",
+        "15+ pages",
+        "Accept payments online",
         "Product or service catalog",
         "Blog or news section",
-        "Analytics dashboard (orders, conversions)",
-        "Customer support module",
-        "Mobile responsive design",
-        "SEO optimized",
-        "Secure hosting included",
-        "Hungarian and English language",
-        "Automatic language detection"
+        "Analytics integration",
+        "Priority support",
+        "Custom features built for your business"
       ]
     }
   },
@@ -145,30 +141,34 @@
         "answer": "Yes. Once we receive your content, our team starts immediately. Most websites are delivered the same day. If we can't meet the deadline, you don't pay."
       },
       "q2": {
+        "question": "How does the process work step by step?",
+        "answer": "1. Fill out the contact form below — tell us about your business and what you need.\n2. We get back to you within 24 hours to discuss the details.\n3. You send us your content (text, images, logo) via email — we help if you don't have everything ready.\n4. We build your website and send you a preview.\n5. You review it and request changes if needed — one revision round is free.\n6. Once you're happy, you pay and we go live."
+      },
+      "q3": {
         "question": "Do I really only pay after delivery?",
         "answer": "Yes. You don't pay anything upfront. We build your website, you review it, and you only pay if you're happy with the result. Not satisfied? We'll revise it — for free."
       },
-      "q3": {
+      "q4": {
         "question": "What if I don't like the result?",
         "answer": "Every plan includes a free revision round. We'll adjust the design, layout, or content until you're happy. Your satisfaction is guaranteed before payment."
       },
-      "q4": {
-        "question": "Can I request custom features?",
-        "answer": "Absolutely. Booking systems, payment processing, contact forms, galleries, multi-language support — tell us what you need and we'll build it in."
-      },
       "q5": {
-        "question": "Is my website secure and reliable?",
-        "answer": "Yes. Your site runs on the same technology trusted by Apple, Netflix, Spotify, Airbnb, and Porsche. It's fully encrypted, loads instantly worldwide, and has 99.99% uptime."
+        "question": "What if I need a booking system or online payments?",
+        "answer": "We can build it in. Booking systems, payment processing, contact forms, galleries, multi-language support — tell us what you need during the intake process."
       },
       "q6": {
-        "question": "Will my website be fast?",
-        "answer": "Extremely. We build for performance from the start. Your site will load in under a second — which means better Google rankings and fewer visitors leaving."
+        "question": "What technology does the website run on?",
+        "answer": "The same technology trusted by Apple, Netflix, Spotify, Airbnb, and Porsche. Your site is fully encrypted, loads instantly worldwide, and has 99.99% uptime."
       },
       "q7": {
-        "question": "Do you offer ongoing maintenance?",
-        "answer": "Yes, starting at 19,000 HUF/month for hosting, security updates, and backups. We also offer advanced support at 49,000 HUF/month with priority changes and monitoring."
+        "question": "Will my site show up on Google?",
+        "answer": "Yes. Every site we build is optimized for search engines — fast loading, mobile-friendly, and properly structured. These are the key factors Google uses to rank websites."
       },
       "q8": {
+        "question": "Who handles hosting and maintenance after launch?",
+        "answer": "We do. Your first year of secure hosting is included in the price. After that, our maintenance plan is 9,900 HUF/month — covering hosting, content updates, security patches, and uptime monitoring."
+      },
+      "q9": {
         "question": "What payment methods do you accept?",
         "answer": "Bank transfer, online card payment, or cash. Simple, secure, no hassle."
       }
@@ -194,7 +194,7 @@
       "mobile": { "label": "Mobile optimized", "diy": "Often broken", "agency": "Usually yes", "us": "Always" },
       "seo": { "label": "SEO", "diy": "Minimal", "agency": "Extra cost", "us": "Included" },
       "booking": { "label": "Booking & payments", "diy": "Extra cost", "agency": "Extra cost", "us": "Built-in" },
-      "effort": { "label": "Your effort", "diy": "All on you", "agency": "Meetings, approvals", "us": "Fill one form" }
+      "effort": { "label": "Your effort", "diy": "All on you", "agency": "Meetings, approvals", "us": "Quick and effortless" }
     }
   },
   "contact": {
@@ -215,7 +215,7 @@
       "planOptions": {
         "starter": "Starter – 149,000 HUF",
         "business": "Business – 329,000 HUF",
-        "pro": "Pro – 499,000 HUF",
+        "pro": "Pro – 699,000 HUF",
         "unsure": "Not sure yet"
       },
       "message": "Message",
@@ -254,5 +254,95 @@
     "terms": "Terms of Service",
     "imprint": "Imprint",
     "rights": "All rights reserved."
+  },
+  "legal": {
+    "back": "Back to home",
+    "privacy": {
+      "title": "Privacy Policy",
+      "lastUpdated": "Last updated: March 15, 2026",
+      "intro": "Budapest Labs (\"we\", \"us\") respects your privacy. This policy explains what data we collect, why, and how we protect it.",
+      "sections": {
+        "collection": {
+          "title": "What data we collect",
+          "content": "When you submit our contact form, we collect: your name, email address, phone number (optional), business name (optional), selected plan, and your message. We do not collect any data automatically — no cookies, no tracking scripts, no analytics."
+        },
+        "purpose": {
+          "title": "Why we collect it",
+          "content": "We use your contact information solely to respond to your inquiry and deliver our web development services. We never sell, share, or transfer your data to third parties."
+        },
+        "storage": {
+          "title": "How we store it",
+          "content": "Your data is stored securely on encrypted servers within the European Union. We retain your information only as long as necessary to fulfill your request and comply with legal obligations."
+        },
+        "hosting": {
+          "title": "Website hosting",
+          "content": "This website is hosted on infrastructure that uses HTTPS encryption for all connections. No personal data is logged by the hosting provider beyond standard server access logs, which are automatically deleted after 30 days."
+        },
+        "rights": {
+          "title": "Your rights",
+          "content": "Under the EU General Data Protection Regulation (GDPR), you have the right to access, correct, or delete your personal data at any time. You can also request a copy of the data we hold about you."
+        },
+        "contact": {
+          "title": "Contact",
+          "content": "For any privacy-related questions or requests, email us at info@budapestlabs.com."
+        }
+      }
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "lastUpdated": "Last updated: March 15, 2026",
+      "intro": "By using Budapest Labs' services, you agree to the following terms.",
+      "sections": {
+        "scope": {
+          "title": "Scope of services",
+          "content": "Budapest Labs provides website design and development services for small businesses. Our service includes design, development, deployment, and initial hosting setup as described in the selected plan."
+        },
+        "payment": {
+          "title": "Payment",
+          "content": "You do not pay anything upfront. We build your website, you review it, and you only pay if you are satisfied with the result. Payment is due upon approval of the final deliverable. We accept bank transfer, online card payment, and cash."
+        },
+        "revisions": {
+          "title": "Revisions",
+          "content": "Every plan includes one round of free revisions. Additional revision rounds may be subject to additional fees, which will be communicated in advance."
+        },
+        "delivery": {
+          "title": "Delivery",
+          "content": "We aim to deliver all projects within 6 hours of receiving your content. If we cannot meet this deadline, you are not obligated to pay."
+        },
+        "ownership": {
+          "title": "Ownership",
+          "content": "Upon full payment, you own the website and all its content. We retain no rights to your site. You are free to move, modify, or take down your website at any time."
+        },
+        "liability": {
+          "title": "Limitation of liability",
+          "content": "Budapest Labs is not liable for indirect, incidental, or consequential damages arising from the use of our services. Our total liability is limited to the amount paid for the service."
+        },
+        "law": {
+          "title": "Governing law",
+          "content": "These terms are governed by the laws of Hungary. Any disputes shall be resolved by the competent courts of Budapest."
+        }
+      }
+    },
+    "imprint": {
+      "title": "Imprint",
+      "sections": {
+        "company": {
+          "title": "Company information",
+          "content": "Budapest Labs\nBudapest, Hungary"
+        },
+        "contact": {
+          "title": "Contact",
+          "content": "Email: info@budapestlabs.com\nWebsite: budapestlabs.com"
+        },
+        "registration": {
+          "title": "Business registration",
+          "content": "Tax number: [To be added]\nRegistration number: [To be added]"
+        },
+        "disclaimer": {
+          "title": "Disclaimer",
+          "content": "We make every effort to keep the information on this website accurate and up to date. However, we accept no liability for the completeness or accuracy of the content."
+        }
+      }
+    }
   }
 }

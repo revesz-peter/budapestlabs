@@ -50,56 +50,52 @@
     "label": "Árak",
     "title": "Egyszerű, átlátható árazás",
     "subtitle": "Minden csomag tartalmazza a biztonságos tárhelyet, mobil optimalizálást, SEO-t — és csak átadás után fizet.",
-    "delivery": "Elkészítés: ≤6 óra",
     "choosePlan": "Csomag választása",
     "popular": "Népszerű",
     "starter": {
       "name": "Starter",
       "price": "149 000",
+      "delivery": "Elkészítés: ≤6 óra",
       "description": "Egyéni vállalkozóknak és kisvállalkozásoknak",
       "features": [
         "3–5 oldal (Főoldal, Rólunk, Szolgáltatások, Kapcsolat)",
         "Mobilbarát dizájn",
         "SEO optimalizálás",
         "Kapcsolati űrlap",
-        "Biztonságos tárhely tartalmazza",
-        "Magyar nyelv alapértelmezett",
-        "Opcionális angol nyelv"
+        "Biztonságos tárhely tartalmazza (1 év)",
+        "Magyar és angol nyelv tartalmazza"
       ]
     },
     "business": {
       "name": "Business",
       "price": "329 000",
+      "delivery": "Elkészítés: ≤6 óra",
       "description": "Szolgáltatóknak és időpont-alapú vállalkozásoknak",
       "features": [
+        "Minden, ami a Starter-ben, és még:",
         "6–10 oldal",
         "Foglalási / időpontfoglaló rendszer",
         "Kapcsolati és lead űrlapok",
-        "Analitikai dashboard",
-        "Mobilbarát dizájn",
-        "SEO optimalizálás",
-        "Biztonságos tárhely tartalmazza",
-        "Magyar nyelv alapértelmezett",
-        "Opcionális angol nyelv"
+        "Analitika integráció"
       ]
     },
     "pro": {
       "name": "Pro",
-      "price": "499 000",
-      "description": "Prémium szolgáltatásoknak és kis webshopoknak",
+      "price": "699 000",
+      "delivery": "Elkészítés: 1–2 nap",
+      "description": "Prémium szolgáltatásoknak és növekvő vállalkozásoknak",
       "features": [
-        "10+ oldal",
-        "Foglalási rendszer",
-        "Online fizetés (Stripe)",
+        "Minden, ami a Business-ben, és még:",
+        "Rövid egyeztetés az igények megértéséhez",
+        "Részletfizetés elérhető",
+        "Egyedi dizájn az Ön márkájához igazítva",
+        "15+ oldal",
+        "Online fizetés elfogadása",
         "Termék- vagy szolgáltatáskatalógus",
         "Blog vagy hírek szekció",
-        "Analitikai dashboard (rendelések, konverziók)",
-        "Ügyfélszolgálati modul",
-        "Mobilbarát dizájn",
-        "SEO optimalizálás",
-        "Biztonságos tárhely tartalmazza",
-        "Magyar és angol nyelv",
-        "Automatikus nyelvfelismerés"
+        "Analitika integráció",
+        "Kiemelt ügyfélszolgálat",
+        "Az Ön igényeire szabott egyedi megoldások"
       ]
     }
   },
@@ -145,30 +141,34 @@
         "answer": "Igen. Amint megkapjuk a tartalmát, csapatunk azonnal elkezdi a munkát. A legtöbb weboldal még aznap elkészül. Ha nem tartjuk a határidőt, nem kell fizetnie."
       },
       "q2": {
+        "question": "Hogyan zajlik a folyamat lépésről lépésre?",
+        "answer": "1. Töltse ki a lenti kapcsolati űrlapot — meséljen a vállalkozásáról és az igényeiről.\n2. 24 órán belül felvesszük Önnel a kapcsolatot a részletek egyeztetéséhez.\n3. Elküldi nekünk a tartalmakat (szöveg, képek, logó) emailben — segítünk, ha nincs minden kéznél.\n4. Elkészítjük a weboldalt és küldünk egy előnézetet.\n5. Átnézi, és kérhet módosításokat — egy módosítási kör ingyenes.\n6. Ha elégedett, fizet, és élesítjük az oldalt."
+      },
+      "q3": {
         "question": "Tényleg csak átadás után kell fizetnem?",
         "answer": "Igen. Előre semmit nem kell fizetnie. Elkészítjük a weboldalt, Ön megnézi, és csak akkor fizet, ha elégedett az eredménnyel. Ha nem tetszik, módosítjuk — ingyen."
       },
-      "q3": {
+      "q4": {
         "question": "Mi van, ha nem tetszik az eredmény?",
         "answer": "Minden csomag tartalmaz egy ingyenes módosítási kört. Addig igazítjuk a dizájnt, elrendezést vagy tartalmat, amíg elégedett nem lesz. Az elégedettsége garantált a fizetés előtt."
       },
-      "q4": {
-        "question": "Kérhetek egyedi funkciókat?",
-        "answer": "Természetesen. Foglalási rendszer, fizetési felület, kapcsolati űrlapok, galéria, többnyelvű támogatás — mondja el, mire van szüksége, és beépítjük."
-      },
       "q5": {
-        "question": "Biztonságos és megbízható lesz a weboldalam?",
-        "answer": "Igen. Weboldala ugyanazon a technológián fut, amelyben az Apple, Netflix, Spotify, Airbnb és Porsche is megbízik. Teljesen titkosított, világszerte azonnal betölt, és 99,99%-os üzemidővel rendelkezik."
+        "question": "Mi van, ha foglalási rendszerre vagy online fizetésre van szükségem?",
+        "answer": "Beépítjük. Foglalási rendszer, fizetési felület, kapcsolati űrlapok, galéria, többnyelvű támogatás — mondja el, mire van szüksége az intake űrlapon."
       },
       "q6": {
-        "question": "Gyors lesz a weboldalam?",
-        "answer": "Rendkívül. Az elejétől fogva a teljesítményre építünk. Weboldala egy másodperc alatt betölt — ami jobb Google helyezést és kevesebb elvesztett látogatót jelent."
+        "question": "Milyen technológiával készül a weboldal?",
+        "answer": "Ugyanazzal, amelyben az Apple, Netflix, Spotify, Airbnb és Porsche is megbízik. Weboldala teljesen titkosított, világszerte azonnal betölt, és 99,99%-os üzemidővel rendelkezik."
       },
       "q7": {
-        "question": "Van folyamatos karbantartás?",
-        "answer": "Igen, havi 19 000 Ft-tól elérhető a tárhely, biztonsági frissítések és mentések. Haladó támogatás 49 000 Ft/hó, prioritásos módosításokkal és monitorozással."
+        "question": "Megjelenik az oldalam a Google-ben?",
+        "answer": "Igen. Minden weboldalunkat keresőoptimalizáltan építjük — gyors betöltés, mobilbarát, megfelelő struktúra. Ezek a kulcstényezők, amelyek alapján a Google rangsorolja a weboldalakat."
       },
       "q8": {
+        "question": "Ki kezeli a tárhelyet és karbantartást az indulás után?",
+        "answer": "Mi. Az első év biztonságos tárhelyet az ár tartalmazza. Ezt követően karbantartási csomagunk 9 900 Ft/hó — amely tartalmazza a tárhelyet, tartalomfrissítést, biztonsági javításokat és rendelkezésre állás figyelést."
+      },
+      "q9": {
         "question": "Milyen fizetési módokat fogadnak el?",
         "answer": "Banki átutalás, online kártyás fizetés vagy készpénz. Egyszerű, biztonságos, gond nélkül."
       }
@@ -194,7 +194,7 @@
       "mobile": { "label": "Mobilbarát", "diy": "Gyakran hibás", "agency": "Általában igen", "us": "Mindig" },
       "seo": { "label": "SEO", "diy": "Minimális", "agency": "Külön költség", "us": "Tartalmazza" },
       "booking": { "label": "Foglalás és fizetés", "diy": "Külön költség", "agency": "Külön költség", "us": "Beépített" },
-      "effort": { "label": "Az Ön feladata", "diy": "Minden Önön múlik", "agency": "Megbeszélések, jóváhagyások", "us": "Egy űrlap kitöltése" }
+      "effort": { "label": "Ráfordítás", "diy": "Minden az Ön terhe", "agency": "Megbeszélések, jóváhagyások", "us": "Gyors és egyszerű" }
     }
   },
   "contact": {
@@ -215,7 +215,7 @@
       "planOptions": {
         "starter": "Starter – 149 000 HUF",
         "business": "Business – 329 000 HUF",
-        "pro": "Pro – 499 000 HUF",
+        "pro": "Pro – 699 000 HUF",
         "unsure": "Még nem tudom"
       },
       "message": "Üzenet",
@@ -254,5 +254,95 @@
     "terms": "ÁSZF",
     "imprint": "Impresszum",
     "rights": "Minden jog fenntartva."
+  },
+  "legal": {
+    "back": "Vissza a főoldalra",
+    "privacy": {
+      "title": "Adatvédelmi nyilatkozat",
+      "lastUpdated": "Utolsó frissítés: 2026. március 15.",
+      "intro": "A Budapest Labs ('mi') tiszteletben tartja az Ön személyes adatait. Ez a nyilatkozat ismerteti, milyen adatokat gyűjtünk, miért, és hogyan védjük azokat.",
+      "sections": {
+        "collection": {
+          "title": "Milyen adatokat gyűjtünk",
+          "content": "A kapcsolatfelvételi űrlap kitöltésekor az alábbi adatokat gyűjtjük: név, e-mail cím, telefonszám (opcionális), vállalkozás neve (opcionális), kiválasztott csomag és üzenet. Automatikusan semmilyen adatot nem gyűjtünk — nincs cookie, nincs nyomkövető, nincs analitika."
+        },
+        "purpose": {
+          "title": "Miért gyűjtjük",
+          "content": "A kapcsolatfelvételi adatait kizárólag megkeresésére történő válaszadásra és webfejlesztési szolgáltatásaink nyújtására használjuk. Adatait soha nem adjuk el, nem osztjuk meg és nem továbbítjuk harmadik félnek."
+        },
+        "storage": {
+          "title": "Hogyan tároljuk",
+          "content": "Adatait az Európai Unióban található titkosított szervereken tároljuk biztonságosan. Az adatokat csak a kérés teljesítéséhez és a jogi kötelezettségek betartásához szükséges ideig őrizzük meg."
+        },
+        "hosting": {
+          "title": "Webtárhely",
+          "content": "Ez a weboldal HTTPS titkosítást használó infrastruktúrán fut. A tárhelyszolgáltató a szabványos szervernaplókon kívül nem rögzít személyes adatot, és ezeket a naplókat 30 nap után automatikusan törli."
+        },
+        "rights": {
+          "title": "Az Ön jogai",
+          "content": "Az EU általános adatvédelmi rendelete (GDPR) értelmében Ön bármikor hozzáférhet személyes adataihoz, kérheti azok helyesbítését vagy törlését. Kérheti továbbá az általunk tárolt adatainak másolatát."
+        },
+        "contact": {
+          "title": "Kapcsolat",
+          "content": "Adatvédelmi kérdéseivel vagy kéréseivel forduljon hozzánk az info@budapestlabs.com címen."
+        }
+      }
+    },
+    "terms": {
+      "title": "Általános Szerződési Feltételek",
+      "lastUpdated": "Utolsó frissítés: 2026. március 15.",
+      "intro": "A Budapest Labs szolgáltatásainak igénybevételével Ön elfogadja az alábbi feltételeket.",
+      "sections": {
+        "scope": {
+          "title": "Szolgáltatások köre",
+          "content": "A Budapest Labs weboldal tervezési és fejlesztési szolgáltatásokat nyújt kisvállalkozások számára. Szolgáltatásunk magában foglalja a tervezést, fejlesztést, üzembe helyezést és a kezdeti tárhelyet a kiválasztott csomagnak megfelelően."
+        },
+        "payment": {
+          "title": "Fizetés",
+          "content": "Előre semmit nem kell fizetnie. Elkészítjük a weboldalt, Ön átnézi, és csak akkor fizet, ha elégedett az eredménnyel. A fizetés a végleges eredmény jóváhagyásakor esedékes. Banki átutalást, online kártyás fizetést és készpénzt is elfogadunk."
+        },
+        "revisions": {
+          "title": "Módosítások",
+          "content": "Minden csomag tartalmaz egy ingyenes módosítási kört. További módosítási körök külön díj ellenében igényelhetők, amelyekről előzetesen tájékoztatjuk."
+        },
+        "delivery": {
+          "title": "Szállítás",
+          "content": "Célunk, hogy minden projektet a tartalom kézhezvételétől számított 6 órán belül átadjunk. Ha ezt a határidőt nem tudjuk tartani, Ön nem köteles fizetni."
+        },
+        "ownership": {
+          "title": "Tulajdonjog",
+          "content": "A teljes fizetés után a weboldal és annak teljes tartalma az Ön tulajdonába kerül. Mi semmilyen jogot nem tartunk fenn. Ön szabadon áthelyezheti, módosíthatja vagy leállíthatja weboldalát bármikor."
+        },
+        "liability": {
+          "title": "Felelősségkorlátozás",
+          "content": "A Budapest Labs nem vállal felelősséget a szolgáltatásaink használatából eredő közvetett, véletlenszerű vagy következményes károkért. Teljes felelősségünk a szolgáltatásért fizetett összegre korlátozódik."
+        },
+        "law": {
+          "title": "Irányadó jog",
+          "content": "Ezekre a feltételekre a magyar jog az irányadó. Bármely vitát a budapesti illetékes bíróságok rendeznek."
+        }
+      }
+    },
+    "imprint": {
+      "title": "Impresszum",
+      "sections": {
+        "company": {
+          "title": "Cégadatok",
+          "content": "Budapest Labs\nBudapest, Magyarország"
+        },
+        "contact": {
+          "title": "Kapcsolat",
+          "content": "E-mail: info@budapestlabs.com\nWeboldal: budapestlabs.com"
+        },
+        "registration": {
+          "title": "Cégjegyzék",
+          "content": "Adószám: [Hamarosan]\nCégjegyzékszám: [Hamarosan]"
+        },
+        "disclaimer": {
+          "title": "Jogi nyilatkozat",
+          "content": "Mindent megteszünk annak érdekében, hogy a weboldalon szereplő információk pontosak és naprakészek legyenek. A tartalom teljességéért és pontosságáért azonban felelősséget nem vállalunk."
+        }
+      }
+    }
   }
 }

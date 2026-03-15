@@ -82,19 +82,19 @@ export function Footer() {
               </p>
               <nav className="flex flex-col gap-2">
                 <a
-                  href="#"
+                  href="/privacy"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {t("footer.privacy")}
                 </a>
                 <a
-                  href="#"
+                  href="/terms"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {t("footer.terms")}
                 </a>
                 <a
-                  href="#"
+                  href="/imprint"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {t("footer.imprint")}

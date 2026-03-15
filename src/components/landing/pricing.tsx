@@ -85,7 +85,7 @@ export function Pricing() {
 
                 <div className="mb-8 flex items-center gap-2 text-sm text-muted-foreground">
                   <Clock className="h-3.5 w-3.5" />
-                  {t("delivery")}
+                  {t(`${plan.key}.delivery`)}
                 </div>
 
                 <ul className="mb-8 flex-1 space-y-3">

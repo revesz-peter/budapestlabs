@@ -71,7 +71,10 @@ src/
 ├── app/
 │   ├── [locale]/
 │   │   ├── layout.tsx        # Locale layout, metadata, Google Fonts
-│   │   └── page.tsx          # Main page, assembles all sections
+│   │   ├── page.tsx          # Main page, assembles all sections
+│   │   ├── privacy/page.tsx  # Privacy Policy (minimal layout)
+│   │   ├── terms/page.tsx    # Terms of Service (minimal layout)
+│   │   └── imprint/page.tsx  # Imprint (minimal layout)
 │   └── globals.css           # Tailwind v4 config, glass classes, dot grid, gradient border
 ├── components/
 │   ├── landing/              # 11 section components + theme-toggle (navbar, hero, stats, how-it-works, comparison, pricing, addons, testimonials, faq, contact, footer, theme-toggle)
