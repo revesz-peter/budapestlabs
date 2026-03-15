@@ -38,7 +38,7 @@ export function Pricing() {
           variants={{
             visible: { transition: { staggerChildren: 0.1 } },
           }}
-          className="grid gap-6 lg:grid-cols-3"
+          className="grid items-stretch gap-6 lg:grid-cols-3"
         >
           {plans.map((plan) => {
             const features = t.raw(`${plan.key}.features`) as string[];
@@ -54,9 +54,9 @@ export function Pricing() {
                   },
                 }}
                 className={cn(
-                  "flex flex-col p-8",
+                  "relative flex flex-col p-8",
                   plan.popular
-                    ? "glass-active ring-1 ring-white/20"
+                    ? "glass-active gradient-border shadow-[0_0_80px_-20px_rgba(139,92,246,0.15)]"
                     : "glass-hover"
                 )}
               >

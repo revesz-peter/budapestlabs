@@ -7,10 +7,21 @@
     "getStarted": "Kezdjük el"
   },
   "hero": {
+    "badge": "Modern, biztonságos, gyors",
     "title": "Weboldal 6 óra alatt.",
-    "subtitle": "Professzionális, mobilbarát weboldalak kisvállalkozásoknak — villámgyorsan elkészítve.",
-    "cta": "Kérjen ajánlatot",
-    "secondaryCta": "Árak megtekintése"
+    "subtitle": "Ne veszítsen több ügyfelet elavult weboldal miatt. Biztonságos, villámgyors weboldal — és csak akkor fizet, ha elégedett az eredménnyel.",
+    "cta": "Kezdjük el",
+    "demo": "Demo foglalása",
+    "trust": {
+      "payAfter": "Csak átadás után fizet",
+      "delivery": "≤6 órás elkészítés",
+      "revision": "Ingyenes revízió"
+    }
+  },
+  "stats": {
+    "websites": "elkészített weboldal",
+    "delivery": "átlagos elkészítési idő",
+    "satisfaction": "ügyfél elégedettség"
   },
   "howItWorks": {
     "label": "Hogyan működik",
@@ -27,18 +38,18 @@
       },
       "build": {
         "title": "Elkészítjük",
-        "description": "Csapatunk azonnal munkába áll és felépíti a weboldalát."
+        "description": "Csapatunk azonnal munkába áll — a legmodernebb technológiával, gyors és biztonságos eredménnyel."
       },
       "launch": {
         "title": "Indulhat",
-        "description": "Tesztelt, optimalizált weboldalát élesítjük és átadjuk."
+        "description": "Weboldala biztonságos, megbízható tárhelyen megy élesbe 99,99%-os üzemidővel — kész az ügyfelei fogadására."
       }
     }
   },
   "pricing": {
     "label": "Árak",
     "title": "Egyszerű, átlátható árazás",
-    "subtitle": "Minden csomag tartalmazza a mobil optimalizálást, SEO-t és 1 hónap tárhelyet.",
+    "subtitle": "Minden csomag tartalmazza a biztonságos tárhelyet, mobil optimalizálást, SEO-t — és csak átadás után fizet.",
     "delivery": "Elkészítés: ≤6 óra",
     "choosePlan": "Csomag választása",
     "popular": "Népszerű",
@@ -51,7 +62,7 @@
         "Mobilbarát dizájn",
         "SEO optimalizálás",
         "Kapcsolati űrlap",
-        "1 hónap tárhely + SSL",
+        "Biztonságos tárhely tartalmazza",
         "Magyar nyelv alapértelmezett",
         "Opcionális angol nyelv"
       ]
@@ -67,6 +78,7 @@
         "Analitikai dashboard",
         "Mobilbarát dizájn",
         "SEO optimalizálás",
+        "Biztonságos tárhely tartalmazza",
         "Magyar nyelv alapértelmezett",
         "Opcionális angol nyelv"
       ]
@@ -85,6 +97,7 @@
         "Ügyfélszolgálati modul",
         "Mobilbarát dizájn",
         "SEO optimalizálás",
+        "Biztonságos tárhely tartalmazza",
         "Magyar és angol nyelv",
         "Automatikus nyelvfelismerés"
       ]
@@ -125,32 +138,67 @@
   "faq": {
     "label": "Gyakori kérdések",
     "title": "Kérdései vannak?",
-    "subtitle": "Találja meg a válaszokat a leggyakoribb kérdésekre.",
+    "subtitle": "Minden, amit tudnia kell a kezdés előtt.",
     "items": {
       "q1": {
         "question": "Tényleg 6 óra alatt elkészül a weboldal?",
-        "answer": "Igen. A kész sablonjaink és optimalizált munkafolyamatunk lehetővé teszi, hogy a tartalom beérkezésétől számítva 6 órán belül átadjuk a kész weboldalt."
+        "answer": "Igen. Amint megkapjuk a tartalmát, csapatunk azonnal elkezdi a munkát. A legtöbb weboldal még aznap elkészül. Ha nem tartjuk a határidőt, nem kell fizetnie."
       },
       "q2": {
-        "question": "Mit kell előre elküldenem?",
-        "answer": "A megrendelés után egy egyszerű űrlapot kap, ahol megadhatja a vállalkozás nevét, logóját, szövegeit, képeit és márkaszíneit. Minél teljesebb a kitöltés, annál gyorsabb az elkészítés."
+        "question": "Tényleg csak átadás után kell fizetnem?",
+        "answer": "Igen. A megrendeléskor 50%-ot fizet, a maradék 50%-ot pedig csak akkor, ha látta és jóváhagyta a végeredményt. Ha nem elégedett, ingyen módosítjuk."
       },
       "q3": {
-        "question": "Milyen technológiákat használnak?",
-        "answer": "Next.js, React, Tailwind CSS és Vercel hosting — modern, gyors és biztonságos megoldások."
+        "question": "Mi van, ha nem tetszik az eredmény?",
+        "answer": "Minden csomag tartalmaz egy ingyenes módosítási kört. Addig igazítjuk a dizájnt, elrendezést vagy tartalmat, amíg elégedett nem lesz. Az elégedettsége garantált a végső fizetés előtt."
       },
       "q4": {
-        "question": "Kaphatok módosításokat az átadás után?",
-        "answer": "Igen, minden csomag tartalmaz egy kör revíziót az átadás után. További módosítások a karbantartási csomagban érhetők el."
+        "question": "Mit kell előre elküldenem?",
+        "answer": "Csak töltsön ki egy egyszerű űrlapot a vállalkozás nevével, logójával, szövegeivel, képeivel és márkaszíneivel. Nincs még minden kész? Nem gond — azzal dolgozunk, ami van."
       },
       "q5": {
-        "question": "Van karbantartási szolgáltatás?",
-        "answer": "Igen, havi 19 000 Ft-tól elérhető a hosting, biztonsági frissítések és mentések csomagunk. Haladó támogatás 49 000 Ft/hó."
+        "question": "Kérhetek egyedi funkciókat?",
+        "answer": "Természetesen. Foglalási rendszer, fizetési felület, kapcsolati űrlapok, galéria, többnyelvű támogatás — mondja el, mire van szüksége, és beépítjük."
       },
       "q6": {
+        "question": "Biztonságos és megbízható lesz a weboldalam?",
+        "answer": "Igen. Weboldala ugyanazon a technológián fut, amelyben az Apple, Netflix, Spotify, Airbnb és Porsche is megbízik. Teljesen titkosított, világszerte azonnal betölt, és 99,99%-os üzemidővel rendelkezik."
+      },
+      "q7": {
+        "question": "Gyors lesz a weboldalam?",
+        "answer": "Rendkívül. Az elejétől fogva a teljesítményre építünk. Weboldala egy másodperc alatt betölt — ami jobb Google helyezést és kevesebb elvesztett látogatót jelent."
+      },
+      "q8": {
+        "question": "Van folyamatos karbantartás?",
+        "answer": "Igen, havi 19 000 Ft-tól elérhető a tárhely, biztonsági frissítések és mentések. Haladó támogatás 49 000 Ft/hó, prioritásos módosításokkal és monitorozással."
+      },
+      "q9": {
         "question": "Milyen fizetési módokat fogadnak el?",
-        "answer": "Banki átutalás és online fizetés (Stripe). A megrendelés 50%-a előre fizetendő, 50% az átadáskor."
+        "answer": "Banki átutalás és online kártyás fizetés. Egyszerű, biztonságos, gond nélkül."
       }
+    }
+  },
+  "comparison": {
+    "label": "Összehasonlítás",
+    "title": "Hogyan viszonyulunk",
+    "subtitle": "Gyors áttekintés a lehetőségekről.",
+    "columns": {
+      "feature": "",
+      "diy": "Webépítők",
+      "agency": "Hagyományos ügynökség",
+      "us": "Budapest Labs"
+    },
+    "rows": {
+      "delivery": { "label": "Elkészítési idő", "diy": "Napok–hetek", "agency": "4–8 hét", "us": "≤6 óra" },
+      "price": { "label": "Ár", "diy": "5–30k HUF/hó", "agency": "500k–2M+ HUF", "us": "149k HUF-tól" },
+      "quality": { "label": "Dizájn minőség", "diy": "Sablon", "agency": "Egyedi", "us": "Professzionális" },
+      "tech": { "label": "Technológia", "diy": "Zárt platform", "agency": "Gyakran elavult", "us": "Legmodernebb és jövőálló" },
+      "security": { "label": "Biztonság", "diy": "Alap", "agency": "Változó", "us": "Teljesen biztonságos" },
+      "performance": { "label": "Betöltési sebesség", "diy": "Lassú", "agency": "Változó", "us": "Villámgyors" },
+      "mobile": { "label": "Mobilbarát", "diy": "Változó", "agency": "Általában igen", "us": "Mindig" },
+      "seo": { "label": "SEO", "diy": "Alap", "agency": "Külön költség", "us": "Tartalmazza" },
+      "booking": { "label": "Foglalás és fizetés", "diy": "Külön költség", "agency": "Külön költség", "us": "Beépített" },
+      "effort": { "label": "Az Ön feladata", "diy": "Minden", "agency": "Megbeszélések, jóváhagyások", "us": "Egy űrlap kitöltése" }
     }
   },
   "contact": {
@@ -180,8 +228,30 @@
       "success": "Köszönjük! Hamarosan felvesszük Önnel a kapcsolatot."
     }
   },
+  "testimonials": {
+    "label": "Vélemények",
+    "title": "Mit mondanak ügyfeleink",
+    "subtitle": "Elégedett vállalkozások, akiknek már segítettünk.",
+    "items": {
+      "t1": {
+        "quote": "Reggel megrendeltem, estére kész volt a weboldalunk. Hihetetlen gyorsaság, profi minőség.",
+        "name": "Kovács Anna",
+        "business": "Bella Szépségszalon"
+      },
+      "t2": {
+        "quote": "A foglalási rendszer tökéletesen működik. Az ügyfeleim könnyen tudnak időpontot foglalni online.",
+        "name": "Szabó Márton",
+        "business": "FitZone Edzőterem"
+      },
+      "t3": {
+        "quote": "Végre egy modern, gyors weboldalunk van. A csapat nagyon segítőkész és profeszionális volt.",
+        "name": "Tóth Eszter",
+        "business": "Aroma Kávézó"
+      }
+    }
+  },
   "footer": {
-    "description": "Professzionális weboldalak kisvállalkozásoknak, 6 órán belül elkészítve.",
+    "description": "Biztonságos, modern weboldalak kisvállalkozásoknak — 6 órán belül elkészítve. Csak átadás után fizet.",
     "navigation": "Navigáció",
     "legal": "Jogi",
     "privacy": "Adatvédelem",

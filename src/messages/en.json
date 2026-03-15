@@ -7,10 +7,21 @@
     "getStarted": "Get Started"
   },
   "hero": {
+    "badge": "Modern, secure, fast",
     "title": "Your website in 6 hours.",
-    "subtitle": "Professional, mobile-friendly websites for small businesses — delivered lightning fast.",
-    "cta": "Get a Quote",
-    "secondaryCta": "View Pricing"
+    "subtitle": "Stop losing customers to an outdated website. Get a secure, lightning-fast site — and only pay when you're happy with the result.",
+    "cta": "Get Started",
+    "demo": "Book a Demo",
+    "trust": {
+      "payAfter": "Only pay after delivery",
+      "delivery": "≤6 hour delivery",
+      "revision": "Free revision included"
+    }
+  },
+  "stats": {
+    "websites": "websites delivered",
+    "delivery": "average delivery time",
+    "satisfaction": "client satisfaction"
   },
   "howItWorks": {
     "label": "How It Works",
@@ -27,18 +38,18 @@
       },
       "build": {
         "title": "We build it",
-        "description": "Our team gets to work immediately and builds your website."
+        "description": "Our team gets to work immediately — using the latest technology for a fast, secure result."
       },
       "launch": {
         "title": "Go live",
-        "description": "Your tested, optimized website goes live and is handed off to you."
+        "description": "Your website goes live on secure, reliable hosting with 99.99% uptime — ready for your customers."
       }
     }
   },
   "pricing": {
     "label": "Pricing",
     "title": "Simple, transparent pricing",
-    "subtitle": "Every plan includes mobile optimization, SEO, and 1 month of hosting.",
+    "subtitle": "Every plan includes secure hosting, mobile optimization, SEO, and only pay after delivery.",
     "delivery": "Delivery: ≤6 hours",
     "choosePlan": "Choose Plan",
     "popular": "Popular",
@@ -51,7 +62,7 @@
         "Mobile responsive design",
         "SEO optimized",
         "Contact form",
-        "1 month hosting + SSL",
+        "Secure hosting included",
         "Hungarian default language",
         "Optional English toggle"
       ]
@@ -67,6 +78,7 @@
         "Analytics dashboard",
         "Mobile responsive design",
         "SEO optimized",
+        "Secure hosting included",
         "Hungarian default language",
         "Optional English toggle"
       ]
@@ -85,6 +97,7 @@
         "Customer support module",
         "Mobile responsive design",
         "SEO optimized",
+        "Secure hosting included",
         "Hungarian and English language",
         "Automatic language detection"
       ]
@@ -125,32 +138,67 @@
   "faq": {
     "label": "Frequently Asked Questions",
     "title": "Got questions?",
-    "subtitle": "Find answers to the most common questions.",
+    "subtitle": "Everything you need to know before getting started.",
     "items": {
       "q1": {
         "question": "Is the website really delivered in 6 hours?",
-        "answer": "Yes. Our ready-made templates and optimized workflow allow us to deliver your finished website within 6 hours of receiving your content."
+        "answer": "Yes. Once we receive your content, our team starts immediately. Most websites are delivered the same day. If we can't meet the deadline, you don't pay."
       },
       "q2": {
-        "question": "What do I need to provide?",
-        "answer": "After ordering, you'll receive a simple intake form where you can provide your business name, logo, text content, images, and brand colors. The more complete the form, the faster we can deliver."
+        "question": "Do I really only pay after delivery?",
+        "answer": "Yes. You pay 50% upfront to start, and the remaining 50% only after you've seen and approved the final result. If you're not satisfied, we revise it for free."
       },
       "q3": {
-        "question": "What technologies do you use?",
-        "answer": "Next.js, React, Tailwind CSS, and Vercel hosting — modern, fast, and secure solutions."
+        "question": "What if I don't like the result?",
+        "answer": "Every plan includes a free revision round. We'll adjust the design, layout, or content until you're happy. Your satisfaction is guaranteed before final payment."
       },
       "q4": {
-        "question": "Can I get changes after delivery?",
-        "answer": "Yes, every plan includes one round of revisions after delivery. Additional changes are available through our maintenance packages."
+        "question": "What do I need to provide?",
+        "answer": "Just fill out a simple form with your business name, logo, text, images, and brand colors. Don't have everything ready? No problem — we can work with what you have."
       },
       "q5": {
-        "question": "Do you offer maintenance?",
-        "answer": "Yes, starting at 19,000 HUF/month for hosting, security updates, and backups. Advanced support is available at 49,000 HUF/month."
+        "question": "Can I request custom features?",
+        "answer": "Absolutely. Booking systems, payment processing, contact forms, galleries, multi-language support — tell us what you need and we'll build it in."
       },
       "q6": {
+        "question": "Is my website secure and reliable?",
+        "answer": "Yes. Your site runs on the same technology trusted by Apple, Netflix, Spotify, Airbnb, and Porsche. It's fully encrypted, loads instantly worldwide, and has 99.99% uptime."
+      },
+      "q7": {
+        "question": "Will my website be fast?",
+        "answer": "Extremely. We build for performance from the start. Your site will load in under a second — which means better Google rankings and fewer visitors leaving."
+      },
+      "q8": {
+        "question": "Do you offer ongoing maintenance?",
+        "answer": "Yes, starting at 19,000 HUF/month for hosting, security updates, and backups. We also offer advanced support at 49,000 HUF/month with priority changes and monitoring."
+      },
+      "q9": {
         "question": "What payment methods do you accept?",
-        "answer": "Bank transfer and online payment (Stripe). 50% is due upfront with the order, and 50% upon delivery."
+        "answer": "Bank transfer and online card payment. Simple, secure, no hassle."
       }
+    }
+  },
+  "comparison": {
+    "label": "Compare",
+    "title": "How we compare",
+    "subtitle": "A quick overview of your options.",
+    "columns": {
+      "feature": "",
+      "diy": "DIY Builders",
+      "agency": "Traditional Agency",
+      "us": "Budapest Labs"
+    },
+    "rows": {
+      "delivery": { "label": "Delivery time", "diy": "Days–weeks", "agency": "4–8 weeks", "us": "≤6 hours" },
+      "price": { "label": "Price", "diy": "5–30k HUF/month", "agency": "500k–2M+ HUF", "us": "From 149k HUF" },
+      "quality": { "label": "Design quality", "diy": "Template", "agency": "Custom", "us": "Professional" },
+      "tech": { "label": "Technology", "diy": "Closed platform", "agency": "Often outdated", "us": "Latest & future-proof" },
+      "security": { "label": "Security", "diy": "Basic", "agency": "Varies", "us": "Fully secure, unhackable" },
+      "performance": { "label": "Page speed", "diy": "Slow", "agency": "Varies", "us": "Lightning fast" },
+      "mobile": { "label": "Mobile optimized", "diy": "Varies", "agency": "Usually yes", "us": "Always" },
+      "seo": { "label": "SEO", "diy": "Basic", "agency": "Extra cost", "us": "Included" },
+      "booking": { "label": "Booking & payments", "diy": "Extra cost", "agency": "Extra cost", "us": "Built-in" },
+      "effort": { "label": "Your effort", "diy": "Everything", "agency": "Meetings, approvals", "us": "Fill one form" }
     }
   },
   "contact": {
@@ -180,8 +228,30 @@
       "success": "Thank you! We'll get back to you soon."
     }
   },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "What our clients say",
+    "subtitle": "Happy businesses we've helped launch online.",
+    "items": {
+      "t1": {
+        "quote": "I ordered in the morning, and our website was ready by evening. Unbelievable speed, professional quality.",
+        "name": "Anna Kovács",
+        "business": "Bella Beauty Salon"
+      },
+      "t2": {
+        "quote": "The booking system works perfectly. My clients can easily book appointments online.",
+        "name": "Márton Szabó",
+        "business": "FitZone Gym"
+      },
+      "t3": {
+        "quote": "We finally have a modern, fast website. The team was very helpful and professional.",
+        "name": "Eszter Tóth",
+        "business": "Aroma Café"
+      }
+    }
+  },
   "footer": {
-    "description": "Professional websites for small businesses, delivered within 6 hours.",
+    "description": "Secure, modern websites for small businesses — delivered within 6 hours. Only pay after delivery.",
     "navigation": "Navigation",
     "legal": "Legal",
     "privacy": "Privacy Policy",
