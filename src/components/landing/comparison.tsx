@@ -37,7 +37,7 @@ function CellIcon({ value }: { value: string }) {
     lower.includes("latest") ||
     lower.includes("legmodernebb")
   ) {
-    return <Check className="inline h-3.5 w-3.5 text-emerald-400" />;
+    return <Check className="inline h-3.5 w-3.5 text-foreground/30" />;
   }
   if (
     lower.includes("extra cost") ||
@@ -59,7 +59,7 @@ function CellIcon({ value }: { value: string }) {
     lower.includes("everything") ||
     lower.includes("minden")
   ) {
-    return <X className="inline h-3.5 w-3.5 text-red-400/60" />;
+    return <X className="inline h-3.5 w-3.5 text-foreground/30" />;
   }
   return null;
 }
