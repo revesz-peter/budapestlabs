@@ -142,7 +142,7 @@
       },
       "q2": {
         "question": "Hogyan zajlik a folyamat lépésről lépésre?",
-        "answer": "1. Töltse ki a lenti kapcsolati űrlapot — meséljen a vállalkozásáról és az igényeiről.\n2. 24 órán belül felvesszük Önnel a kapcsolatot a részletek egyeztetéséhez.\n3. Elküldi nekünk a tartalmakat (szöveg, képek, logó) emailben — segítünk, ha nincs minden kéznél.\n4. Elkészítjük a weboldalt és küldünk egy előnézetet.\n5. Átnézi, és kérhet módosításokat — egy módosítási kör ingyenes.\n6. Ha elégedett, fizet, és élesítjük az oldalt."
+        "answer": "1. Töltse ki a lenti kapcsolati űrlapot — meséljen minél többet a vállalkozásáról és az igényeiről.\n2. 24 órán belül felvesszük Önnel a kapcsolatot. Küldünk egy rövid kérdőívet a részletekhez (céginformáció, tartalom, arculat) — vagy ha kényelmesebb, egy rövid telefonhívásban is megbeszélhetjük.\n3. Elküldi nekünk a tartalmakat (szöveg, képek, logó) emailben — segítünk, ha nincs minden kéznél.\n4. Elkészítjük a weboldalt és küldünk egy előnézetet.\n5. Átnézi, és kérhet módosításokat — egy módosítási kör ingyenes.\n6. Ha elégedett, fizet, és élesítjük az oldalt."
       },
       "q3": {
         "question": "Tényleg csak átadás után kell fizetnem?",
@@ -200,7 +200,7 @@
   "contact": {
     "label": "Kapcsolat",
     "title": "Kezdjük el a projektet",
-    "subtitle": "Töltse ki az alábbi űrlapot és 24 órán belül felvesszük Önnel a kapcsolatot.",
+    "subtitle": "Meséljen a vállalkozásáról és az elképzeléseiről.",
     "form": {
       "name": "Név",
       "namePlaceholder": "Az Ön neve",
@@ -219,7 +219,7 @@
         "unsure": "Még nem tudom"
       },
       "message": "Üzenet",
-      "messagePlaceholder": "Írja le projektjét röviden...",
+      "messagePlaceholder": "Meséljen egy kicsit a vállalkozásáról és az elképzeléseiről — hamarosan felvesszük Önnel a kapcsolatot, és közösen átbeszéljük a részleteket.",
       "submit": "Üzenet küldése",
       "success": "Köszönjük! Hamarosan felvesszük Önnel a kapcsolatot."
     }
