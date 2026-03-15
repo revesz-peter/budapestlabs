@@ -50,6 +50,7 @@
     "label": "Árak",
     "title": "Egyszerű, átlátható árazás",
     "subtitle": "Minden csomag tartalmazza a biztonságos tárhelyet, mobil optimalizálást, SEO-t — és csak átadás után fizet.",
+    "currency": "HUF",
     "choosePlan": "Csomag választása",
     "popular": "Népszerű",
     "starter": {
@@ -100,14 +101,15 @@
     }
   },
   "addons": {
+    "currency": "HUF",
     "label": "Kiegészítők",
     "title": "Opcionális kiegészítők",
     "subtitle": "Bővítse weboldalát további funkciókkal.",
     "items": {
       "extraPages": {
-        "name": "Extra oldalak",
+        "name": "Díj / extra oldal",
         "description": "A csomaghatáron felüli további oldalak",
-        "price": "15 000 / oldal"
+        "price": "15 000"
       },
       "multilang": {
         "name": "Többnyelvű támogatás",
@@ -122,7 +124,7 @@
       "maintenance": {
         "name": "Havi karbantartás",
         "description": "Tartalomfrissítés, biztonsági javítások és rendelkezésre állás figyelés",
-        "price": "9 900 / hó"
+        "price": "9 900"
       },
       "domainEmail": {
         "name": "Saját domain + céges email",

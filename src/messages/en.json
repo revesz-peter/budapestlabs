@@ -50,11 +50,12 @@
     "label": "Pricing",
     "title": "Simple, transparent pricing",
     "subtitle": "Every plan includes secure hosting, mobile optimization, SEO, and only pay after delivery.",
+    "currency": "EUR",
     "choosePlan": "Choose Plan",
     "popular": "Popular",
     "starter": {
       "name": "Starter",
-      "price": "149,000",
+      "price": "370",
       "delivery": "Delivery: ≤6 hours",
       "description": "For freelancers and small businesses",
       "features": [
@@ -68,7 +69,7 @@
     },
     "business": {
       "name": "Business",
-      "price": "329,000",
+      "price": "820",
       "delivery": "Delivery: ≤6 hours",
       "description": "For service providers and appointment-based businesses",
       "features": [
@@ -81,7 +82,7 @@
     },
     "pro": {
       "name": "Pro",
-      "price": "699,000",
+      "price": "1,750",
       "delivery": "Delivery: 1–2 days",
       "description": "For premium services and growing businesses",
       "features": [
@@ -100,34 +101,35 @@
     }
   },
   "addons": {
+    "currency": "EUR",
     "label": "Add-ons",
     "title": "Optional add-ons",
     "subtitle": "Extend your website with additional features.",
     "items": {
       "extraPages": {
-        "name": "Extra pages",
+        "name": "Extra page fee",
         "description": "Additional pages beyond the plan limits",
-        "price": "15,000 / page"
+        "price": "40"
       },
       "multilang": {
         "name": "Multi-language support",
         "description": "Reach international and tourist customers in their language",
-        "price": "49,000"
+        "price": "120"
       },
       "branding": {
         "name": "Logo and branding",
         "description": "Custom logo and complete visual identity package",
-        "price": "69,000"
+        "price": "170"
       },
       "maintenance": {
         "name": "Monthly maintenance",
         "description": "Content updates, security patches, and uptime monitoring",
-        "price": "9,900 / month"
+        "price": "25"
       },
       "domainEmail": {
         "name": "Custom domain + professional email",
         "description": "Your own .hu or .com domain with a branded email address",
-        "price": "19,000"
+        "price": "50"
       }
     }
   },
@@ -166,7 +168,7 @@
       },
       "q8": {
         "question": "Who handles hosting and maintenance after launch?",
-        "answer": "We do. Your first year of secure hosting is included in the price. After that, our maintenance plan is 9,900 HUF/month — covering hosting, content updates, security patches, and uptime monitoring."
+        "answer": "We do. Your first year of secure hosting is included in the price. After that, our maintenance plan is 25 EUR/month — covering hosting, content updates, security patches, and uptime monitoring."
       },
       "q9": {
         "question": "What payment methods do you accept?",
@@ -186,7 +188,7 @@
     },
     "rows": {
       "delivery": { "label": "Delivery time", "diy": "Weeks–months", "agency": "4–8 weeks", "us": "≤6 hours" },
-      "price": { "label": "Price", "diy": "~30k HUF/month, forever", "agency": "500k–2M+ HUF", "us": "From 149k HUF" },
+      "price": { "label": "Price", "diy": "~75 EUR/month, forever", "agency": "1,200–5,000+ EUR", "us": "From 370 EUR" },
       "quality": { "label": "Design quality", "diy": "Generic template", "agency": "Custom", "us": "Professional" },
       "tech": { "label": "Technology", "diy": "Closed platform", "agency": "Often outdated", "us": "Latest & future-proof" },
       "security": { "label": "Security", "diy": "Your responsibility", "agency": "Varies", "us": "Fully secure" },
@@ -213,9 +215,9 @@
       "plan": "Interested in",
       "planPlaceholder": "Select a plan...",
       "planOptions": {
-        "starter": "Starter – 149,000 HUF",
-        "business": "Business – 329,000 HUF",
-        "pro": "Pro – 699,000 HUF",
+        "starter": "Starter – 370 EUR",
+        "business": "Business – 820 EUR",
+        "pro": "Pro – 1,750 EUR",
         "unsure": "Not sure yet"
       },
       "message": "Message",

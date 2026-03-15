@@ -79,7 +79,7 @@ export function Pricing() {
                 <p className="mb-2 text-4xl font-bold">
                   {t(`${plan.key}.price`)}{" "}
                   <span className="text-base font-normal text-muted-foreground">
-                    HUF
+                    {t("currency")}
                   </span>
                 </p>
 

@@ -68,7 +68,7 @@ export function Addons() {
               </div>
               <p className="shrink-0 text-sm font-medium text-foreground/60">
                 {t(`items.${addon.key}.price`)}{" "}
-                <span className="text-foreground/30">HUF</span>
+                <span className="text-foreground/30">{t("currency")}</span>
               </p>
             </motion.div>
           ))}
