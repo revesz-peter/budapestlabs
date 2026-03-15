@@ -16,7 +16,7 @@ Landing page for Budapest Labs — a service delivering professional websites fo
 - Tailwind CSS v4 (uses `@import "tailwindcss"`, `@theme inline`, `@custom-variant` — NOT v3 syntax)
 - ShadCN UI + Radix UI components in `src/components/ui/`
 - Framer Motion for scroll animations
-- next-intl for i18n (HU/EN, middleware-based locale detection)
+- next-intl for i18n (HU/EN, proxy-based locale detection)
 - Bun as package manager
 
 ## Important conventions
