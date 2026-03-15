@@ -21,11 +21,11 @@ export function Pricing() {
       <div className="mx-auto max-w-6xl">
         {/* Header */}
         <div className="mb-16 text-center">
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-white/40">
+          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
             {t("label")}
           </p>
           <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-white/50">
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
             {t("subtitle")}
           </p>
         </div>
@@ -65,12 +65,12 @@ export function Pricing() {
                     <h3 className="text-xl font-semibold">
                       {t(`${plan.key}.name`)}
                     </h3>
-                    <p className="mt-1 text-sm text-white/40">
+                    <p className="mt-1 text-sm text-muted-foreground">
                       {t(`${plan.key}.description`)}
                     </p>
                   </div>
                   {plan.popular && (
-                    <Badge className="border-transparent bg-white text-black">
+                    <Badge className="border-transparent bg-foreground text-background">
                       {t("popular")}
                     </Badge>
                   )}
@@ -78,12 +78,12 @@ export function Pricing() {
 
                 <p className="mb-2 text-4xl font-bold">
                   {t(`${plan.key}.price`)}{" "}
-                  <span className="text-base font-normal text-white/40">
+                  <span className="text-base font-normal text-muted-foreground">
                     HUF
                   </span>
                 </p>
 
-                <div className="mb-8 flex items-center gap-2 text-sm text-white/40">
+                <div className="mb-8 flex items-center gap-2 text-sm text-muted-foreground">
                   <Clock className="h-3.5 w-3.5" />
                   {t("delivery")}
                 </div>
@@ -92,9 +92,9 @@ export function Pricing() {
                   {features.map((feature: string) => (
                     <li
                       key={feature}
-                      className="flex items-start gap-3 text-sm text-white/60"
+                      className="flex items-start gap-3 text-sm text-foreground/60"
                     >
-                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-white/30" />
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-foreground/30" />
                       {feature}
                     </li>
                   ))}
@@ -105,8 +105,8 @@ export function Pricing() {
                   className={cn(
                     "w-full rounded-full",
                     plan.popular
-                      ? "bg-white text-black hover:bg-white/90"
-                      : "border border-white/20 bg-transparent text-white hover:bg-white/5"
+                      ? "bg-foreground text-background hover:bg-foreground/90"
+                      : "border border-foreground/20 bg-transparent text-foreground hover:bg-foreground/5"
                   )}
                 >
                   <a href="#contact">{t("choosePlan")}</a>

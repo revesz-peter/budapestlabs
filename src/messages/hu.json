@@ -108,30 +108,30 @@
     "title": "Opcionális kiegészítők",
     "subtitle": "Bővítse weboldalát további funkciókkal.",
     "items": {
-      "multilang": {
-        "name": "Többnyelvű támogatás",
-        "description": "További nyelvek a magyar és angol mellett",
-        "price": "49 000"
-      },
-      "blog": {
-        "name": "Blog vagy hírlevél",
-        "description": "Blog integráció vagy hírlevél rendszer",
-        "price": "19 000"
-      },
-      "analytics": {
-        "name": "Haladó analitika",
-        "description": "Konverziókövetés és részletes statisztikák",
-        "price": "29 000"
-      },
-      "branding": {
-        "name": "Logó és arculat",
-        "description": "Egyedi logó és arculati csomag",
-        "price": "69 000"
-      },
       "extraPages": {
         "name": "Extra oldalak",
         "description": "A csomaghatáron felüli további oldalak",
         "price": "15 000 / oldal"
+      },
+      "multilang": {
+        "name": "Többnyelvű támogatás",
+        "description": "Érje el a nemzetközi és turista ügyfeleket saját nyelvükön",
+        "price": "49 000"
+      },
+      "branding": {
+        "name": "Logó és arculat",
+        "description": "Egyedi logó és teljes vizuális arculati csomag",
+        "price": "69 000"
+      },
+      "maintenance": {
+        "name": "Havi karbantartás",
+        "description": "Tartalomfrissítés, biztonsági javítások és rendelkezésre állás figyelés",
+        "price": "9 900 / hó"
+      },
+      "domainEmail": {
+        "name": "Saját domain + céges email",
+        "description": "Saját .hu vagy .com domain, professzionális email címmel",
+        "price": "19 000"
       }
     }
   },

@@ -65,7 +65,7 @@ export function Stats() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="glass grid grid-cols-1 divide-y divide-white/10 md:grid-cols-3 md:divide-x md:divide-y-0"
+          className="glass grid grid-cols-1 divide-y divide-border md:grid-cols-3 md:divide-x md:divide-y-0"
         >
           {stats.map((stat) => (
             <div key={stat.key} className="px-8 py-8 text-center">
@@ -76,7 +76,7 @@ export function Stats() {
                   prefix={"prefix" in stat ? stat.prefix : ""}
                 />
               </p>
-              <p className="mt-2 text-sm text-white/40">{t(stat.key)}</p>
+              <p className="mt-2 text-sm text-muted-foreground">{t(stat.key)}</p>
             </div>
           ))}
         </motion.div>

@@ -14,11 +14,11 @@ export function Testimonials() {
       <div className="mx-auto max-w-6xl">
         {/* Header */}
         <div className="mb-16 text-center">
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-white/40">
+          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
             {t("label")}
           </p>
           <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-white/50">
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
             {t("subtitle")}
           </p>
         </div>
@@ -47,7 +47,7 @@ export function Testimonials() {
               className="glass-hover p-8"
             >
               {/* Decorative quote */}
-              <span className="mb-4 block text-4xl font-bold leading-none text-white/10">
+              <span className="mb-4 block text-4xl font-bold leading-none text-foreground/10">
                 &ldquo;
               </span>
 
@@ -56,20 +56,20 @@ export function Testimonials() {
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
                     key={i}
-                    className="h-3.5 w-3.5 fill-white/40 text-white/40"
+                    className="h-3.5 w-3.5 fill-foreground/40 text-foreground/40"
                   />
                 ))}
               </div>
 
               {/* Quote */}
-              <p className="mb-6 text-sm leading-relaxed text-white/60">
+              <p className="mb-6 text-sm leading-relaxed text-foreground/60">
                 {t(`items.${key}.quote`)}
               </p>
 
               {/* Author */}
               <div>
                 <p className="text-sm font-medium">{t(`items.${key}.name`)}</p>
-                <p className="text-xs text-white/40">
+                <p className="text-xs text-muted-foreground">
                   {t(`items.${key}.business`)}
                 </p>
               </div>

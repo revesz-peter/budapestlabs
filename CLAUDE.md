@@ -17,13 +17,14 @@ Landing page for Budapest Labs — a service delivering professional websites fo
 - ShadCN UI + Radix UI components in `src/components/ui/`
 - Framer Motion for scroll animations
 - next-intl for i18n (HU/EN, proxy-based locale detection)
+- next-themes for dark/light mode (class-based toggling on `<html>`)
 - Bun as package manager
 
 ## Important conventions
 
 ### Tailwind v4
 - Do NOT use `@apply` with custom utility classes that reference each other — Tailwind v4 doesn't support this
-- Card classes (`.glass`, `.glass-hover`, `.glass-active`) are plain CSS in `globals.css` — border + fill only, no backdrop-filter (removed because it has no visible effect on a black background)
+- Card classes (`.glass`, `.glass-hover`, `.glass-active`) are plain CSS in `globals.css` — border + fill only, no backdrop-filter. Scoped under `.dark` and `:root:not(.dark)` for theme-aware styling.
 - Theme uses `@theme inline` block, not `tailwind.config.js`
 
 ### Translations
@@ -33,13 +34,28 @@ Landing page for Budapest Labs — a service delivering professional websites fo
 - **No tech jargon in translations.** The target audience is small business owners, not developers. Say "secure hosting" not "Vercel + SSL + CDN". Say "latest & future-proof" not "Next.js + React".
 
 ### Design system
-- Black background, white text, subtle card panels (border + fill, no blur)
-- Scandinavian minimalism — clean, not flashy
-- Subtle violet accents (`rgba(167, 139, 250, x)`) only for: gradient borders on popular pricing card, dot grid background
+- **Dark/light mode** via `next-themes` with class strategy (`<html class="dark">`)
+  - Default theme: dark. Toggle in navbar (Sun/Moon icon) next to language switcher.
+  - `globals.css` has `:root` (light) and `.dark` (dark) CSS variable blocks
+  - Glass card classes are scoped: `.dark .glass` and `:root:not(.dark) .glass`
+  - Other theme-dependent CSS (gradient-border, step-number-bg, selection) also scoped by `.dark` / `:root:not(.dark)`
+- **Dark mode**: Black background (`oklch(0 0 0)`), white text (`oklch(0.97 0 0)`), subtle white-alpha card panels
+- **Light mode**: Near-white background (`oklch(0.985 0 0)`), near-black text (`oklch(0.09 0 0)`), subtle black-alpha card panels
+- Scandinavian minimalism — clean, not flashy — applies to both modes
+- Subtle violet accents (`rgba(167, 139, 250, x)`) only for: gradient borders on popular pricing card, dot grid background — same in both modes
 - Do NOT add glow effects, text shimmer, or heavy visual effects — user explicitly removed these
 - Framer Motion animations use `whileInView` with `once: true`
+- **Color classes**: Use semantic Tailwind tokens (`text-foreground`, `text-muted-foreground`, `bg-foreground/5`, `border-border`) — do NOT hardcode `text-white`, `bg-black`, `text-white/60` etc. These break in the opposite theme.
+
+### Theme toggle
+- Component: `src/components/landing/theme-toggle.tsx` (Sun/Moon icon button)
+- Placed in navbar between language switcher and CTA
+- Uses `useTheme()` from `next-themes`, guards against hydration mismatch with `mounted` state
+- `layout.tsx` wraps content in `<ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>`
+- `<html>` has `suppressHydrationWarning` (required by next-themes)
 
 ### Messaging priorities
+
 The landing page sells on four pillars equally:
 1. **Pay after delivery** — 50/50 split, satisfaction guaranteed
 2. **Speed** — ≤6 hours delivery, sub-second page loads
@@ -58,7 +74,7 @@ src/
 │   │   └── page.tsx          # Main page, assembles all sections
 │   └── globals.css           # Tailwind v4 config, glass classes, dot grid, gradient border
 ├── components/
-│   ├── landing/              # 11 section components (navbar, hero, stats, how-it-works, comparison, pricing, addons, testimonials, faq, contact, footer)
+│   ├── landing/              # 11 section components + theme-toggle (navbar, hero, stats, how-it-works, comparison, pricing, addons, testimonials, faq, contact, footer, theme-toggle)
 │   └── ui/                   # ShadCN components (button, badge, accordion, etc.)
 ├── i18n/
 │   ├── routing.ts            # Locale config (hu, en)
@@ -73,7 +89,7 @@ src/
 
 ## Section order on page
 
-1. Navbar — fixed, scroll-aware, language switcher, mobile menu
+1. Navbar — fixed, scroll-aware, language switcher, theme toggle, mobile menu
 2. Hero — badge, headline, subtitle, CTA + demo booking (cal.com), trust signals
 3. Stats — animated counters (50+ sites, ≤6h, 100% satisfaction)
 4. How It Works — 4 steps with staggered card animation

@@ -108,30 +108,30 @@
     "title": "Optional add-ons",
     "subtitle": "Extend your website with additional features.",
     "items": {
-      "multilang": {
-        "name": "Multi-language support",
-        "description": "Additional languages beyond Hungarian and English",
-        "price": "49,000"
-      },
-      "blog": {
-        "name": "Blog or newsletter",
-        "description": "Blog integration or newsletter system",
-        "price": "19,000"
-      },
-      "analytics": {
-        "name": "Advanced analytics",
-        "description": "Conversion tracking and detailed statistics",
-        "price": "29,000"
-      },
-      "branding": {
-        "name": "Logo and branding",
-        "description": "Custom logo and branding package",
-        "price": "69,000"
-      },
       "extraPages": {
         "name": "Extra pages",
         "description": "Additional pages beyond the plan limits",
         "price": "15,000 / page"
+      },
+      "multilang": {
+        "name": "Multi-language support",
+        "description": "Reach international and tourist customers in their language",
+        "price": "49,000"
+      },
+      "branding": {
+        "name": "Logo and branding",
+        "description": "Custom logo and complete visual identity package",
+        "price": "69,000"
+      },
+      "maintenance": {
+        "name": "Monthly maintenance",
+        "description": "Content updates, security patches, and uptime monitoring",
+        "price": "9,900 / month"
+      },
+      "domainEmail": {
+        "name": "Custom domain + professional email",
+        "description": "Your own .hu or .com domain with a branded email address",
+        "price": "19,000"
       }
     }
   },

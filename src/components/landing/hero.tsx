@@ -27,7 +27,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
-          <span className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-white/60 backdrop-blur-sm">
+          <span className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-foreground/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-muted-foreground backdrop-blur-sm">
             <Zap className="h-3 w-3" />
             {t("badge")}
           </span>
@@ -48,7 +48,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.25 }}
-          className="mx-auto mt-8 max-w-2xl text-lg text-white/50 md:text-xl"
+          className="mx-auto mt-8 max-w-2xl text-lg text-muted-foreground md:text-xl"
         >
           {t("subtitle")}
         </motion.p>
@@ -63,7 +63,7 @@ export function Hero() {
           <Button
             asChild
             size="lg"
-            className="rounded-full bg-white px-8 text-base text-black hover:bg-white/90"
+            className="rounded-full bg-foreground px-8 text-base text-background hover:bg-foreground/90"
           >
             <a href="#contact">
               {t("cta")}
@@ -74,7 +74,7 @@ export function Hero() {
             asChild
             variant="ghost"
             size="lg"
-            className="rounded-full border border-white/20 text-base text-white hover:bg-white/5"
+            className="rounded-full border border-foreground/20 text-base text-foreground hover:bg-foreground/5"
           >
             <a
               href="https://cal.com/budapestlabs/demo"
@@ -92,7 +92,7 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-          className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-white/30"
+          className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-foreground/30"
         >
           <span className="flex items-center gap-1.5">
             <CreditCard className="h-3 w-3" />

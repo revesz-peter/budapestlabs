@@ -2,8 +2,45 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Light mode (default) */
 :root {
   --radius: 0.625rem;
+  --background: oklch(0.985 0 0);
+  --foreground: oklch(0.09 0 0);
+  --card: oklch(0.97 0 0);
+  --card-foreground: oklch(0.09 0 0);
+  --popover: oklch(0.97 0 0);
+  --popover-foreground: oklch(0.09 0 0);
+  --primary: oklch(0.09 0 0);
+  --primary-foreground: oklch(0.97 0 0);
+  --secondary: oklch(0.92 0 0);
+  --secondary-foreground: oklch(0.09 0 0);
+  --muted: oklch(0.92 0 0);
+  --muted-foreground: oklch(0.45 0 0);
+  --accent: oklch(0.92 0 0);
+  --accent-foreground: oklch(0.09 0 0);
+  --destructive: oklch(0.55 0.2 27);
+  --destructive-foreground: oklch(0.97 0 0);
+  --border: oklch(0.09 0 0 / 0.1);
+  --input: oklch(0.09 0 0 / 0.1);
+  --ring: oklch(0.09 0 0 / 0.2);
+  --chart-1: oklch(0.09 0 0);
+  --chart-2: oklch(0.3 0 0);
+  --chart-3: oklch(0.5 0 0);
+  --chart-4: oklch(0.7 0 0);
+  --chart-5: oklch(0.85 0 0);
+  --sidebar-background: oklch(0.97 0 0);
+  --sidebar-foreground: oklch(0.09 0 0);
+  --sidebar-primary: oklch(0.09 0 0);
+  --sidebar-primary-foreground: oklch(0.97 0 0);
+  --sidebar-accent: oklch(0.92 0 0);
+  --sidebar-accent-foreground: oklch(0.09 0 0);
+  --sidebar-border: oklch(0.09 0 0 / 0.1);
+  --sidebar-ring: oklch(0.09 0 0 / 0.2);
+}
+
+/* Dark mode */
+.dark {
   --background: oklch(0 0 0);
   --foreground: oklch(0.97 0 0);
   --card: oklch(0.05 0 0);
@@ -89,29 +126,54 @@
   }
 }
 
-/* Card utility classes */
-.glass {
+/* Card utility classes — dark mode */
+.dark .glass {
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.04);
 }
 
-.glass-hover {
+.dark .glass-hover {
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
   background: rgba(255, 255, 255, 0.04);
   transition: background 0.3s ease, border-color 0.3s ease;
 }
 
-.glass-hover:hover {
+.dark .glass-hover:hover {
   background: rgba(255, 255, 255, 0.07);
   border-color: rgba(255, 255, 255, 0.15);
 }
 
-.glass-active {
+.dark .glass-active {
   border-radius: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: rgba(255, 255, 255, 0.06);
+}
+
+/* Card utility classes — light mode */
+:root:not(.dark) .glass {
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+:root:not(.dark) .glass-hover {
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(0, 0, 0, 0.02);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+:root:not(.dark) .glass-hover:hover {
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+:root:not(.dark) .glass-active {
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.03);
 }
 
 /* Dot grid background */
@@ -140,7 +202,7 @@ body::before {
   position: relative;
 }
 
-.gradient-border::before {
+.dark .gradient-border::before {
   content: "";
   position: absolute;
   inset: -1px;
@@ -159,15 +221,49 @@ body::before {
   pointer-events: none;
 }
 
+:root:not(.dark) .gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 1rem;
+  padding: 1px;
+  background: linear-gradient(
+    180deg,
+    rgba(167, 139, 250, 0.4) 0%,
+    rgba(129, 140, 248, 0.15) 50%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+}
+
+/* Step number gradient background */
+.dark .step-number-bg {
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%);
+}
+
+:root:not(.dark) .step-number-bg {
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.12) 0%, rgba(0, 0, 0, 0.04) 100%);
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Selection color */
-::selection {
+/* Selection color — dark */
+.dark ::selection {
   background-color: rgba(255, 255, 255, 0.15);
   color: white;
+}
+
+/* Selection color — light */
+:root:not(.dark) ::selection {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 /* Reduced motion */

@@ -16,19 +16,19 @@ export default function HomePage() {
       <Navbar />
       <Hero />
       <Stats />
-      <div className="border-t border-white/10" />
+      <div className="border-t border-border" />
       <HowItWorks />
-      <div className="border-t border-white/10" />
+      <div className="border-t border-border" />
       <Comparison />
-      <div className="border-t border-white/10" />
+      <div className="border-t border-border" />
       <Pricing />
-      <div className="border-t border-white/10" />
+      <div className="border-t border-border" />
       <Addons />
-      <div className="border-t border-white/10" />
+      <div className="border-t border-border" />
       <Testimonials />
-      <div className="border-t border-white/10" />
+      <div className="border-t border-border" />
       <FAQ />
-      <div className="border-t border-white/10" />
+      <div className="border-t border-border" />
       <Contact />
       <Footer />
     </main>

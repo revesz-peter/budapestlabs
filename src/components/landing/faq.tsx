@@ -19,11 +19,11 @@ export function FAQ() {
       <div className="mx-auto max-w-3xl">
         {/* Header */}
         <div className="mb-16 text-center">
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-white/40">
+          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
             {t("label")}
           </p>
           <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-white/50">
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
             {t("subtitle")}
           </p>
         </div>
@@ -40,12 +40,12 @@ export function FAQ() {
               <AccordionItem
                 key={key}
                 value={key}
-                className="border-white/10"
+                className="border-border"
               >
-                <AccordionTrigger className="text-left text-white hover:text-white/80 hover:no-underline">
+                <AccordionTrigger className="text-left text-foreground hover:text-foreground/80 hover:no-underline">
                   {t(`items.${key}.question`)}
                 </AccordionTrigger>
-                <AccordionContent className="text-white/50">
+                <AccordionContent className="text-muted-foreground">
                   {t(`items.${key}.answer`)}
                 </AccordionContent>
               </AccordionItem>

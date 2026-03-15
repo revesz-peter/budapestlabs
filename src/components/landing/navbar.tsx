@@ -5,6 +5,7 @@ import { useRouter, usePathname } from "@/i18n/navigation";
 import { useLocale } from "next-intl";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/landing/theme-toggle";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 
@@ -51,7 +52,7 @@ export function Navbar() {
       className={cn(
         "fixed top-0 z-50 w-full transition-all duration-300",
         scrolled
-          ? "border-b border-white/10 bg-black/80 backdrop-blur-xl"
+          ? "border-b border-border bg-background/80 backdrop-blur-xl"
           : "bg-transparent"
       )}
     >
@@ -67,7 +68,7 @@ export function Navbar() {
             <a
               key={link.key}
               href={link.href}
-              className="text-sm text-white/60 transition-colors hover:text-white"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               {t(link.key)}
             </a>
@@ -77,14 +78,14 @@ export function Navbar() {
         {/* Right side */}
         <div className="flex items-center gap-3">
           {/* Language Switcher */}
-          <div className="flex items-center rounded-full border border-white/10 bg-white/5 p-1">
+          <div className="flex items-center rounded-full border border-border bg-foreground/5 p-1">
             <button
               onClick={() => switchLocale("hu")}
               className={cn(
                 "rounded-full px-3 py-1 text-xs font-medium transition-colors",
                 locale === "hu"
-                  ? "bg-white text-black"
-                  : "text-white/60 hover:text-white"
+                  ? "bg-foreground text-background"
+                  : "text-muted-foreground hover:text-foreground"
               )}
             >
               HU
@@ -94,18 +95,21 @@ export function Navbar() {
               className={cn(
                 "rounded-full px-3 py-1 text-xs font-medium transition-colors",
                 locale === "en"
-                  ? "bg-white text-black"
-                  : "text-white/60 hover:text-white"
+                  ? "bg-foreground text-background"
+                  : "text-muted-foreground hover:text-foreground"
               )}
             >
               EN
             </button>
           </div>
 
+          {/* Theme Toggle */}
+          <ThemeToggle />
+
           {/* CTA */}
           <Button
             asChild
-            className="hidden rounded-full bg-white px-6 text-black hover:bg-white/90 md:inline-flex"
+            className="hidden rounded-full bg-foreground px-6 text-background hover:bg-foreground/90 md:inline-flex"
           >
             <a href="#contact">{t("getStarted")}</a>
           </Button>
@@ -113,7 +117,7 @@ export function Navbar() {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="text-white/60 hover:text-white md:hidden"
+            className="text-muted-foreground hover:text-foreground md:hidden"
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
           >
@@ -128,21 +132,21 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="max-h-[70vh] overflow-y-auto border-t border-white/10 bg-black/95 backdrop-blur-xl md:hidden">
+        <div className="max-h-[70vh] overflow-y-auto border-t border-border bg-background/95 backdrop-blur-xl md:hidden">
           <div className="flex flex-col gap-1 px-6 py-4">
             {navLinks.map((link) => (
               <a
                 key={link.key}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="rounded-lg px-3 py-2 text-sm text-white/60 transition-colors hover:bg-white/5 hover:text-white"
+                className="rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-foreground/5 hover:text-foreground"
               >
                 {t(link.key)}
               </a>
             ))}
             <Button
               asChild
-              className="mt-2 rounded-full bg-white text-black hover:bg-white/90"
+              className="mt-2 rounded-full bg-foreground text-background hover:bg-foreground/90"
             >
               <a href="#contact" onClick={() => setMobileOpen(false)}>
                 {t("getStarted")}

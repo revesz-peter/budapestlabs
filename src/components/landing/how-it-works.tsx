@@ -24,7 +24,7 @@ export function HowItWorks() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.4 }}
-            className="mb-4 text-sm font-medium uppercase tracking-widest text-white/40"
+            className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground"
           >
             {t("label")}
           </motion.p>
@@ -42,7 +42,7 @@ export function HowItWorks() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mx-auto mt-6 max-w-2xl text-lg text-white/50 md:text-xl"
+            className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl"
           >
             {t("subtitle")}
           </motion.p>
@@ -87,20 +87,16 @@ export function HowItWorks() {
                         },
                       },
                     }}
-                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/15 text-lg font-bold text-white/80"
-                    style={{
-                      background:
-                        "linear-gradient(135deg, rgba(167, 139, 250, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%)",
-                    }}
+                    className="step-number-bg flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-foreground/15 text-lg font-bold text-foreground/80"
                   >
                     {i + 1}
                   </motion.div>
-                  <step.icon className="h-6 w-6 text-white/30 transition-colors group-hover:text-white/50" />
+                  <step.icon className="h-6 w-6 text-foreground/30 transition-colors group-hover:text-foreground/50" />
                 </div>
                 <h3 className="mb-3 text-xl font-semibold">
                   {t(`steps.${step.key}.title`)}
                 </h3>
-                <p className="text-sm leading-relaxed text-white/50">
+                <p className="text-sm leading-relaxed text-muted-foreground">
                   {t(`steps.${step.key}.description`)}
                 </p>
               </motion.div>

@@ -24,11 +24,11 @@ export function Contact() {
       <div className="mx-auto max-w-2xl">
         {/* Header */}
         <div className="mb-16 text-center">
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-white/40">
+          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
             {t("label")}
           </p>
           <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-white/50">
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
             {t("subtitle")}
           </p>
         </div>
@@ -50,7 +50,7 @@ export function Contact() {
                 <div className="space-y-2">
                   <Label
                     htmlFor="name"
-                    className="text-sm text-white/60"
+                    className="text-sm text-foreground/60"
                   >
                     {t("form.name")}
                   </Label>
@@ -59,13 +59,13 @@ export function Contact() {
                     name="name"
                     required
                     placeholder={t("form.namePlaceholder")}
-                    className="rounded-xl border-white/10 bg-white/5 text-white placeholder:text-white/30 focus:border-white/30 focus-visible:ring-0"
+                    className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0"
                   />
                 </div>
                 <div className="space-y-2">
                   <Label
                     htmlFor="email"
-                    className="text-sm text-white/60"
+                    className="text-sm text-foreground/60"
                   >
                     {t("form.email")}
                   </Label>
@@ -75,7 +75,7 @@ export function Contact() {
                     type="email"
                     required
                     placeholder={t("form.emailPlaceholder")}
-                    className="rounded-xl border-white/10 bg-white/5 text-white placeholder:text-white/30 focus:border-white/30 focus-visible:ring-0"
+                    className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0"
                   />
                 </div>
               </div>
@@ -84,7 +84,7 @@ export function Contact() {
                 <div className="space-y-2">
                   <Label
                     htmlFor="phone"
-                    className="text-sm text-white/60"
+                    className="text-sm text-foreground/60"
                   >
                     {t("form.phone")}
                   </Label>
@@ -93,13 +93,13 @@ export function Contact() {
                     name="phone"
                     type="tel"
                     placeholder={t("form.phonePlaceholder")}
-                    className="rounded-xl border-white/10 bg-white/5 text-white placeholder:text-white/30 focus:border-white/30 focus-visible:ring-0"
+                    className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0"
                   />
                 </div>
                 <div className="space-y-2">
                   <Label
                     htmlFor="business"
-                    className="text-sm text-white/60"
+                    className="text-sm text-foreground/60"
                   >
                     {t("form.business")}
                   </Label>
@@ -107,33 +107,33 @@ export function Contact() {
                     id="business"
                     name="business"
                     placeholder={t("form.businessPlaceholder")}
-                    className="rounded-xl border-white/10 bg-white/5 text-white placeholder:text-white/30 focus:border-white/30 focus-visible:ring-0"
+                    className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0"
                   />
                 </div>
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="plan" className="text-sm text-white/60">
+                <Label htmlFor="plan" className="text-sm text-foreground/60">
                   {t("form.plan")}
                 </Label>
                 <select
                   id="plan"
                   name="plan"
-                  className="flex h-9 w-full rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-white/30 focus:border-white/30 focus:outline-none"
+                  className="flex h-9 w-full rounded-xl border border-border bg-foreground/5 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus:outline-none"
                 >
-                  <option value="" className="bg-black text-white/30">
+                  <option value="" className="bg-background text-muted-foreground">
                     {t("form.planPlaceholder")}
                   </option>
-                  <option value="starter" className="bg-black">
+                  <option value="starter" className="bg-background">
                     {t("form.planOptions.starter")}
                   </option>
-                  <option value="business" className="bg-black">
+                  <option value="business" className="bg-background">
                     {t("form.planOptions.business")}
                   </option>
-                  <option value="pro" className="bg-black">
+                  <option value="pro" className="bg-background">
                     {t("form.planOptions.pro")}
                   </option>
-                  <option value="unsure" className="bg-black">
+                  <option value="unsure" className="bg-background">
                     {t("form.planOptions.unsure")}
                   </option>
                 </select>
@@ -142,7 +142,7 @@ export function Contact() {
               <div className="space-y-2">
                 <Label
                   htmlFor="message"
-                  className="text-sm text-white/60"
+                  className="text-sm text-foreground/60"
                 >
                   {t("form.message")}
                 </Label>
@@ -151,13 +151,13 @@ export function Contact() {
                   name="message"
                   rows={4}
                   placeholder={t("form.messagePlaceholder")}
-                  className="rounded-xl border-white/10 bg-white/5 text-white placeholder:text-white/30 focus:border-white/30 focus-visible:ring-0"
+                  className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0"
                 />
               </div>
 
               <Button
                 type="submit"
-                className="w-full rounded-full bg-white text-black hover:bg-white/90"
+                className="w-full rounded-full bg-foreground text-background hover:bg-foreground/90"
               >
                 <Send className="mr-2 h-4 w-4" />
                 {t("form.submit")}

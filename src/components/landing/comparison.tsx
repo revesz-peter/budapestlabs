@@ -53,7 +53,7 @@ function CellIcon({ value }: { value: string }) {
     lower.includes("slow") ||
     lower.includes("lassú")
   ) {
-    return <Minus className="inline h-3.5 w-3.5 text-white/30" />;
+    return <Minus className="inline h-3.5 w-3.5 text-foreground/30" />;
   }
   if (
     lower.includes("everything") ||
@@ -72,11 +72,11 @@ export function Comparison() {
       <div className="mx-auto max-w-5xl">
         {/* Header */}
         <div className="mb-16 text-center">
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-white/40">
+          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
             {t("label")}
           </p>
           <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-white/50">
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
             {t("subtitle")}
           </p>
         </div>
@@ -92,31 +92,31 @@ export function Comparison() {
           <table className="w-full min-w-[600px] border-collapse text-sm">
             <thead>
               <tr>
-                <th className="pb-4 pr-4 text-left font-normal text-white/30" />
-                <th className="pb-4 px-4 text-left font-medium text-white/40">
+                <th className="pb-4 pr-4 text-left font-normal text-foreground/30" />
+                <th className="pb-4 px-4 text-left font-medium text-muted-foreground">
                   {t("columns.diy")}
                 </th>
-                <th className="pb-4 px-4 text-left font-medium text-white/40">
+                <th className="pb-4 px-4 text-left font-medium text-muted-foreground">
                   {t("columns.agency")}
                 </th>
-                <th className="pb-4 px-4 text-left font-semibold text-white">
+                <th className="pb-4 px-4 text-left font-semibold text-foreground">
                   {t("columns.us")}
                 </th>
               </tr>
             </thead>
             <tbody>
               {rowKeys.map((key, i) => (
-                <tr key={key} className="border-t border-white/[0.06]">
-                  <td className="py-4 pr-4 font-medium text-white/50">
+                <tr key={key} className="border-t border-foreground/[0.06]">
+                  <td className="py-4 pr-4 font-medium text-muted-foreground">
                     {t(`rows.${key}.label`)}
                   </td>
-                  <td className="py-4 px-4 text-white/35">
+                  <td className="py-4 px-4 text-foreground/35">
                     <span className="flex items-center gap-2">
                       <CellIcon value={t(`rows.${key}.diy`)} />
                       {t(`rows.${key}.diy`)}
                     </span>
                   </td>
-                  <td className="py-4 px-4 text-white/35">
+                  <td className="py-4 px-4 text-foreground/35">
                     <span className="flex items-center gap-2">
                       <CellIcon value={t(`rows.${key}.agency`)} />
                       {t(`rows.${key}.agency`)}
@@ -124,13 +124,10 @@ export function Comparison() {
                   </td>
                   <td
                     className={cn(
-                      "py-4 px-4 font-medium text-white",
+                      "py-4 px-4 font-medium text-foreground bg-foreground/[0.03]",
                       i === 0 && "rounded-t-xl",
                       i === rowKeys.length - 1 && "rounded-b-xl"
                     )}
-                    style={{
-                      background: "rgba(255, 255, 255, 0.03)",
-                    }}
                   >
                     <span className="flex items-center gap-2">
                       <CellIcon value={t(`rows.${key}.us`)} />
