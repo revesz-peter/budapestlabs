@@ -3,25 +3,43 @@
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  Zap,
+  Calendar,
+  Shield,
+  Clock,
+  CreditCard,
+} from "lucide-react";
 
 export function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6">
-      {/* Background glow */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="absolute left-1/2 top-1/4 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-white/[0.03] blur-[120px]" />
-      </div>
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20">
+      {/* Dot grid background */}
+      <div className="dot-grid pointer-events-none absolute inset-0" />
 
-      <div className="relative mx-auto max-w-4xl text-center">
+      <div className="relative mx-auto max-w-5xl text-center">
+        {/* Badge pill */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
+          <span className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-white/60 backdrop-blur-sm">
+            <Zap className="h-3 w-3" />
+            {t("badge")}
+          </span>
+        </motion.div>
+
+        {/* Headline */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
         >
-          <h1 className="text-5xl font-bold leading-tight tracking-tight md:text-7xl lg:text-8xl">
+          <h1 className="text-6xl font-bold leading-[1.05] tracking-tight sm:text-7xl md:text-8xl lg:text-9xl">
             {t("title")}
           </h1>
         </motion.div>
@@ -29,17 +47,18 @@ export function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.15 }}
-          className="mx-auto mt-6 max-w-2xl text-lg text-white/50 md:text-xl"
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.25 }}
+          className="mx-auto mt-8 max-w-2xl text-lg text-white/50 md:text-xl"
         >
           {t("subtitle")}
         </motion.p>
 
+        {/* CTA buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
-          className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+          className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
         >
           <Button
             asChild
@@ -55,10 +74,38 @@ export function Hero() {
             asChild
             variant="ghost"
             size="lg"
-            className="rounded-full text-base text-white/60 hover:bg-white/5 hover:text-white"
+            className="rounded-full border border-white/20 text-base text-white hover:bg-white/5"
           >
-            <a href="#pricing">{t("secondaryCta")}</a>
+            <a
+              href="https://cal.com/budapestlabs/demo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Calendar className="mr-2 h-4 w-4" />
+              {t("demo")}
+            </a>
           </Button>
+        </motion.div>
+
+        {/* Trust signals */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
+          className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-white/30"
+        >
+          <span className="flex items-center gap-1.5">
+            <CreditCard className="h-3 w-3" />
+            {t("trust.payAfter")}
+          </span>
+          <span className="flex items-center gap-1.5">
+            <Clock className="h-3 w-3" />
+            {t("trust.delivery")}
+          </span>
+          <span className="flex items-center gap-1.5">
+            <Shield className="h-3 w-3" />
+            {t("trust.revision")}
+          </span>
         </motion.div>
       </div>
     </section>
