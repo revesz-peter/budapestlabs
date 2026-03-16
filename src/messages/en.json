@@ -69,7 +69,7 @@
     "business": {
       "name": "Business",
       "price": "820",
-      "delivery": "Delivery: ≤6 hours",
+      "delivery": "Delivery: 1–2 days",
       "description": "For service providers and appointment-based businesses",
       "features": [
         "Everything in Starter, plus:",
@@ -81,14 +81,15 @@
       ]
     },
     "pro": {
-      "name": "Pro",
+      "name": "Custom",
       "price": "1,750",
-      "delivery": "Delivery: 1–2 days",
-      "description": "For premium services and growing businesses",
+      "delivery": "Delivery: 3–5 days",
+      "description": "Fully custom solution — anything is possible",
       "features": [
         "Everything in Business, plus:",
         "Installment payment available",
-        "Custom features built for your business",
+        "Webshop, agency site, brand page — anything",
+        "Custom features built for your specific needs",
         "Accept payments online",
         "Product or service catalog",
         "Priority support"
@@ -212,7 +213,7 @@
       "planOptions": {
         "starter": "Starter – 370 EUR",
         "business": "Business – 820 EUR",
-        "pro": "Pro – 1,750 EUR",
+        "pro": "Custom – 1,750 EUR",
         "unsure": "Not sure yet"
       },
       "message": "Message",

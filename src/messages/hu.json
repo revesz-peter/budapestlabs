@@ -69,7 +69,7 @@
     "business": {
       "name": "Business",
       "price": "329 000",
-      "delivery": "Elkészítés: ≤6 óra",
+      "delivery": "Elkészítés: 1–2 nap",
       "description": "Szolgáltatóknak és helyi vállalkozásoknak",
       "features": [
         "Minden, ami a Starter-ben, és még:",
@@ -81,14 +81,15 @@
       ]
     },
     "pro": {
-      "name": "Pro",
+      "name": "Custom",
       "price": "699 000",
-      "delivery": "Elkészítés: 1–2 nap",
-      "description": "Prémium szolgáltatásoknak és növekvő vállalkozásoknak",
+      "delivery": "Elkészítés: 3–5 nap",
+      "description": "Teljesen egyedi megoldás — bármi megvalósítható",
       "features": [
         "Minden, ami a Business-ben, és még:",
         "Részletfizetés elérhető",
-        "Az Ön igényeire szabott egyedi megoldások",
+        "Webshop, ügynökségi oldal, márkaoldal — bármi",
+        "Egyedi funkciók az Ön igényei szerint",
         "Online fizetés elfogadása",
         "Termék- vagy szolgáltatáskatalógus",
         "Kiemelt ügyfélszolgálat"
@@ -212,7 +213,7 @@
       "planOptions": {
         "starter": "Starter – 149 000 HUF",
         "business": "Business – 329 000 HUF",
-        "pro": "Pro – 699 000 HUF",
+        "pro": "Custom – 699 000 HUF",
         "unsure": "Még nem tudom"
       },
       "message": "Üzenet",
