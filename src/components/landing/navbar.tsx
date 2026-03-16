@@ -110,7 +110,7 @@ export function Navbar() {
             asChild
             className="hidden rounded-full bg-foreground px-6 text-background hover:bg-foreground/90 md:inline-flex"
           >
-            <a href="#contact">{t("getStarted")}</a>
+            <a href="#contact">{t("contact")}</a>
           </Button>
 
           {/* Mobile Menu Toggle */}
@@ -148,7 +148,7 @@ export function Navbar() {
               className="mt-2 rounded-full bg-foreground text-background hover:bg-foreground/90"
             >
               <a href="#contact" onClick={() => setMobileOpen(false)}>
-                {t("getStarted")}
+                {t("contact")}
               </a>
             </Button>
           </div>

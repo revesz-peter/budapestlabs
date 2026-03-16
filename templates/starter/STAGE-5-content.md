@@ -10,7 +10,7 @@ Both `src/messages/en.json` and `src/messages/hu.json` must have identical keys.
     "about": "About",
     "services": "Services",
     "contact": "Contact",
-    "getStarted": "Get Started"
+    "contact": "Contact"
   },
   "hero": {
     "badge": "{{SHORT_TAGLINE}}",
