@@ -53,8 +53,8 @@
     "choosePlan": "Csomag választása",
     "popular": "Népszerű",
     "starter": {
-      "name": "Starter",
-      "price": "149 000",
+      "name": "Kezdő csomag",
+      "price": "179 000",
       "delivery": "Elkészítés: ≤6 óra",
       "description": "Egyszerű, professzionális weboldal",
       "features": [
@@ -67,12 +67,12 @@
       ]
     },
     "business": {
-      "name": "Business",
-      "price": "329 000",
+      "name": "Business csomag",
+      "price": "379 000",
       "delivery": "Elkészítés: 1–2 nap",
       "description": "Szolgáltatóknak és helyi vállalkozásoknak",
       "features": [
-        "Minden, ami a Starter-ben, és még:",
+        "Minden, ami a Kezdő csomagban, és még:",
         "6–10 oldal",
         "Foglalási / időpontfoglaló rendszer",
         "Google Térkép beágyazás",
@@ -81,18 +81,18 @@
       ]
     },
     "pro": {
-      "name": "Custom",
-      "price": "699 000",
+      "name": "Egyedi megoldás",
+      "price": "799 000",
       "delivery": "Elkészítés: 3–5 nap",
       "description": "Teljesen egyedi megoldás — bármi megvalósítható",
       "features": [
-        "Minden, ami a Business-ben, és még:",
+        "Minden, ami a Business csomagban, és még:",
         "Részletfizetés elérhető",
         "Webshop, ügynökségi oldal, márkaoldal — bármi",
         "Egyedi funkciók az Ön igényei szerint",
         "Online fizetés elfogadása",
-        "Termék- vagy szolgáltatáskatalógus",
-        "Kiemelt ügyfélszolgálat"
+        "Kiemelt ügyfélszolgálat",
+        "Ugyanaz a technológia, amit a vezető ügynökségek és iparági vezetők használnak"
       ]
     }
   },
@@ -184,7 +184,7 @@
     },
     "rows": {
       "delivery": { "label": "Elkészítési idő", "diy": "Hetek–hónapok", "agency": "4–8 hét", "us": "≤6 óra" },
-      "price": { "label": "Ár", "diy": "~30k HUF/hó, örökre", "agency": "500k–2M+ HUF", "us": "149k HUF-tól" },
+      "price": { "label": "Ár", "diy": "~30k HUF/hó, örökre", "agency": "1,2M–4M+ HUF", "us": "179k HUF-tól" },
       "quality": { "label": "Dizájn minőség", "diy": "Sablon", "agency": "Egyedi", "us": "Professzionális" },
       "tech": { "label": "Technológia", "diy": "Zárt platform", "agency": "Gyakran elavult", "us": "Legmodernebb és jövőálló" },
       "security": { "label": "Biztonság", "diy": "Az Ön felelőssége", "agency": "Változó", "us": "Teljesen biztonságos" },
@@ -211,9 +211,9 @@
       "plan": "Érdeklődés",
       "planPlaceholder": "Válasszon csomagot...",
       "planOptions": {
-        "starter": "Starter – 149 000 HUF",
-        "business": "Business – 329 000 HUF",
-        "pro": "Custom – 699 000 HUF",
+        "starter": "Kezdő csomag – 179 000 HUF",
+        "business": "Business csomag – 379 000 HUF",
+        "pro": "Egyedi megoldás – 799 000 HUF",
         "unsure": "Még nem tudom"
       },
       "message": "Üzenet",

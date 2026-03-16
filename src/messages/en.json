@@ -54,7 +54,7 @@
     "popular": "Popular",
     "starter": {
       "name": "Starter",
-      "price": "370",
+      "price": "450",
       "delivery": "Delivery: ≤6 hours",
       "description": "For freelancers and small businesses",
       "features": [
@@ -68,7 +68,7 @@
     },
     "business": {
       "name": "Business",
-      "price": "820",
+      "price": "950",
       "delivery": "Delivery: 1–2 days",
       "description": "For service providers and appointment-based businesses",
       "features": [
@@ -82,7 +82,7 @@
     },
     "pro": {
       "name": "Custom",
-      "price": "1,750",
+      "price": "1,990",
       "delivery": "Delivery: 3–5 days",
       "description": "Fully custom solution — anything is possible",
       "features": [
@@ -91,8 +91,8 @@
         "Webshop, agency site, brand page — anything",
         "Custom features built for your specific needs",
         "Accept payments online",
-        "Product or service catalog",
-        "Priority support"
+        "Priority support",
+        "Built with the same technology trusted by top agencies and industry leaders"
       ]
     }
   },
@@ -184,7 +184,7 @@
     },
     "rows": {
       "delivery": { "label": "Delivery time", "diy": "Weeks–months", "agency": "4–8 weeks", "us": "≤6 hours" },
-      "price": { "label": "Price", "diy": "~75 EUR/month, forever", "agency": "1,200–5,000+ EUR", "us": "From 370 EUR" },
+      "price": { "label": "Price", "diy": "~75 EUR/month, forever", "agency": "3,000–10,000+ EUR", "us": "From 450 EUR" },
       "quality": { "label": "Design quality", "diy": "Generic template", "agency": "Custom", "us": "Professional" },
       "tech": { "label": "Technology", "diy": "Closed platform", "agency": "Often outdated", "us": "Latest & future-proof" },
       "security": { "label": "Security", "diy": "Your responsibility", "agency": "Varies", "us": "Fully secure" },
@@ -211,9 +211,9 @@
       "plan": "Interested in",
       "planPlaceholder": "Select a plan...",
       "planOptions": {
-        "starter": "Starter – 370 EUR",
-        "business": "Business – 820 EUR",
-        "pro": "Custom – 1,750 EUR",
+        "starter": "Starter – 450 EUR",
+        "business": "Business – 950 EUR",
+        "pro": "Custom – 1,990 EUR",
         "unsure": "Not sure yet"
       },
       "message": "Message",
