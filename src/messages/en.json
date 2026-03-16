@@ -1,17 +1,16 @@
 {
   "nav": {
-    "howItWorks": "How It Works",
+    "howItWorks": "Process",
     "pricing": "Pricing",
     "faq": "FAQ",
-    "contact": "Contact",
-    "getStarted": "Get Started"
+    "getStarted": "Contact"
   },
   "hero": {
     "badge": "Modern, secure, fast",
     "title": "Your website in 6 hours.",
     "subtitle": "Stop losing customers to an outdated website. Get a secure, lightning-fast site — and only pay when you're happy with the result.",
     "cta": "Get Started",
-    "demo": "Book a Demo",
+    "demo": "Free Consultation",
     "trust": {
       "payAfter": "Only pay after delivery",
       "delivery": "≤6 hour delivery",
@@ -24,7 +23,7 @@
     "satisfaction": "client satisfaction"
   },
   "howItWorks": {
-    "label": "How It Works",
+    "label": "Process",
     "title": "Four simple steps",
     "subtitle": "From order to live website — within 6 hours.",
     "steps": {

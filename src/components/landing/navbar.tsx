@@ -13,7 +13,6 @@ const navLinks = [
   { key: "howItWorks", href: "#how-it-works" },
   { key: "pricing", href: "#pricing" },
   { key: "faq", href: "#faq" },
-  { key: "contact", href: "#contact" },
 ] as const;
 
 export function Navbar() {

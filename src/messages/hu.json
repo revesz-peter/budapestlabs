@@ -1,17 +1,16 @@
 {
   "nav": {
-    "howItWorks": "Hogyan működik",
+    "howItWorks": "Folyamat",
     "pricing": "Árak",
     "faq": "GYIK",
-    "contact": "Kapcsolat",
-    "getStarted": "Kezdjük el"
+    "getStarted": "Kapcsolat"
   },
   "hero": {
     "badge": "Modern, biztonságos, gyors",
     "title": "Weboldal 6 óra alatt.",
     "subtitle": "Ne veszítsen több ügyfelet elavult weboldal miatt. Biztonságos, villámgyors weboldal — és csak akkor fizet, ha elégedett az eredménnyel.",
     "cta": "Kezdjük el",
-    "demo": "Demo foglalása",
+    "demo": "Ingyenes konzultáció",
     "trust": {
       "payAfter": "Csak átadás után fizet",
       "delivery": "≤6 órás elkészítés",
@@ -24,7 +23,7 @@
     "satisfaction": "ügyfél elégedettség"
   },
   "howItWorks": {
-    "label": "Hogyan működik",
+    "label": "Folyamat",
     "title": "Négy egyszerű lépés",
     "subtitle": "A megrendeléstől a kész weboldalig — 6 órán belül.",
     "steps": {
