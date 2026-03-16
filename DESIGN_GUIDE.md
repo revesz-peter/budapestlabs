@@ -1,349 +1,260 @@
-# Budapest Labs UI/UX Design Guide
+# Design System
 
-This document defines the UI/UX patterns for Budapest Labs. Use this guide when generating UI code to ensure consistency across the platform.
-
----
-
-## Design Philosophy
-
-**Monochrome clarity, Scandinavian calm.** The design favors:
-- Black and white palette with no accent colors
-- Glassmorphism for depth and layering
-- Generous whitespace and breathing room
-- Clean typography hierarchy
-- Subtle, purposeful animations
-- Borders and translucency over heavy containers
+Monochrome, theme-aware design system built on Tailwind CSS v4, shadcn/ui, and Framer Motion. Scandinavian minimalism — clean, not flashy.
 
 ---
 
-## Foundation
+## Color System
 
-### Component Library
-- **shadcn/ui + Radix UI**
-- Import pattern: `import { Button } from "@/components/ui/button"`
+All colors use **semantic Tailwind tokens**. Never hardcode `text-white`, `bg-black`, etc.
 
-### Typography
-- **Primary font**: Inter — clean, geometric, Scandinavian feel
-- **Weight scale**: 400 (body), 500 (medium), 600 (semibold), 700 (bold)
-- **Headings**: Inter Bold or Semibold, generous tracking
-- No monospace font needed for the marketing site
+### Semantic Tokens
 
-### Color System
+| Token | Light Mode | Dark Mode | Usage |
+|-------|-----------|-----------|-------|
+| `background` | `oklch(0.985 0 0)` | `oklch(0 0 0)` | Page background |
+| `foreground` | `oklch(0.09 0 0)` | `oklch(0.97 0 0)` | Primary text |
+| `muted-foreground` | `oklch(0.45 0 0)` | `oklch(0.55 0 0)` | Secondary text |
+| `border` | `foreground/10` | `foreground/10` | Default borders |
+| `input` | `foreground/10` | `foreground/10` | Input borders |
 
-The entire UI is monochrome. Depth comes from opacity, blur, and layering — not color.
+### Opacity Scale
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `background` | `#000000` / `#0a0a0a` | Page background |
-| `foreground` | `#fafafa` | Primary text |
-| `muted` | `white/60` | Secondary text, descriptions |
-| `muted-foreground` | `white/40` | Tertiary text, placeholders |
-| `border` | `white/10` | Default borders |
-| `border-strong` | `white/20` | Emphasized borders |
-| `surface` | `white/5` | Glass panel backgrounds |
-| `surface-hover` | `white/10` | Hover states on glass panels |
-| `destructive` | `#ef4444` | Delete actions, errors (only color exception) |
+Use `foreground` with opacity for layered depth:
 
-### Icons
-- **Lucide React** throughout
-- Size convention: `h-4 w-4` (inline), `h-5 w-5` (standalone), `h-6 w-6` (feature icons)
+| Class | Usage |
+|-------|-------|
+| `text-foreground` | Primary text |
+| `text-muted-foreground` | Secondary text, descriptions |
+| `text-foreground/60` | Feature list items, labels |
+| `text-foreground/30` | Icons, tertiary elements |
+| `bg-foreground/5` | Subtle surface tint |
+| `bg-foreground/[0.02]` | Hover states on list items |
+| `border-foreground/15` | Emphasized borders |
+| `border-foreground/20` | Strong borders (buttons, active states) |
 
-### Animations
-- **Framer Motion** for all animations
-- Preferred effects: fade-in, slide-up, scale-in
-- Duration: 0.3s–0.6s
-- Easing: `ease-out` or `[0.25, 0.1, 0.25, 1]`
-- No bouncing, no spring physics, no flashy effects
-- Stagger children by 0.05s–0.1s for list reveals
+### Accent Colors
+
+Minimal, reserved for specific uses only:
+
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Violet | `rgba(167, 139, 250, 0.4)` | Gradient border on popular pricing card |
+| Indigo | `rgba(129, 140, 248, 0.15)` | Gradient border midpoint |
+| Blue | `#2563eb`, `#3b82f6` | Hero mesh gradient background |
+| Teal | `#0d9488`, `#06b6d4` | Hero mesh gradient background |
+
+No other color accents. No glow effects, text shimmer, or heavy visual effects.
 
 ---
 
-## Glassmorphism System
+## Typography
 
-Glass is the primary visual treatment for elevated surfaces. Use it instead of solid cards.
+**Font:** Inter (via `@theme inline { --font-sans: "Inter" }`)
 
-### Glass Panel (Standard)
-```tsx
-<div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl">
-  {/* Content */}
-</div>
-```
+### Scale
 
-### Glass Panel (Hover Interactive)
-```tsx
-<div className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl transition-colors hover:bg-white/10 hover:border-white/20">
-  {/* Content */}
-</div>
-```
+| Element | Classes |
+|---------|---------|
+| Hero H1 | `text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight` |
+| Section H2 | `text-3xl md:text-4xl font-bold` |
+| Large H2 | `text-4xl md:text-5xl lg:text-6xl font-bold` |
+| Card H3 | `text-xl font-semibold` |
+| Section label | `text-sm font-medium uppercase tracking-widest text-muted-foreground` |
+| Body | `text-base` or `text-lg text-muted-foreground` |
+| Small | `text-sm` |
+| Tiny | `text-xs` |
 
-### Glass Panel (Highlighted / Active)
-```tsx
-<div className="rounded-2xl border border-white/20 bg-white/10 backdrop-blur-xl">
-  {/* Content */}
-</div>
-```
+### Weight Scale
+400 (body), 500 (medium), 600 (semibold), 700 (bold)
 
-### Glass Utility Classes (in globals.css)
+---
+
+## Glass Card System
+
+Three CSS utility classes in `globals.css`. Theme-aware — scoped under `.dark` and `:root:not(.dark)`. No `@apply`, no `backdrop-blur`.
+
+### `.glass` — Static card
 ```css
-.glass {
-  @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl;
-}
+/* Dark */
+border-radius: 1rem;
+border: 1px solid rgba(255, 255, 255, 0.08);
+background: rgba(255, 255, 255, 0.04);
 
-.glass-hover {
-  @apply glass transition-colors hover:bg-white/10 hover:border-white/20;
-}
+/* Light */
+border: 1px solid rgba(0, 0, 0, 0.06);
+background: rgba(0, 0, 0, 0.02);
+```
 
-.glass-active {
-  @apply rounded-2xl border border-white/20 bg-white/10 backdrop-blur-xl;
+### `.glass-hover` — Interactive card
+Same base as `.glass` + transition on hover:
+```css
+/* Dark hover */
+background: rgba(255, 255, 255, 0.07);
+border-color: rgba(255, 255, 255, 0.15);
+
+/* Light hover */
+background: rgba(0, 0, 0, 0.04);
+border-color: rgba(0, 0, 0, 0.1);
+```
+
+### `.glass-active` — Highlighted card (e.g. popular plan)
+```css
+/* Dark */
+border: 1px solid rgba(255, 255, 255, 0.15);
+background: rgba(255, 255, 255, 0.06);
+
+/* Light */
+border: 1px solid rgba(0, 0, 0, 0.1);
+background: rgba(0, 0, 0, 0.03);
+```
+
+### Gradient Border (popular pricing card only)
+```css
+.gradient-border::before {
+  background: linear-gradient(
+    180deg,
+    rgba(167, 139, 250, 0.4) 0%,
+    rgba(129, 140, 248, 0.15) 50%,
+    rgba(255, 255, 255, 0.05) 100%  /* rgba(0,0,0,0.05) in light */
+  );
+  /* Uses mask-composite for border-only effect */
 }
 ```
+Combined with: `shadow-[0_0_80px_-20px_rgba(139,92,246,0.15)]`
 
 ---
 
-## Layout Structure
-
-### Landing Page Layout
-```tsx
-<main className="min-h-screen bg-background text-foreground">
-  <Navbar />
-  <section>{/* Hero */}</section>
-  <section>{/* How It Works */}</section>
-  <section>{/* Pricing */}</section>
-  <section>{/* Add-ons */}</section>
-  <section>{/* FAQ */}</section>
-  <section>{/* Contact */}</section>
-  <Footer />
-</main>
-```
+## Layout
 
 ### Section Container
 ```tsx
 <section className="px-6 py-24 md:px-8 lg:px-16">
   <div className="mx-auto max-w-6xl">
-    {/* Section content */}
+    {/* Content */}
   </div>
 </section>
 ```
 
----
-
-## Content Grouping Patterns
-
-### DO: Use Glass Panels for Feature Cards
+### Section Header
 ```tsx
-<div className="glass p-8">
-  <Icon className="h-6 w-6 text-white/60 mb-4" />
-  <h3 className="text-lg font-semibold mb-2">Title</h3>
-  <p className="text-sm text-white/60">Description text.</p>
+<div className="mb-16 text-center">
+  <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
+    Label
+  </p>
+  <h2 className="text-3xl font-bold md:text-4xl">Title</h2>
+  <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+    Subtitle text.
+  </p>
 </div>
 ```
 
-### DO: Use Border Dividers for Sections
-```tsx
-<div className="border-t border-white/10" />
-```
+### Spacing Reference
 
-### DO: Use divide-y for Lists
-```tsx
-<div className="flex flex-col divide-y divide-white/10">
-  {items.map(item => (
-    <div key={item.id} className="flex items-center justify-between py-4">
-      {/* Item content */}
-    </div>
-  ))}
-</div>
-```
-
-### DO: Wrap Tables with Glass Border
-```tsx
-<div className="rounded-xl border border-white/10 overflow-hidden">
-  <Table>
-    <TableHeader>...</TableHeader>
-    <TableBody>...</TableBody>
-  </Table>
-</div>
-```
-
-### DON'T: Use Solid Cards
-No solid background cards. Always use glass or transparent containers.
-
-### DON'T: Use Color for Emphasis
-No colored backgrounds, badges, or highlights. Use white opacity variations and border weight instead.
+| Context | Class |
+|---------|-------|
+| Page horizontal padding | `px-6 md:px-8 lg:px-16` |
+| Section vertical padding | `py-24` |
+| Max content width | `max-w-6xl mx-auto` |
+| Section dividers | `border-t border-border` |
+| Card padding | `p-6` or `p-8` |
+| Grid gaps | `gap-6` |
+| Form field spacing | `space-y-2` (within), `gap-6` (grid) |
 
 ---
 
-## Component Patterns
+## Components
 
 ### Buttons
 
-**Primary (CTA):**
+All buttons use `rounded-full`. ShadCN `Button` component.
+
+**Primary (solid):**
 ```tsx
-<Button className="bg-white text-black hover:bg-white/90 rounded-full px-8 py-3 font-medium">
-  Get Started
-</Button>
+<Button className="rounded-full bg-foreground px-8 text-base text-background hover:bg-foreground/90">
 ```
 
-**Secondary (Ghost):**
+**Secondary (ghost/outline):**
 ```tsx
-<Button variant="ghost" className="text-white/60 hover:text-white hover:bg-white/5 rounded-full">
-  Learn More
-</Button>
+<Button variant="ghost" className="rounded-full border border-foreground/20 text-base text-foreground hover:bg-foreground/5">
 ```
 
-**Outline:**
+**Non-popular pricing:**
 ```tsx
-<Button variant="outline" className="border-white/20 text-white hover:bg-white/5 rounded-full">
-  Contact Us
-</Button>
+<Button className="w-full rounded-full border border-foreground/20 bg-transparent text-foreground hover:bg-foreground/5">
 ```
 
-### Navigation
+### Badge
 
-**Navbar:**
+**Hero badge (pill):**
 ```tsx
-<nav className="fixed top-0 w-full z-50 border-b border-white/10 bg-black/50 backdrop-blur-xl">
-  <div className="mx-auto max-w-6xl flex items-center justify-between px-6 py-4">
-    <Logo />
-    <NavLinks />
-    <div className="flex items-center gap-4">
-      <LanguageSwitcher />
-      <CTAButton />
-    </div>
-  </div>
+<span className="inline-flex items-center gap-2 rounded-full border border-border bg-foreground/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+```
+
+**Popular badge (solid):**
+```tsx
+<Badge className="border-transparent bg-foreground text-background">
+```
+
+### Navbar
+
+```tsx
+{/* Container — transparent by default, glass on scroll */}
+<nav className="fixed top-0 z-50 w-full transition-all duration-300">
+  {/* Scrolled: border-b border-border bg-background/80 backdrop-blur-xl */}
+  {/* Default: bg-transparent */}
 </nav>
-```
 
-**Nav Link:**
-```tsx
-<a className="text-sm text-white/60 hover:text-white transition-colors">
-  Link Text
-</a>
-```
+{/* Nav link */}
+<a className="text-sm text-muted-foreground transition-colors hover:text-foreground">
 
-### Language Switcher
-```tsx
-<div className="flex items-center rounded-full border border-white/10 bg-white/5 p-1">
-  <button className={cn(
-    "rounded-full px-3 py-1 text-xs font-medium transition-colors",
-    isActive ? "bg-white text-black" : "text-white/60 hover:text-white"
-  )}>
-    HU
-  </button>
-  <button className={cn(
-    "rounded-full px-3 py-1 text-xs font-medium transition-colors",
-    isActive ? "bg-white text-black" : "text-white/60 hover:text-white"
-  )}>
-    EN
-  </button>
+{/* Language switcher */}
+<div className="rounded-full border border-border bg-foreground/5 p-1">
+  {/* Active */}  <button className="rounded-full bg-foreground px-3 py-1 text-xs font-medium text-background">
+  {/* Inactive */} <button className="rounded-full px-3 py-1 text-xs font-medium text-muted-foreground hover:text-foreground">
 </div>
 ```
 
-### Pricing Card
+### Form Fields
+
 ```tsx
-<div className={cn(
-  "glass p-8 flex flex-col",
-  isPopular && "glass-active ring-1 ring-white/20"
-)}>
-  <h3 className="text-lg font-semibold mb-1">{planName}</h3>
-  <p className="text-sm text-white/40 mb-6">{description}</p>
-  <p className="text-4xl font-bold mb-8">
-    {price} <span className="text-base font-normal text-white/40">HUF</span>
-  </p>
-  <ul className="space-y-3 mb-8 flex-1">
-    {features.map(f => (
-      <li key={f} className="flex items-center gap-3 text-sm text-white/60">
-        <Check className="h-4 w-4 text-white/40 shrink-0" />
-        {f}
-      </li>
-    ))}
-  </ul>
-  <Button className="bg-white text-black hover:bg-white/90 rounded-full w-full">
-    Choose Plan
-  </Button>
-</div>
+<Label className="text-sm text-foreground/60">
+
+<Input className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0" />
+
+<Textarea className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0" />
+
+<select className="rounded-xl border border-border bg-foreground/5 text-foreground focus:border-foreground/30 focus:outline-none">
 ```
 
 ### FAQ Accordion
+
 ```tsx
-<Accordion type="single" collapsible>
-  <AccordionItem value="q1" className="border-white/10">
-    <AccordionTrigger className="text-left text-white hover:text-white/80">
-      Question text?
-    </AccordionTrigger>
-    <AccordionContent className="text-white/60">
-      Answer text.
-    </AccordionContent>
-  </AccordionItem>
-</Accordion>
+<AccordionItem className="border-border">
+  <AccordionTrigger className="text-left text-foreground hover:text-foreground/80 hover:no-underline">
+  <AccordionContent className="text-muted-foreground">
 ```
 
-### Form Field
-```tsx
-<div className="space-y-2">
-  <Label htmlFor="name" className="text-sm text-white/60">Name</Label>
-  <Input
-    id="name"
-    placeholder="Enter your name"
-    className="border-white/10 bg-white/5 text-white placeholder:text-white/30 focus:border-white/30 focus:ring-0 rounded-xl"
-  />
-</div>
-```
+### Icons
 
-### Section Header
-```tsx
-<div className="text-center mb-16">
-  <p className="text-sm font-medium text-white/40 uppercase tracking-widest mb-4">
-    Section Label
-  </p>
-  <h2 className="text-3xl md:text-4xl font-bold mb-4">
-    Section Title
-  </h2>
-  <p className="text-lg text-white/60 max-w-2xl mx-auto">
-    Section description text goes here.
-  </p>
-</div>
-```
+**Lucide React** throughout.
+
+| Size | Class | Usage |
+|------|-------|-------|
+| Inline | `h-3.5 w-3.5` | Inside text, delivery info |
+| Small | `h-4 w-4` | Checkmarks, list icons |
+| Standard | `h-5 w-5` | Standalone icons, addons |
+| Feature | `h-6 w-6` | Step icons, feature highlights |
+
+Default color: `text-foreground/30` with `group-hover:text-foreground/50`
 
 ---
 
-## Empty States
-```tsx
-<div className="flex flex-col items-center justify-center py-24 text-center">
-  <Icon className="h-12 w-12 text-white/20 mb-6" />
-  <h3 className="text-lg font-semibold mb-2">No items yet</h3>
-  <p className="text-sm text-white/40 mb-6">Description text.</p>
-  <Button className="bg-white text-black hover:bg-white/90 rounded-full">
-    Create Item
-  </Button>
-</div>
-```
+## Animation Patterns
 
----
+**Framer Motion** only. No CSS animations except pulse/spin for loading states.
 
-## Loading States
-
-**Skeleton:**
-```tsx
-<div className="space-y-4">
-  <div className="h-8 w-48 bg-white/5 animate-pulse rounded-xl" />
-  <div className="h-4 w-full bg-white/5 animate-pulse rounded-xl" />
-  <div className="h-4 w-3/4 bg-white/5 animate-pulse rounded-xl" />
-</div>
-```
-
-**Button Loading:**
-```tsx
-<Button disabled={isLoading} className="bg-white text-black rounded-full">
-  {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-  Save
-</Button>
-```
-
----
-
-## Framer Motion Patterns
-
-### Fade In on Scroll
+### Scroll-triggered (most sections)
 ```tsx
 <motion.div
   initial={{ opacity: 0, y: 20 }}
@@ -351,105 +262,97 @@ No colored backgrounds, badges, or highlights. Use white opacity variations and 
   viewport={{ once: true, margin: "-100px" }}
   transition={{ duration: 0.5, ease: "easeOut" }}
 >
-  {/* Content */}
-</motion.div>
 ```
 
-### Staggered Children
+### Staggered children
 ```tsx
 <motion.div
   initial="hidden"
   whileInView="visible"
-  viewport={{ once: true }}
-  variants={{
-    visible: { transition: { staggerChildren: 0.08 } },
-  }}
+  viewport={{ once: true, margin: "-100px" }}
+  variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
 >
-  {items.map(item => (
-    <motion.div
-      key={item.id}
-      variants={{
-        hidden: { opacity: 0, y: 20 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
-      }}
-    >
-      {/* Item */}
-    </motion.div>
-  ))}
+  <motion.div variants={{
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } }
+  }} />
 </motion.div>
 ```
 
-### Hover Scale
+### Page load (hero only)
 ```tsx
-<motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.2 }}>
-  {/* Card content */}
-</motion.div>
+initial={{ opacity: 0, y: 20 }}
+animate={{ opacity: 1, y: 0 }}
+transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
 ```
 
----
-
-## Spacing Reference
-
-| Context | Class |
-|---------|-------|
-| Page horizontal padding | `px-6 md:px-8 lg:px-16` |
-| Section vertical padding | `py-24` |
-| Max content width | `max-w-6xl mx-auto` |
-| Between major sections | `border-t border-white/10` |
-| Within sections | `space-y-6` or `space-y-8` |
-| Between form fields | `space-y-4` |
-| Component gaps | `gap-4` or `gap-6` |
-| Glass card padding | `p-6` or `p-8` |
-| Grid gaps | `gap-6` or `gap-8` |
-
----
-
-## Badge Variants
-
-```tsx
-{/* Default */}
-<Badge className="bg-white/10 text-white border-white/20 hover:bg-white/15">
-  Default
-</Badge>
-
-{/* Muted */}
-<Badge className="bg-white/5 text-white/60 border-white/10">
-  Muted
-</Badge>
-
-{/* Popular / Highlighted */}
-<Badge className="bg-white text-black border-transparent">
-  Popular
-</Badge>
+### Reduced motion
+```css
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 ```
+
+**Rules:**
+- Always `once: true` on viewport
+- Duration: 0.3s–0.6s
+- Easing: `easeOut` only
+- No bouncing, spring physics, or flashy effects
+- Stagger: 0.06s–0.15s
 
 ---
 
 ## Responsive Breakpoints
 
-Follow Tailwind defaults:
-- `sm`: 640px
-- `md`: 768px
-- `lg`: 1024px
-- `xl`: 1280px
+Tailwind defaults: `sm` 640px, `md` 768px, `lg` 1024px, `xl` 1280px
 
-Key responsive patterns:
-- **Pricing grid**: 1 col → 2 col (md) → 3 col (lg)
-- **Feature grid**: 1 col → 2 col (md) → 3 col (lg)
-- **Section headings**: scale from `text-2xl` to `text-4xl` at `md`
-- **Navbar**: hamburger menu on mobile, inline links on `md`+
+| Pattern | Breakpoints |
+|---------|-------------|
+| Pricing grid | 1 col → 3 col (`lg:grid-cols-3`) |
+| Step grid | 1 col → 2 col → 4 col (`md:grid-cols-2 lg:grid-cols-4`) |
+| Section headings | `text-3xl` → `md:text-4xl` |
+| Navbar | Hamburger → inline links at `md` |
 
 ---
 
-## What NOT to Do
+## Visual Effects
+
+### Noise Grain Overlay
+```css
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.025;
+  /* SVG fractalNoise texture */
+}
+```
+
+### Text Selection
+- Dark: `rgba(255, 255, 255, 0.15)` background
+- Light: `rgba(0, 0, 0, 0.1)` background
+
+### Smooth Scrolling
+```css
+html { scroll-behavior: smooth; }
+```
+
+---
+
+## Rules
 
 | Don't | Do Instead |
 |-------|------------|
-| Use any accent color (orange, blue, etc.) | Use white opacity variations for emphasis |
-| Use solid background cards | Use glass panels (`bg-white/5 backdrop-blur-xl`) |
-| Use sharp corners on panels | Use `rounded-2xl` for panels, `rounded-full` for buttons |
-| Use heavy drop shadows | Use `border border-white/10` for elevation |
-| Add bouncy or springy animations | Use subtle `ease-out` transitions |
-| Use bright colored badges | Use monochrome badges with opacity |
-| Over-decorate with gradients | At most one subtle radial gradient per section |
-| Use multiple font families | Stick to Inter only |
+| Hardcode `text-white`, `bg-black` | Use `text-foreground`, `bg-background` |
+| Use `@apply` with glass classes | Use plain CSS scoped by `.dark` / `:root:not(.dark)` |
+| Add accent colors freely | Monochrome only, violet reserved for pricing border |
+| Use solid background cards | Use `.glass`, `.glass-hover`, `.glass-active` |
+| Use sharp corners on panels | `rounded-2xl` for panels, `rounded-full` for buttons |
+| Add heavy shadows | Use borders for elevation |
+| Add glow, shimmer, or flashy effects | Keep it clean and minimal |
+| Use multiple font families | Inter only |
+| Use `backdrop-blur` in glass classes | Opacity-based depth only (no blur) |

@@ -100,9 +100,9 @@ src/
 ## Section order on page
 
 1. Navbar — fixed, scroll-aware, language switcher, theme toggle, mobile menu
-2. Hero — badge, headline, subtitle, CTA + demo booking (cal.com), trust signals, animated mesh gradient background
+2. Hero — badge, headline, subtitle, CTA + free consultation (cal.com), trust signals, animated mesh gradient background
 3. Stats — animated counters (50+ sites, ≤6h, 100% satisfaction)
-4. How It Works — 4 steps with staggered card animation
+4. Process (How It Works) — 4 steps with staggered card animation
 5. Comparison — 10-row table (delivery, price, quality, tech, security, speed, mobile, SEO, booking, effort)
 6. Pricing — 3 plans, Business highlighted as popular
 7. Add-ons — 5 optional extras

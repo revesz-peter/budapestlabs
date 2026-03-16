@@ -42,7 +42,7 @@ Structure:
 2. Badge pill — small uppercase label with icon (e.g., Zap icon + "Modern, secure, fast")
 3. Headline — massive bold text, the main selling point
 4. Subtitle — 1-2 sentences explaining the value proposition
-5. CTA buttons — primary "Get Started" + secondary "Book a Demo"
+5. CTA buttons — primary "Get Started"/"Kezdjük el" + secondary "Free Consultation"/"Ingyenes konzultáció"
 6. Trust signals — 3 small text items with icons (pay after delivery, fast, revision)
 
 ```tsx
