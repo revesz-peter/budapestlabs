@@ -1,15 +1,78 @@
 # Stage 2 — Design System
 
-## 2.1 Design philosophy
+## 2.1 Creative direction
 
-- **Scandinavian minimalism** — clean, spacious, not flashy
-- Dark/light mode with light as default
-- Monochromatic palette with subtle accent color
-- No glow effects, text shimmer, or heavy visual effects
+Before writing any code, stop and imagine the finished site from the visitor's perspective. Every design decision — theme, font, hero type, animation level, default color mode — flows from this.
+
+### Step 1: Understand the visitor
+
+Ask yourself: **Who is coming to this site, and what are they trying to do?**
+
+- A **dentist's** visitor wants to check services, find the phone number, and book. They're probably anxious. The site should feel calm, clean, and trustworthy. Get out of their way.
+- A **tattoo artist's** visitor wants to browse art and feel the artist's vibe. They're excited. The site should feel bold, visual, and atmospheric.
+- A **restaurant's** visitor wants to see the menu, check prices, and maybe reserve a table. They're hungry. The site should feel warm, appetizing, and easy to scan.
+- A **model agency's** visitor is a client or scout evaluating talent. They're professional but visually driven. The site should feel premium, editorial, and image-forward.
+- A **candle maker's** visitor wants to feel the craft and story. They're browsing, not rushing. The site should feel handmade, warm, and inviting.
+
+**Write one sentence describing what the visitor should feel when the page loads.** This is your creative direction. Every choice below should serve it.
+
+### Step 2: Set the visual intensity
+
+Not every site needs the same level of design. Match the visual intensity to the business:
+
+| Intensity | When to use | What it means |
+| --- | --- | --- |
+| **Minimal** | Dentist, lawyer, plumber, accountant, cleaning co. | No animated hero. Mesh gradient or plain background. Inter font. Monochrome or blue theme. Default light mode. Fast, clean, zero friction. |
+| **Warm** | Restaurant, bakery, cafe, family business, B&B | Typography and color do the work. Warm theme (amber, caffeine, studio-ghibli). Consider a serif heading font. Food/interior hero image. Subtle scroll animations only. |
+| **Visual** | Photographer, architect, model agency, interior designer | Full-bleed image hero. Gallery is the star. Dark mode default likely. Let the work speak — keep chrome minimal. |
+| **Atmospheric** | Tattoo artist, nightclub, wine bar, premium brand | Animated shader hero (AccretionShaders, AuroraShaders). Bold theme (cyberpunk, doom-64, dark-matter). Dark mode default. The site itself is part of the brand experience. |
+| **Storytelling** | Candle maker, craft brewery, artisan brand, pottery | NoiseShaders or WavesShaders. Earthy theme (studio-ghibli, caffeine). Story section is as important as products. Handwritten accent font optional. |
+
+Most sites are **Minimal** or **Warm**. Only go higher when the business genuinely benefits from it. Over-designing a plumber's site doesn't make it better — it makes it slower and harder to use.
+
+### Step 3: Make the design decisions
+
+Based on the creative direction and intensity level, decide:
+
+1. **Theme** — Which CSS theme file? (See CLIENT.md archetype → theme table)
+2. **Font** — Single font or heading/body pairing? (See CUSTOMIZATION.md)
+3. **Default color mode** — Light (most businesses) or dark (luxury, nightlife, creative, photography)?
+4. **Hero type** — Mesh gradient (safe default), full-bleed image (visual businesses), animated shader (atmospheric/creative), or minimal text-only?
+5. **Animation level** — Standard scroll fade-ins only (minimal/warm), or additional shader backgrounds and section dividers (atmospheric/storytelling)?
+6. **Section selection** — Which optional sections does this business need? FAQ? Pricing? Testimonials? Gallery? Don't add sections the business doesn't need.
+
+**Write these decisions down as a comment at the top of `page.tsx` before building.** This prevents drift — when you're deep in code, you can check back against the original intent.
+
+```tsx
+// Creative direction: [one sentence]
+// Intensity: minimal | warm | visual | atmospheric | storytelling
+// Theme: [theme-name] | Font: [font] | Mode: light | dark
+// Hero: mesh-gradient | image | shader ([which]) | minimal
+// Optional sections: [list]
+```
+
+### Common mistakes
+
+- **Over-animating service businesses.** A dentist with AccretionShaders behind the hero looks absurd. Stick to mesh gradient or no background.
+- **Under-designing creative businesses.** A photographer with Inter font and a blue theme looks generic. They need their work front and center with minimal chrome.
+- **Wrong default mode.** A children's education site in dark mode feels wrong. A high-end cocktail bar in light mode feels flat.
+- **Adding sections nobody needs.** A plumber doesn't need a Story section. A solo photographer doesn't need a Team section. Every section should earn its place.
+- **Ignoring the visitor's urgency.** Someone looking for a plumber at 10pm needs a phone number in 2 seconds. Someone browsing a pottery studio on a Sunday afternoon can linger. Design for the real scenario.
+
+---
+
+## 2.2 Design system defaults
+
+The technical defaults below apply to all sites. The creative direction above determines *how* you use them — which theme to apply, which font to load, which hero variant to build, and how much animation to add.
+
+- **Scandinavian minimalism** as the baseline — clean, spacious, not flashy
+- Dark/light mode with theme toggle (default mode set by creative direction)
+- Monochromatic palette with subtle accent color (theme determines which)
+- No glow effects, text shimmer, or heavy visual effects unless the intensity level calls for it
 - Smooth, subtle animations (Framer Motion with `whileInView`, `once: true`)
 - Mobile-first responsive design
 
-## 2.2 globals.css
+## 2.3 globals.css
 
 This is the foundation. Copy this into `src/app/globals.css`:
 
@@ -234,7 +297,7 @@ html {
 }
 ```
 
-## 2.3 Color rules
+## 2.4 Color rules
 
 ### ALWAYS use semantic tokens
 
@@ -258,7 +321,7 @@ RIGHT: text-foreground, bg-background, text-muted-foreground, border-border
 
 Hardcoded colors break in the opposite theme.
 
-## 2.4 Typography
+## 2.5 Typography
 
 - Font: **Inter** (Google Fonts, loaded in layout.tsx)
 - Weights: 100–900 (variable)
@@ -268,14 +331,14 @@ Hardcoded colors break in the opposite theme.
 - Small/labels: `text-sm text-muted-foreground` or `text-xs`
 - Section labels: `text-sm font-medium uppercase tracking-widest text-muted-foreground`
 
-## 2.5 Spacing patterns
+## 2.6 Spacing patterns
 
 - Section padding: `px-6 py-24 md:px-8 lg:px-16`
 - Max width: `mx-auto max-w-6xl` (main content), `max-w-3xl` (legal pages), `max-w-2xl` (forms)
 - Section header bottom margin: `mb-16`
 - Between sections: `<div className="border-t border-border" />`
 
-## 2.6 Card classes
+## 2.7 Card classes
 
 Use the `.glass`, `.glass-hover`, `.glass-active` CSS classes. Do NOT use `@apply` with them — they are plain CSS.
 
@@ -283,7 +346,7 @@ Use the `.glass`, `.glass-hover`, `.glass-active` CSS classes. Do NOT use `@appl
 - `.glass-hover` — interactive card (service cards, feature cards)
 - `.glass-active` — highlighted card (featured/popular item)
 
-## 2.7 Button patterns
+## 2.8 Button patterns
 
 ```tsx
 {/* Primary CTA */}
@@ -299,7 +362,7 @@ Use the `.glass`, `.glass-hover`, `.glass-active` CSS classes. Do NOT use `@appl
 
 All buttons use `rounded-full`. Primary buttons invert foreground/background.
 
-## 2.8 Animation patterns
+## 2.9 Animation patterns
 
 ```tsx
 {/* Fade in on scroll — use for all section content */}

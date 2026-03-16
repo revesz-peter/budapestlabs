@@ -1,4 +1,9 @@
-# Stage 4 — Page Sections
+# Stage 4 — Service Archetype
+
+> **Archetype:** Service — "I do things for people, they read about it, then contact me."
+> **Examples:** Car repair, salon, lawyer, dentist, plumber, trainer, consultant, therapist, vet, cleaning co.
+> **Sections:** Hero (mesh gradient) → About → Services → Contact
+> **Nav links:** about, services, contact
 
 ## 4.1 Section structure
 
@@ -34,6 +39,8 @@ Every section follows this pattern:
 All sections are `"use client"` and use `useTranslations("sectionName")`.
 
 ## 4.2 Hero section
+
+> **Optional:** For tech-forward service businesses (agencies, consultancies, IT services), replace the default `MeshGradientBackground` with `FlickeringGrid` or `CosmicWavesShaders` for a more dynamic hero. See CUSTOMIZATION.md "Animated backgrounds" for the full catalog and code snippets.
 
 The hero is the landing page's first impression. It does NOT use `whileInView` — it uses `animate` since it's visible on load.
 
@@ -125,6 +132,8 @@ className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:
 ```
 
 Form wraps in a `.glass` card with `p-8`. Submit button is full-width `rounded-full`.
+
+> **For businesses with physical locations**, add opening hours and address alongside the form — see CUSTOMIZATION.md "Opening hours display" for the code pattern, or use the extended contact layout from STAGE-4-catalog.md section 4.6.
 
 On submit, show a success message in a `.glass` card:
 
@@ -294,7 +303,16 @@ export function MeshGradientBackground({
 }
 ```
 
-## 4.7 Content rules
+## 4.7 Optional additions
+
+These sections are not part of the core Service archetype but can be added between Services and Contact when the business needs them. See CUSTOMIZATION.md for full code and translation patterns:
+
+- **Pricing / Packages** — for businesses with tiered pricing (trainers, consultants, salons)
+- **FAQ** — for businesses that get repetitive questions (lawyers, therapists, agencies)
+- **Testimonials** — for businesses that rely on social proof (trainers, therapists, consultants). Only use with real testimonials.
+- **Gallery** — for businesses that want to show their work or space (auto repair, salon, gym). Use the gallery from STAGE-4-showcase.md section 4.3.
+
+## 4.8 Content rules
 
 All user-facing text must come from translation files (`useTranslations`). Never hardcode text in components.
 

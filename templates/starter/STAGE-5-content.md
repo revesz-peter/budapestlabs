@@ -10,7 +10,7 @@ Both `src/messages/en.json` and `src/messages/hu.json` must have identical keys.
     "about": "About",
     "services": "Services",
     "contact": "Contact",
-    "contact": "Contact"
+    "cta": "Get Started"
   },
   "hero": {
     "badge": "{{SHORT_TAGLINE}}",
@@ -154,4 +154,130 @@ export default function robots(): MetadataRoute.Robots {
 - Use Next.js `<Image>` component for all images (auto-optimization)
 - Store client images in `public/images/`
 - Use descriptive alt text for accessibility and SEO
-- If client has no images, use high-quality stock photos or leave sections text-only
+- If client has no images, use high-quality stock photos (see CUSTOMIZATION.md) or leave sections text-only
+
+## 5.7 Archetype-specific translation keys
+
+Each archetype adds its own sections to the translation files. The base keys (`nav`, `hero`, `about`, `contact`, `footer`, `legal`) are shared across all archetypes. Add the archetype-specific keys below.
+
+### Showcase archetype — additional keys
+
+```json
+{
+  "gallery": {
+    "label": "Galéria",
+    "title": "Munkáim",
+    "subtitle": "Válogatás az eddigi munkáimból.",
+    "categories": {
+      "all": "Összes",
+      "category1": "Esküvő",
+      "category2": "Portré",
+      "category3": "Üzleti"
+    }
+  },
+  "team": {
+    "label": "Csapatunk",
+    "title": "Ismerd meg a csapatot",
+    "subtitle": "",
+    "members": {
+      "m1": { "name": "Név", "role": "Pozíció" }
+    }
+  }
+}
+```
+
+### Catalog archetype — additional keys
+
+```json
+{
+  "menu": {
+    "label": "Kínálatunk",
+    "title": "Étlapunk",
+    "subtitle": "Szezonális alapanyagokból, szeretettel készítve.",
+    "note": "Az árak az ÁFÁ-t tartalmazzák.",
+    "categories": {
+      "starters": {
+        "title": "Előételek",
+        "items": [
+          { "name": "Tétel neve", "description": "Leírás", "price": "2 490 Ft", "tags": [] }
+        ]
+      }
+    }
+  }
+}
+```
+
+Menu items use `t.raw("categories.starters.items")` to get the array.
+
+### Brand archetype — additional keys
+
+```json
+{
+  "collections": {
+    "label": "Kollekciók",
+    "title": "Fedezze fel termékeink",
+    "subtitle": "Kézzel készített, fenntartható anyagokból.",
+    "shopLink": "https://...",
+    "shopCta": "Vásárlás",
+    "items": {
+      "c1": { "title": "Kollekció neve", "description": "Leírás", "link": "https://..." }
+    }
+  },
+  "story": {
+    "label": "Történetünk",
+    "title": "A márka mögött",
+    "block1": "Szöveg...",
+    "block2": "Szöveg...",
+    "quote": "Idézet...",
+    "imageAlt": "Kép leírása"
+  }
+}
+```
+
+### Accommodation archetype — additional keys
+
+```json
+{
+  "rooms": {
+    "label": "Szobáink",
+    "title": "Szálláslehetőségek",
+    "subtitle": "Válassza ki az Önnek megfelelő szobát.",
+    "perNight": "éjszaka",
+    "bookCta": "Foglalás",
+    "bookingNote": "Online foglalás a",
+    "bookingLink": "https://...",
+    "amenityLabels": {
+      "wifi": "Wi-Fi",
+      "parking": "Parkoló",
+      "breakfast": "Reggeli",
+      "ac": "Légkondicionáló",
+      "bath": "Fürdőkád",
+      "tv": "TV",
+      "view": "Panoráma"
+    },
+    "items": {
+      "r1": {
+        "name": "Standard szoba",
+        "description": "Kényelmes szoba két főre.",
+        "capacity": "2 fő",
+        "price": "18 000 Ft",
+        "amenities": ["wifi", "parking", "breakfast", "tv"]
+      }
+    }
+  },
+  "location": {
+    "label": "Helyszín",
+    "title": "Hol találhat meg",
+    "subtitle": "Leírás...",
+    "mapTitle": "Térkép",
+    "attractionsTitle": "Látnivalók a közelben",
+    "attractions": {
+      "a1": { "name": "Látnivaló neve", "distance": "5 perc autóval" }
+    },
+    "gettingThereTitle": "Megközelítés",
+    "byCar": "Budapestről az M7-es autópályán kb. 1 óra 30 perc."
+  }
+}
+```
+
+Room amenities use `t.raw("items.r1.amenities")` to get the string array.

@@ -1,0 +1,90 @@
+/* Theme: Art Deco
+   Style: Elegant 1920s-inspired with gold and cream luxury aesthetics
+   Best for: Anything that should feel premium, timeless, and worth the price
+   Fonts: Delius Swash Caps (sans, serif, mono)
+
+   The Roaring Twenties never really ended — not in design. Art Deco channels the
+   glamour of that era with rich golds at oklch(0.75 0.15 85), warm creams, and the
+   geometric precision that defined everything from the Chrysler Building to vintage
+   Gatsby parties. It's maximalist minimalism: bold shapes, luxurious materials,
+   restrained color.
+
+   The aesthetic signals old-money sophistication — the kind of design that belongs
+   in grand hotels and jewelry advertisements. Use it for luxury brand websites,
+   high-end portfolio sites, creative agency showcases, event and wedding platforms,
+   architecture and design firms, or any project that should feel like it costs more
+   to look at.
+
+   Dark mode deepens into champagne golds against rich charcoal — evening glamour.
+*/
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(0.96 0.03 106.96);
+  --foreground: oklch(0.40 0.07 91.45);
+  --card: oklch(0.98 0.04 95.41);
+  --card-foreground: oklch(0.32 0 0);
+  --popover: oklch(0.98 0.04 95.41);
+  --popover-foreground: oklch(0.32 0 0);
+  --primary: oklch(0.77 0.14 91.05);
+  --primary-foreground: oklch(0 0 0);
+  --secondary: oklch(0.67 0.13 61.29);
+  --secondary-foreground: oklch(0 0 0);
+  --muted: oklch(0.93 0.03 106.91);
+  --muted-foreground: oklch(0.32 0 0);
+  --accent: oklch(0.89 0.18 95.32);
+  --accent-foreground: oklch(0.32 0 0);
+  --destructive: oklch(0.70 0.20 32.32);
+  --destructive-foreground: oklch(0.96 0.03 106.96);
+  --border: oklch(0.83 0.11 92.68);
+  --input: oklch(0.65 0.13 81.56);
+  --ring: oklch(0.75 0.15 83.98);
+  --chart-1: oklch(0.89 0.18 95.32);
+  --chart-2: oklch(0.67 0.13 61.29);
+  --chart-3: oklch(0.65 0.13 81.56);
+  --chart-4: oklch(0.75 0.15 83.98);
+  --chart-5: oklch(0.77 0.14 91.05);
+  --sidebar-background: oklch(0.96 0.03 106.96);
+  --sidebar-foreground: oklch(0.32 0 0);
+  --sidebar-primary: oklch(0.77 0.14 91.05);
+  --sidebar-primary-foreground: oklch(0.32 0 0);
+  --sidebar-accent: oklch(0.89 0.18 95.32);
+  --sidebar-accent-foreground: oklch(0.32 0 0);
+  --sidebar-border: oklch(0.65 0.13 81.56);
+  --sidebar-ring: oklch(0.75 0.15 83.98);
+}
+
+.dark {
+  --background: oklch(0.32 0 0);
+  --foreground: oklch(0.96 0.03 106.96);
+  --card: oklch(0.41 0 0);
+  --card-foreground: oklch(0.96 0.03 106.96);
+  --popover: oklch(0.41 0 0);
+  --popover-foreground: oklch(0.96 0.03 106.96);
+  --primary: oklch(0.84 0.17 82.56);
+  --primary-foreground: oklch(0 0 0);
+  --secondary: oklch(0.47 0.11 50.84);
+  --secondary-foreground: oklch(0.96 0.03 106.96);
+  --muted: oklch(0.44 0 0);
+  --muted-foreground: oklch(0.96 0.03 106.96);
+  --accent: oklch(0.66 0.14 80.23);
+  --accent-foreground: oklch(0 0 0);
+  --destructive: oklch(0.66 0.23 35.40);
+  --destructive-foreground: oklch(0.96 0.03 106.96);
+  --border: oklch(0.47 0.11 50.84);
+  --input: oklch(0.47 0.11 50.84);
+  --ring: oklch(0.65 0.13 81.56);
+  --chart-1: oklch(0.75 0.15 83.98);
+  --chart-2: oklch(0.47 0.11 50.84);
+  --chart-3: oklch(0.65 0.13 81.56);
+  --chart-4: oklch(0.75 0.15 83.98);
+  --chart-5: oklch(0.65 0.13 81.56);
+  --sidebar-background: oklch(0.32 0 0);
+  --sidebar-foreground: oklch(1.00 0 0);
+  --sidebar-primary: oklch(0.61 0.13 80.96);
+  --sidebar-primary-foreground: oklch(1.00 0 0);
+  --sidebar-accent: oklch(0.75 0.15 83.98);
+  --sidebar-accent-foreground: oklch(0.96 0.03 106.96);
+  --sidebar-border: oklch(0.47 0.11 50.84);
+  --sidebar-ring: oklch(0.65 0.13 81.56);
+}

@@ -74,12 +74,14 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
+        {/* Update font URL to match the chosen theme — check the theme file's comment header for recommended fonts. See CUSTOMIZATION.md "Font customization" for pairing suggestions. */}
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
           rel="stylesheet"
         />
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased">
+        {/* For dark-first themes (dark-matter, doom-64, cyberpunk, elegant-luxury), change defaultTheme to "dark" */}
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           <NextIntlClientProvider locale={locale} messages={messages}>
             {children}
@@ -95,7 +97,17 @@ Replace all `{{PLACEHOLDERS}}` with client values.
 
 ## 3.2 Main page
 
-Create `src/app/[locale]/page.tsx`:
+Create `src/app/[locale]/page.tsx`. Import and assemble sections based on the archetype:
+
+| Archetype | Imports (in order) |
+| --- | --- |
+| Service | Navbar, Hero, About, Services, Contact, Footer |
+| Showcase | Navbar, Hero, Gallery, About, Team (optional), Contact, Footer |
+| Catalog | Navbar, Hero, Menu, Gallery (optional), About, Contact, Footer |
+| Brand | Navbar, Hero, Collections, Story, Contact, Footer |
+| Accommodation | Navbar, Hero, Rooms, Gallery, Location, Contact, Footer |
+
+Example (Service archetype):
 
 ```tsx
 import { Navbar } from "@/components/landing/navbar";
@@ -122,7 +134,7 @@ export default function HomePage() {
 }
 ```
 
-Sections are separated by `border-t border-border` dividers.
+Sections are separated by `border-t border-border` dividers. Swap the imports for the chosen archetype — each component maps to its STAGE-4 file.
 
 ## 3.3 Navbar
 
@@ -149,6 +161,12 @@ import { ThemeToggle } from "@/components/landing/theme-toggle";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 
+// Adapt navLinks based on archetype:
+// Service:       about, services, contact
+// Showcase:      gallery, about, contact (optionally: team)
+// Catalog:       menu, gallery, contact (optionally: about)
+// Brand:         collections, story, contact
+// Accommodation: rooms, gallery, location, contact
 const navLinks = [
   { key: "about", href: "#about" },
   { key: "services", href: "#services" },
@@ -250,7 +268,7 @@ export function Navbar() {
             asChild
             className="hidden rounded-full bg-foreground px-6 text-background hover:bg-foreground/90 md:inline-flex"
           >
-            <a href="#contact">{t("contact")}</a>
+            <a href="#contact">{t("cta")}</a>
           </Button>
 
           {/* Mobile Menu Toggle */}
@@ -351,7 +369,7 @@ Layout: 4-column grid on desktop, stacked on mobile.
 ```
 
 - Brand column: business name, short description, social media icons
-- Navigation: links to page sections (#about, #services, #contact)
+- Navigation: links to page sections (adapt to match archetype's navLinks)
 - Legal: links to /privacy, /terms, /imprint
 - Contact: email with Mail icon
 

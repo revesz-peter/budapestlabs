@@ -1,260 +1,280 @@
-# Design System
+# Design Guide
 
-Monochrome, theme-aware design system built on Tailwind CSS v4, shadcn/ui, and Framer Motion. Scandinavian minimalism — clean, not flashy.
+General design principles and patterns for building sites with Tailwind CSS v4, shadcn/ui, next-themes, and Framer Motion. Not project-specific — these apply to every client site built from the starter template.
 
 ---
 
 ## Color System
 
-All colors use **semantic Tailwind tokens**. Never hardcode `text-white`, `bg-black`, etc.
+### Always use semantic tokens
 
-### Semantic Tokens
+Never hardcode colors like `text-white`, `bg-black`, `text-gray-500`. These break when the theme switches. Use the semantic CSS variable tokens that shadcn/ui provides:
 
-| Token | Light Mode | Dark Mode | Usage |
-|-------|-----------|-----------|-------|
-| `background` | `oklch(0.985 0 0)` | `oklch(0 0 0)` | Page background |
-| `foreground` | `oklch(0.09 0 0)` | `oklch(0.97 0 0)` | Primary text |
-| `muted-foreground` | `oklch(0.45 0 0)` | `oklch(0.55 0 0)` | Secondary text |
-| `border` | `foreground/10` | `foreground/10` | Default borders |
-| `input` | `foreground/10` | `foreground/10` | Input borders |
+| Token | Purpose |
+|-------|---------|
+| `background` | Page background |
+| `foreground` | Primary text |
+| `card` / `card-foreground` | Card surfaces and text |
+| `popover` / `popover-foreground` | Dropdowns, tooltips |
+| `primary` / `primary-foreground` | CTAs, key actions |
+| `secondary` / `secondary-foreground` | Less prominent actions |
+| `muted` / `muted-foreground` | Subdued surfaces, secondary text |
+| `accent` / `accent-foreground` | Highlights, hover states |
+| `destructive` / `destructive-foreground` | Errors, delete actions |
+| `border` | Default borders |
+| `input` | Input field borders |
+| `ring` | Focus rings |
 
-### Opacity Scale
+### Opacity layering
 
-Use `foreground` with opacity for layered depth:
+Use `foreground` with Tailwind opacity modifiers for depth instead of introducing new colors:
 
 | Class | Usage |
 |-------|-------|
 | `text-foreground` | Primary text |
 | `text-muted-foreground` | Secondary text, descriptions |
-| `text-foreground/60` | Feature list items, labels |
-| `text-foreground/30` | Icons, tertiary elements |
-| `bg-foreground/5` | Subtle surface tint |
-| `bg-foreground/[0.02]` | Hover states on list items |
-| `border-foreground/15` | Emphasized borders |
-| `border-foreground/20` | Strong borders (buttons, active states) |
+| `text-foreground/60` | Tertiary text, labels |
+| `text-foreground/30` | Icons, decorative elements |
+| `bg-foreground/5` | Subtle surface tint (cards, inputs) |
+| `bg-foreground/[0.02]` | Very subtle hover states |
+| `border-foreground/10` | Default borders |
+| `border-foreground/20` | Emphasized borders |
 
-### Accent Colors
+This approach keeps things monochrome and theme-safe — the exact same classes work in light and dark mode.
 
-Minimal, reserved for specific uses only:
+### OKLCH color format
 
-| Color | Hex | Usage |
-|-------|-----|-------|
-| Violet | `rgba(167, 139, 250, 0.4)` | Gradient border on popular pricing card |
-| Indigo | `rgba(129, 140, 248, 0.15)` | Gradient border midpoint |
-| Blue | `#2563eb`, `#3b82f6` | Hero mesh gradient background |
-| Teal | `#0d9488`, `#06b6d4` | Hero mesh gradient background |
+All theme CSS variables use OKLCH: `oklch(lightness chroma hue)`.
 
-No other color accents. No glow effects, text shimmer, or heavy visual effects.
+- **Lightness**: 0 (black) to 1 (white)
+- **Chroma**: 0 (gray) to ~0.4 (vivid)
+- **Hue**: 0–360 degrees (red=27, orange=70, yellow=100, green=145, blue=260, purple=300)
+
+Monochrome themes set chroma to 0. Colored themes increase chroma on specific tokens (primary, accent, destructive) while keeping surfaces neutral.
+
+### Accent color restraint
+
+Pick 1–2 accent colors max. Use them only for:
+- Primary CTA buttons
+- Hero background gradients
+- One highlighted element (e.g., popular pricing card border)
+- Chart/data visualization
+
+Everything else stays monochrome via semantic tokens. More accents = more visual noise = cheaper-looking result.
+
+---
+
+## Theme System
+
+### How themes work
+
+Themes are CSS files with `:root` (light) and `.dark` (dark) variable blocks. They live in `templates/themes/`. To apply a theme, copy its variable blocks into the project's `globals.css`, replacing the existing ones.
+
+The `@theme inline` block, `@layer base`, glass card classes, and all other CSS stays untouched — only the variable values change.
+
+### Dark/light mode
+
+- Managed by `next-themes` with `attribute="class"` strategy
+- `<html>` gets `class="dark"` when dark mode is active
+- `<html>` needs `suppressHydrationWarning` (required by next-themes)
+- Theme-dependent CSS must be scoped: `.dark .class` and `:root:not(.dark) .class`
+- Default theme should match the brand — luxury/creative sites often default to dark, service businesses to light
+
+### Theme-aware CSS gotchas
+
+- Glass card classes (`.glass`, `.glass-hover`, `.glass-active`) are plain CSS scoped by `.dark` / `:root:not(.dark)`. Do NOT use `@apply` with them — Tailwind v4 doesn't support `@apply` with custom utility classes that reference each other.
+- Selection colors, gradient borders, and other decorative CSS also need `.dark` / `:root:not(.dark)` scoping.
+- `backdrop-blur` is only visible when there's content behind the element. On solid backgrounds it does nothing — use opacity-based depth instead.
 
 ---
 
 ## Typography
 
-**Font:** Inter (via `@theme inline { --font-sans: "Inter" }`)
-
 ### Scale
 
 | Element | Classes |
 |---------|---------|
-| Hero H1 | `text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight` |
-| Section H2 | `text-3xl md:text-4xl font-bold` |
-| Large H2 | `text-4xl md:text-5xl lg:text-6xl font-bold` |
+| Hero H1 | `text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl` |
+| Section H2 | `text-3xl font-bold md:text-4xl` |
+| Large H2 | `text-4xl font-bold md:text-5xl lg:text-6xl` |
 | Card H3 | `text-xl font-semibold` |
 | Section label | `text-sm font-medium uppercase tracking-widest text-muted-foreground` |
 | Body | `text-base` or `text-lg text-muted-foreground` |
 | Small | `text-sm` |
 | Tiny | `text-xs` |
 
-### Weight Scale
-400 (body), 500 (medium), 600 (semibold), 700 (bold)
+### Weight scale
 
----
+400 (body), 500 (medium/labels), 600 (semibold/card titles), 700 (bold/headings)
 
-## Glass Card System
+### Font loading
 
-Three CSS utility classes in `globals.css`. Theme-aware — scoped under `.dark` and `:root:not(.dark)`. No `@apply`, no `backdrop-blur`.
+Load fonts via Google Fonts `<link>` in `layout.tsx`, then set `--font-sans` in the `@theme inline` block. Don't use `next/font` — it adds complexity for no real benefit on small sites.
 
-### `.glass` — Static card
-```css
-/* Dark */
-border-radius: 1rem;
-border: 1px solid rgba(255, 255, 255, 0.08);
-background: rgba(255, 255, 255, 0.04);
-
-/* Light */
-border: 1px solid rgba(0, 0, 0, 0.06);
-background: rgba(0, 0, 0, 0.02);
-```
-
-### `.glass-hover` — Interactive card
-Same base as `.glass` + transition on hover:
-```css
-/* Dark hover */
-background: rgba(255, 255, 255, 0.07);
-border-color: rgba(255, 255, 255, 0.15);
-
-/* Light hover */
-background: rgba(0, 0, 0, 0.04);
-border-color: rgba(0, 0, 0, 0.1);
-```
-
-### `.glass-active` — Highlighted card (e.g. popular plan)
-```css
-/* Dark */
-border: 1px solid rgba(255, 255, 255, 0.15);
-background: rgba(255, 255, 255, 0.06);
-
-/* Light */
-border: 1px solid rgba(0, 0, 0, 0.1);
-background: rgba(0, 0, 0, 0.03);
-```
-
-### Gradient Border (popular pricing card only)
-```css
-.gradient-border::before {
-  background: linear-gradient(
-    180deg,
-    rgba(167, 139, 250, 0.4) 0%,
-    rgba(129, 140, 248, 0.15) 50%,
-    rgba(255, 255, 255, 0.05) 100%  /* rgba(0,0,0,0.05) in light */
-  );
-  /* Uses mask-composite for border-only effect */
-}
-```
-Combined with: `shadow-[0_0_80px_-20px_rgba(139,92,246,0.15)]`
+For most sites, a single font family (Inter, Outfit, DM Sans, Nunito) is enough. Use heading/body pairings (e.g., Playfair Display + Inter) only when the brand clearly calls for it.
 
 ---
 
 ## Layout
 
-### Section Container
+### Section container
+
+Every section follows this structure:
+
 ```tsx
-<section className="px-6 py-24 md:px-8 lg:px-16">
+<section id="section-name" className="px-6 py-24 md:px-8 lg:px-16">
   <div className="mx-auto max-w-6xl">
     {/* Content */}
   </div>
 </section>
 ```
 
-### Section Header
+### Section header
+
+Consistent pattern across all sections — label, title, subtitle:
+
 ```tsx
 <div className="mb-16 text-center">
   <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-    Label
+    {t("label")}
   </p>
-  <h2 className="text-3xl font-bold md:text-4xl">Title</h2>
+  <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
   <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-    Subtitle text.
+    {t("subtitle")}
   </p>
 </div>
 ```
 
-### Spacing Reference
+### Spacing reference
 
 | Context | Class |
 |---------|-------|
 | Page horizontal padding | `px-6 md:px-8 lg:px-16` |
 | Section vertical padding | `py-24` |
 | Max content width | `max-w-6xl mx-auto` |
-| Section dividers | `border-t border-border` |
+| Section dividers | `border-t border-border` (or animated shader strip) |
 | Card padding | `p-6` or `p-8` |
-| Grid gaps | `gap-6` |
-| Form field spacing | `space-y-2` (within), `gap-6` (grid) |
+| Grid gaps | `gap-6` or `gap-8` |
+| Form field spacing | `space-y-2` (within field), `gap-6` (grid of fields) |
+
+### Responsive breakpoints
+
+Tailwind defaults: `sm` 640px, `md` 768px, `lg` 1024px, `xl` 1280px
+
+General patterns:
+- Single column → multi-column at `md` or `lg`
+- Navbar: hamburger → inline links at `md`
+- Hero text: scale up at each breakpoint (`text-5xl sm:text-6xl md:text-7xl`)
+- Always test on 375px width (iPhone SE) as the minimum
 
 ---
 
-## Components
+## Glass Card System
+
+Three CSS utility classes defined in `globals.css`. Theme-aware — scoped under `.dark` and `:root:not(.dark)`. No `@apply`, no `backdrop-blur`.
+
+### `.glass` — Static card
+
+```css
+/* Dark: */ border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.04);
+/* Light: */ border: 1px solid rgba(0,0,0,0.06); background: rgba(0,0,0,0.02);
+```
+
+### `.glass-hover` — Interactive card
+
+Same base + transition on hover:
+
+```css
+/* Dark hover: */ background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.15);
+/* Light hover: */ background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.1);
+```
+
+### `.glass-active` — Highlighted card
+
+Slightly more visible than `.glass` — used for emphasized items (popular plan, featured item):
+
+```css
+/* Dark: */ border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.06);
+/* Light: */ border: 1px solid rgba(0,0,0,0.1); background: rgba(0,0,0,0.03);
+```
+
+### Gradient border (optional, for one highlighted element)
+
+```css
+.gradient-border::before {
+  background: linear-gradient(180deg, accent-color 0%, accent-color/15 50%, transparent 100%);
+  /* Uses mask-composite for border-only effect */
+}
+```
+
+---
+
+## Component Patterns
 
 ### Buttons
 
-All buttons use `rounded-full`. ShadCN `Button` component.
+All buttons use `rounded-full` and the shadcn `Button` component.
 
-**Primary (solid):**
 ```tsx
-<Button className="rounded-full bg-foreground px-8 text-base text-background hover:bg-foreground/90">
+{/* Primary (solid) */}
+<Button className="rounded-full bg-foreground px-8 text-background hover:bg-foreground/90">
+
+{/* Secondary (outline) */}
+<Button variant="ghost" className="rounded-full border border-foreground/20 text-foreground hover:bg-foreground/5">
 ```
 
-**Secondary (ghost/outline):**
-```tsx
-<Button variant="ghost" className="rounded-full border border-foreground/20 text-base text-foreground hover:bg-foreground/5">
-```
+### Badges
 
-**Non-popular pricing:**
 ```tsx
-<Button className="w-full rounded-full border border-foreground/20 bg-transparent text-foreground hover:bg-foreground/5">
-```
-
-### Badge
-
-**Hero badge (pill):**
-```tsx
+{/* Pill badge */}
 <span className="inline-flex items-center gap-2 rounded-full border border-border bg-foreground/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-```
 
-**Popular badge (solid):**
-```tsx
+{/* Solid badge */}
 <Badge className="border-transparent bg-foreground text-background">
 ```
 
-### Navbar
+### Scroll-aware navbar
+
+Fixed position. Transparent by default, glass background on scroll. Use `requestAnimationFrame` throttling for the scroll listener — never raw `onscroll`.
 
 ```tsx
-{/* Container — transparent by default, glass on scroll */}
-<nav className="fixed top-0 z-50 w-full transition-all duration-300">
-  {/* Scrolled: border-b border-border bg-background/80 backdrop-blur-xl */}
-  {/* Default: bg-transparent */}
-</nav>
-
-{/* Nav link */}
-<a className="text-sm text-muted-foreground transition-colors hover:text-foreground">
-
-{/* Language switcher */}
-<div className="rounded-full border border-border bg-foreground/5 p-1">
-  {/* Active */}  <button className="rounded-full bg-foreground px-3 py-1 text-xs font-medium text-background">
-  {/* Inactive */} <button className="rounded-full px-3 py-1 text-xs font-medium text-muted-foreground hover:text-foreground">
-</div>
+<nav className={cn(
+  "fixed top-0 z-50 w-full transition-all duration-300",
+  scrolled ? "border-b border-border bg-background/80 backdrop-blur-xl" : "bg-transparent"
+)}>
 ```
 
-### Form Fields
+`backdrop-blur` is appropriate here because the navbar overlaps real page content on scroll.
+
+### Form fields
 
 ```tsx
-<Label className="text-sm text-foreground/60">
-
 <Input className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0" />
-
-<Textarea className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0" />
-
-<select className="rounded-xl border border-border bg-foreground/5 text-foreground focus:border-foreground/30 focus:outline-none">
 ```
 
-### FAQ Accordion
-
-```tsx
-<AccordionItem className="border-border">
-  <AccordionTrigger className="text-left text-foreground hover:text-foreground/80 hover:no-underline">
-  <AccordionContent className="text-muted-foreground">
-```
+Consistent styling: `rounded-xl`, `bg-foreground/5` fill, no focus ring (use border color change instead).
 
 ### Icons
 
-**Lucide React** throughout.
+Lucide React throughout.
 
 | Size | Class | Usage |
 |------|-------|-------|
-| Inline | `h-3.5 w-3.5` | Inside text, delivery info |
+| Inline | `h-3.5 w-3.5` | Inside text |
 | Small | `h-4 w-4` | Checkmarks, list icons |
-| Standard | `h-5 w-5` | Standalone icons, addons |
-| Feature | `h-6 w-6` | Step icons, feature highlights |
+| Standard | `h-5 w-5` | Standalone icons |
+| Feature | `h-6 w-6` | Step icons, highlights |
 
-Default color: `text-foreground/30` with `group-hover:text-foreground/50`
+Default color: `text-foreground/30` or `text-muted-foreground`
 
 ---
 
 ## Animation Patterns
 
-**Framer Motion** only. No CSS animations except pulse/spin for loading states.
+Framer Motion only. No CSS animations except `pulse`/`spin` for loading states.
 
 ### Scroll-triggered (most sections)
+
 ```tsx
 <motion.div
   initial={{ opacity: 0, y: 20 }}
@@ -265,6 +285,7 @@ Default color: `text-foreground/30` with `group-hover:text-foreground/50`
 ```
 
 ### Staggered children
+
 ```tsx
 <motion.div
   initial="hidden"
@@ -280,6 +301,7 @@ Default color: `text-foreground/30` with `group-hover:text-foreground/50`
 ```
 
 ### Page load (hero only)
+
 ```tsx
 initial={{ opacity: 0, y: 20 }}
 animate={{ opacity: 1, y: 0 }}
@@ -287,6 +309,7 @@ transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
 ```
 
 ### Reduced motion
+
 ```css
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
@@ -296,31 +319,87 @@ transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
 }
 ```
 
-**Rules:**
-- Always `once: true` on viewport
+### Rules
+
+- Always `once: true` on viewport — animations should not replay
 - Duration: 0.3s–0.6s
-- Easing: `easeOut` only
-- No bouncing, spring physics, or flashy effects
-- Stagger: 0.06s–0.15s
+- Easing: `easeOut` only — no bouncing, no spring physics
+- Stagger: 0.06s–0.15s between children
+- Hero animates on load (`animate`), everything else on scroll (`whileInView`)
 
 ---
 
-## Responsive Breakpoints
+## Animated Shader Backgrounds
 
-Tailwind defaults: `sm` 640px, `md` 768px, `lg` 1024px, `xl` 1280px
+10 WebGL/CSS animated background components. Powerful for creative and premium sites — use them as hero backgrounds, section dividers, or behind content at low opacity.
 
-| Pattern | Breakpoints |
-|---------|-------------|
-| Pricing grid | 1 col → 3 col (`lg:grid-cols-3`) |
-| Step grid | 1 col → 2 col → 4 col (`md:grid-cols-2 lg:grid-cols-4`) |
-| Section headings | `text-3xl` → `md:text-4xl` |
-| Navbar | Hamburger → inline links at `md` |
+| Component | Visual | Compute |
+|-----------|--------|---------|
+| `MeshGradientBackground` | Drifting color orbs | Very Low |
+| `AuroraShaders` | Northern lights curtains | Medium |
+| `WavesShaders` | Flowing plasma layers | Low |
+| `CosmicWavesShaders` | Starfield + wave ripples | Medium |
+| `NoiseShaders` | Fractal terrain / organic | Low |
+| `FlickeringGrid` | Digital noise grid | Very Low |
+| `AccretionShaders` | Cosmic vortex / energy | Medium |
+| `SingularityShaders` | Black hole pull effect | Medium |
+| `SeaShaders` | Photorealistic ocean | **High** |
+| `DesertSandShaders` | Sand dunes flyover | **Very High** |
+
+### Usage pattern
+
+```tsx
+<section className="relative overflow-hidden">
+  <div className="absolute inset-0 opacity-30">
+    <AuroraShaders speed={0.3} intensity={0.5} />
+  </div>
+  <div className="relative z-10">
+    {/* Section content */}
+  </div>
+</section>
+```
+
+### Section divider strip
+
+Replace `<div className="border-t border-border" />` with an animated strip:
+
+```tsx
+<div className="relative h-48 overflow-hidden">
+  <div className="absolute inset-0 opacity-40">
+    <WavesShaders speed={0.3} />
+  </div>
+  <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
+</div>
+```
+
+### Performance rules
+
+- `SeaShaders` and `DesertSandShaders` are GPU-heavy — hero only, never multiple on one page
+- Low/Very Low compute shaders can be stacked (e.g., hero + one section divider)
+- Always use `opacity-30` to `opacity-50` when placing behind content for readability
+- Max 2 shader backgrounds per page total
+- On mobile, reduce `speed` props by ~50% for battery life
+- Consider lazy-rendering: only mount the component when the section enters the viewport
+
+### Color matching
+
+| Component | How to adjust |
+|-----------|--------------|
+| `MeshGradientBackground` | `colors` prop — array of 4 hex values |
+| `AuroraShaders` | `vibrancy` + `colorShift` props |
+| `WavesShaders` | `colorVariation` prop |
+| `AccretionShaders` | `colorShift` prop |
+| `CosmicWavesShaders` | `colorShift` prop |
+| Others | Wrap container with CSS `filter: hue-rotate(Xdeg)` |
 
 ---
 
 ## Visual Effects
 
-### Noise Grain Overlay
+### Noise grain overlay
+
+Subtle film grain texture over the entire page. Adds tactile quality without being visible on its own:
+
 ```css
 body::before {
   position: fixed;
@@ -332,27 +411,33 @@ body::before {
 }
 ```
 
-### Text Selection
-- Dark: `rgba(255, 255, 255, 0.15)` background
-- Light: `rgba(0, 0, 0, 0.1)` background
+### Text selection
 
-### Smooth Scrolling
+Theme-aware selection colors:
+- Dark: `rgba(255, 255, 255, 0.15)`
+- Light: `rgba(0, 0, 0, 0.1)`
+
+### Smooth scrolling
+
 ```css
 html { scroll-behavior: smooth; }
 ```
 
 ---
 
-## Rules
+## Do's and Don'ts
 
 | Don't | Do Instead |
 |-------|------------|
 | Hardcode `text-white`, `bg-black` | Use `text-foreground`, `bg-background` |
-| Use `@apply` with glass classes | Use plain CSS scoped by `.dark` / `:root:not(.dark)` |
-| Add accent colors freely | Monochrome only, violet reserved for pricing border |
-| Use solid background cards | Use `.glass`, `.glass-hover`, `.glass-active` |
-| Use sharp corners on panels | `rounded-2xl` for panels, `rounded-full` for buttons |
-| Add heavy shadows | Use borders for elevation |
-| Add glow, shimmer, or flashy effects | Keep it clean and minimal |
-| Use multiple font families | Inter only |
-| Use `backdrop-blur` in glass classes | Opacity-based depth only (no blur) |
+| Use `@apply` with custom card classes | Use plain CSS scoped by `.dark` / `:root:not(.dark)` |
+| Scatter accent colors everywhere | 1–2 accents max, monochrome for everything else |
+| Use solid opaque card backgrounds | Use `.glass`, `.glass-hover`, `.glass-active` |
+| Add heavy drop shadows for elevation | Use borders and subtle opacity differences |
+| Add glow, shimmer, or flashy effects | Keep it clean — let content breathe |
+| Use `backdrop-blur` on solid backgrounds | Only blur when element overlaps real content (navbar on scroll) |
+| Animate with CSS keyframes | Use Framer Motion with `whileInView` + `once: true` |
+| Use spring/bounce easing | Use `easeOut` only, 0.3–0.6s duration |
+| Lazy-load hero images | Use `priority` on hero `<Image>` for instant load |
+| Mix multiple font families casually | One font for most sites; pairings only when the brand demands it |
+| Forget mobile testing | Always test at 375px width minimum |

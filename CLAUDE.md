@@ -50,6 +50,7 @@ Landing page for Budapest Labs — a service delivering professional websites fo
   - Current: Blue + Teal `["#2563eb", "#0d9488", "#3b82f6", "#06b6d4"]`
   - Alt – Violet/Indigo: `["#7c3aed", "#6366f1", "#8b5cf6", "#a78bfa"]`
   - Alt – Monochrome: `["#404040", "#525252", "#6b7280", "#9ca3af"]`
+- **Animated shader backgrounds**: 10 WebGL/CSS components in `src/components/ui/` (aurora, waves, sea, noise, desert-sand, cosmic-waves, accretion, singularity, mesh-gradient, flickering-grid). These use `react-shaders` and are available for client sites — see `templates/starter/CUSTOMIZATION.md` "Animated backgrounds" for guidance.
 - Do NOT add glow effects, text shimmer, or heavy visual effects — user explicitly removed these
 - Framer Motion animations use `whileInView` with `once: true`
 - **Color classes**: Use semantic Tailwind tokens (`text-foreground`, `text-muted-foreground`, `bg-foreground/5`, `border-border`) — do NOT hardcode `text-white`, `bg-black`, `text-white/60` etc. These break in the opposite theme.
@@ -85,7 +86,7 @@ src/
 │   └── globals.css           # Tailwind v4 config, glass classes, gradient border
 ├── components/
 │   ├── landing/              # 11 section components + theme-toggle (navbar, hero, stats, how-it-works, comparison, pricing, addons, testimonials, faq, contact, footer, theme-toggle)
-│   └── ui/                   # ShadCN + Magic UI components (button, badge, accordion, mesh-gradient, flickering-grid, etc.)
+│   └── ui/                   # ShadCN + Magic UI + animated shader backgrounds (button, badge, accordion, mesh-gradient, flickering-grid, aurora, waves, sea, noise, desert-sand, cosmic-waves, accretion, singularity, etc.)
 ├── i18n/
 │   ├── routing.ts            # Locale config (hu, en)
 │   ├── request.ts            # Server request config
@@ -103,7 +104,7 @@ src/
 2. Hero — badge, headline, subtitle, CTA + free consultation (cal.com), trust signals, animated mesh gradient background
 3. Stats — animated counters (50+ sites, ≤6h, 100% satisfaction)
 4. Process (How It Works) — 4 steps with staggered card animation
-5. Comparison — 10-row table (delivery, price, quality, tech, security, speed, mobile, SEO, booking, effort)
+5. Comparison — 10-row table (delivery, price, quality, tech, security, performance, mobile, SEO, booking, effort)
 6. Pricing — 3 plans, Business highlighted as popular
 7. Add-ons — 5 optional extras
 8. ~~Testimonials~~ — commented out until real testimonials available

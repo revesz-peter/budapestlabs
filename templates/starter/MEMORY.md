@@ -58,8 +58,11 @@ Each entry:
 
 ## Patterns to reuse
 
+### Archetype system
+5 archetypes (Service, Showcase, Catalog, Brand, Accommodation) determine page structure. Client selects type in CLIENT.md → agent follows the matching STAGE-4-{archetype}.md. Shared stages (1-3, 5-7) are identical. Always check CLIENT.md "For the agent" section for theme/font/CTA recommendations per archetype.
+
 ### Section header pattern
-Every section uses the same header structure: label (small uppercase) → title (h2 bold) → subtitle (muted). Copy from STAGE-4.
+Every section uses the same header structure: label (small uppercase) → title (h2 bold) → subtitle (muted). Copy from any STAGE-4 file.
 
 ### Form input styling
 All inputs share the same class string. Copy from contact.tsx. Don't reinvent.

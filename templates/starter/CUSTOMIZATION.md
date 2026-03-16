@@ -124,15 +124,50 @@ colors={["#d97706", "#f59e0b", "#ea580c", "#fb923c"]}
 
 ### Font pairing suggestions
 
-| Business type | Heading font | Body font |
-|---------------|-------------|-----------|
-| Professional/corporate | Inter | Inter |
-| Beauty/luxury | Playfair Display | Inter |
-| Creative/agency | Space Grotesk | Inter |
-| Friendly/approachable | Nunito | Nunito |
-| Modern/tech | Geist | Geist |
+| Category | Heading font | Body font | Best for |
+|----------|-------------|-----------|----------|
+| Default / professional | Inter | Inter | Service archetype, corporate, clean |
+| Luxury / editorial | Playfair Display | Inter | Upscale restaurants, spas, hotels, jewelry |
+| Luxury / serif | Cormorant Garant | Inter | Fashion, wine, premium accommodation |
+| Modern / geometric | Space Grotesk | Inter | Creative agencies, tech, architecture |
+| Modern / clean | DM Sans | DM Sans | Brands, studios, contemporary businesses |
+| Bold / statement | Syne | Inter | Streetwear, music, bold brand identities |
+| Friendly / approachable | Nunito | Nunito | Family businesses, bakeries, childcare |
+| Contemporary / versatile | Outfit | Outfit | Works for almost anything modern |
+| Handwritten accent | Caveat (headings only) | Inter | Cafes, florists, artisan shops |
+| Tech / developer | Geist | Geist | Tech products, SaaS, developer tools |
 
-For simplicity, most Starter sites use a single font (Inter) for everything.
+For simplicity, most Starter sites use a single font (Inter) for everything. Use heading/body pairings only when the client's brand clearly calls for it.
+
+### Implementing a heading/body font pairing
+
+To use different fonts for headings and body text:
+
+1. Load both fonts in `layout.tsx`:
+
+```html
+<link
+  href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@100..900&display=swap"
+  rel="stylesheet"
+/>
+```
+
+2. Add a `--font-heading` variable in the `@theme inline` block in `globals.css`:
+
+```css
+--font-heading: "Playfair Display", ui-serif, Georgia, serif;
+--font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+```
+
+3. Apply the heading font via CSS in `globals.css`:
+
+```css
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+```
 
 ---
 
@@ -182,15 +217,19 @@ For dark/light mode, either:
 3. Optionally remove translations (not required, unused keys don't cause errors)
 4. Remove any nav links pointing to it
 
-### Common Starter pages
+### Sections per archetype
 
-Most Starter clients need 3-5 of these:
-- **Home/Hero** — always present
-- **About** — who they are, why choose them
-- **Services** — what they offer (cards or list)
-- **Gallery** — photos of work (if applicable)
-- **Contact** — form + info
-- **Footer** — always present
+Each archetype uses a different set of sections. See CLIENT.md for archetype routing.
+
+| Archetype | Sections (in order) |
+|-----------|-------------------|
+| Service | Hero (mesh gradient), About, Services, Contact |
+| Showcase | Hero (image), Gallery, About, Team (optional), Contact |
+| Catalog | Hero (image or mesh), Menu/Catalog, Gallery (optional), About, Contact |
+| Brand | Hero (image), Collections, Story, Contact |
+| Accommodation | Hero (image), Rooms, Gallery, Location, Contact |
+
+All sites include: Navbar (top), Footer (bottom), Legal pages (privacy, terms, imprint).
 
 ---
 
@@ -237,4 +276,601 @@ rgba(129, 140, 248, 0.25) /* → your accent color at 25% opacity */
 And in `pricing.tsx`, update the shadow color:
 ```tsx
 shadow-[0_0_80px_-20px_rgba(139,92,246,0.25)]  /* → your accent at 25% */
+```
+
+---
+
+## Animated backgrounds
+
+The template includes 10 animated background components in `src/components/ui/`. These are powerful tools for giving client sites a unique, premium feel — especially for artsy, creative, and luxury businesses. Be creative with them.
+
+### Background catalog
+
+| Component | Import | Visual Effect | Compute | Best For |
+|-----------|--------|---------------|---------|----------|
+| `MeshGradientBackground` | `@/components/ui/mesh-gradient` | Drifting color orbs | Very Low | Default/safe choice, any archetype |
+| `AuroraShaders` | `@/components/ui/aurora` | Northern lights curtains | Medium | Wellness, luxury, spa, accommodation |
+| `WavesShaders` | `@/components/ui/waves` | Flowing plasma layers | Low | Creative studios, music, spa, calm brands |
+| `CosmicWavesShaders` | `@/components/ui/cosmic-waves` | Starfield + wave ripples | Medium | Tech, education, bold agencies |
+| `NoiseShaders` | `@/components/ui/noise` | Fractal terrain / organic | Low | Nature brands, artisan, organic products |
+| `FlickeringGrid` | `@/components/ui/flickering-grid` | Digital noise grid | Very Low | Tech, retro, developer tools, modern |
+| `AccretionShaders` | `@/components/ui/accretion` | Cosmic vortex / energy | Medium | Bold brands, tech, energy, nightlife |
+| `SingularityShaders` | `@/components/ui/singularity` | Black hole pull effect | Medium | Dark/premium sites, security, enterprise |
+| `SeaShaders` | `@/components/ui/sea` | Photorealistic ocean | **High** | Resort, travel, coastal accommodation |
+| `DesertSandShaders` | `@/components/ui/desert-sand` | Sand dunes flyover | **Very High** | Adventure, automotive, epic feel |
+
+### Archetype → background recommendations
+
+| Archetype | Default | Creative Alternatives |
+|-----------|---------|----------------------|
+| Service | `MeshGradientBackground` | `FlickeringGrid` (tech services), `CosmicWavesShaders` (agencies) |
+| Showcase | `WavesShaders` | `AuroraShaders` (ethereal/luxury), `NoiseShaders` (organic/nature), `AccretionShaders` (bold/edgy) |
+| Catalog | `MeshGradientBackground` | `NoiseShaders` (organic food), `AuroraShaders` (upscale bar, dark mode), `SeaShaders` (coastal — hero only) |
+| Brand | `WavesShaders` | `AccretionShaders` (bold/energetic), `CosmicWavesShaders` (editorial), `NoiseShaders` (artisan/handmade) |
+| Accommodation | `AuroraShaders` | `SeaShaders` (waterfront — hero only), `NoiseShaders` (mountain/nature retreat) |
+
+### Creative usage ideas
+
+Don't limit animated backgrounds to the hero. For artsy and creative sites, use them throughout the page:
+
+1. **Hero full-bleed background** — Primary use. Replace `MeshGradientBackground` or the hero `<Image>` with any shader.
+2. **Section divider strip** — A 150-200px animated strip between sections, replacing the plain `border-t` divider.
+3. **Behind gallery section** — Low opacity shader behind a photo grid adds depth and movement.
+4. **Contact section background** — Subtle animation creates an inviting atmosphere for the form area.
+5. **Behind glass cards** — Shader visible through the gaps between `.glass` cards for a layered effect.
+
+### Implementation pattern — Section background
+
+Wrap any shader as a background for any section:
+
+```tsx
+import { AuroraShaders } from "@/components/ui/aurora";
+
+<section className="relative overflow-hidden">
+  {/* Animated background */}
+  <div className="absolute inset-0 opacity-30">
+    <AuroraShaders speed={0.3} intensity={0.5} />
+  </div>
+
+  {/* Section content stays above */}
+  <div className="relative z-10">
+    {/* Your section content */}
+  </div>
+</section>
+```
+
+### Implementation pattern — Section divider strip
+
+Replace the `<div className="border-t border-border" />` between sections:
+
+```tsx
+import { WavesShaders } from "@/components/ui/waves";
+
+<div className="relative h-48 overflow-hidden">
+  <div className="absolute inset-0 opacity-40">
+    <WavesShaders speed={0.3} />
+  </div>
+  {/* Fade edges into the page background */}
+  <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
+</div>
+```
+
+### Implementation pattern — Shader hero (replacing image hero)
+
+For creative sites that want animation instead of a static photo:
+
+```tsx
+import { AccretionShaders } from "@/components/ui/accretion";
+
+<section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20">
+  {/* Shader background */}
+  <div className="absolute inset-0">
+    <AccretionShaders speed={0.4} brightness={0.6} />
+  </div>
+  {/* Overlay for text readability */}
+  <div className="absolute inset-0 bg-background/40" />
+
+  <div className="relative z-10 mx-auto max-w-5xl text-center">
+    {/* Badge → Headline → Subtitle → CTAs */}
+  </div>
+</section>
+```
+
+### Performance rules
+
+- **`SeaShaders` and `DesertSandShaders` are GPU-heavy** — use as hero background only, never multiple on one page
+- **Low/Very Low compute** backgrounds (`MeshGradientBackground`, `WavesShaders`, `NoiseShaders`, `FlickeringGrid`) can be stacked (e.g., hero + section divider)
+- Always use `opacity-30` to `opacity-50` when placing shaders behind content — ensures text readability
+- On mobile, reduce shader `speed` props by ~50% for battery life
+- Consider lazy-rendering heavy shaders: only mount the component when the section scrolls into view (use Framer Motion `whileInView` or an intersection observer)
+- Never use more than 2 shader backgrounds on a single page — even low-compute ones add up
+
+### Color matching
+
+Adjust shader colors to match the client's brand palette:
+
+| Component | How to adjust color |
+|-----------|-------------------|
+| `MeshGradientBackground` | `colors` prop — array of 4 hex values |
+| `AuroraShaders` | `vibrancy` (0-1) + `colorShift` (0-1) props |
+| `WavesShaders` | `colorVariation` (0-1) prop |
+| `AccretionShaders` | `colorShift` (0-1) prop |
+| `CosmicWavesShaders` | `colorShift` (0-1) prop |
+| Others | Wrap in a div with CSS `filter: hue-rotate(Xdeg)` to shift the base palette |
+
+---
+
+## Hero variants
+
+### Mesh gradient (default for Service archetype)
+
+Animated gradient orbs behind text. See the "Hero gradient customization" section above.
+
+### Full-bleed image (Showcase, Catalog, Brand, Accommodation)
+
+Replace the mesh gradient with a full-screen background image:
+
+```tsx
+import Image from "next/image";
+
+<section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20">
+  {/* Background image */}
+  <Image
+    src="/images/hero.jpg"
+    alt=""
+    fill
+    className="object-cover"
+    priority
+  />
+  {/* Overlay for text readability */}
+  <div className="absolute inset-0 bg-background/60" />
+
+  <div className="relative mx-auto max-w-5xl text-center">
+    {/* Title, subtitle, CTAs */}
+  </div>
+</section>
+```
+
+**Tips:**
+- Store hero image in `public/images/hero.jpg`
+- `priority` ensures the hero image loads immediately (no lazy loading)
+- Adjust overlay opacity: `bg-background/60` works for most images. Lighter images may need `/70`, darker images `/40`
+- The `bg-background` overlay works in both light and dark mode (white overlay in light, black in dark)
+- For video hero, replace `<Image>` with a `<video autoPlay muted loop playsInline>` element
+
+### Minimal hero (text-only with accent line)
+
+For ultra-clean brands that don't need a background:
+
+```tsx
+<section className="flex min-h-[80vh] items-center justify-center px-6 pt-20">
+  <div className="mx-auto max-w-4xl text-center">
+    {/* Optional accent line */}
+    <div className="mx-auto mb-8 h-px w-16 bg-foreground/20" />
+    <h1 className="text-5xl font-bold tracking-tight sm:text-6xl md:text-7xl">
+      {t("title")}
+    </h1>
+    <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
+      {t("subtitle")}
+    </p>
+  </div>
+</section>
+```
+
+---
+
+## CTA alternatives per archetype
+
+| Archetype | Primary CTA (HU) | Primary CTA (EN) | Secondary (HU) | Secondary (EN) |
+|-----------|-------------------|-------------------|-----------------|----------------|
+| Service | Kapcsolatfelvétel | Get in Touch | Ingyenes konzultáció | Free Consultation |
+| Showcase | Munkáim megtekintése | View My Work | Kapcsolatfelvétel | Get in Touch |
+| Catalog | Kínálatunk / Foglaljon asztalt | Our Menu / Reserve a Table | Elérhetőségek | Contact Us |
+| Brand | Fedezze fel | Discover | A történetünk | Our Story |
+| Accommodation | Foglalás | Book Now | Szobáink | View Our Rooms |
+
+Adapt to the specific business — a photographer might use "Portfólió" instead of "Munkáim megtekintése".
+
+---
+
+## Custom form fields
+
+The default contact form has: Name, Email, Phone, Message. To add custom fields:
+
+### Dropdown (e.g., project type, inquiry type)
+
+```tsx
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
+<div className="space-y-2">
+  <Label>{t("form.projectType")}</Label>
+  <Select>
+    <SelectTrigger className="rounded-xl border-border bg-foreground/5 text-foreground focus:border-foreground/30 focus-visible:ring-0">
+      <SelectValue placeholder={t("form.projectTypePlaceholder")} />
+    </SelectTrigger>
+    <SelectContent>
+      <SelectItem value="wedding">{t("form.types.wedding")}</SelectItem>
+      <SelectItem value="portrait">{t("form.types.portrait")}</SelectItem>
+      <SelectItem value="corporate">{t("form.types.corporate")}</SelectItem>
+      <SelectItem value="other">{t("form.types.other")}</SelectItem>
+    </SelectContent>
+  </Select>
+</div>
+```
+
+Requires: `bunx shadcn@latest add select`
+
+### Date picker (e.g., event date, booking date)
+
+For a simple date input without adding a calendar library:
+
+```tsx
+<div className="space-y-2">
+  <Label>{t("form.date")}</Label>
+  <Input
+    type="date"
+    className="rounded-xl border-border bg-foreground/5 text-foreground focus:border-foreground/30 focus-visible:ring-0"
+  />
+</div>
+```
+
+---
+
+## Opening hours display
+
+For businesses with physical locations (Service, Catalog archetypes):
+
+```tsx
+import { Clock } from "lucide-react";
+
+<div className="flex items-start gap-4">
+  <Clock className="mt-1 h-5 w-5 shrink-0 text-muted-foreground" />
+  <div>
+    <h3 className="mb-2 font-medium">{t("hours.label")}</h3>
+    <div className="space-y-1 text-sm text-muted-foreground">
+      <p>{t("hours.monFri")}</p>
+      <p>{t("hours.sat")}</p>
+      <p>{t("hours.sun")}</p>
+    </div>
+  </div>
+</div>
+```
+
+Translation keys:
+```json
+{
+  "hours": {
+    "label": "Nyitvatartás",
+    "monFri": "Hétfő - Péntek: 9:00 - 17:00",
+    "sat": "Szombat: 10:00 - 14:00",
+    "sun": "Vasárnap: Zárva"
+  }
+}
+```
+
+---
+
+## Google Maps embed
+
+For contact pages that need a map:
+
+```tsx
+<div className="overflow-hidden rounded-xl">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=PLACE_ID_HERE"
+    width="100%"
+    height="300"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Location map"
+  />
+</div>
+```
+
+**How to get the embed URL:**
+1. Go to Google Maps, search for the business address
+2. Click "Share" → "Embed a map"
+3. Copy the `src` URL from the iframe code
+4. Paste it as the `src` value above
+
+---
+
+## Stock photos
+
+When the client doesn't have professional photos:
+
+**Free sources:**
+- [Unsplash](https://unsplash.com) — high-quality, free for commercial use
+- [Pexels](https://pexels.com) — similar to Unsplash, good variety
+- [Pixabay](https://pixabay.com) — larger library, more varied quality
+
+**Tips:**
+- Search in the client's industry: "hair salon interior", "restaurant food", "car mechanic"
+- Download the largest size available
+- Use Next.js `<Image>` component — it handles optimization automatically
+- Store in `public/images/` with descriptive names (`hero-salon-interior.jpg`, not `IMG_3847.jpg`)
+- Always fill in the `alt` attribute with a description for accessibility and SEO
+- Prefer landscape orientation for hero images, square or portrait for gallery/team cards
+
+---
+
+## When the client has no images
+
+If the client hasn't provided photos yet, never leave `<Image>` with a missing or empty `src` — it breaks the build.
+
+**Option 1 — Colored placeholder divs:**
+
+```tsx
+<div className="aspect-[4/3] rounded-xl bg-foreground/5" />
+```
+
+**Option 2 — Stock photos** (see sources above). Download and store in `public/images/`.
+
+**Option 3 — Text-only sections.** Skip the hero image and use the minimal hero variant (see "Hero variants" above). Skip the gallery section entirely.
+
+Always replace placeholders before the site goes live.
+
+---
+
+## Pricing / Packages section (optional)
+
+Reusable pricing card grid for Service, Catalog, or Accommodation archetypes. Add as an optional section between the core content and Contact.
+
+```tsx
+"use client";
+
+import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
+import { Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+
+export function Pricing() {
+  const t = useTranslations("pricing");
+
+  const planKeys = ["basic", "standard", "premium"] as const;
+
+  return (
+    <section id="pricing" className="px-6 py-24 md:px-8 lg:px-16">
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-16 text-center">
+          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
+            {t("label")}
+          </p>
+          <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
+            {t("subtitle")}
+          </p>
+        </div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+          className="grid gap-8 md:grid-cols-3"
+        >
+          {planKeys.map((key) => {
+            const features = t.raw(`plans.${key}.features`) as string[];
+            const popular = key === "standard";
+
+            return (
+              <motion.div
+                key={key}
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+                }}
+                className={cn("flex flex-col p-8", popular ? "glass-active" : "glass")}
+              >
+                <h3 className="text-lg font-semibold">{t(`plans.${key}.name`)}</h3>
+                <div className="mt-4">
+                  <span className="text-3xl font-bold">{t(`plans.${key}.price`)}</span>
+                </div>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  {t(`plans.${key}.description`)}
+                </p>
+                <ul className="mt-6 flex-1 space-y-3">
+                  {features.map((feature, i) => (
+                    <li key={i} className="flex items-start gap-3 text-sm">
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-foreground/30" />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button
+                  asChild
+                  className="mt-8 w-full rounded-full bg-foreground text-background hover:bg-foreground/90"
+                >
+                  <a href="#contact">{t(`plans.${key}.cta`)}</a>
+                </Button>
+              </motion.div>
+            );
+          })}
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+```
+
+Translation keys:
+
+```json
+{
+  "pricing": {
+    "label": "Árak",
+    "title": "Csomagjaink",
+    "subtitle": "Válassza ki az Önnek megfelelő csomagot.",
+    "plans": {
+      "basic": {
+        "name": "Alap",
+        "price": "15 000 Ft",
+        "description": "Leírás",
+        "cta": "Választom",
+        "features": ["Feature 1", "Feature 2", "Feature 3"]
+      }
+    }
+  }
+}
+```
+
+---
+
+## FAQ section (optional)
+
+Accordion-based FAQ section, reusable by any archetype. Requires shadcn Accordion: `bunx shadcn@latest add accordion`.
+
+```tsx
+"use client";
+
+import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+export function Faq() {
+  const t = useTranslations("faq");
+
+  const itemKeys = ["q1", "q2", "q3", "q4", "q5"] as const;
+
+  return (
+    <section id="faq" className="px-6 py-24 md:px-8 lg:px-16">
+      <div className="mx-auto max-w-3xl">
+        <div className="mb-16 text-center">
+          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
+            {t("label")}
+          </p>
+          <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
+          <Accordion type="single" collapsible className="space-y-4">
+            {itemKeys.map((key) => (
+              <AccordionItem key={key} value={key} className="glass px-6">
+                <AccordionTrigger className="text-left text-sm font-medium hover:no-underline">
+                  {t(`items.${key}.question`)}
+                </AccordionTrigger>
+                <AccordionContent className="text-sm text-muted-foreground">
+                  {t(`items.${key}.answer`)}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+```
+
+Translation keys:
+
+```json
+{
+  "faq": {
+    "label": "GYIK",
+    "title": "Gyakran ismételt kérdések",
+    "items": {
+      "q1": {
+        "question": "Kérdés szövege?",
+        "answer": "Válasz szövege."
+      }
+    }
+  }
+}
+```
+
+---
+
+## Testimonials section (optional)
+
+Card grid of client testimonials. **Only use with real testimonials** — never generate fake quotes.
+
+```tsx
+"use client";
+
+import { useTranslations } from "next-intl";
+import { motion } from "framer-motion";
+import { Star } from "lucide-react";
+
+export function Testimonials() {
+  const t = useTranslations("testimonials");
+
+  const reviewKeys = ["r1", "r2", "r3"] as const;
+
+  return (
+    <section id="testimonials" className="px-6 py-24 md:px-8 lg:px-16">
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-16 text-center">
+          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
+            {t("label")}
+          </p>
+          <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
+        </div>
+
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+          className="grid gap-6 md:grid-cols-3"
+        >
+          {reviewKeys.map((key) => (
+            <motion.div
+              key={key}
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+              }}
+              className="glass p-8"
+            >
+              <div className="mb-4 flex gap-1">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} className="h-4 w-4 fill-foreground/20 text-foreground/20" />
+                ))}
+              </div>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {t(`items.${key}.text`)}
+              </p>
+              <div className="mt-6">
+                <p className="text-sm font-medium">{t(`items.${key}.name`)}</p>
+                <p className="text-xs text-muted-foreground">{t(`items.${key}.role`)}</p>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+```
+
+Translation keys:
+
+```json
+{
+  "testimonials": {
+    "label": "Vélemények",
+    "title": "Mit mondanak rólunk",
+    "items": {
+      "r1": {
+        "text": "Vélemény szövege.",
+        "name": "Név",
+        "role": "Pozíció / Cég"
+      }
+    }
+  }
+}
 ```

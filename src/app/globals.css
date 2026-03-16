@@ -232,7 +232,6 @@ body::before {
   pointer-events: none;
 }
 
-
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
