@@ -6,21 +6,23 @@ import { useRef, useEffect, useState } from "react";
 
 function AnimatedCounter({
   target,
+  from,
   suffix = "",
   prefix = "",
 }: {
   target: number;
+  from?: number;
   suffix?: string;
   prefix?: string;
 }) {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true });
-  const [count, setCount] = useState(0);
+  const startValue = from ?? 0;
+  const [count, setCount] = useState(startValue);
 
   useEffect(() => {
     if (!isInView) return;
 
-    let start = 0;
     const duration = 1500;
     const startTime = Date.now();
 
@@ -29,15 +31,14 @@ function AnimatedCounter({
       const progress = Math.min(elapsed / duration, 1);
       // Ease out cubic
       const eased = 1 - Math.pow(1 - progress, 3);
-      start = Math.round(eased * target);
-      setCount(start);
+      setCount(Math.round(startValue + eased * (target - startValue)));
       if (progress < 1) {
         requestAnimationFrame(tick);
       }
     };
 
     requestAnimationFrame(tick);
-  }, [isInView, target]);
+  }, [isInView, target, startValue]);
 
   return (
     <span ref={ref}>
@@ -50,7 +51,7 @@ function AnimatedCounter({
 
 const stats = [
   { key: "websites", target: 50, suffix: "+" },
-  { key: "delivery", target: 6, prefix: "≤", suffix: "h" },
+  { key: "delivery", target: 6, from: 24, prefix: "≤", suffix: "h" },
   { key: "satisfaction", target: 100, suffix: "%" },
 ] as const;
 
@@ -72,6 +73,7 @@ export function Stats() {
               <p className="text-4xl font-bold tracking-tight">
                 <AnimatedCounter
                   target={stat.target}
+                  from={"from" in stat ? stat.from : undefined}
                   suffix={stat.suffix}
                   prefix={"prefix" in stat ? stat.prefix : ""}
                 />
