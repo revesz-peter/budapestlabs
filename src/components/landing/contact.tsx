@@ -6,16 +6,22 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Send } from "lucide-react";
-import { useState, type FormEvent } from "react";
+import { Send, CheckCircle } from "lucide-react";
+import { useState } from "react";
 
 export function Contact() {
   const t = useTranslations("contact");
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // TODO: integrate with backend
+    setSending(true);
+
+    // TODO: integrate with backend (Supabase / API route + Resend)
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    setSending(false);
     setSubmitted(true);
   }
 
@@ -41,9 +47,15 @@ export function Contact() {
           transition={{ duration: 0.5, ease: "easeOut" }}
         >
           {submitted ? (
-            <div className="glass py-16 text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              className="glass py-16 text-center"
+            >
+              <CheckCircle className="mx-auto mb-4 h-12 w-12 text-foreground/30" />
               <p className="text-lg font-medium">{t("form.success")}</p>
-            </div>
+            </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="glass space-y-6 p-8">
               <div className="grid gap-6 sm:grid-cols-2">
@@ -157,10 +169,11 @@ export function Contact() {
 
               <Button
                 type="submit"
-                className="w-full rounded-full bg-foreground text-background hover:bg-foreground/90"
+                disabled={sending}
+                className="w-full rounded-full bg-foreground text-background hover:bg-foreground/90 disabled:opacity-50"
               >
                 <Send className="mr-2 h-4 w-4" />
-                {t("form.submit")}
+                {sending ? "..." : t("form.submit")}
               </Button>
             </form>
           )}

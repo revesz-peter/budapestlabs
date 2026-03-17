@@ -50,7 +50,7 @@ function AnimatedCounter({
 }
 
 const stats = [
-  { key: "websites", target: 50, suffix: "+" },
+  { key: "experience", target: 8, suffix: "+" },
   { key: "delivery", target: 6, prefix: "≤", suffix: "h" },
   { key: "satisfaction", target: 100, suffix: "%" },
 ] as const;
