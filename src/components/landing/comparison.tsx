@@ -23,33 +23,44 @@ function CellIcon({ value }: { value: string }) {
   if (
     lower.includes("always") ||
     lower.includes("mindig") ||
+    lower.includes("immer") ||
     lower.includes("included") ||
     lower.includes("tartalmazza") ||
+    lower.includes("inklusive") ||
     lower.includes("built-in") ||
     lower.includes("beépített") ||
+    lower.includes("integriert") ||
     lower.includes("future-proof") ||
     lower.includes("jövőálló") ||
-    lower.includes("lightning") ||
-    lower.includes("villámgyors") ||
+    lower.includes("zukunftssicher") ||
+    lower.includes("under") ||
+    lower.includes("alatt") ||
+    lower.includes("unter") ||
     lower.includes("unhackable") ||
     lower.includes("teljesen biztonságos") ||
     lower.includes("fully secure") ||
+    lower.includes("vollständig sicher") ||
     lower.includes("latest") ||
-    lower.includes("legmodernebb")
+    lower.includes("legmodernebb") ||
+    lower.includes("neueste")
   ) {
     return <Check className="inline h-3.5 w-3.5 text-foreground/30" />;
   }
   if (
     lower.includes("extra cost") ||
     lower.includes("külön költség") ||
+    lower.includes("zusatzkosten") ||
     lower.includes("varies") ||
     lower.includes("változó") ||
+    lower.includes("unterschiedlich") ||
     lower.includes("basic") ||
     lower.includes("alap") ||
     lower.includes("closed") ||
     lower.includes("zárt") ||
+    lower.includes("geschlossen") ||
     lower.includes("outdated") ||
     lower.includes("elavult") ||
+    lower.includes("veraltet") ||
     lower.includes("slow") ||
     lower.includes("lassú")
   ) {
@@ -57,7 +68,8 @@ function CellIcon({ value }: { value: string }) {
   }
   if (
     lower.includes("everything") ||
-    lower.includes("minden")
+    lower.includes("minden") ||
+    lower.includes("alles selbst")
   ) {
     return <X className="inline h-3.5 w-3.5 text-foreground/30" />;
   }

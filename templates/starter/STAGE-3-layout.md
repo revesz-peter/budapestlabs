@@ -306,7 +306,7 @@ export function Navbar() {
               className="mt-2 rounded-full bg-foreground text-background hover:bg-foreground/90"
             >
               <a href="#contact" onClick={() => setMobileOpen(false)}>
-                {t("contact")}
+                {t("cta")}
               </a>
             </Button>
           </div>
@@ -376,3 +376,21 @@ Layout: 4-column grid on desktop, stacked on mobile.
 Footer uses `useTranslations()` (no namespace — accesses root keys).
 
 Bottom bar: `© {year} {{BUSINESS_NAME}}. All rights reserved.`
+
+Below the copyright line, add a subtle "Made by" credit:
+
+```tsx
+<p className="mt-2 text-center text-xs text-foreground/20">
+  Made by{" "}
+  <a
+    href="https://budapestlabs.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="transition-colors hover:text-foreground/40"
+  >
+    Budapest Labs
+  </a>
+</p>
+```
+
+This goes in every client site footer — it's our portfolio backlink.

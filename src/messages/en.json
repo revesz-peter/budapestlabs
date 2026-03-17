@@ -20,7 +20,10 @@
   "stats": {
     "websites": "websites delivered",
     "delivery": "average delivery time",
-    "satisfaction": "client satisfaction"
+    "satisfaction": "client satisfaction",
+    "lighthouse": "Lighthouse score",
+    "loadTime": "page load time",
+    "uptime": "uptime guarantee"
   },
   "howItWorks": {
     "label": "Process",
@@ -152,7 +155,7 @@
       },
       "q5": {
         "question": "What technology does the website run on?",
-        "answer": "The same technology trusted by Apple, Netflix, Spotify, Airbnb, and Porsche. Your site is fully encrypted, loads instantly worldwide, and has 99.99% uptime."
+        "answer": "The same technology trusted by Apple, Netflix, Spotify, Airbnb, and Porsche. Your site is fully encrypted, loads instantly worldwide, and has 99.99% uptime.\n\nFor the technically curious: Next.js 16, React 19, TypeScript, Tailwind CSS v4, Framer Motion, Radix UI, Bun — hosted on Vercel's global edge network, with Neon serverless database and Supabase backend services."
       },
       "q6": {
         "question": "Will my site show up on Google?",
@@ -188,7 +191,7 @@
       "quality": { "label": "Design quality", "diy": "Generic template", "agency": "Custom", "us": "Professional" },
       "tech": { "label": "Technology", "diy": "Closed platform", "agency": "Often outdated", "us": "Latest & future-proof" },
       "security": { "label": "Security", "diy": "Your responsibility", "agency": "Varies", "us": "Fully secure" },
-      "performance": { "label": "Page speed", "diy": "Slow, bloated", "agency": "Varies", "us": "Lightning fast" },
+      "performance": { "label": "Page speed", "diy": "3–8 seconds", "agency": "1–4 seconds", "us": "Under 0.5 seconds" },
       "mobile": { "label": "Mobile optimized", "diy": "Often broken", "agency": "Usually yes", "us": "Always" },
       "seo": { "label": "SEO", "diy": "Minimal", "agency": "Extra cost", "us": "Included" },
       "booking": { "label": "Booking & payments", "diy": "Extra cost", "agency": "Extra cost", "us": "Built-in" },

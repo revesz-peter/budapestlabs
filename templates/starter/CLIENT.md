@@ -14,6 +14,9 @@ Dear Future Client, please fill out the questionnaire below so we can build the 
 - **Helyszín / Location:** (város, cím / city, address)
 - **Mióta működik? / How long have you been in business?**
 - **Domain:** (pl. vallalkozas.hu / e.g. mybusiness.hu — Ha nincs, segítünk beszerezni / If you don't have one, we'll help)
+- **Jelenlegi weboldal / Existing website:** (ha van / if you have one)
+  (Ha van meglévő weboldala, onnan átvesszük a szükséges adatokat: elérhetőségek, nyitvatartás, szolgáltatások, képek.)
+  (If you have an existing site, we'll pull the needed info from there: contact details, hours, services, images.)
 - **E-mail cím / Email:**
 - **Telefonszám / Phone:**
 - **Közösségi média / Social media:**

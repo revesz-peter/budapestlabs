@@ -20,7 +20,10 @@
   "stats": {
     "websites": "elkészített weboldal",
     "delivery": "átlagos elkészítési idő",
-    "satisfaction": "ügyfél elégedettség"
+    "satisfaction": "ügyfél elégedettség",
+    "lighthouse": "Lighthouse pontszám",
+    "loadTime": "betöltési idő",
+    "uptime": "rendelkezésre állás"
   },
   "howItWorks": {
     "label": "Folyamat",
@@ -90,7 +93,7 @@
         "Részletfizetés elérhető",
         "Webshop, ügynökségi oldal, márkaoldal — bármi",
         "Egyedi funkciók az Ön igényei szerint",
-        "Online fizetés elfogadása",
+        "Online fizetés elfogadása (SimplePay, Barion, Stripe)",
         "Kiemelt ügyfélszolgálat",
         "Ugyanaz a technológia, amit a vezető ügynökségek és iparági vezetők használnak"
       ]
@@ -152,7 +155,7 @@
       },
       "q5": {
         "question": "Milyen technológiával készül a weboldal?",
-        "answer": "Ugyanazzal, amelyben az Apple, Netflix, Spotify, Airbnb és Porsche is megbízik. Weboldala teljesen titkosított, világszerte azonnal betölt, és 99,99%-os üzemidővel rendelkezik."
+        "answer": "Ugyanazzal, amelyben az Apple, Netflix, Spotify, Airbnb és Porsche is megbízik. Weboldala teljesen titkosított, világszerte azonnal betölt, és 99,99%-os üzemidővel rendelkezik.\n\nA technikai részletek iránt érdeklődőknek: Next.js 16, React 19, TypeScript, Tailwind CSS v4, Framer Motion, Radix UI, Bun — Vercel globális edge hálózatán hosztolva, Neon adatbázissal és Supabase backend szolgáltatásokkal."
       },
       "q6": {
         "question": "Megjelenik az oldalam a Google-ben?",
@@ -188,7 +191,7 @@
       "quality": { "label": "Dizájn minőség", "diy": "Sablon", "agency": "Egyedi", "us": "Professzionális" },
       "tech": { "label": "Technológia", "diy": "Zárt platform", "agency": "Gyakran elavult", "us": "Legmodernebb és jövőálló" },
       "security": { "label": "Biztonság", "diy": "Az Ön felelőssége", "agency": "Változó", "us": "Teljesen biztonságos" },
-      "performance": { "label": "Betöltési sebesség", "diy": "Lassú, nehézkes", "agency": "Változó", "us": "Villámgyors" },
+      "performance": { "label": "Betöltési sebesség", "diy": "3–8 másodperc", "agency": "1–4 másodperc", "us": "0,5 másodperc alatt" },
       "mobile": { "label": "Mobilbarát", "diy": "Gyakran hibás", "agency": "Általában igen", "us": "Mindig" },
       "seo": { "label": "SEO", "diy": "Minimális", "agency": "Külön költség", "us": "Tartalmazza" },
       "booking": { "label": "Foglalás és fizetés", "diy": "Külön költség", "agency": "Külön költség", "us": "Beépített" },

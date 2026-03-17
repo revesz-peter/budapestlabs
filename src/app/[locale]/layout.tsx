@@ -16,6 +16,11 @@ const metaByLocale: Record<string, { title: string; description: string }> = {
     description:
       "Professional, mobile-friendly websites for small businesses — delivered within 6 hours. From Starter to Pro plans.",
   },
+  de: {
+    title: "Budapest Labs — Ihre Website in 6 Stunden",
+    description:
+      "Professionelle, mobilfreundliche Websites für Kleinunternehmen — geliefert innerhalb von 6 Stunden. Vom Starter- bis zum Custom-Paket.",
+  },
 };
 
 export async function generateMetadata({
@@ -35,6 +40,7 @@ export async function generateMetadata({
       languages: {
         hu: "/",
         en: "/en",
+        de: "/de",
       },
     },
     openGraph: {
@@ -42,7 +48,7 @@ export async function generateMetadata({
       description: meta.description,
       url: "https://budapestlabs.com",
       siteName: "Budapest Labs",
-      locale: locale === "hu" ? "hu_HU" : "en_US",
+      locale: locale === "hu" ? "hu_HU" : locale === "de" ? "de_DE" : "en_US",
       type: "website",
     },
     twitter: {

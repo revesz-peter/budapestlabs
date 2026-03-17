@@ -55,12 +55,18 @@ const stats = [
   { key: "satisfaction", target: 100, suffix: "%" },
 ] as const;
 
+const perfStats = [
+  { key: "lighthouse", target: 98, suffix: "/100" },
+  { key: "loadTime", target: 3, prefix: "0.", suffix: "s" },
+  { key: "uptime", target: 99, suffix: ".99%" },
+] as const;
+
 export function Stats() {
   const t = useTranslations("stats");
 
   return (
     <section className="px-6 py-20 md:px-8 lg:px-16">
-      <div className="mx-auto max-w-4xl">
+      <div className="mx-auto max-w-4xl space-y-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,6 +80,27 @@ export function Stats() {
                 <AnimatedCounter
                   target={stat.target}
                   from={"from" in stat ? stat.from : undefined}
+                  suffix={stat.suffix}
+                  prefix={"prefix" in stat ? stat.prefix : ""}
+                />
+              </p>
+              <p className="mt-2 text-sm text-muted-foreground">{t(stat.key)}</p>
+            </div>
+          ))}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+          className="glass grid grid-cols-1 divide-y divide-border md:grid-cols-3 md:divide-x md:divide-y-0"
+        >
+          {perfStats.map((stat) => (
+            <div key={stat.key} className="px-8 py-6 text-center">
+              <p className="text-3xl font-bold tracking-tight">
+                <AnimatedCounter
+                  target={stat.target}
                   suffix={stat.suffix}
                   prefix={"prefix" in stat ? stat.prefix : ""}
                 />

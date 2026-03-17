@@ -32,6 +32,9 @@ The client's answer to question 2 in [CLIENT.md](CLIENT.md) determines the arche
 Follow these files in order:
 
 1. **[STAGE-1-setup.md](STAGE-1-setup.md)** — Project initialization, dependencies, config files
+
+> **If the client provided an existing website URL:** Before starting Stage 2, fetch the site and extract: business name, services/products, contact info (phone, email, address), opening hours, social media links, all image URLs (logo, gallery, hero photos), brand colors, and navigation structure. Use this data to pre-fill the CLIENT.md answers. Download usable images (logo, gallery photos) into a `public/images/` folder. The creative direction (Stage 2.1) is still done fresh — existing site design is NOT carried over.
+
 2. **[STAGE-2-design-system.md](STAGE-2-design-system.md)** — Theme, colors, typography, CSS, glass cards
 3. **[STAGE-3-layout.md](STAGE-3-layout.md)** — Navbar, footer, page structure, i18n routing
 4. **STAGE-4** — Page sections (**pick the right file based on archetype above**)

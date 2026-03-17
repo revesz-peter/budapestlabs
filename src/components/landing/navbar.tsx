@@ -42,7 +42,7 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [onScroll]);
 
-  function switchLocale(newLocale: "hu" | "en") {
+  function switchLocale(newLocale: "hu" | "en" | "de") {
     router.replace(pathname, { locale: newLocale });
   }
 
@@ -78,28 +78,20 @@ export function Navbar() {
         <div className="flex items-center gap-3">
           {/* Language Switcher */}
           <div className="flex items-center rounded-full border border-border bg-foreground/5 p-1">
-            <button
-              onClick={() => switchLocale("hu")}
-              className={cn(
-                "rounded-full px-3 py-1 text-xs font-medium transition-colors",
-                locale === "hu"
-                  ? "bg-foreground text-background"
-                  : "text-muted-foreground hover:text-foreground"
-              )}
-            >
-              HU
-            </button>
-            <button
-              onClick={() => switchLocale("en")}
-              className={cn(
-                "rounded-full px-3 py-1 text-xs font-medium transition-colors",
-                locale === "en"
-                  ? "bg-foreground text-background"
-                  : "text-muted-foreground hover:text-foreground"
-              )}
-            >
-              EN
-            </button>
+            {(["hu", "en", "de"] as const).map((lang) => (
+              <button
+                key={lang}
+                onClick={() => switchLocale(lang)}
+                className={cn(
+                  "rounded-full px-2.5 py-1 text-xs font-medium transition-colors",
+                  locale === lang
+                    ? "bg-foreground text-background"
+                    : "text-muted-foreground hover:text-foreground"
+                )}
+              >
+                {lang.toUpperCase()}
+              </button>
+            ))}
           </div>
 
           {/* Theme Toggle */}
