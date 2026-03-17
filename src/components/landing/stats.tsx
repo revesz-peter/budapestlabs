@@ -51,7 +51,7 @@ function AnimatedCounter({
 
 const stats = [
   { key: "websites", target: 50, suffix: "+" },
-  { key: "delivery", target: 6, from: 24, prefix: "≤", suffix: "h" },
+  { key: "delivery", target: 6, prefix: "≤", suffix: "h" },
   { key: "satisfaction", target: 100, suffix: "%" },
 ] as const;
 
@@ -79,7 +79,6 @@ export function Stats() {
               <p className="text-4xl font-bold tracking-tight">
                 <AnimatedCounter
                   target={stat.target}
-                  from={"from" in stat ? stat.from : undefined}
                   suffix={stat.suffix}
                   prefix={"prefix" in stat ? stat.prefix : ""}
                 />
