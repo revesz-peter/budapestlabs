@@ -83,7 +83,7 @@ export function Hero() {
             className="rounded-full border border-foreground/20 text-base text-foreground hover:bg-foreground/5"
           >
             <a
-              href="https://cal.com/budapestlabs/demo"
+              href="https://cal.com/peter-budapestlabs"
               target="_blank"
               rel="noopener noreferrer"
             >
