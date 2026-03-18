@@ -37,7 +37,7 @@ function CellIcon({ value }: { value: string }) {
     lower.includes("alatt") ||
     lower.includes("unter") ||
     lower.includes("unhackable") ||
-    lower.includes("teljesen biztonságos") ||
+    lower.includes("teljes védelem") ||
     lower.includes("fully secure") ||
     lower.includes("vollständig sicher") ||
     lower.includes("latest") ||

@@ -14,6 +14,7 @@
     "trust": {
       "payAfter": "Only pay after delivery",
       "delivery": "≤6 hour delivery",
+      "secure": "Encrypted & secure",
       "revision": "Free revision included"
     }
   },
@@ -51,7 +52,7 @@
   "pricing": {
     "label": "Pricing",
     "title": "Simple, transparent pricing",
-    "subtitle": "Hosting, mobile-friendly design, and the full build included. Only pay when you're happy.",
+    "subtitle": "Hosting, mobile-friendly design, and the full build included. Only a small 10% deposit — the rest after you're happy.",
     "currency": "EUR",
     "choosePlan": "Choose Plan",
     "popular": "Popular",
@@ -65,7 +66,7 @@
         "Mobile responsive design",
         "SEO optimized",
         "Contact form",
-        "Secure hosting included (1 year)",
+        "Secure hosting setup & deployment included",
         "Hungarian and English included"
       ]
     },
@@ -104,31 +105,25 @@
     "label": "Add-ons",
     "title": "Optional add-ons",
     "subtitle": "Extend your website with additional features.",
+    "included": "Included",
     "items": {
-      "extraPages": {
-        "name": "Extra page fee",
-        "description": "Additional pages beyond the plan limits",
-        "price": "40"
+      "branding": {
+        "name": "Visual direction & brand design",
+        "description": "Custom design for your entire site with visual direction tailored to your brand",
+        "price": "0",
+        "suffix": ""
       },
       "multilang": {
         "name": "Multi-language support",
         "description": "Reach international and tourist customers in their language",
-        "price": "120"
-      },
-      "branding": {
-        "name": "Logo and branding",
-        "description": "Custom logo and complete visual identity package",
-        "price": "170"
-      },
-      "maintenance": {
-        "name": "Monthly maintenance",
-        "description": "Content updates, security patches, and uptime monitoring",
-        "price": "25"
+        "price": "120",
+        "suffix": ""
       },
       "domainEmail": {
         "name": "Custom domain + professional email",
-        "description": "Your own .hu or .com domain with a branded email address",
-        "price": "100"
+        "description": "Your own .hu, .de, .at, .ch or .com domain with a branded email address",
+        "price": "150",
+        "suffix": "/ year"
       }
     }
   },
@@ -162,12 +157,12 @@
         "answer": "Yes. Every site we build is optimized for search engines — fast loading, mobile-friendly, and properly structured. These are the key factors Google uses to rank websites."
       },
       "q7": {
-        "question": "Who handles hosting and maintenance after launch?",
-        "answer": "We do. Your first year of secure hosting is included in the price. After that, our maintenance plan is 25 EUR/month — covering hosting, content updates, security patches, and uptime monitoring."
+        "question": "What happens after my website goes live?",
+        "answer": "We set up everything for you — hosting, security, encryption, global performance. You own your website fully, and if you ever need anything, we're just a message away."
       },
       "q8": {
         "question": "Do I really only pay after delivery?",
-        "answer": "Yes — we only ask for a small 15% deposit upfront, just as a confirmation. The rest you pay after you've seen the result and you're happy with it."
+        "answer": "Yes — we only ask for a small 10% deposit upfront, just as a confirmation. The rest you pay after you've seen the result and you're happy with it."
       },
       "q9": {
         "question": "What payment methods do you accept?",

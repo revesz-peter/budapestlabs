@@ -2,19 +2,11 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import {
-  Globe,
-  Palette,
-  FileStack,
-  Wrench,
-  AtSign,
-} from "lucide-react";
+import { Palette, Globe, AtSign } from "lucide-react";
 
 const addons = [
-  { key: "extraPages", icon: FileStack },
-  { key: "multilang", icon: Globe },
   { key: "branding", icon: Palette },
-  { key: "maintenance", icon: Wrench },
+  { key: "multilang", icon: Globe },
   { key: "domainEmail", icon: AtSign },
 ] as const;
 
@@ -67,8 +59,19 @@ export function Addons() {
                 </p>
               </div>
               <p className="shrink-0 text-sm font-medium text-foreground/60">
-                {t(`items.${addon.key}.price`)}{" "}
-                <span className="text-foreground/30">{t("currency")}</span>
+                {t(`items.${addon.key}.price`) === "0" ? (
+                  t("included")
+                ) : (
+                  <>
+                    {t(`items.${addon.key}.price`)}{" "}
+                    <span className="text-foreground/30">{t("currency")}</span>
+                    {t(`items.${addon.key}.suffix`) && (
+                      <span className="text-foreground/30">
+                        {" "}{t(`items.${addon.key}.suffix`)}
+                      </span>
+                    )}
+                  </>
+                )}
               </p>
             </motion.div>
           ))}

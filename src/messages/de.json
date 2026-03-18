@@ -14,6 +14,7 @@
     "trust": {
       "payAfter": "Zahlung erst nach Lieferung",
       "delivery": "≤6 Stunden Lieferzeit",
+      "secure": "Verschlüsselt & sicher",
       "revision": "Kostenlose Überarbeitung inklusive"
     }
   },
@@ -51,7 +52,7 @@
   "pricing": {
     "label": "Preise",
     "title": "Einfache, transparente Preise",
-    "subtitle": "Hosting, mobilfreundliches Design und der komplette Aufbau inklusive. Zahlen Sie erst, wenn Sie zufrieden sind.",
+    "subtitle": "Hosting, mobilfreundliches Design und der komplette Aufbau inklusive. Nur 10% Anzahlung — den Rest erst, wenn Sie zufrieden sind.",
     "currency": "EUR",
     "choosePlan": "Paket wählen",
     "popular": "Beliebt",
@@ -65,7 +66,7 @@
         "Mobilfreundliches Design",
         "SEO-optimiert",
         "Kontaktformular",
-        "Sicheres Hosting inklusive (1 Jahr)",
+        "Sicheres Hosting-Setup & Deployment inklusive",
         "Ungarisch und Englisch inklusive"
       ]
     },
@@ -104,31 +105,25 @@
     "label": "Zusatzoptionen",
     "title": "Optionale Zusatzleistungen",
     "subtitle": "Erweitern Sie Ihre Website mit zusätzlichen Funktionen.",
+    "included": "Inklusive",
     "items": {
-      "extraPages": {
-        "name": "Zusätzliche Seiten",
-        "description": "Weitere Seiten über das Paketlimit hinaus",
-        "price": "40"
+      "branding": {
+        "name": "Visuelle Ausrichtung & Markendesign",
+        "description": "Individuelles Design für Ihre gesamte Website, abgestimmt auf Ihre Marke",
+        "price": "0",
+        "suffix": ""
       },
       "multilang": {
         "name": "Mehrsprachigkeit",
         "description": "Erreichen Sie internationale Kunden und Touristen in ihrer Sprache",
-        "price": "120"
-      },
-      "branding": {
-        "name": "Logo und Branding",
-        "description": "Individuelles Logo und komplettes visuelles Identitätspaket",
-        "price": "170"
-      },
-      "maintenance": {
-        "name": "Monatliche Wartung",
-        "description": "Inhaltsaktualisierungen, Sicherheitsupdates und Verfügbarkeitsüberwachung",
-        "price": "25"
+        "price": "120",
+        "suffix": ""
       },
       "domainEmail": {
         "name": "Eigene Domain + professionelle E-Mail",
-        "description": "Ihre eigene .hu oder .com Domain mit einer gebrandeten E-Mail-Adresse",
-        "price": "100"
+        "description": "Ihre eigene .de, .at, .ch oder .com Domain mit einer gebrandeten E-Mail-Adresse",
+        "price": "150",
+        "suffix": "/ Jahr"
       }
     }
   },
@@ -162,12 +157,12 @@
         "answer": "Ja. Jede von uns erstellte Seite ist für Suchmaschinen optimiert — schnell ladend, mobilfreundlich und richtig strukturiert. Das sind die Schlüsselfaktoren, die Google für das Ranking von Websites verwendet."
       },
       "q7": {
-        "question": "Wer kümmert sich nach dem Launch um Hosting und Wartung?",
-        "answer": "Wir. Ihr erstes Jahr sicheres Hosting ist im Preis enthalten. Danach kostet unser Wartungsplan 25 EUR/Monat — inklusive Hosting, Inhaltsaktualisierungen, Sicherheitsupdates und Verfügbarkeitsüberwachung."
+        "question": "Was passiert, nachdem meine Website online ist?",
+        "answer": "Wir richten alles für Sie ein — Hosting, Sicherheit, Verschlüsselung, weltweite Performance. Die Website gehört komplett Ihnen, und wenn Sie etwas brauchen, sind wir nur eine Nachricht entfernt."
       },
       "q8": {
         "question": "Zahle ich wirklich erst nach Lieferung?",
-        "answer": "Ja — wir bitten nur um eine kleine Anzahlung von 15% im Voraus, als Bestätigung. Den Rest zahlen Sie, nachdem Sie das Ergebnis gesehen haben und zufrieden sind."
+        "answer": "Ja — wir bitten nur um eine kleine Anzahlung von 10% im Voraus, als Bestätigung. Den Rest zahlen Sie, nachdem Sie das Ergebnis gesehen haben und zufrieden sind."
       },
       "q9": {
         "question": "Welche Zahlungsmethoden akzeptieren Sie?",
