@@ -3,19 +3,32 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://budapestlabs.com";
 
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
-      alternates: {
-        languages: {
-          hu: baseUrl,
-          en: `${baseUrl}/en`,
-          de: `${baseUrl}/de`,
-        },
-      },
-    },
+  const locales = ["", "/en", "/de"];
+  const languages = {
+    hu: baseUrl,
+    en: `${baseUrl}/en`,
+    de: `${baseUrl}/de`,
+  };
+
+  const pages = [
+    { path: "", priority: 1, changeFrequency: "weekly" as const },
+    { path: "/privacy", priority: 0.3, changeFrequency: "yearly" as const },
+    { path: "/terms", priority: 0.3, changeFrequency: "yearly" as const },
+    { path: "/imprint", priority: 0.3, changeFrequency: "yearly" as const },
   ];
+
+  return pages.flatMap((page) => ({
+    url: `${baseUrl}${page.path}`,
+    lastModified: new Date(),
+    changeFrequency: page.changeFrequency,
+    priority: page.priority,
+    alternates: {
+      languages: Object.fromEntries(
+        locales.map((l, i) => [
+          ["hu", "en", "de"][i],
+          `${baseUrl}${l}${page.path}`,
+        ])
+      ),
+    },
+  }));
 }
