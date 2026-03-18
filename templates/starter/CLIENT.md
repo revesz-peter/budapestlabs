@@ -13,7 +13,8 @@ Dear Future Client, please fill out the questionnaire below so we can build the 
   (pl. fodrász, étterem, fotós, ügyvéd, divatmárka, panzió / e.g. hair salon, restaurant, photographer, lawyer, clothing brand, guesthouse)
 - **Helyszín / Location:** (város, cím / city, address)
 - **Mióta működik? / How long have you been in business?**
-- **Domain:** (pl. vallalkozas.hu / e.g. mybusiness.hu — Ha nincs, segítünk beszerezni / If you don't have one, we'll help)
+- **Domain:** (pl. vallalkozas.hu / e.g. mybusiness.com — Ha nincs, segítünk beszerezni / If you don't have one, we'll help)
+- **Milyen domaint szeretne? / What domain would you like?** (pl. cegeneve.hu, cegeneve.com / e.g. yourbusiness.hu, yourbusiness.com — Ha nem biztos benne, mi segítünk választani / If you're not sure, we'll help you pick)
 - **Jelenlegi weboldal / Existing website:** (ha van / if you have one)
   (Ha van meglévő weboldala, onnan átvesszük a szükséges adatokat: elérhetőségek, nyitvatartás, szolgáltatások, képek.)
   (If you have an existing site, we'll pull the needed info from there: contact details, hours, services, images.)

@@ -121,7 +121,7 @@
       },
       "domainEmail": {
         "name": "Saját domain + céges email",
-        "description": "Saját .hu vagy .com domain, professzionális email címmel",
+        "description": "Saját webcím és hozzá tartozó céges email cím",
         "price": "59 000",
         "suffix": "/ év"
       }
