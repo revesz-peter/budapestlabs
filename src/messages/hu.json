@@ -63,10 +63,10 @@
       "description": "Egyszerű, professzionális weboldal",
       "features": [
         "3–5 oldal (Főoldal, Rólunk, Szolgáltatások, Kapcsolat)",
+        "Az Ön iparágához igazítva",
         "Mobilbarát dizájn",
-        "SEO optimalizálás",
-        "Kapcsolati űrlap",
-        "Biztonságos tárhely beállítás és üzembe helyezés",
+        "Biztonságos üzembe helyezés",
+        "Saját webcím + email beállítás",
         "Magyar és angol nyelv"
       ]
     },
@@ -118,12 +118,6 @@
         "description": "Érje el a nemzetközi és turista ügyfeleket saját nyelvükön",
         "price": "49 000",
         "suffix": ""
-      },
-      "domainEmail": {
-        "name": "Saját domain + céges email",
-        "description": "Saját webcím és hozzá tartozó céges email cím",
-        "price": "59 000",
-        "suffix": "/ év"
       }
     }
   },

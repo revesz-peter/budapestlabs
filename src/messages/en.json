@@ -63,10 +63,10 @@
       "description": "For freelancers and small businesses",
       "features": [
         "3–5 pages (Home, About, Services, Contact)",
+        "Tailored to your industry",
         "Mobile responsive design",
-        "SEO optimized",
-        "Contact form",
-        "Secure hosting setup & deployment included",
+        "Secure hosting & deployment",
+        "Custom domain + email setup included",
         "Hungarian and English included"
       ]
     },
@@ -118,12 +118,6 @@
         "description": "Reach international and tourist customers in their language",
         "price": "120",
         "suffix": ""
-      },
-      "domainEmail": {
-        "name": "Custom domain + professional email",
-        "description": "Your own custom domain with a branded email address",
-        "price": "150",
-        "suffix": "/ year"
       }
     }
   },

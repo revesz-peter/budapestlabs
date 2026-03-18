@@ -63,10 +63,10 @@
       "description": "Für Freiberufler und Kleinunternehmen",
       "features": [
         "3–5 Seiten (Startseite, Über uns, Leistungen, Kontakt)",
+        "Auf Ihre Branche zugeschnitten",
         "Mobilfreundliches Design",
-        "SEO-optimiert",
-        "Kontaktformular",
-        "Sicheres Hosting-Setup & Deployment inklusive",
+        "Sicheres Hosting & Deployment",
+        "Eigene Domain + E-Mail-Einrichtung inklusive",
         "Ungarisch und Englisch inklusive"
       ]
     },
@@ -118,12 +118,6 @@
         "description": "Erreichen Sie internationale Kunden und Touristen in ihrer Sprache",
         "price": "120",
         "suffix": ""
-      },
-      "domainEmail": {
-        "name": "Eigene Domain + professionelle E-Mail",
-        "description": "Ihre eigene Domain mit einer professionellen E-Mail-Adresse",
-        "price": "150",
-        "suffix": "/ Jahr"
       }
     }
   },

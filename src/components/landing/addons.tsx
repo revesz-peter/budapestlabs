@@ -2,12 +2,11 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Palette, Globe, AtSign } from "lucide-react";
+import { Palette, Globe } from "lucide-react";
 
 const addons = [
   { key: "branding", icon: Palette },
   { key: "multilang", icon: Globe },
-  { key: "domainEmail", icon: AtSign },
 ] as const;
 
 export function Addons() {
