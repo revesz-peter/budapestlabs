@@ -99,22 +99,22 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-          className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-foreground/50"
+          className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-foreground/60"
         >
           <span className="flex items-center gap-1.5">
-            <CreditCard className="h-3 w-3" />
+            <CreditCard className="h-4 w-4" />
             {t("trust.payAfter")}
           </span>
           <span className="flex items-center gap-1.5">
-            <Clock className="h-3 w-3" />
+            <Clock className="h-4 w-4" />
             {t("trust.delivery")}
           </span>
           <span className="flex items-center gap-1.5">
-            <Lock className="h-3 w-3" />
+            <Lock className="h-4 w-4" />
             {t("trust.secure")}
           </span>
           <span className="flex items-center gap-1.5">
-            <Shield className="h-3 w-3" />
+            <Shield className="h-4 w-4" />
             {t("trust.revision")}
           </span>
         </motion.div>

@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { Github, Linkedin, Instagram, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 
 export function Footer() {
   const t = useTranslations();
@@ -18,30 +18,6 @@ export function Footer() {
               <p className="mt-3 text-sm text-muted-foreground">
                 {t("footer.description")}
               </p>
-              {/* Social icons */}
-              <div className="mt-4 flex gap-3">
-                <a
-                  href="#"
-                  className="text-foreground/30 transition-colors hover:text-foreground"
-                  aria-label="GitHub"
-                >
-                  <Github className="h-4 w-4" />
-                </a>
-                <a
-                  href="#"
-                  className="text-foreground/30 transition-colors hover:text-foreground"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="h-4 w-4" />
-                </a>
-                <a
-                  href="#"
-                  className="text-foreground/30 transition-colors hover:text-foreground"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="h-4 w-4" />
-                </a>
-              </div>
             </div>
 
             {/* Navigation */}

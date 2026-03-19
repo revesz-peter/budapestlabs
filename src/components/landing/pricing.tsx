@@ -94,7 +94,7 @@ export function Pricing() {
                       key={feature}
                       className="flex items-start gap-3 text-sm text-foreground/60"
                     >
-                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-foreground/30" />
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-foreground/50" />
                       {feature}
                     </li>
                   ))}

@@ -104,7 +104,7 @@ export function Comparison() {
           <table className="w-full min-w-[600px] border-collapse text-sm">
             <thead>
               <tr>
-                <th className="pb-4 pr-4 text-left font-normal text-foreground/30" />
+                <th className="sticky left-0 z-10 bg-background pb-4 pr-4 text-left font-normal text-foreground/30" />
                 <th className="pb-4 px-4 text-left font-medium text-muted-foreground">
                   {t("columns.diy")}
                 </th>
@@ -119,7 +119,7 @@ export function Comparison() {
             <tbody>
               {rowKeys.map((key, i) => (
                 <tr key={key} className="border-t border-foreground/[0.06]">
-                  <td className="py-4 pr-4 font-medium text-muted-foreground">
+                  <td className="sticky left-0 z-10 bg-background py-4 pr-4 font-medium text-muted-foreground">
                     {t(`rows.${key}.label`)}
                   </td>
                   <td className="py-4 px-4 text-foreground/35">
