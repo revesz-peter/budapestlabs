@@ -98,7 +98,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-border pt-8">
           <p className="text-center text-xs text-foreground/30">
-            &copy; {year} Budapest Labs. {t("footer.rights")}
+            {t("footer.madeWith")}
           </p>
         </div>
       </div>
