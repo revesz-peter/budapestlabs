@@ -97,7 +97,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t border-border pt-8">
-          <p className="text-center text-xs text-foreground/30">
+          <p className="text-center text-sm text-muted-foreground">
             {t("footer.madeWith")}
           </p>
         </div>
