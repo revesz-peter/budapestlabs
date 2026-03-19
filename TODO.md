@@ -23,3 +23,8 @@
 - [ ] **Legal pages locale-aware back link** — "Back to home" uses hardcoded `/` instead of locale-aware routing
 - [ ] **Comparison table mobile scroll indicator** — `min-w-[600px]` forces horizontal scroll with no visual hint
 - [ ] **Self-host fonts for GDPR** — Google Fonts sends user IP to Google servers
+
+## Tech to Evaluate
+
+- [ ] **Nano Banana 2** — Gemini-powered image generation CLI / Claude Code skill. Use in pipeline (STAGE-2/STAGE-4) for generating placeholder hero images, transparent icons/logos, and OG images during client builds. Requires: Gemini API key + FFmpeg + ImageMagick. GitHub: `kingbootoshi/nano-banana-2-skill`
+- [ ] **Google Stitch** — Free AI UI mockup generator from Google Labs. Use in STAGE-2 for rapid design exploration — generate concept variants from text prompts to show clients before building. Output is HTML/CSS (inspiration/direction, not copy-paste into our stack). URL: `stitch.withgoogle.com`

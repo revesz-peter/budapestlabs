@@ -246,70 +246,103 @@
     "rights": "Minden jog fenntartva."
   },
   "legal": {
-    "back": "Vissza a főoldalra",
+    "back": "Vissza a f\u0151oldalra",
+    "download": "Ment\u00e9s PDF-k\u00e9nt",
     "privacy": {
-      "title": "Adatvédelmi nyilatkozat",
-      "lastUpdated": "Utolsó frissítés: 2026. március 15.",
-      "intro": "A Budapest Labs ('mi') tiszteletben tartja az Ön személyes adatait. Ez a nyilatkozat ismerteti, milyen adatokat gyűjtünk, miért, és hogyan védjük azokat.",
+      "title": "Adatv\u00e9delmi nyilatkozat",
+      "lastUpdated": "Utols\u00f3 friss\u00edt\u00e9s: 2026. m\u00e1rcius 19.",
+      "intro": "Fontos sz\u00e1munkra az \u00d6n mag\u00e1nszf\u00e9r\u00e1ja. Ez az oldal bemutatja, milyen adatokat gy\u0171jt\u00fcnk, mikor felkeres minket, mire haszn\u00e1ljuk, \u00e9s hogyan v\u00e9dj\u00fck azokat.",
       "sections": {
         "collection": {
-          "title": "Milyen adatokat gyűjtünk",
-          "content": "A kapcsolatfelvételi űrlap kitöltésekor az alábbi adatokat gyűjtjük: név, e-mail cím, telefonszám (opcionális), vállalkozás neve (opcionális), kiválasztott csomag és üzenet. Automatikusan semmilyen adatot nem gyűjtünk — nincs cookie, nincs nyomkövető, nincs analitika."
+          "title": "Mit gy\u0171jt\u00fcnk",
+          "content": "A kapcsolatfelv\u00e9teli \u0171rlap kit\u00f6lt\u00e9sekor megkapjuk: a nev\u00e9t, e-mail c\u00edm\u00e9t, telefonsz\u00e1m\u00e1t (ha megadja), v\u00e1llalkoz\u00e1sa nev\u00e9t (opcion\u00e1lis), a kiv\u00e1lasztott csomagot \u00e9s az \u00fczenet\u00e9t. Ennyi. Nem haszn\u00e1lunk cookie-kat, nyomk\u00f6vet\u0151ket vagy analitikai eszk\u00f6z\u00f6ket."
+        },
+        "basis": {
+          "title": "Mi\u00e9rt kezelhetj\u00fck",
+          "content": "Azért kezelj\u00fck az adatait, mert \u00d6n \u00f6nk\u00e9nt elk\u00fcldte nek\u00fcnk \u2014 ez az \u00d6n hozz\u00e1j\u00e1rul\u00e1sa az EU adatv\u00e9delmi joga (GDPR) \u00e9rtelm\u00e9ben. Ha egy\u00fctt kezd\u00fcnk dolgozni, az adataira a projekt megval\u00f3s\u00edt\u00e1s\u00e1hoz is sz\u00fcks\u00e9g\u00fcnk van. Bizonyos esetekben jogi vagy sz\u00e1mviteli k\u00f6telezetts\u00e9gek miatt is meg\u0151rizhetj\u00fck az adatokat."
         },
         "purpose": {
-          "title": "Miért gyűjtjük",
-          "content": "A kapcsolatfelvételi adatait kizárólag megkeresésére történő válaszadásra és webfejlesztési szolgáltatásaink nyújtására használjuk. Adatait soha nem adjuk el, nem osztjuk meg és nem továbbítjuk harmadik félnek."
+          "title": "Mire haszn\u00e1ljuk",
+          "content": "Kapcsolatfelv\u00e9teli adatait kiz\u00e1r\u00f3lag arra haszn\u00e1ljuk, hogy v\u00e1laszoljunk a megkeres\u00e9s\u00e9re, \u00e1raj\u00e1nlatot k\u00e9sz\u00edts\u00fcnk, \u00e9s elk\u00e9sz\u00edts\u00fck a weboldalat. Adatait soha nem adjuk el, nem b\u00e9relj\u00fck ki, \u00e9s nem osztjuk meg senkivel marketing vagy m\u00e1s, nem kapcsol\u00f3d\u00f3 c\u00e9lra."
         },
         "storage": {
-          "title": "Hogyan tároljuk",
-          "content": "Adatait az Európai Unióban található titkosított szervereken tároljuk biztonságosan. Az adatokat csak a kérés teljesítéséhez és a jogi kötelezettségek betartásához szükséges ideig őrizzük meg."
+          "title": "Hogyan v\u00e9dj\u00fck",
+          "content": "Adatait az Eur\u00f3pai Uni\u00f3ban tal\u00e1lhat\u00f3 titkos\u00edtott szervereken t\u00e1roljuk. Az \u00fczleti kapcsolat id\u0151tartama alatt, majd azt k\u00f6vet\u0151en legfeljebb 5 \u00e9vig \u0151rizz\u00fck meg, ahogyan a magyar sz\u00e1mviteli t\u00f6rv\u00e9nyek el\u0151\u00edrj\u00e1k. Ut\u00e1na v\u00e9glegesen t\u00f6r\u00f6lj\u00fck."
+        },
+        "thirdparty": {
+          "title": "Szolg\u00e1ltat\u00e1sok, amelyekre t\u00e1maszkodunk",
+          "content": "Weboldal\u00e1nk \u00fczemeltet\u00e9s\u00e9hez \u00e9s az \u00d6nnel val\u00f3 kommunik\u00e1ci\u00f3hoz t\u00e1rhelyszolg\u00e1ltat\u00f3t \u00e9s e-mail szolg\u00e1ltat\u00e1st haszn\u00e1lunk. Ezek a szolg\u00e1ltat\u00f3k kiz\u00e1r\u00f3lag a mi megb\u00edz\u00e1sunkb\u00f3l kezelnek adatokat, \u00e9s a GDPR-nak megfelel\u0151 meg\u00e1llapod\u00e1sok k\u00f6tik \u0151ket. Az \u00d6n adatait nem osztjuk meg m\u00e1s harmadik f\u00e9llel."
         },
         "hosting": {
-          "title": "Webtárhely",
-          "content": "Ez a weboldal HTTPS titkosítást használó infrastruktúrán fut. A tárhelyszolgáltató a szabványos szervernaplókon kívül nem rögzít személyes adatot, és ezeket a naplókat 30 nap után automatikusan törli."
+          "title": "Webt\u00e1rhely",
+          "content": "Weboldal\u00e1nk HTTPS titkos\u00edt\u00e1st haszn\u00e1l minden kapcsolatn\u00e1l. A t\u00e1rhelyszolg\u00e1ltat\u00f3 csak szabv\u00e1nyos szervern\u00e1pl\u00f3kat \u0151riz (IP-c\u00edm, id\u0151b\u00e9lyeg, megl\u00e1togatott oldal), amelyeket 30 nap ut\u00e1n automatikusan t\u00f6r\u00f6l."
         },
         "rights": {
-          "title": "Az Ön jogai",
-          "content": "Az EU általános adatvédelmi rendelete (GDPR) értelmében Ön bármikor hozzáférhet személyes adataihoz, kérheti azok helyesbítését vagy törlését. Kérheti továbbá az általunk tárolt adatainak másolatát."
+          "title": "Az \u00d6n jogai",
+          "content": "Az EU joga (GDPR) \u00e9rtelm\u00e9ben \u00d6n: megt\u00e9k\u00edntheti, milyen adatokat t\u00e1rolunk \u00d6nr\u0151l; k\u00e9rheti b\u00e1rmi hib\u00e1s adat jav\u00edt\u00e1s\u00e1t; k\u00e9rheti adatai t\u00f6rl\u00e9s\u00e9t; korl\u00e1tozhatja vagy kifog\u00e1solhatja az adatkezel\u00e9st; vagy k\u00e9rhet egy hordozhat\u00f3 m\u00e1solatot. Hozz\u00e1j\u00e1rul\u00e1s\u00e1t b\u00e1rmikor visszavonhatja \u2014 ez nem \u00e9rinti a visszavon\u00e1s el\u0151tt v\u00e9gzett adatkezel\u00e9st. Egyszer\u0171en \u00edrjon nek\u00fcnk az info@budapestlabs.com c\u00edmre, \u00e9s int\u00e9zz\u00fck."
+        },
+        "complaint": {
+          "title": "Valami nincs rendben?",
+          "content": "Ha \u00fagy \u00e9rzi, hogy adatait nem megfelel\u0151en kezelj\u00fck, panaszt tehet a Nemzeti Adatv\u00e9delmi \u00e9s Inform\u00e1ci\u00f3szabads\u00e1g Hat\u00f3s\u00e1gn\u00e1l (NAIH) a naih.hu oldalon, vagy az \u00d6n orsz\u00e1g\u00e1nak fel\u00fcgyeleti hat\u00f3s\u00e1g\u00e1n\u00e1l."
         },
         "contact": {
           "title": "Kapcsolat",
-          "content": "Adatvédelmi kérdéseivel vagy kéréseivel forduljon hozzánk az info@budapestlabs.com címen."
+          "content": "K\u00e9rd\u00e9se van az adataival kapcsolatban? \u00cdrjon nek\u00fcnk: info@budapestlabs.com. 30 napon bel\u00fcl v\u00e1laszolunk."
         }
       }
     },
     "terms": {
-      "title": "Általános Szerződési Feltételek",
-      "lastUpdated": "Utolsó frissítés: 2026. március 15.",
-      "intro": "A Budapest Labs szolgáltatásainak igénybevételével Ön elfogadja az alábbi feltételeket.",
+      "title": "\u00c1ltal\u00e1nos Szerz\u0151d\u00e9si Felt\u00e9telek",
+      "lastUpdated": "Utols\u00f3 friss\u00edt\u00e9s: 2026. m\u00e1rcius 19.",
+      "intro": "Ezek a felt\u00e9telek vonatkoznak a Budapest Labs-szal val\u00f3 egy\u00fcttm\u0171k\u00f6d\u00e9sre. Igyekezt\u00fcnk \u00e9rthet\u0151en \u00e9s egyenesen fogalmazni \u2014 nincsenek meglepet\u00e9sek.",
       "sections": {
         "scope": {
-          "title": "Szolgáltatások köre",
-          "content": "A Budapest Labs weboldal tervezési és fejlesztési szolgáltatásokat nyújt kisvállalkozások számára. Szolgáltatásunk magában foglalja a tervezést, fejlesztést, üzembe helyezést és a kezdeti tárhelyet a kiválasztott csomagnak megfelelően."
+          "title": "Mit csin\u00e1lunk",
+          "content": "Weboldalakat tervez\u00fcnk \u00e9s \u00e9p\u00edt\u00fcnk kisv\u00e1llalkoz\u00e1sok sz\u00e1m\u00e1ra. A v\u00e1lasztott csomagj\u00e1t\u00f3l f\u00fcgg\u0151en ez magában foglalhatja: egyedi dizájn \u00e9s fejleszt\u00e9s, mobilbar\u00e1t elrendez\u00e9s, t\u00e1rhely \u00e9s \u00fczembe helyez\u00e9s, domain \u00e9s e-mail be\u00e1ll\u00edt\u00e1s, t\u00f6bbnyelv\u0171 t\u00e1mogat\u00e1s, foglal\u00e1si rendszerek, analitika \u00e9s tov\u00e1bbi funkci\u00f3k. Ha valami extr\u00e1ra van sz\u00fcks\u00e9ge, megbesz\u00e9lj\u00fck \u00e9s k\u00f6z\u00f6sen meg\u00e1llapodunk. A projekt pontos hat\u00f3k\u00f6r\u00e9t a v\u00e1lasztott csomag \u00e9s az \u00edr\u00e1sban r\u00f6gz\u00edtett egy\u00e9b meg\u00e1llapod\u00e1sok hat\u00e1rozz\u00e1k meg."
         },
         "payment": {
-          "title": "Fizetés",
-          "content": "Előre semmit nem kell fizetnie. Elkészítjük a weboldalt, Ön átnézi, és csak akkor fizet, ha elégedett az eredménnyel. A fizetés a végleges eredmény jóváhagyásakor esedékes. Banki átutalást, online kártyás fizetést és készpénzt is elfogadunk."
+          "title": "Hogyan m\u0171k\u00f6dik a fizet\u00e9s",
+          "content": "Ind\u00edt\u00e1s el\u0151tt egy kis, 10%-os foglal\u00f3t k\u00e9r\u00fcnk \u2014 ez meger\u0151s\u00edti a megrendel\u00e9s\u00e9t \u00e9s biztos\u00edtja a hely\u00e9t. A marad\u00e9k 90%-ot csak akkor kell kifizetnie, ha l\u00e1tta az eredm\u00e9nyt \u00e9s el\u00e9gedett vele. Ha az ingyenes m\u00f3dos\u00edt\u00e1si k\u00f6r ut\u00e1n m\u00e9g mindig nem tetszik, nem kell kifizetnie a fennmarad\u00f3 \u00f6sszeget \u2014 a foglal\u00f3 egyszer\u0171en az addig befektetett id\u0151nket fedezi. Banki \u00e1tutal\u00e1st, k\u00e1rty\u00e1s fizet\u00e9st \u00e9s k\u00e9szp\u00e9nzt is elfogadunk. Az \u00e1rak HUF-ban \u00e9rtend\u0151k."
         },
         "revisions": {
-          "title": "Módosítások",
-          "content": "Minden csomag tartalmaz egy ingyenes módosítási kört. További módosítási körök külön díj ellenében igényelhetők, amelyekről előzetesen tájékoztatjuk."
+          "title": "M\u00f3dos\u00edt\u00e1sok",
+          "content": "Minden csomag tartalmaz egy ingyenes m\u00f3dos\u00edt\u00e1si k\u00f6rt. Ez a diz\u00e1jn, az elrendez\u00e9s vagy a tartalom igaz\u00edt\u00e1s\u00e1t jelenti. Nem foglalja mag\u00e1ban a teljes \u00fajrakezd\u00e9st vagy az eredeti csomagban nem szerepl\u0151 funkci\u00f3k hozz\u00e1ad\u00e1s\u00e1t. Ha tov\u00e1bbi v\u00e1ltoztat\u00e1sra van sz\u00fcks\u00e9ge, el\u0151re sz\u00f3lunk a k\u00f6lts\u00e9gr\u0151l \u2014 nincsenek meglepet\u00e9sek."
         },
         "delivery": {
-          "title": "Szállítás",
-          "content": "Célunk, hogy minden projektet a tartalom kézhezvételétől számított 6 órán belül átadjunk. Ha ezt a határidőt nem tudjuk tartani, Ön nem köteles fizetni."
+          "title": "\u00c1tad\u00e1si hat\u00e1rid\u0151k",
+          "content": "A weboldalunkon felt\u00fcntetett hat\u00e1rid\u0151k (pl. aznap, 1\u20132 nap, 3\u20135 nap) becsl\u00e9sek, amelyek tipikus projektekre vonatkoznak. Hogy az \u00d6n projektje mennyi ideig tart, az az \u00f6sszetetts\u00e9gt\u0151l \u00e9s att\u00f3l f\u00fcgg, milyen gyorsan tudja elk\u00fcldeni a tartalmakat. Mindig mindent megtesz\u00fcnk az id\u0151ben t\u00f6rt\u00e9n\u0151 \u00e1tad\u00e1s\u00e9rt, de pontos d\u00e1tumot nem tudunk garant\u00e1lni. Az \u00f3ra akkor indul, amikor megkaptunk mindent, amire sz\u00fcks\u00e9g\u00fcnk van (sz\u00f6veg, k\u00e9pek, log\u00f3), \u00e9s a foglal\u00f3 is meg\u00e9rkezett. Ha az \u00d6n oldal\u00e1n van k\u00e9sedelem, az nem sz\u00e1m\u00edt bele a mi hat\u00e1rid\u0151nkbe."
+        },
+        "client": {
+          "title": "Amire sz\u00fcks\u00e9g\u00fcnk van \u00d6nt\u0151l",
+          "content": "A weboldal elk\u00e9sz\u00edt\u00e9s\u00e9hez sz\u00fcks\u00e9g\u00fcnk lesz a tartalmaira \u2014 sz\u00f6vegek, k\u00e9pek, log\u00f3, arculati anyagok. Arra is k\u00e9rj\u00fck, hogy az el\u0151n\u00e9zetet k\u00f6r\u00fclbel\u00fcl egy h\u00e9ten bel\u00fcl n\u00e9zze \u00e1t. Ha 14 munkanapon bel\u00fcl nem kapunk visszajelz\u00e9st, a projektet j\u00f3v\u00e1hagyottnak tekintj\u00fck. K\u00e9rj\u00fck, gy\u0151z\u0151dj\u00f6n meg r\u00f3la, hogy a tartalom, amit k\u00fcld, az \u00d6n\u00e9 \u2014 b\u00edzunk benne, hogy minden anyagra megvannak a jogai."
         },
         "ownership": {
-          "title": "Tulajdonjog",
-          "content": "A teljes fizetés után a weboldal és annak teljes tartalma az Ön tulajdonába kerül. Mi semmilyen jogot nem tartunk fenn. Ön szabadon áthelyezheti, módosíthatja vagy leállíthatja weboldalát bármikor."
+          "title": "Ki\u00e9 a weboldal",
+          "content": "A teljes fizet\u00e9s ut\u00e1n a weboldal az \u00d6n\u00e9 \u2014 a diz\u00e1jn, a tartalom, minden, amit \u00d6nnek k\u00e9sz\u00edtett\u00fcnk. Szabadon \u00e1thelyezheti, m\u00f3dos\u00edthatja vagy le\u00e1ll\u00edthatja, amikor csak akarja. Mi az \u00e1ltal\u00e1nos c\u00e9l\u00fa eszk\u00f6z\u00f6ket \u00e9s k\u00f3dokat tov\u00e1bbra is haszn\u00e1lhatjuk, amelyek nem kifejezetten az \u00d6n projekt\u00e9hez k\u00e9sz\u00fcltek. Sz\u00edvesen bemutatn\u00e1nk az \u00d6n weboldal\u00e1t a portf\u00f3li\u00f3nkban is, de ha nem szeretn\u00e9, csak sz\u00f3ljon."
+        },
+        "thirdparty": {
+          "title": "Harmadik f\u00e9lt\u0151l sz\u00e1rmaz\u00f3 szolg\u00e1ltat\u00e1sok",
+          "content": "A weboldala m\u00e1s c\u00e9gek szolg\u00e1ltat\u00e1sait is haszn\u00e1lhatja \u2014 p\u00e9ld\u00e1ul t\u00e1rhelyet, domain regisztr\u00e1ci\u00f3t, e-mailt vagy fizet\u00e9si rendszert. Ezek f\u00fcggetlen szolg\u00e1ltat\u00e1sok, saj\u00e1t felt\u00e9telekkel \u00e9s \u00e1rakkal, amelyek id\u0151vel v\u00e1ltozhatnak. Seg\u00edt\u00fcnk mindent be\u00e1ll\u00edtani, de ezeknek a szolg\u00e1ltat\u00f3knak a m\u0171k\u00f6d\u00e9s\u00e9t nem tudjuk befoly\u00e1solni."
+        },
+        "cancellation": {
+          "title": "Lemond\u00e1s",
+          "content": "A projektet b\u00e1rmikor lemondhatja, miel\u0151tt j\u00f3v\u00e1hagyn\u00e1 a v\u00e9geredm\u00e9nyt. A foglal\u00f3 a kezdeti munk\u00e1t fedezi, \u00e9s nem t\u00e9r\u00edthet\u0151 vissza. Ha m\u00e1r jelent\u0151s munk\u00e1t v\u00e9gezt\u00fcnk, az elk\u00e9sz\u00fclt munk\u00e1\u00e9rt m\u00e9lt\u00e1nyos d\u00edjat sz\u00e1m\u00edthatunk fel \u2014 err\u0151l mindig egyeztet\u00fcnk el\u0151tte. A mi r\u00e9sz\u00fcnkr\u0151l, ha 30 napon bel\u00fcl nem kapjuk meg a tartalmat, vagy t\u00f6bb mint 30 napig nem tudunk el\u00e9rni, sz\u00fcks\u00e9g lehet a projekt lez\u00e1r\u00e1s\u00e1ra."
+        },
+        "warranty": {
+          "title": "\u00c1tad\u00e1s ut\u00e1n",
+          "content": "Ki\u00e1llunk a munk\u00e1nk mellett. Ha az \u00e1tad\u00e1st k\u00f6vet\u0151 30 napon bel\u00fcl valami nem \u00fagy m\u0171k\u00f6dik, ahogy kellene, jav\u00edtjuk \u2014 felt\u00e9ve, hogy a mi oldal\u00e1nkon van a hiba. Ezut\u00e1n a folyamatos karbantart\u00e1s vagy \u00faj m\u00f3dos\u00edt\u00e1sok nem tartoznak bele, kiv\u00e9ve, ha k\u00fcl\u00f6n meg\u00e1llapodunk. A harmadik f\u00e9l szolg\u00e1ltat\u00e1sok (t\u00e1rhely, internet stb.) t\u00f6k\u00e9letes m\u0171k\u00f6d\u00e9s\u00e9t nem tudjuk garant\u00e1lni \u2014 az rajtunk k\u00edv\u00fcl \u00e1ll."
         },
         "liability": {
-          "title": "Felelősségkorlátozás",
-          "content": "A Budapest Labs nem vállal felelősséget a szolgáltatásaink használatából eredő közvetett, véletlenszerű vagy következményes károkért. Teljes felelősségünk a szolgáltatásért fizetett összegre korlátozódik."
+          "title": "Felel\u0151ss\u00e9g\u00fcnk",
+          "content": "Komolyan vessz\u00fck a munk\u00e1nkat, de vannak hat\u00e1rok. Ha valami probl\u00e9ma ad\u00f3dna, felel\u0151ss\u00e9g\u00fcnk a projekt\u00e9rt kifizetett \u00f6sszegre korl\u00e1toz\u00f3dik. Nem felel\u00fcnk azok\u00e9rt a probl\u00e9m\u00e1k\u00e9rt, amelyek az \u00e1tad\u00e1s ut\u00e1ni m\u00f3dos\u00edt\u00e1sokb\u00f3l sz\u00e1rmaznak, vagy amelyek rajtunk k\u00edv\u00fcl \u00e1lln\u00e1k, p\u00e9ld\u00e1ul harmadik f\u00e9l szolg\u00e1ltat\u00e1sok kies\u00e9se."
+        },
+        "changes": {
+          "title": "Felt\u00e9telek friss\u00edt\u00e9se",
+          "content": "Ezeket a felt\u00e9teleket id\u0151nk\u00e9nt friss\u00edthetj\u00fck. Amikor ezt megtessz\u00fck, az \u00faj verzi\u00f3 itt jelenik meg. A m\u00e1r elind\u00edtott projektekre azok a felt\u00e9telek vonatkoznak, amelyek a megrendel\u00e9s pillanat\u00e1ban \u00e9rv\u00e9nyben voltak."
         },
         "law": {
-          "title": "Irányadó jog",
-          "content": "Ezekre a feltételekre a magyar jog az irányadó. Bármely vitát a budapesti illetékes bíróságok rendeznek."
+          "title": "Jogi r\u00e9szletek",
+          "content": "Ezekre a felt\u00e9telekre a magyar jog az ir\u00e1nyad\u00f3. Ha b\u00e1rmilyen n\u00e9zetelt\u00e9r\u00e9s lenne, ink\u00e1bb szem\u00e9lyesen megbesz\u00e9lj\u00fck. Ha ez nem vezet eredm\u00e9nyre, a budapesti b\u00edr\u00f3s\u00e1gok illet\u00e9kesek."
         }
       }
     },
@@ -317,20 +350,24 @@
       "title": "Impresszum",
       "sections": {
         "company": {
-          "title": "Cégadatok",
-          "content": "Budapest Labs\nBudapest, Magyarország"
+          "title": "C\u00e9gadatok",
+          "content": "Budapest Labs\nBudapest, Magyarorsz\u00e1g"
         },
         "contact": {
           "title": "Kapcsolat",
           "content": "E-mail: info@budapestlabs.com\nWeboldal: budapestlabs.com"
         },
         "registration": {
-          "title": "Cégjegyzék",
-          "content": "Adószám: [Hamarosan]\nCégjegyzékszám: [Hamarosan]"
+          "title": "C\u00e9gjegyz\u00e9k",
+          "content": "Ad\u00f3sz\u00e1m: [Hamarosan]\nC\u00e9gjegyz\u00e9ksz\u00e1m: [Hamarosan]"
+        },
+        "responsible": {
+          "title": "Tartalom\u00e9rt felel\u0151s",
+          "content": "A Budapest Labs felel\u0151s ezen weboldal tartalm\u00e1\u00e9rt a vonatkoz\u00f3 magyar \u00e9s EU jogszab\u00e1lyoknak megfelel\u0151en."
         },
         "disclaimer": {
           "title": "Jogi nyilatkozat",
-          "content": "Mindent megteszünk annak érdekében, hogy a weboldalon szereplő információk pontosak és naprakészek legyenek. A tartalom teljességéért és pontosságáért azonban felelősséget nem vállalunk."
+          "content": "Mindent megtesz\u00fcnk, hogy az oldalon minden pontos \u00e9s aktu\u00e1lis legyen, de nem garant\u00e1lhatjuk, hogy mindig t\u00f6k\u00e9letes. A k\u00fcls\u0151 hivatkoz\u00e1sok k\u00e9nyelmi c\u00e9lokat szolg\u00e1lnak \u2014 m\u00e1s weboldalak tartalm\u00e1\u00e9rt nem felel\u00fcnk."
         }
       }
     }

@@ -1,6 +1,6 @@
-# Stage 5 — Content & SEO
+# Stage 4 — Content & SEO
 
-## 5.1 Translation file structure
+## 4.1 Translation file structure
 
 Both `src/messages/en.json` and `src/messages/hu.json` must have identical keys. Structure:
 
@@ -78,7 +78,51 @@ Both `src/messages/en.json` and `src/messages/hu.json` must have identical keys.
 }
 ```
 
-## 5.2 Translation rules
+### Multi-page translation structure
+
+> Skip this if the project is a Landing site.
+
+For multi-page sites, organize translations by page. Only UI labels go in translation files — item-specific content (names, bios, measurements) lives in the data layer (`src/data/`).
+
+```json
+{
+  "nav": { "models": "Models", "about": "About", "contact": "Contact" },
+  "hero": { ... },
+  "footer": { ... },
+  "models": {
+    "title": "Our Models",
+    "subtitle": "Browse our talent roster.",
+    "categories": {
+      "all": "All",
+      "image": "Image",
+      "management": "Management"
+    }
+  },
+  "modelProfile": {
+    "bio": "Biography",
+    "measurements": "Measurements",
+    "portfolio": "Portfolio",
+    "back": "Back to models"
+  }
+}
+```
+
+For bilingual content in data files, use locale keys:
+
+```json
+{
+  "slug": "anna-kovacs",
+  "name": "Anna Kovács",
+  "bio": {
+    "hu": "Magyar szöveg...",
+    "en": "English text..."
+  }
+}
+```
+
+In components, access with `item.bio[locale]`.
+
+## 4.2 Translation rules
 
 - **Both files must stay in sync** — same keys, same structure, always
 - **No tech jargon** — the target audience is everyday people, not developers
@@ -87,7 +131,7 @@ Both `src/messages/en.json` and `src/messages/hu.json` must have identical keys.
 - Hungarian uses formal "Ön" (not "te") for addressing the visitor
 - Hungarian punctuation: use standard quotes, not „ " (causes JSON parse errors)
 
-## 5.3 SEO metadata
+## 4.3 SEO metadata
 
 Metadata is generated in `layout.tsx` via `generateMetadata()`. Includes:
 
@@ -115,7 +159,7 @@ export async function generateMetadata({
 }
 ```
 
-## 5.4 Favicon
+## 4.4 Favicon
 
 Create an SVG favicon at `src/app/icon.svg`. Options:
 
@@ -132,7 +176,7 @@ Example (FlaskConical from Lucide):
 </svg>
 ```
 
-## 5.5 Robots and sitemap
+## 4.5 Robots and sitemap
 
 Next.js 16 auto-generates these from `app/robots.txt` and `app/sitemap.xml` route files if present. For basic sites, the defaults are sufficient.
 
@@ -149,18 +193,18 @@ export default function robots(): MetadataRoute.Robots {
 }
 ```
 
-## 5.6 Images
+## 4.6 Images
 
 - Use Next.js `<Image>` component for all images (auto-optimization)
 - Store client images in `public/images/`
 - Use descriptive alt text for accessibility and SEO
 - If client has no images, use high-quality stock photos (see CUSTOMIZATION.md) or leave sections text-only
 
-## 5.7 Archetype-specific translation keys
+## 4.7 Section-specific translation keys
 
-Each archetype adds its own sections to the translation files. The base keys (`nav`, `hero`, `about`, `contact`, `footer`, `legal`) are shared across all archetypes. Add the archetype-specific keys below.
+Each section adds its own keys to the translation files. The base keys (`nav`, `hero`, `about`, `contact`, `footer`, `legal`) are shared across all sites. Add keys for the sections listed in the Visual Direction.
 
-### Showcase archetype — additional keys
+### Gallery keys
 
 ```json
 {
@@ -186,7 +230,7 @@ Each archetype adds its own sections to the translation files. The base keys (`n
 }
 ```
 
-### Catalog archetype — additional keys
+### Menu / Catalog keys
 
 ```json
 {
@@ -209,7 +253,7 @@ Each archetype adds its own sections to the translation files. The base keys (`n
 
 Menu items use `t.raw("categories.starters.items")` to get the array.
 
-### Brand archetype — additional keys
+### Collections / Story keys
 
 ```json
 {
@@ -234,7 +278,7 @@ Menu items use `t.raw("categories.starters.items")` to get the array.
 }
 ```
 
-### Accommodation archetype — additional keys
+### Rooms / Location keys
 
 ```json
 {

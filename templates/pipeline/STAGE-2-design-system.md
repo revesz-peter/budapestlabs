@@ -4,6 +4,92 @@
 
 Before writing any code, stop and imagine the finished site from the visitor's perspective. Every design decision — theme, font, hero type, animation level, default color mode — flows from this.
 
+### Step 0: Generate design system via UI/UX skill
+
+Before making any manual design decisions, run the UI/UX Pro Max skill to get an industry-specific recommendation. If the client provided a reference site (CLIENT.md Section 8), fetch it first with `WebFetch`, extract its design characteristics (colors, fonts, layout, tone), and include those keywords in the skill search so the generated design system is influenced by the reference.
+
+```bash
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "<industry keywords from CLIENT.md Section 1 & 2>" \
+  --design-system -p "<ProjectName>"
+```
+
+Example for a Budapest bakery:
+
+```bash
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "bakery cafe warm pastry" --design-system -p "PetiPekség"
+```
+
+Example if client provided a reference site with serif fonts and earthy tones:
+
+```bash
+# First: WebFetch the reference URL, extract design traits
+# Then: include extracted traits in the skill search
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "bakery cafe warm serif earthy natural" --design-system -p "PetiPekség"
+# Also search for matching fonts specifically:
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "serif warm traditional bakery" --domain typography
+```
+
+The skill outputs:
+
+- **Landing pattern** — recommended page structure and section order
+- **Style** — UI style (Glassmorphism, Minimalism, etc.) with effects
+- **Colors** — primary, secondary, CTA, background, text hex values
+- **Typography** — heading + body font pairing with Google Fonts URLs
+- **Anti-patterns** — what to avoid for this industry
+- **Decision rules** — conditional logic (e.g., if luxury → liquid glass)
+
+**Use this output as your starting point for Steps 1–4 below.** Cross-reference the skill's recommendation with the client's questionnaire answers — the client's preferences override the skill when they conflict.
+
+#### Minimal input scenario
+
+Often the client provides only an industry, a business name, and maybe a color preference — no reference site, no mood selection, no font preference. This is fine. The skill handles it:
+
+```bash
+# Just industry + name — skill fills in everything
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "dental clinic" --design-system -p "MosolyDent"
+
+# If client said "I like blue" — add it as a keyword
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "dental clinic blue" --design-system -p "MosolyDent"
+```
+
+With minimal input, the skill becomes the primary design decision-maker:
+
+- **No reference site?** → Skip Step 2, rely on skill's industry reasoning
+- **No mood selection?** → Skill infers mood from industry (dental → "trust, calm, clean")
+- **No font preference?** → Skill picks the best pairing for the industry
+- **No color preference?** → Skill provides a full palette based on industry norms
+- **Client said "I like green"?** → Run `python3 .../search.py "dental green" --domain color` to find palettes that incorporate green while staying appropriate for the industry
+
+The Visual Direction (Step 4) is still written in full — the skill fills every section that the client left blank. The agent only needs to validate that the skill's choices make sense for this specific business (Step 1 — "who is the visitor?").
+
+You can also run targeted searches for specific design domains:
+
+```bash
+# Find fonts for a specific mood
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "elegant serif warm" --domain typography
+
+# Find color palette for an industry
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "dental clinic trust" --domain color
+
+# Get UX guidelines for a page type
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "contact form" --domain ux
+
+# Check style options
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "glassmorphism" --domain style
+```
+
+---
+
 ### Step 1: Understand the visitor
 
 Ask yourself: **Who is coming to this site, and what are they trying to do?**
@@ -16,7 +102,39 @@ Ask yourself: **Who is coming to this site, and what are they trying to do?**
 
 **Write one sentence describing what the visitor should feel when the page loads.** This is your creative direction. Every choice below should serve it.
 
-### Step 2: Set the visual intensity
+### Step 2: Analyze reference site (if provided)
+
+Check CLIENT.md Section 8 ("Referencia / Reference"). If the client provided a reference URL:
+
+1. **Fetch the site** using `WebFetch` with the provided URL.
+2. **Analyze and document** the following:
+   - **Color palette** — dominant colors, accent colors, background tones (note hex/oklch values if visible)
+   - **Typography** — heading and body fonts, sizes, weights, any distinctive type choices
+   - **Layout patterns** — hero style (image, gradient, text-only), grid structure, section flow
+   - **Spacing & density** — tight and packed vs airy and spacious, card-heavy vs text-forward
+   - **Visual tone** — minimal, bold, playful, corporate, editorial, luxurious, handmade, etc.
+   - **Interactive elements** — scroll animations, hover effects, transitions, parallax
+   - **What the client specifically liked** (from the "Mi tetszik benne?" / "What do you like about it?" notes in CLIENT.md)
+3. **Map findings to our system.** For each observation, note which Budapest Labs design lever it maps to:
+   - Color palette → theme preset (from `templates/themes/`)
+   - Typography → font pairing (see CUSTOMIZATION.md)
+   - Hero style → mesh gradient / full-bleed image / animated shader / minimal
+   - Visual tone → intensity level (minimal / warm / visual / atmospheric / storytelling)
+   - Spacing → section padding and max-width adjustments
+4. **Write a Reference Analysis block** in the creative direction comment at the top of `page.tsx`:
+
+```tsx
+// Reference: [URL]
+// Client liked: [what they noted]
+// Extracted: [tone] tone, [font] typography, [color] palette, [hero] hero style
+// Mapped to: theme=[theme], font=[font], mode=[light|dark], intensity=[level]
+```
+
+If no reference URL was provided, skip this step entirely.
+
+**Important:** The reference site is inspiration, not a spec. Extract the *feeling* and *design principles*, not pixel-perfect details. Our stack and design system are different — the goal is to capture what made the client respond to that site and translate it into our tools.
+
+### Step 3: Set the visual intensity
 
 Not every site needs the same level of design. Match the visual intensity to the business:
 
@@ -30,26 +148,112 @@ Not every site needs the same level of design. Match the visual intensity to the
 
 Most sites are **Minimal** or **Warm**. Only go higher when the business genuinely benefits from it. Over-designing a plumber's site doesn't make it better — it makes it slower and harder to use.
 
-### Step 3: Make the design decisions
+> **Skill cross-reference:** Compare your intensity choice with the skill's recommended style and anti-patterns. If the skill says "avoid dark mode for family restaurant" and you were considering dark mode — trust the skill's 161-industry dataset over gut feel.
 
-Based on the creative direction and intensity level, decide:
+### Step 4: Write the Visual Direction
 
-1. **Theme** — Which CSS theme file? (See CLIENT.md archetype → theme table)
-2. **Font** — Single font or heading/body pairing? (See CUSTOMIZATION.md)
-3. **Default color mode** — Light (most businesses) or dark (luxury, nightlife, creative, photography)?
-4. **Hero type** — Mesh gradient (safe default), full-bleed image (visual businesses), animated shader (atmospheric/creative), or minimal text-only?
-5. **Animation level** — Standard scroll fade-ins only (minimal/warm), or additional shader backgrounds and section dividers (atmospheric/storytelling)?
-6. **Section selection** — Which optional sections does this business need? FAQ? Pricing? Testimonials? Gallery? Don't add sections the business doesn't need.
+Combine the skill's design system output (Step 0), the visitor analysis (Step 1), reference site analysis (Step 2), and intensity level (Step 3) into a detailed Visual Direction. Write this as a comment block at the top of `page.tsx`. This is the single source of truth for every design decision in the build.
 
-**Write these decisions down as a comment at the top of `page.tsx` before building.** This prevents drift — when you're deep in code, you can check back against the original intent.
+**Run these skill searches to fill in any gaps:**
+
+```bash
+# Full design system for the industry
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "<industry + mood>" --design-system -p "<Name>"
+# Targeted color refinement
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "<industry>" --domain color
+# Font pairing options
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "<mood keywords>" --domain typography
+# UX guidelines for key page types
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "<page type>" --domain ux
+# Anti-patterns to avoid
+python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
+  "<industry>" --domain style
+```
+
+**Write the Visual Direction in this format:**
 
 ```tsx
-// Creative direction: [one sentence]
-// Intensity: minimal | warm | visual | atmospheric | storytelling
-// Theme: [theme-name] | Font: [font] | Mode: light | dark
-// Hero: mesh-gradient | image | shader ([which]) | minimal
-// Optional sections: [list]
+/*
+ * ═══════════════════════════════════════════════════════
+ * VISUAL DIRECTION — [Business Name]
+ * Generated: [date]
+ * ═══════════════════════════════════════════════════════
+ *
+ * 1. CREATIVE DIRECTION
+ *    Visitor: [who they are, what they need, how they feel]
+ *    Feeling: [one sentence — what should the page feel like]
+ *    Intensity: [minimal|warm|visual|atmospheric|storytelling]
+ *    Site type: [Landing|Multi-page]
+ *
+ * 2. STYLE & PATTERN
+ *    UI Style: [from skill — e.g., "Flat Design with subtle glassmorphism"]
+ *    Landing Pattern: [from skill — e.g., "Hero + Features + CTA"]
+ *    Section Order: [specific to this project — agent builds these in Stage 3]
+ *      1. Hero — [type: mesh gradient / full-bleed image / shader]
+ *      2. [section] — [brief purpose]
+ *      3. [section] — [brief purpose]
+ *      ...
+ *    Component refs: [note any CUSTOMIZATION.md components to reuse]
+ *    Effects: [from skill — e.g., "Subtle hover 200ms, scroll fade-in"]
+ *
+ * 3. COLOR PALETTE
+ *    Source: [skill recommendation / client preference / theme file]
+ *    Primary:    [hex] — [where it's used]
+ *    Secondary:  [hex] — [where it's used]
+ *    CTA:        [hex] — [where it's used]
+ *    Background: [hex] light / [hex] dark
+ *    Text:       [hex] light / [hex] dark
+ *    Accent:     [hex] — [where it's used, if any]
+ *    Theme file: [which templates/themes/ file to base on, or "custom"]
+ *    Dark mode:  [default | available | not recommended]
+ *
+ * 4. TYPOGRAPHY
+ *    Source: [skill recommendation / client preference]
+ *    Heading: [font name] ([weight]) — [mood descriptor]
+ *    Body:    [font name] ([weight]) — [mood descriptor]
+ *    Google Fonts: [import URL]
+ *    Special: [any accent font, monospace for pricing, etc.]
+ *
+ * 5. INDUSTRY-SPECIFIC RULES (from skill)
+ *    Must-have: [e.g., "trust signals above fold", "menu scannable in 5s"]
+ *    Decision rules: [e.g., "if warm → amber palette", "if food → hero image required"]
+ *    Anti-patterns: [e.g., "avoid dark mode for family restaurant"]
+ *    Severity: [HIGH/MEDIUM for each anti-pattern]
+ *
+ * 6. UX GUIDELINES (from skill)
+ *    [3-5 most relevant UX rules for this specific business]
+ *    e.g., "Contact info must be visible without scrolling"
+ *    e.g., "Menu prices must be scannable, avoid hover-to-reveal"
+ *    e.g., "Gallery should lazy-load, max 12 visible initially"
+ *
+ * 7. REFERENCE SITE (if provided)
+ *    URL: [reference URL]
+ *    Extracted: [design traits found — colors, fonts, layout, tone, spacing]
+ *    Fed into skill: [keywords added to skill search based on reference]
+ *    Borrowing: [specific elements we're taking from the reference]
+ *    Adapted: [how we're translating those into our system]
+ *    Skipping: [elements from reference that don't fit our stack/client]
+ *
+ * 8. CLIENT OVERRIDES
+ *    [anything the client specified that overrides skill defaults]
+ *    e.g., "Client wants green — overrides skill's recommended blue"
+ *    e.g., "Client has no photos — use mesh gradient hero instead of image"
+ *
+ * ═══════════════════════════════════════════════════════
+ */
 ```
+
+**Every design decision in the build should trace back to this document.** If you're choosing a border-radius, spacing, animation, or color — check the Visual Direction first. If something isn't covered, add it.
+
+**Priority order for conflicts:**
+
+1. Client questionnaire answers (they're paying for it)
+2. Skill recommendations (data-driven, industry-tested)
+3. Template defaults (safe fallback)
 
 ### Common mistakes
 

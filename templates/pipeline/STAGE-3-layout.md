@@ -1,4 +1,4 @@
-# Stage 3 — Layout & Navigation
+# Stage 3 — Layout & Page Sections
 
 ## 3.1 Root layout
 
@@ -97,17 +97,16 @@ Replace all `{{PLACEHOLDERS}}` with client values.
 
 ## 3.2 Main page
 
-Create `src/app/[locale]/page.tsx`. Import and assemble sections based on the archetype:
+Create `src/app/[locale]/page.tsx`. Import and assemble the sections listed in the Visual Direction (STAGE-2 Step 4). Build each section component in `src/components/landing/` using the design patterns from STAGE-2 and component references from CUSTOMIZATION.md.
 
-| Archetype | Imports (in order) |
-| --- | --- |
-| Service | Navbar, Hero, About, Services, Contact, Footer |
-| Showcase | Navbar, Hero, Gallery, About, Team (optional), Contact, Footer |
-| Catalog | Navbar, Hero, Menu, Gallery (optional), About, Contact, Footer |
-| Brand | Navbar, Hero, Collections, Story, Contact, Footer |
-| Accommodation | Navbar, Hero, Rooms, Gallery, Location, Contact, Footer |
+> **Important:** Create skeleton translation files (`src/messages/en.json` and `src/messages/hu.json`) with at least `nav`, `hero`, and `footer` keys before building section components — otherwise builds will fail on missing translations. Full translations are completed in Stage 4, but components need basic keys to compile.
 
-Example (Service archetype):
+**Reference while building sections:**
+- Design patterns (spacing, cards, buttons, animations) → STAGE-2 sections 2.6–2.9
+- Reusable components (hero variants, pricing, FAQ, testimonials, forms, maps) → CUSTOMIZATION.md
+- Translation patterns (`t.raw()` for arrays like menu items, room amenities) → RULES.md "Translation structure"
+
+Example:
 
 ```tsx
 import { Navbar } from "@/components/landing/navbar";
@@ -134,7 +133,7 @@ export default function HomePage() {
 }
 ```
 
-Sections are separated by `border-t border-border` dividers. Swap the imports for the chosen archetype — each component maps to its STAGE-4 file.
+Sections are separated by `border-t border-border` dividers. Swap the imports to match the sections from the Visual Direction.
 
 ## 3.3 Navbar
 
@@ -161,12 +160,7 @@ import { ThemeToggle } from "@/components/landing/theme-toggle";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 
-// Adapt navLinks based on archetype:
-// Service:       about, services, contact
-// Showcase:      gallery, about, contact (optionally: team)
-// Catalog:       menu, gallery, contact (optionally: about)
-// Brand:         collections, story, contact
-// Accommodation: rooms, gallery, location, contact
+// Adapt navLinks to match the sections from the Visual Direction
 const navLinks = [
   { key: "about", href: "#about" },
   { key: "services", href: "#services" },
@@ -317,7 +311,7 @@ export function Navbar() {
 }
 ```
 
-Adapt `navLinks` to match the sections you build for each client. Replace `{{BUSINESS_NAME}}` with the client's name (or use an `Image` component for a logo).
+Adapt `navLinks` to match the sections from the Visual Direction. Replace `{{BUSINESS_NAME}}` with the client's name (or use an `Image` component for a logo).
 
 ## 3.4 Theme toggle
 
@@ -369,7 +363,7 @@ Layout: 4-column grid on desktop, stacked on mobile.
 ```
 
 - Brand column: business name, short description, social media icons
-- Navigation: links to page sections (adapt to match archetype's navLinks)
+- Navigation: links to page sections (adapt to match Visual Direction)
 - Legal: links to /privacy, /terms, /imprint
 - Contact: email with Mail icon
 
@@ -394,3 +388,96 @@ Below the copyright line, add a subtle "Made by" credit:
 ```
 
 This goes in every client site footer — it's our portfolio backlink.
+
+## 3.6 Multi-page sites
+
+> Skip this section for Landing sites. Only applies to Multi-page sites (determined in Stage 0).
+
+### Page routing
+
+Multi-page sites have separate pages instead of anchor sections. The homepage is shorter (hero + a few highlight sections + CTA), with dedicated pages for content-heavy sections.
+
+Example homepage for a modeling agency:
+
+```tsx
+export default function HomePage() {
+  return (
+    <main>
+      <Hero />           {/* Full-viewport video or image */}
+      <FeaturedModels />  {/* Curated grid, links to /models */}
+      <About />           {/* Brief agency intro */}
+      <Press />           {/* Publication logos strip */}
+      <Contact />         {/* CTA + brief contact info */}
+      <Footer />
+    </main>
+  );
+}
+```
+
+Separate pages:
+- `/models` — full grid with category filtering
+- `/models/[slug]` — individual profile with hero, bio, measurements, gallery
+- `/about` — full about page (optional, can stay on homepage)
+- `/contact` — full contact page (optional)
+
+### Listing page (grid)
+
+The listing page shows all items in a filterable grid:
+
+```tsx
+// src/app/[locale]/models/page.tsx
+import { items } from "@/data";
+import { PortfolioGrid } from "@/components/models/grid";
+
+export default function ModelsPage() {
+  return (
+    <main className="pt-20">
+      <PortfolioGrid items={items} />
+    </main>
+  );
+}
+```
+
+See CUSTOMIZATION.md "Portfolio / Model grid" for the grid component.
+
+### Detail page (profile)
+
+Dynamic route with `generateStaticParams` for SSG:
+
+```tsx
+// src/app/[locale]/models/[slug]/page.tsx
+import { items } from "@/data";
+import { notFound } from "next/navigation";
+
+export function generateStaticParams() {
+  return items.map((item) => ({ slug: item.slug }));
+}
+
+export default async function DetailPage({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}) {
+  const { locale, slug } = await params;
+  const item = items.find((i) => i.slug === slug);
+  if (!item) notFound();
+
+  return (
+    <main className="pt-20">
+      {/* Build profile layout: hero image, name, bio, gallery, back link */}
+    </main>
+  );
+}
+```
+
+### Navigation: Sidebar variant
+
+For sites that use a sidebar instead of the standard top navbar (like Ford Models), replace `navbar.tsx` with a sidebar navigation component. See CUSTOMIZATION.md "Navigation variants → Sidebar navigation" for the full component.
+
+Key differences from top navbar:
+- Hamburger opens a left slide-out panel (300px wide), not a slide-down mobile menu
+- Works the same on desktop and mobile
+- Dark overlay on the rest of the page when open
+- Menu items are larger (uppercase, bold, 1.2-1.6rem)
+- Logo stays in a fixed top bar, hamburger triggers the sidebar
+- For multi-page sites, use actual routes (`/models`, `/about`) instead of anchor links (`#models`, `#about`)

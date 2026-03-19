@@ -1,18 +1,15 @@
 # Stage 1 — Project Setup
 
-## 1.1 Initialize project
+## 1.1 Verify project scaffold
+
+Stage 0 already created the Next.js project and initialized git. Verify you're in the correct directory:
 
 ```bash
-bunx create-next-app@latest client-name --typescript --eslint --app --src-dir --no-tailwind --turbopack
-cd client-name
+pwd  # Should be /Users/mac/labs/<project-name>
+ls   # Should have package.json, src/, etc.
 ```
 
-When prompted:
-- Would you like to use TypeScript? **Yes**
-- Would you like to use ESLint? **Yes**
-- Would you like to use `src/` directory? **Yes**
-- Would you like to use App Router? **Yes**
-- Would you like to use Turbopack? **Yes**
+Continue with installing dependencies below.
 
 ## 1.2 Install dependencies
 
@@ -111,6 +108,63 @@ src/
 └── lib/
     └── utils.ts
 ```
+
+### Multi-page folder structure
+
+> Skip this if the project is a Landing site. Only applies to Multi-page sites.
+
+If this is a multi-page site (determined in Stage 0), extend the base structure:
+
+```
+src/
+├── app/
+│   ├── [locale]/
+│   │   ├── layout.tsx          # Shared layout (navbar, footer)
+│   │   ├── page.tsx            # Homepage (shorter — hero + highlights + CTA)
+│   │   ├── models/             # or /portfolio, /rooms, /properties, /projects
+│   │   │   ├── page.tsx        # Grid/listing page
+│   │   │   └── [slug]/
+│   │   │       └── page.tsx    # Individual profile/detail page
+│   │   ├── about/
+│   │   │   └── page.tsx        # About page (if separate from homepage)
+│   │   ├── contact/
+│   │   │   └── page.tsx        # Contact page (if separate from homepage)
+│   │   ├── privacy/page.tsx
+│   │   ├── terms/page.tsx
+│   │   └── imprint/page.tsx
+├── data/
+│   ├── index.ts                # Type definitions + data exports
+│   └── items.json              # Structured content (models.json, rooms.json, etc.)
+├── components/
+│   ├── landing/                # Shared section components (hero, footer, etc.)
+│   ├── [content-type]/         # e.g., models/, rooms/ — type-specific components
+│   │   ├── grid.tsx            # Listing grid
+│   │   ├── card.tsx            # Grid item card
+│   │   └── profile.tsx         # Detail page layout
+│   └── ui/
+```
+
+### Data layer
+
+For multi-page sites with dynamic routes, create a typed data layer as the content source:
+
+```typescript
+// src/data/index.ts
+export interface PortfolioItem {
+  slug: string;
+  name: string;
+  category: string;
+  heroImage: string;
+  thumbnailImage: string;
+  bio?: { hu: string; en: string };
+  portfolio: string[];
+}
+
+import itemsData from "./items.json";
+export const items: PortfolioItem[] = itemsData;
+```
+
+The JSON file holds all content. For sites with 50+ items, consider a headless CMS (Sanity, Contentful) instead of a JSON file.
 
 ## 1.6 Next.js config
 

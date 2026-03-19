@@ -1,6 +1,6 @@
-# Stage 7 — Build, Test & Deploy
+# Stage 6 — Build, Test & Deploy
 
-## 7.1 Build verification
+## 6.1 Build verification
 
 Run a full production build before delivery:
 
@@ -14,7 +14,7 @@ This must complete with zero errors. Common issues:
 - Missing `"use client"` — any component using hooks, useState, or browser APIs needs this directive
 - Tailwind class issues — do NOT use `@apply` with custom glass classes
 
-## 7.2 Testing checklist
+## 6.2 Testing checklist
 
 ### Functionality
 - [ ] All nav links scroll to correct sections
@@ -58,7 +58,7 @@ This must complete with zero errors. Common issues:
 - [ ] No missing translation keys (check browser console)
 - [ ] Legal pages render in both languages
 
-## 7.3 Performance targets
+## 6.3 Performance targets
 
 - Lighthouse Performance: >90
 - Lighthouse Accessibility: >95
@@ -72,7 +72,7 @@ Next.js with static generation should hit these easily. If not, check:
 - Excessive client-side JavaScript
 - Font loading (Inter should use `display=swap`)
 
-## 7.4 Deployment
+## 6.4 Deployment
 
 ### Vercel (recommended)
 
@@ -109,7 +109,7 @@ Environment setup:
 - [ ] Mobile responsive on real device
 - [ ] Google Search Console — submit sitemap
 
-## 7.5 Handoff to client
+## 6.5 Handoff to client
 
 Deliverables:
 1. Live website URL
@@ -119,7 +119,7 @@ Deliverables:
 5. Note about legal content needing lawyer review
 6. Hosting included for 1 year — explain maintenance plan for after
 
-## 7.6 Common post-launch tasks
+## 6.6 Common post-launch tasks
 
 - Connect a real form backend (email API, Resend, webhook to CRM)
 - Add Google Analytics or Plausible (if client requests)

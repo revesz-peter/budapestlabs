@@ -246,70 +246,103 @@
     "rights": "Alle Rechte vorbehalten."
   },
   "legal": {
-    "back": "Zurück zur Startseite",
+    "back": "Zur\u00fcck zur Startseite",
+    "download": "Als PDF speichern",
     "privacy": {
-      "title": "Datenschutzerklärung",
-      "lastUpdated": "Zuletzt aktualisiert: 15. März 2026",
-      "intro": "Budapest Labs (\"wir\", \"uns\") respektiert Ihre Privatsphäre. Diese Richtlinie erklärt, welche Daten wir erheben, warum und wie wir sie schützen.",
+      "title": "Datenschutzerkl\u00e4rung",
+      "lastUpdated": "Zuletzt aktualisiert: 19. M\u00e4rz 2026",
+      "intro": "Ihre Privatsph\u00e4re ist uns wichtig. Diese Seite erkl\u00e4rt, welche Daten wir erheben, wenn Sie uns kontaktieren, wie wir sie verwenden und wie wir sie sch\u00fctzen.",
       "sections": {
         "collection": {
-          "title": "Welche Daten wir erheben",
-          "content": "Wenn Sie unser Kontaktformular absenden, erheben wir: Ihren Namen, Ihre E-Mail-Adresse, Telefonnummer (optional), Firmennamen (optional), gewähltes Paket und Ihre Nachricht. Wir erheben keine Daten automatisch — keine Cookies, keine Tracking-Skripte, keine Analysen."
+          "title": "Was wir erheben",
+          "content": "Wenn Sie unser Kontaktformular ausf\u00fcllen, erhalten wir: Ihren Namen, Ihre E-Mail-Adresse, Telefonnummer (falls Sie sie angeben), Firmennamen (optional), gew\u00e4hltes Paket und Ihre Nachricht. Das ist alles. Wir verwenden keine Cookies, Tracking-Skripte oder Analysetools."
+        },
+        "basis": {
+          "title": "Warum wir sie verwenden d\u00fcrfen",
+          "content": "Wir verarbeiten Ihre Daten, weil Sie sie uns freiwillig gesendet haben \u2014 das ist Ihre Einwilligung nach EU-Datenschutzrecht (DSGVO). Wenn wir zusammenarbeiten, ben\u00f6tigen wir Ihre Angaben auch zur Projektdurchf\u00fchrung. In einigen F\u00e4llen bewahren wir Daten zur Erf\u00fcllung gesetzlicher oder buchhalterischer Pflichten auf."
         },
         "purpose": {
-          "title": "Warum wir sie erheben",
-          "content": "Wir verwenden Ihre Kontaktdaten ausschließlich, um auf Ihre Anfrage zu antworten und unsere Webentwicklungsleistungen zu erbringen. Wir verkaufen, teilen oder übertragen Ihre Daten niemals an Dritte."
+          "title": "Was wir damit machen",
+          "content": "Wir verwenden Ihre Kontaktdaten ausschlie\u00dflich, um auf Ihre Anfrage zu antworten, ein Angebot zu erstellen und Ihre Website zu bauen. Wir verkaufen, vermieten oder teilen Ihre Daten niemals mit Dritten f\u00fcr Marketing oder andere nicht zusammenh\u00e4ngende Zwecke."
         },
         "storage": {
-          "title": "Wie wir sie speichern",
-          "content": "Ihre Daten werden sicher auf verschlüsselten Servern innerhalb der Europäischen Union gespeichert. Wir bewahren Ihre Informationen nur so lange auf, wie es zur Erfüllung Ihrer Anfrage und zur Einhaltung gesetzlicher Pflichten erforderlich ist."
+          "title": "Wie wir sie sch\u00fctzen",
+          "content": "Ihre Daten werden auf verschl\u00fcsselten Servern innerhalb der EU gespeichert. Wir bewahren sie f\u00fcr die Dauer unserer Zusammenarbeit auf, plus bis zu 5 Jahre danach, wie es das ungarische Buchhaltungsrecht vorschreibt. Danach werden sie dauerhaft gel\u00f6scht."
+        },
+        "thirdparty": {
+          "title": "Dienste, die wir nutzen",
+          "content": "F\u00fcr den Betrieb unserer Website und die Kommunikation mit Ihnen nutzen wir einen Hosting-Anbieter und einen E-Mail-Dienst. Diese Anbieter verarbeiten Daten ausschlie\u00dflich in unserem Auftrag und sind durch DSGVO-konforme Vereinbarungen gebunden. Ihre Daten werden an niemand anderen weitergegeben."
         },
         "hosting": {
           "title": "Website-Hosting",
-          "content": "Diese Website wird auf einer Infrastruktur gehostet, die HTTPS-Verschlüsselung für alle Verbindungen verwendet. Vom Hosting-Anbieter werden keine personenbezogenen Daten über die standardmäßigen Server-Zugriffsprotokolle hinaus gespeichert, die nach 30 Tagen automatisch gelöscht werden."
+          "content": "Unsere Website verwendet HTTPS-Verschl\u00fcsselung f\u00fcr jede Verbindung. Der Hosting-Anbieter speichert nur standardm\u00e4\u00dfige Serverprotokolle (IP-Adresse, Zeitstempel, besuchte Seite), die nach 30 Tagen automatisch gel\u00f6scht werden."
         },
         "rights": {
           "title": "Ihre Rechte",
-          "content": "Gemäß der EU-Datenschutz-Grundverordnung (DSGVO) haben Sie jederzeit das Recht auf Zugang, Berichtigung oder Löschung Ihrer personenbezogenen Daten. Sie können auch eine Kopie der von uns gespeicherten Daten anfordern."
+          "content": "Nach EU-Recht (DSGVO) k\u00f6nnen Sie: einsehen, welche Daten wir \u00fcber Sie haben; fehlerhafte Daten korrigieren lassen; die L\u00f6schung Ihrer Daten verlangen; die Verarbeitung einschr\u00e4nken oder ihr widersprechen; oder eine Kopie in einem portablen Format anfordern. Sie k\u00f6nnen Ihre Einwilligung jederzeit widerrufen \u2014 das betrifft nicht die vorherige Verarbeitung. Schreiben Sie uns einfach an info@budapestlabs.com und wir k\u00fcmmern uns darum."
+        },
+        "complaint": {
+          "title": "Etwas stimmt nicht?",
+          "content": "Wenn Sie das Gef\u00fchl haben, dass Ihre Daten nicht korrekt behandelt wurden, k\u00f6nnen Sie eine Beschwerde bei der ungarischen Datenschutzbeh\u00f6rde (NAIH) unter naih.hu einreichen, oder bei der Aufsichtsbeh\u00f6rde Ihres Landes."
         },
         "contact": {
           "title": "Kontakt",
-          "content": "Bei datenschutzbezogenen Fragen oder Anfragen erreichen Sie uns unter info@budapestlabs.com."
+          "content": "Fragen zu Ihren Daten? Schreiben Sie uns: info@budapestlabs.com. Wir antworten innerhalb von 30 Tagen."
         }
       }
     },
     "terms": {
-      "title": "Allgemeine Geschäftsbedingungen",
-      "lastUpdated": "Zuletzt aktualisiert: 15. März 2026",
-      "intro": "Durch die Nutzung der Dienste von Budapest Labs stimmen Sie den folgenden Bedingungen zu.",
+      "title": "Allgemeine Gesch\u00e4ftsbedingungen",
+      "lastUpdated": "Zuletzt aktualisiert: 19. M\u00e4rz 2026",
+      "intro": "Das sind die Bedingungen f\u00fcr die Zusammenarbeit mit Budapest Labs. Wir haben sie klar und direkt formuliert \u2014 keine \u00dcberraschungen.",
       "sections": {
         "scope": {
-          "title": "Leistungsumfang",
-          "content": "Budapest Labs bietet Website-Design und -Entwicklungsdienstleistungen für Kleinunternehmen. Unser Service umfasst Design, Entwicklung, Bereitstellung und erstmalige Hosting-Einrichtung wie im gewählten Paket beschrieben."
+          "title": "Was wir machen",
+          "content": "Wir entwerfen und bauen Websites f\u00fcr Kleinunternehmen. Je nach Paket kann das umfassen: individuelles Design und Entwicklung, mobilfreundliche Layouts, Hosting und Bereitstellung, Domain- und E-Mail-Einrichtung, Mehrsprachigkeit, Buchungssysteme, Analytics und mehr. Wenn Sie etwas Zus\u00e4tzliches brauchen, besprechen wir das gemeinsam. Der genaue Umfang Ihres Projekts basiert auf dem gew\u00e4hlten Paket und allem, was wir schriftlich vereinbaren."
         },
         "payment": {
-          "title": "Zahlung",
-          "content": "Sie zahlen im Voraus nichts. Wir erstellen Ihre Website, Sie prüfen sie und zahlen nur, wenn Sie mit dem Ergebnis zufrieden sind. Die Zahlung ist bei Freigabe des Endergebnisses fällig. Wir akzeptieren Banküberweisung, Online-Kartenzahlung und Barzahlung."
+          "title": "So funktioniert die Zahlung",
+          "content": "Wir bitten um eine kleine Anzahlung von 10% vor Projektbeginn \u2014 das best\u00e4tigt Ihren Auftrag und reserviert Ihren Platz. Die restlichen 90% werden erst f\u00e4llig, wenn Sie das Ergebnis gesehen haben und zufrieden sind. Wenn Sie nach der enthaltenen \u00dcberarbeitungsrunde immer noch nicht zufrieden sind, m\u00fcssen Sie den Rest nicht zahlen \u2014 die Anzahlung deckt lediglich die bereits investierte Zeit ab. Wir akzeptieren \u00dcberweisung, Kartenzahlung und Barzahlung. Preise in EUR."
         },
         "revisions": {
-          "title": "Überarbeitungen",
-          "content": "Jedes Paket enthält eine kostenlose Überarbeitungsrunde. Zusätzliche Überarbeitungsrunden können mit zusätzlichen Kosten verbunden sein, die im Voraus kommuniziert werden."
+          "title": "\u00dcberarbeitungen",
+          "content": "Jedes Paket enth\u00e4lt eine kostenlose \u00dcberarbeitungsrunde. Das umfasst Anpassungen an Design, Layout oder Text. Es beinhaltet nicht, von vorne anzufangen oder Funktionen hinzuzuf\u00fcgen, die nicht im urspr\u00fcnglichen Paket enthalten sind. Wenn Sie weitere \u00c4nderungen w\u00fcnschen, teilen wir Ihnen die Kosten vorab mit \u2014 keine \u00dcberraschungen."
         },
         "delivery": {
-          "title": "Lieferung",
-          "content": "Wir streben an, alle Projekte innerhalb von 6 Stunden nach Erhalt Ihrer Inhalte zu liefern. Wenn wir diese Frist nicht einhalten können, sind Sie nicht zur Zahlung verpflichtet."
+          "title": "Lieferzeiten",
+          "content": "Die Zeitangaben auf unserer Website (z.B. gleicher Tag, 1\u20132 Tage, 3\u20135 Tage) sind Sch\u00e4tzungen f\u00fcr typische Projekte. Wie lange Ihr Projekt dauert, h\u00e4ngt von der Komplexit\u00e4t ab und davon, wie schnell Sie uns Ihre Inhalte senden k\u00f6nnen. Wir geben immer unser Bestes, p\u00fcnktlich zu liefern, k\u00f6nnen aber keine exakten Termine garantieren. Die Uhr startet, sobald wir alles haben, was wir brauchen (Texte, Bilder, Logo) und die Anzahlung best\u00e4tigt ist. Verz\u00f6gerungen auf Ihrer Seite z\u00e4hlen nicht gegen unsere Frist."
+        },
+        "client": {
+          "title": "Was wir von Ihnen brauchen",
+          "content": "Um Ihre Website zu bauen, brauchen wir Ihre Inhalte \u2014 Texte, Bilder, Logo und Branding-Materialien. Wir bitten Sie auch, die Vorschau innerhalb von etwa einer Woche zu pr\u00fcfen. Wenn wir innerhalb von 14 Werktagen nichts h\u00f6ren, betrachten wir das Projekt als genehmigt. Bitte stellen Sie au\u00dferdem sicher, dass die Inhalte, die Sie uns senden, Ihnen geh\u00f6ren \u2014 wir vertrauen darauf, dass Sie die Rechte an allem haben."
         },
         "ownership": {
-          "title": "Eigentum",
-          "content": "Nach vollständiger Zahlung gehört die Website und alle ihre Inhalte Ihnen. Wir behalten keine Rechte an Ihrer Seite. Sie können Ihre Website jederzeit verschieben, ändern oder offline nehmen."
+          "title": "Wem geh\u00f6rt was",
+          "content": "Nach vollst\u00e4ndiger Zahlung geh\u00f6rt die Website Ihnen \u2014 das Design, der Inhalt, alles, was wir f\u00fcr Sie gebaut haben. Sie k\u00f6nnen sie verschieben, \u00e4ndern oder offline nehmen, wann immer Sie wollen. Wir d\u00fcrfen weiterhin allgemeine Tools und Code verwenden, die nicht speziell f\u00fcr Ihr Projekt erstellt wurden. Wir w\u00fcrden Ihre Website gerne in unserem Portfolio zeigen, aber wenn Sie das nicht m\u00f6chten, sagen Sie uns einfach Bescheid."
+        },
+        "thirdparty": {
+          "title": "Drittanbieter-Dienste",
+          "content": "Ihre Website kann Dienste anderer Unternehmen nutzen \u2014 etwa Hosting, Domain-Registrierung, E-Mail oder Zahlungsabwicklung. Das sind unabh\u00e4ngige Dienste mit eigenen Bedingungen und Preisen, die sich \u00e4ndern k\u00f6nnen. Wir helfen Ihnen bei der Einrichtung, k\u00f6nnen aber nicht kontrollieren, wie diese Anbieter arbeiten."
+        },
+        "cancellation": {
+          "title": "Stornierung",
+          "content": "Sie k\u00f6nnen Ihr Projekt jederzeit stornieren, bevor Sie das Endergebnis freigeben. Die Anzahlung deckt die anf\u00e4ngliche Arbeit ab und ist nicht erstattungsf\u00e4hig. Wenn wir bereits erhebliche Arbeit geleistet haben, berechnen wir einen fairen Betrag f\u00fcr das Geleistete \u2014 wir besprechen das immer vorher mit Ihnen. Auf unserer Seite: Wenn wir innerhalb von 30 Tagen keine Inhalte erhalten oder Sie \u00fcber 30 Tage nicht erreichen k\u00f6nnen, m\u00fcssen wir das Projekt m\u00f6glicherweise schlie\u00dfen."
+        },
+        "warranty": {
+          "title": "Nach der Lieferung",
+          "content": "Wir stehen hinter unserer Arbeit. Wenn innerhalb von 30 Tagen nach Lieferung etwas nicht wie erwartet funktioniert, beheben wir es \u2014 solange es an uns liegt. Danach sind laufende Wartung oder neue \u00c4nderungen nicht enthalten, es sei denn, wir vereinbaren es separat. Wir k\u00f6nnen nicht garantieren, dass Drittanbieter-Dienste (Hosting, Internet usw.) jederzeit perfekt funktionieren \u2014 das liegt au\u00dferhalb unserer Kontrolle."
         },
         "liability": {
-          "title": "Haftungsbeschränkung",
-          "content": "Budapest Labs haftet nicht für indirekte, zufällige oder Folgeschäden, die aus der Nutzung unserer Dienste entstehen. Unsere Gesamthaftung ist auf den für die Dienstleistung gezahlten Betrag begrenzt."
+          "title": "Unsere Verantwortung",
+          "content": "Wir nehmen unsere Arbeit ernst, aber es gibt Grenzen. Wenn etwas schiefgeht, ist unsere Haftung auf den Betrag begrenzt, den Sie f\u00fcr das Projekt bezahlt haben. Wir sind nicht verantwortlich f\u00fcr Probleme, die durch \u00c4nderungen entstehen, die Sie nach der Lieferung vornehmen, oder f\u00fcr Dinge au\u00dferhalb unserer Kontrolle wie Ausf\u00e4lle von Drittanbieter-Diensten."
+        },
+        "changes": {
+          "title": "Aktualisierungen dieser Bedingungen",
+          "content": "Wir k\u00f6nnen diese Bedingungen von Zeit zu Zeit aktualisieren. Die neue Version wird dann hier ver\u00f6ffentlicht. F\u00fcr bereits gestartete Projekte gelten die Bedingungen, die zum Zeitpunkt Ihrer Bestellung g\u00fcltig waren."
         },
         "law": {
-          "title": "Anwendbares Recht",
-          "content": "Diese Bedingungen unterliegen dem ungarischen Recht. Streitigkeiten werden von den zuständigen Gerichten in Budapest entschieden."
+          "title": "Rechtliche Details",
+          "content": "Diese Bedingungen unterliegen dem ungarischen Recht. Bei Meinungsverschiedenheiten kl\u00e4ren wir das am liebsten pers\u00f6nlich. Wenn das nicht funktioniert, sind die Gerichte in Budapest zust\u00e4ndig."
         }
       }
     },
@@ -326,11 +359,15 @@
         },
         "registration": {
           "title": "Handelsregistereintrag",
-          "content": "Steuernummer: [Wird ergänzt]\nRegistrierungsnummer: [Wird ergänzt]"
+          "content": "Steuernummer: [Wird erg\u00e4nzt]\nRegistrierungsnummer: [Wird erg\u00e4nzt]"
+        },
+        "responsible": {
+          "title": "Verantwortlich f\u00fcr den Inhalt",
+          "content": "Budapest Labs ist verantwortlich f\u00fcr den Inhalt dieser Website nach geltendem ungarischen und EU-Recht."
         },
         "disclaimer": {
           "title": "Haftungsausschluss",
-          "content": "Wir bemühen uns, die Informationen auf dieser Website korrekt und aktuell zu halten. Wir übernehmen jedoch keine Haftung für die Vollständigkeit oder Richtigkeit der Inhalte."
+          "content": "Wir geben unser Bestes, alles auf dieser Seite korrekt und aktuell zu halten, k\u00f6nnen aber nicht garantieren, dass es immer perfekt ist. Externe Links dienen der Bequemlichkeit \u2014 f\u00fcr die Inhalte anderer Websites sind wir nicht verantwortlich."
         }
       }
     }

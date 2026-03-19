@@ -57,6 +57,15 @@ Pick the one that best describes your business:
   (pl. panzió, vendégház, hotel, Airbnb szálláshely, rendezvényhelyszín, coworking iroda, konferenciaterem, kemping, borászat vendégházzal)
   (e.g. pension, guesthouse, hotel, Airbnb property, event venue, coworking space, conference room, campsite, vineyard with guest rooms)
 
+### Hány oldalt szeretne? / How many pages do you need?
+
+- [ ] **Egyoldalas / Single page** — Egy főoldal, ami mindent tartalmaz (szolgáltatások, galéria, kapcsolat, stb.)
+  "One main page that covers everything (services, gallery, contact, etc.)"
+- [ ] **Több oldalas / Multi-page** — Külön oldalak különböző tartalommal (pl. portfólió aloldalak, egyedi szoba/termék oldalak)
+  "Separate pages for different content (e.g. individual portfolio pages, property/product pages)"
+- [ ] **Nem tudom / Not sure** — Mi döntünk az igények alapján.
+  "Let us decide based on your needs."
+
 ---
 
 ## 3. Szolgáltatásra vonatkozó kérdések / Service-specific questions
@@ -410,44 +419,26 @@ Budapest Labs — info@budapestlabs.com
 
 ## Az ügynök számára / For the agent
 
-### Archetype routing
+### Section selection workflow
 
-Based on the answer to Section 2, follow the corresponding STAGE-4 file:
+1. Run the UI/UX skill with the client's industry + mood (see STAGE-2 Step 0)
+2. The skill's output includes a recommended landing pattern with section order
+3. Cross-reference with the client's questionnaire answers (Sections 2–7)
+4. Build sections based on the skill's recommendation + client needs (see CUSTOMIZATION.md for reusable component patterns)
+5. The Visual Direction (STAGE-2 Step 4) documents exactly which sections this project uses
 
-| Client answer | Archetype | Stage 4 file | Recommended themes | Recommended fonts |
-|---|---|---|---|---|
-| Szolgáltatás / Service | Service | STAGE-4-service.md | blue, corporate, monochrome, clean-slate, dark-matter | Inter (default) |
-| Bemutató / Showcase | Showcase | STAGE-4-showcase.md | clean-slate, monochrome, art-deco, dark-matter, studio-ghibli | Inter, Space Grotesk, Playfair Display, Nunito |
-| Katalógus / Catalog | Catalog | STAGE-4-catalog.md | amber-minimal, caffeine, art-deco, catppuccin, elegant-luxury, studio-ghibli | Inter, Playfair Display, Nunito, Poppins |
-| Márka / Brand | Brand | STAGE-4-brand.md | monochrome, bold-tech, art-deco, bubblegum, cyberpunk, elegant-luxury | Syne, Space Grotesk, DM Sans, Outfit, Poppins |
-| Szállás / Accommodation | Accommodation | STAGE-4-accommodation.md | amber-minimal, claude, catppuccin, cosmic-night, elegant-luxury, studio-ghibli | Inter, Playfair Display, Cormorant Garant, Nunito |
+There is no archetype routing. The skill determines what sections to build based on the specific business, not a category.
 
-### Hero type per archetype
+**Priority order:** Client questionnaire answers > Skill recommendation > Template defaults
 
-| Archetype | Default hero | Alternative |
-|---|---|---|
-| Service | Mesh gradient | Full-bleed image |
-| Showcase | Full-bleed image | Minimal (text-only with accent) |
-| Catalog | Full-bleed image | Mesh gradient |
-| Brand | Full-bleed image/video | Minimal with brand imagery |
-| Accommodation | Full-bleed image | Mesh gradient with location overlay |
+### Site type decision
 
-### CTA suggestions per archetype
+If the client selected "Multi-page" or their business type naturally requires it, use the multi-page path. Otherwise default to Landing.
 
-| Archetype | Primary CTA (HU) | Primary CTA (EN) | Secondary CTA (HU) | Secondary CTA (EN) |
-|---|---|---|---|---|
-| Service | Kapcsolatfelvétel | Get in Touch | Ingyenes konzultáció | Free Consultation |
-| Showcase | Portfólió megtekintése | View Portfolio | Kapcsolatfelvétel | Get in Touch |
-| Catalog | Foglaljon asztalt / Kínálatunk | Reserve a Table / Our Menu | Elérhetőségek | Contact Us |
-| Brand | Fedezze fel / Vásárlás | Discover / Shop Now | A történetünk | Our Story |
-| Accommodation | Foglalás | Book Now | Szobáink megtekintése | View Our Rooms |
-
-### Nav links per archetype
-
-| Archetype | Links |
-|---|---|
-| Service | about, services, contact |
-| Showcase | gallery, about, contact (optionally: team) |
-| Catalog | menu, gallery, contact (optionally: about) |
-| Brand | collections, story, contact |
-| Accommodation | rooms, gallery, location, contact |
+Indicators for multi-page:
+- More than 20 portfolio items that each need their own page
+- Multiple distinct content categories (model boards, property types, project categories)
+- Client explicitly wants separate pages
+- Reference site is multi-page
+- Showcase businesses with large portfolios (modeling agencies, architects, photographers with many projects)
+- Accommodation with many rooms/properties that each deserve a dedicated page

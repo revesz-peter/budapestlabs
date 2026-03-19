@@ -1,6 +1,6 @@
 # Design Guide
 
-General design principles and patterns for building sites with Tailwind CSS v4, shadcn/ui, next-themes, and Framer Motion. Not project-specific — these apply to every client site built from the starter template.
+General design principles and patterns for building sites with Tailwind CSS v4, shadcn/ui, next-themes, and Framer Motion. Not project-specific — these apply to every client site built from the pipeline.
 
 ---
 

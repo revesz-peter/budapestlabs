@@ -23,6 +23,12 @@ How to adapt the template for each client. Every client site uses the same stack
 
 ## Color customization
 
+> **Quick start:** Instead of browsing presets manually, run the UI/UX skill to search 161 industry-specific palettes:
+> ```bash
+> python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py "<industry>" --domain color
+> ```
+> Then map the skill's hex values to the CSS variable format below.
+
 ### Understanding the color system
 
 Colors are CSS variables using OKLCH format: `oklch(lightness chroma hue)`.
@@ -71,41 +77,14 @@ In hero:
 />
 ```
 
-### Color palette presets
-
-**Blue + Teal** (default — professional, tech-forward):
-```tsx
-colors={["#2563eb", "#0d9488", "#3b82f6", "#06b6d4"]}
-```
-
-**Violet/Indigo** (creative, elegant):
-```tsx
-colors={["#7c3aed", "#6366f1", "#8b5cf6", "#a78bfa"]}
-```
-
-**Monochrome** (ultra-minimal, corporate):
-```tsx
-colors={["#404040", "#525252", "#6b7280", "#9ca3af"]}
-```
-
-**Rose/Pink** (beauty, wellness):
-```tsx
-colors={["#e11d48", "#ec4899", "#f43f5e", "#fb7185"]}
-```
-
-**Emerald/Green** (health, nature, finance):
-```tsx
-colors={["#059669", "#10b981", "#0d9488", "#14b8a6"]}
-```
-
-**Amber/Orange** (food, energy, warmth):
-```tsx
-colors={["#d97706", "#f59e0b", "#ea580c", "#fb923c"]}
-```
-
 ---
 
 ## Font customization
+
+> **Quick start:** Search 1,900+ font combinations with the UI/UX skill:
+> ```bash
+> python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py "<mood keywords>" --domain typography
+> ```
 
 ### Changing the font
 
@@ -121,23 +100,6 @@ colors={["#d97706", "#f59e0b", "#ea580c", "#fb923c"]}
 ```css
 --font-sans: "YOUR_FONT", ui-sans-serif, system-ui, -apple-system, sans-serif;
 ```
-
-### Font pairing suggestions
-
-| Category | Heading font | Body font | Best for |
-|----------|-------------|-----------|----------|
-| Default / professional | Inter | Inter | Service archetype, corporate, clean |
-| Luxury / editorial | Playfair Display | Inter | Upscale restaurants, spas, hotels, jewelry |
-| Luxury / serif | Cormorant Garant | Inter | Fashion, wine, premium accommodation |
-| Modern / geometric | Space Grotesk | Inter | Creative agencies, tech, architecture |
-| Modern / clean | DM Sans | DM Sans | Brands, studios, contemporary businesses |
-| Bold / statement | Syne | Inter | Streetwear, music, bold brand identities |
-| Friendly / approachable | Nunito | Nunito | Family businesses, bakeries, childcare |
-| Contemporary / versatile | Outfit | Outfit | Works for almost anything modern |
-| Handwritten accent | Caveat (headings only) | Inter | Cafes, florists, artisan shops |
-| Tech / developer | Geist | Geist | Tech products, SaaS, developer tools |
-
-For simplicity, most Starter sites use a single font (Inter) for everything. Use heading/body pairings only when the client's brand clearly calls for it.
 
 ### Implementing a heading/body font pairing
 
@@ -217,19 +179,7 @@ For dark/light mode, either:
 3. Optionally remove translations (not required, unused keys don't cause errors)
 4. Remove any nav links pointing to it
 
-### Sections per archetype
-
-Each archetype uses a different set of sections. See CLIENT.md for archetype routing.
-
-| Archetype | Sections (in order) |
-|-----------|-------------------|
-| Service | Hero (mesh gradient), About, Services, Contact |
-| Showcase | Hero (image), Gallery, About, Team (optional), Contact |
-| Catalog | Hero (image or mesh), Menu/Catalog, Gallery (optional), About, Contact |
-| Brand | Hero (image), Collections, Story, Contact |
-| Accommodation | Hero (image), Rooms, Gallery, Location, Contact |
-
-All sites include: Navbar (top), Footer (bottom), Legal pages (privacy, terms, imprint).
+All sites include: Navbar (top), Footer (bottom), Legal pages (privacy, terms, imprint). The Visual Direction (STAGE-2 Step 4) determines which sections to build for each project.
 
 ---
 
@@ -288,7 +238,7 @@ The template includes 10 animated background components in `src/components/ui/`.
 
 | Component | Import | Visual Effect | Compute | Best For |
 |-----------|--------|---------------|---------|----------|
-| `MeshGradientBackground` | `@/components/ui/mesh-gradient` | Drifting color orbs | Very Low | Default/safe choice, any archetype |
+| `MeshGradientBackground` | `@/components/ui/mesh-gradient` | Drifting color orbs | Very Low | Default/safe choice, works for any business |
 | `AuroraShaders` | `@/components/ui/aurora` | Northern lights curtains | Medium | Wellness, luxury, spa, accommodation |
 | `WavesShaders` | `@/components/ui/waves` | Flowing plasma layers | Low | Creative studios, music, spa, calm brands |
 | `CosmicWavesShaders` | `@/components/ui/cosmic-waves` | Starfield + wave ripples | Medium | Tech, education, bold agencies |
@@ -298,16 +248,6 @@ The template includes 10 animated background components in `src/components/ui/`.
 | `SingularityShaders` | `@/components/ui/singularity` | Black hole pull effect | Medium | Dark/premium sites, security, enterprise |
 | `SeaShaders` | `@/components/ui/sea` | Photorealistic ocean | **High** | Resort, travel, coastal accommodation |
 | `DesertSandShaders` | `@/components/ui/desert-sand` | Sand dunes flyover | **Very High** | Adventure, automotive, epic feel |
-
-### Archetype → background recommendations
-
-| Archetype | Default | Creative Alternatives |
-|-----------|---------|----------------------|
-| Service | `MeshGradientBackground` | `FlickeringGrid` (tech services), `CosmicWavesShaders` (agencies) |
-| Showcase | `WavesShaders` | `AuroraShaders` (ethereal/luxury), `NoiseShaders` (organic/nature), `AccretionShaders` (bold/edgy) |
-| Catalog | `MeshGradientBackground` | `NoiseShaders` (organic food), `AuroraShaders` (upscale bar, dark mode), `SeaShaders` (coastal — hero only) |
-| Brand | `WavesShaders` | `AccretionShaders` (bold/energetic), `CosmicWavesShaders` (editorial), `NoiseShaders` (artisan/handmade) |
-| Accommodation | `AuroraShaders` | `SeaShaders` (waterfront — hero only), `NoiseShaders` (mountain/nature retreat) |
 
 ### Creative usage ideas
 
@@ -402,11 +342,120 @@ Adjust shader colors to match the client's brand palette:
 
 ## Hero variants
 
-### Mesh gradient (default for Service archetype)
+### Mesh gradient
 
 Animated gradient orbs behind text. See the "Hero gradient customization" section above.
 
-### Full-bleed image (Showcase, Catalog, Brand, Accommodation)
+The `MeshGradientBackground` component goes in `src/components/ui/mesh-gradient.tsx`:
+
+```tsx
+"use client"
+
+import { cn } from "@/lib/utils"
+
+export interface MeshGradientBackgroundProps {
+  className?: string
+  children?: React.ReactNode
+  colors?: string[]
+  speed?: number
+  backgroundColor?: string
+}
+
+export function MeshGradientBackground({
+  className,
+  children,
+  colors = ["#7c3aed", "#2563eb", "#06b6d4", "#8b5cf6"],
+  speed = 1,
+  backgroundColor = "#030014",
+}: MeshGradientBackgroundProps) {
+  const duration1 = 60 / speed
+  const duration2 = 80 / speed
+  const duration3 = 90 / speed
+  const duration4 = 70 / speed
+
+  return (
+    <div className={cn("absolute inset-0 overflow-hidden", className)} style={{ backgroundColor }}>
+      <div className="absolute inset-0">
+        <div
+          className="absolute h-[60%] w-[60%] rounded-full"
+          style={{
+            left: "-10%",
+            top: "-10%",
+            background: `radial-gradient(circle, ${colors[0]}40 0%, transparent 70%)`,
+            filter: "blur(80px)",
+            animation: `meshMove1 ${duration1}s ease-in-out infinite`,
+          }}
+        />
+        <div
+          className="absolute h-[50%] w-[50%] rounded-full"
+          style={{
+            right: "-5%",
+            top: "10%",
+            background: `radial-gradient(circle, ${colors[1]}35 0%, transparent 70%)`,
+            filter: "blur(100px)",
+            animation: `meshMove2 ${duration2}s ease-in-out infinite`,
+          }}
+        />
+        <div
+          className="absolute h-[55%] w-[70%] rounded-full"
+          style={{
+            left: "20%",
+            bottom: "-15%",
+            background: `radial-gradient(circle, ${colors[2]}30 0%, transparent 70%)`,
+            filter: "blur(120px)",
+            animation: `meshMove3 ${duration3}s ease-in-out infinite`,
+          }}
+        />
+        <div
+          className="absolute h-[40%] w-[40%] rounded-full"
+          style={{
+            left: "40%",
+            top: "30%",
+            background: `radial-gradient(circle, ${colors[3] || colors[0]}25 0%, transparent 70%)`,
+            filter: "blur(90px)",
+            animation: `meshMove4 ${duration4}s ease-in-out infinite`,
+          }}
+        />
+      </div>
+
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E")`,
+        }}
+      />
+
+      {children && <div className="relative z-10 h-full w-full">{children}</div>}
+
+      <style jsx>{`
+        @keyframes meshMove1 {
+          0%, 100% { transform: translate(0%, 0%) scale(1); }
+          25% { transform: translate(5%, 10%) scale(1.05); }
+          50% { transform: translate(10%, 5%) scale(0.95); }
+          75% { transform: translate(5%, -5%) scale(1.02); }
+        }
+        @keyframes meshMove2 {
+          0%, 100% { transform: translate(0%, 0%) scale(1); }
+          33% { transform: translate(-10%, 8%) scale(1.08); }
+          66% { transform: translate(-5%, -5%) scale(0.95); }
+        }
+        @keyframes meshMove3 {
+          0%, 100% { transform: translate(0%, 0%) scale(1); }
+          50% { transform: translate(-8%, -10%) scale(1.1); }
+        }
+        @keyframes meshMove4 {
+          0%, 100% { transform: translate(0%, 0%) scale(1); }
+          25% { transform: translate(15%, -10%) scale(0.9); }
+          50% { transform: translate(-10%, 15%) scale(1.1); }
+          75% { transform: translate(-15%, -5%) scale(0.95); }
+        }
+      `}</style>
+    </div>
+  )
+}
+```
+
+### Full-bleed image
 
 Replace the mesh gradient with a full-screen background image:
 
@@ -457,19 +506,195 @@ For ultra-clean brands that don't need a background:
 </section>
 ```
 
+### Video hero (autoplay background)
+
+Full-viewport video background, cinematic style. Works with Vimeo or self-hosted MP4.
+
+```tsx
+<section className="relative h-screen w-full overflow-hidden">
+  {/* Video background — Vimeo */}
+  <iframe
+    src="https://player.vimeo.com/video/VIDEO_ID?background=1&autoplay=1&loop=1&muted=1"
+    className="pointer-events-none absolute left-1/2 top-1/2 min-h-full min-w-full -translate-x-1/2 -translate-y-1/2"
+    style={{ width: "177.77vh", height: "56.25vw", minWidth: "100%", minHeight: "100%" }}
+    allow="autoplay; fullscreen"
+    title="Hero video"
+  />
+
+  {/* Optional text overlay */}
+  <div className="absolute inset-0 bg-background/30" />
+  <div className="relative z-10 flex h-full items-end p-12">
+    <h1 className="text-5xl font-bold md:text-7xl">{t("title")}</h1>
+  </div>
+</section>
+```
+
+For self-hosted video (MP4):
+
+```tsx
+<video autoPlay muted loop playsInline className="absolute inset-0 h-full w-full object-cover">
+  <source src="/videos/hero.mp4" type="video/mp4" />
+</video>
+```
+
+**Tips:**
+- Vimeo `background=1` removes controls, branding, and plays silently
+- The `177.77vh` / `56.25vw` sizing ensures 16:9 coverage at any viewport
+- For navbar invert over dark video: add `className={cn("fixed top-0 z-50", isOverHero && "invert")}` to navbar, where `isOverHero` checks `scrollY < window.innerHeight`
+- Store self-hosted videos in `public/videos/`
+
 ---
 
-## CTA alternatives per archetype
+## Navigation variants
 
-| Archetype | Primary CTA (HU) | Primary CTA (EN) | Secondary (HU) | Secondary (EN) |
-|-----------|-------------------|-------------------|-----------------|----------------|
-| Service | Kapcsolatfelvétel | Get in Touch | Ingyenes konzultáció | Free Consultation |
-| Showcase | Munkáim megtekintése | View My Work | Kapcsolatfelvétel | Get in Touch |
-| Catalog | Kínálatunk / Foglaljon asztalt | Our Menu / Reserve a Table | Elérhetőségek | Contact Us |
-| Brand | Fedezze fel | Discover | A történetünk | Our Story |
-| Accommodation | Foglalás | Book Now | Szobáink | View Our Rooms |
+### Sidebar navigation
 
-Adapt to the specific business — a photographer might use "Portfólió" instead of "Munkáim megtekintése".
+Alternative to the default top navbar. A hamburger in the top bar opens a left slide-out panel. Best for: editorial sites, agencies, portfolios with a Ford Models / high-fashion aesthetic.
+
+```tsx
+"use client";
+
+import { useState } from "react";
+import { useTranslations } from "next-intl";
+import { X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+
+// Adapt navLinks to match the project's pages
+const navLinks = [
+  { key: "models", href: "/models" },
+  { key: "about", href: "/about" },
+  { key: "contact", href: "/contact" },
+] as const;
+
+export function SidebarNav() {
+  const t = useTranslations("nav");
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+      {/* Top bar — always visible */}
+      <header className="fixed top-0 z-50 flex w-full items-center justify-between px-6 py-4">
+        <button
+          onClick={() => setOpen(true)}
+          className="flex flex-col gap-1.5"
+          aria-label="Open menu"
+        >
+          <span className="block h-0.5 w-6 bg-foreground" />
+          <span className="block h-0.5 w-6 bg-foreground" />
+        </button>
+        <a href="/" className="text-lg font-bold tracking-tight">
+          {/* Replace with business name or Image component */}
+          {{BUSINESS_NAME}}
+        </a>
+        <div className="w-6" /> {/* Spacer for centering */}
+      </header>
+
+      {/* Sidebar overlay */}
+      <AnimatePresence>
+        {open && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 z-[60] bg-black/50"
+              onClick={() => setOpen(false)}
+            />
+            <motion.nav
+              initial={{ x: "-100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "-100%" }}
+              transition={{ type: "tween", duration: 0.4, ease: "easeInOut" }}
+              className="fixed left-0 top-0 z-[70] flex h-full w-[300px] flex-col bg-background p-8"
+            >
+              <button
+                onClick={() => setOpen(false)}
+                className="mb-12 self-start"
+                aria-label="Close menu"
+              >
+                <X className="h-6 w-6" />
+              </button>
+              <div className="flex flex-col gap-6">
+                {navLinks.map((link) => (
+                  <a
+                    key={link.key}
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className="text-xl font-bold uppercase tracking-wide text-foreground/80 transition-opacity hover:text-foreground"
+                  >
+                    {t(link.key)}
+                  </a>
+                ))}
+              </div>
+            </motion.nav>
+          </>
+        )}
+      </AnimatePresence>
+    </>
+  );
+}
+```
+
+Adapt `navLinks` to match the project's pages. For multi-page sites, use actual routes (`/models`, `/about`) instead of anchor links (`#models`, `#about`). Add language switcher and theme toggle to the top bar or inside the sidebar panel as needed.
+
+---
+
+## Portfolio / Model grid
+
+Responsive image grid for portfolio items, model cards, or property listings. Minimal design — image + name only.
+
+```tsx
+"use client";
+
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Link from "next/link";
+
+interface GridItem {
+  slug: string;
+  name: string;
+  thumbnailImage: string;
+}
+
+export function PortfolioGrid({
+  items,
+  basePath = "/models",
+}: {
+  items: GridItem[];
+  basePath?: string;
+}) {
+  return (
+    <div className="grid grid-cols-2 gap-4 px-6 py-12 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      {items.map((item, i) => (
+        <motion.div
+          key={item.slug}
+          initial={{ opacity: 0, scale: 1.05 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: i * 0.05 }}
+        >
+          <Link href={`${basePath}/${item.slug}`} className="group block">
+            <div className="aspect-[3/4] overflow-hidden">
+              <Image
+                src={item.thumbnailImage}
+                alt={item.name}
+                width={400}
+                height={533}
+                className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+            <h3 className="mt-3 text-xs font-light uppercase tracking-widest text-muted-foreground">
+              {item.name}
+            </h3>
+          </Link>
+        </motion.div>
+      ))}
+    </div>
+  );
+}
+```
+
+For a static "featured" grid on the homepage (no links, just images + names), remove the `Link` wrapper and `basePath` prop. Adjust `aspect-[3/4]` to match the image orientation (e.g., `aspect-square` for square thumbnails, `aspect-[4/3]` for landscape).
 
 ---
 
@@ -518,7 +743,7 @@ For a simple date input without adding a calendar library:
 
 ## Opening hours display
 
-For businesses with physical locations (Service, Catalog archetypes):
+For businesses with physical locations:
 
 ```tsx
 import { Clock } from "lucide-react";
@@ -616,7 +841,7 @@ Always replace placeholders before the site goes live.
 
 ## Pricing / Packages section (optional)
 
-Reusable pricing card grid for Service, Catalog, or Accommodation archetypes. Add as an optional section between the core content and Contact.
+Reusable pricing card grid. Add as an optional section between the core content and Contact.
 
 ```tsx
 "use client";
@@ -721,7 +946,7 @@ Translation keys:
 
 ## FAQ section (optional)
 
-Accordion-based FAQ section, reusable by any archetype. Requires shadcn Accordion: `bunx shadcn@latest add accordion`.
+Accordion-based FAQ section. Requires shadcn Accordion: `bunx shadcn@latest add accordion`.
 
 ```tsx
 "use client";
