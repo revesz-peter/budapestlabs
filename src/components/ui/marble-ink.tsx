@@ -51,10 +51,11 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
 
     float f = fbm(uv * 3.0 + r * 2.0);
 
-    // Marble palette — white to soft grey with warm undertones
-    vec3 white = vec3(0.97, 0.96, 0.95);
-    vec3 vein = vec3(0.75, 0.72, 0.70);
-    vec3 warm = vec3(0.92, 0.88, 0.84);
+    // Marble palette — grey stone with cool undertones
+    // Alt light palette: vec3(0.97, 0.96, 0.95), vec3(0.75, 0.72, 0.70), vec3(0.92, 0.88, 0.84)
+    vec3 white = vec3(0.62, 0.60, 0.58);
+    vec3 vein = vec3(0.38, 0.36, 0.34);
+    vec3 warm = vec3(0.55, 0.52, 0.50);
 
     vec3 col = mix(white, warm, smoothstep(0.3, 0.7, f));
     // Veins
@@ -62,7 +63,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
     col = mix(col, vein, veinPattern * 0.6);
 
     // Subtle depth
-    col *= 0.95 + 0.05 * f;
+    col *= 0.92 + 0.08 * f;
 
     fragColor = vec4(col, 1.0);
 }
