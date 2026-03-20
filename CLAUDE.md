@@ -50,7 +50,7 @@ Landing page for Budapest Labs — a service delivering professional websites fo
   - Current: Blue + Teal `["#2563eb", "#0d9488", "#3b82f6", "#06b6d4"]`
   - Alt – Violet/Indigo: `["#7c3aed", "#6366f1", "#8b5cf6", "#a78bfa"]`
   - Alt – Monochrome: `["#404040", "#525252", "#6b7280", "#9ca3af"]`
-- **Animated shader backgrounds**: 10 WebGL/CSS components in `src/components/ui/` (aurora, waves, sea, noise, desert-sand, cosmic-waves, accretion, singularity, mesh-gradient, flickering-grid). These use `react-shaders` and are available for client sites — see `templates/pipeline/CUSTOMIZATION.md` "Animated backgrounds" for guidance.
+- **Animated shader backgrounds**: 15 WebGL/CSS components in `src/components/ui/` (aurora, waves, sea, noise, desert-sand, cosmic-waves, accretion, singularity, mesh-gradient, flickering-grid, liquid-noir, marble-ink, silk-flow, dark-smoke, molten-amber). These use `react-shaders` and are available for client sites — see `templates/pipeline/CUSTOMIZATION.md` "Animated backgrounds" for guidance. A custom `shader-canvas.tsx` component is also available for carousel/cycling use cases where `react-shaders` has issues with mount/unmount (see mamormodels for reference implementation).
 - Do NOT add glow effects, text shimmer, or heavy visual effects — user explicitly removed these
 - Framer Motion animations use `whileInView` with `once: true`
 - **Color classes**: Use semantic Tailwind tokens (`text-foreground`, `text-muted-foreground`, `bg-foreground/5`, `border-border`) — do NOT hardcode `text-white`, `bg-black`, `text-white/60` etc. These break in the opposite theme.
@@ -86,7 +86,7 @@ src/
 │   └── globals.css           # Tailwind v4 config, glass classes, gradient border
 ├── components/
 │   ├── landing/              # 11 section components + theme-toggle (navbar, hero, stats, how-it-works, comparison, pricing, addons, testimonials, faq, contact, footer, theme-toggle)
-│   └── ui/                   # ShadCN + Magic UI + animated shader backgrounds (button, badge, accordion, mesh-gradient, flickering-grid, aurora, waves, sea, noise, desert-sand, cosmic-waves, accretion, singularity, etc.)
+│   └── ui/                   # ShadCN + Magic UI + animated shader backgrounds (button, badge, accordion, mesh-gradient, flickering-grid, aurora, waves, sea, noise, desert-sand, cosmic-waves, accretion, singularity, liquid-noir, marble-ink, silk-flow, dark-smoke, molten-amber, shader-canvas)
 ├── i18n/
 │   ├── routing.ts            # Locale config (hu, en)
 │   ├── request.ts            # Server request config

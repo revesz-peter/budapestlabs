@@ -248,6 +248,11 @@ The template includes 10 animated background components in `src/components/ui/`.
 | `SingularityShaders` | `@/components/ui/singularity` | Black hole pull effect | Medium | Dark/premium sites, security, enterprise |
 | `SeaShaders` | `@/components/ui/sea` | Photorealistic ocean | **High** | Resort, travel, coastal accommodation |
 | `DesertSandShaders` | `@/components/ui/desert-sand` | Sand dunes flyover | **Very High** | Adventure, automotive, epic feel |
+| `LiquidNoir` | `@/components/ui/liquid-noir` | Dark oil surface with iridescence | Low | Fashion, luxury, dark/moody brands |
+| `MarbleInk` | `@/components/ui/marble-ink` | White marble with flowing veins | Low | Luxury, architecture, minimal brands |
+| `SilkFlow` | `@/components/ui/silk-flow` | Draped silk fabric folds | Low | Fashion, bridal, luxury, editorial |
+| `DarkSmoke` | `@/components/ui/dark-smoke` | Charcoal smoke with ember glow | Low | Dark brands, nightlife, premium |
+| `MoltenAmber` | `@/components/ui/molten-amber` | Warm golden lava/honey flow | Low | Warm luxury, whiskey, artisan, jewelry |
 
 ### Creative usage ideas
 
@@ -319,7 +324,7 @@ import { AccretionShaders } from "@/components/ui/accretion";
 ### Performance rules
 
 - **`SeaShaders` and `DesertSandShaders` are GPU-heavy** — use as hero background only, never multiple on one page
-- **Low/Very Low compute** backgrounds (`MeshGradientBackground`, `WavesShaders`, `NoiseShaders`, `FlickeringGrid`) can be stacked (e.g., hero + section divider)
+- **Low/Very Low compute** backgrounds (`MeshGradientBackground`, `WavesShaders`, `NoiseShaders`, `FlickeringGrid`, `LiquidNoir`, `MarbleInk`, `SilkFlow`, `DarkSmoke`, `MoltenAmber`) can be stacked (e.g., hero + section divider)
 - Always use `opacity-30` to `opacity-50` when placing shaders behind content — ensures text readability
 - On mobile, reduce shader `speed` props by ~50% for battery life
 - Consider lazy-rendering heavy shaders: only mount the component when the section scrolls into view (use Framer Motion `whileInView` or an intersection observer)
