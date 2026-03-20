@@ -147,3 +147,22 @@ const items = t.raw(`categories.${catKey}.items`) as Array<{ name: string; descr
 - Pages use Next.js conventions: `page.tsx`, `layout.tsx`
 - Translations: `en.json`, `hu.json`
 - Import alias: `@/` maps to `src/`
+
+## WebGL / Shader backgrounds
+
+- **Direct import in client components.** When the page is `"use client"`, import shader components directly (`import { DesertSandShaders } from "@/components/ui/desert-sand"`). Do NOT use `next/dynamic` with `ssr: false` — it causes the canvas to flash and disappear on remount.
+- **Dynamic import only from server components.** Use `next/dynamic` with `ssr: false` only when a server component needs to render a client-only shader.
+- **WebGL doesn't survive client-side navigation.** The canvas/GL context is destroyed on unmount and doesn't reinitialize properly on `<Link>` navigation. For links that navigate TO a page with a shader hero, use `<a href="/">` instead of `<Link href="/">` to force a full page load.
+- **Shader uniforms are auto-injected.** `react-shaders` automatically declares `uniform` variables in the GLSL source based on the `uniforms` prop. Do NOT manually add `uniform float u_speed;` etc. in the shader string — this causes "redefinition" compile errors.
+- **Full-viewport shaders need resolution downscaling.** Heavy raymarching shaders (desert-sand, sea, etc.) will lag at native resolution on most GPUs. Wrap the shader in a CSS-scaled container to render at 75% resolution:
+
+  ```tsx
+  <div className="absolute inset-0 z-0 overflow-hidden">
+    <div className="origin-top-left w-[133.34%] h-[133.34%] scale-75">
+      <ShaderComponent />
+    </div>
+  </div>
+  ```
+
+  This cuts pixel count by ~44%. Organic textures (sand, water, clouds) hide the softness.
+- **Keep shader `speed` at 1 or below.** Higher speed values make frame drops more perceptible. For luxury/editorial sites, slower movement (0.6–1.0) both performs better and fits the aesthetic.

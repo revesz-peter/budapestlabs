@@ -43,6 +43,19 @@ Follow these files in order:
 - **[RULES.md](RULES.md)** — Critical constraints, gotchas, do's and don'ts
 - **[CUSTOMIZATION.md](CUSTOMIZATION.md)** — Colors, fonts, hero variants, component references, maps, stock photos
 
+## Agent execution rules
+
+These rules apply to any AI agent running the pipeline:
+
+1. **Never skip stages.** Execute every stage in order (0→6). Each stage exists for a reason — skipping any stage (especially Stage 2 creative direction) produces inferior results.
+2. **Never skip steps within a stage.** If Stage 2 says "Step 0: run UI/UX skill", run it. If Stage 0 says "determine site type", determine it. Every step matters.
+3. **Do not ask permission for individual file edits.** The pipeline is pre-approved — write files freely without asking "can I edit this file?" for each one. Only pause to ask if you can **proceed to the next stage** once the current stage is complete.
+4. **Stage gate: ask before advancing.** After completing each stage, briefly report what was done and ask: "Stage N complete. Proceed to Stage N+1?" Wait for confirmation before continuing.
+5. **Use the UI/UX skill.** Stage 2 Step 0 is mandatory. Always run the design system generator before making creative decisions. The skill output informs typography, colors, layout pattern, and style — do not guess these.
+6. **Follow the pipeline output, not your defaults.** If the UI/UX skill recommends Playfair Display + Source Serif 4, use those — don't fall back to Geist Sans because it's the Next.js default.
+7. **Template runs use lorem ipsum.** When the brief says "template" or "demo", use placeholder content but still follow every stage. The pipeline process is what's being tested, not the content.
+8. **WebGL/shader backgrounds:** Import directly (not via `next/dynamic`) when the page is already `"use client"`. Use `next/dynamic` with `ssr: false` only from server components. For home page links, use `<a>` instead of `<Link>` to force full page reload (WebGL contexts don't survive client-side navigation).
+
 ## Before you start
 
 The agent needs from the client a completed **[CLIENT.md](CLIENT.md)** questionnaire. At minimum:

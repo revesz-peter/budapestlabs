@@ -4,9 +4,16 @@
 
 Before writing any code, stop and imagine the finished site from the visitor's perspective. Every design decision — theme, font, hero type, animation level, default color mode — flows from this.
 
-### Step 0: Generate design system via UI/UX skill
+### Step 0: Generate design system via UI/UX skill (MANDATORY)
 
-Before making any manual design decisions, run the UI/UX Pro Max skill to get an industry-specific recommendation. If the client provided a reference site (CLIENT.md Section 8), fetch it first with `WebFetch`, extract its design characteristics (colors, fonts, layout, tone), and include those keywords in the skill search so the generated design system is influenced by the reference.
+**This step is NOT optional.** Before making any manual design decisions, run the UI/UX Pro Max skill to get an industry-specific recommendation. The skill output determines typography, colors, layout pattern, and style for the entire build. Do not skip this and fall back to defaults.
+
+Run both the search and design_system scripts:
+
+1. **Search** — find matching industry patterns and styles
+2. **Design system** — generate project-specific colors, typography, effects
+
+If the client provided a reference site (CLIENT.md Section 8), fetch it first with `WebFetch`, extract its design characteristics (colors, fonts, layout, tone), and include those keywords in the skill search so the generated design system is influenced by the reference.
 
 ```bash
 python3 ~/.claude/plugins/marketplaces/ui-ux-pro-max-skill/src/ui-ux-pro-max/scripts/search.py \
