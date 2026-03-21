@@ -27,10 +27,10 @@ export function Footer() {
               </p>
               <nav className="flex flex-col gap-2">
                 <a
-                  href="#how-it-works"
+                  href="#process"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
-                  {t("nav.howItWorks")}
+                  {t("nav.process")}
                 </a>
                 <a
                   href="#pricing"

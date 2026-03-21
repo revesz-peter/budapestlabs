@@ -15,7 +15,7 @@ export function HowItWorks() {
   const t = useTranslations("howItWorks");
 
   return (
-    <section id="how-it-works" className="px-6 py-28 md:px-8 lg:px-16">
+    <section id="process" className="px-6 py-28 md:px-8 lg:px-16">
       <div className="mx-auto max-w-6xl">
         {/* Header */}
         <div className="mb-20 text-center">

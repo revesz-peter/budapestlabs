@@ -1,9 +1,10 @@
 {
   "nav": {
-    "howItWorks": "Process",
+    "process": "Process",
     "pricing": "Pricing",
     "faq": "FAQ",
-    "contact": "Contact"
+    "contact": "Contact",
+    "recentWork": "Recent Work"
   },
   "hero": {
     "badge": "Modern, secure, fast",

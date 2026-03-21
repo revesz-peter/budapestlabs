@@ -10,7 +10,8 @@ import { Menu, X } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 
 const navLinks = [
-  { key: "howItWorks", href: "#how-it-works" },
+  { key: "process", href: "#process" },
+  { key: "recentWork", href: "#recent-work" },
   { key: "pricing", href: "#pricing" },
   { key: "faq", href: "#faq" },
 ] as const;

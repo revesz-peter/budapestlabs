@@ -17,7 +17,7 @@ export function LatestProject() {
   const project = projects[0];
 
   return (
-    <section className="px-6 py-20 md:px-8 lg:px-16">
+    <section id="recent-work" className="px-6 py-20 md:px-8 lg:px-16">
       <div className="mx-auto max-w-5xl">
         {/* Header */}
         <div className="mb-10 text-center">

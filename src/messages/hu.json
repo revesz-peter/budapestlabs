@@ -1,9 +1,10 @@
 {
   "nav": {
-    "howItWorks": "Folyamat",
+    "process": "Folyamat",
     "pricing": "Árak",
     "faq": "GYIK",
-    "contact": "Kapcsolat"
+    "contact": "Kapcsolat",
+    "recentWork": "Munkáink"
   },
   "hero": {
     "badge": "Modern, biztonságos, gyors",
