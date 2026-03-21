@@ -74,7 +74,7 @@
       "name": "Kezdő csomag",
       "price": "179 000",
       "delivery": "Elkészítés: ≤6 óra",
-      "description": "Egyszerű, professzionális weboldal",
+      "description": "Letisztult, professzionális weboldal bárkinek",
       "features": [
         "3–5 oldal (Főoldal, Rólunk, Szolgáltatások, Kapcsolat)",
         "Az Ön iparágához igazítva",
@@ -88,7 +88,7 @@
       "name": "Business csomag",
       "price": "379 000",
       "delivery": "Elkészítés: 1–2 nap",
-      "description": "Szolgáltatóknak és helyi vállalkozásoknak",
+      "description": "Foglalás, űrlapok vagy integrációk — egy helyen",
       "features": [
         "Minden, ami a Kezdő csomagban, és még:",
         "6–10 oldal",
@@ -223,7 +223,7 @@
         "unsure": "Még nem tudom"
       },
       "message": "Üzenet",
-      "messagePlaceholder": "Meséljen egy kicsit a vállalkozásáról és az elképzeléseiről — hamarosan felvesszük Önnel a kapcsolatot, és közösen átbeszéljük a részleteket.",
+      "messagePlaceholder": "Meséljen a projektjéről és az elképzeléseiről — hamarosan felvesszük Önnel a kapcsolatot, és közösen átbeszéljük a részleteket.",
       "submit": "Üzenet küldése",
       "successTitle": "Üzenet elküldve!",
       "success": "24 órán belül visszajelzünk.",
@@ -256,7 +256,7 @@
     }
   },
   "footer": {
-    "description": "Biztonságos, modern weboldalak kisvállalkozásoknak — 6 órán belül elkészítve. Csak átadás után fizet.",
+    "description": "Biztonságos, modern weboldalak — 6 órán belül elkészítve. Csak átadás után fizet.",
     "navigation": "Navigáció",
     "legal": "Jogi",
     "privacy": "Adatvédelem",
@@ -275,7 +275,7 @@
       "sections": {
         "controller": {
           "title": "Adatkezelő",
-          "content": "Révész Péter EV\nKereskedelmi név: Budapest Labs\nSzékhely: Budapest, Magyarország\nAdószám: 91808745-1-43\nNyilvántartási szám: 61944978\nE-mail: budapestlabs@gmail.com\n\n(A továbbiakban: Budapest Labs)"
+          "content": "Budapest Labs (további adatok az Impresszumban).\nE-mail: budapestlabs@gmail.com"
         },
         "collection": {
           "title": "Mit gy\u0171jt\u00fcnk",
@@ -310,11 +310,11 @@
       "sections": {
         "provider": {
           "title": "Szolgáltató adatai",
-          "content": "Révész Péter EV\nKereskedelmi név: Budapest Labs\nSzékhely: Budapest, Magyarország\nAdószám: 91808745-1-43\nNyilvántartási szám: 61944978\nE-mail: budapestlabs@gmail.com\n\n(A továbbiakban: Budapest Labs)"
+          "content": "Budapest Labs (további adatok az Impresszumban).\nE-mail: budapestlabs@gmail.com"
         },
         "scope": {
           "title": "Mit csin\u00e1lunk",
-          "content": "Weboldalakat tervez\u00fcnk \u00e9s \u00e9p\u00edt\u00fcnk kisv\u00e1llalkoz\u00e1sok sz\u00e1m\u00e1ra. A v\u00e1lasztott csomagj\u00e1t\u00f3l f\u00fcgg\u0151en ez magában foglalhatja: egyedi dizájn \u00e9s fejleszt\u00e9s, mobilbar\u00e1t elrendez\u00e9s, t\u00e1rhely \u00e9s \u00fczembe helyez\u00e9s, domain \u00e9s e-mail be\u00e1ll\u00edt\u00e1s, t\u00f6bbnyelv\u0171 t\u00e1mogat\u00e1s, foglal\u00e1si rendszerek, analitika \u00e9s tov\u00e1bbi funkci\u00f3k. Ha valami extr\u00e1ra van sz\u00fcks\u00e9ge, megbesz\u00e9lj\u00fck \u00e9s k\u00f6z\u00f6sen meg\u00e1llapodunk. A projekt pontos hat\u00f3k\u00f6r\u00e9t a v\u00e1lasztott csomag \u00e9s az \u00edr\u00e1sban r\u00f6gz\u00edtett egy\u00e9b meg\u00e1llapod\u00e1sok hat\u00e1rozz\u00e1k meg."
+          "content": "Weboldalakat tervez\u00fcnk \u00e9s \u00e9p\u00edt\u00fcnk mag\u00e1nszem\u00e9lyek \u00e9s b\u00e1rmilyen m\u00e9ret\u0171 v\u00e1llalkoz\u00e1sok sz\u00e1m\u00e1ra — a portf\u00f3li\u00f3kt\u00f3l \u00e9s m\u00e1rkaoldalakt\u00f3l a webshopokig \u00e9s foglal\u00e1si platformokig. A v\u00e1lasztott csomagj\u00e1t\u00f3l f\u00fcgg\u0151en ez mag\u00e1ban foglalhatja: egyedi diz\u00e1jn \u00e9s fejleszt\u00e9s, mobilbar\u00e1t elrendez\u00e9s, t\u00e1rhely \u00e9s \u00fczembe helyez\u00e9s, domain \u00e9s e-mail be\u00e1ll\u00edt\u00e1s, t\u00f6bbnyelv\u0171 t\u00e1mogat\u00e1s, foglal\u00e1si rendszerek, online fizet\u00e9s, analitika \u00e9s tov\u00e1bbi funkci\u00f3k. Ha valami extr\u00e1ra van sz\u00fcks\u00e9ge, megbesz\u00e9lj\u00fck \u00e9s k\u00f6z\u00f6sen meg\u00e1llapodunk. A projekt pontos hat\u00f3k\u00f6r\u00e9t a v\u00e1lasztott csomag \u00e9s az \u00edr\u00e1sban r\u00f6gz\u00edtett egy\u00e9b meg\u00e1llapod\u00e1sok hat\u00e1rozz\u00e1k meg."
         },
         "payment": {
           "title": "Hogyan m\u0171k\u00f6dik a fizet\u00e9s",

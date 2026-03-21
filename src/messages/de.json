@@ -60,7 +60,7 @@
       "name": "Starter",
       "price": "450",
       "delivery": "Lieferung: ≤6 Stunden",
-      "description": "Für Freiberufler und Kleinunternehmen",
+      "description": "Professionelle Website für jedes Vorhaben",
       "features": [
         "3–5 Seiten (Startseite, Über uns, Leistungen, Kontakt)",
         "Auf Ihre Branche zugeschnitten",
@@ -74,7 +74,7 @@
       "name": "Business",
       "price": "950",
       "delivery": "Lieferung: 1–2 Tage",
-      "description": "Für Dienstleister und terminbasierte Unternehmen",
+      "description": "Für alle, die Buchungen, Formulare oder Integrationen brauchen",
       "features": [
         "Alles im Starter-Paket, plus:",
         "6–10 Seiten",
@@ -209,7 +209,7 @@
         "unsure": "Noch nicht sicher"
       },
       "message": "Nachricht",
-      "messagePlaceholder": "Erzählen Sie uns ein wenig über Ihr Unternehmen und was Sie sich vorstellen — wir melden uns in Kürze, um die Details gemeinsam zu besprechen.",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt und was Sie sich vorstellen — wir melden uns in Kürze, um die Details gemeinsam zu besprechen.",
       "submit": "Nachricht senden",
       "success": "Vielen Dank! Wir melden uns in Kürze bei Ihnen."
     }
@@ -237,7 +237,7 @@
     }
   },
   "footer": {
-    "description": "Sichere, moderne Websites für Kleinunternehmen — geliefert innerhalb von 6 Stunden. Zahlung erst nach Lieferung.",
+    "description": "Sichere, moderne Websites — geliefert innerhalb von 6 Stunden. Zahlung erst nach Lieferung.",
     "navigation": "Navigation",
     "legal": "Rechtliches",
     "privacy": "Datenschutz",
@@ -256,7 +256,7 @@
       "sections": {
         "controller": {
           "title": "Verantwortlicher",
-          "content": "Révész Péter EV (Einzelunternehmer)\nHandelsname: Budapest Labs\nSitz: Budapest, Ungarn\nSteuernummer: 91808745-1-43\nRegistrierungsnummer: 61944978\nE-Mail: budapestlabs@gmail.com\n\n(Im Folgenden Budapest Labs genannt)"
+          "content": "Budapest Labs (vollständige Geschäftsdaten siehe Impressum).\nE-Mail: budapestlabs@gmail.com"
         },
         "collection": {
           "title": "Was wir erheben",
@@ -291,11 +291,11 @@
       "sections": {
         "provider": {
           "title": "Dienstleister",
-          "content": "Révész Péter EV (Einzelunternehmer)\nHandelsname: Budapest Labs\nSitz: Budapest, Ungarn\nSteuernummer: 91808745-1-43\nRegistrierungsnummer: 61944978\nE-Mail: budapestlabs@gmail.com\n\n(Im Folgenden Budapest Labs genannt)"
+          "content": "Budapest Labs (vollständige Geschäftsdaten siehe Impressum).\nE-Mail: budapestlabs@gmail.com"
         },
         "scope": {
           "title": "Was wir machen",
-          "content": "Wir entwerfen und bauen Websites f\u00fcr Kleinunternehmen. Je nach Paket kann das umfassen: individuelles Design und Entwicklung, mobilfreundliche Layouts, Hosting und Bereitstellung, Domain- und E-Mail-Einrichtung, Mehrsprachigkeit, Buchungssysteme, Analytics und mehr. Wenn Sie etwas Zus\u00e4tzliches brauchen, besprechen wir das gemeinsam. Der genaue Umfang Ihres Projekts basiert auf dem gew\u00e4hlten Paket und allem, was wir schriftlich vereinbaren."
+          "content": "Wir entwerfen und bauen Websites f\u00fcr Privatpersonen und Unternehmen jeder Gr\u00f6\u00dfe — von Portfolios und Markenseiten bis hin zu Webshops und Buchungsplattformen. Je nach Paket kann das umfassen: individuelles Design und Entwicklung, mobilfreundliche Layouts, Hosting und Bereitstellung, Domain- und E-Mail-Einrichtung, Mehrsprachigkeit, Buchungssysteme, Online-Zahlungen, Analytics und mehr. Wenn Sie etwas Zus\u00e4tzliches brauchen, besprechen wir das gemeinsam. Der genaue Umfang Ihres Projekts basiert auf dem gew\u00e4hlten Paket und allem, was wir schriftlich vereinbaren."
         },
         "payment": {
           "title": "So funktioniert die Zahlung",
