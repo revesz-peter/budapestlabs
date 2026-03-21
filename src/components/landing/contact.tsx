@@ -124,7 +124,7 @@ export function Contact() {
               </motion.p>
             </motion.div>
           ) : (
-            <form onSubmit={handleSubmit(onSubmit)} className="glass space-y-6 p-8">
+            <form onSubmit={handleSubmit(onSubmit)} noValidate className="glass space-y-6 p-8">
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="text-sm text-foreground/60">
