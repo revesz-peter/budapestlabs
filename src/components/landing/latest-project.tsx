@@ -79,19 +79,19 @@ export function LatestProject() {
           </div>
 
           {/* Footer bar */}
-          <div className="flex items-center justify-between gap-4 p-4 md:px-6">
-            <div className="flex items-center gap-3">
+          <div className="p-4 md:px-6">
+            <div className="flex items-center justify-between gap-2">
               <span className="text-sm font-semibold">
                 {t(`projects.${project.key}.name`)}
               </span>
-              <span className="text-sm text-muted-foreground">
-                {t("subtitle")}
+              <span className="inline-flex shrink-0 items-center gap-1.5 text-sm text-muted-foreground transition-colors group-hover:text-foreground">
+                {t(`projects.${project.key}.cta`)}
+                <ArrowUpRight className="h-3.5 w-3.5" />
               </span>
             </div>
-            <span className="inline-flex shrink-0 items-center gap-1.5 text-sm text-muted-foreground transition-colors group-hover:text-foreground">
-              {t(`projects.${project.key}.cta`)}
-              <ArrowUpRight className="h-3.5 w-3.5" />
-            </span>
+            <p className="mt-1 text-sm text-muted-foreground">
+              {t("subtitle")}
+            </p>
           </div>
         </motion.a>
       </div>

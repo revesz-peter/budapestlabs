@@ -105,14 +105,14 @@ export function Comparison() {
             <thead>
               <tr>
                 <th className="sticky left-0 z-10 bg-background pb-4 pr-4 text-left font-normal text-foreground/30" />
+                <th className="pb-4 px-4 text-left font-semibold text-foreground">
+                  {t("columns.us")}
+                </th>
                 <th className="pb-4 px-4 text-left font-medium text-muted-foreground">
                   {t("columns.diy")}
                 </th>
                 <th className="pb-4 px-4 text-left font-medium text-muted-foreground">
                   {t("columns.agency")}
-                </th>
-                <th className="pb-4 px-4 text-left font-semibold text-foreground">
-                  {t("columns.us")}
                 </th>
               </tr>
             </thead>
@@ -121,6 +121,18 @@ export function Comparison() {
                 <tr key={key} className="border-t border-foreground/[0.06]">
                   <td className="sticky left-0 z-10 bg-background py-4 pr-4 font-medium text-muted-foreground">
                     {t(`rows.${key}.label`)}
+                  </td>
+                  <td
+                    className={cn(
+                      "py-4 px-4 font-medium text-foreground bg-foreground/3",
+                      i === 0 && "rounded-t-xl",
+                      i === rowKeys.length - 1 && "rounded-b-xl"
+                    )}
+                  >
+                    <span className="flex items-center gap-2">
+                      <CellIcon value={t(`rows.${key}.us`)} />
+                      {t(`rows.${key}.us`)}
+                    </span>
                   </td>
                   <td className="py-4 px-4 text-foreground/35">
                     <span className="flex items-center gap-2">
@@ -132,18 +144,6 @@ export function Comparison() {
                     <span className="flex items-center gap-2">
                       <CellIcon value={t(`rows.${key}.agency`)} />
                       {t(`rows.${key}.agency`)}
-                    </span>
-                  </td>
-                  <td
-                    className={cn(
-                      "py-4 px-4 font-medium text-foreground bg-foreground/[0.03]",
-                      i === 0 && "rounded-t-xl",
-                      i === rowKeys.length - 1 && "rounded-b-xl"
-                    )}
-                  >
-                    <span className="flex items-center gap-2">
-                      <CellIcon value={t(`rows.${key}.us`)} />
-                      {t(`rows.${key}.us`)}
                     </span>
                   </td>
                 </tr>
