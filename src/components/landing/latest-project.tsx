@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { useRef, useEffect } from "react";
 
 const projects = [
   {
@@ -15,6 +16,26 @@ const projects = [
 export function LatestProject() {
   const t = useTranslations("latestProject");
   const project = projects[0];
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play();
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.25 }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <section id="recent-work" className="px-6 py-20 md:px-8 lg:px-16">
@@ -68,11 +89,12 @@ export function LatestProject() {
               </div>
               {/* Video */}
               <video
+                ref={videoRef}
                 src={project.video}
-                autoPlay
                 muted
                 loop
                 playsInline
+                preload="none"
                 className="aspect-video w-full object-cover object-top"
               />
             </div>

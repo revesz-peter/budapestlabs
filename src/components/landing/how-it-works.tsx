@@ -59,9 +59,6 @@ export function HowItWorks() {
             }}
             className="relative grid gap-6 md:grid-cols-2 lg:grid-cols-4"
           >
-            {/* Connecting line between steps (desktop only) */}
-            <div className="pointer-events-none absolute top-14 right-8 left-8 hidden h-px border-t border-dashed border-foreground/15 lg:block" />
-
             {steps.map((step, i) => (
               <motion.div
                 key={step.key}
