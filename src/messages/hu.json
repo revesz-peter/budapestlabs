@@ -251,9 +251,13 @@
     "download": "Ment\u00e9s PDF-k\u00e9nt",
     "privacy": {
       "title": "Adatv\u00e9delmi nyilatkozat",
-      "lastUpdated": "Utols\u00f3 friss\u00edt\u00e9s: 2026. m\u00e1rcius 19.",
-      "intro": "Fontos sz\u00e1munkra az \u00d6n mag\u00e1nszf\u00e9r\u00e1ja. Ez az oldal bemutatja, milyen adatokat gy\u0171jt\u00fcnk, mikor felkeres minket, mire haszn\u00e1ljuk, \u00e9s hogyan v\u00e9dj\u00fck azokat.",
+      "lastUpdated": "Utolsó frissítés: 2026. március 21.",
+      "intro": "Az Ön magánszférája fontos számunkra. Ez az adatvédelmi nyilatkozat ismerteti, milyen személyes adatokat gyűjtünk, mire használjuk, és hogyan védjük azokat.",
       "sections": {
+        "controller": {
+          "title": "Adatkezelő",
+          "content": "Révész Péter EV\nKereskedelmi név: Budapest Labs\nSzékhely: Budapest, Magyarország\nAdószám: 91808745-1-43\nNyilvántartási szám: 61944978\nE-mail: budapestlabs@gmail.com\n\n(A továbbiakban: Budapest Labs)"
+        },
         "collection": {
           "title": "Mit gy\u0171jt\u00fcnk",
           "content": "A kapcsolatfelv\u00e9teli \u0171rlap kit\u00f6lt\u00e9sekor megkapjuk: a nev\u00e9t, e-mail c\u00edm\u00e9t, telefonsz\u00e1m\u00e1t (ha megadja), v\u00e1llalkoz\u00e1sa nev\u00e9t (opcion\u00e1lis), a kiv\u00e1lasztott csomagot \u00e9s az \u00fczenet\u00e9t. Ennyi. Nem haszn\u00e1lunk cookie-kat, nyomk\u00f6vet\u0151ket vagy analitikai eszk\u00f6z\u00f6ket."
@@ -268,7 +272,7 @@
         },
         "storage": {
           "title": "Hogyan v\u00e9dj\u00fck",
-          "content": "Adatait az Eur\u00f3pai Uni\u00f3ban tal\u00e1lhat\u00f3 titkos\u00edtott szervereken t\u00e1roljuk. Az \u00fczleti kapcsolat id\u0151tartama alatt, majd azt k\u00f6vet\u0151en legfeljebb 5 \u00e9vig \u0151rizz\u00fck meg, ahogyan a magyar sz\u00e1mviteli t\u00f6rv\u00e9nyek el\u0151\u00edrj\u00e1k. Ut\u00e1na v\u00e9glegesen t\u00f6r\u00f6lj\u00fck."
+          "content": "Adatait az Európai Unióban található titkosított szervereken tároljuk. A számlákat és könyvelési bizonylatokat a magyar számviteli törvény (2000. évi C. törvény §169) szerint 8 évig őrizzük meg. Egyéb üzleti levelezést és projektadatokat az üzleti kapcsolat időtartama alatt, majd azt követően legfeljebb 5 évig tároljuk. Utána véglegesen töröljük."
         },
         "thirdparty": {
           "title": "Szolg\u00e1ltat\u00e1sok, amelyekre t\u00e1maszkodunk",
@@ -280,7 +284,7 @@
         },
         "rights": {
           "title": "Az \u00d6n jogai",
-          "content": "Az EU joga (GDPR) \u00e9rtelm\u00e9ben \u00d6n: megt\u00e9k\u00edntheti, milyen adatokat t\u00e1rolunk \u00d6nr\u0151l; k\u00e9rheti b\u00e1rmi hib\u00e1s adat jav\u00edt\u00e1s\u00e1t; k\u00e9rheti adatai t\u00f6rl\u00e9s\u00e9t; korl\u00e1tozhatja vagy kifog\u00e1solhatja az adatkezel\u00e9st; vagy k\u00e9rhet egy hordozhat\u00f3 m\u00e1solatot. Hozz\u00e1j\u00e1rul\u00e1s\u00e1t b\u00e1rmikor visszavonhatja \u2014 ez nem \u00e9rinti a visszavon\u00e1s el\u0151tt v\u00e9gzett adatkezel\u00e9st. Egyszer\u0171en \u00edrjon nek\u00fcnk az info@budapestlabs.com c\u00edmre, \u00e9s int\u00e9zz\u00fck."
+          "content": "Az EU joga (GDPR) \u00e9rtelm\u00e9ben \u00d6n: megt\u00e9k\u00edntheti, milyen adatokat t\u00e1rolunk \u00d6nr\u0151l; k\u00e9rheti b\u00e1rmi hib\u00e1s adat jav\u00edt\u00e1s\u00e1t; k\u00e9rheti adatai t\u00f6rl\u00e9s\u00e9t; korl\u00e1tozhatja vagy kifog\u00e1solhatja az adatkezel\u00e9st; vagy k\u00e9rhet egy hordozhat\u00f3 m\u00e1solatot. Hozz\u00e1j\u00e1rul\u00e1s\u00e1t b\u00e1rmikor visszavonhatja \u2014 ez nem \u00e9rinti a visszavon\u00e1s el\u0151tt v\u00e9gzett adatkezel\u00e9st. Egyszer\u0171en \u00edrjon nek\u00fcnk az budapestlabs@gmail.com c\u00edmre, \u00e9s int\u00e9zz\u00fck."
         },
         "complaint": {
           "title": "Valami nincs rendben?",
@@ -288,22 +292,26 @@
         },
         "contact": {
           "title": "Kapcsolat",
-          "content": "K\u00e9rd\u00e9se van az adataival kapcsolatban? \u00cdrjon nek\u00fcnk: info@budapestlabs.com. 30 napon bel\u00fcl v\u00e1laszolunk."
+          "content": "K\u00e9rd\u00e9se van az adataival kapcsolatban? \u00cdrjon nek\u00fcnk: budapestlabs@gmail.com. 30 napon bel\u00fcl v\u00e1laszolunk."
         }
       }
     },
     "terms": {
-      "title": "\u00c1ltal\u00e1nos Szerz\u0151d\u00e9si Felt\u00e9telek",
-      "lastUpdated": "Utols\u00f3 friss\u00edt\u00e9s: 2026. m\u00e1rcius 19.",
-      "intro": "Ezek a felt\u00e9telek vonatkoznak a Budapest Labs-szal val\u00f3 egy\u00fcttm\u0171k\u00f6d\u00e9sre. Igyekezt\u00fcnk \u00e9rthet\u0151en \u00e9s egyenesen fogalmazni \u2014 nincsenek meglepet\u00e9sek.",
+      "title": "Általános Szerződési Feltételek",
+      "lastUpdated": "Utolsó frissítés: 2026. március 21.",
+      "intro": "Ezek a feltételek vonatkoznak a Budapest Labs által nyújtott szolgáltatásokra. Igyekeztünk érthetően és egyenesen fogalmazni — nincsenek meglepetések.",
       "sections": {
+        "provider": {
+          "title": "Szolgáltató adatai",
+          "content": "Révész Péter EV\nKereskedelmi név: Budapest Labs\nSzékhely: Budapest, Magyarország\nAdószám: 91808745-1-43\nNyilvántartási szám: 61944978\nE-mail: budapestlabs@gmail.com\n\n(A továbbiakban: Budapest Labs)"
+        },
         "scope": {
           "title": "Mit csin\u00e1lunk",
           "content": "Weboldalakat tervez\u00fcnk \u00e9s \u00e9p\u00edt\u00fcnk kisv\u00e1llalkoz\u00e1sok sz\u00e1m\u00e1ra. A v\u00e1lasztott csomagj\u00e1t\u00f3l f\u00fcgg\u0151en ez magában foglalhatja: egyedi dizájn \u00e9s fejleszt\u00e9s, mobilbar\u00e1t elrendez\u00e9s, t\u00e1rhely \u00e9s \u00fczembe helyez\u00e9s, domain \u00e9s e-mail be\u00e1ll\u00edt\u00e1s, t\u00f6bbnyelv\u0171 t\u00e1mogat\u00e1s, foglal\u00e1si rendszerek, analitika \u00e9s tov\u00e1bbi funkci\u00f3k. Ha valami extr\u00e1ra van sz\u00fcks\u00e9ge, megbesz\u00e9lj\u00fck \u00e9s k\u00f6z\u00f6sen meg\u00e1llapodunk. A projekt pontos hat\u00f3k\u00f6r\u00e9t a v\u00e1lasztott csomag \u00e9s az \u00edr\u00e1sban r\u00f6gz\u00edtett egy\u00e9b meg\u00e1llapod\u00e1sok hat\u00e1rozz\u00e1k meg."
         },
         "payment": {
           "title": "Hogyan m\u0171k\u00f6dik a fizet\u00e9s",
-          "content": "Ind\u00edt\u00e1s el\u0151tt egy kis, 10%-os foglal\u00f3t k\u00e9r\u00fcnk \u2014 ez meger\u0151s\u00edti a megrendel\u00e9s\u00e9t \u00e9s biztos\u00edtja a hely\u00e9t. A marad\u00e9k 90%-ot csak akkor kell kifizetnie, ha l\u00e1tta az eredm\u00e9nyt \u00e9s el\u00e9gedett vele. Ha az ingyenes m\u00f3dos\u00edt\u00e1si k\u00f6r ut\u00e1n m\u00e9g mindig nem tetszik, nem kell kifizetnie a fennmarad\u00f3 \u00f6sszeget \u2014 a foglal\u00f3 egyszer\u0171en az addig befektetett id\u0151nket fedezi. Banki \u00e1tutal\u00e1st, k\u00e1rty\u00e1s fizet\u00e9st \u00e9s k\u00e9szp\u00e9nzt is elfogadunk. Az \u00e1rak HUF-ban \u00e9rtend\u0151k."
+          "content": "Indítás előtt egy kis, 10%-os foglalót kérünk — ez megerősíti a megrendelését és biztosítja a helyét. A maradék 90%-ot csak akkor kell kifizetnie, ha látta az eredményt és elégedett vele. Ha az ingyenes módosítási kör után még mindig nem tetszik, nem kell kifizetnie a fennmaradó összeget — a foglaló egyszerűen az addig befektetett időnket fedezi. Banki átutalást, kártyás fizetést és készpénzt is elfogadunk. Az árak HUF-ban értendők. Minden fizetésről a magyar jogszabályoknak megfelelő számlát állítunk ki."
         },
         "revisions": {
           "title": "M\u00f3dos\u00edt\u00e1sok",
@@ -343,7 +351,7 @@
         },
         "law": {
           "title": "Jogi r\u00e9szletek",
-          "content": "Ezekre a felt\u00e9telekre a magyar jog az ir\u00e1nyad\u00f3. Ha b\u00e1rmilyen n\u00e9zetelt\u00e9r\u00e9s lenne, ink\u00e1bb szem\u00e9lyesen megbesz\u00e9lj\u00fck. Ha ez nem vezet eredm\u00e9nyre, a budapesti b\u00edr\u00f3s\u00e1gok illet\u00e9kesek."
+          "content": "Ezekre a feltételekre a magyar jog az irányadó. Ha bármilyen nézeteltérés lenne, inkább személyesen megbeszéljük. Fogyasztói panasz esetén a területileg illetékes békéltető testülethez is fordulhat. Ha a vita más módon nem rendezhető, a Budai Központi Kerületi Bíróság, illetve hatáskörtől függően a Fővárosi Törvényszék illetékes."
         }
       }
     },
@@ -351,20 +359,20 @@
       "title": "Impresszum",
       "sections": {
         "company": {
-          "title": "C\u00e9gadatok",
-          "content": "Budapest Labs\nBudapest, Magyarorsz\u00e1g"
+          "title": "V\u00e1llalkoz\u00e1s adatai",
+          "content": "Révész Péter EV\nKereskedelmi név: Budapest Labs\nSzékhely: Budapest, Magyarország\nAdószám: 91808745-1-43\nNyilvántartási szám: 61944978\n\n(A továbbiakban: Budapest Labs)"
         },
         "contact": {
           "title": "Kapcsolat",
-          "content": "E-mail: info@budapestlabs.com\nWeboldal: budapestlabs.com"
+          "content": "E-mail: budapestlabs@gmail.com\nWeboldal: budapestlabs.com"
         },
         "registration": {
-          "title": "C\u00e9gjegyz\u00e9k",
-          "content": "Ad\u00f3sz\u00e1m: [Hamarosan]\nC\u00e9gjegyz\u00e9ksz\u00e1m: [Hamarosan]"
+          "title": "Nyilvántartás",
+          "content": "Adószám: 91808745-1-43\nNyilvántartási szám: 61944978"
         },
         "responsible": {
-          "title": "Tartalom\u00e9rt felel\u0151s",
-          "content": "A Budapest Labs felel\u0151s ezen weboldal tartalm\u00e1\u00e9rt a vonatkoz\u00f3 magyar \u00e9s EU jogszab\u00e1lyoknak megfelel\u0151en."
+          "title": "Tartalomért felelős",
+          "content": "Budapest Labs felelős ezen weboldal tartalmáért a vonatkozó magyar és EU jogszabályoknak megfelelően."
         },
         "disclaimer": {
           "title": "Jogi nyilatkozat",

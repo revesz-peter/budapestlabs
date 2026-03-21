@@ -21,6 +21,7 @@ export default function PrivacyPage() {
   const locale = useLocale();
 
   const sectionKeys = [
+    "controller",
     "collection",
     "basis",
     "purpose",
@@ -68,7 +69,7 @@ export default function PrivacyPage() {
             <h2 className="mb-3 text-lg font-semibold">
               {t(`privacy.sections.${key}.title`)}
             </h2>
-            <p className="text-foreground/70 leading-relaxed">
+            <p className="text-foreground/70 leading-relaxed whitespace-pre-line">
               {t(`privacy.sections.${key}.content`)}
             </p>
           </section>

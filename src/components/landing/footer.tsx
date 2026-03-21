@@ -86,11 +86,11 @@ export function Footer() {
                 {t("contact.label")}
               </p>
               <a
-                href="mailto:info@budapestlabs.com"
+                href="mailto:budapestlabs@gmail.com"
                 className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
               >
                 <Mail className="h-3.5 w-3.5" />
-                info@budapestlabs.com
+                budapestlabs@gmail.com
               </a>
             </div>
           </div>

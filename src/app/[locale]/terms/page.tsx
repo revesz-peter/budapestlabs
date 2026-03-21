@@ -21,6 +21,7 @@ export default function TermsPage() {
   const locale = useLocale();
 
   const sectionKeys = [
+    "provider",
     "scope",
     "payment",
     "revisions",
@@ -71,7 +72,7 @@ export default function TermsPage() {
             <h2 className="mb-3 text-lg font-semibold">
               {t(`terms.sections.${key}.title`)}
             </h2>
-            <p className="text-foreground/70 leading-relaxed">
+            <p className="text-foreground/70 leading-relaxed whitespace-pre-line">
               {t(`terms.sections.${key}.content`)}
             </p>
           </section>

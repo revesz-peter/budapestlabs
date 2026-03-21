@@ -19,7 +19,7 @@ async function JsonLd({ locale }: { locale: string }) {
     "@type": "Organization",
     name: "Budapest Labs",
     url: "https://budapestlabs.com",
-    email: "info@budapestlabs.com",
+    email: "budapestlabs@gmail.com",
     description: messages.footer.description,
     areaServed: ["HU", "DE", "AT", "CH"],
     serviceType: "Web Development",
@@ -30,7 +30,7 @@ async function JsonLd({ locale }: { locale: string }) {
     "@type": "ProfessionalService",
     name: "Budapest Labs",
     url: "https://budapestlabs.com",
-    email: "info@budapestlabs.com",
+    email: "budapestlabs@gmail.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Budapest",

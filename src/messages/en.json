@@ -251,9 +251,13 @@
     "download": "Save as PDF",
     "privacy": {
       "title": "Privacy Policy",
-      "lastUpdated": "Last updated: March 19, 2026",
-      "intro": "Your privacy matters to us. This page explains what information we collect when you reach out, how we use it, and how we keep it safe.",
+      "lastUpdated": "Last updated: March 21, 2026",
+      "intro": "Your privacy matters to us. This policy explains what personal data we collect, how we use it, and how we keep it safe.",
       "sections": {
+        "controller": {
+          "title": "Data controller",
+          "content": "Révész Péter EV (sole proprietor)\nTrade name: Budapest Labs\nSeat: Budapest, Hungary\nTax number: 91808745-1-43\nRegistration number: 61944978\nEmail: budapestlabs@gmail.com\n\n(Hereinafter referred to as \"Budapest Labs\")"
+        },
         "collection": {
           "title": "What we collect",
           "content": "When you fill out our contact form, we receive: your name, email address, phone number (if you choose to share it), business name (optional), selected plan, and your message. That's it. We don't use cookies, tracking scripts, or analytics tools of any kind."
@@ -268,7 +272,7 @@
         },
         "storage": {
           "title": "How we keep it safe",
-          "content": "Your data is stored on encrypted servers within the European Union. We keep it for the duration of our working relationship, plus up to 5 years afterwards as required by Hungarian accounting law. After that, it's permanently deleted."
+          "content": "Your data is stored on encrypted servers within the European Union. Invoices and accounting records are kept for 8 years as required by Hungarian accounting law (Act C of 2000, §169). Other business correspondence and project data is kept for the duration of our working relationship, plus up to 5 years afterwards. After that, it's permanently deleted."
         },
         "thirdparty": {
           "title": "Services we rely on",
@@ -280,7 +284,7 @@
         },
         "rights": {
           "title": "Your rights",
-          "content": "Under EU law (GDPR), you can: ask to see what data we have about you; correct anything that's wrong; ask us to delete your data; limit or object to how we use it; or request a copy in a portable format. You can also withdraw your consent at any time — this won't affect anything we did before the withdrawal. Just email us at info@budapestlabs.com and we'll take care of it."
+          "content": "Under EU law (GDPR), you can: ask to see what data we have about you; correct anything that's wrong; ask us to delete your data; limit or object to how we use it; or request a copy in a portable format. You can also withdraw your consent at any time — this won't affect anything we did before the withdrawal. Just email us at budapestlabs@gmail.com and we'll take care of it."
         },
         "complaint": {
           "title": "Something not right?",
@@ -288,22 +292,26 @@
         },
         "contact": {
           "title": "Get in touch",
-          "content": "Questions about your data? Email us at info@budapestlabs.com. We'll get back to you within 30 days."
+          "content": "Questions about your data? Email us at budapestlabs@gmail.com. We'll get back to you within 30 days."
         }
       }
     },
     "terms": {
       "title": "Terms of Service",
-      "lastUpdated": "Last updated: March 19, 2026",
+      "lastUpdated": "Last updated: March 21, 2026",
       "intro": "These are the terms that apply when you work with Budapest Labs. We've kept them straightforward — no surprises.",
       "sections": {
+        "provider": {
+          "title": "Service provider",
+          "content": "Révész Péter EV (sole proprietor)\nTrade name: Budapest Labs\nSeat: Budapest, Hungary\nTax number: 91808745-1-43\nRegistration number: 61944978\nEmail: budapestlabs@gmail.com\n\n(Hereinafter referred to as Budapest Labs)"
+        },
         "scope": {
           "title": "What we do",
           "content": "We design and build websites for small businesses. Depending on your plan, this can include: custom design and development, mobile-friendly layouts, hosting and deployment, domain and email setup, multilingual support, booking systems, analytics, and more. If you need something extra, we'll discuss it and agree on it together. The exact scope of your project is based on the plan you choose and anything else we agree on in writing."
         },
         "payment": {
           "title": "How payment works",
-          "content": "We ask for a small deposit of 10% before we start — this confirms your order and reserves your spot. The remaining 90% is only due once you've seen the result and are happy with it. If after the included revision round you're still not satisfied, you don't have to pay the rest — the deposit simply covers the time we've already invested. We accept bank transfer, card payment, and cash. Prices are in EUR."
+          "content": "We ask for a small deposit of 10% before we start — this confirms your order and reserves your spot. The remaining 90% is only due once you've seen the result and are happy with it. If after the included revision round you're still not satisfied, you don't have to pay the rest — the deposit simply covers the time we've already invested. We accept bank transfer, card payment, and cash. Prices are in EUR. You will receive a proper invoice for every payment, issued in accordance with Hungarian law."
         },
         "revisions": {
           "title": "Revisions",
@@ -343,7 +351,7 @@
         },
         "law": {
           "title": "Legal details",
-          "content": "These terms follow Hungarian law. If there's ever a disagreement, we'd prefer to work it out together first. If that doesn't work, the courts in Budapest have jurisdiction."
+          "content": "These terms follow Hungarian law. If there's ever a disagreement, we'd prefer to work it out together first. Consumer complaints may also be directed to the competent conciliation body. If the dispute cannot be resolved otherwise, the Buda Central District Court or, depending on jurisdiction, the Budapest Capital Regional Court shall have exclusive jurisdiction."
         }
       }
     },
@@ -351,16 +359,16 @@
       "title": "Imprint",
       "sections": {
         "company": {
-          "title": "Company information",
-          "content": "Budapest Labs\nBudapest, Hungary"
+          "title": "Business information",
+          "content": "Révész Péter EV (sole proprietor)\nTrade name: Budapest Labs\nSeat: Budapest, Hungary\nTax number: 91808745-1-43\nRegistration number: 61944978\n\n(Hereinafter referred to as Budapest Labs)"
         },
         "contact": {
           "title": "Contact",
-          "content": "Email: info@budapestlabs.com\nWebsite: budapestlabs.com"
+          "content": "Email: budapestlabs@gmail.com\nWebsite: budapestlabs.com"
         },
         "registration": {
           "title": "Business registration",
-          "content": "Tax number: [To be added]\nRegistration number: [To be added]"
+          "content": "Tax number: 91808745-1-43\nRegistration number: 61944978"
         },
         "responsible": {
           "title": "Responsible for content",

@@ -251,9 +251,13 @@
     "download": "Als PDF speichern",
     "privacy": {
       "title": "Datenschutzerkl\u00e4rung",
-      "lastUpdated": "Zuletzt aktualisiert: 19. M\u00e4rz 2026",
-      "intro": "Ihre Privatsph\u00e4re ist uns wichtig. Diese Seite erkl\u00e4rt, welche Daten wir erheben, wenn Sie uns kontaktieren, wie wir sie verwenden und wie wir sie sch\u00fctzen.",
+      "lastUpdated": "Zuletzt aktualisiert: 21. März 2026",
+      "intro": "Ihre Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten wir erheben, wie wir sie verwenden und wie wir sie schützen.",
       "sections": {
+        "controller": {
+          "title": "Verantwortlicher",
+          "content": "Révész Péter EV (Einzelunternehmer)\nHandelsname: Budapest Labs\nSitz: Budapest, Ungarn\nSteuernummer: 91808745-1-43\nRegistrierungsnummer: 61944978\nE-Mail: budapestlabs@gmail.com\n\n(Im Folgenden Budapest Labs genannt)"
+        },
         "collection": {
           "title": "Was wir erheben",
           "content": "Wenn Sie unser Kontaktformular ausf\u00fcllen, erhalten wir: Ihren Namen, Ihre E-Mail-Adresse, Telefonnummer (falls Sie sie angeben), Firmennamen (optional), gew\u00e4hltes Paket und Ihre Nachricht. Das ist alles. Wir verwenden keine Cookies, Tracking-Skripte oder Analysetools."
@@ -268,7 +272,7 @@
         },
         "storage": {
           "title": "Wie wir sie sch\u00fctzen",
-          "content": "Ihre Daten werden auf verschl\u00fcsselten Servern innerhalb der EU gespeichert. Wir bewahren sie f\u00fcr die Dauer unserer Zusammenarbeit auf, plus bis zu 5 Jahre danach, wie es das ungarische Buchhaltungsrecht vorschreibt. Danach werden sie dauerhaft gel\u00f6scht."
+          "content": "Ihre Daten werden auf verschlüsselten Servern innerhalb der EU gespeichert. Rechnungen und Buchhaltungsunterlagen werden gemäß dem ungarischen Buchhaltungsgesetz (Gesetz C von 2000, §169) 8 Jahre lang aufbewahrt. Sonstige Geschäftskorrespondenz und Projektdaten werden für die Dauer unserer Zusammenarbeit aufbewahrt, plus bis zu 5 Jahre danach. Danach werden sie dauerhaft gelöscht."
         },
         "thirdparty": {
           "title": "Dienste, die wir nutzen",
@@ -280,7 +284,7 @@
         },
         "rights": {
           "title": "Ihre Rechte",
-          "content": "Nach EU-Recht (DSGVO) k\u00f6nnen Sie: einsehen, welche Daten wir \u00fcber Sie haben; fehlerhafte Daten korrigieren lassen; die L\u00f6schung Ihrer Daten verlangen; die Verarbeitung einschr\u00e4nken oder ihr widersprechen; oder eine Kopie in einem portablen Format anfordern. Sie k\u00f6nnen Ihre Einwilligung jederzeit widerrufen \u2014 das betrifft nicht die vorherige Verarbeitung. Schreiben Sie uns einfach an info@budapestlabs.com und wir k\u00fcmmern uns darum."
+          "content": "Nach EU-Recht (DSGVO) k\u00f6nnen Sie: einsehen, welche Daten wir \u00fcber Sie haben; fehlerhafte Daten korrigieren lassen; die L\u00f6schung Ihrer Daten verlangen; die Verarbeitung einschr\u00e4nken oder ihr widersprechen; oder eine Kopie in einem portablen Format anfordern. Sie k\u00f6nnen Ihre Einwilligung jederzeit widerrufen \u2014 das betrifft nicht die vorherige Verarbeitung. Schreiben Sie uns einfach an budapestlabs@gmail.com und wir k\u00fcmmern uns darum."
         },
         "complaint": {
           "title": "Etwas stimmt nicht?",
@@ -288,22 +292,26 @@
         },
         "contact": {
           "title": "Kontakt",
-          "content": "Fragen zu Ihren Daten? Schreiben Sie uns: info@budapestlabs.com. Wir antworten innerhalb von 30 Tagen."
+          "content": "Fragen zu Ihren Daten? Schreiben Sie uns: budapestlabs@gmail.com. Wir antworten innerhalb von 30 Tagen."
         }
       }
     },
     "terms": {
-      "title": "Allgemeine Gesch\u00e4ftsbedingungen",
-      "lastUpdated": "Zuletzt aktualisiert: 19. M\u00e4rz 2026",
-      "intro": "Das sind die Bedingungen f\u00fcr die Zusammenarbeit mit Budapest Labs. Wir haben sie klar und direkt formuliert \u2014 keine \u00dcberraschungen.",
+      "title": "Allgemeine Geschäftsbedingungen",
+      "lastUpdated": "Zuletzt aktualisiert: 21. März 2026",
+      "intro": "Das sind die Bedingungen für die Zusammenarbeit mit Budapest Labs. Wir haben sie klar und direkt formuliert — keine Überraschungen.",
       "sections": {
+        "provider": {
+          "title": "Dienstleister",
+          "content": "Révész Péter EV (Einzelunternehmer)\nHandelsname: Budapest Labs\nSitz: Budapest, Ungarn\nSteuernummer: 91808745-1-43\nRegistrierungsnummer: 61944978\nE-Mail: budapestlabs@gmail.com\n\n(Im Folgenden Budapest Labs genannt)"
+        },
         "scope": {
           "title": "Was wir machen",
           "content": "Wir entwerfen und bauen Websites f\u00fcr Kleinunternehmen. Je nach Paket kann das umfassen: individuelles Design und Entwicklung, mobilfreundliche Layouts, Hosting und Bereitstellung, Domain- und E-Mail-Einrichtung, Mehrsprachigkeit, Buchungssysteme, Analytics und mehr. Wenn Sie etwas Zus\u00e4tzliches brauchen, besprechen wir das gemeinsam. Der genaue Umfang Ihres Projekts basiert auf dem gew\u00e4hlten Paket und allem, was wir schriftlich vereinbaren."
         },
         "payment": {
           "title": "So funktioniert die Zahlung",
-          "content": "Wir bitten um eine kleine Anzahlung von 10% vor Projektbeginn \u2014 das best\u00e4tigt Ihren Auftrag und reserviert Ihren Platz. Die restlichen 90% werden erst f\u00e4llig, wenn Sie das Ergebnis gesehen haben und zufrieden sind. Wenn Sie nach der enthaltenen \u00dcberarbeitungsrunde immer noch nicht zufrieden sind, m\u00fcssen Sie den Rest nicht zahlen \u2014 die Anzahlung deckt lediglich die bereits investierte Zeit ab. Wir akzeptieren \u00dcberweisung, Kartenzahlung und Barzahlung. Preise in EUR."
+          "content": "Wir bitten um eine kleine Anzahlung von 10% vor Projektbeginn — das bestätigt Ihren Auftrag und reserviert Ihren Platz. Die restlichen 90% werden erst fällig, wenn Sie das Ergebnis gesehen haben und zufrieden sind. Wenn Sie nach der enthaltenen Überarbeitungsrunde immer noch nicht zufrieden sind, müssen Sie den Rest nicht zahlen — die Anzahlung deckt lediglich die bereits investierte Zeit ab. Wir akzeptieren Überweisung, Kartenzahlung und Barzahlung. Preise in EUR. Sie erhalten für jede Zahlung eine ordnungsgemäße Rechnung nach ungarischem Recht."
         },
         "revisions": {
           "title": "\u00dcberarbeitungen",
@@ -343,7 +351,7 @@
         },
         "law": {
           "title": "Rechtliche Details",
-          "content": "Diese Bedingungen unterliegen dem ungarischen Recht. Bei Meinungsverschiedenheiten kl\u00e4ren wir das am liebsten pers\u00f6nlich. Wenn das nicht funktioniert, sind die Gerichte in Budapest zust\u00e4ndig."
+          "content": "Diese Bedingungen unterliegen dem ungarischen Recht. Bei Meinungsverschiedenheiten klären wir das am liebsten persönlich. Verbraucherbeschwerden können auch an die zuständige Schlichtungsstelle gerichtet werden. Kann der Streit nicht anderweitig beigelegt werden, ist das Zentrale Bezirksgericht Buda bzw. je nach Zuständigkeit das Hauptstädtische Gericht Budapest ausschließlich zuständig."
         }
       }
     },
@@ -351,20 +359,20 @@
       "title": "Impressum",
       "sections": {
         "company": {
-          "title": "Unternehmensinformationen",
-          "content": "Budapest Labs\nBudapest, Ungarn"
+          "title": "Gesch\u00e4ftsinformationen",
+          "content": "Révész Péter EV (Einzelunternehmer)\nHandelsname: Budapest Labs\nSitz: Budapest, Ungarn\nSteuernummer: 91808745-1-43\nRegistrierungsnummer: 61944978\n\n(Im Folgenden Budapest Labs genannt)"
         },
         "contact": {
           "title": "Kontakt",
-          "content": "E-Mail: info@budapestlabs.com\nWebsite: budapestlabs.com"
+          "content": "E-Mail: budapestlabs@gmail.com\nWebsite: budapestlabs.com"
         },
         "registration": {
-          "title": "Handelsregistereintrag",
-          "content": "Steuernummer: [Wird erg\u00e4nzt]\nRegistrierungsnummer: [Wird erg\u00e4nzt]"
+          "title": "Gewerbeanmeldung",
+          "content": "Steuernummer: 91808745-1-43\nRegistrierungsnummer: 61944978"
         },
         "responsible": {
-          "title": "Verantwortlich f\u00fcr den Inhalt",
-          "content": "Budapest Labs ist verantwortlich f\u00fcr den Inhalt dieser Website nach geltendem ungarischen und EU-Recht."
+          "title": "Verantwortlich für den Inhalt",
+          "content": "Budapest Labs ist verantwortlich für den Inhalt dieser Website nach geltendem ungarischen und EU-Recht."
         },
         "disclaimer": {
           "title": "Haftungsausschluss",
