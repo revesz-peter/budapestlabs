@@ -109,10 +109,10 @@ export function Comparison() {
                   {t("columns.us")}
                 </th>
                 <th className="pb-4 px-4 text-left font-medium text-muted-foreground">
-                  {t("columns.diy")}
+                  {t("columns.agency")}
                 </th>
                 <th className="pb-4 px-4 text-left font-medium text-muted-foreground">
-                  {t("columns.agency")}
+                  {t("columns.diy")}
                 </th>
               </tr>
             </thead>
@@ -136,14 +136,14 @@ export function Comparison() {
                   </td>
                   <td className="py-4 px-4 text-foreground/35">
                     <span className="flex items-center gap-2">
-                      <CellIcon value={t(`rows.${key}.diy`)} />
-                      {t(`rows.${key}.diy`)}
+                      <CellIcon value={t(`rows.${key}.agency`)} />
+                      {t(`rows.${key}.agency`)}
                     </span>
                   </td>
                   <td className="py-4 px-4 text-foreground/35">
                     <span className="flex items-center gap-2">
-                      <CellIcon value={t(`rows.${key}.agency`)} />
-                      {t(`rows.${key}.agency`)}
+                      <CellIcon value={t(`rows.${key}.diy`)} />
+                      {t(`rows.${key}.diy`)}
                     </span>
                   </td>
                 </tr>
