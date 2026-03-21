@@ -225,7 +225,12 @@
       "message": "Message",
       "messagePlaceholder": "Tell us a bit about your business and what you have in mind — we'll reach out shortly to go over the details together.",
       "submit": "Send Message",
-      "success": "Thank you! We'll get back to you soon."
+      "successTitle": "Message sent!",
+      "success": "We'll get back to you within 24 hours.",
+      "errors": {
+        "nameRequired": "Please enter your name",
+        "emailRequired": "Please enter a valid email"
+      }
     }
   },
   "testimonials": {

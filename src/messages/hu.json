@@ -225,7 +225,12 @@
       "message": "Üzenet",
       "messagePlaceholder": "Meséljen egy kicsit a vállalkozásáról és az elképzeléseiről — hamarosan felvesszük Önnel a kapcsolatot, és közösen átbeszéljük a részleteket.",
       "submit": "Üzenet küldése",
-      "success": "Köszönjük! Hamarosan felvesszük Önnel a kapcsolatot."
+      "successTitle": "Üzenet elküldve!",
+      "success": "24 órán belül visszajelzünk.",
+      "errors": {
+        "nameRequired": "Kérjük, adja meg a nevét",
+        "emailRequired": "Kérjük, adjon meg egy érvényes email címet"
+      }
     }
   },
   "testimonials": {

@@ -1,28 +1,73 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Send, CheckCircle } from "lucide-react";
+import { Send, Check } from "lucide-react";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod/v4";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+const schema = z.object({
+  name: z.string().min(1),
+  email: z.email(),
+  phone: z.string().optional(),
+  business: z.string().optional(),
+  plan: z.string().optional(),
+  message: z.string().optional(),
+});
+
+type FormData = z.infer<typeof schema>;
+
+const inputBase =
+  "rounded-xl bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0 transition-colors duration-200";
+
+function FieldError({ message }: { message?: string }) {
+  return (
+    <AnimatePresence>
+      {message && (
+        <motion.p
+          initial={{ opacity: 0, y: -4, height: 0 }}
+          animate={{ opacity: 1, y: 0, height: "auto" }}
+          exit={{ opacity: 0, y: -4, height: 0 }}
+          transition={{ duration: 0.2 }}
+          className="text-xs text-red-400"
+        >
+          {message}
+        </motion.p>
+      )}
+    </AnimatePresence>
+  );
+}
 
 export function Contact() {
   const t = useTranslations("contact");
   const [submitted, setSubmitted] = useState(false);
-  const [sending, setSending] = useState(false);
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setSending(true);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<FormData>({
+    resolver: zodResolver(schema),
+  });
 
-    // TODO: integrate with backend (Supabase / API route + Resend)
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    setSending(false);
-    setSubmitted(true);
+  async function onSubmit(data: FormData) {
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (!res.ok) throw new Error();
+      setSubmitted(true);
+    } catch {
+      alert("Something went wrong. Please try again.");
+    }
   }
 
   return (
@@ -48,78 +93,88 @@ export function Contact() {
         >
           {submitted ? (
             <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3, ease: "easeOut" }}
-              className="glass py-16 text-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
+              className="glass py-20 text-center"
             >
-              <CheckCircle className="mx-auto mb-4 h-12 w-12 text-foreground/30" />
-              <p className="text-lg font-medium">{t("form.success")}</p>
+              <motion.div
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: 0.2, type: "spring", stiffness: 200, damping: 15 }}
+                className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-foreground/5"
+              >
+                <Check className="h-8 w-8 text-foreground/40" />
+              </motion.div>
+              <motion.h3
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.35, duration: 0.4 }}
+                className="mb-2 text-xl font-semibold"
+              >
+                {t("form.successTitle")}
+              </motion.h3>
+              <motion.p
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.45, duration: 0.4 }}
+                className="text-muted-foreground"
+              >
+                {t("form.success")}
+              </motion.p>
             </motion.div>
           ) : (
-            <form onSubmit={handleSubmit} className="glass space-y-6 p-8">
+            <form onSubmit={handleSubmit(onSubmit)} className="glass space-y-6 p-8">
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="space-y-2">
-                  <Label
-                    htmlFor="name"
-                    className="text-sm text-foreground/60"
-                  >
+                  <Label htmlFor="name" className="text-sm text-foreground/60">
                     {t("form.name")}
                   </Label>
                   <Input
                     id="name"
-                    name="name"
-                    required
+                    {...register("name")}
                     placeholder={t("form.namePlaceholder")}
-                    className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0"
+                    className={`${inputBase} ${errors.name ? "border-red-400/50" : "border-border"}`}
                   />
+                  <FieldError message={errors.name && t("form.errors.nameRequired")} />
                 </div>
                 <div className="space-y-2">
-                  <Label
-                    htmlFor="email"
-                    className="text-sm text-foreground/60"
-                  >
+                  <Label htmlFor="email" className="text-sm text-foreground/60">
                     {t("form.email")}
                   </Label>
                   <Input
                     id="email"
-                    name="email"
                     type="email"
-                    required
+                    {...register("email")}
                     placeholder={t("form.emailPlaceholder")}
-                    className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0"
+                    className={`${inputBase} ${errors.email ? "border-red-400/50" : "border-border"}`}
                   />
+                  <FieldError message={errors.email && t("form.errors.emailRequired")} />
                 </div>
               </div>
 
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="space-y-2">
-                  <Label
-                    htmlFor="phone"
-                    className="text-sm text-foreground/60"
-                  >
+                  <Label htmlFor="phone" className="text-sm text-foreground/60">
                     {t("form.phone")}
                   </Label>
                   <Input
                     id="phone"
-                    name="phone"
                     type="tel"
+                    {...register("phone")}
                     placeholder={t("form.phonePlaceholder")}
-                    className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0"
+                    className={`${inputBase} border-border`}
                   />
                 </div>
                 <div className="space-y-2">
-                  <Label
-                    htmlFor="business"
-                    className="text-sm text-foreground/60"
-                  >
+                  <Label htmlFor="business" className="text-sm text-foreground/60">
                     {t("form.business")}
                   </Label>
                   <Input
                     id="business"
-                    name="business"
+                    {...register("business")}
                     placeholder={t("form.businessPlaceholder")}
-                    className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0"
+                    className={`${inputBase} border-border`}
                   />
                 </div>
               </div>
@@ -130,8 +185,8 @@ export function Contact() {
                 </Label>
                 <select
                   id="plan"
-                  name="plan"
-                  className="flex h-9 w-full rounded-xl border border-border bg-foreground/5 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus:outline-none"
+                  {...register("plan")}
+                  className="flex h-9 w-full rounded-xl border border-border bg-foreground/5 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus:outline-none transition-colors duration-200"
                 >
                   <option value="" className="bg-background text-muted-foreground">
                     {t("form.planPlaceholder")}
@@ -152,28 +207,25 @@ export function Contact() {
               </div>
 
               <div className="space-y-2">
-                <Label
-                  htmlFor="message"
-                  className="text-sm text-foreground/60"
-                >
+                <Label htmlFor="message" className="text-sm text-foreground/60">
                   {t("form.message")}
                 </Label>
                 <Textarea
                   id="message"
-                  name="message"
+                  {...register("message")}
                   rows={4}
                   placeholder={t("form.messagePlaceholder")}
-                  className="rounded-xl border-border bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0"
+                  className={`${inputBase} border-border`}
                 />
               </div>
 
               <Button
                 type="submit"
-                disabled={sending}
+                disabled={isSubmitting}
                 className="w-full rounded-full bg-foreground text-background hover:bg-foreground/90 disabled:opacity-50"
               >
                 <Send className="mr-2 h-4 w-4" />
-                {sending ? "..." : t("form.submit")}
+                {isSubmitting ? "..." : t("form.submit")}
               </Button>
             </form>
           )}
