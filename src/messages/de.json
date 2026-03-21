@@ -1,9 +1,10 @@
 {
   "nav": {
-    "howItWorks": "Ablauf",
+    "process": "Ablauf",
     "pricing": "Preise",
     "faq": "FAQ",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "recentWork": "Projekte"
   },
   "hero": {
     "badge": "Modern, sicher, schnell",
@@ -26,6 +27,19 @@
     "loadTime": "Ladezeit",
     "uptime": "Verfügbarkeitsgarantie"
   },
+  "latestProject": {
+    "label": "Projekte",
+    "title": "Aktuelles Projekt",
+    "subtitle": "Eine Model-Management-Website, gestaltet für Kreativität.",
+    "projects": {
+      "mamormodels": {
+        "name": "Mamor Models",
+        "industry": "Model Management",
+        "description": "Eine elegante, moderne Website für eine Budapester Model-Management-Agentur. Entwickelt, um Talent mit Eleganz und Geschwindigkeit zu präsentieren.",
+        "cta": "Website besuchen"
+      }
+    }
+  },
   "howItWorks": {
     "label": "Ablauf",
     "title": "Vier einfache Schritte",
@@ -33,7 +47,7 @@
     "steps": {
       "choose": {
         "title": "Kontakt aufnehmen",
-        "description": "Füllen Sie das Formular aus — erzählen Sie uns von Ihrem Projekt und was Sie brauchen."
+        "description": "Füllen Sie das Formular aus — erzählen Sie uns von Ihrem Unternehmen und was Sie brauchen."
       },
       "content": {
         "title": "Details abstimmen",
@@ -74,7 +88,7 @@
       "name": "Business",
       "price": "950",
       "delivery": "Lieferung: 1–2 Tage",
-      "description": "Für alle, die Buchungen, Formulare oder Integrationen brauchen",
+      "description": "Buchung, Benachrichtigungen & mehr",
       "features": [
         "Alles im Starter-Paket, plus:",
         "6–10 Seiten",
@@ -211,7 +225,12 @@
       "message": "Nachricht",
       "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt und was Sie sich vorstellen — wir melden uns in Kürze, um die Details gemeinsam zu besprechen.",
       "submit": "Nachricht senden",
-      "success": "Vielen Dank! Wir melden uns in Kürze bei Ihnen."
+      "successTitle": "Nachricht gesendet!",
+      "success": "Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+      "errors": {
+        "nameRequired": "Bitte geben Sie Ihren Namen ein",
+        "emailRequired": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+      }
     }
   },
   "testimonials": {
