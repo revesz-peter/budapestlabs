@@ -7,19 +7,19 @@ import "@/app/globals.css";
 
 const metaByLocale: Record<string, { title: string; description: string }> = {
   hu: {
-    title: "Budapest Labs — Weboldal 6 óra alatt",
+    title: "Budapest Labs",
     description:
-      "Professzionális, mobilbarát weboldalak kisvállalkozásoknak — 6 órán belül elkészítve. Starter csomagtól a Pro-ig.",
+      "Professzionális, mobilbarát weboldalak — 6 órán belül elkészítve. Starter csomagtól a Pro-ig.",
   },
   en: {
-    title: "Budapest Labs — Your Website in 6 Hours",
+    title: "Budapest Labs",
     description:
-      "Professional, mobile-friendly websites for small businesses — delivered within 6 hours. From Starter to Pro plans.",
+      "Professional, mobile-friendly websites — delivered within 6 hours. From Starter to Pro plans.",
   },
   de: {
-    title: "Budapest Labs — Ihre Website in 6 Stunden",
+    title: "Budapest Labs",
     description:
-      "Professionelle, mobilfreundliche Websites für Kleinunternehmen — geliefert innerhalb von 6 Stunden. Vom Starter- bis zum Custom-Paket.",
+      "Professionelle, mobilfreundliche Websites — geliefert innerhalb von 6 Stunden. Vom Starter- bis zum Custom-Paket.",
   },
 };
 

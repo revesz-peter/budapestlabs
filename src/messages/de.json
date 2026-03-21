@@ -33,7 +33,7 @@
     "steps": {
       "choose": {
         "title": "Kontakt aufnehmen",
-        "description": "Füllen Sie das Formular aus — erzählen Sie uns von Ihrem Unternehmen und was Sie brauchen."
+        "description": "Füllen Sie das Formular aus — erzählen Sie uns von Ihrem Projekt und was Sie brauchen."
       },
       "content": {
         "title": "Details abstimmen",
@@ -190,7 +190,7 @@
   "contact": {
     "label": "Kontakt",
     "title": "Starten wir Ihr Projekt",
-    "subtitle": "Erzählen Sie uns von Ihrem Unternehmen und was Sie suchen.",
+    "subtitle": "Erzählen Sie uns von Ihrem Projekt und was Sie suchen.",
     "form": {
       "name": "Name",
       "namePlaceholder": "Ihr Name",

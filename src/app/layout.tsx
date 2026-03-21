@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Budapest Labs — Weboldal 6 óra alatt",
+  title: "Budapest Labs",
   description:
-    "Professzionális, mobilbarát weboldalak kisvállalkozásoknak — 6 órán belül elkészítve.",
+    "Professzionális, mobilbarát weboldalak — 6 órán belül elkészítve.",
 };
 
 export default function RootLayout({

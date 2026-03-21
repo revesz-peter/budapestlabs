@@ -128,7 +128,7 @@ export function Contact() {
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="text-sm text-foreground/60">
-                    {t("form.name")}
+                    {t("form.name")} <span className="text-foreground/30">*</span>
                   </Label>
                   <Input
                     id="name"
@@ -140,7 +140,7 @@ export function Contact() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email" className="text-sm text-foreground/60">
-                    {t("form.email")}
+                    {t("form.email")} <span className="text-foreground/30">*</span>
                   </Label>
                   <Input
                     id="email"

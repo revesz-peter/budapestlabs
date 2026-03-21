@@ -47,7 +47,7 @@
     "steps": {
       "choose": {
         "title": "Get in touch",
-        "description": "Fill out the form — tell us about your business and what you need."
+        "description": "Fill out the form — tell us about your project and what you need."
       },
       "content": {
         "title": "We align on details",
@@ -204,7 +204,7 @@
   "contact": {
     "label": "Contact",
     "title": "Let's start your project",
-    "subtitle": "Tell us about your business and what you're looking for.",
+    "subtitle": "Tell us about your project and what you're looking for.",
     "form": {
       "name": "Name",
       "namePlaceholder": "Your name",

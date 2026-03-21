@@ -47,7 +47,7 @@
     "steps": {
       "choose": {
         "title": "Kapcsolatfelvétel",
-        "description": "Töltse ki az űrlapot — meséljen a vállalkozásáról és az igényeiről."
+        "description": "Töltse ki az űrlapot — meséljen a projektjéről és az igényeiről."
       },
       "content": {
         "title": "Egyeztetés",
@@ -204,7 +204,7 @@
   "contact": {
     "label": "Kapcsolat",
     "title": "Kezdjük el a projektet",
-    "subtitle": "Meséljen a vállalkozásáról és az elképzeléseiről.",
+    "subtitle": "Meséljen a projektjéről és az elképzeléseiről.",
     "form": {
       "name": "Név",
       "namePlaceholder": "Az Ön neve",
