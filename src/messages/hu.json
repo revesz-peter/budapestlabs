@@ -105,7 +105,6 @@
             "description": "Teljesen egyedi megoldás — bármi megvalósítható",
             "features": [
                 "Minden, ami a Business csomagban, és még:",
-                "Részletfizetés elérhető",
                 "Webshop, ügynökségi oldal, márkaoldal — bármi",
                 "Egyedi funkciók az Ön igényei szerint",
                 "Online fizetés elfogadása (SimplePay, Barion, Stripe)",
@@ -174,7 +173,7 @@
             },
             "q9": {
                 "question": "Milyen fizetési módokat fogadnak el?",
-                "answer": "Banki átutalás, online kártyás fizetés vagy készpénz. Egyszerű, biztonságos, gond nélkül."
+                "answer": "Banki átutalás, Revolut vagy készpénz. Egyszerű, biztonságos, gond nélkül."
             }
         }
     },
