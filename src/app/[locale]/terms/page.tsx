@@ -32,7 +32,6 @@ export default function TermsPage() {
     "cancellation",
     "warranty",
     "liability",
-    "changes",
     "law",
   ] as const;
 

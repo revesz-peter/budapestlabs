@@ -27,10 +27,7 @@ export default function PrivacyPage() {
     "purpose",
     "storage",
     "thirdparty",
-    "hosting",
     "rights",
-    "complaint",
-    "contact",
   ] as const;
 
   return (

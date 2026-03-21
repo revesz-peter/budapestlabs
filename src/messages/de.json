@@ -276,23 +276,11 @@
         },
         "thirdparty": {
           "title": "Dienste, die wir nutzen",
-          "content": "F\u00fcr den Betrieb unserer Website und die Kommunikation mit Ihnen nutzen wir einen Hosting-Anbieter und einen E-Mail-Dienst. Diese Anbieter verarbeiten Daten ausschlie\u00dflich in unserem Auftrag und sind durch DSGVO-konforme Vereinbarungen gebunden. Ihre Daten werden an niemand anderen weitergegeben."
-        },
-        "hosting": {
-          "title": "Website-Hosting",
-          "content": "Unsere Website verwendet HTTPS-Verschl\u00fcsselung f\u00fcr jede Verbindung. Der Hosting-Anbieter speichert nur standardm\u00e4\u00dfige Serverprotokolle (IP-Adresse, Zeitstempel, besuchte Seite), die nach 30 Tagen automatisch gel\u00f6scht werden."
+          "content": "Unsere Website wird von Vercel (vercel.com) gehostet, und wir verwenden Resend (resend.com) f\u00fcr die Zustellung von E-Mails aus unserem Kontaktformular. Beide Anbieter verarbeiten Daten in unserem Auftrag gem\u00e4\u00df DSGVO-konformer Vereinbarungen. Alle Verbindungen verwenden HTTPS-Verschl\u00fcsselung. Vercel speichert standardm\u00e4\u00dfige Server-Logs (IP-Adresse, Zeitstempel, besuchte Seite), die nach 30 Tagen automatisch gel\u00f6scht werden. Ihre Daten werden an niemand anderen weitergegeben."
         },
         "rights": {
           "title": "Ihre Rechte",
-          "content": "Nach EU-Recht (DSGVO) k\u00f6nnen Sie: einsehen, welche Daten wir \u00fcber Sie haben; fehlerhafte Daten korrigieren lassen; die L\u00f6schung Ihrer Daten verlangen; die Verarbeitung einschr\u00e4nken oder ihr widersprechen; oder eine Kopie in einem portablen Format anfordern. Sie k\u00f6nnen Ihre Einwilligung jederzeit widerrufen \u2014 das betrifft nicht die vorherige Verarbeitung. Schreiben Sie uns einfach an budapestlabs@gmail.com und wir k\u00fcmmern uns darum."
-        },
-        "complaint": {
-          "title": "Etwas stimmt nicht?",
-          "content": "Wenn Sie das Gef\u00fchl haben, dass Ihre Daten nicht korrekt behandelt wurden, k\u00f6nnen Sie eine Beschwerde bei der ungarischen Datenschutzbeh\u00f6rde (NAIH) unter naih.hu einreichen, oder bei der Aufsichtsbeh\u00f6rde Ihres Landes."
-        },
-        "contact": {
-          "title": "Kontakt",
-          "content": "Fragen zu Ihren Daten? Schreiben Sie uns: budapestlabs@gmail.com. Wir antworten innerhalb von 30 Tagen."
+          "content": "Nach EU-Recht (DSGVO) k\u00f6nnen Sie: einsehen, welche Daten wir \u00fcber Sie haben; fehlerhafte Daten korrigieren lassen; die L\u00f6schung Ihrer Daten verlangen; die Verarbeitung einschr\u00e4nken oder ihr widersprechen; oder eine Kopie in einem portablen Format anfordern. Sie k\u00f6nnen Ihre Einwilligung jederzeit widerrufen \u2014 das betrifft nicht die vorherige Verarbeitung. Schreiben Sie uns einfach an budapestlabs@gmail.com und wir antworten innerhalb von 30 Tagen."
         }
       }
     },
@@ -331,7 +319,7 @@
         },
         "thirdparty": {
           "title": "Drittanbieter-Dienste",
-          "content": "Ihre Website kann Dienste anderer Unternehmen nutzen \u2014 etwa Hosting, Domain-Registrierung, E-Mail oder Zahlungsabwicklung. Das sind unabh\u00e4ngige Dienste mit eigenen Bedingungen und Preisen, die sich \u00e4ndern k\u00f6nnen. Wir helfen Ihnen bei der Einrichtung, k\u00f6nnen aber nicht kontrollieren, wie diese Anbieter arbeiten."
+          "content": "Ihre Website kann Drittanbieter-Dienste nutzen (Hosting, Domain, E-Mail). Wir helfen bei der Einrichtung, aber diese sind unabh\u00e4ngige Dienste mit eigenen Bedingungen."
         },
         "cancellation": {
           "title": "Stornierung",
@@ -343,11 +331,7 @@
         },
         "liability": {
           "title": "Unsere Verantwortung",
-          "content": "Wir nehmen unsere Arbeit ernst, aber es gibt Grenzen. Wenn etwas schiefgeht, ist unsere Haftung auf den Betrag begrenzt, den Sie f\u00fcr das Projekt bezahlt haben. Wir sind nicht verantwortlich f\u00fcr Probleme, die durch \u00c4nderungen entstehen, die Sie nach der Lieferung vornehmen, oder f\u00fcr Dinge au\u00dferhalb unserer Kontrolle wie Ausf\u00e4lle von Drittanbieter-Diensten."
-        },
-        "changes": {
-          "title": "Aktualisierungen dieser Bedingungen",
-          "content": "Wir k\u00f6nnen diese Bedingungen von Zeit zu Zeit aktualisieren. Die neue Version wird dann hier ver\u00f6ffentlicht. F\u00fcr bereits gestartete Projekte gelten die Bedingungen, die zum Zeitpunkt Ihrer Bestellung g\u00fcltig waren."
+          "content": "Unsere Haftung ist auf den Betrag begrenzt, den Sie f\u00fcr das Projekt bezahlt haben. Wir sind nicht verantwortlich f\u00fcr Probleme nach der Lieferung durch Ihre \u00c4nderungen oder Ausf\u00e4lle von Drittanbieter-Diensten."
         },
         "law": {
           "title": "Rechtliche Details",
@@ -366,17 +350,9 @@
           "title": "Kontakt",
           "content": "E-Mail: budapestlabs@gmail.com\nWebsite: budapestlabs.com"
         },
-        "registration": {
-          "title": "Gewerbeanmeldung",
-          "content": "Steuernummer: 91808745-1-43\nRegistrierungsnummer: 61944978"
-        },
         "responsible": {
           "title": "Verantwortlich für den Inhalt",
           "content": "Budapest Labs ist verantwortlich für den Inhalt dieser Website nach geltendem ungarischen und EU-Recht."
-        },
-        "disclaimer": {
-          "title": "Haftungsausschluss",
-          "content": "Wir geben unser Bestes, alles auf dieser Seite korrekt und aktuell zu halten, k\u00f6nnen aber nicht garantieren, dass es immer perfekt ist. Externe Links dienen der Bequemlichkeit \u2014 f\u00fcr die Inhalte anderer Websites sind wir nicht verantwortlich."
         }
       }
     }

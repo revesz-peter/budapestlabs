@@ -23,9 +23,7 @@ export default function ImprintPage() {
   const sectionKeys = [
     "company",
     "contact",
-    "registration",
     "responsible",
-    "disclaimer",
   ] as const;
 
   return (

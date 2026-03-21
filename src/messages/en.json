@@ -295,23 +295,11 @@
         },
         "thirdparty": {
           "title": "Services we rely on",
-          "content": "To run our website and communicate with you, we use a hosting provider and an email service. These providers only process data on our behalf and are bound by GDPR-compliant agreements. Your information is never shared with anyone else."
-        },
-        "hosting": {
-          "title": "Website hosting",
-          "content": "Our website uses HTTPS encryption on every connection. The hosting provider only keeps standard server logs (IP address, timestamp, page visited), which are automatically deleted after 30 days."
+          "content": "Our website is hosted on Vercel (vercel.com), and we use Resend (resend.com) to deliver emails from our contact form. Both providers process data on our behalf under GDPR-compliant agreements. All connections use HTTPS encryption. Vercel keeps standard server logs (IP address, timestamp, page visited), which are automatically deleted after 30 days. Your information is never shared with anyone else."
         },
         "rights": {
           "title": "Your rights",
-          "content": "Under EU law (GDPR), you can: ask to see what data we have about you; correct anything that's wrong; ask us to delete your data; limit or object to how we use it; or request a copy in a portable format. You can also withdraw your consent at any time — this won't affect anything we did before the withdrawal. Just email us at budapestlabs@gmail.com and we'll take care of it."
-        },
-        "complaint": {
-          "title": "Something not right?",
-          "content": "If you feel your data hasn't been handled properly, you can file a complaint with the Hungarian data protection authority (NAIH) at naih.hu, or with the supervisory authority in your country."
-        },
-        "contact": {
-          "title": "Get in touch",
-          "content": "Questions about your data? Email us at budapestlabs@gmail.com. We'll get back to you within 30 days."
+          "content": "Under EU law (GDPR), you can: ask to see what data we have about you; correct anything that's wrong; ask us to delete your data; limit or object to how we use it; or request a copy in a portable format. You can also withdraw your consent at any time — this won't affect anything we did before the withdrawal. Just email us at budapestlabs@gmail.com and we'll get back to you within 30 days."
         }
       }
     },
@@ -350,7 +338,7 @@
         },
         "thirdparty": {
           "title": "Third-party services",
-          "content": "Your website may use services from other companies — things like hosting, domain registration, email, or payment processing. These are independent services with their own terms and pricing, which can change over time. We'll help you set everything up, but we can't control how those providers operate."
+          "content": "Your website may use third-party services (hosting, domain, email). We'll help set everything up, but these are independent services with their own terms."
         },
         "cancellation": {
           "title": "Cancellation",
@@ -362,11 +350,7 @@
         },
         "liability": {
           "title": "Our responsibility",
-          "content": "We take our work seriously, but there are limits to what we can be held responsible for. If something goes wrong, our liability is limited to the amount you paid for the project. We're not responsible for issues caused by changes you make to the website after delivery, or for things outside our control like third-party service outages."
-        },
-        "changes": {
-          "title": "Updates to these terms",
-          "content": "We may update these terms from time to time. When we do, the new version will be posted here. Any project you've already started will follow the terms that were in place when you placed your order."
+          "content": "Our liability is limited to the amount you paid for the project. We're not responsible for issues caused by changes you make after delivery, or for third-party service outages."
         },
         "law": {
           "title": "Legal details",
@@ -385,17 +369,9 @@
           "title": "Contact",
           "content": "Email: budapestlabs@gmail.com\nWebsite: budapestlabs.com"
         },
-        "registration": {
-          "title": "Business registration",
-          "content": "Tax number: 91808745-1-43\nRegistration number: 61944978"
-        },
         "responsible": {
           "title": "Responsible for content",
           "content": "Budapest Labs is responsible for the content of this website under applicable Hungarian and EU law."
-        },
-        "disclaimer": {
-          "title": "Disclaimer",
-          "content": "We do our best to keep everything on this site accurate and current, but we can't guarantee it's always perfect. Any external links are provided for convenience — we're not responsible for what's on other websites."
         }
       }
     }

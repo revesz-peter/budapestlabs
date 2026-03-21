@@ -295,23 +295,11 @@
         },
         "thirdparty": {
           "title": "Szolg\u00e1ltat\u00e1sok, amelyekre t\u00e1maszkodunk",
-          "content": "Weboldal\u00e1nk \u00fczemeltet\u00e9s\u00e9hez \u00e9s az \u00d6nnel val\u00f3 kommunik\u00e1ci\u00f3hoz t\u00e1rhelyszolg\u00e1ltat\u00f3t \u00e9s e-mail szolg\u00e1ltat\u00e1st haszn\u00e1lunk. Ezek a szolg\u00e1ltat\u00f3k kiz\u00e1r\u00f3lag a mi megb\u00edz\u00e1sunkb\u00f3l kezelnek adatokat, \u00e9s a GDPR-nak megfelel\u0151 meg\u00e1llapod\u00e1sok k\u00f6tik \u0151ket. Az \u00d6n adatait nem osztjuk meg m\u00e1s harmadik f\u00e9llel."
-        },
-        "hosting": {
-          "title": "Webt\u00e1rhely",
-          "content": "Weboldal\u00e1nk HTTPS titkos\u00edt\u00e1st haszn\u00e1l minden kapcsolatn\u00e1l. A t\u00e1rhelyszolg\u00e1ltat\u00f3 csak szabv\u00e1nyos szervern\u00e1pl\u00f3kat \u0151riz (IP-c\u00edm, id\u0151b\u00e9lyeg, megl\u00e1togatott oldal), amelyeket 30 nap ut\u00e1n automatikusan t\u00f6r\u00f6l."
+          "content": "Weboldalunkat a Vercel (vercel.com) \u00fczemelti, \u00e9s a Resend (resend.com) szolg\u00e1ltat\u00e1st haszn\u00e1ljuk a kapcsolatfelv\u00e9teli \u0171rlapr\u00f3l \u00e9rkez\u0151 e-mailek k\u00e9zbes\u00edt\u00e9s\u00e9hez. Mindk\u00e9t szolg\u00e1ltat\u00f3 GDPR-nak megfelel\u0151 meg\u00e1llapod\u00e1s alapj\u00e1n kezeli az adatokat. Minden kapcsolat HTTPS titkos\u00edt\u00e1ssal v\u00e9dett. A Vercel szabv\u00e1nyos szerver logokat \u0151riz (IP-c\u00edm, id\u0151b\u00e9lyeg, megl\u00e1togatott oldal), amelyeket 30 nap ut\u00e1n automatikusan t\u00f6r\u00f6l. Az \u00d6n adatait nem osztjuk meg m\u00e1s harmadik f\u00e9llel."
         },
         "rights": {
           "title": "Az \u00d6n jogai",
-          "content": "Az EU joga (GDPR) \u00e9rtelm\u00e9ben \u00d6n: megt\u00e9k\u00edntheti, milyen adatokat t\u00e1rolunk \u00d6nr\u0151l; k\u00e9rheti b\u00e1rmi hib\u00e1s adat jav\u00edt\u00e1s\u00e1t; k\u00e9rheti adatai t\u00f6rl\u00e9s\u00e9t; korl\u00e1tozhatja vagy kifog\u00e1solhatja az adatkezel\u00e9st; vagy k\u00e9rhet egy hordozhat\u00f3 m\u00e1solatot. Hozz\u00e1j\u00e1rul\u00e1s\u00e1t b\u00e1rmikor visszavonhatja \u2014 ez nem \u00e9rinti a visszavon\u00e1s el\u0151tt v\u00e9gzett adatkezel\u00e9st. Egyszer\u0171en \u00edrjon nek\u00fcnk az budapestlabs@gmail.com c\u00edmre, \u00e9s int\u00e9zz\u00fck."
-        },
-        "complaint": {
-          "title": "Valami nincs rendben?",
-          "content": "Ha \u00fagy \u00e9rzi, hogy adatait nem megfelel\u0151en kezelj\u00fck, panaszt tehet a Nemzeti Adatv\u00e9delmi \u00e9s Inform\u00e1ci\u00f3szabads\u00e1g Hat\u00f3s\u00e1gn\u00e1l (NAIH) a naih.hu oldalon, vagy az \u00d6n orsz\u00e1g\u00e1nak fel\u00fcgyeleti hat\u00f3s\u00e1g\u00e1n\u00e1l."
-        },
-        "contact": {
-          "title": "Kapcsolat",
-          "content": "K\u00e9rd\u00e9se van az adataival kapcsolatban? \u00cdrjon nek\u00fcnk: budapestlabs@gmail.com. 30 napon bel\u00fcl v\u00e1laszolunk."
+          "content": "Az EU joga (GDPR) \u00e9rtelm\u00e9ben \u00d6n: megt\u00e9k\u00edntheti, milyen adatokat t\u00e1rolunk \u00d6nr\u0151l; k\u00e9rheti b\u00e1rmi hib\u00e1s adat jav\u00edt\u00e1s\u00e1t; k\u00e9rheti adatai t\u00f6rl\u00e9s\u00e9t; korl\u00e1tozhatja vagy kifog\u00e1solhatja az adatkezel\u00e9st; vagy k\u00e9rhet egy hordozhat\u00f3 m\u00e1solatot. Hozz\u00e1j\u00e1rul\u00e1s\u00e1t b\u00e1rmikor visszavonhatja \u2014 ez nem \u00e9rinti a visszavon\u00e1s el\u0151tt v\u00e9gzett adatkezel\u00e9st. Egyszer\u0171en \u00edrjon nek\u00fcnk az budapestlabs@gmail.com c\u00edmre, \u00e9s 30 napon bel\u00fcl v\u00e1laszolunk."
         }
       }
     },
@@ -350,7 +338,7 @@
         },
         "thirdparty": {
           "title": "Harmadik f\u00e9lt\u0151l sz\u00e1rmaz\u00f3 szolg\u00e1ltat\u00e1sok",
-          "content": "A weboldala m\u00e1s c\u00e9gek szolg\u00e1ltat\u00e1sait is haszn\u00e1lhatja \u2014 p\u00e9ld\u00e1ul t\u00e1rhelyet, domain regisztr\u00e1ci\u00f3t, e-mailt vagy fizet\u00e9si rendszert. Ezek f\u00fcggetlen szolg\u00e1ltat\u00e1sok, saj\u00e1t felt\u00e9telekkel \u00e9s \u00e1rakkal, amelyek id\u0151vel v\u00e1ltozhatnak. Seg\u00edt\u00fcnk mindent be\u00e1ll\u00edtani, de ezeknek a szolg\u00e1ltat\u00f3knak a m\u0171k\u00f6d\u00e9s\u00e9t nem tudjuk befoly\u00e1solni."
+          "content": "A weboldala harmadik f\u00e9l szolg\u00e1ltat\u00e1sait is haszn\u00e1lhatja (t\u00e1rhely, domain, e-mail). Seg\u00edt\u00fcnk mindent be\u00e1ll\u00edtani, de ezek f\u00fcggetlen szolg\u00e1ltat\u00e1sok, saj\u00e1t felt\u00e9telekkel."
         },
         "cancellation": {
           "title": "Lemond\u00e1s",
@@ -362,11 +350,7 @@
         },
         "liability": {
           "title": "Felel\u0151ss\u00e9g\u00fcnk",
-          "content": "Komolyan vessz\u00fck a munk\u00e1nkat, de vannak hat\u00e1rok. Ha valami probl\u00e9ma ad\u00f3dna, felel\u0151ss\u00e9g\u00fcnk a projekt\u00e9rt kifizetett \u00f6sszegre korl\u00e1toz\u00f3dik. Nem felel\u00fcnk azok\u00e9rt a probl\u00e9m\u00e1k\u00e9rt, amelyek az \u00e1tad\u00e1s ut\u00e1ni m\u00f3dos\u00edt\u00e1sokb\u00f3l sz\u00e1rmaznak, vagy amelyek rajtunk k\u00edv\u00fcl \u00e1lln\u00e1k, p\u00e9ld\u00e1ul harmadik f\u00e9l szolg\u00e1ltat\u00e1sok kies\u00e9se."
-        },
-        "changes": {
-          "title": "Felt\u00e9telek friss\u00edt\u00e9se",
-          "content": "Ezeket a felt\u00e9teleket id\u0151nk\u00e9nt friss\u00edthetj\u00fck. Amikor ezt megtessz\u00fck, az \u00faj verzi\u00f3 itt jelenik meg. A m\u00e1r elind\u00edtott projektekre azok a felt\u00e9telek vonatkoznak, amelyek a megrendel\u00e9s pillanat\u00e1ban \u00e9rv\u00e9nyben voltak."
+          "content": "Felel\u0151ss\u00e9g\u00fcnk a projekt\u00e9rt kifizetett \u00f6sszegre korl\u00e1toz\u00f3dik. Nem felel\u00fcnk az \u00e1tad\u00e1s ut\u00e1ni m\u00f3dos\u00edt\u00e1sokb\u00f3l sz\u00e1rmaz\u00f3 probl\u00e9m\u00e1k\u00e9rt, vagy harmadik f\u00e9l szolg\u00e1ltat\u00e1sok kies\u00e9s\u00e9\u00e9rt."
         },
         "law": {
           "title": "Jogi r\u00e9szletek",
@@ -385,17 +369,9 @@
           "title": "Kapcsolat",
           "content": "E-mail: budapestlabs@gmail.com\nWeboldal: budapestlabs.com"
         },
-        "registration": {
-          "title": "Nyilvántartás",
-          "content": "Adószám: 91808745-1-43\nNyilvántartási szám: 61944978"
-        },
         "responsible": {
           "title": "Tartalomért felelős",
           "content": "Budapest Labs felelős ezen weboldal tartalmáért a vonatkozó magyar és EU jogszabályoknak megfelelően."
-        },
-        "disclaimer": {
-          "title": "Jogi nyilatkozat",
-          "content": "Mindent megtesz\u00fcnk, hogy az oldalon minden pontos \u00e9s aktu\u00e1lis legyen, de nem garant\u00e1lhatjuk, hogy mindig t\u00f6k\u00e9letes. A k\u00fcls\u0151 hivatkoz\u00e1sok k\u00e9nyelmi c\u00e9lokat szolg\u00e1lnak \u2014 m\u00e1s weboldalak tartalm\u00e1\u00e9rt nem felel\u00fcnk."
         }
       }
     }
