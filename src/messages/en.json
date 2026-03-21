@@ -26,6 +26,19 @@
     "loadTime": "page load time",
     "uptime": "uptime guarantee"
   },
+  "latestProject": {
+    "label": "Recent Work",
+    "title": "Latest project",
+    "subtitle": "A model management site built for creativity.",
+    "projects": {
+      "mamormodels": {
+        "name": "Mamor Models",
+        "industry": "Model Management",
+        "description": "A sleek, modern website for a Budapest-based model management agency. Designed to showcase their talent with elegance and speed.",
+        "cta": "Visit site"
+      }
+    }
+  },
   "howItWorks": {
     "label": "Process",
     "title": "Four simple steps",

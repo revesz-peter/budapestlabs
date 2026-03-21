@@ -26,6 +26,19 @@
     "loadTime": "betöltési idő",
     "uptime": "rendelkezésre állás"
   },
+  "latestProject": {
+    "label": "Legutóbbi munkánk",
+    "title": "Legújabb projektünk",
+    "subtitle": "Egy modell menedzsment oldal, kreativitásra építve.",
+    "projects": {
+      "mamormodels": {
+        "name": "Mamor Models",
+        "industry": "Modell Menedzsment",
+        "description": "Modern, elegáns weboldal egy budapesti modell menedzsment ügynökség számára. A tehetségek bemutatására tervezve, eleganciával és sebességgel.",
+        "cta": "Weboldal megtekintése"
+      }
+    }
+  },
   "howItWorks": {
     "label": "Folyamat",
     "title": "Négy egyszerű lépés",
