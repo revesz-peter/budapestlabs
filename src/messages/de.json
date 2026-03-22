@@ -16,7 +16,8 @@
       "payAfter": "Zahlung erst nach Lieferung",
       "delivery": "≤6 Stunden Lieferzeit",
       "secure": "Verschlüsselt & sicher",
-      "revision": "Kostenlose Überarbeitung inklusive"
+      "revision": "Kostenlose Überarbeitung inklusive",
+      "warranty": "Lebenslange Garantie"
     }
   },
   "stats": {
@@ -174,6 +175,10 @@
       "q9": {
         "question": "Welche Zahlungsmethoden akzeptieren Sie?",
         "answer": "Banküberweisung, Revolut oder Barzahlung. Einfach, sicher, unkompliziert."
+      },
+      "q10": {
+        "question": "Was deckt die lebenslange Garantie ab?",
+        "answer": "Wenn etwas, das wir gebaut haben, nicht mehr funktioniert, beheben wir es kostenlos — egal wie viel Zeit vergangen ist. Das umfasst Fehler und Mängel im Code, den wir Ihnen geliefert haben.\n\nNicht abgedeckt sind: neue Funktionen, Designänderungen, Inhaltsaktualisierungen oder Probleme durch Änderungen nach der Lieferung. Drittanbieter-Dienste (Hosting, Domains usw.) haben eigene Bedingungen und liegen außerhalb unserer Kontrolle."
       }
     }
   },
@@ -197,7 +202,8 @@
       "mobile": { "label": "Mobiloptimiert", "diy": "Oft fehlerhaft", "agency": "Meistens ja", "us": "Immer" },
       "seo": { "label": "SEO", "diy": "Minimal", "agency": "Zusatzkosten", "us": "Inklusive" },
       "booking": { "label": "Buchung & Zahlungen", "diy": "Zusatzkosten", "agency": "Zusatzkosten", "us": "Integriert" },
-      "effort": { "label": "Ihr Aufwand", "diy": "Alles selbst", "agency": "Meetings, Freigaben", "us": "Schnell und mühelos" }
+      "effort": { "label": "Ihr Aufwand", "diy": "Alles selbst", "agency": "Meetings, Freigaben", "us": "Schnell und mühelos" },
+      "warranty": { "label": "Garantie", "diy": "Keine", "agency": "Unterschiedlich", "us": "Lebenslang" }
     }
   },
   "contact": {
@@ -269,7 +275,7 @@
     "download": "PDF",
     "privacy": {
       "title": "Datenschutzerkl\u00e4rung",
-      "lastUpdated": "Zuletzt aktualisiert: 21. März 2026",
+      "lastUpdated": "Zuletzt aktualisiert: 22. März 2026",
       "intro": "Ihre Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten wir erheben, wie wir sie verwenden und wie wir sie schützen.",
       "sections": {
         "controller": {
@@ -304,7 +310,7 @@
     },
     "terms": {
       "title": "Allgemeine Geschäftsbedingungen",
-      "lastUpdated": "Zuletzt aktualisiert: 21. März 2026",
+      "lastUpdated": "Zuletzt aktualisiert: 22. März 2026",
       "intro": "Das sind die Bedingungen für die Zusammenarbeit mit Budapest Labs. Wir haben sie klar und direkt formuliert — keine Überraschungen.",
       "sections": {
         "provider": {
@@ -344,8 +350,8 @@
           "content": "Sie k\u00f6nnen Ihr Projekt jederzeit stornieren, bevor Sie das Endergebnis freigeben. Die Anzahlung deckt die anf\u00e4ngliche Arbeit ab und ist nicht erstattungsf\u00e4hig. Wenn wir bereits erhebliche Arbeit geleistet haben, berechnen wir einen fairen Betrag f\u00fcr das Geleistete \u2014 wir besprechen das immer vorher mit Ihnen. Auf unserer Seite: Wenn wir innerhalb von 30 Tagen keine Inhalte erhalten oder Sie \u00fcber 30 Tage nicht erreichen k\u00f6nnen, m\u00fcssen wir das Projekt m\u00f6glicherweise schlie\u00dfen."
         },
         "warranty": {
-          "title": "Nach der Lieferung",
-          "content": "Wir stehen hinter unserer Arbeit. Wenn innerhalb von 30 Tagen nach Lieferung etwas nicht wie erwartet funktioniert, beheben wir es \u2014 solange es an uns liegt. Danach sind laufende Wartung oder neue \u00c4nderungen nicht enthalten, es sei denn, wir vereinbaren es separat. Wir k\u00f6nnen nicht garantieren, dass Drittanbieter-Dienste (Hosting, Internet usw.) jederzeit perfekt funktionieren \u2014 das liegt au\u00dferhalb unserer Kontrolle."
+          "title": "Lebenslange Garantie",
+          "content": "Wir stehen hinter unserer Arbeit — ein Leben lang. Wenn etwas, das wir gebaut haben, nicht mehr wie vorgesehen funktioniert, beheben wir es kostenlos, egal wie viel Zeit seit der Lieferung vergangen ist. Das umfasst Fehler und Mängel im Code, den wir für Sie geschrieben und geliefert haben.\n\nNicht abgedeckt: neue Funktionen, Designänderungen, Inhaltsaktualisierungen oder Probleme durch Änderungen, die Sie oder Dritte nach der Lieferung vorgenommen haben. Wir können auch nicht die Verfügbarkeit von Drittanbieter-Diensten (Hosting-Anbieter, Domain-Registrare, APIs usw.) garantieren — das liegt außerhalb unserer Kontrolle.\n\nWenn die zugrunde liegende Technologie ein bedeutendes Update erfordert (z.B. ein großer Framework-Versionswechsel), um Ihre Website funktionsfähig zu halten, informieren wir Sie und bieten ein faires Angebot — das ist jedoch separat von der Garantie."
         },
         "liability": {
           "title": "Unsere Verantwortung",

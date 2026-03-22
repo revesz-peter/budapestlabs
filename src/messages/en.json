@@ -16,7 +16,8 @@
             "payAfter": "Only pay after delivery",
             "delivery": "≤6 hour delivery",
             "secure": "Encrypted & secure",
-            "revision": "Free revision included"
+            "revision": "Free revision included",
+            "warranty": "Lifetime warranty"
         }
     },
     "stats": {
@@ -174,6 +175,10 @@
             "q9": {
                 "question": "What payment methods do you accept?",
                 "answer": "Bank transfer, Revolut, or cash. Simple, secure, no hassle."
+            },
+            "q10": {
+                "question": "What does the lifetime warranty cover?",
+                "answer": "If something we built breaks or stops working as intended, we fix it for free — no matter how much time has passed. This covers bugs and defects in the code we delivered to you.\n\nIt doesn't cover new features, design changes, content updates, or issues caused by modifications made after delivery. Third-party services (hosting, domains, etc.) have their own terms and are outside our control."
             }
         }
     },
@@ -247,6 +252,12 @@
                 "diy": "All on you",
                 "agency": "Meetings, approvals",
                 "us": "Quick and effortless"
+            },
+            "warranty": {
+                "label": "Warranty",
+                "diy": "None",
+                "agency": "Varies",
+                "us": "Lifetime"
             }
         }
     },
@@ -319,7 +330,7 @@
         "download": "PDF",
         "privacy": {
             "title": "Privacy Policy",
-            "lastUpdated": "Last updated: March 21, 2026",
+            "lastUpdated": "Last updated: March 22, 2026",
             "intro": "Your privacy matters to us. This policy explains what personal data we collect, how we use it, and how we keep it safe.",
             "sections": {
                 "controller": {
@@ -354,7 +365,7 @@
         },
         "terms": {
             "title": "Terms of Service",
-            "lastUpdated": "Last updated: March 21, 2026",
+            "lastUpdated": "Last updated: March 22, 2026",
             "intro": "These are the terms that apply when you work with Budapest Labs. We've kept them straightforward — no surprises.",
             "sections": {
                 "provider": {
@@ -394,8 +405,8 @@
                     "content": "You can cancel your project at any time before you approve the final result. The deposit covers the initial work and isn't refundable. If we've already done a significant amount of work, we may charge a fair amount for what's been completed — we'll always discuss this with you first. On our side, if we don't receive your content within 30 days or can't reach you for over 30 days, we may need to close the project."
                 },
                 "warranty": {
-                    "title": "After delivery",
-                    "content": "We stand behind our work. If something isn't working as expected within 30 days of delivery, we'll fix it — as long as it's something on our end. After that, ongoing maintenance or new changes aren't included unless we agree on it separately. We can't guarantee that third-party services (hosting, internet, etc.) will work perfectly at all times — that's outside our control."
+                    "title": "Lifetime warranty",
+                    "content": "We stand behind our work — for life. If something we built stops working as intended, we'll fix it at no cost, no matter how much time has passed since delivery. This covers bugs and defects in the code we wrote and delivered to you.\n\nWhat's not covered: new features, design changes, content updates, or issues caused by modifications made by you or a third party after delivery. We also can't guarantee the availability of third-party services (hosting providers, domain registrars, APIs, etc.) — those are outside our control.\n\nIf the underlying technology requires a significant update (e.g., a major framework version change) to keep your site functional, we'll let you know and offer a fair quote — but that's separate from the warranty."
                 },
                 "liability": {
                     "title": "Our responsibility",

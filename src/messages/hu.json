@@ -16,7 +16,8 @@
             "payAfter": "Csak átadás után fizet",
             "delivery": "≤6 órás elkészítés",
             "secure": "Titkosított és biztonságos",
-            "revision": "Ingyenes revízió"
+            "revision": "Ingyenes revízió",
+            "warranty": "Életre szóló garancia"
         }
     },
     "stats": {
@@ -174,6 +175,10 @@
             "q9": {
                 "question": "Milyen fizetési módokat fogadnak el?",
                 "answer": "Banki átutalás, Revolut vagy készpénz. Egyszerű, biztonságos, gond nélkül."
+            },
+            "q10": {
+                "question": "Mire vonatkozik az életre szóló garancia?",
+                "answer": "Ha valami, amit mi készítettünk, elromlik vagy nem úgy működik, ahogy kellene, ingyen javítjuk — függetlenül attól, mennyi idő telt el. Ez a garancia az általunk átadott kód hibáira vonatkozik.\n\nNem vonatkozik új funkciókra, dizájn módosításokra, tartalom frissítésekre, vagy az átadás után végzett módosításokból eredő problémákra. A harmadik fél szolgáltatások (tárhely, domain stb.) saját feltételekkel rendelkeznek, és rajtunk kívül állnak."
             }
         }
     },
@@ -247,6 +252,12 @@
                 "diy": "Minden az Ön terhe",
                 "agency": "Megbeszélések, jóváhagyások",
                 "us": "Gyors és egyszerű"
+            },
+            "warranty": {
+                "label": "Garancia",
+                "diy": "Nincs",
+                "agency": "Változó",
+                "us": "Életre szóló"
             }
         }
     },
@@ -319,7 +330,7 @@
         "download": "PDF",
         "privacy": {
             "title": "Adatv\u00e9delmi nyilatkozat",
-            "lastUpdated": "Utolsó frissítés: 2026. március 21.",
+            "lastUpdated": "Utolsó frissítés: 2026. március 22.",
             "intro": "Az Ön magánszférája fontos számunkra. Ez az adatvédelmi nyilatkozat ismerteti, milyen személyes adatokat gyűjtünk, mire használjuk, és hogyan védjük azokat.",
             "sections": {
                 "controller": {
@@ -354,7 +365,7 @@
         },
         "terms": {
             "title": "Általános Szerződési Feltételek",
-            "lastUpdated": "Utolsó frissítés: 2026. március 21.",
+            "lastUpdated": "Utolsó frissítés: 2026. március 22.",
             "intro": "Ezek a feltételek vonatkoznak a Budapest Labs által nyújtott szolgáltatásokra. Igyekeztünk érthetően és egyenesen fogalmazni — nincsenek meglepetések.",
             "sections": {
                 "provider": {
@@ -394,8 +405,8 @@
                     "content": "A projektet b\u00e1rmikor lemondhatja, miel\u0151tt j\u00f3v\u00e1hagyn\u00e1 a v\u00e9geredm\u00e9nyt. A foglal\u00f3 a kezdeti munk\u00e1t fedezi, \u00e9s nem t\u00e9r\u00edthet\u0151 vissza. Ha m\u00e1r jelent\u0151s munk\u00e1t v\u00e9gezt\u00fcnk, az elk\u00e9sz\u00fclt munk\u00e1\u00e9rt m\u00e9lt\u00e1nyos d\u00edjat sz\u00e1m\u00edthatunk fel \u2014 err\u0151l mindig egyeztet\u00fcnk el\u0151tte. A mi r\u00e9sz\u00fcnkr\u0151l, ha 30 napon bel\u00fcl nem kapjuk meg a tartalmat, vagy t\u00f6bb mint 30 napig nem tudunk el\u00e9rni, sz\u00fcks\u00e9g lehet a projekt lez\u00e1r\u00e1s\u00e1ra."
                 },
                 "warranty": {
-                    "title": "\u00c1tad\u00e1s ut\u00e1n",
-                    "content": "Ki\u00e1llunk a munk\u00e1nk mellett. Ha az \u00e1tad\u00e1st k\u00f6vet\u0151 30 napon bel\u00fcl valami nem \u00fagy m\u0171k\u00f6dik, ahogy kellene, jav\u00edtjuk \u2014 felt\u00e9ve, hogy a mi oldal\u00e1nkon van a hiba. Ezut\u00e1n a folyamatos karbantart\u00e1s vagy \u00faj m\u00f3dos\u00edt\u00e1sok nem tartoznak bele, kiv\u00e9ve, ha k\u00fcl\u00f6n meg\u00e1llapodunk. A harmadik f\u00e9l szolg\u00e1ltat\u00e1sok (t\u00e1rhely, internet stb.) t\u00f6k\u00e9letes m\u0171k\u00f6d\u00e9s\u00e9t nem tudjuk garant\u00e1lni \u2014 az rajtunk k\u00edv\u00fcl \u00e1ll."
+                    "title": "Életre szóló garancia",
+                    "content": "Kiállunk a munkánk mellett — egy életen át. Ha valami, amit mi készítettünk, nem úgy működik, ahogy kellene, ingyen javítjuk, függetlenül attól, mennyi idő telt el az átadás óta. Ez a garancia az általunk írt és átadott kód hibáira és hiányosságaira vonatkozik.\n\nAmire nem vonatkozik: új funkciók, dizájn módosítások, tartalom frissítések, vagy az átadás után Ön vagy harmadik fél által végzett módosításokból eredő problémák. A harmadik fél szolgáltatások (tárhelyszolgáltatók, domain regisztrátorok, API-k stb.) elérhetőségét sem tudjuk garantálni — az rajtunk kívül áll.\n\nHa az alapul szolgáló technológia jelentős frissítést igényel (pl. egy nagy keretrendszer verzióváltás) a weboldal működésének fenntartásához, értesítjük és méltányos árajánlatot teszünk — de az nem része a garanciának."
                 },
                 "liability": {
                     "title": "Felel\u0151ss\u00e9g\u00fcnk",

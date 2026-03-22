@@ -8,6 +8,7 @@ import {
   Zap,
   Calendar,
   Shield,
+  ShieldCheck,
   Lock,
   Clock,
   CreditCard,
@@ -116,6 +117,10 @@ export function Hero() {
           <span className="flex items-center gap-1.5">
             <Shield className="h-4 w-4" />
             {t("trust.revision")}
+          </span>
+          <span className="flex items-center gap-1.5">
+            <ShieldCheck className="h-4 w-4" />
+            {t("trust.warranty")}
           </span>
         </motion.div>
       </div>

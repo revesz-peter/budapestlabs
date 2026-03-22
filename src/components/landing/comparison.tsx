@@ -16,61 +16,54 @@ const rowKeys = [
   "seo",
   "booking",
   "effort",
+  "warranty",
 ] as const;
 
+// ✓ = clearly positive, − = mediocre/costly, ✗ = bad/absent
+// No icon on factual values (prices, delivery times) that speak for themselves
 function CellIcon({ value }: { value: string }) {
   const lower = value.toLowerCase();
-  if (
-    lower.includes("always") ||
-    lower.includes("mindig") ||
-    lower.includes("immer") ||
-    lower.includes("included") ||
-    lower.includes("tartalmazza") ||
-    lower.includes("inklusive") ||
-    lower.includes("built-in") ||
-    lower.includes("beépített") ||
-    lower.includes("integriert") ||
-    lower.includes("future-proof") ||
-    lower.includes("jövőálló") ||
-    lower.includes("zukunftssicher") ||
-    lower.includes("under") ||
-    lower.includes("alatt") ||
-    lower.includes("unter") ||
-    lower.includes("unhackable") ||
-    lower.includes("teljes védelem") ||
-    lower.includes("fully secure") ||
-    lower.includes("vollständig sicher") ||
-    lower.includes("latest") ||
-    lower.includes("legmodernebb") ||
-    lower.includes("neueste")
-  ) {
+
+  const positive = [
+    "always",              "mindig",              "immer",
+    "included",            "tartalmazza",         "inklusive",
+    "built-in",            "beépített",           "integriert",
+    "future-proof",        "jövőálló",            "zukunftssicher",
+    "latest",              "legmodernebb",        "neueste",
+    "under",               "alatt",               "unter",
+    "fully secure",        "teljes védelem",      "vollständig sicher",
+    "lifetime",            "életre szóló",        "lebenslang",
+    "effortless",          "egyszerű",            "mühelos",
+    "professional",        "professzionális",     "professionell",
+  ];
+
+  const mediocre = [
+    "extra cost",          "külön költség",       "zusatzkosten",
+    "varies",              "változó",             "unterschiedlich",
+    "closed",              "zárt",                "geschlossen",
+    "outdated",            "elavult",             "veraltet",
+    "meetings",            "megbeszélések",       "freigaben",
+    "usually",             "általában",           "meistens",
+    "1–4 seconds",         "1–4 másodperc",       "1–4 sekunden",
+  ];
+
+  const negative = [
+    "all on you",          "minden az ön terhe",  "alles selbst",
+    "none",                "nincs",               "keine",
+    "your responsibility", "az ön felelőssége",   "ihre verantwortung",
+    "often broken",        "gyakran hibás",       "oft fehlerhaft",
+    "minimal",             "minimális",
+    "generic",             "sablon",              "standard-vorlage",
+    "3–8 seconds",         "3–8 másodperc",       "3–8 sekunden",
+  ];
+
+  if (positive.some((kw) => lower.includes(kw))) {
     return <Check className="inline h-3.5 w-3.5 text-foreground/30" />;
   }
-  if (
-    lower.includes("extra cost") ||
-    lower.includes("külön költség") ||
-    lower.includes("zusatzkosten") ||
-    lower.includes("varies") ||
-    lower.includes("változó") ||
-    lower.includes("unterschiedlich") ||
-    lower.includes("basic") ||
-    lower.includes("alap") ||
-    lower.includes("closed") ||
-    lower.includes("zárt") ||
-    lower.includes("geschlossen") ||
-    lower.includes("outdated") ||
-    lower.includes("elavult") ||
-    lower.includes("veraltet") ||
-    lower.includes("slow") ||
-    lower.includes("lassú")
-  ) {
+  if (mediocre.some((kw) => lower.includes(kw))) {
     return <Minus className="inline h-3.5 w-3.5 text-foreground/30" />;
   }
-  if (
-    lower.includes("everything") ||
-    lower.includes("minden") ||
-    lower.includes("alles selbst")
-  ) {
+  if (negative.some((kw) => lower.includes(kw))) {
     return <X className="inline h-3.5 w-3.5 text-foreground/30" />;
   }
   return null;
