@@ -25,7 +25,7 @@ export function LatestProject() {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          video.play();
+          video.play().catch(() => {});
         } else {
           video.pause();
         }
@@ -91,10 +91,11 @@ export function LatestProject() {
               <video
                 ref={videoRef}
                 src={project.video}
+                poster="/projects/mamormodels.png"
                 muted
                 loop
                 playsInline
-                preload="none"
+                preload="metadata"
                 className="aspect-video w-full object-cover object-top"
               />
             </div>
