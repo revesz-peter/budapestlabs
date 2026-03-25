@@ -97,11 +97,11 @@ export default async function HomePage({
       <div className="border-t border-border" />
       <Comparison />
       <div className="border-t border-border" />
-      <LatestProject />
-      <div className="border-t border-border" />
       <Pricing />
       <div className="border-t border-border" />
       <Addons />
+      <div className="border-t border-border" />
+      <LatestProject />
       <div className="border-t border-border" />
       {/* TODO: Add <Testimonials /> back when real testimonials are available */}
       <FAQ />

@@ -133,6 +133,41 @@
                 "price": "36 000",
                 "suffix": ""
             }
+        },
+        "partner": {
+            "badge": "Partner",
+            "name": "SUSA STUDIO",
+            "subtitle": "Vigye márkáját a képernyőn túlra — teljes arculat, fizikai anyagok és kreatív irányítás budapesti partnerstúdiónktól.",
+            "pricing": "Egyedi árazás",
+            "services": {
+                "identity": {
+                    "name": "Arculattervezés",
+                    "items": [
+                        "Logó & vizuális arculat",
+                        "Egyedi ikonok & illusztrációk",
+                        "Arculati kézikönyv",
+                        "Névalkotás & történetmesélés"
+                    ]
+                },
+                "physical": {
+                    "name": "Fizikai megjelenés",
+                    "items": [
+                        "Névjegykártyák & levélpapírok",
+                        "Csomagolás dizájn",
+                        "Bannerek, roll-up-ok & táblák",
+                        "Press falak & installációk"
+                    ]
+                },
+                "direction": {
+                    "name": "Art Direction",
+                    "items": [
+                        "Vizuális stratégia & koncepció",
+                        "Kreatív irányítás",
+                        "Dizájn minőségbiztosítás",
+                        "Önálló szolgáltatásként is elérhető"
+                    ]
+                }
+            }
         }
     },
     "faq": {

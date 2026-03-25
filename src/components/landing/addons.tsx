@@ -2,11 +2,25 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { Palette, Globe } from "lucide-react";
+import {
+  Palette,
+  Globe,
+  Handshake,
+  Fingerprint,
+  Package,
+  Compass,
+  Instagram,
+} from "lucide-react";
 
 const addons = [
   { key: "branding", icon: Palette },
   { key: "multilang", icon: Globe },
+] as const;
+
+const partnerServices = [
+  { key: "identity", icon: Fingerprint },
+  { key: "physical", icon: Package },
+  { key: "direction", icon: Compass },
 ] as const;
 
 export function Addons() {
@@ -74,6 +88,62 @@ export function Addons() {
               </p>
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* SUSA STUDIO partner block */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="glass mt-8 px-6 py-6 md:px-8"
+        >
+          <div className="mb-3 flex items-center justify-between">
+            <div className="flex items-center gap-1.5 text-muted-foreground">
+              <Handshake className="h-3.5 w-3.5" />
+              <span className="text-xs font-medium uppercase tracking-widest">
+                {t("partner.badge")}
+              </span>
+            </div>
+            <span className="text-sm font-medium text-foreground/60">
+              {t("partner.pricing")}
+            </span>
+          </div>
+
+          <div className="flex flex-col gap-1 md:flex-row md:items-center md:gap-2">
+            <a
+              href="https://www.instagram.com/susa.project/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 text-sm font-bold transition-colors hover:text-muted-foreground"
+            >
+              {t("partner.name")}
+              <Instagram className="h-3 w-3" />
+            </a>
+            <span className="text-xs text-muted-foreground">
+              {t("partner.subtitle")}
+            </span>
+          </div>
+
+          <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-3">
+            {partnerServices.map((service) => (
+              <div key={service.key}>
+                <div className="mb-1.5 flex items-center gap-1.5">
+                  <service.icon className="h-3.5 w-3.5 text-muted-foreground" />
+                  <p className="text-xs font-medium">
+                    {t(`partner.services.${service.key}.name`)}
+                  </p>
+                </div>
+                <p className="text-xs leading-relaxed text-muted-foreground">
+                  {(
+                    t.raw(
+                      `partner.services.${service.key}.items`
+                    ) as string[]
+                  ).join(" · ")}
+                </p>
+              </div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>

@@ -133,6 +133,41 @@
         "price": "90",
         "suffix": ""
       }
+    },
+    "partner": {
+      "badge": "Partner",
+      "name": "SUSA STUDIO",
+      "subtitle": "Bringen Sie Ihre Marke über den Bildschirm hinaus — vollständige Identität, physische Materialien und kreative Leitung von unserem Budapester Partnerstudio.",
+      "pricing": "Auf Anfrage",
+      "services": {
+        "identity": {
+          "name": "Markenidentität",
+          "items": [
+            "Logo & visuelle Identität",
+            "Individuelle Icons & Illustrationen",
+            "Brand Book & Richtlinien",
+            "Namensfindung & Storytelling"
+          ]
+        },
+        "physical": {
+          "name": "Physische Materialien",
+          "items": [
+            "Visitenkarten & Briefpapier",
+            "Verpackungsdesign",
+            "Banner, Roll-ups & Beschilderung",
+            "Pressewände & Installationen"
+          ]
+        },
+        "direction": {
+          "name": "Art Direction",
+          "items": [
+            "Visuelle Strategie & Konzept",
+            "Kreativleitung",
+            "Design-Qualitätskontrolle",
+            "Auch als Einzelleistung buchbar"
+          ]
+        }
+      }
     }
   },
   "faq": {
