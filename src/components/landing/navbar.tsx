@@ -76,6 +76,13 @@ export function Navbar() {
               <LocaleLink
                 href="/"
                 aria-label="home"
+                onClick={(e) => {
+                  if (pathname === "/") {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }
+                  setMenuState(false);
+                }}
                 className="flex items-center space-x-2"
               >
                 <Logo />

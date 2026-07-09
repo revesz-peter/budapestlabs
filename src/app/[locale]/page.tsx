@@ -6,7 +6,6 @@ import { ContentSection } from "@/components/landing/content-section";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { Comparison } from "@/components/landing/comparison";
 import { Pricing } from "@/components/landing/pricing";
-import { Addons } from "@/components/landing/addons";
 // import { Testimonials } from "@/components/landing/testimonials";
 // import { LatestProject } from "@/components/landing/latest-project";
 import { FAQ } from "@/components/landing/faq";
@@ -94,12 +93,11 @@ export default async function HomePage({
       <JsonLd locale={locale} />
       <Navbar />
       <Hero />
-      <Stats />
       <ContentSection />
+      <Stats />
       <HowItWorks />
       <Comparison />
       <Pricing />
-      <Addons />
       {/* TODO: Add <Testimonials /> back when real testimonials are available */}
       <FAQ />
       <Contact />

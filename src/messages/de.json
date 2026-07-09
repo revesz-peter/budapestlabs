@@ -70,7 +70,7 @@
         "Fertig: 1-2 Tage",
         "3-5 Seiten, auf Ihr Unternehmen zugeschnitten",
         "Sieht auf jedem Gerät gut aus",
-        "Hosting, Domain und E-Mail inklusive",
+        "Hosting und E-Mail inklusive, Domain richten wir ein",
         "Kleine Änderungen jeden Monat inklusive",
         "Ungarisch und Englisch inklusive",
         "Lebenslange Garantie"
@@ -108,31 +108,60 @@
     },
     "disclaimer": "Die angezeigten Preise sind Richtwerte. Der genaue Preis und die Monatsgebühr werden vor dem Start vertraglich festgelegt, ohne Überraschungen."
   },
-  "addons": {
-    "currency": "EUR",
-    "label": "Zusatzoptionen",
-    "title": "Optionale Zusatzleistungen",
-    "subtitle": "Erweitern Sie Ihre Website mit zusätzlichen Funktionen.",
-    "included": "Inklusive",
+  "faq": {
+    "label": "FAQ",
+    "title": "Haben Sie Fragen?",
+    "subtitle": "Kurz und ehrlich beantwortet.",
+    "more": "Noch etwas unklar?",
+    "moreCta": "Schreiben Sie uns, wir antworten innerhalb von 24 Stunden.",
     "items": {
-      "branding": {
-        "name": "Visuelle Ausrichtung & Markendesign",
-        "description": "Individuelles Design für Ihre gesamte Website, abgestimmt auf Ihre Marke",
-        "price": "0",
-        "suffix": ""
+      "cost": {
+        "question": "Was kostet es?",
+        "answer": "Starter 0 € im Voraus plus 49 € im Monat. Business 129 € plus 75 € im Monat. Custom ab 379 € plus ab 125 € im Monat. Der Preis wird vor dem Start vertraglich festgelegt."
       },
-      "multilang": {
-        "name": "Mehrsprachigkeit",
-        "description": "Erreichen Sie internationale Kunden und Touristen in ihrer Sprache",
-        "price": "90",
-        "suffix": ""
+      "pay": {
+        "question": "Wann muss ich zahlen?",
+        "answer": "Erst wenn Sie die fertige Website freigegeben haben. Nicht zufrieden? Wir passen sie an, oder Sie gehen ohne Kosten. Die Monatsgebühr beginnt mit dem Livegang."
+      },
+      "monthly": {
+        "question": "Was deckt die Monatsgebühr ab?",
+        "answer": "Hosting, E-Mail, Sicherheitsupdates und kleine Text- oder Bildänderungen im Monat. Geht etwas kaputt, das wir gebaut haben, reparieren wir es kostenlos."
+      },
+      "domain": {
+        "question": "Sind Hosting und Domain inbegriffen?",
+        "answer": "Hosting und E-Mail sind in der Monatsgebühr enthalten. Um die Domain kümmern wir uns. Nur die geringe jährliche Registrierungsgebühr zahlen Sie, zum Selbstkostenpreis. Vor der Registrierung nennen wir den Betrag."
+      },
+      "term": {
+        "question": "Wie lange bin ich gebunden?",
+        "answer": "Mindestens 12 Monate, danach jederzeit kündbar. Die Website bleibt Ihre. Deshalb ist der Start ab 0 € möglich."
+      },
+      "speed": {
+        "question": "Wie schnell ist die Website fertig?",
+        "answer": "Einfache Websites in 1-2 Tagen, größere in 1-2 Wochen. Den genauen Termin bekommen Sie vor dem Start."
+      },
+      "google": {
+        "question": "Findet man mich bei Google?",
+        "answer": "Ja. Ihre Website ist schnell, mobilfreundlich und suchfreundlich aufgebaut."
+      },
+      "language": {
+        "question": "Kann ich eine weitere Sprache hinzufügen?",
+        "answer": "Ungarisch und Englisch sind von Anfang an dabei. Wenn Sie auch Deutsch oder eine weitere Sprache möchten, bauen wir eine vollständige übersetzte Version: eigene Seiten, Sprachumschalter und Suchsetup. Einmalige Projektgebühr, vertraglich vor dem Start vereinbart."
+      },
+      "tech": {
+        "question": "Welche Technologie nutzen Sie?",
+        "answer": "Wir bauen auf Next.js, React, TypeScript und Tailwind CSS, gehostet auf Vercel mit globalem CDN und SSL. Starter bleibt schlank ohne Datenbank. Business ergänzt Neon und Drizzle für Buchungen und Kundendaten. Custom ergänzt Stripe für Online-Zahlungen. Schnell, sicher und langfristig gepflegt."
+      },
+      "partner": {
+        "question": "Brauche ich Logo oder Drucksachen?",
+        "answer": "Unser Budapester Partner SUSA STUDIO übernimmt Logo, Druck und Art Direction. Preise auf Anfrage."
       }
     },
     "partner": {
       "badge": "Partner",
       "name": "SUSA STUDIO",
-      "subtitle": "Bringen Sie Ihre Marke über den Bildschirm hinaus: vollständige Identität, physische Materialien und kreative Leitung von unserem Budapester Partnerstudio.",
+      "subtitle": "Logo, Drucksachen und Art Direction von unserem Budapester Partnerstudio.",
       "pricing": "Auf Anfrage",
+      "instagram": "Instagram",
       "services": {
         "identity": {
           "name": "Markenidentität",
@@ -164,39 +193,6 @@
       }
     }
   },
-  "faq": {
-    "label": "FAQ",
-    "title": "Haben Sie Fragen?",
-    "subtitle": "Kurz und ehrlich beantwortet.",
-    "more": "Noch etwas unklar?",
-    "moreCta": "Schreiben Sie uns, wir antworten innerhalb von 24 Stunden.",
-    "items": {
-      "cost": {
-        "question": "Was kostet es?",
-        "answer": "Starter kostet 0 € im Voraus plus 49 € im Monat. Business 129 € plus 75 € im Monat, individuelle Projekte ab 379 € plus ab 125 € im Monat. Ihr genauer Preis wird vor dem Start vertraglich festgelegt."
-      },
-      "pay": {
-        "question": "Wann muss ich zahlen?",
-        "answer": "Nichts, bis Ihre Website fertig ist und Sie sie freigegeben haben. Nicht zufrieden? Wir passen sie an, oder Sie gehen und zahlen nichts. Die Monatsgebühr beginnt mit dem Livegang."
-      },
-      "monthly": {
-        "question": "Was deckt die Monatsgebühr ab?",
-        "answer": "Hosting, Domain, E-Mail, Sicherheitsupdates, kleine Inhaltsänderungen und die lebenslange Garantie. Geht etwas kaputt, das wir gebaut haben, reparieren wir es kostenlos."
-      },
-      "term": {
-        "question": "Wie lange bin ich gebunden?",
-        "answer": "Mindestens 12 Monate, danach jederzeit kündbar, und die Website bleibt Ihre. Genau diese langfristige Zusammenarbeit macht den Start ab 0 € möglich."
-      },
-      "speed": {
-        "question": "Wie schnell ist die Website fertig?",
-        "answer": "Einfache Websites in 1-2 Tagen, größere Projekte in 1-2 Wochen. Den genauen Termin bekommen Sie vor dem Start."
-      },
-      "google": {
-        "question": "Findet man mich bei Google?",
-        "answer": "Ja. Ihre Website wird schnell, mobilfreundlich und sauber strukturiert sein: genau das belohnt Google."
-      }
-    }
-  },
   "comparison": {
     "label": "Vergleich",
     "title": "Wie wir uns unterscheiden",
@@ -220,23 +216,17 @@
         "agency": "1.000-5.000 € einmalig",
         "us": "0 € + ab 49 €/Monat"
       },
+      "effort": {
+        "label": "Ihr Aufwand",
+        "diy": "Alles selbst",
+        "agency": "Meetings, Freigaben",
+        "us": "Schnell und mühelos"
+      },
       "quality": {
         "label": "Designqualität",
         "diy": "Standard-Vorlage",
         "agency": "Individuell",
         "us": "Professionell"
-      },
-      "tech": {
-        "label": "Technologie",
-        "diy": "Geschlossene Plattform",
-        "agency": "Oft veraltet",
-        "us": "Neueste & zukunftssicher"
-      },
-      "security": {
-        "label": "Sicherheit",
-        "diy": "Ihre Verantwortung",
-        "agency": "Unterschiedlich",
-        "us": "Vollständig sicher"
       },
       "performance": {
         "label": "Ladegeschwindigkeit",
@@ -256,23 +246,23 @@
         "agency": "Zusatzkosten",
         "us": "Inklusive"
       },
-      "booking": {
-        "label": "Buchung & Zahlungen",
-        "diy": "Zusatzkosten",
-        "agency": "Zusatzkosten",
-        "us": "Integriert"
-      },
-      "effort": {
-        "label": "Ihr Aufwand",
-        "diy": "Alles selbst",
-        "agency": "Meetings, Freigaben",
-        "us": "Schnell und mühelos"
+      "security": {
+        "label": "Sicherheit",
+        "diy": "Ihre Verantwortung",
+        "agency": "Unterschiedlich",
+        "us": "Vollständig sicher"
       },
       "warranty": {
         "label": "Garantie",
         "diy": "Keine",
         "agency": "Unterschiedlich",
         "us": "Lebenslang"
+      },
+      "booking": {
+        "label": "Buchung & Zahlungen",
+        "diy": "Zusatzkosten",
+        "agency": "Zusatzkosten",
+        "us": "Ab Business-Paket"
       }
     }
   },
@@ -332,7 +322,7 @@
     }
   },
   "footer": {
-    "description": "Premium-Websites für Unternehmen. Einmalige Gebühr plus monatliche Betreuung, ohne Überraschungen.",
+    "description": "Premium-Websites für Unternehmen. Ab 0 € Startkosten, monatliche Betreuung inklusive.",
     "navigation": "Navigation",
     "legal": "Rechtliches",
     "privacy": "Datenschutz",
@@ -394,7 +384,7 @@
         },
         "payment": {
           "title": "So funktioniert die Zahlung",
-          "content": "Die auf unserer Website angezeigten Preise sind Richtwerte. Ihre genaue Erstellungsgebühr und die monatliche Betreuungsgebühr werden vor Arbeitsbeginn in einem individuellen Vertrag festgelegt; es gelten die Vertragspreise. Die Erstellungsgebühr wird fällig, wenn Ihre Website fertig ist und Sie sie freigegeben haben. Die monatliche Gebühr beginnt am Tag des Livegangs und umfasst Hosting, Domain, E-Mail, Sicherheitsupdates, kleine Inhaltsänderungen und die lebenslange Garantie. Der Betreuungsvertrag läuft mindestens 12 Monate; danach kann er jederzeit mit einer Frist von 30 Tagen gekündigt werden. Wir akzeptieren Überweisung, Revolut und Barzahlung. Für jede Zahlung erhalten Sie eine ordnungsgemäße Rechnung nach ungarischem Recht."
+          "content": "Die auf unserer Website angezeigten Preise sind Richtwerte. Ihre genaue Erstellungsgebühr und die monatliche Betreuungsgebühr werden vor Arbeitsbeginn in einem individuellen Vertrag festgelegt; es gelten die Vertragspreise. Die Erstellungsgebühr wird fällig, wenn Ihre Website fertig ist und Sie sie freigegeben haben. Die monatliche Gebühr beginnt am Tag des Livegangs und umfasst Hosting, E-Mail, Sicherheitsupdates, kleine Inhaltsänderungen und die lebenslange Garantie. Die Domain wird auf Ihren Namen registriert; ihre jährliche Registrierungsgebühr wird Ihnen zum Selbstkostenpreis berechnet. Der Betreuungsvertrag läuft mindestens 12 Monate; danach kann er jederzeit mit einer Frist von 30 Tagen gekündigt werden. Wir akzeptieren Überweisung, Revolut und Barzahlung. Für jede Zahlung erhalten Sie eine ordnungsgemäße Rechnung nach ungarischem Recht."
         },
         "revisions": {
           "title": "Überarbeitungen",

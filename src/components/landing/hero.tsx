@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
@@ -29,16 +30,30 @@ const transitionVariants: { item: Variants } = {
   },
 };
 
-const stack = [
-  "Next.js",
-  "React",
-  "TypeScript",
-  "Tailwind CSS",
-  "Vercel",
-  "Neon",
-  "Drizzle",
-  "Stripe",
-];
+const backgroundVariants = {
+  container: {
+    visible: {
+      transition: {
+        delayChildren: 1,
+      },
+    },
+  },
+  item: {
+    hidden: {
+      opacity: 0,
+      y: 20,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.3,
+        duration: 2,
+      },
+    },
+  },
+} as const;
 
 export function Hero() {
   const t = useTranslations("hero");
@@ -54,10 +69,24 @@ export function Hero() {
         <div className="h-320 -translate-y-87.5 absolute left-0 top-0 w-60 -rotate-45 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]" />
       </div>
       <section>
-        <div className="relative pt-24 md:pt-36">
+        <div className="relative min-h-[85vh] pt-24 pb-32 md:pt-36 md:pb-48">
+          <AnimatedGroup
+            variants={backgroundVariants}
+            className="mask-y-from-25% mask-y-to-[100%] pointer-events-none absolute inset-x-0 top-32 bottom-0 lg:top-8"
+          >
+            <Image
+              src="/photo-1662285064441-bedb11ca7e47.webp"
+              alt=""
+              width={1344}
+              height={1759}
+              priority
+              className="hidden size-full object-cover object-[50%_22%] mix-blend-overlay dark:block"
+            />
+          </AnimatedGroup>
+
           <div
             aria-hidden
-            className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"
+            className="pointer-events-none absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_88%)]"
           />
 
           <div className="mx-auto max-w-7xl px-6">
@@ -143,20 +172,6 @@ export function Hero() {
                 </Button>
               </AnimatedGroup>
             </div>
-          </div>
-
-        </div>
-      </section>
-      <section className="bg-background pb-16 pt-16 md:pb-32">
-        <div className="relative m-auto max-w-5xl px-6">
-          <div className="mx-auto grid max-w-3xl grid-cols-2 items-center gap-x-8 gap-y-8 sm:grid-cols-4 sm:gap-y-12">
-            {stack.map((name) => (
-              <div key={name} className="flex items-center">
-                <span className="text-muted-foreground mx-auto text-lg font-semibold tracking-tight">
-                  {name}
-                </span>
-              </div>
-            ))}
           </div>
         </div>
       </section>

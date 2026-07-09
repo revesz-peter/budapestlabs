@@ -76,13 +76,11 @@ export function Contact() {
   return (
     <section id="contact" className="py-16 md:py-32">
       <div className="mx-auto max-w-2xl px-6">
-        {/* Header */}
         <div className="mx-auto mb-8 max-w-xl space-y-6 text-center md:mb-16">
           <h2 className="text-4xl font-medium lg:text-5xl">{t("title")}</h2>
           <p>{t("subtitle")}</p>
         </div>
 
-        {/* Form */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -122,8 +120,11 @@ export function Contact() {
               </motion.p>
             </motion.div>
           ) : (
-            <form onSubmit={handleSubmit(onSubmit)} noValidate className="bg-card space-y-6 rounded-2xl border p-8 shadow-sm">
-              {/* Honeypot — invisible to humans, bots fill it in */}
+            <form
+              onSubmit={handleSubmit(onSubmit)}
+              noValidate
+              className="bg-card space-y-6 rounded-2xl border p-8 shadow-sm"
+            >
               <input
                 type="text"
                 tabIndex={-1}

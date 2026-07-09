@@ -68,7 +68,7 @@ Landing page for Budapest Labs — a service delivering professional websites fo
 
 ### Business model & messaging priorities
 
-**Subscription-first pricing (near-zero entry, monthly is the engine):** Starter 0 Ft (€0) up front + 19 900 Ft/mo (€49); Business 49 900 Ft (€129) + 29 900 Ft/mo (€75); Custom from 149 000 Ft (€379) + from 49 900 Ft/mo (€125). Any build fee due only at delivery approval; monthly starts at go-live; 12-month minimum service term, then cancel anytime and the site stays with the client. The monthly fee covers hosting, domain, email, security updates, small content edits, and the lifetime warranty (this funds those recurring obligations). **Honesty rule:** prices on the page are labeled as estimates; exact prices are fixed in the contract. The monthly fee must be disclosed everywhere a price appears (pricing cards, comparison table, contact form options, FAQ, terms).
+**Subscription-first pricing (near-zero entry, monthly is the engine):** Starter 0 Ft (€0) up front + 19 900 Ft/mo (€49); Business 49 900 Ft (€129) + 29 900 Ft/mo (€75); Custom from 149 000 Ft (€379) + from 49 900 Ft/mo (€125). Any build fee due only at delivery approval; monthly starts at go-live; 12-month minimum service term, then cancel anytime and the site stays with the client. The monthly fee covers hosting, email, security updates, small content edits, and the lifetime warranty (this funds those recurring obligations). The domain is a pass-through: registered in the client's name, its small yearly registration fee billed to them at cost (prices vary too much by name to bundle). Domain setup/consultation is included; the registration fee is not. This is disclosed in the FAQ ("domain" item) and the terms payment clause. **Honesty rule:** prices on the page are labeled as estimates; exact prices are fixed in the contract. The monthly fee must be disclosed everywhere a price appears (pricing cards, comparison table, contact form options, FAQ, terms).
 
 The landing page sells on these pillars, in order:
 1. **Premium quality, fast** — custom design, days not weeks (hero headline)
@@ -123,7 +123,7 @@ The landing page is built from **Tailark blocks** (tailark.com, shadcn-style mar
 7. Pricing — Tailark pricing cards (shadcn Card): build fee big, monthly fee in CardDescription (the 12-month term is stated once in the section subtitle, not per card; no info toggle), delivery time as first feature, gradient Popular badge on Business, estimates disclaimer under the grid
 8. Add-ons — branding + multi-language, plus SUSA STUDIO partner block
 9. ~~Testimonials~~ / ~~Latest Project~~ — components kept in `landing/` but not rendered (latest-project.tsx retained for later use; its screenshot now lives in the hero and content sections)
-10. FAQ — 6 open Q&A items (cost, pay, monthly, term, speed, google), two-column, sticky heading left (Tailark faqs-1 pattern), "ask us" link to contact
+10. FAQ — 7 open Q&A items (cost, pay, monthly, domain, term, speed, google), two-column, sticky heading left (Tailark faqs-1 pattern), "ask us" link to contact
 11. Contact — form (name, email, phone, business, plan, message) + hidden honeypot field, card-styled
 12. Footer — brand, navigation, legal (no contact email until a @budapestlabs.com address exists; the gmail address stays in the imprint, privacy/terms pages, and the contact form error fallback)
 

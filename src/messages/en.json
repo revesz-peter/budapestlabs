@@ -70,7 +70,7 @@
                 "Ready: 1-2 days",
                 "3-5 pages, tailored to your business",
                 "Looks great on every phone and computer",
-                "Hosting, domain, and email included",
+                "Hosting and email included, domain set up for you",
                 "Small changes done for you each month",
                 "Hungarian and English versions",
                 "Lifetime warranty"
@@ -108,31 +108,60 @@
         },
         "disclaimer": "Prices shown are estimates. The exact price and monthly fee are fixed in your contract before we start, with no surprises."
     },
-    "addons": {
-        "currency": "EUR",
-        "label": "Add-ons",
-        "title": "Optional add-ons",
-        "subtitle": "Extend your website with additional features.",
-        "included": "Included",
+    "faq": {
+        "label": "FAQ",
+        "title": "Got questions?",
+        "subtitle": "Short, straight answers.",
+        "more": "Something else on your mind?",
+        "moreCta": "Ask us. We reply within 24 hours.",
         "items": {
-            "branding": {
-                "name": "Visual direction & brand design",
-                "description": "Custom design for your entire site with visual direction tailored to your brand",
-                "price": "0",
-                "suffix": ""
+            "cost": {
+                "question": "What does it cost?",
+                "answer": "Starter is €0 up front plus €49 a month. Business is €129 plus €75 a month. Custom from €379 plus from €125 a month. Your price is fixed in the contract before we start."
             },
-            "multilang": {
-                "name": "Multi-language support",
-                "description": "Reach international and tourist customers in their language",
-                "price": "90",
-                "suffix": ""
+            "pay": {
+                "question": "When do I pay?",
+                "answer": "Nothing until you approve the finished site. Not happy? We keep adjusting, or you walk away owing nothing. The monthly fee starts at go-live."
+            },
+            "monthly": {
+                "question": "What does the monthly fee cover?",
+                "answer": "Hosting, email, security updates, and small text or photo changes each month. If something we built breaks, we fix it free."
+            },
+            "domain": {
+                "question": "Is hosting and the domain included?",
+                "answer": "Hosting and email are in your monthly fee. We handle the domain for you. You only pay its small yearly registration fee, at cost. We quote that before anything is registered."
+            },
+            "term": {
+                "question": "How long am I committed?",
+                "answer": "12 months minimum, then cancel anytime. The site stays yours. That is why you can start at €0."
+            },
+            "speed": {
+                "question": "How fast will it be ready?",
+                "answer": "Simple sites in 1-2 days, bigger projects in 1-2 weeks. You get an exact date before we start."
+            },
+            "google": {
+                "question": "Will people find me on Google?",
+                "answer": "Yes. Your site is fast, mobile-friendly, and set up properly for search."
+            },
+            "language": {
+                "question": "Can I add another language?",
+                "answer": "Hungarian and English are included from the start. If you also want German or another language, we add a full translated version with its own pages, language switcher, and search setup. One-time project fee, agreed in your contract before we start."
+            },
+            "tech": {
+                "question": "What technology do you use?",
+                "answer": "We build on Next.js, React, TypeScript, and Tailwind CSS, hosted on Vercel with global CDN and SSL. Starter stays lean with no database. Business adds Neon and Drizzle for bookings and customer data. Custom adds Stripe when you need payments. Fast, secure, and maintained for the long term."
+            },
+            "partner": {
+                "question": "Need a logo or physical materials?",
+                "answer": "Our Budapest partner SUSA STUDIO handles logo, print, and art direction. Pricing on request."
             }
         },
         "partner": {
             "badge": "Partner",
             "name": "SUSA STUDIO",
-            "subtitle": "Take your brand beyond the screen: complete identity, physical materials, and creative direction by our Budapest-based partner studio.",
+            "subtitle": "Logo, print materials, and art direction from our Budapest partner studio.",
             "pricing": "On request",
+            "instagram": "Instagram",
             "services": {
                 "identity": {
                     "name": "Brand Identity",
@@ -164,39 +193,6 @@
             }
         }
     },
-    "faq": {
-        "label": "FAQ",
-        "title": "Got questions?",
-        "subtitle": "Short, straight answers.",
-        "more": "Something else on your mind?",
-        "moreCta": "Ask us. We reply within 24 hours.",
-        "items": {
-            "cost": {
-                "question": "What does it cost?",
-                "answer": "Starter is €0 up front plus €49 a month. Business is €129 plus €75 a month. Custom starts at €379 plus from €125 a month. Your exact price is fixed in the contract before we start."
-            },
-            "pay": {
-                "question": "When do I pay?",
-                "answer": "Nothing until your site is done and you have approved it. Not happy? We keep adjusting, or you walk away and pay nothing. The monthly fee starts at go-live."
-            },
-            "monthly": {
-                "question": "What does the monthly fee cover?",
-                "answer": "Hosting, domain, email, security updates, small content changes, and the lifetime warranty. If anything we built breaks, we fix it for free."
-            },
-            "term": {
-                "question": "How long am I committed?",
-                "answer": "12 months minimum, then you can cancel anytime and the website stays yours. The long-term partnership is exactly why you can start at €0."
-            },
-            "speed": {
-                "question": "How fast will it be ready?",
-                "answer": "Simple sites are ready in 1-2 days, bigger projects in 1-2 weeks. You get an exact date before we start."
-            },
-            "google": {
-                "question": "Will people find me on Google?",
-                "answer": "Yes. Your site will be fast, mobile-friendly, and properly structured: exactly what Google rewards."
-            }
-        }
-    },
     "comparison": {
         "label": "Compare",
         "title": "How we compare",
@@ -220,23 +216,17 @@
                 "agency": "€1,000-5,000 one-off",
                 "us": "€0 up front + from €49/month"
             },
+            "effort": {
+                "label": "Your effort",
+                "diy": "All on you",
+                "agency": "Meetings, approvals",
+                "us": "Quick and effortless"
+            },
             "quality": {
                 "label": "Design quality",
                 "diy": "Generic template",
                 "agency": "Custom",
                 "us": "Professional"
-            },
-            "tech": {
-                "label": "Technology",
-                "diy": "Closed platform",
-                "agency": "Often outdated",
-                "us": "Latest & future-proof"
-            },
-            "security": {
-                "label": "Security",
-                "diy": "Your responsibility",
-                "agency": "Varies",
-                "us": "Fully secure"
             },
             "performance": {
                 "label": "Page speed",
@@ -256,23 +246,23 @@
                 "agency": "Extra cost",
                 "us": "Included"
             },
-            "booking": {
-                "label": "Booking & payments",
-                "diy": "Extra cost",
-                "agency": "Extra cost",
-                "us": "Built-in"
-            },
-            "effort": {
-                "label": "Your effort",
-                "diy": "All on you",
-                "agency": "Meetings, approvals",
-                "us": "Quick and effortless"
+            "security": {
+                "label": "Security",
+                "diy": "Your responsibility",
+                "agency": "Varies",
+                "us": "Fully secure"
             },
             "warranty": {
                 "label": "Warranty",
                 "diy": "None",
                 "agency": "Varies",
                 "us": "Lifetime"
+            },
+            "booking": {
+                "label": "Booking & payments",
+                "diy": "Extra cost",
+                "agency": "Extra cost",
+                "us": "From Business plan"
             }
         }
     },
@@ -332,7 +322,7 @@
         }
     },
     "footer": {
-        "description": "Premium websites for businesses. One-time fee plus monthly care, no surprises.",
+        "description": "Premium websites for businesses. From €0 up front, monthly care included.",
         "navigation": "Navigation",
         "legal": "Legal",
         "privacy": "Privacy Policy",
@@ -394,7 +384,7 @@
                 },
                 "payment": {
                     "title": "How payment works",
-                    "content": "The prices shown on our website are estimates. Your exact build fee and monthly service fee are fixed in an individual contract before work begins, and the contract prices are the ones that apply. The build fee is due once your website is finished and you have approved it. The monthly service fee starts on the day your site goes live and covers hosting, domain, email, security updates, small content changes, and the lifetime warranty. The service agreement runs for a minimum of 12 months; after that it can be cancelled anytime with 30 days' notice. We accept bank transfer, Revolut, and cash. You will receive a proper invoice for every payment, issued in accordance with Hungarian law."
+                    "content": "The prices shown on our website are estimates. Your exact build fee and monthly service fee are fixed in an individual contract before work begins, and the contract prices are the ones that apply. The build fee is due once your website is finished and you have approved it. The monthly service fee starts on the day your site goes live and covers hosting, email, security updates, small content changes, and the lifetime warranty. The domain name is registered in your name, and its yearly registration fee is billed to you at cost. The service agreement runs for a minimum of 12 months; after that it can be cancelled anytime with 30 days' notice. We accept bank transfer, Revolut, and cash. You will receive a proper invoice for every payment, issued in accordance with Hungarian law."
                 },
                 "revisions": {
                     "title": "Revisions",

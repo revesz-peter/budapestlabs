@@ -8,15 +8,14 @@ import { cn } from "@/lib/utils";
 const rowKeys = [
   "delivery",
   "price",
+  "effort",
   "quality",
-  "tech",
-  "security",
   "performance",
   "mobile",
   "seo",
-  "booking",
-  "effort",
+  "security",
   "warranty",
+  "booking",
 ] as const;
 
 // ✓ = clearly positive, − = mediocre/costly, ✗ = bad/absent

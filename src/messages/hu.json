@@ -70,7 +70,7 @@
                 "Elkészül: 1-2 nap",
                 "3-5 oldal, a vállalkozásához igazítva",
                 "Minden telefonon és számítógépen jól mutat",
-                "Üzemeltetés, domain és e-mail cím benne van",
+                "Üzemeltetés és e-mail benne van, a domaint mi állítjuk be",
                 "Kisebb módosítások havonta, díjmentesen",
                 "Magyar és angol nyelven",
                 "Életre szóló garancia"
@@ -108,31 +108,60 @@
         },
         "disclaimer": "Az itt szereplő árak tájékoztató jellegűek. A pontos árat és a havi díjat a kezdés előtt szerződésben rögzítjük, meglepetések nélkül."
     },
-    "addons": {
-        "currency": "HUF",
-        "label": "Kiegészítők",
-        "title": "Opcionális kiegészítők",
-        "subtitle": "Bővítse weboldalát további funkciókkal.",
-        "included": "Az ár tartalmazza",
+    "faq": {
+        "label": "GYIK",
+        "title": "Kérdései vannak?",
+        "subtitle": "Röviden és egyenesen.",
+        "more": "Más kérdése van?",
+        "moreCta": "Írjon nekünk, 24 órán belül válaszolunk.",
         "items": {
-            "branding": {
-                "name": "Vizuális irány & arculati dizájn",
-                "description": "Egyedi dizájn az egész weboldalhoz, az Ön márkájához igazított vizuális irányvonallal",
-                "price": "0",
-                "suffix": ""
+            "cost": {
+                "question": "Mennyibe kerül?",
+                "answer": "A Kezdő 0 Ft belépővel indul, havi 19 900 Ft-ért. A Business 49 900 Ft plusz havi 29 900 Ft, az egyedi projektek 149 000 Ft-tól és havi 49 900 Ft-tól. A pontos árat a kezdés előtt szerződésben rögzítjük."
             },
-            "multilang": {
-                "name": "Többnyelvű támogatás",
-                "description": "Érje el a nemzetközi és turista ügyfeleket saját nyelvükön",
-                "price": "36 000",
-                "suffix": ""
+            "pay": {
+                "question": "Mikor kell fizetnem?",
+                "answer": "Semmit, amíg a kész oldalt jóvá nem hagyja. Nem tetszik? Addig alakítjuk, amíg igen, vagy elengedjük, és nem tartozik semmivel. A havi díj az élesítéstől indul."
+            },
+            "monthly": {
+                "question": "Mit tartalmaz a havi díj?",
+                "answer": "Üzemeltetés, e-mail, biztonsági frissítések és kisebb szöveg- vagy képfrissítések havonta. Ha valami, amit építettünk, elromlik, ingyen javítjuk."
+            },
+            "domain": {
+                "question": "Benne van a tárhely és a domain?",
+                "answer": "A tárhely és az e-mail benne van a havi díjban. A domaint mi intézzük. Csak a domain név csekély éves díját fizeti Ön, önköltségen. A regisztráció előtt megmondjuk."
+            },
+            "term": {
+                "question": "Meddig szól a szerződés?",
+                "answer": "Legalább 12 hónapra, utána bármikor lemondható. Az oldal az Öné marad. Emiatt indulhat akár 0 Ft-ról."
+            },
+            "speed": {
+                "question": "Milyen gyorsan készül el?",
+                "answer": "Egyszerűbb oldal 1-2 nap, nagyobb projekt 1-2 hét. Pontos dátumot a kezdés előtt kap."
+            },
+            "google": {
+                "question": "Megtalálnak a Google-ben?",
+                "answer": "Igen. Az oldala gyors, mobilbarát és keresőbarát módon készül."
+            },
+            "language": {
+                "question": "Kérhetek még egy nyelvet?",
+                "answer": "Magyar és angol alapból benne van. Ha németet vagy más nyelvet is szeretne, teljes fordított változatot készítünk: saját oldalak, nyelvváltó és keresőbeállítás. Egyszeri projektdíj, a kezdés előtt szerződésben rögzítve."
+            },
+            "tech": {
+                "question": "Milyen technológiával dolgoznak?",
+                "answer": "Next.js, React, TypeScript és Tailwind CSS alapon dolgozunk, Vercel tárhelyen, globális CDN-nel és SSL-lel. A Kezdő csomag adatbázis nélkül marad. A Business Neon és Drizzle adatbázist kap foglalásokhoz és ügyféladatokhoz. Egyedi projektnél Stripe jön online fizetéshez. Gyors, biztonságos, hosszú távon karbantartva."
+            },
+            "partner": {
+                "question": "Kell logó vagy nyomtatott anyag?",
+                "answer": "Budapesti partnerünk, a SUSA STUDIO logót, nyomtatott anyagokat és art directiont készít. Az ár egyedi megállapodás szerint."
             }
         },
         "partner": {
             "badge": "Partner",
             "name": "SUSA STUDIO",
-            "subtitle": "Vigye márkáját a képernyőn túlra: teljes arculat, fizikai anyagok és kreatív irányítás budapesti partnerstúdiónktól.",
+            "subtitle": "Logó, nyomtatott anyagok és art direction budapesti partnerstúdiónktól.",
             "pricing": "Egyedi árazás",
+            "instagram": "Instagram",
             "services": {
                 "identity": {
                     "name": "Arculattervezés",
@@ -164,39 +193,6 @@
             }
         }
     },
-    "faq": {
-        "label": "GYIK",
-        "title": "Kérdései vannak?",
-        "subtitle": "Röviden és egyenesen.",
-        "more": "Más kérdése van?",
-        "moreCta": "Írjon nekünk, 24 órán belül válaszolunk.",
-        "items": {
-            "cost": {
-                "question": "Mennyibe kerül?",
-                "answer": "A Kezdő 0 Ft belépővel indul, havi 19 900 Ft-ért. A Business 49 900 Ft plusz havi 29 900 Ft, az egyedi projektek 149 000 Ft-tól és havi 49 900 Ft-tól indulnak. A pontos árat a kezdés előtt szerződésben rögzítjük."
-            },
-            "pay": {
-                "question": "Mikor kell fizetnem?",
-                "answer": "Semmit, amíg az oldal el nem készült és Ön jóvá nem hagyta. Nem tetszik? Addig alakítjuk, amíg igen, vagy egyszerűen elköszönünk, és nem fizet semmit. A havi díj az élesítéstől indul."
-            },
-            "monthly": {
-                "question": "Mit tartalmaz a havi díj?",
-                "answer": "Üzemeltetés, domain, e-mail, biztonsági frissítések, kisebb tartalmi módosítások és az életre szóló garancia. Ha valami, amit építettünk, elromlik, ingyen javítjuk."
-            },
-            "term": {
-                "question": "Meddig szól a szerződés?",
-                "answer": "Legalább 12 hónapra, utána bármikor lemondhatja, és a weboldal az Öné marad. Pont a hosszú távú együttműködés miatt indulhat akár 0 Ft-ról."
-            },
-            "speed": {
-                "question": "Milyen gyorsan készül el?",
-                "answer": "Egy egyszerűbb oldal 1-2 nap, a nagyobb projektek 1-2 hét alatt készülnek el. Pontos dátumot a kezdés előtt kap."
-            },
-            "google": {
-                "question": "Megtalálnak a Google-ben?",
-                "answer": "Igen. Az oldala gyors, mobilbarát és jól strukturált lesz: pontosan ezt jutalmazza a Google."
-            }
-        }
-    },
     "comparison": {
         "label": "Összehasonlítás",
         "title": "Budapest Labs vs A többiek",
@@ -220,23 +216,17 @@
                 "agency": "400 ezer-2M Ft egyszeri",
                 "us": "0 Ft belépő + havi 19 900 Ft-tól"
             },
+            "effort": {
+                "label": "Ráfordítás",
+                "diy": "Minden az Ön terhe",
+                "agency": "Megbeszélések, jóváhagyások",
+                "us": "Gyors és egyszerű"
+            },
             "quality": {
                 "label": "Dizájn minőség",
                 "diy": "Sablon",
                 "agency": "Egyedi",
                 "us": "Professzionális"
-            },
-            "tech": {
-                "label": "Technológia",
-                "diy": "Zárt platform",
-                "agency": "Gyakran elavult",
-                "us": "Legmodernebb és jövőálló"
-            },
-            "security": {
-                "label": "Biztonság",
-                "diy": "Az Ön felelőssége",
-                "agency": "Változó",
-                "us": "Teljes védelem"
             },
             "performance": {
                 "label": "Betöltési sebesség",
@@ -256,23 +246,23 @@
                 "agency": "Külön költség",
                 "us": "Tartalmazza"
             },
-            "booking": {
-                "label": "Foglalás és fizetés",
-                "diy": "Külön költség",
-                "agency": "Külön költség",
-                "us": "Beépített"
-            },
-            "effort": {
-                "label": "Ráfordítás",
-                "diy": "Minden az Ön terhe",
-                "agency": "Megbeszélések, jóváhagyások",
-                "us": "Gyors és egyszerű"
+            "security": {
+                "label": "Biztonság",
+                "diy": "Az Ön felelőssége",
+                "agency": "Változó",
+                "us": "Teljes védelem"
             },
             "warranty": {
                 "label": "Garancia",
                 "diy": "Nincs",
                 "agency": "Változó",
                 "us": "Életre szóló"
+            },
+            "booking": {
+                "label": "Foglalás és fizetés",
+                "diy": "Külön költség",
+                "agency": "Külön költség",
+                "us": "Business csomagtól"
             }
         }
     },
@@ -332,7 +322,7 @@
         }
     },
     "footer": {
-        "description": "Prémium weboldalak vállalkozásoknak. Egyszeri díj plusz havi üzemeltetés, meglepetések nélkül.",
+        "description": "Prémium weboldalak vállalkozásoknak. 0 Ft belépőtől, havi üzemeltetéssel.",
         "navigation": "Navigáció",
         "legal": "Jogi",
         "privacy": "Adatvédelem",
@@ -394,7 +384,7 @@
                 },
                 "payment": {
                     "title": "Hogyan működik a fizetés",
-                    "content": "A weboldalunkon feltüntetett árak tájékoztató jellegűek. A pontos kivitelezési díjat és a havi üzemeltetési díjat a munka megkezdése előtt egyedi szerződésben rögzítjük, és a szerződésben szereplő árak az irányadók. A kivitelezés díja akkor esedékes, amikor a weboldal elkészült és Ön jóváhagyta. A havi üzemeltetési díj az élesítés napjától indul, és tartalmazza az üzemeltetést, a domaint, az e-mailt, a biztonsági frissítéseket, a kisebb tartalmi módosításokat és az életre szóló garanciát. Az üzemeltetési szerződés legalább 12 hónapra szól; utána bármikor, 30 napos felmondási idővel megszüntethető. Átutalást, Revolutot és készpénzt fogadunk el. Minden fizetésről a magyar jogszabályoknak megfelelő számlát állítunk ki."
+                    "content": "A weboldalunkon feltüntetett árak tájékoztató jellegűek. A pontos kivitelezési díjat és a havi üzemeltetési díjat a munka megkezdése előtt egyedi szerződésben rögzítjük, és a szerződésben szereplő árak az irányadók. A kivitelezés díja akkor esedékes, amikor a weboldal elkészült és Ön jóváhagyta. A havi üzemeltetési díj az élesítés napjától indul, és tartalmazza az üzemeltetést, az e-mailt, a biztonsági frissítéseket, a kisebb tartalmi módosításokat és az életre szóló garanciát. A domain nevet az Ön nevére regisztráljuk, éves díját önköltségi áron Önnek számlázzuk. Az üzemeltetési szerződés legalább 12 hónapra szól; utána bármikor, 30 napos felmondási idővel megszüntethető. Átutalást, Revolutot és készpénzt fogadunk el. Minden fizetésről a magyar jogszabályoknak megfelelő számlát állítunk ki."
                 },
                 "revisions": {
                     "title": "Módosítások",
