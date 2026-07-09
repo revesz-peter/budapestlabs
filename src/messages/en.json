@@ -8,10 +8,10 @@
     "hero": {
         "badge": "€0 up front, from €49/month",
         "title": "A premium website, within days.",
-        "subtitle": "Custom design, lightning fast, and we handle everything. You only pay when you're happy.",
+        "subtitle": "Custom design on the latest technology.\nYou only pay when you're happy.",
         "cta": "Get Started",
         "demo": "Free Consultation",
-        "stackLabel": "The stack behind your site"
+        "stackLabel": "Built with"
     },
     "stats": {
         "title": "Budapest Labs in numbers",
@@ -102,15 +102,11 @@
             },
             "pay": {
                 "question": "When do I pay?",
-                "answer": "Nothing until you approve the finished site. Not happy? We keep adjusting, or you walk away owing nothing. The monthly fee starts at go-live."
+                "answer": "The build fee is due when you approve the finished site. The monthly fee starts at go-live, billed each month. Until you approve, you owe nothing."
             },
             "monthly": {
-                "question": "What does the monthly fee cover?",
-                "answer": "Hosting, email, security updates, and small text or photo changes each month. If something we built breaks, we fix it free."
-            },
-            "domain": {
-                "question": "Is hosting and the domain included?",
-                "answer": "Hosting and email are in your monthly fee. We handle the domain for you. You only pay its small yearly registration fee, at cost. We quote that before anything is registered."
+                "question": "What does the monthly fee include?",
+                "answer": "The monthly fee is the cost of development and covers operation for the contracted period, with little or nothing up front. Domain and any paid extras are discussed and written into your contract. If anything breaks, we fix it free."
             },
             "term": {
                 "question": "How long am I committed?",
@@ -120,12 +116,8 @@
                 "question": "How fast will it be ready?",
                 "answer": "Simple sites in 1-2 days, bigger projects in 1-2 weeks. You get an exact date before we start."
             },
-            "google": {
-                "question": "Will people find me on Google?",
-                "answer": "Yes. Your site is fast, mobile-friendly, and set up properly for search."
-            },
             "language": {
-                "question": "Can I add another language?",
+                "question": "Can additional languages be added to the site?",
                 "answer": "Hungarian and English are included from the start. If you also want German or another language, we add a full translated version with its own pages, language switcher, and search setup. One-time project fee, agreed in your contract before we start."
             },
             "tech": {
@@ -208,6 +200,12 @@
                 "diy": "Generic template",
                 "agency": "Custom",
                 "us": "Professional"
+            },
+            "tech": {
+                "label": "Technology",
+                "diy": "Outdated platform",
+                "agency": "Varies",
+                "us": "Latest & future-proof"
             },
             "performance": {
                 "label": "Page speed",

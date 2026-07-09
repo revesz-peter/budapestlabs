@@ -8,10 +8,10 @@
   "hero": {
     "badge": "0 € Startkosten, ab 49 €/Monat",
     "title": "Premium-Website, in wenigen Tagen.",
-    "subtitle": "Individuelles Design, blitzschnell, und wir kümmern uns um alles. Sie zahlen erst, wenn Sie zufrieden sind.",
+    "subtitle": "Individuelles Design mit neuester Technologie.\nSie zahlen erst, wenn Sie zufrieden sind.",
     "cta": "Jetzt starten",
     "demo": "Kostenlose Beratung",
-    "stackLabel": "Der Stack hinter Ihrer Website"
+    "stackLabel": "Gebaut mit"
   },
   "stats": {
     "title": "Budapest Labs in Zahlen",
@@ -102,15 +102,11 @@
       },
       "pay": {
         "question": "Wann muss ich zahlen?",
-        "answer": "Erst wenn Sie die fertige Website freigegeben haben. Nicht zufrieden? Wir passen sie an, oder Sie gehen ohne Kosten. Die Monatsgebühr beginnt mit dem Livegang."
+        "answer": "Die Erstellungsgebühr ist bei Freigabe fällig. Die Monatsgebühr beginnt mit dem Livegang, monatlich. Vor der Freigabe schulden Sie nichts."
       },
       "monthly": {
-        "question": "Was deckt die Monatsgebühr ab?",
-        "answer": "Hosting, E-Mail, Sicherheitsupdates und kleine Text- oder Bildänderungen im Monat. Geht etwas kaputt, das wir gebaut haben, reparieren wir es kostenlos."
-      },
-      "domain": {
-        "question": "Sind Hosting und Domain inbegriffen?",
-        "answer": "Hosting und E-Mail sind in der Monatsgebühr enthalten. Um die Domain kümmern wir uns. Nur die geringe jährliche Registrierungsgebühr zahlen Sie, zum Selbstkostenpreis. Vor der Registrierung nennen wir den Betrag."
+        "question": "Was ist in der Monatsgebühr enthalten?",
+        "answer": "Die Monatsgebühr ist die Entwicklungskosten und deckt den Betrieb für die vereinbarte Laufzeit ab, mit wenig oder nichts im Voraus. Domain und kostenpflichtige Sonderwünsche besprechen und vereinbaren wir schriftlich im Vertrag. Geht etwas kaputt, reparieren wir es kostenlos."
       },
       "term": {
         "question": "Wie lange bin ich gebunden?",
@@ -120,12 +116,8 @@
         "question": "Wie schnell ist die Website fertig?",
         "answer": "Einfache Websites in 1-2 Tagen, größere in 1-2 Wochen. Den genauen Termin bekommen Sie vor dem Start."
       },
-      "google": {
-        "question": "Findet man mich bei Google?",
-        "answer": "Ja. Ihre Website ist schnell, mobilfreundlich und suchfreundlich aufgebaut."
-      },
       "language": {
-        "question": "Kann ich eine weitere Sprache hinzufügen?",
+        "question": "Sind weitere Sprachen für die Website möglich?",
         "answer": "Ungarisch und Englisch sind von Anfang an dabei. Wenn Sie auch Deutsch oder eine weitere Sprache möchten, bauen wir eine vollständige übersetzte Version: eigene Seiten, Sprachumschalter und Suchsetup. Einmalige Projektgebühr, vertraglich vor dem Start vereinbart."
       },
       "tech": {
@@ -208,6 +200,12 @@
         "diy": "Standard-Vorlage",
         "agency": "Individuell",
         "us": "Professionell"
+      },
+      "tech": {
+        "label": "Technologie",
+        "diy": "Veraltete Plattform",
+        "agency": "Unterschiedlich",
+        "us": "Neueste, zukunftssicher"
       },
       "performance": {
         "label": "Ladegeschwindigkeit",

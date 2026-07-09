@@ -10,6 +10,7 @@ const rowKeys = [
   "price",
   "effort",
   "quality",
+  "tech",
   "performance",
   "mobile",
   "seo",

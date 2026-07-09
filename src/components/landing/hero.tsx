@@ -184,10 +184,12 @@ export function Hero() {
       <section className="bg-background py-6">
         <div className="group relative m-auto max-w-7xl px-6">
           <div className="flex flex-col items-center md:flex-row">
-            <div className="md:max-w-44 md:border-r md:pr-6">
-              <p className="text-center text-sm md:text-end">{t("stackLabel")}</p>
+            <div className="shrink-0 md:border-r md:pr-6">
+              <p className="text-center text-sm whitespace-nowrap md:text-end">
+                {t("stackLabel")}
+              </p>
             </div>
-            <div className="relative w-full py-6 md:w-[calc(100%-11rem)]">
+            <div className="relative w-full py-6 md:min-w-0 md:flex-1">
               <InfiniteSlider speedOnHover={20} speed={40} gap={112}>
                 {stackBrands.map((name) => (
                   <StackWordmark key={name} name={name} />

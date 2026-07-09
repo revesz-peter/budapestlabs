@@ -8,10 +8,10 @@
     "hero": {
         "badge": "0 Ft belépő, havi 19 900 Ft-tól",
         "title": "Prémium weboldal, napokon belül.",
-        "subtitle": "Egyedi dizájn, villámgyors oldal, és mindent mi intézünk. Csak akkor fizet, ha elégedett.",
+        "subtitle": "Egyedi dizájn, a legmodernebb technológián.\nCsak akkor fizet, ha elégedett.",
         "cta": "Kezdjük el",
         "demo": "Ingyenes konzultáció",
-        "stackLabel": "Az oldal mögötti stack"
+        "stackLabel": "Ezekkel dolgozunk"
     },
     "stats": {
         "title": "Budapest Labs számokban",
@@ -102,15 +102,11 @@
             },
             "pay": {
                 "question": "Mikor kell fizetnie?",
-                "answer": "Semmit, amíg a kész oldalt jóvá nem hagyja. Nem tetszik? Addig alakítjuk, amíg igen, vagy elengedjük, és nem tartozik semmivel. A havi díj az élesítéstől indul."
+                "answer": "A kivitelezés díját jóváhagyáskor, a havi díjat az élesítéstől fizeti, havonta. Jóváhagyás előtt nem tartozik semmivel."
             },
             "monthly": {
                 "question": "Mit tartalmaz a havi díj?",
-                "answer": "Üzemeltetés, e-mail, biztonsági frissítések és kisebb szöveg- vagy képfrissítések havonta. Ha valami, amit építettünk, elromlik, ingyen javítjuk."
-            },
-            "domain": {
-                "question": "Benne van a tárhely és a domain?",
-                "answer": "A tárhely és az e-mail benne van a havi díjban. A domaint mi intézzük. Csak a domain név csekély éves díját fizeti Ön, önköltségen. A regisztráció előtt megmondjuk."
+                "answer": "A havi díj maga a fejlesztés költsége, és a megkötött időszakra az üzemeltetést is fedezi, kevés vagy nulla előleggel. A domain és minden fizetős extra kérés külön megbeszélés után kerül a szerződésbe. Ha bármi elromlik, ingyen javítjuk."
             },
             "term": {
                 "question": "Meddig szól a szerződés?",
@@ -120,12 +116,8 @@
                 "question": "Milyen gyorsan készül el?",
                 "answer": "Egyszerűbb oldal 1-2 nap, nagyobb projekt 1-2 hét. Pontos dátumot a kezdés előtt kap."
             },
-            "google": {
-                "question": "Megtalálnak a Google-ben?",
-                "answer": "Igen. Az oldala gyors, mobilbarát és keresőbarát módon készül."
-            },
             "language": {
-                "question": "Kérhet még egy nyelvet?",
+                "question": "További nyelvek igényelhetők az oldalra?",
                 "answer": "Magyar és angol alapból benne van. Ha németet vagy más nyelvet is szeretne, teljes fordított változatot készítünk: saját oldalak, nyelvváltó és keresőbeállítás. Egyszeri projektdíj, a kezdés előtt szerződésben rögzítve."
             },
             "tech": {
@@ -208,6 +200,12 @@
                 "diy": "Sablon",
                 "agency": "Egyedi",
                 "us": "Professzionális"
+            },
+            "tech": {
+                "label": "Technológia",
+                "diy": "Elavult platform",
+                "agency": "Változó",
+                "us": "Legmodernebb, jövőálló"
             },
             "performance": {
                 "label": "Betöltési sebesség",
