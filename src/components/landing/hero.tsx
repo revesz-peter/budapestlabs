@@ -19,9 +19,13 @@ const stackBrands = [
   "React",
   "TypeScript",
   "Tailwind CSS",
+  "shadcn/ui",
+  "Framer Motion",
   "Vercel",
   "Neon",
-  "Drizzle",
+  "Better Auth",
+  "Resend",
+  "Cal.com",
   "Stripe",
 ] as const;
 
