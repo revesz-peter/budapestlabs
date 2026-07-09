@@ -1,25 +1,37 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
 import { ThemeProvider } from "next-themes";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "@/app/globals.css";
 
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 const metaByLocale: Record<string, { title: string; description: string }> = {
   hu: {
     title: "Budapest Labs",
     description:
-      "Professzionális, mobilbarát weboldalak — 6 órán belül elkészítve. Starter csomagtól a Pro-ig.",
+      "Prémium weboldal napokon belül, 0 Ft belépővel, havi 19 900 Ft-tól. Tervezés, kivitelezés és üzemeltetés egy kézből.",
   },
   en: {
     title: "Budapest Labs",
     description:
-      "Professional, mobile-friendly websites — delivered within 6 hours. From Starter to Pro plans.",
+      "A premium website within days, €0 up front, from €49/month. Design, build, and hosting in one place.",
   },
   de: {
     title: "Budapest Labs",
     description:
-      "Professionelle, mobilfreundliche Websites — geliefert innerhalb von 6 Stunden. Vom Starter- bis zum Custom-Paket.",
+      "Eine Premium-Website in wenigen Tagen, 0 € Startkosten, ab 49 €/Monat. Design, Umsetzung und Hosting aus einer Hand.",
   },
 };
 
@@ -32,7 +44,10 @@ export async function generateMetadata({
   const meta = metaByLocale[locale] ?? metaByLocale.hu;
 
   return {
-    title: meta.title,
+    title: {
+      default: meta.title,
+      template: "%s | Budapest Labs",
+    },
     description: meta.description,
     metadataBase: new URL("https://budapestlabs.com"),
     alternates: {
@@ -46,7 +61,7 @@ export async function generateMetadata({
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: "https://budapestlabs.com",
+      url: locale === "hu" ? "/" : `/${locale}`,
       siteName: "Budapest Labs",
       locale: locale === "hu" ? "hu_HU" : locale === "de" ? "de_DE" : "en_US",
       type: "website",
@@ -76,16 +91,12 @@ export default async function LocaleLayout({
     notFound();
   }
 
+  setRequestLocale(locale);
+
   const messages = (await import(`@/messages/${locale}.json`)).default;
 
   return (
-    <html lang={locale} suppressHydrationWarning>
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang={locale} className={inter.variable} suppressHydrationWarning>
       <body className="min-h-screen bg-background text-foreground antialiased">
         <ThemeProvider
           attribute="class"

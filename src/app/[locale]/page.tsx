@@ -1,12 +1,14 @@
+import { setRequestLocale } from "next-intl/server";
 import { Navbar } from "@/components/landing/navbar";
 import { Hero } from "@/components/landing/hero";
 import { Stats } from "@/components/landing/stats";
-import { LatestProject } from "@/components/landing/latest-project";
+import { ContentSection } from "@/components/landing/content-section";
 import { HowItWorks } from "@/components/landing/how-it-works";
 import { Comparison } from "@/components/landing/comparison";
 import { Pricing } from "@/components/landing/pricing";
 import { Addons } from "@/components/landing/addons";
 // import { Testimonials } from "@/components/landing/testimonials";
+// import { LatestProject } from "@/components/landing/latest-project";
 import { FAQ } from "@/components/landing/faq";
 import { Contact } from "@/components/landing/contact";
 import { Footer } from "@/components/landing/footer";
@@ -37,7 +39,7 @@ async function JsonLd({ locale }: { locale: string }) {
       addressLocality: "Budapest",
       addressCountry: "HU",
     },
-    priceRange: "€450–€1990",
+    priceRange: locale === "hu" ? "0 Ft belépő + havi 19 900 Ft-tól" : "€0 up front + from €49/month",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -85,6 +87,7 @@ export default async function HomePage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  setRequestLocale(locale);
 
   return (
     <main>
@@ -92,20 +95,13 @@ export default async function HomePage({
       <Navbar />
       <Hero />
       <Stats />
-      <div className="border-t border-border" />
+      <ContentSection />
       <HowItWorks />
-      <div className="border-t border-border" />
       <Comparison />
-      <div className="border-t border-border" />
       <Pricing />
-      <div className="border-t border-border" />
       <Addons />
-      <div className="border-t border-border" />
-      <LatestProject />
-      <div className="border-t border-border" />
       {/* TODO: Add <Testimonials /> back when real testimonials are available */}
       <FAQ />
-      <div className="border-t border-border" />
       <Contact />
       <Footer />
     </main>

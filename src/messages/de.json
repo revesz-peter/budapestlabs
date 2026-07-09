@@ -7,36 +7,28 @@
     "recentWork": "Projekte"
   },
   "hero": {
-    "badge": "Modern, sicher, schnell",
-    "title": "Ihre Website in 6 Stunden.",
-    "subtitle": "Verlieren Sie keine Kunden mehr durch eine veraltete Website. Erhalten Sie eine sichere, blitzschnelle Seite — und zahlen Sie erst, wenn Sie zufrieden sind.",
+    "badge": "0 € Startkosten, ab 49 €/Monat",
+    "title": "Premium-Website, in wenigen Tagen.",
+    "subtitle": "Individuelles Design, blitzschnell, und wir kümmern uns um alles. Sie zahlen erst, wenn Sie zufrieden sind.",
     "cta": "Jetzt starten",
-    "demo": "Kostenlose Beratung",
-    "trust": {
-      "payAfter": "Zahlung erst nach Lieferung",
-      "delivery": "≤6 Stunden Lieferzeit",
-      "secure": "Verschlüsselt & sicher",
-      "revision": "Kostenlose Überarbeitung inklusive",
-      "warranty": "Lebenslange Garantie"
-    }
+    "demo": "Kostenlose Beratung"
   },
   "stats": {
-    "experience": "Jahre an internationalen Enterprise-Projekten",
-    "delivery": "durchschnittliche Lieferzeit",
-    "satisfaction": "Kundenzufriedenheit",
-    "lighthouse": "Lighthouse-Bewertung",
-    "loadTime": "Ladezeit",
-    "uptime": "Verfügbarkeitsgarantie"
+    "title": "Budapest Labs in Zahlen",
+    "subtitle": "Erfahrung, Tempo und zufriedene Kunden.",
+    "experience": "Jahre auf internationalen Projekten",
+    "delivery": "durchschnittliche Antwortzeit",
+    "satisfaction": "Kundenzufriedenheit"
   },
   "latestProject": {
     "label": "Projekte",
     "title": "Aktuelles Projekt",
-    "subtitle": "Eine Model-Management-Website, gestaltet für Kreativität.",
+    "subtitle": "Gebaut für eine Budapester Model-Agentur.",
     "projects": {
       "mamormodels": {
         "name": "Mamor Models",
         "industry": "Model Management",
-        "description": "Eine elegante, moderne Website für eine Budapester Model-Management-Agentur. Entwickelt, um Talent mit Eleganz und Geschwindigkeit zu präsentieren.",
+        "description": "Eine elegante, schnelle Website, die das Talent in den Mittelpunkt stellt.",
         "cta": "Website besuchen"
       }
     }
@@ -44,11 +36,11 @@
   "howItWorks": {
     "label": "Ablauf",
     "title": "Vier einfache Schritte",
-    "subtitle": "Von der Bestellung bis zur fertigen Website — innerhalb von 6 Stunden.",
+    "subtitle": "Von der ersten Nachricht zur fertigen Website in wenigen Tagen.",
     "steps": {
       "choose": {
         "title": "Kontakt aufnehmen",
-        "description": "Füllen Sie das Formular aus — erzählen Sie uns von Ihrem Unternehmen und was Sie brauchen."
+        "description": "Füllen Sie das Formular aus und sagen Sie uns, was Sie brauchen."
       },
       "content": {
         "title": "Details abstimmen",
@@ -56,63 +48,65 @@
       },
       "build": {
         "title": "Wir bauen es",
-        "description": "Unser Team legt sofort los — schnell, sicher, professionelles Ergebnis."
+        "description": "Unser Team legt sofort los. Schnell, sicher, professionell."
       },
       "launch": {
         "title": "Online gehen",
-        "description": "Ihre Website ist fertig — Sie prüfen sie, geben sie frei, und sie ist live für Ihre Kunden."
+        "description": "Sie prüfen die Website, geben sie frei, und sie ist live für Ihre Kunden."
       }
     }
   },
   "pricing": {
     "label": "Preise",
-    "title": "Einfache, transparente Preise",
-    "subtitle": "Hosting, mobilfreundliches Design und der komplette Aufbau inklusive. Nur 10% Anzahlung — den Rest erst, wenn Sie zufrieden sind.",
-    "currency": "EUR",
+    "title": "Einfache, ehrliche Preise",
+    "subtitle": "Wenig oder nichts im Voraus, plus monatliche Betreuung für mindestens 12 Monate. Eine Erstellungsgebühr zahlen Sie erst bei Lieferung.",
     "choosePlan": "Paket wählen",
     "popular": "Beliebt",
     "starter": {
       "name": "Starter",
-      "price": "450",
-      "delivery": "Lieferung: ≤6 Stunden",
-      "description": "Professionelle Website für jedes Vorhaben",
+      "price": "0 €",
+      "description": "Eine klare, professionelle Website",
       "features": [
-        "3–5 Seiten (Startseite, Über uns, Leistungen, Kontakt)",
-        "Auf Ihre Branche zugeschnitten",
-        "Mobilfreundliches Design",
-        "Sicheres Hosting & Deployment",
-        "Eigene Domain + E-Mail-Einrichtung inklusive",
-        "Ungarisch und Englisch inklusive"
-      ]
+        "Fertig: 1-2 Tage",
+        "3-5 Seiten, auf Ihr Unternehmen zugeschnitten",
+        "Sieht auf jedem Gerät gut aus",
+        "Hosting, Domain und E-Mail inklusive",
+        "Kleine Änderungen jeden Monat inklusive",
+        "Ungarisch und Englisch inklusive",
+        "Lebenslange Garantie"
+      ],
+      "monthly": "+ 49 €/Monat Betreuung"
     },
     "business": {
       "name": "Business",
-      "price": "950",
-      "delivery": "Lieferung: 1–2 Tage",
-      "description": "Buchung, Benachrichtigungen & mehr",
+      "price": "129 €",
+      "description": "Buchung, Benachrichtigungen und mehr",
       "features": [
+        "Fertig: 3-5 Tage",
         "Alles im Starter-Paket, plus:",
-        "6–10 Seiten",
-        "Buchungs- / Terminsystem",
-        "Google Maps Einbettung",
+        "6-10 Seiten",
+        "Online-Buchungssystem",
+        "Google Maps und Wegbeschreibung",
         "Automatische E-Mail-Benachrichtigungen",
-        "Analytics-Integration"
-      ]
+        "Besucherstatistiken"
+      ],
+      "monthly": "+ 75 €/Monat Betreuung"
     },
     "pro": {
       "name": "Custom",
-      "price": "1.990",
-      "delivery": "Lieferung: 3–5 Tage",
-      "description": "Komplett individuelle Lösung — alles ist möglich",
+      "price": "ab 379 €",
+      "description": "Komplett individuell, alles ist möglich",
       "features": [
+        "Fertig: 1-2 Wochen",
         "Alles im Business-Paket, plus:",
-        "Webshop, Agentur-Seite, Markenseite — alles",
-        "Individuelle Funktionen für Ihre spezifischen Anforderungen",
+        "Webshop, Agentur-Seite, Markenseite, alles",
+        "Individuelle Funktionen für Ihre Anforderungen",
         "Online-Zahlungen akzeptieren",
-        "Prioritäts-Support",
-        "Gebaut mit der gleichen Technologie, der Top-Agenturen und Branchenführer vertrauen"
-      ]
-    }
+        "Prioritäts-Support"
+      ],
+      "monthly": "+ ab 125 €/Monat Betreuung"
+    },
+    "disclaimer": "Die angezeigten Preise sind Richtwerte. Der genaue Preis und die Monatsgebühr werden vor dem Start vertraglich festgelegt, ohne Überraschungen."
   },
   "addons": {
     "currency": "EUR",
@@ -137,7 +131,7 @@
     "partner": {
       "badge": "Partner",
       "name": "SUSA STUDIO",
-      "subtitle": "Bringen Sie Ihre Marke über den Bildschirm hinaus — vollständige Identität, physische Materialien und kreative Leitung von unserem Budapester Partnerstudio.",
+      "subtitle": "Bringen Sie Ihre Marke über den Bildschirm hinaus: vollständige Identität, physische Materialien und kreative Leitung von unserem Budapester Partnerstudio.",
       "pricing": "Auf Anfrage",
       "services": {
         "identity": {
@@ -171,49 +165,35 @@
     }
   },
   "faq": {
-    "label": "Häufig gestellte Fragen",
+    "label": "FAQ",
     "title": "Haben Sie Fragen?",
-    "subtitle": "Alles, was Sie wissen müssen, bevor Sie loslegen.",
+    "subtitle": "Kurz und ehrlich beantwortet.",
+    "more": "Noch etwas unklar?",
+    "moreCta": "Schreiben Sie uns, wir antworten innerhalb von 24 Stunden.",
     "items": {
-      "q1": {
-        "question": "Wird die Website wirklich in 6 Stunden geliefert?",
-        "answer": "Ja. Sobald wir Ihre Inhalte erhalten, beginnt unser Team sofort. Die meisten Websites werden am selben Tag geliefert. Wenn wir die Frist nicht einhalten können, zahlen Sie nichts."
+      "cost": {
+        "question": "Was kostet es?",
+        "answer": "Starter kostet 0 € im Voraus plus 49 € im Monat. Business 129 € plus 75 € im Monat, individuelle Projekte ab 379 € plus ab 125 € im Monat. Ihr genauer Preis wird vor dem Start vertraglich festgelegt."
       },
-      "q2": {
-        "question": "Wie funktioniert der Ablauf Schritt für Schritt?",
-        "answer": "1. Füllen Sie das Kontaktformular unten aus — erzählen Sie uns so viel wie möglich über Ihr Unternehmen und was Sie brauchen.\n2. Wir melden uns innerhalb von 24 Stunden. Wir senden Ihnen ein kurzes Formular zur Erfassung der Details (Unternehmensdaten, Inhalte, Branding) — oder wir können auch kurz telefonieren.\n3. Sie senden uns Ihre Inhalte (Texte, Bilder, Logo) per E-Mail — wir helfen, wenn Sie noch nicht alles bereit haben.\n4. Wir erstellen Ihre Website und senden Ihnen eine Vorschau.\n5. Sie prüfen sie und können Änderungen wünschen — eine Überarbeitungsrunde ist kostenlos.\n6. Sobald Sie zufrieden sind, zahlen Sie und wir gehen online."
+      "pay": {
+        "question": "Wann muss ich zahlen?",
+        "answer": "Nichts, bis Ihre Website fertig ist und Sie sie freigegeben haben. Nicht zufrieden? Wir passen sie an, oder Sie gehen und zahlen nichts. Die Monatsgebühr beginnt mit dem Livegang."
       },
-      "q3": {
-        "question": "Was ist, wenn mir das Ergebnis nicht gefällt?",
-        "answer": "Jedes Paket enthält eine kostenlose Überarbeitungsrunde. Wir passen Design, Layout oder Inhalte an, bis Sie zufrieden sind. Ihre Zufriedenheit ist vor der Zahlung garantiert."
+      "monthly": {
+        "question": "Was deckt die Monatsgebühr ab?",
+        "answer": "Hosting, Domain, E-Mail, Sicherheitsupdates, kleine Inhaltsänderungen und die lebenslange Garantie. Geht etwas kaputt, das wir gebaut haben, reparieren wir es kostenlos."
       },
-      "q4": {
-        "question": "Was ist, wenn ich ein Buchungssystem, Online-Zahlungen oder eine individuelle Lösung brauche?",
-        "answer": "Wir bauen es. Sagen Sie uns einfach, was Sie brauchen — wir kümmern uns um den Rest."
+      "term": {
+        "question": "Wie lange bin ich gebunden?",
+        "answer": "Mindestens 12 Monate, danach jederzeit kündbar, und die Website bleibt Ihre. Genau diese langfristige Zusammenarbeit macht den Start ab 0 € möglich."
       },
-      "q5": {
-        "question": "Welche Technologie nutzt die Website?",
-        "answer": "Dieselbe Technologie, der Apple, Netflix, Spotify, Airbnb und Porsche vertrauen. Ihre Seite ist vollständig verschlüsselt, lädt weltweit sofort und hat 99,99% Verfügbarkeit.\n\nFür technisch Interessierte: Next.js 16, React 19, TypeScript, Tailwind CSS v4, Framer Motion, Radix UI, Bun — gehostet auf Vercels globalem Edge-Netzwerk, mit Neon Serverless-Datenbank und Supabase Backend-Diensten."
+      "speed": {
+        "question": "Wie schnell ist die Website fertig?",
+        "answer": "Einfache Websites in 1-2 Tagen, größere Projekte in 1-2 Wochen. Den genauen Termin bekommen Sie vor dem Start."
       },
-      "q6": {
-        "question": "Wird meine Seite bei Google angezeigt?",
-        "answer": "Ja. Jede von uns erstellte Seite ist für Suchmaschinen optimiert — schnell ladend, mobilfreundlich und richtig strukturiert. Das sind die Schlüsselfaktoren, die Google für das Ranking von Websites verwendet."
-      },
-      "q7": {
-        "question": "Was passiert, nachdem meine Website online ist?",
-        "answer": "Wir richten alles für Sie ein — Hosting, Sicherheit, Verschlüsselung, weltweite Performance. Die Website gehört komplett Ihnen, und wenn Sie etwas brauchen, sind wir nur eine Nachricht entfernt."
-      },
-      "q8": {
-        "question": "Zahle ich wirklich erst nach Lieferung?",
-        "answer": "Ja — wir bitten nur um eine kleine Anzahlung von 10% im Voraus, als Bestätigung. Den Rest zahlen Sie, nachdem Sie das Ergebnis gesehen haben und zufrieden sind."
-      },
-      "q9": {
-        "question": "Welche Zahlungsmethoden akzeptieren Sie?",
-        "answer": "Banküberweisung, Revolut oder Barzahlung. Einfach, sicher, unkompliziert."
-      },
-      "q10": {
-        "question": "Was deckt die lebenslange Garantie ab?",
-        "answer": "Wenn etwas, das wir gebaut haben, nicht mehr funktioniert, beheben wir es kostenlos — egal wie viel Zeit vergangen ist. Das umfasst Fehler und Mängel im Code, den wir Ihnen geliefert haben.\n\nNicht abgedeckt sind: neue Funktionen, Designänderungen, Inhaltsaktualisierungen oder Probleme durch Änderungen nach der Lieferung. Drittanbieter-Dienste (Hosting, Domains usw.) haben eigene Bedingungen und liegen außerhalb unserer Kontrolle."
+      "google": {
+        "question": "Findet man mich bei Google?",
+        "answer": "Ja. Ihre Website wird schnell, mobilfreundlich und sauber strukturiert sein: genau das belohnt Google."
       }
     }
   },
@@ -228,17 +208,72 @@
       "us": "Budapest Labs"
     },
     "rows": {
-      "delivery": { "label": "Lieferzeit", "diy": "Wochen–Monate", "agency": "4–8 Wochen", "us": "≤6 Stunden" },
-      "price": { "label": "Preis", "diy": "~75 EUR/Monat, dauerhaft", "agency": "3.000–10.000+ EUR", "us": "Ab 450 EUR" },
-      "quality": { "label": "Designqualität", "diy": "Standard-Vorlage", "agency": "Individuell", "us": "Professionell" },
-      "tech": { "label": "Technologie", "diy": "Geschlossene Plattform", "agency": "Oft veraltet", "us": "Neueste & zukunftssicher" },
-      "security": { "label": "Sicherheit", "diy": "Ihre Verantwortung", "agency": "Unterschiedlich", "us": "Vollständig sicher" },
-      "performance": { "label": "Ladegeschwindigkeit", "diy": "3–8 Sekunden", "agency": "1–4 Sekunden", "us": "Unter 0,5 Sekunden" },
-      "mobile": { "label": "Mobiloptimiert", "diy": "Oft fehlerhaft", "agency": "Meistens ja", "us": "Immer" },
-      "seo": { "label": "SEO", "diy": "Minimal", "agency": "Zusatzkosten", "us": "Inklusive" },
-      "booking": { "label": "Buchung & Zahlungen", "diy": "Zusatzkosten", "agency": "Zusatzkosten", "us": "Integriert" },
-      "effort": { "label": "Ihr Aufwand", "diy": "Alles selbst", "agency": "Meetings, Freigaben", "us": "Schnell und mühelos" },
-      "warranty": { "label": "Garantie", "diy": "Keine", "agency": "Unterschiedlich", "us": "Lebenslang" }
+      "delivery": {
+        "label": "Lieferzeit",
+        "diy": "Wochen bis Monate",
+        "agency": "4-8 Wochen",
+        "us": "Tage statt Wochen"
+      },
+      "price": {
+        "label": "Preis",
+        "diy": "10-40 €/Monat, Sie machen die Arbeit",
+        "agency": "1.000-5.000 € einmalig",
+        "us": "0 € + ab 49 €/Monat"
+      },
+      "quality": {
+        "label": "Designqualität",
+        "diy": "Standard-Vorlage",
+        "agency": "Individuell",
+        "us": "Professionell"
+      },
+      "tech": {
+        "label": "Technologie",
+        "diy": "Geschlossene Plattform",
+        "agency": "Oft veraltet",
+        "us": "Neueste & zukunftssicher"
+      },
+      "security": {
+        "label": "Sicherheit",
+        "diy": "Ihre Verantwortung",
+        "agency": "Unterschiedlich",
+        "us": "Vollständig sicher"
+      },
+      "performance": {
+        "label": "Ladegeschwindigkeit",
+        "diy": "3-8 Sekunden",
+        "agency": "1-4 Sekunden",
+        "us": "Unter 0,5 Sekunden"
+      },
+      "mobile": {
+        "label": "Mobiloptimiert",
+        "diy": "Oft fehlerhaft",
+        "agency": "Meistens ja",
+        "us": "Immer"
+      },
+      "seo": {
+        "label": "SEO",
+        "diy": "Minimal",
+        "agency": "Zusatzkosten",
+        "us": "Inklusive"
+      },
+      "booking": {
+        "label": "Buchung & Zahlungen",
+        "diy": "Zusatzkosten",
+        "agency": "Zusatzkosten",
+        "us": "Integriert"
+      },
+      "effort": {
+        "label": "Ihr Aufwand",
+        "diy": "Alles selbst",
+        "agency": "Meetings, Freigaben",
+        "us": "Schnell und mühelos"
+      },
+      "warranty": {
+        "label": "Garantie",
+        "diy": "Keine",
+        "agency": "Unterschiedlich",
+        "us": "Lebenslang"
+      }
     }
   },
   "contact": {
@@ -257,19 +292,20 @@
       "plan": "Interesse an",
       "planPlaceholder": "Paket wählen...",
       "planOptions": {
-        "starter": "Starter – 450 EUR",
-        "business": "Business – 950 EUR",
-        "pro": "Custom – 1.990 EUR",
+        "starter": "Starter (0 € + 49 €/Monat)",
+        "business": "Business (129 € + 75 €/Monat)",
+        "pro": "Custom (ab 379 € + ab 125 €/Monat)",
         "unsure": "Noch nicht sicher"
       },
       "message": "Nachricht",
-      "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt und was Sie sich vorstellen — wir melden uns in Kürze, um die Details gemeinsam zu besprechen.",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt und was Sie sich vorstellen. Wir melden uns in Kürze, um die Details gemeinsam zu besprechen.",
       "submit": "Nachricht senden",
       "successTitle": "Nachricht gesendet!",
       "success": "Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
       "errors": {
         "nameRequired": "Bitte geben Sie Ihren Namen ein",
-        "emailRequired": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+        "emailRequired": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+        "submit": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns an budapestlabs@gmail.com."
       }
     }
   },
@@ -296,7 +332,7 @@
     }
   },
   "footer": {
-    "description": "Sichere, moderne Websites — geliefert innerhalb von 6 Stunden. Zahlung erst nach Lieferung.",
+    "description": "Premium-Websites für Unternehmen. Einmalige Gebühr plus monatliche Betreuung, ohne Überraschungen.",
     "navigation": "Navigation",
     "legal": "Rechtliches",
     "privacy": "Datenschutz",
@@ -306,10 +342,10 @@
     "madeWith": "Made with ❤️ and ☕️ in Budapest"
   },
   "legal": {
-    "back": "Zur\u00fcck zur Startseite",
+    "back": "Zurück zur Startseite",
     "download": "PDF",
     "privacy": {
-      "title": "Datenschutzerkl\u00e4rung",
+      "title": "Datenschutzerklärung",
       "lastUpdated": "Zuletzt aktualisiert: 22. März 2026",
       "intro": "Ihre Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten wir erheben, wie wir sie verwenden und wie wir sie schützen.",
       "sections": {
@@ -319,34 +355,34 @@
         },
         "collection": {
           "title": "Was wir erheben",
-          "content": "Wenn Sie unser Kontaktformular ausf\u00fcllen, erhalten wir: Ihren Namen, Ihre E-Mail-Adresse, Telefonnummer (falls Sie sie angeben), Firmennamen (optional), gew\u00e4hltes Paket und Ihre Nachricht. Das ist alles. Wir verwenden keine Cookies, Tracking-Skripte oder Analysetools."
+          "content": "Wenn Sie unser Kontaktformular ausfüllen, erhalten wir: Ihren Namen, Ihre E-Mail-Adresse, Telefonnummer (falls Sie sie angeben), Firmennamen (optional), gewähltes Paket und Ihre Nachricht. Das ist alles. Wir verwenden keine Cookies, Tracking-Skripte oder Analysetools."
         },
         "basis": {
-          "title": "Warum wir sie verwenden d\u00fcrfen",
-          "content": "Wir verarbeiten Ihre Daten, weil Sie sie uns freiwillig gesendet haben \u2014 das ist Ihre Einwilligung nach EU-Datenschutzrecht (DSGVO). Wenn wir zusammenarbeiten, ben\u00f6tigen wir Ihre Angaben auch zur Projektdurchf\u00fchrung. In einigen F\u00e4llen bewahren wir Daten zur Erf\u00fcllung gesetzlicher oder buchhalterischer Pflichten auf."
+          "title": "Warum wir sie verwenden dürfen",
+          "content": "Wir verarbeiten Ihre Daten, weil Sie sie uns freiwillig gesendet haben. Das ist Ihre Einwilligung nach EU-Datenschutzrecht (DSGVO). Wenn wir zusammenarbeiten, benötigen wir Ihre Angaben auch zur Projektdurchführung. In einigen Fällen bewahren wir Daten zur Erfüllung gesetzlicher oder buchhalterischer Pflichten auf."
         },
         "purpose": {
           "title": "Was wir damit machen",
-          "content": "Wir verwenden Ihre Kontaktdaten ausschlie\u00dflich, um auf Ihre Anfrage zu antworten, ein Angebot zu erstellen und Ihre Website zu bauen. Wir verkaufen, vermieten oder teilen Ihre Daten niemals mit Dritten f\u00fcr Marketing oder andere nicht zusammenh\u00e4ngende Zwecke."
+          "content": "Wir verwenden Ihre Kontaktdaten ausschließlich, um auf Ihre Anfrage zu antworten, ein Angebot zu erstellen und Ihre Website zu bauen. Wir verkaufen, vermieten oder teilen Ihre Daten niemals mit Dritten für Marketing oder andere nicht zusammenhängende Zwecke."
         },
         "storage": {
-          "title": "Wie wir sie sch\u00fctzen",
+          "title": "Wie wir sie schützen",
           "content": "Ihre Daten werden auf verschlüsselten Servern innerhalb der EU gespeichert. Rechnungen und Buchhaltungsunterlagen werden gemäß dem ungarischen Buchhaltungsgesetz (Gesetz C von 2000, §169) 8 Jahre lang aufbewahrt. Sonstige Geschäftskorrespondenz und Projektdaten werden für die Dauer unserer Zusammenarbeit aufbewahrt, plus bis zu 5 Jahre danach. Danach werden sie dauerhaft gelöscht."
         },
         "thirdparty": {
           "title": "Dienste, die wir nutzen",
-          "content": "Unsere Website wird von Vercel (vercel.com) gehostet, und wir verwenden Resend (resend.com) f\u00fcr die Zustellung von E-Mails aus unserem Kontaktformular. Beide Anbieter verarbeiten Daten in unserem Auftrag gem\u00e4\u00df DSGVO-konformer Vereinbarungen. Alle Verbindungen verwenden HTTPS-Verschl\u00fcsselung. Vercel speichert standardm\u00e4\u00dfige Server-Logs (IP-Adresse, Zeitstempel, besuchte Seite), die nach 30 Tagen automatisch gel\u00f6scht werden. Ihre Daten werden an niemand anderen weitergegeben."
+          "content": "Unsere Website wird von Vercel (vercel.com) gehostet, und wir verwenden Resend (resend.com) für die Zustellung von E-Mails aus unserem Kontaktformular. Beide Anbieter verarbeiten Daten in unserem Auftrag gemäß DSGVO-konformer Vereinbarungen. Alle Verbindungen verwenden HTTPS-Verschlüsselung. Vercel speichert standardmäßige Server-Logs (IP-Adresse, Zeitstempel, besuchte Seite), die nach 30 Tagen automatisch gelöscht werden. Ihre Daten werden an niemand anderen weitergegeben."
         },
         "rights": {
           "title": "Ihre Rechte",
-          "content": "Nach EU-Recht (DSGVO) k\u00f6nnen Sie: einsehen, welche Daten wir \u00fcber Sie haben; fehlerhafte Daten korrigieren lassen; die L\u00f6schung Ihrer Daten verlangen; die Verarbeitung einschr\u00e4nken oder ihr widersprechen; oder eine Kopie in einem portablen Format anfordern. Sie k\u00f6nnen Ihre Einwilligung jederzeit widerrufen \u2014 das betrifft nicht die vorherige Verarbeitung. Schreiben Sie uns einfach an budapestlabs@gmail.com und wir antworten innerhalb von 30 Tagen."
+          "content": "Nach EU-Recht (DSGVO) können Sie: einsehen, welche Daten wir über Sie haben; fehlerhafte Daten korrigieren lassen; die Löschung Ihrer Daten verlangen; die Verarbeitung einschränken oder ihr widersprechen; oder eine Kopie in einem portablen Format anfordern. Sie können Ihre Einwilligung jederzeit widerrufen. Das betrifft nicht die vorherige Verarbeitung. Schreiben Sie uns einfach an budapestlabs@gmail.com und wir antworten innerhalb von 30 Tagen."
         }
       }
     },
     "terms": {
       "title": "Allgemeine Geschäftsbedingungen",
-      "lastUpdated": "Zuletzt aktualisiert: 22. März 2026",
-      "intro": "Das sind die Bedingungen für die Zusammenarbeit mit Budapest Labs. Wir haben sie klar und direkt formuliert — keine Überraschungen.",
+      "lastUpdated": "Zuletzt aktualisiert: 9. Juli 2026",
+      "intro": "Diese Bedingungen gelten für die Zusammenarbeit mit Budapest Labs. Wir haben sie einfach gehalten. Keine Überraschungen.",
       "sections": {
         "provider": {
           "title": "Dienstleister",
@@ -354,43 +390,43 @@
         },
         "scope": {
           "title": "Was wir machen",
-          "content": "Wir entwerfen und bauen Websites f\u00fcr Privatpersonen und Unternehmen jeder Gr\u00f6\u00dfe — von Portfolios und Markenseiten bis hin zu Webshops und Buchungsplattformen. Je nach Paket kann das umfassen: individuelles Design und Entwicklung, mobilfreundliche Layouts, Hosting und Bereitstellung, Domain- und E-Mail-Einrichtung, Mehrsprachigkeit, Buchungssysteme, Online-Zahlungen, Analytics und mehr. Wenn Sie etwas Zus\u00e4tzliches brauchen, besprechen wir das gemeinsam. Der genaue Umfang Ihres Projekts basiert auf dem gew\u00e4hlten Paket und allem, was wir schriftlich vereinbaren."
+          "content": "Wir entwerfen und bauen Websites für Privatpersonen und Unternehmen jeder Größe, von Portfolios und Markenseiten bis hin zu Webshops und Buchungsplattformen. Je nach Paket kann das umfassen: individuelles Design und Entwicklung, mobilfreundliche Layouts, Hosting und Bereitstellung, Domain- und E-Mail-Einrichtung, Mehrsprachigkeit, Buchungssysteme, Online-Zahlungen, Analytics und mehr. Wenn Sie etwas Zusätzliches brauchen, besprechen wir das gemeinsam. Der genaue Umfang Ihres Projekts basiert auf dem gewählten Paket und allem, was wir schriftlich vereinbaren."
         },
         "payment": {
           "title": "So funktioniert die Zahlung",
-          "content": "Wir bitten um eine kleine Anzahlung von 10% vor Projektbeginn — das bestätigt Ihren Auftrag und reserviert Ihren Platz. Die restlichen 90% werden erst fällig, wenn Sie das Ergebnis gesehen haben und zufrieden sind. Wenn Sie nach der enthaltenen Überarbeitungsrunde immer noch nicht zufrieden sind, müssen Sie den Rest nicht zahlen — die Anzahlung deckt lediglich die bereits investierte Zeit ab. Wir akzeptieren Überweisung, Kartenzahlung und Barzahlung. Preise in EUR. Sie erhalten für jede Zahlung eine ordnungsgemäße Rechnung nach ungarischem Recht."
+          "content": "Die auf unserer Website angezeigten Preise sind Richtwerte. Ihre genaue Erstellungsgebühr und die monatliche Betreuungsgebühr werden vor Arbeitsbeginn in einem individuellen Vertrag festgelegt; es gelten die Vertragspreise. Die Erstellungsgebühr wird fällig, wenn Ihre Website fertig ist und Sie sie freigegeben haben. Die monatliche Gebühr beginnt am Tag des Livegangs und umfasst Hosting, Domain, E-Mail, Sicherheitsupdates, kleine Inhaltsänderungen und die lebenslange Garantie. Der Betreuungsvertrag läuft mindestens 12 Monate; danach kann er jederzeit mit einer Frist von 30 Tagen gekündigt werden. Wir akzeptieren Überweisung, Revolut und Barzahlung. Für jede Zahlung erhalten Sie eine ordnungsgemäße Rechnung nach ungarischem Recht."
         },
         "revisions": {
-          "title": "\u00dcberarbeitungen",
-          "content": "Jedes Paket enth\u00e4lt eine kostenlose \u00dcberarbeitungsrunde. Das umfasst Anpassungen an Design, Layout oder Text. Es beinhaltet nicht, von vorne anzufangen oder Funktionen hinzuzuf\u00fcgen, die nicht im urspr\u00fcnglichen Paket enthalten sind. Wenn Sie weitere \u00c4nderungen w\u00fcnschen, teilen wir Ihnen die Kosten vorab mit \u2014 keine \u00dcberraschungen."
+          "title": "Überarbeitungen",
+          "content": "Jedes Paket enthält eine kostenlose Überarbeitungsrunde. Das umfasst Anpassungen an Design, Layout oder Text. Es beinhaltet nicht, von vorne anzufangen oder Funktionen hinzuzufügen, die nicht im ursprünglichen Paket enthalten sind. Wenn Sie weitere Änderungen wünschen, teilen wir Ihnen die Kosten vorab mit. Keine Überraschungen."
         },
         "delivery": {
           "title": "Lieferzeiten",
-          "content": "Die Zeitangaben auf unserer Website (z.B. gleicher Tag, 1\u20132 Tage, 3\u20135 Tage) sind Sch\u00e4tzungen f\u00fcr typische Projekte. Wie lange Ihr Projekt dauert, h\u00e4ngt von der Komplexit\u00e4t ab und davon, wie schnell Sie uns Ihre Inhalte senden k\u00f6nnen. Wir geben immer unser Bestes, p\u00fcnktlich zu liefern, k\u00f6nnen aber keine exakten Termine garantieren. Die Uhr startet, sobald wir alles haben, was wir brauchen (Texte, Bilder, Logo) und die Anzahlung best\u00e4tigt ist. Verz\u00f6gerungen auf Ihrer Seite z\u00e4hlen nicht gegen unsere Frist."
+          "content": "Die Zeitangaben auf unserer Website (1-2 Tage, 3-5 Tage, 1-2 Wochen) sind Schätzungen auf Basis typischer Projekte. Die Dauer hängt von der Komplexität ab und davon, wie schnell Sie uns Ihre Inhalte senden. Wir liefern so schnell wie möglich, können aber keine exakten Termine garantieren. Die Zeit beginnt, sobald wir alles von Ihnen haben (Texte, Bilder, Logo). Verzögerungen auf Ihrer Seite zählen nicht zu unserer Lieferzeit."
         },
         "client": {
           "title": "Was wir von Ihnen brauchen",
-          "content": "Um Ihre Website zu bauen, brauchen wir Ihre Inhalte \u2014 Texte, Bilder, Logo und Branding-Materialien. Wir bitten Sie auch, die Vorschau innerhalb von etwa einer Woche zu pr\u00fcfen. Wenn wir innerhalb von 14 Werktagen nichts h\u00f6ren, betrachten wir das Projekt als genehmigt. Bitte stellen Sie au\u00dferdem sicher, dass die Inhalte, die Sie uns senden, Ihnen geh\u00f6ren \u2014 wir vertrauen darauf, dass Sie die Rechte an allem haben."
+          "content": "Um Ihre Website zu bauen, brauchen wir Ihre Inhalte: Texte, Bilder, Logo und Branding-Materialien. Wir bitten Sie auch, die Vorschau innerhalb von etwa einer Woche zu prüfen. Wenn wir innerhalb von 14 Werktagen nichts hören, betrachten wir das Projekt als genehmigt. Bitte stellen Sie außerdem sicher, dass die Inhalte, die Sie uns senden, Ihnen gehören: wir vertrauen darauf, dass Sie die Rechte an allem haben."
         },
         "ownership": {
-          "title": "Wem geh\u00f6rt was",
-          "content": "Nach vollst\u00e4ndiger Zahlung geh\u00f6rt die Website Ihnen \u2014 das Design, der Inhalt, alles, was wir f\u00fcr Sie gebaut haben. Sie k\u00f6nnen sie verschieben, \u00e4ndern oder offline nehmen, wann immer Sie wollen. Wir d\u00fcrfen weiterhin allgemeine Tools und Code verwenden, die nicht speziell f\u00fcr Ihr Projekt erstellt wurden. Wir w\u00fcrden Ihre Website gerne in unserem Portfolio zeigen, aber wenn Sie das nicht m\u00f6chten, sagen Sie uns einfach Bescheid."
+          "title": "Wem gehört was",
+          "content": "Die Website gehört Ihnen. Wenn Sie nach der Mindestlaufzeit kündigen, übergeben wir alles, was wir für Sie gebaut haben: Design, Inhalte und Code. Allgemeine Werkzeuge und Code, die nicht spezifisch für Ihr Projekt sind, dürfen wir weiterverwenden. Wir würden Ihre Website gern in unserem Portfolio zeigen; wenn Sie das nicht möchten, sagen Sie einfach Bescheid."
         },
         "thirdparty": {
           "title": "Drittanbieter-Dienste",
-          "content": "Ihre Website kann Drittanbieter-Dienste nutzen (Hosting, Domain, E-Mail). Wir helfen bei der Einrichtung, aber diese sind unabh\u00e4ngige Dienste mit eigenen Bedingungen."
+          "content": "Ihre Website kann Drittanbieter-Dienste nutzen (Hosting, Domain, E-Mail). Wir helfen bei der Einrichtung, aber diese sind unabhängige Dienste mit eigenen Bedingungen."
         },
         "cancellation": {
           "title": "Stornierung",
-          "content": "Sie k\u00f6nnen Ihr Projekt jederzeit stornieren, bevor Sie das Endergebnis freigeben. Die Anzahlung deckt die anf\u00e4ngliche Arbeit ab und ist nicht erstattungsf\u00e4hig. Wenn wir bereits erhebliche Arbeit geleistet haben, berechnen wir einen fairen Betrag f\u00fcr das Geleistete \u2014 wir besprechen das immer vorher mit Ihnen. Auf unserer Seite: Wenn wir innerhalb von 30 Tagen keine Inhalte erhalten oder Sie \u00fcber 30 Tage nicht erreichen k\u00f6nnen, m\u00fcssen wir das Projekt m\u00f6glicherweise schlie\u00dfen."
+          "content": "Vor der Freigabe der fertigen Website können Sie jederzeit zurücktreten und zahlen nichts. Nach der Mindestlaufzeit von 12 Monaten können Sie mit einer Frist von 30 Tagen kündigen; wir übergeben die komplette Website und helfen beim Umzug. Unsererseits können wir das Projekt schließen, wenn wir Ihre Inhalte nicht innerhalb von 30 Tagen erhalten oder Sie über 30 Tage nicht erreichbar sind."
         },
         "warranty": {
           "title": "Lebenslange Garantie",
-          "content": "Wir stehen hinter unserer Arbeit — ein Leben lang. Wenn etwas, das wir gebaut haben, nicht mehr wie vorgesehen funktioniert, beheben wir es kostenlos, egal wie viel Zeit seit der Lieferung vergangen ist. Das umfasst Fehler und Mängel im Code, den wir für Sie geschrieben und geliefert haben.\n\nNicht abgedeckt: neue Funktionen, Designänderungen, Inhaltsaktualisierungen oder Probleme durch Änderungen, die Sie oder Dritte nach der Lieferung vorgenommen haben. Wir können auch nicht die Verfügbarkeit von Drittanbieter-Diensten (Hosting-Anbieter, Domain-Registrare, APIs usw.) garantieren — das liegt außerhalb unserer Kontrolle.\n\nWenn die zugrunde liegende Technologie ein bedeutendes Update erfordert (z.B. ein großer Framework-Versionswechsel), um Ihre Website funktionsfähig zu halten, informieren wir Sie und bieten ein faires Angebot — das ist jedoch separat von der Garantie."
+          "content": "Wir stehen ein Leben lang hinter unserer Arbeit. Wenn etwas, das wir gebaut haben, nicht mehr wie vorgesehen funktioniert, beheben wir es kostenlos, egal wie viel Zeit vergangen ist. Das umfasst Fehler im Code, den wir geliefert haben.\n\nNicht abgedeckt: neue Funktionen, Designänderungen, Inhaltsaktualisierungen oder Probleme durch Änderungen von Ihnen oder Dritten. Drittanbieter-Dienste (Hosting, Domain-Registrare, APIs) liegen außerhalb unserer Kontrolle.\n\nWenn die zugrunde liegende Technologie ein größeres Update benötigt, informieren wir Sie und machen ein faires Angebot. Das ist von der Garantie getrennt."
         },
         "liability": {
           "title": "Unsere Verantwortung",
-          "content": "Unsere Haftung ist auf den Betrag begrenzt, den Sie f\u00fcr das Projekt bezahlt haben. Wir sind nicht verantwortlich f\u00fcr Probleme nach der Lieferung durch Ihre \u00c4nderungen oder Ausf\u00e4lle von Drittanbieter-Diensten."
+          "content": "Unsere Haftung ist auf den Betrag begrenzt, den Sie für das Projekt bezahlt haben. Wir sind nicht verantwortlich für Probleme nach der Lieferung durch Ihre Änderungen oder Ausfälle von Drittanbieter-Diensten."
         },
         "law": {
           "title": "Rechtliche Details",
@@ -402,7 +438,7 @@
       "title": "Impressum",
       "sections": {
         "company": {
-          "title": "Gesch\u00e4ftsinformationen",
+          "title": "Geschäftsinformationen",
           "content": "Révész Péter EV (Einzelunternehmer)\nHandelsname: Budapest Labs\nSitz: Budapest, Ungarn\nSteuernummer: 91808745-1-43\nRegistrierungsnummer: 61944978\n\n(Im Folgenden Budapest Labs genannt)"
         },
         "contact": {
@@ -415,5 +451,14 @@
         }
       }
     }
+  },
+  "content": {
+    "title": "Qualität, die man auf den ersten Blick sieht.",
+    "p1start": "Jede unserer Websites ist",
+    "p1bold": "individuell gestaltet, nie eine Vorlage.",
+    "p1end": "Sie lädt blitzschnell und sieht auf jedem Gerät makellos aus.",
+    "p2": "Unter der Haube steckt dieselbe technische Qualität, auf die sich die großen Marken verlassen: verschlüsselte Verbindungen, 99,99% Verfügbarkeit und laufende Wartung, damit Ihre Website auch nach Jahren einwandfrei läuft.",
+    "background1": "Hinter Budapest Labs steht ein dreifacher Founding Engineer. Zuletzt baute er eine Plattform, die auf über 3.000 Enterprise-Websites läuft, für Firmen wie Nvidia, Datadog und CrowdStrike.",
+    "background2": "Davor: Gesundheits- und Bildungssoftware für US-Kunden. Ihre Website entsteht mit demselben Anspruch."
   }
 }

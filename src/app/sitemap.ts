@@ -4,11 +4,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://budapestlabs.com";
 
   const locales = ["", "/en", "/de"];
-  const languages = {
-    hu: baseUrl,
-    en: `${baseUrl}/en`,
-    de: `${baseUrl}/de`,
-  };
 
   const pages = [
     { path: "", priority: 1, changeFrequency: "weekly" as const },

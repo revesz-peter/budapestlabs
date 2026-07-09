@@ -7,36 +7,28 @@
         "recentWork": "Recent Work"
     },
     "hero": {
-        "badge": "Modern, secure, fast",
-        "title": "Your website in 6 hours.",
-        "subtitle": "Stop losing customers to an outdated website. Get a secure, lightning-fast site — and only pay when you're happy with the result.",
+        "badge": "€0 up front, from €49/month",
+        "title": "A premium website, within days.",
+        "subtitle": "Custom design, lightning fast, and we handle everything. You only pay when you're happy.",
         "cta": "Get Started",
-        "demo": "Free Consultation",
-        "trust": {
-            "payAfter": "Only pay after delivery",
-            "delivery": "≤6 hour delivery",
-            "secure": "Encrypted & secure",
-            "revision": "Free revision included",
-            "warranty": "Lifetime warranty"
-        }
+        "demo": "Free Consultation"
     },
     "stats": {
-        "experience": "years on large-scale international enterprise projects",
-        "delivery": "average delivery time",
-        "satisfaction": "client satisfaction",
-        "lighthouse": "Lighthouse score",
-        "loadTime": "page load time",
-        "uptime": "uptime guarantee"
+        "title": "Budapest Labs in numbers",
+        "subtitle": "Experience, speed, and happy clients.",
+        "experience": "years on international projects",
+        "delivery": "average response time",
+        "satisfaction": "client satisfaction"
     },
     "latestProject": {
         "label": "Recent Work",
         "title": "Latest project",
-        "subtitle": "A model management site built for creativity.",
+        "subtitle": "Built for a Budapest model management agency.",
         "projects": {
             "mamormodels": {
                 "name": "Mamor Models",
                 "industry": "Model Management",
-                "description": "A sleek, modern website for a Budapest-based model management agency. Designed to showcase their talent with elegance and speed.",
+                "description": "A sleek, fast website that puts their talent front and center.",
                 "cta": "Visit site"
             }
         }
@@ -44,11 +36,11 @@
     "howItWorks": {
         "label": "Process",
         "title": "Four simple steps",
-        "subtitle": "From order to live website — within 6 hours.",
+        "subtitle": "From first message to live website in days.",
         "steps": {
             "choose": {
                 "title": "Get in touch",
-                "description": "Fill out the form — tell us about your business and what you need."
+                "description": "Fill out the form and tell us what you need."
             },
             "content": {
                 "title": "We align on details",
@@ -56,63 +48,65 @@
             },
             "build": {
                 "title": "We build it",
-                "description": "Our team gets to work immediately — fast, secure, professional result."
+                "description": "Our team gets to work immediately. Fast, secure, professional."
             },
             "launch": {
                 "title": "Go live",
-                "description": "Your website is ready — you review it, approve it, and it's live for your customers."
+                "description": "You review it, approve it, and it goes live for your customers."
             }
         }
     },
     "pricing": {
         "label": "Pricing",
-        "title": "Simple, transparent pricing",
-        "subtitle": "Hosting, mobile-friendly design, and the full build included. Only a small 10% deposit — the rest after you're happy.",
-        "currency": "EUR",
+        "title": "Simple, honest pricing",
+        "subtitle": "Little or nothing up front, plus a monthly service fee for a minimum of 12 months. Any build fee is only due at delivery.",
         "choosePlan": "Choose Plan",
         "popular": "Popular",
         "starter": {
             "name": "Starter",
-            "price": "450",
-            "delivery": "Delivery: ≤6 hours",
-            "description": "Clean, professional website for any project",
+            "price": "€0",
+            "description": "A clean, professional website",
             "features": [
-                "3–5 pages (Home, About, Services, Contact)",
-                "Tailored to your industry",
-                "Mobile responsive design",
-                "Secure hosting & deployment",
-                "Custom domain + email setup included",
-                "Hungarian and English included"
-            ]
+                "Ready: 1-2 days",
+                "3-5 pages, tailored to your business",
+                "Looks great on every phone and computer",
+                "Hosting, domain, and email included",
+                "Small changes done for you each month",
+                "Hungarian and English versions",
+                "Lifetime warranty"
+            ],
+            "monthly": "+ €49/month service"
         },
         "business": {
             "name": "Business",
-            "price": "950",
-            "delivery": "Delivery: 1–2 days",
-            "description": "Booking, notifications & more",
+            "price": "€129",
+            "description": "Booking, notifications, and more",
             "features": [
+                "Ready: 3-5 days",
                 "Everything in Starter, plus:",
-                "6–10 pages",
-                "Booking / appointment system",
-                "Google Maps embed",
+                "6-10 pages",
+                "Online booking system",
+                "Google Maps and directions",
                 "Automatic email notifications",
-                "Analytics integration"
-            ]
+                "Visitor statistics"
+            ],
+            "monthly": "+ €75/month service"
         },
         "pro": {
             "name": "Custom",
-            "price": "1,990",
-            "delivery": "Delivery: 3–5 days",
-            "description": "Fully custom solution — anything is possible",
+            "price": "from €379",
+            "description": "Fully custom, anything is possible",
             "features": [
+                "Ready: 1-2 weeks",
                 "Everything in Business, plus:",
-                "Webshop, agency site, brand page — anything",
-                "Custom features built for your specific needs",
+                "Webshop, agency site, brand page, anything",
+                "Custom features built for your needs",
                 "Accept payments online",
-                "Priority support",
-                "Built with the same technology trusted by top agencies and industry leaders"
-            ]
-        }
+                "Priority support"
+            ],
+            "monthly": "+ from €125/month service"
+        },
+        "disclaimer": "Prices shown are estimates. The exact price and monthly fee are fixed in your contract before we start, with no surprises."
     },
     "addons": {
         "currency": "EUR",
@@ -137,7 +131,7 @@
         "partner": {
             "badge": "Partner",
             "name": "SUSA STUDIO",
-            "subtitle": "Take your brand beyond the screen — complete identity, physical materials, and creative direction by our Budapest-based partner studio.",
+            "subtitle": "Take your brand beyond the screen: complete identity, physical materials, and creative direction by our Budapest-based partner studio.",
             "pricing": "On request",
             "services": {
                 "identity": {
@@ -171,49 +165,35 @@
         }
     },
     "faq": {
-        "label": "Frequently Asked Questions",
+        "label": "FAQ",
         "title": "Got questions?",
-        "subtitle": "Everything you need to know before getting started.",
+        "subtitle": "Short, straight answers.",
+        "more": "Something else on your mind?",
+        "moreCta": "Ask us. We reply within 24 hours.",
         "items": {
-            "q1": {
-                "question": "Is the website really delivered in 6 hours?",
-                "answer": "Yes. Once we receive your content, our team starts immediately. Most websites are delivered the same day. If we can't meet the deadline, you don't pay."
+            "cost": {
+                "question": "What does it cost?",
+                "answer": "Starter is €0 up front plus €49 a month. Business is €129 plus €75 a month. Custom starts at €379 plus from €125 a month. Your exact price is fixed in the contract before we start."
             },
-            "q2": {
-                "question": "How does the process work step by step?",
-                "answer": "1. Fill out the contact form below — tell us as much as you can about your business and what you need.\n2. We get back to you within 24 hours. We'll send you a short intake form to gather the details (business info, content, branding) — or we can hop on a quick call if you prefer.\n3. You send us your content (text, images, logo) via email — we help if you don't have everything ready.\n4. We build your website and send you a preview.\n5. You review it and request changes if needed — one revision round is free.\n6. Once you're happy, you pay and we go live."
+            "pay": {
+                "question": "When do I pay?",
+                "answer": "Nothing until your site is done and you have approved it. Not happy? We keep adjusting, or you walk away and pay nothing. The monthly fee starts at go-live."
             },
-            "q3": {
-                "question": "What if I don't like the result?",
-                "answer": "Every plan includes a free revision round. We'll adjust the design, layout, or content until you're happy. Your satisfaction is guaranteed before payment."
+            "monthly": {
+                "question": "What does the monthly fee cover?",
+                "answer": "Hosting, domain, email, security updates, small content changes, and the lifetime warranty. If anything we built breaks, we fix it for free."
             },
-            "q4": {
-                "question": "What if I need a booking system, online payments, or a custom solution?",
-                "answer": "We build it. Just tell us what you need — we'll take care of the rest."
+            "term": {
+                "question": "How long am I committed?",
+                "answer": "12 months minimum, then you can cancel anytime and the website stays yours. The long-term partnership is exactly why you can start at €0."
             },
-            "q5": {
-                "question": "What technology does the website run on?",
-                "answer": "The same technology trusted by Apple, Netflix, Spotify, Airbnb, and Porsche. Your site is fully encrypted, loads instantly worldwide, and has 99.99% uptime.\n\nFor the technically curious: Next.js 16, React 19, TypeScript, Tailwind CSS v4, Framer Motion, Radix UI, Bun — hosted on Vercel's global edge network, with Neon serverless database and Supabase backend services."
+            "speed": {
+                "question": "How fast will it be ready?",
+                "answer": "Simple sites are ready in 1-2 days, bigger projects in 1-2 weeks. You get an exact date before we start."
             },
-            "q6": {
-                "question": "Will my site show up on Google?",
-                "answer": "Yes. Every site we build is optimized for search engines — fast loading, mobile-friendly, and properly structured. These are the key factors Google uses to rank websites."
-            },
-            "q7": {
-                "question": "What happens after my website goes live?",
-                "answer": "We set up everything for you — hosting, security, encryption, global performance. You own your website fully, and if you ever need anything, we're just a message away."
-            },
-            "q8": {
-                "question": "Do I really only pay after delivery?",
-                "answer": "Yes — we only ask for a small 10% deposit upfront, just as a confirmation. The rest you pay after you've seen the result and you're happy with it."
-            },
-            "q9": {
-                "question": "What payment methods do you accept?",
-                "answer": "Bank transfer, Revolut, or cash. Simple, secure, no hassle."
-            },
-            "q10": {
-                "question": "What does the lifetime warranty cover?",
-                "answer": "If something we built breaks or stops working as intended, we fix it for free — no matter how much time has passed. This covers bugs and defects in the code we delivered to you.\n\nIt doesn't cover new features, design changes, content updates, or issues caused by modifications made after delivery. Third-party services (hosting, domains, etc.) have their own terms and are outside our control."
+            "google": {
+                "question": "Will people find me on Google?",
+                "answer": "Yes. Your site will be fast, mobile-friendly, and properly structured: exactly what Google rewards."
             }
         }
     },
@@ -230,15 +210,15 @@
         "rows": {
             "delivery": {
                 "label": "Delivery time",
-                "diy": "Weeks–months",
-                "agency": "4–8 weeks",
-                "us": "≤6 hours"
+                "diy": "Weeks to months",
+                "agency": "4-8 weeks",
+                "us": "Days, not weeks"
             },
             "price": {
                 "label": "Price",
-                "diy": "~75 EUR/month, forever",
-                "agency": "3,000–10,000+ EUR",
-                "us": "From 450 EUR"
+                "diy": "€10-40/month, you do the work",
+                "agency": "€1,000-5,000 one-off",
+                "us": "€0 up front + from €49/month"
             },
             "quality": {
                 "label": "Design quality",
@@ -260,8 +240,8 @@
             },
             "performance": {
                 "label": "Page speed",
-                "diy": "3–8 seconds",
-                "agency": "1–4 seconds",
+                "diy": "3-8 seconds",
+                "agency": "1-4 seconds",
                 "us": "Under 0.5 seconds"
             },
             "mobile": {
@@ -312,19 +292,20 @@
             "plan": "Interested in",
             "planPlaceholder": "Select a plan...",
             "planOptions": {
-                "starter": "Starter – 450 EUR",
-                "business": "Business – 950 EUR",
-                "pro": "Custom – 1,990 EUR",
+                "starter": "Starter (€0 + €49/month)",
+                "business": "Business (€129 + €75/month)",
+                "pro": "Custom (from €379 + from €125/month)",
                 "unsure": "Not sure yet"
             },
             "message": "Message",
-            "messagePlaceholder": "Tell us about your project and what you have in mind — we'll reach out shortly to go over the details together.",
+            "messagePlaceholder": "Tell us about your project and what you have in mind. We'll reach out shortly to go over the details together.",
             "submit": "Send Message",
             "successTitle": "Message sent!",
             "success": "We'll get back to you within 24 hours.",
             "errors": {
                 "nameRequired": "Please enter your name",
-                "emailRequired": "Please enter a valid email"
+                "emailRequired": "Please enter a valid email",
+                "submit": "Something went wrong. Please try again, or email us at budapestlabs@gmail.com."
             }
         }
     },
@@ -351,7 +332,7 @@
         }
     },
     "footer": {
-        "description": "Secure, modern websites — delivered within 6 hours. Only pay after delivery.",
+        "description": "Premium websites for businesses. One-time fee plus monthly care, no surprises.",
         "navigation": "Navigation",
         "legal": "Legal",
         "privacy": "Privacy Policy",
@@ -378,7 +359,7 @@
                 },
                 "basis": {
                     "title": "Why we're allowed to use it",
-                    "content": "We handle your data because you chose to send it to us — that's your consent under EU data protection law (GDPR). If we start working together, we also need your details to deliver the project. In some cases, we may keep records to meet legal or accounting requirements."
+                    "content": "We handle your data because you chose to send it to us. That's your consent under EU data protection law (GDPR). If we start working together, we also need your details to deliver the project. In some cases, we may keep records to meet legal or accounting requirements."
                 },
                 "purpose": {
                     "title": "What we do with it",
@@ -394,14 +375,14 @@
                 },
                 "rights": {
                     "title": "Your rights",
-                    "content": "Under EU law (GDPR), you can: ask to see what data we have about you; correct anything that's wrong; ask us to delete your data; limit or object to how we use it; or request a copy in a portable format. You can also withdraw your consent at any time — this won't affect anything we did before the withdrawal. Just email us at budapestlabs@gmail.com and we'll get back to you within 30 days."
+                    "content": "Under EU law (GDPR), you can: ask to see what data we have about you; correct anything that's wrong; ask us to delete your data; limit or object to how we use it; or request a copy in a portable format. You can also withdraw your consent at any time. This won't affect anything we did before the withdrawal. Just email us at budapestlabs@gmail.com and we'll get back to you within 30 days."
                 }
             }
         },
         "terms": {
             "title": "Terms of Service",
-            "lastUpdated": "Last updated: March 22, 2026",
-            "intro": "These are the terms that apply when you work with Budapest Labs. We've kept them straightforward — no surprises.",
+            "lastUpdated": "Last updated: July 9, 2026",
+            "intro": "These are the terms that apply when you work with Budapest Labs. We've kept them straightforward. No surprises.",
             "sections": {
                 "provider": {
                     "title": "Service provider",
@@ -409,27 +390,27 @@
                 },
                 "scope": {
                     "title": "What we do",
-                    "content": "We design and build websites for individuals and businesses of all sizes — from portfolios and brand pages to webshops and booking platforms. Depending on your plan, this can include: custom design and development, mobile-friendly layouts, hosting and deployment, domain and email setup, multilingual support, booking systems, online payments, analytics, and more. If you need something extra, we'll discuss it and agree on it together. The exact scope of your project is based on the plan you choose and anything else we agree on in writing."
+                    "content": "We design and build websites for individuals and businesses of all sizes, from portfolios and brand pages to webshops and booking platforms. Depending on your plan, this can include: custom design and development, mobile-friendly layouts, hosting and deployment, domain and email setup, multilingual support, booking systems, online payments, analytics, and more. If you need something extra, we'll discuss it and agree on it together. The exact scope of your project is based on the plan you choose and anything else we agree on in writing."
                 },
                 "payment": {
                     "title": "How payment works",
-                    "content": "We ask for a small deposit of 10% before we start — this confirms your order and reserves your spot. The remaining 90% is only due once you've seen the result and are happy with it. If after the included revision round you're still not satisfied, you don't have to pay the rest — the deposit simply covers the time we've already invested. We accept bank transfer, card payment, and cash. Prices are in EUR. You will receive a proper invoice for every payment, issued in accordance with Hungarian law."
+                    "content": "The prices shown on our website are estimates. Your exact build fee and monthly service fee are fixed in an individual contract before work begins, and the contract prices are the ones that apply. The build fee is due once your website is finished and you have approved it. The monthly service fee starts on the day your site goes live and covers hosting, domain, email, security updates, small content changes, and the lifetime warranty. The service agreement runs for a minimum of 12 months; after that it can be cancelled anytime with 30 days' notice. We accept bank transfer, Revolut, and cash. You will receive a proper invoice for every payment, issued in accordance with Hungarian law."
                 },
                 "revisions": {
                     "title": "Revisions",
-                    "content": "Every plan comes with one round of revisions at no extra charge. This covers adjustments to the design, layout, or text. It doesn't cover starting from scratch or adding features outside the original plan. If you'd like additional changes beyond that, we'll let you know the cost upfront — no surprises."
+                    "content": "Every plan comes with one round of revisions at no extra charge. This covers adjustments to the design, layout, or text. It doesn't cover starting from scratch or adding features outside the original plan. If you'd like additional changes beyond that, we'll let you know the cost upfront. No surprises."
                 },
                 "delivery": {
                     "title": "Delivery timelines",
-                    "content": "The timelines on our website (e.g. same day, 1–2 days, 3–5 days) are estimates based on typical projects. How long your project takes depends on its complexity and how quickly you can send us your content. We always do our best to deliver on time, but we can't guarantee exact dates. The clock starts once we have everything we need from you (text, images, logo) and the deposit is confirmed. If there's a delay on your side, that doesn't count against our timeline."
+                    "content": "The timelines on our website (1-2 days, 3-5 days, 1-2 weeks) are estimates based on typical projects. How long your project takes depends on its complexity and how quickly you can send us your content. We always do our best to deliver on time, but we can't guarantee exact dates. The clock starts once we have everything we need from you (text, images, logo). If there's a delay on your side, that doesn't count against our timeline."
                 },
                 "client": {
                     "title": "What we need from you",
-                    "content": "To build your website, we'll need your content — text, images, logo, and any branding materials. We also ask that you review the preview within about a week. If we don't hear back within 14 business days, we'll consider the project approved. Please also make sure the content you send us is yours to use — we trust that you have the rights to everything you provide."
+                    "content": "To build your website, we'll need your content: text, images, logo, and any branding materials. We also ask that you review the preview within about a week. If we don't hear back within 14 business days, we'll consider the project approved. Please also make sure the content you send us is yours to use: we trust that you have the rights to everything you provide."
                 },
                 "ownership": {
                     "title": "Who owns what",
-                    "content": "Once you've paid in full, the website is yours — the design, the content, everything we built for you. You're free to move it, change it, or take it down whenever you want. We may use general-purpose tools and code that aren't specific to your project. We'd also love to feature your site in our portfolio, but if you'd rather we didn't, just let us know."
+                    "content": "The website is yours. If you cancel after the minimum term, we hand over everything we built for you: design, content, and code. We may use general-purpose tools and code that aren't specific to your project. We'd also love to feature your site in our portfolio, but if you'd rather we didn't, just let us know."
                 },
                 "thirdparty": {
                     "title": "Third-party services",
@@ -437,11 +418,11 @@
                 },
                 "cancellation": {
                     "title": "Cancellation",
-                    "content": "You can cancel your project at any time before you approve the final result. The deposit covers the initial work and isn't refundable. If we've already done a significant amount of work, we may charge a fair amount for what's been completed — we'll always discuss this with you first. On our side, if we don't receive your content within 30 days or can't reach you for over 30 days, we may need to close the project."
+                    "content": "You can walk away at any point before you approve the finished website, and you pay nothing. After the 12-month minimum term you can cancel with 30 days' notice; we hand over the complete website and help you move it wherever you like. On our side, if we don't receive your content within 30 days or can't reach you for over 30 days, we may need to close the project."
                 },
                 "warranty": {
                     "title": "Lifetime warranty",
-                    "content": "We stand behind our work — for life. If something we built stops working as intended, we'll fix it at no cost, no matter how much time has passed since delivery. This covers bugs and defects in the code we wrote and delivered to you.\n\nWhat's not covered: new features, design changes, content updates, or issues caused by modifications made by you or a third party after delivery. We also can't guarantee the availability of third-party services (hosting providers, domain registrars, APIs, etc.) — those are outside our control.\n\nIf the underlying technology requires a significant update (e.g., a major framework version change) to keep your site functional, we'll let you know and offer a fair quote — but that's separate from the warranty."
+                    "content": "We stand behind our work for life. If something we built stops working as intended, we'll fix it at no cost, no matter how much time has passed. This covers bugs and defects in the code we delivered.\n\nWhat's not covered: new features, design changes, content updates, or issues caused by modifications made by you or a third party. Third-party services (hosting providers, domain registrars, APIs) are outside our control.\n\nIf the underlying technology requires a significant update to keep your site functional, we'll let you know and offer a fair quote. That is separate from the warranty."
                 },
                 "liability": {
                     "title": "Our responsibility",
@@ -470,5 +451,14 @@
                 }
             }
         }
+    },
+    "content": {
+        "title": "Quality you can see at first glance.",
+        "p1start": "Every site we build is",
+        "p1bold": "custom designed, never a template.",
+        "p1end": "It loads in a blink and looks flawless on every device.",
+        "p2": "Under the hood you get the same engineering quality the big brands rely on: encrypted connections, 99.99% uptime, and ongoing maintenance so your site runs flawlessly for years.",
+        "background1": "Behind Budapest Labs is a three-time founding engineer. Most recently he built a platform running on 3,000+ enterprise sites, for companies like Nvidia, Datadog, and CrowdStrike.",
+        "background2": "Before that: healthcare and education software for US clients. Your website is built to the same standard."
     }
 }

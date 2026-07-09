@@ -38,31 +38,8 @@ export function LatestProject() {
   }, []);
 
   return (
-    <section id="recent-work" className="px-6 py-20 md:px-8 lg:px-16">
-      <div className="mx-auto max-w-5xl">
-        {/* Header */}
-        <div className="mb-10 text-center">
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.4 }}
-            className="mb-3 text-sm font-medium uppercase tracking-widest text-muted-foreground"
-          >
-            {t("label")}
-          </motion.p>
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-2xl font-bold md:text-3xl"
-          >
-            {t("title")}
-          </motion.h2>
-        </div>
-
-        {/* Project Card */}
+    <section id="recent-work" className="px-6 py-14 md:px-8 lg:px-16">
+      <div className="mx-auto max-w-4xl">
         <motion.a
           href={project.url}
           target="_blank"
@@ -70,51 +47,33 @@ export function LatestProject() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
-          transition={{ duration: 0.6, delay: 0.15 }}
-          className="glass-hover group block cursor-pointer overflow-hidden"
+          transition={{ duration: 0.5 }}
+          className="glass-hover group flex cursor-pointer flex-col gap-5 overflow-hidden p-5 sm:flex-row sm:items-center"
         >
-          {/* Video with browser frame */}
-          <div className="p-3 pb-0 md:p-4 md:pb-0">
-            <div className="overflow-hidden rounded-t-lg border border-b-0 border-border">
-              {/* Browser chrome */}
-              <div className="flex items-center gap-2 border-b border-border bg-foreground/3 px-3 py-2">
-                <div className="flex gap-1.5">
-                  <div className="h-2 w-2 rounded-full bg-foreground/15" />
-                  <div className="h-2 w-2 rounded-full bg-foreground/15" />
-                  <div className="h-2 w-2 rounded-full bg-foreground/15" />
-                </div>
-                <div className="flex-1 text-center text-[11px] text-muted-foreground">
-                  {project.url.replace("https://", "")}
-                </div>
-              </div>
-              {/* Video */}
-              <video
-                ref={videoRef}
-                src={project.video}
-                poster="/projects/mamormodels.png"
-                muted
-                loop
-                playsInline
-                preload="metadata"
-                className="aspect-video w-full object-cover object-top"
-              />
-            </div>
-          </div>
-
-          {/* Footer bar */}
-          <div className="p-4 md:px-6">
-            <div className="flex items-center justify-between gap-2">
-              <span className="text-sm font-semibold">
-                {t(`projects.${project.key}.name`)}
-              </span>
-              <span className="inline-flex shrink-0 items-center gap-1.5 text-sm text-muted-foreground transition-colors group-hover:text-foreground">
-                {t(`projects.${project.key}.cta`)}
-                <ArrowUpRight className="h-3.5 w-3.5" />
-              </span>
-            </div>
-            <p className="mt-1 text-sm text-muted-foreground">
-              {t("subtitle")}
+          <video
+            ref={videoRef}
+            src={project.video}
+            poster="/projects/mamormodels.png"
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            className="aspect-video w-full shrink-0 rounded-lg border border-border object-cover object-top sm:w-64"
+          />
+          <div className="min-w-0">
+            <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+              {t("label")}
             </p>
+            <p className="mt-2 font-semibold">
+              {t(`projects.${project.key}.name`)}
+            </p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              {t(`projects.${project.key}.description`)}
+            </p>
+            <span className="mt-3 inline-flex items-center gap-1.5 text-sm text-muted-foreground transition-colors group-hover:text-foreground">
+              {t(`projects.${project.key}.cta`)}
+              <ArrowUpRight className="h-3.5 w-3.5" />
+            </span>
           </div>
         </motion.a>
       </div>

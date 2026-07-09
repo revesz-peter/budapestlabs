@@ -2,56 +2,58 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 
-const faqKeys = ["q1", "q2", "q3", "q4", "q5", "q6", "q7", "q8", "q9", "q10"] as const;
+const faqKeys = ["cost", "pay", "monthly", "term", "speed", "google"] as const;
 
 export function FAQ() {
   const t = useTranslations("faq");
 
-  return (
-    <section id="faq" className="px-6 py-24 md:px-8 lg:px-16">
-      <div className="mx-auto max-w-3xl">
-        {/* Header */}
-        <div className="mb-16 text-center">
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            {t("label")}
-          </p>
-          <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            {t("subtitle")}
-          </p>
-        </div>
+  const askUs = (
+    <p className="text-sm text-muted-foreground">
+      {t("more")}{" "}
+      <a
+        href="#contact"
+        className="font-medium text-foreground underline decoration-foreground/30 underline-offset-4 transition-colors hover:decoration-foreground"
+      >
+        {t("moreCta")}
+      </a>
+    </p>
+  );
 
-        {/* Accordion */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-        >
-          <Accordion type="single" collapsible className="w-full">
+  return (
+    <section id="faq" className="py-16 md:py-32">
+      <div className="mx-auto max-w-5xl px-6">
+        <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr] lg:gap-20">
+          {/* Header — sticky on desktop */}
+          <div className="text-center lg:text-left">
+            <div className="lg:sticky lg:top-28">
+              <h2 className="text-4xl font-medium lg:text-5xl">{t("title")}</h2>
+              <p className="text-muted-foreground mt-4 text-lg">
+                {t("subtitle")}
+              </p>
+              <div className="mt-8 hidden lg:block">{askUs}</div>
+            </div>
+          </div>
+
+          {/* Open Q&A list — no clicking required */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="divide-y divide-border"
+          >
             {faqKeys.map((key) => (
-              <AccordionItem
-                key={key}
-                value={key}
-                className="border-border"
-              >
-                <AccordionTrigger className="text-left text-foreground hover:text-foreground/80 hover:no-underline">
-                  {t(`items.${key}.question`)}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground whitespace-pre-line">
+              <div key={key} className="py-6 first:pt-0 last:pb-0">
+                <h3 className="font-medium">{t(`items.${key}.question`)}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                   {t(`items.${key}.answer`)}
-                </AccordionContent>
-              </AccordionItem>
+                </p>
+              </div>
             ))}
-          </Accordion>
-        </motion.div>
+            <div className="pt-6 text-center lg:hidden">{askUs}</div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

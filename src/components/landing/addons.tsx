@@ -27,17 +27,12 @@ export function Addons() {
   const t = useTranslations("addons");
 
   return (
-    <section className="px-6 py-24 md:px-8 lg:px-16">
-      <div className="mx-auto max-w-6xl">
+    <section className="py-16 md:py-32">
+      <div className="mx-auto max-w-5xl px-6">
         {/* Header */}
-        <div className="mb-16 text-center">
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            {t("label")}
-          </p>
-          <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            {t("subtitle")}
-          </p>
+        <div className="mx-auto mb-8 max-w-xl space-y-6 text-center md:mb-16">
+          <h2 className="text-4xl font-medium lg:text-5xl">{t("title")}</h2>
+          <p>{t("subtitle")}</p>
         </div>
 
         {/* Add-on list */}
@@ -96,7 +91,7 @@ export function Addons() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="glass mt-8 px-6 py-6 md:px-8"
+          className="bg-card mt-8 rounded-2xl border px-6 py-6 shadow-sm md:px-8"
         >
           <div className="mb-3 flex items-center justify-between">
             <div className="flex items-center gap-1.5 text-muted-foreground">

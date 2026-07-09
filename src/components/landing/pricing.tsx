@@ -1,120 +1,102 @@
 "use client";
 
+import Link from "next/link";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Check, Clock } from "lucide-react";
-import { cn } from "@/lib/utils";
-
-const plans = [
-  { key: "starter", popular: false },
-  { key: "business", popular: true },
-  { key: "pro", popular: false },
-] as const;
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Check } from "lucide-react";
 
 export function Pricing() {
   const t = useTranslations("pricing");
 
+  const plans = [
+    { key: "starter", popular: false },
+    { key: "business", popular: true },
+    { key: "pro", popular: false },
+  ] as const;
+
   return (
-    <section id="pricing" className="px-6 py-24 md:px-8 lg:px-16">
-      <div className="mx-auto max-w-6xl">
-        {/* Header */}
-        <div className="mb-16 text-center">
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            {t("label")}
-          </p>
-          <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            {t("subtitle")}
-          </p>
+    <section id="pricing" className="py-16 md:py-32">
+      <div className="mx-auto max-w-6xl px-6">
+        <div className="mx-auto max-w-2xl space-y-6 text-center">
+          <h2 className="text-center text-4xl font-semibold lg:text-5xl">
+            {t("title")}
+          </h2>
+          <p>{t("subtitle")}</p>
         </div>
 
-        {/* Plans */}
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={{
-            visible: { transition: { staggerChildren: 0.1 } },
-          }}
-          className="grid items-stretch gap-6 lg:grid-cols-3"
-        >
+        <div className="mt-8 grid gap-6 md:mt-20 md:grid-cols-3">
           {plans.map((plan) => {
             const features = t.raw(`${plan.key}.features`) as string[];
-            return (
-              <motion.div
-                key={plan.key}
-                variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: {
-                    opacity: 1,
-                    y: 0,
-                    transition: { duration: 0.5, ease: "easeOut" },
-                  },
-                }}
-                className={cn(
-                  "relative flex flex-col p-8",
-                  plan.popular
-                    ? "glass-active gradient-border shadow-[0_0_80px_-20px_rgba(139,92,246,0.15)]"
-                    : "glass-hover"
-                )}
-              >
-                <div className="mb-6 flex items-center justify-between">
-                  <div>
-                    <h3 className="text-xl font-semibold">
-                      {t(`${plan.key}.name`)}
-                    </h3>
-                    <p className="mt-1 text-sm text-muted-foreground">
-                      {t(`${plan.key}.description`)}
-                    </p>
-                  </div>
-                  {plan.popular && (
-                    <Badge className="border-transparent bg-foreground text-background">
-                      {t("popular")}
-                    </Badge>
-                  )}
-                </div>
 
-                <p className="mb-2 text-4xl font-bold">
-                  {t(`${plan.key}.price`)}{" "}
-                  <span className="text-base font-normal text-muted-foreground">
-                    {t("currency")}
+            const inner = (
+              <>
+                <CardHeader>
+                  <CardTitle className="font-medium">
+                    {t(`${plan.key}.name`)}
+                  </CardTitle>
+                  <span className="my-3 block text-2xl font-semibold">
+                    {t(`${plan.key}.price`)}
                   </span>
-                </p>
+                  <CardDescription className="text-sm">
+                    {t(`${plan.key}.monthly`)}
+                  </CardDescription>
+                </CardHeader>
 
-                <div className="mb-8 flex items-center gap-2 text-sm text-muted-foreground">
-                  <Clock className="h-3.5 w-3.5" />
-                  {t(`${plan.key}.delivery`)}
-                </div>
+                <CardContent className="space-y-4">
+                  <hr className="border-dashed" />
 
-                <ul className="mb-8 flex-1 space-y-3">
-                  {features.map((feature: string) => (
-                    <li
-                      key={feature}
-                      className="flex items-start gap-3 text-sm text-foreground/60"
-                    >
-                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-foreground/50" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+                  <ul className="list-outside space-y-3 text-sm">
+                    {features.map((item, index) => (
+                      <li key={index} className="flex items-center gap-2">
+                        <Check className="size-3 shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
 
-                <Button
-                  asChild
-                  className={cn(
-                    "w-full rounded-full",
-                    plan.popular
-                      ? "bg-foreground text-background hover:bg-foreground/90"
-                      : "border border-foreground/20 bg-transparent text-foreground hover:bg-foreground/5"
-                  )}
-                >
-                  <a href="#contact">{t("choosePlan")}</a>
-                </Button>
-              </motion.div>
+                <CardFooter className="mt-auto">
+                  <Button
+                    asChild
+                    variant={plan.popular ? "default" : "outline"}
+                    className="w-full"
+                  >
+                    <Link href="#contact">{t("choosePlan")}</Link>
+                  </Button>
+                </CardFooter>
+              </>
+            );
+
+            if (plan.popular) {
+              return (
+                <Card key={plan.key} className="relative">
+                  <span className="bg-linear-to-br/increasing absolute inset-x-0 -top-3 mx-auto flex h-6 w-fit items-center rounded-full from-purple-400 to-amber-300 px-3 py-1 text-xs font-medium text-amber-950 ring-1 ring-inset ring-white/20 ring-offset-1 ring-offset-gray-950/5">
+                    {t("popular")}
+                  </span>
+                  <div className="flex h-full flex-col gap-6">{inner}</div>
+                </Card>
+              );
+            }
+
+            return (
+              <Card key={plan.key} className="flex flex-col">
+                {inner}
+              </Card>
             );
           })}
-        </motion.div>
+        </div>
+
+        <p className="text-muted-foreground mx-auto mt-8 max-w-2xl text-center text-sm">
+          {t("disclaimer")}
+        </p>
       </div>
     </section>
   );

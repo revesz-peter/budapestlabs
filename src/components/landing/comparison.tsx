@@ -44,7 +44,7 @@ function CellIcon({ value }: { value: string }) {
     "outdated",            "elavult",             "veraltet",
     "meetings",            "megbeszélések",       "freigaben",
     "usually",             "általában",           "meistens",
-    "1–4 seconds",         "1–4 másodperc",       "1–4 sekunden",
+    "1-4 seconds",         "1-4 másodperc",       "1-4 sekunden",
   ];
 
   const negative = [
@@ -54,7 +54,7 @@ function CellIcon({ value }: { value: string }) {
     "often broken",        "gyakran hibás",       "oft fehlerhaft",
     "minimal",             "minimális",
     "generic",             "sablon",              "standard-vorlage",
-    "3–8 seconds",         "3–8 másodperc",       "3–8 sekunden",
+    "3-8 seconds",         "3-8 másodperc",       "3-8 sekunden",
   ];
 
   if (positive.some((kw) => lower.includes(kw))) {
@@ -73,17 +73,12 @@ export function Comparison() {
   const t = useTranslations("comparison");
 
   return (
-    <section className="px-6 py-24 md:px-8 lg:px-16">
-      <div className="mx-auto max-w-5xl">
+    <section className="py-16 md:py-32">
+      <div className="mx-auto max-w-5xl px-6">
         {/* Header */}
-        <div className="mb-16 text-center">
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            {t("label")}
-          </p>
-          <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            {t("subtitle")}
-          </p>
+        <div className="mx-auto mb-8 max-w-xl space-y-6 text-center md:mb-16">
+          <h2 className="text-4xl font-medium lg:text-5xl">{t("title")}</h2>
+          <p>{t("subtitle")}</p>
         </div>
 
         {/* Table */}

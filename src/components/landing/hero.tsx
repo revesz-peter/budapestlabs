@@ -1,129 +1,165 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import React from "react";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  Zap,
-  Calendar,
-  Shield,
-  ShieldCheck,
-  Lock,
-  Clock,
-  CreditCard,
-} from "lucide-react";
-import { MeshGradientBackground } from "@/components/ui/mesh-gradient";
+import { useTranslations } from "next-intl";
+import { TextEffect } from "@/components/motion-primitives/text-effect";
+import { AnimatedGroup } from "@/components/motion-primitives/animated-group";
+import type { Variants } from "framer-motion";
+
+const transitionVariants: { item: Variants } = {
+  item: {
+    hidden: {
+      opacity: 0,
+      filter: "blur(12px)",
+      y: 12,
+    },
+    visible: {
+      opacity: 1,
+      filter: "blur(0px)",
+      y: 0,
+      transition: {
+        type: "spring",
+        bounce: 0.3,
+        duration: 1.5,
+      },
+    },
+  },
+};
+
+const stack = [
+  "Next.js",
+  "React",
+  "TypeScript",
+  "Tailwind CSS",
+  "Vercel",
+  "Neon",
+  "Drizzle",
+  "Stripe",
+];
 
 export function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20">
-      {/* Mesh gradient background */}
-      <MeshGradientBackground
-        className="pointer-events-none"
-        colors={["#2563eb", "#0d9488", "#3b82f6", "#06b6d4"]}
-        speed={0.5}
-        backgroundColor="transparent"
-      />
-
-      <div className="relative mx-auto max-w-5xl text-center">
-        {/* Badge pill */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-        >
-          <span className="mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-foreground/5 px-4 py-1.5 text-xs font-medium uppercase tracking-widest text-muted-foreground backdrop-blur-sm">
-            <Zap className="h-3 w-3" />
-            {t("badge")}
-          </span>
-        </motion.div>
-
-        {/* Headline */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-        >
-          <h1 className="text-6xl font-bold leading-[1.05] tracking-tight sm:text-7xl md:text-8xl lg:text-9xl">
-            {t("title")}
-          </h1>
-        </motion.div>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.25 }}
-          className="mx-auto mt-8 max-w-2xl text-lg text-muted-foreground md:text-xl"
-        >
-          {t("subtitle")}
-        </motion.p>
-
-        {/* CTA buttons */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-          className="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
-        >
-          <Button
-            asChild
-            size="lg"
-            className="rounded-full bg-foreground px-8 text-base text-background hover:bg-foreground/90"
-          >
-            <a href="#contact">
-              {t("cta")}
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
-          </Button>
-          <Button
-            asChild
-            variant="ghost"
-            size="lg"
-            className="rounded-full border border-foreground/20 text-base text-foreground hover:bg-foreground/5"
-          >
-            <a
-              href="https://cal.com/peter-budapestlabs"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Calendar className="mr-2 h-4 w-4" />
-              {t("demo")}
-            </a>
-          </Button>
-        </motion.div>
-
-        {/* Trust signals */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-          className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-foreground/60"
-        >
-          <span className="flex items-center gap-1.5">
-            <CreditCard className="h-4 w-4" />
-            {t("trust.payAfter")}
-          </span>
-          <span className="flex items-center gap-1.5">
-            <Clock className="h-4 w-4" />
-            {t("trust.delivery")}
-          </span>
-          <span className="flex items-center gap-1.5">
-            <Lock className="h-4 w-4" />
-            {t("trust.secure")}
-          </span>
-          <span className="flex items-center gap-1.5">
-            <Shield className="h-4 w-4" />
-            {t("trust.revision")}
-          </span>
-          <span className="flex items-center gap-1.5">
-            <ShieldCheck className="h-4 w-4" />
-            {t("trust.warranty")}
-          </span>
-        </motion.div>
+    <main className="overflow-hidden">
+      <div
+        aria-hidden
+        className="absolute inset-0 isolate hidden opacity-65 contain-strict lg:block"
+      >
+        <div className="w-140 h-320 -translate-y-87.5 absolute left-0 top-0 -rotate-45 rounded-full bg-[radial-gradient(68.54%_68.72%_at_55.02%_31.46%,hsla(0,0%,85%,.08)_0,hsla(0,0%,55%,.02)_50%,hsla(0,0%,45%,0)_80%)]" />
+        <div className="h-320 absolute left-0 top-0 w-60 -rotate-45 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.06)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)] [translate:5%_-50%]" />
+        <div className="h-320 -translate-y-87.5 absolute left-0 top-0 w-60 -rotate-45 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]" />
       </div>
-    </section>
+      <section>
+        <div className="relative pt-24 md:pt-36">
+          <div
+            aria-hidden
+            className="absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_75%)]"
+          />
+
+          <div className="mx-auto max-w-7xl px-6">
+            <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
+              <AnimatedGroup variants={transitionVariants}>
+                <Link
+                  href="#pricing"
+                  className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
+                >
+                  <span className="text-foreground text-sm">{t("badge")}</span>
+                  <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
+
+                  <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
+                    <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
+                      <span className="flex size-6">
+                        <ArrowRight className="m-auto size-3" />
+                      </span>
+                      <span className="flex size-6">
+                        <ArrowRight className="m-auto size-3" />
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </AnimatedGroup>
+
+              <TextEffect
+                preset="fade-in-blur"
+                speedSegment={0.3}
+                as="h1"
+                className="mx-auto mt-8 max-w-4xl text-balance text-4xl max-md:font-semibold md:text-6xl lg:mt-16 xl:text-7xl"
+              >
+                {t("title")}
+              </TextEffect>
+              <TextEffect
+                per="line"
+                preset="fade-in-blur"
+                speedSegment={0.3}
+                delay={0.5}
+                as="p"
+                className="mx-auto mt-8 max-w-2xl text-balance text-base md:text-lg"
+              >
+                {t("subtitle")}
+              </TextEffect>
+
+              <AnimatedGroup
+                variants={{
+                  container: {
+                    visible: {
+                      transition: {
+                        staggerChildren: 0.05,
+                        delayChildren: 0.75,
+                      },
+                    },
+                  },
+                  ...transitionVariants,
+                }}
+                className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row"
+              >
+                <div
+                  key={1}
+                  className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5"
+                >
+                  <Button asChild size="lg" className="rounded-xl px-5 text-base">
+                    <Link href="#contact">
+                      <span className="text-nowrap">{t("cta")}</span>
+                    </Link>
+                  </Button>
+                </div>
+                <Button
+                  key={2}
+                  asChild
+                  size="lg"
+                  variant="ghost"
+                  className="h-10.5 rounded-xl px-5"
+                >
+                  <Link
+                    href="https://cal.com/peter-budapestlabs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span className="text-nowrap">{t("demo")}</span>
+                  </Link>
+                </Button>
+              </AnimatedGroup>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section className="bg-background pb-16 pt-16 md:pb-32">
+        <div className="relative m-auto max-w-5xl px-6">
+          <div className="mx-auto grid max-w-3xl grid-cols-2 items-center gap-x-8 gap-y-8 sm:grid-cols-4 sm:gap-y-12">
+            {stack.map((name) => (
+              <div key={name} className="flex items-center">
+                <span className="text-muted-foreground mx-auto text-lg font-semibold tracking-tight">
+                  {name}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }

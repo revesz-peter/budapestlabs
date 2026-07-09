@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Budapest Labs",
   description:
-    "Professzionális, mobilbarát weboldalak — 6 órán belül elkészítve.",
+    "Professzionális weboldal havi 9 900 forinttól. Induláskor nem fizet semmit.",
 };
 
 export default function RootLayout({

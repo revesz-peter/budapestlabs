@@ -1,15 +1,14 @@
 import { useTranslations } from "next-intl";
-import { Mail } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 
 export function Footer() {
   const t = useTranslations();
-  const year = new Date().getFullYear();
 
   return (
     <footer className="border-t border-border px-6 pt-16 pb-8 md:px-8 lg:px-16">
       <div className="mx-auto max-w-6xl">
         <div>
-          <div className="grid gap-12 md:grid-cols-4">
+          <div className="grid gap-12 md:grid-cols-3">
             {/* Brand */}
             <div className="md:col-span-1">
               <p className="text-lg font-bold tracking-tight">
@@ -59,39 +58,25 @@ export function Footer() {
                 {t("footer.legal")}
               </p>
               <nav className="flex flex-col gap-2">
-                <a
+                <Link
                   href="/privacy"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {t("footer.privacy")}
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/terms"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {t("footer.terms")}
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/imprint"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {t("footer.imprint")}
-                </a>
+                </Link>
               </nav>
-            </div>
-
-            {/* Contact */}
-            <div>
-              <p className="mb-4 text-sm font-medium text-foreground/60">
-                {t("contact.label")}
-              </p>
-              <a
-                href="mailto:budapestlabs@gmail.com"
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-              >
-                <Mail className="h-3.5 w-3.5" />
-                budapestlabs@gmail.com
-              </a>
             </div>
           </div>
         </div>

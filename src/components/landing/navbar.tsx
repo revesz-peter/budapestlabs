@@ -1,152 +1,140 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { useRouter, usePathname } from "@/i18n/navigation";
-import { useLocale } from "next-intl";
-import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/landing/theme-toggle";
+import Link from "next/link";
+import { Logo } from "@/components/logo";
 import { Menu, X } from "lucide-react";
-import { useState, useEffect, useCallback } from "react";
+import { Button } from "@/components/ui/button";
+import React from "react";
+import { cn } from "@/lib/utils";
+import { useTranslations, useLocale } from "next-intl";
+import { useRouter, usePathname, Link as LocaleLink } from "@/i18n/navigation";
+import { ThemeToggle } from "@/components/landing/theme-toggle";
 
-const navLinks = [
-  { key: "process", href: "#process" },
-  { key: "recentWork", href: "#recent-work" },
-  { key: "pricing", href: "#pricing" },
-  { key: "faq", href: "#faq" },
-] as const;
+const locales = ["hu", "en", "de"] as const;
 
 export function Navbar() {
   const t = useTranslations("nav");
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [menuState, setMenuState] = React.useState(false);
+  const [isScrolled, setIsScrolled] = React.useState(false);
 
-  const onScroll = useCallback(() => {
-    setScrolled(window.scrollY > 20);
+  const menuItems = [
+    { name: t("process"), href: "#process" },
+    { name: t("pricing"), href: "#pricing" },
+    { name: t("faq"), href: "#faq" },
+    { name: t("contact"), href: "#contact" },
+  ];
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    let ticking = false;
-    const handleScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          onScroll();
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [onScroll]);
-
-  function switchLocale(newLocale: "hu" | "en" | "de") {
+  function switchLocale(newLocale: (typeof locales)[number]) {
     router.replace(pathname, { locale: newLocale });
   }
 
+  const languageSwitcher = (
+    <div className="flex items-center rounded-full border p-1">
+      {locales.map((lang) => (
+        <button
+          key={lang}
+          onClick={() => switchLocale(lang)}
+          className={cn(
+            "cursor-pointer rounded-full px-2.5 py-1 text-xs font-medium uppercase transition-colors",
+            locale === lang
+              ? "bg-foreground text-background"
+              : "text-muted-foreground hover:text-foreground"
+          )}
+        >
+          {lang}
+        </button>
+      ))}
+    </div>
+  );
+
   return (
-    <nav
-      className={cn(
-        "fixed top-0 z-50 w-full transition-all duration-300",
-        scrolled
-          ? "border-b border-border bg-background/80 backdrop-blur-xl"
-          : "bg-transparent"
-      )}
-    >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        {/* Logo */}
-        <a href="#" className="text-lg font-bold tracking-tight">
-          Budapest Labs
-        </a>
+    <header>
+      <nav
+        data-state={menuState && "active"}
+        className="fixed z-20 w-full px-2"
+      >
+        <div
+          className={cn(
+            "mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12",
+            isScrolled &&
+              "bg-background/50 max-w-4xl rounded-2xl border backdrop-blur-lg lg:px-5"
+          )}
+        >
+          <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
+            <div className="flex w-full justify-between lg:w-auto">
+              <LocaleLink
+                href="/"
+                aria-label="home"
+                className="flex items-center space-x-2"
+              >
+                <Logo />
+              </LocaleLink>
 
-        {/* Desktop Nav */}
-        <div className="hidden items-center gap-8 md:flex">
-          {navLinks.map((link) => (
-            <a
-              key={link.key}
-              href={link.href}
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              {t(link.key)}
-            </a>
-          ))}
-        </div>
-
-        {/* Right side */}
-        <div className="flex items-center gap-3">
-          {/* Language Switcher */}
-          <div className="flex items-center rounded-full border border-border bg-foreground/5 p-1">
-            {(["hu", "en", "de"] as const).map((lang) => (
               <button
-                key={lang}
-                onClick={() => switchLocale(lang)}
-                className={cn(
-                  "rounded-full px-2.5 py-1 text-xs font-medium transition-colors",
-                  locale === lang
-                    ? "bg-foreground text-background"
-                    : "text-muted-foreground hover:text-foreground"
-                )}
+                onClick={() => setMenuState(!menuState)}
+                aria-label={menuState == true ? "Close Menu" : "Open Menu"}
+                className="relative z-20 -m-2.5 -mr-4 block cursor-pointer p-2.5 lg:hidden"
               >
-                {lang.toUpperCase()}
+                <Menu className="in-data-[state=active]:rotate-180 in-data-[state=active]:scale-0 in-data-[state=active]:opacity-0 m-auto size-6 duration-200" />
+                <X className="in-data-[state=active]:rotate-0 in-data-[state=active]:scale-100 in-data-[state=active]:opacity-100 absolute inset-0 m-auto size-6 -rotate-180 scale-0 opacity-0 duration-200" />
               </button>
-            ))}
-          </div>
+            </div>
 
-          {/* Theme Toggle */}
-          <ThemeToggle />
+            <div className="absolute inset-0 m-auto hidden size-fit lg:block">
+              <ul className="flex gap-8 text-sm">
+                {menuItems.map((item, index) => (
+                  <li key={index}>
+                    <Link
+                      href={item.href}
+                      className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                    >
+                      <span>{item.name}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          {/* CTA */}
-          <Button
-            asChild
-            className="hidden rounded-full bg-foreground px-6 text-background hover:bg-foreground/90 md:inline-flex"
-          >
-            <a href="#contact">{t("contact")}</a>
-          </Button>
-
-          {/* Mobile Menu Toggle */}
-          <button
-            onClick={() => setMobileOpen(!mobileOpen)}
-            className="text-muted-foreground hover:text-foreground md:hidden"
-            aria-label={mobileOpen ? "Close menu" : "Open menu"}
-            aria-expanded={mobileOpen}
-          >
-            {mobileOpen ? (
-              <X className="h-5 w-5" />
-            ) : (
-              <Menu className="h-5 w-5" />
-            )}
-          </button>
-        </div>
-      </div>
-
-      {/* Mobile Menu */}
-      {mobileOpen && (
-        <div className="max-h-[70vh] overflow-y-auto border-t border-border bg-background/95 backdrop-blur-xl md:hidden">
-          <div className="flex flex-col gap-1 px-6 py-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.key}
-                href={link.href}
-                onClick={() => setMobileOpen(false)}
-                className="rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:bg-foreground/5 hover:text-foreground"
-              >
-                {t(link.key)}
-              </a>
-            ))}
-            <Button
-              asChild
-              className="mt-2 rounded-full bg-foreground text-background hover:bg-foreground/90"
-            >
-              <a href="#contact" onClick={() => setMobileOpen(false)}>
-                {t("contact")}
-              </a>
-            </Button>
+            <div className="bg-background in-data-[state=active]:block lg:in-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
+              <div className="lg:hidden">
+                <ul className="space-y-6 text-base">
+                  {menuItems.map((item, index) => (
+                    <li key={index}>
+                      <Link
+                        href={item.href}
+                        onClick={() => setMenuState(false)}
+                        className="text-muted-foreground hover:text-accent-foreground block duration-150"
+                      >
+                        <span>{item.name}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="flex w-full flex-col space-y-3 sm:flex-row sm:items-center sm:gap-3 sm:space-y-0 md:w-fit">
+                {languageSwitcher}
+                <ThemeToggle />
+                <Button asChild size="sm">
+                  <Link href="#contact" onClick={() => setMenuState(false)}>
+                    <span>{t("contact")}</span>
+                  </Link>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
-      )}
-    </nav>
+      </nav>
+    </header>
   );
 }

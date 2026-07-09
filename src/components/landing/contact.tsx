@@ -19,6 +19,7 @@ const schema = z.object({
   business: z.string().optional(),
   plan: z.string().optional(),
   message: z.string().optional(),
+  website: z.string().optional(),
 });
 
 type FormData = z.infer<typeof schema>;
@@ -47,6 +48,7 @@ function FieldError({ message }: { message?: string }) {
 export function Contact() {
   const t = useTranslations("contact");
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
 
   const {
     register,
@@ -57,6 +59,7 @@ export function Contact() {
   });
 
   async function onSubmit(data: FormData) {
+    setSubmitError(false);
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -66,22 +69,17 @@ export function Contact() {
       if (!res.ok) throw new Error();
       setSubmitted(true);
     } catch {
-      alert("Something went wrong. Please try again.");
+      setSubmitError(true);
     }
   }
 
   return (
-    <section id="contact" className="px-6 py-24 md:px-8 lg:px-16">
-      <div className="mx-auto max-w-2xl">
+    <section id="contact" className="py-16 md:py-32">
+      <div className="mx-auto max-w-2xl px-6">
         {/* Header */}
-        <div className="mb-16 text-center">
-          <p className="mb-4 text-sm font-medium uppercase tracking-widest text-muted-foreground">
-            {t("label")}
-          </p>
-          <h2 className="text-3xl font-bold md:text-4xl">{t("title")}</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-lg text-muted-foreground">
-            {t("subtitle")}
-          </p>
+        <div className="mx-auto mb-8 max-w-xl space-y-6 text-center md:mb-16">
+          <h2 className="text-4xl font-medium lg:text-5xl">{t("title")}</h2>
+          <p>{t("subtitle")}</p>
         </div>
 
         {/* Form */}
@@ -96,7 +94,7 @@ export function Contact() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="glass py-20 text-center"
+              className="bg-card rounded-2xl border py-20 text-center shadow-sm"
             >
               <motion.div
                 initial={{ scale: 0 }}
@@ -124,7 +122,16 @@ export function Contact() {
               </motion.p>
             </motion.div>
           ) : (
-            <form onSubmit={handleSubmit(onSubmit)} noValidate className="glass space-y-6 p-8">
+            <form onSubmit={handleSubmit(onSubmit)} noValidate className="bg-card space-y-6 rounded-2xl border p-8 shadow-sm">
+              {/* Honeypot — invisible to humans, bots fill it in */}
+              <input
+                type="text"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                className="absolute -left-[9999px] h-0 w-0 opacity-0"
+                {...register("website")}
+              />
               <div className="grid gap-6 sm:grid-cols-2">
                 <div className="space-y-2">
                   <Label htmlFor="name" className="text-sm text-foreground/60">
@@ -227,6 +234,11 @@ export function Contact() {
                 <Send className="mr-2 h-4 w-4" />
                 {isSubmitting ? "..." : t("form.submit")}
               </Button>
+              {submitError && (
+                <p className="text-center text-sm text-red-400">
+                  {t("form.errors.submit")}
+                </p>
+              )}
             </form>
           )}
         </motion.div>

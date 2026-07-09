@@ -1,5 +1,8 @@
+import { use } from "react";
 import { useTranslations, useLocale } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
 import { ArrowLeft, Download } from "lucide-react";
+import { Link } from "@/i18n/navigation";
 import type { Metadata } from "next";
 
 export async function generateMetadata({
@@ -11,12 +14,18 @@ export async function generateMetadata({
   return {
     title:
       locale === "hu"
-        ? "ÁSZF — Budapest Labs"
-        : "Terms of Service — Budapest Labs",
+        ? "ÁSZF | Budapest Labs"
+        : "Terms of Service | Budapest Labs",
   };
 }
 
-export default function TermsPage() {
+export default function TermsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale: paramLocale } = use(params);
+  setRequestLocale(paramLocale);
   const t = useTranslations("legal");
   const locale = useLocale();
 
@@ -37,13 +46,13 @@ export default function TermsPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-6 py-16 md:py-24">
-      <a
+      <Link
         href="/"
         className="mb-12 inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
       >
         <ArrowLeft className="h-4 w-4" />
         {t("back")}
-      </a>
+      </Link>
 
       <div className="flex items-start justify-between gap-4">
         <div>
