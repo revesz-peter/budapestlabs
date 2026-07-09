@@ -11,7 +11,8 @@
     "title": "Premium-Website, in wenigen Tagen.",
     "subtitle": "Individuelles Design, blitzschnell, und wir kümmern uns um alles. Sie zahlen erst, wenn Sie zufrieden sind.",
     "cta": "Jetzt starten",
-    "demo": "Kostenlose Beratung"
+    "demo": "Kostenlose Beratung",
+    "stackLabel": "Der Stack hinter Ihrer Website"
   },
   "stats": {
     "title": "Budapest Labs in Zahlen",
@@ -149,7 +150,7 @@
       },
       "tech": {
         "question": "Welche Technologie nutzen Sie?",
-        "answer": "Wir bauen auf Next.js, React, TypeScript und Tailwind CSS, gehostet auf Vercel mit globalem CDN und SSL. Starter bleibt schlank ohne Datenbank. Business ergänzt Neon und Drizzle für Buchungen und Kundendaten. Custom ergänzt Stripe für Online-Zahlungen. Schnell, sicher und langfristig gepflegt."
+        "answer": "Wir bauen auf Next.js, React, TypeScript und Tailwind CSS, gehostet auf Vercel mit globalem CDN und SSL. Diesen Stack wählen wir, weil er schnell lädt, sicher bleibt und langfristig wartbar ist. Dieselbe Art Technologie wie auf ernsthaften Business-Websites, kein Baukasten, den Sie schnell überwachsen. Starter bleibt schlank ohne Datenbank. Business ergänzt Neon und Drizzle für Buchungen und Kundendaten. Custom ergänzt Stripe für Zahlungen. Jedes Paket bekommt nur, was Sie wirklich brauchen."
       },
       "partner": {
         "question": "Brauche ich Logo oder Drucksachen?",

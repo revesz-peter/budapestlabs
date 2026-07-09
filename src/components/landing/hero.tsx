@@ -1,14 +1,29 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
 import { TextEffect } from "@/components/motion-primitives/text-effect";
 import { AnimatedGroup } from "@/components/motion-primitives/animated-group";
+import { InfiniteSlider } from "@/components/motion-primitives/infinite-slider";
+import { ProgressiveBlur } from "@/components/motion-primitives/progressive-blur";
 import type { Variants } from "framer-motion";
+
+const HERO_VIDEO =
+  "https://videos.pexels.com/video-files/35968183/15249566_1920_1080_30fps.mp4";
+
+const stackBrands = [
+  "Next.js",
+  "React",
+  "TypeScript",
+  "Tailwind CSS",
+  "Vercel",
+  "Neon",
+  "Drizzle",
+  "Stripe",
+] as const;
 
 const transitionVariants: { item: Variants } = {
   item: {
@@ -30,147 +45,167 @@ const transitionVariants: { item: Variants } = {
   },
 };
 
-const backgroundVariants = {
-  container: {
-    visible: {
-      transition: {
-        delayChildren: 1,
-      },
-    },
-  },
-  item: {
-    hidden: {
-      opacity: 0,
-      y: 20,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        type: "spring",
-        bounce: 0.3,
-        duration: 2,
-      },
-    },
-  },
-} as const;
+function StackWordmark({ name }: { name: string }) {
+  return (
+    <span className="text-muted-foreground shrink-0 text-sm font-medium tracking-wide whitespace-nowrap">
+      {name}
+    </span>
+  );
+}
 
 export function Hero() {
   const t = useTranslations("hero");
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const video = videoRef.current;
+    if (!video) return;
+
+    if (media.matches) {
+      video.pause();
+      return;
+    }
+
+    video.play().catch(() => undefined);
+
+    const onChange = () => {
+      if (media.matches) video.pause();
+      else video.play().catch(() => undefined);
+    };
+
+    media.addEventListener("change", onChange);
+    return () => media.removeEventListener("change", onChange);
+  }, []);
 
   return (
-    <main className="overflow-hidden">
-      <div
-        aria-hidden
-        className="absolute inset-0 isolate hidden opacity-65 contain-strict lg:block"
-      >
-        <div className="w-140 h-320 -translate-y-87.5 absolute left-0 top-0 -rotate-45 rounded-full bg-[radial-gradient(68.54%_68.72%_at_55.02%_31.46%,hsla(0,0%,85%,.08)_0,hsla(0,0%,55%,.02)_50%,hsla(0,0%,45%,0)_80%)]" />
-        <div className="h-320 absolute left-0 top-0 w-60 -rotate-45 rounded-full bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.06)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)] [translate:5%_-50%]" />
-        <div className="h-320 -translate-y-87.5 absolute left-0 top-0 w-60 -rotate-45 bg-[radial-gradient(50%_50%_at_50%_50%,hsla(0,0%,85%,.04)_0,hsla(0,0%,45%,.02)_80%,transparent_100%)]" />
-      </div>
+    <main className="overflow-x-hidden">
       <section>
-        <div className="relative min-h-[85vh] pt-24 pb-32 md:pt-36 md:pb-48">
-          <AnimatedGroup
-            variants={backgroundVariants}
-            className="mask-y-from-25% mask-y-to-[100%] pointer-events-none absolute inset-x-0 top-32 bottom-0 lg:top-8"
-          >
-            <Image
-              src="/photo-1662285064441-bedb11ca7e47.webp"
-              alt=""
-              width={1344}
-              height={1759}
-              priority
-              className="hidden size-full object-cover object-[50%_22%] mix-blend-overlay dark:block"
-            />
-          </AnimatedGroup>
-
-          <div
-            aria-hidden
-            className="pointer-events-none absolute inset-0 -z-10 size-full [background:radial-gradient(125%_125%_at_50%_100%,transparent_0%,var(--color-background)_88%)]"
-          />
-
-          <div className="mx-auto max-w-7xl px-6">
-            <div className="text-center sm:mx-auto lg:mr-auto lg:mt-0">
-              <AnimatedGroup variants={transitionVariants}>
-                <Link
-                  href="#pricing"
-                  className="hover:bg-background dark:hover:border-t-border bg-muted group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
-                >
-                  <span className="text-foreground text-sm">{t("badge")}</span>
-                  <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700"></span>
-
-                  <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
-                    <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
-                      <span className="flex size-6">
-                        <ArrowRight className="m-auto size-3" />
-                      </span>
-                      <span className="flex size-6">
-                        <ArrowRight className="m-auto size-3" />
-                      </span>
+        <div className="relative">
+          <div className="relative z-10 flex aspect-2/3 flex-col justify-end px-6 pt-24 lg:aspect-video lg:px-12 lg:pt-36">
+            <div className="mx-auto w-full max-w-7xl pb-6 lg:pb-32">
+              <div className="max-w-lg">
+                <AnimatedGroup variants={transitionVariants}>
+                  <Link
+                    href="#pricing"
+                    className="hover:bg-background dark:hover:border-t-border bg-muted group mb-8 inline-flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
+                  >
+                    <span className="text-foreground text-sm">{t("badge")}</span>
+                    <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700" />
+                    <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
+                      <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
+                        <span className="flex size-6">
+                          <ArrowRight className="m-auto size-3" />
+                        </span>
+                        <span className="flex size-6">
+                          <ArrowRight className="m-auto size-3" />
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              </AnimatedGroup>
+                  </Link>
+                </AnimatedGroup>
 
-              <TextEffect
-                preset="fade-in-blur"
-                speedSegment={0.3}
-                as="h1"
-                className="mx-auto mt-8 max-w-4xl text-balance text-4xl max-md:font-semibold md:text-6xl lg:mt-16 xl:text-7xl"
-              >
-                {t("title")}
-              </TextEffect>
-              <TextEffect
-                per="line"
-                preset="fade-in-blur"
-                speedSegment={0.3}
-                delay={0.5}
-                as="p"
-                className="mx-auto mt-8 max-w-2xl text-balance text-base md:text-lg"
-              >
-                {t("subtitle")}
-              </TextEffect>
+                <TextEffect
+                  preset="fade-in-blur"
+                  speedSegment={0.3}
+                  as="h1"
+                  className="text-balance text-4xl max-md:font-semibold md:text-6xl xl:text-7xl"
+                >
+                  {t("title")}
+                </TextEffect>
+                <TextEffect
+                  per="line"
+                  preset="fade-in-blur"
+                  speedSegment={0.3}
+                  delay={0.5}
+                  as="p"
+                  className="mt-6 text-balance text-base md:text-lg"
+                >
+                  {t("subtitle")}
+                </TextEffect>
 
-              <AnimatedGroup
-                variants={{
-                  container: {
-                    visible: {
-                      transition: {
-                        staggerChildren: 0.05,
-                        delayChildren: 0.75,
+                <AnimatedGroup
+                  variants={{
+                    container: {
+                      visible: {
+                        transition: {
+                          staggerChildren: 0.05,
+                          delayChildren: 0.75,
+                        },
                       },
                     },
-                  },
-                  ...transitionVariants,
-                }}
-                className="mt-12 flex flex-col items-center justify-center gap-2 md:flex-row"
-              >
-                <div
-                  key={1}
-                  className="bg-foreground/10 rounded-[calc(var(--radius-xl)+0.125rem)] border p-0.5"
+                    ...transitionVariants,
+                  }}
+                  className="mt-8 flex flex-col items-start gap-2 sm:flex-row sm:items-center"
                 >
-                  <Button asChild size="lg" className="rounded-xl px-5 text-base">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="h-12 rounded-full pl-5 pr-3 text-base"
+                  >
                     <Link href="#contact">
                       <span className="text-nowrap">{t("cta")}</span>
+                      <ChevronRight className="ml-1" />
                     </Link>
                   </Button>
-                </div>
-                <Button
-                  key={2}
-                  asChild
-                  size="lg"
-                  variant="ghost"
-                  className="h-10.5 rounded-xl px-5"
-                >
-                  <Link
-                    href="https://cal.com/peter-budapestlabs"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Button
+                    asChild
+                    size="lg"
+                    variant="ghost"
+                    className="h-12 rounded-full px-5 text-base hover:bg-zinc-950/5 dark:hover:bg-white/5"
                   >
-                    <span className="text-nowrap">{t("demo")}</span>
-                  </Link>
-                </Button>
-              </AnimatedGroup>
+                    <Link
+                      href="https://cal.com/peter-budapestlabs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="text-nowrap">{t("demo")}</span>
+                    </Link>
+                  </Button>
+                </AnimatedGroup>
+              </div>
+            </div>
+          </div>
+
+          <div className="pointer-events-none absolute inset-1 overflow-hidden rounded-3xl border border-black/10 aspect-2/3 lg:aspect-video lg:rounded-[3rem] dark:border-white/5">
+            <video
+              ref={videoRef}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="not-dark:invert size-full -scale-x-100 object-cover"
+              src={HERO_VIDEO}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-background py-6">
+        <div className="group relative m-auto max-w-7xl px-6">
+          <div className="flex flex-col items-center md:flex-row">
+            <div className="md:max-w-44 md:border-r md:pr-6">
+              <p className="text-center text-sm md:text-end">{t("stackLabel")}</p>
+            </div>
+            <div className="relative w-full py-6 md:w-[calc(100%-11rem)]">
+              <InfiniteSlider speedOnHover={20} speed={40} gap={112}>
+                {stackBrands.map((name) => (
+                  <StackWordmark key={name} name={name} />
+                ))}
+              </InfiniteSlider>
+
+              <div className="from-background absolute inset-y-0 left-0 w-20 bg-linear-to-r" />
+              <div className="from-background absolute inset-y-0 right-0 w-20 bg-linear-to-l" />
+              <ProgressiveBlur
+                className="pointer-events-none absolute left-0 top-0 h-full w-20"
+                direction="left"
+                blurIntensity={1}
+              />
+              <ProgressiveBlur
+                className="pointer-events-none absolute right-0 top-0 h-full w-20"
+                direction="right"
+                blurIntensity={1}
+              />
             </div>
           </div>
         </div>

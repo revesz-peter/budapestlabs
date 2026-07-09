@@ -11,7 +11,8 @@
         "title": "A premium website, within days.",
         "subtitle": "Custom design, lightning fast, and we handle everything. You only pay when you're happy.",
         "cta": "Get Started",
-        "demo": "Free Consultation"
+        "demo": "Free Consultation",
+        "stackLabel": "The stack behind your site"
     },
     "stats": {
         "title": "Budapest Labs in numbers",
@@ -149,7 +150,7 @@
             },
             "tech": {
                 "question": "What technology do you use?",
-                "answer": "We build on Next.js, React, TypeScript, and Tailwind CSS, hosted on Vercel with global CDN and SSL. Starter stays lean with no database. Business adds Neon and Drizzle for bookings and customer data. Custom adds Stripe when you need payments. Fast, secure, and maintained for the long term."
+                "answer": "We build on Next.js, React, TypeScript, and Tailwind CSS, hosted on Vercel with global CDN and SSL. We picked this stack because it loads fast, stays secure, and will still be supported years from now. The same kind of setup used on serious business sites, not a drag-and-drop builder you outgrow. Starter stays lean with no database. Business adds Neon and Drizzle for bookings and customer data. Custom adds Stripe for payments. Each plan only adds what you need."
             },
             "partner": {
                 "question": "Need a logo or physical materials?",

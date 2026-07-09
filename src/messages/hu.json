@@ -11,7 +11,8 @@
         "title": "Prémium weboldal, napokon belül.",
         "subtitle": "Egyedi dizájn, villámgyors oldal, és mindent mi intézünk. Csak akkor fizet, ha elégedett.",
         "cta": "Kezdjük el",
-        "demo": "Ingyenes konzultáció"
+        "demo": "Ingyenes konzultáció",
+        "stackLabel": "Az oldal mögötti stack"
     },
     "stats": {
         "title": "Budapest Labs számokban",
@@ -48,7 +49,7 @@
             },
             "build": {
                 "title": "Elkészítjük",
-                "description": "Csapatunk azonnal munkába áll. Gyors, biztonságos, professzionális."
+                "description": "Megtervezzük és felépítjük az oldalt. Ön csak visszajelzéseket ad, a többit mi intézzük."
             },
             "launch": {
                 "title": "Élesítés",
@@ -116,11 +117,11 @@
         "moreCta": "Írjon nekünk, 24 órán belül válaszolunk.",
         "items": {
             "cost": {
-                "question": "Mennyibe kerül?",
+                "question": "Mennyibe kerül az oldal?",
                 "answer": "A Kezdő 0 Ft belépővel indul, havi 19 900 Ft-ért. A Business 49 900 Ft plusz havi 29 900 Ft, az egyedi projektek 149 000 Ft-tól és havi 49 900 Ft-tól. A pontos árat a kezdés előtt szerződésben rögzítjük."
             },
             "pay": {
-                "question": "Mikor kell fizetnem?",
+                "question": "Mikor kell fizetnie?",
                 "answer": "Semmit, amíg a kész oldalt jóvá nem hagyja. Nem tetszik? Addig alakítjuk, amíg igen, vagy elengedjük, és nem tartozik semmivel. A havi díj az élesítéstől indul."
             },
             "monthly": {
@@ -144,15 +145,15 @@
                 "answer": "Igen. Az oldala gyors, mobilbarát és keresőbarát módon készül."
             },
             "language": {
-                "question": "Kérhetek még egy nyelvet?",
+                "question": "Kérhet még egy nyelvet?",
                 "answer": "Magyar és angol alapból benne van. Ha németet vagy más nyelvet is szeretne, teljes fordított változatot készítünk: saját oldalak, nyelvváltó és keresőbeállítás. Egyszeri projektdíj, a kezdés előtt szerződésben rögzítve."
             },
             "tech": {
                 "question": "Milyen technológiával dolgoznak?",
-                "answer": "Next.js, React, TypeScript és Tailwind CSS alapon dolgozunk, Vercel tárhelyen, globális CDN-nel és SSL-lel. A Kezdő csomag adatbázis nélkül marad. A Business Neon és Drizzle adatbázist kap foglalásokhoz és ügyféladatokhoz. Egyedi projektnél Stripe jön online fizetéshez. Gyors, biztonságos, hosszú távon karbantartva."
+                "answer": "Next.js, React, TypeScript és Tailwind CSS alapon dolgozunk, Vercel tárhelyen, globális CDN-nel és SSL-lel. Azért ezt választottuk, mert gyors, biztonságos és évek múlva is karbantartható. Olyan megoldás, amit komoly üzleti oldalakon használnak, nem egy kinőhető sablon vagy weboldal-szerkesztő. A Kezdő csomag adatbázis nélkül marad. A Business Neon és Drizzle adatbázist kap foglalásokhoz és ügyféladatokhoz. Egyedi projektnél Stripe jön online fizetéshez. Minden csomag csak azt kapja, amire tényleg szüksége van."
             },
             "partner": {
-                "question": "Kell logó vagy nyomtatott anyag?",
+                "question": "Szüksége van logóra vagy nyomtatott anyagra?",
                 "answer": "Budapesti partnerünk, a SUSA STUDIO logót, nyomtatott anyagokat és art directiont készít. Az ár egyedi megállapodás szerint."
             }
         },
@@ -195,8 +196,8 @@
     },
     "comparison": {
         "label": "Összehasonlítás",
-        "title": "Budapest Labs vs A többiek",
-        "subtitle": "Tények és számok: így spórolunk Önnek időt és pénzt.",
+        "title": "Hogyan viszonyulunk?",
+        "subtitle": "Gyors áttekintés a lehetőségeiről.",
         "columns": {
             "feature": "",
             "diy": "Webépítők",
