@@ -3,7 +3,6 @@ import { Navbar } from "@/components/landing/navbar";
 import { Hero } from "@/components/landing/hero";
 import { Stats } from "@/components/landing/stats";
 import { ContentSection } from "@/components/landing/content-section";
-import { HowItWorks } from "@/components/landing/how-it-works";
 import { Comparison } from "@/components/landing/comparison";
 import { Pricing } from "@/components/landing/pricing";
 // import { Testimonials } from "@/components/landing/testimonials";
@@ -95,7 +94,6 @@ export default async function HomePage({
       <Hero />
       <ContentSection />
       <Stats />
-      <HowItWorks />
       <Comparison />
       <Pricing />
       {/* TODO: Add <Testimonials /> back when real testimonials are available */}

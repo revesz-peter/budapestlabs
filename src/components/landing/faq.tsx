@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Handshake, Fingerprint, Package, Compass, Instagram } from "lucide-react";
 
 const faqKeys = [
+  "process",
   "cost",
   "pay",
   "monthly",

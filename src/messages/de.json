@@ -1,6 +1,5 @@
 {
   "nav": {
-    "process": "Ablauf",
     "pricing": "Preise",
     "faq": "FAQ",
     "contact": "Kontakt",
@@ -31,29 +30,6 @@
         "industry": "Model Management",
         "description": "Eine elegante, schnelle Website, die das Talent in den Mittelpunkt stellt.",
         "cta": "Website besuchen"
-      }
-    }
-  },
-  "howItWorks": {
-    "label": "Ablauf",
-    "title": "Vier einfache Schritte",
-    "subtitle": "Von der ersten Nachricht zur fertigen Website in wenigen Tagen.",
-    "steps": {
-      "choose": {
-        "title": "Kontakt aufnehmen",
-        "description": "Füllen Sie das Formular aus und sagen Sie uns, was Sie brauchen."
-      },
-      "content": {
-        "title": "Details abstimmen",
-        "description": "Wir besprechen die Details gemeinsam und sammeln die Inhalte."
-      },
-      "build": {
-        "title": "Wir bauen es",
-        "description": "Unser Team legt sofort los. Schnell, sicher, professionell."
-      },
-      "launch": {
-        "title": "Online gehen",
-        "description": "Sie prüfen die Website, geben sie frei, und sie ist live für Ihre Kunden."
       }
     }
   },
@@ -116,6 +92,10 @@
     "more": "Noch etwas unklar?",
     "moreCta": "Schreiben Sie uns, wir antworten innerhalb von 24 Stunden.",
     "items": {
+      "process": {
+        "question": "Wie funktioniert es?",
+        "answer": "Schreiben Sie uns über das Formular oder buchen Sie eine kostenlose Beratung. Wir klären Ihre Ziele, empfehlen ein Paket und einigen uns auf die benötigten Inhalte. Vor Beginn der Arbeit erhalten Sie einen schriftlichen Vertrag mit festgelegter Erstellungs- und Monatsgebühr. Anschließend bauen wir Ihre Website in wenigen Tagen. Sie prüfen sie, bitten bei Bedarf um Anpassungen und geben schriftlich frei. Die Erstellungsgebühr ist bei Freigabe fällig, die Monatsgebühr beginnt mit dem Livegang. Sind Sie vor der Freigabe nicht zufrieden, können Sie jederzeit zurücktreten, ohne etwas zu zahlen."
+      },
       "cost": {
         "question": "Was kostet es?",
         "answer": "Starter 0 € im Voraus plus 49 € im Monat. Business 129 € plus 75 € im Monat. Custom ab 379 € plus ab 125 € im Monat. Der Preis wird vor dem Start vertraglich festgelegt."
@@ -269,8 +249,9 @@
   },
   "contact": {
     "label": "Kontakt",
-    "title": "Starten wir Ihr Projekt",
-    "subtitle": "Erzählen Sie uns von Ihrem Projekt und was Sie suchen.",
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Schreiben Sie uns, wobei wir Ihnen helfen können. Wir antworten innerhalb von 24 Stunden und senden vor Arbeitsbeginn einen schriftlichen Vertrag mit festen Gebühren.",
+    "consult": "Kostenlose Beratung buchen",
     "form": {
       "name": "Name",
       "namePlaceholder": "Ihr Name",

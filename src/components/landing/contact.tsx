@@ -76,9 +76,17 @@ export function Contact() {
   return (
     <section id="contact" className="py-16 md:py-32">
       <div className="mx-auto max-w-2xl px-6">
-        <div className="mx-auto mb-8 max-w-xl space-y-6 text-center md:mb-16">
+        <div className="mx-auto mb-8 max-w-xl space-y-3 text-center md:mb-12">
           <h2 className="text-4xl font-medium lg:text-5xl">{t("title")}</h2>
-          <p>{t("subtitle")}</p>
+          <p className="text-muted-foreground leading-relaxed">{t("subtitle")}</p>
+          <a
+            href="https://cal.com/peter-budapestlabs"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-foreground inline-block text-sm font-medium underline-offset-4 hover:underline"
+          >
+            {t("consult")}
+          </a>
         </div>
 
         <motion.div

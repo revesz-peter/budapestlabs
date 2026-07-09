@@ -1,6 +1,5 @@
 {
     "nav": {
-        "process": "Folyamat",
         "pricing": "Árak",
         "faq": "GYIK",
         "contact": "Kapcsolat",
@@ -31,29 +30,6 @@
                 "industry": "Modell Menedzsment",
                 "description": "Letisztult, gyors oldal, amely a tehetségeket helyezi középpontba.",
                 "cta": "Weboldal megtekintése"
-            }
-        }
-    },
-    "howItWorks": {
-        "label": "Folyamat",
-        "title": "Négy egyszerű lépés",
-        "subtitle": "Az első üzenettől az élő weboldalig, néhány nap alatt.",
-        "steps": {
-            "choose": {
-                "title": "Kapcsolatfelvétel",
-                "description": "Töltse ki az űrlapot, és mondja el, mire van szüksége."
-            },
-            "content": {
-                "title": "Egyeztetés",
-                "description": "Közösen átbeszéljük a részleteket és összegyűjtjük a tartalmakat."
-            },
-            "build": {
-                "title": "Elkészítjük",
-                "description": "Megtervezzük és felépítjük az oldalt. Ön csak visszajelzéseket ad, a többit mi intézzük."
-            },
-            "launch": {
-                "title": "Élesítés",
-                "description": "Átnézi, jóváhagyja, és máris elérhető az ügyfelei számára."
             }
         }
     },
@@ -116,6 +92,10 @@
         "more": "Más kérdése van?",
         "moreCta": "Írjon nekünk, 24 órán belül válaszolunk.",
         "items": {
+            "process": {
+                "question": "Hogyan működik?",
+                "answer": "Írjon nekünk az űrlapon, vagy foglaljon ingyenes konzultációt. Egyeztetünk a célokról, a megfelelő csomagról és a szükséges tartalmakról. A munka megkezdése előtt írásban megküldjük a szerződést, benne rögzítve a pontos kivitelezési és havi díjat. Ezután elkészítjük az oldalt, néhány nap alatt. Ön megtekinti, kér módosítást, majd írásban jóváhagyja. A kivitelezés díja a jóváhagyáskor esedékes, a havi díj az élesítéstől indul. Ha a kész oldal átadása előtt mégsem felel meg, megszakíthatja, és nem tartozik semmivel."
+            },
             "cost": {
                 "question": "Mennyibe kerül az oldal?",
                 "answer": "A Kezdő 0 Ft belépővel indul, havi 19 900 Ft-ért. A Business 49 900 Ft plusz havi 29 900 Ft, az egyedi projektek 149 000 Ft-tól és havi 49 900 Ft-tól. A pontos árat a kezdés előtt szerződésben rögzítjük."
@@ -269,8 +249,9 @@
     },
     "contact": {
         "label": "Kapcsolat",
-        "title": "Kezdjük el a projektet",
-        "subtitle": "Meséljen a projektjéről és az elképzeléseiről.",
+        "title": "Lépjen kapcsolatba velünk",
+        "subtitle": "Írjon nekünk, miben segíthetünk. 24 órán belül visszajelzünk, a munka előtt pedig szerződést küldünk a pontos díjakkal.",
+        "consult": "Ingyenes konzultáció",
         "form": {
             "name": "Név",
             "namePlaceholder": "Az Ön neve",

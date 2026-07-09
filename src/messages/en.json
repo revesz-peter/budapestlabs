@@ -1,6 +1,5 @@
 {
     "nav": {
-        "process": "Process",
         "pricing": "Pricing",
         "faq": "FAQ",
         "contact": "Contact",
@@ -31,29 +30,6 @@
                 "industry": "Model Management",
                 "description": "A sleek, fast website that puts their talent front and center.",
                 "cta": "Visit site"
-            }
-        }
-    },
-    "howItWorks": {
-        "label": "Process",
-        "title": "Four simple steps",
-        "subtitle": "From first message to live website in days.",
-        "steps": {
-            "choose": {
-                "title": "Get in touch",
-                "description": "Fill out the form and tell us what you need."
-            },
-            "content": {
-                "title": "We align on details",
-                "description": "We go over the details together and gather the content."
-            },
-            "build": {
-                "title": "We build it",
-                "description": "Our team gets to work immediately. Fast, secure, professional."
-            },
-            "launch": {
-                "title": "Go live",
-                "description": "You review it, approve it, and it goes live for your customers."
             }
         }
     },
@@ -116,6 +92,10 @@
         "more": "Something else on your mind?",
         "moreCta": "Ask us. We reply within 24 hours.",
         "items": {
+            "process": {
+                "question": "How does it work?",
+                "answer": "Contact us via the form or book a free consultation. We clarify your goals, recommend a plan, and agree on the content needed. Before any work starts, we send a written contract with your exact build fee and monthly fee fixed. We then build your site within days. You review it, request changes if needed, and give written approval. The build fee is due on approval. The monthly fee starts at go-live. If you are not satisfied before you approve, you can walk away owing nothing."
+            },
             "cost": {
                 "question": "What does it cost?",
                 "answer": "Starter is €0 up front plus €49 a month. Business is €129 plus €75 a month. Custom from €379 plus from €125 a month. Your price is fixed in the contract before we start."
@@ -269,8 +249,9 @@
     },
     "contact": {
         "label": "Contact",
-        "title": "Let's start your project",
-        "subtitle": "Tell us about your project and what you're looking for.",
+        "title": "Get in touch",
+        "subtitle": "Tell us what you need help with. We reply within 24 hours and send a written contract with fixed fees before any work starts.",
+        "consult": "Book a free consultation",
         "form": {
             "name": "Name",
             "namePlaceholder": "Your name",

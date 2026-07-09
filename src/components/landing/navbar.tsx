@@ -21,7 +21,6 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false);
 
   const menuItems = [
-    { name: t("process"), href: "#process" },
     { name: t("pricing"), href: "#pricing" },
     { name: t("faq"), href: "#faq" },
     { name: t("contact"), href: "#contact" },
