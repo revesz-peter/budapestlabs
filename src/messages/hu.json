@@ -31,7 +31,7 @@
         "billingToggleAriaLabel": "Havi vagy egyösszegben fizetés megjelenítése",
         "monthlySuffix": "12 hónap",
         "prepayBadge": "12% kedvezmény",
-        "prepayIncludes": "Az üzemeltetés egy évig jár hozzá.",
+        "prepayIncludes": "1 év szolgáltatás jár hozzá.",
         "starter": {
             "name": "Kezdő csomag",
             "price": "0 Ft",
@@ -82,7 +82,7 @@
             "termTotal": "747 800 Ft-tól",
             "termTotalPrepay": "658 000 Ft-tól"
         },
-        "disclaimer": "Az itt szereplő árak tájékoztató jellegűek. A pontos árat és a havi díjat a kezdés előtt szerződésben rögzítjük, meglepetések nélkül."
+        "disclaimer": "Az itt szereplő adatok tájékoztató jellegűek. A pontos árat, havi díjat és a várható határidőt a kezdés előtt szerződésben rögzítjük."
     },
     "faq": {
         "label": "GYIK",
@@ -93,15 +93,15 @@
         "items": {
             "process": {
                 "question": "Hogyan működik?",
-                "answer": "Írjon nekünk az űrlapon, vagy foglaljon ingyenes konzultációt. Egyeztetünk a célokról, a megfelelő csomagról és a szükséges tartalmakról. A munka megkezdése előtt írásban megküldjük a szerződést, benne rögzítve a pontos kivitelezési és havi díjat. Ezután elkészítjük az oldalt, néhány nap alatt. Ön megtekinti, kér módosítást, majd írásban jóváhagyja. A kivitelezés díja a jóváhagyáskor esedékes, a havi díj az élesítéstől indul. Ha a kész oldal átadása előtt mégsem felel meg, megszakíthatja, és nem tartozik semmivel."
+                "answer": "Írjon nekünk az űrlapon, vagy foglaljon ingyenes konzultációt. Egyeztetünk a célokról, a megfelelő csomagról és a szükséges tartalmakról. A munka megkezdése előtt írásban megküldjük a szerződést, benne rögzítve a pontos kivitelezési és havi díjat, valamint a várható határidőt. Ezután elkészítjük az oldalt, néhány nap alatt. Ön megtekinti, kér módosítást, majd írásban jóváhagyja. A kivitelezés díja a jóváhagyáskor esedékes, a havi díj az élesítéstől indul. Ha a kész oldal átadása előtt mégsem felel meg, megszakíthatja, és nem tartozik semmivel."
             },
             "cost": {
                 "question": "Mennyibe kerül az oldal?",
-                "answer": "A Kezdő 0 Ft belépővel indul, havi 19 900 Ft-ért. A Business 49 900 Ft plusz havi 29 900 Ft, az egyedi projektek 149 000 Ft-tól és havi 49 900 Ft-tól. A pontos árat a kezdés előtt szerződésben rögzítjük."
+                "answer": "A Kezdő 0 Ft belépővel indul, havi 19 900 Ft-ért. A Business 49 900 Ft plusz havi 29 900 Ft, az egyedi projektek 149 000 Ft-tól és havi 49 900 Ft-tól. A 12 hónap egy összegben is fizethető élesítéskor, 12% kedvezménnyel. A pontos árat a kezdés előtt szerződésben rögzítjük."
             },
             "pay": {
                 "question": "Mikor kell fizetnie?",
-                "answer": "A kivitelezés díját jóváhagyáskor, a havi díjat az élesítéstől fizeti, havonta. A 12 hónapot egy összegben is fizetheti élesítéskor, 12% kedvezménnyel, az üzemeltetés egy évig jár hozzá. A pontos feltételek a szerződésben szerepelnek. Jóváhagyás előtt nem tartozik semmivel."
+                "answer": "A kivitelezés díját jóváhagyáskor, a havi díjat az élesítéstől fizeti, havonta. A 12 hónapot egy összegben is fizetheti élesítéskor, 12% kedvezménnyel, 1 év szolgáltatás jár hozzá. A pontos feltételek a szerződésben szerepelnek. Jóváhagyás előtt nem tartozik semmivel."
             },
             "monthly": {
                 "question": "Mit tartalmaz a havi díj?",
@@ -247,7 +247,7 @@
     "contact": {
         "label": "Kapcsolat",
         "title": "Lépjen kapcsolatba velünk",
-        "subtitle": "Írjon nekünk, miben segíthetünk. 24 órán belül visszajelzünk, a munka előtt pedig szerződést küldünk a pontos díjakkal.",
+        "subtitle": "Írjon nekünk, miben segíthetünk. 24 órán belül visszajelzünk, a munka előtt pedig szerződést küldünk a pontos díjakkal és határidővel.",
         "consult": "Ingyenes konzultáció",
         "form": {
             "name": "Név",
@@ -261,9 +261,9 @@
             "plan": "Érdeklődés",
             "planPlaceholder": "Válasszon csomagot...",
             "planOptions": {
-                "starter": "Kezdő (0 Ft + 19 900 Ft/hó)",
-                "business": "Business (49 900 Ft + 29 900 Ft/hó)",
-                "pro": "Egyedi (149 000 Ft-tól + 49 900 Ft/hó-tól)",
+                "starter": "Kezdő (0 Ft + 19 900 Ft havi díj)",
+                "business": "Business (49 900 Ft + 29 900 Ft havi díj)",
+                "pro": "Egyedi (149 000 Ft-tól + 49 900 Ft-tól havi díj)",
                 "unsure": "Még nem tudom"
             },
             "message": "Üzenet",
@@ -279,7 +279,7 @@
         }
     },
     "footer": {
-        "description": "Prémium weboldalak vállalkozásoknak. 0 Ft belépőtől, havi üzemeltetéssel.",
+        "description": "Prémium weboldalak vállalkozásoknak. 0 Ft belépőtől, havi díjjal.",
         "navigation": "Navigáció",
         "legal": "Jogi",
         "privacy": "Adatvédelem",
@@ -340,7 +340,7 @@
                 },
                 "payment": {
                     "title": "Hogyan működik a fizetés",
-                    "content": "A weboldalunkon feltüntetett árak tájékoztató jellegűek. A pontos kivitelezési és havi díjat a munka megkezdése előtt egyedi szerződésben rögzítjük, és a szerződésben szereplő árak az irányadók. A kivitelezés díja akkor esedékes, amikor a weboldal elkészült és Ön jóváhagyta. A havi díj a fejlesztés költsége, a megkötött időszakra az üzemeltetést is fedezi, és az élesítés napjától indul. A domain regisztrációja és minden fizetős extra kérés külön megbeszélés után kerül a szerződésbe. Az üzemeltetési szerződés legalább 12 hónapra szól; utána bármikor, 30 napos felmondási idővel megszüntethető. Átutalást, Revolutot és készpénzt fogadunk el. Minden fizetésről a magyar jogszabályoknak megfelelő számlát állítunk ki."
+                    "content": "Az itt szereplő adatok tájékoztató jellegűek. A pontos kivitelezési és havi díjat, valamint a várható határidőt a munka megkezdése előtt egyedi szerződésben rögzítjük, és a szerződésben szereplő feltételek az irányadók. A kivitelezés díja akkor esedékes, amikor a weboldal elkészült és Ön jóváhagyta. A havi díj a fejlesztés költsége, a megkötött időszakra az üzemeltetést is fedezi, és az élesítés napjától indul, havonta. A 12 hónapot egy összegben is fizetheti élesítéskor, 12% kedvezménnyel; a pontos feltételek a szerződésben szerepelnek. A domain regisztrációja és minden fizetős extra kérés külön megbeszélés után kerül a szerződésbe. A szerződés legalább 12 hónapra szól; utána bármikor, 30 napos felmondási idővel megszüntethető. Átutalást, Revolutot és készpénzt fogadunk el. Minden fizetésről a magyar jogszabályoknak megfelelő számlát állítunk ki."
                 },
                 "revisions": {
                     "title": "Módosítások",

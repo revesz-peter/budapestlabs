@@ -31,7 +31,7 @@
     "billingToggleAriaLabel": "Monatliche oder Einmalzahlung anzeigen",
     "monthlySuffix": "12 Monate",
     "prepayBadge": "12% Rabatt",
-    "prepayIncludes": "Ein Jahr Betreuung inklusive.",
+    "prepayIncludes": "1 Jahr Service inklusive.",
     "starter": {
       "name": "Starter",
       "price": "0 €",
@@ -82,7 +82,7 @@
       "termTotal": "ab 1.879 €",
       "termTotalPrepay": "ab 1.654 €"
     },
-    "disclaimer": "Die angezeigten Preise sind Richtwerte. Der genaue Preis und die Monatsgebühr werden vor dem Start vertraglich festgelegt, ohne Überraschungen."
+    "disclaimer": "Die hier angegebenen Angaben sind unverbindlich. Der genaue Preis, die Monatsgebühr und der voraussichtliche Termin werden vor dem Start vertraglich festgelegt."
   },
   "faq": {
     "label": "FAQ",
@@ -93,11 +93,11 @@
     "items": {
       "process": {
         "question": "Wie funktioniert es?",
-        "answer": "Schreiben Sie uns über das Formular oder buchen Sie eine kostenlose Beratung. Wir klären Ihre Ziele, empfehlen ein Paket und einigen uns auf die benötigten Inhalte. Vor Beginn der Arbeit erhalten Sie einen schriftlichen Vertrag mit festgelegter Erstellungs- und Monatsgebühr. Anschließend bauen wir Ihre Website in wenigen Tagen. Sie prüfen sie, bitten bei Bedarf um Anpassungen und geben schriftlich frei. Die Erstellungsgebühr ist bei Freigabe fällig, die Monatsgebühr beginnt mit dem Livegang. Sind Sie vor der Freigabe nicht zufrieden, können Sie jederzeit zurücktreten, ohne etwas zu zahlen."
+        "answer": "Schreiben Sie uns über das Formular oder buchen Sie eine kostenlose Beratung. Wir klären Ihre Ziele, empfehlen ein Paket und einigen uns auf die benötigten Inhalte. Vor Beginn der Arbeit erhalten Sie einen schriftlichen Vertrag mit festgelegter Erstellungs- und Monatsgebühr sowie voraussichtlichem Termin. Anschließend bauen wir Ihre Website in wenigen Tagen. Sie prüfen sie, bitten bei Bedarf um Anpassungen und geben schriftlich frei. Die Erstellungsgebühr ist bei Freigabe fällig, die Monatsgebühr beginnt mit dem Livegang. Sind Sie vor der Freigabe nicht zufrieden, können Sie jederzeit zurücktreten, ohne etwas zu zahlen."
       },
       "cost": {
         "question": "Was kostet es?",
-        "answer": "Starter 0 € im Voraus plus 49 € im Monat. Business 129 € plus 75 € im Monat. Custom ab 379 € plus ab 125 € im Monat. Der Preis wird vor dem Start vertraglich festgelegt."
+        "answer": "Starter 0 € im Voraus plus 49 € im Monat. Business 129 € plus 75 € im Monat. Custom ab 379 € plus ab 125 € im Monat. Alternativ können Sie 12 Monate beim Livegang in einer Summe zahlen, mit 12% Rabatt. Der Preis wird vor dem Start vertraglich festgelegt."
       },
       "pay": {
         "question": "Wann muss ich zahlen?",
@@ -247,7 +247,7 @@
   "contact": {
     "label": "Kontakt",
     "title": "Kontakt aufnehmen",
-    "subtitle": "Schreiben Sie uns, wobei wir Ihnen helfen können. Wir antworten innerhalb von 24 Stunden und senden vor Arbeitsbeginn einen schriftlichen Vertrag mit festen Gebühren.",
+    "subtitle": "Schreiben Sie uns, wobei wir Ihnen helfen können. Wir antworten innerhalb von 24 Stunden und senden vor Arbeitsbeginn einen schriftlichen Vertrag mit festen Gebühren und Termin.",
     "consult": "Kostenlose Beratung buchen",
     "form": {
       "name": "Name",
@@ -261,9 +261,9 @@
       "plan": "Interesse an",
       "planPlaceholder": "Paket wählen...",
       "planOptions": {
-        "starter": "Starter (0 € + 49 €/Monat)",
-        "business": "Business (129 € + 75 €/Monat)",
-        "pro": "Custom (ab 379 € + ab 125 €/Monat)",
+        "starter": "Starter (0 € + 49 € monatliche Gebühr)",
+        "business": "Business (129 € + 75 € monatliche Gebühr)",
+        "pro": "Custom (ab 379 € + ab 125 € monatliche Gebühr)",
         "unsure": "Noch nicht sicher"
       },
       "message": "Nachricht",
@@ -279,7 +279,7 @@
     }
   },
   "footer": {
-    "description": "Premium-Websites für Unternehmen. Ab 0 € Startkosten, monatliche Betreuung inklusive.",
+    "description": "Premium-Websites für Unternehmen. Ab 0 € Startkosten, monatliche Gebühr inklusive.",
     "navigation": "Navigation",
     "legal": "Rechtliches",
     "privacy": "Datenschutz",
@@ -340,7 +340,7 @@
         },
         "payment": {
           "title": "So funktioniert die Zahlung",
-          "content": "Die auf unserer Website angezeigten Preise sind Richtwerte. Ihre genaue Erstellungsgebühr und Monatsgebühr werden vor Arbeitsbeginn in einem individuellen Vertrag festgelegt; es gelten die Vertragspreise. Die Erstellungsgebühr wird fällig, wenn Ihre Website fertig ist und Sie sie freigegeben haben. Die Monatsgebühr ist die Entwicklungskosten und deckt den Betrieb für die vereinbarte Laufzeit ab; sie beginnt am Tag des Livegangs. Domain-Registrierung und kostenpflichtige Sonderwünsche besprechen und vereinbaren wir schriftlich im Vertrag. Der Betreuungsvertrag läuft mindestens 12 Monate; danach kann er jederzeit mit einer Frist von 30 Tagen gekündigt werden. Wir akzeptieren Überweisung, Revolut und Barzahlung. Für jede Zahlung erhalten Sie eine ordnungsgemäße Rechnung nach ungarischem Recht."
+          "content": "Die hier angegebenen Angaben sind unverbindlich. Ihre genaue Erstellungsgebühr, Monatsgebühr und der voraussichtliche Termin werden vor Arbeitsbeginn in einem individuellen Vertrag festgelegt; es gelten die Vertragsbedingungen. Die Erstellungsgebühr wird fällig, wenn Ihre Website fertig ist und Sie sie freigegeben haben. Die Monatsgebühr ist die Entwicklungskosten und deckt den Betrieb für die vereinbarte Laufzeit ab; sie beginnt am Tag des Livegangs, monatlich. Alternativ können Sie 12 Monate beim Livegang in einer Summe zahlen, mit 12% Rabatt; die genauen Bedingungen stehen im Vertrag. Domain-Registrierung und kostenpflichtige Sonderwünsche besprechen und vereinbaren wir schriftlich im Vertrag. Der Vertrag läuft mindestens 12 Monate; danach kann er jederzeit mit einer Frist von 30 Tagen gekündigt werden. Wir akzeptieren Überweisung, Revolut und Barzahlung. Für jede Zahlung erhalten Sie eine ordnungsgemäße Rechnung nach ungarischem Recht."
         },
         "revisions": {
           "title": "Überarbeitungen",

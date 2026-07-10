@@ -31,7 +31,7 @@
         "billingToggleAriaLabel": "Show monthly or upfront payment pricing",
         "monthlySuffix": "12 months",
         "prepayBadge": "12% off",
-        "prepayIncludes": "Hosting for a full year included.",
+        "prepayIncludes": "1 year of service included.",
         "starter": {
             "name": "Starter",
             "price": "€0",
@@ -82,7 +82,7 @@
             "termTotal": "from €1,879",
             "termTotalPrepay": "from €1,654"
         },
-        "disclaimer": "Prices shown are estimates. The exact price and monthly fee are fixed in your contract before we start, with no surprises."
+        "disclaimer": "The information shown here is for guidance only. Your exact price, monthly fee, and expected delivery date are fixed in your contract before we start."
     },
     "faq": {
         "label": "FAQ",
@@ -93,15 +93,15 @@
         "items": {
             "process": {
                 "question": "How does it work?",
-                "answer": "Contact us via the form or book a free consultation. We clarify your goals, recommend a plan, and agree on the content needed. Before any work starts, we send a written contract with your exact build fee and monthly fee fixed. We then build your site within days. You review it, request changes if needed, and give written approval. The build fee is due on approval. The monthly fee starts at go-live. If you are not satisfied before you approve, you can walk away owing nothing."
+                "answer": "Contact us via the form or book a free consultation. We clarify your goals, recommend a plan, and agree on the content needed. Before any work starts, we send a written contract with your exact build fee, monthly fee, and expected delivery date fixed. We then build your site within days. You review it, request changes if needed, and give written approval. The build fee is due on approval. The monthly fee starts at go-live. If you are not satisfied before you approve, you can walk away owing nothing."
             },
             "cost": {
                 "question": "What does it cost?",
-                "answer": "Starter is €0 up front plus €49 a month. Business is €129 plus €75 a month. Custom from €379 plus from €125 a month. Your price is fixed in the contract before we start."
+                "answer": "Starter is €0 up front plus €49 a month. Business is €129 plus €75 a month. Custom from €379 plus from €125 a month. You can also pay for 12 months upfront at go-live with a 12% discount. Your price is fixed in the contract before we start."
             },
             "pay": {
                 "question": "When do I pay?",
-                "answer": "The build fee is due when you approve the finished site. The monthly fee starts at go-live, billed each month. You can also pay for 12 months upfront at go-live with a 12% discount, with a full year of hosting included. Details are fixed in your contract. Until you approve, you owe nothing."
+                "answer": "The build fee is due when you approve the finished site. The monthly fee starts at go-live, billed each month. You can also pay for 12 months upfront at go-live with a 12% discount, with a full year of service included. Details are fixed in your contract. Until you approve, you owe nothing."
             },
             "monthly": {
                 "question": "What does the monthly fee include?",
@@ -247,7 +247,7 @@
     "contact": {
         "label": "Contact",
         "title": "Get in touch",
-        "subtitle": "Tell us what you need help with. We reply within 24 hours and send a written contract with fixed fees before any work starts.",
+        "subtitle": "Tell us what you need help with. We reply within 24 hours and send a written contract with fixed fees and delivery date before any work starts.",
         "consult": "Book a free consultation",
         "form": {
             "name": "Name",
@@ -261,9 +261,9 @@
             "plan": "Interested in",
             "planPlaceholder": "Select a plan...",
             "planOptions": {
-                "starter": "Starter (€0 + €49/month)",
-                "business": "Business (€129 + €75/month)",
-                "pro": "Custom (from €379 + from €125/month)",
+                "starter": "Starter (€0 + €49/month fee)",
+                "business": "Business (€129 + €75/month fee)",
+                "pro": "Custom (from €379 + from €125/month fee)",
                 "unsure": "Not sure yet"
             },
             "message": "Message",
@@ -279,7 +279,7 @@
         }
     },
     "footer": {
-        "description": "Premium websites for businesses. From €0 up front, monthly care included.",
+        "description": "Premium websites for businesses. From €0 up front, monthly fee included.",
         "navigation": "Navigation",
         "legal": "Legal",
         "privacy": "Privacy Policy",
@@ -340,7 +340,7 @@
                 },
                 "payment": {
                     "title": "How payment works",
-                    "content": "The prices shown on our website are estimates. Your exact build fee and monthly fee are fixed in an individual contract before work begins, and the contract prices apply. The build fee is due once your website is finished and you have approved it. The monthly fee is the cost of development and covers operation for the contracted period; it starts on the day your site goes live. Domain registration and any paid extras are discussed and written into your contract. The service agreement runs for a minimum of 12 months; after that it can be cancelled anytime with 30 days' notice. We accept bank transfer, Revolut, and cash. You will receive a proper invoice for every payment, issued in accordance with Hungarian law."
+                    "content": "The information shown on our website is for guidance only. Your exact build fee, monthly fee, and expected delivery date are fixed in an individual contract before work begins, and the contract terms apply. The build fee is due once your website is finished and you have approved it. The monthly fee is the cost of development and covers operation for the contracted period; it starts on the day your site goes live, billed each month. You can also pay for 12 months upfront at go-live with a 12% discount; details are fixed in your contract. Domain registration and any paid extras are discussed and written into your contract. The service agreement runs for at least 12 months; after that it can be cancelled anytime with 30 days' notice. We accept bank transfer, Revolut, and cash. You will receive a proper invoice for every payment, issued in accordance with Hungarian law."
                 },
                 "revisions": {
                     "title": "Revisions",
