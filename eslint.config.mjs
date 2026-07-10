@@ -5,12 +5,5 @@ import nextTs from "eslint-config-next/typescript";
 export default defineConfig([
   ...nextVitals,
   ...nextTs,
-  {
-    // Vendored WebGL shader components (react-shaders typings use `any`)
-    files: ["src/components/ui/**"],
-    rules: {
-      "@typescript-eslint/no-explicit-any": "off",
-    },
-  },
   globalIgnores([".next/**", "out/**", "build/**", "next-env.d.ts"]),
 ]);

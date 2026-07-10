@@ -50,11 +50,8 @@ Landing page for Budapest Labs — a service delivering professional websites fo
   - Violet (`rgba(167, 139, 250, x)` / `rgba(129, 140, 248, x)`) — gradient border + glow shadow on popular pricing card. Opacity: 0.6 top, 0.25 mid, 0.25 shadow.
   - Blue (`#2563eb`) + Teal (`#0d9488`) — hero mesh gradient orbs
   - These are the only non-monochrome colors on the site. Step number circles, cards, and all other elements stay monochrome.
-- **Hero background**: Animated mesh gradient (`MeshGradientBackground` from Magic UI) with slowly drifting orbs
-  - Current: Blue + Teal `["#2563eb", "#0d9488", "#3b82f6", "#06b6d4"]`
-  - Alt – Violet/Indigo: `["#7c3aed", "#6366f1", "#8b5cf6", "#a78bfa"]`
-  - Alt – Monochrome: `["#404040", "#525252", "#6b7280", "#9ca3af"]`
-- **Animated shader backgrounds**: 15 WebGL/CSS components in `src/components/ui/` (aurora, waves, sea, noise, desert-sand, cosmic-waves, accretion, singularity, mesh-gradient, flickering-grid, liquid-noir, marble-ink, silk-flow, dark-smoke, molten-amber). These use `react-shaders` and are available for client sites — see `templates/pipeline/CUSTOMIZATION.md` "Animated backgrounds" for guidance. A custom `shader-canvas.tsx` component is also available for carousel/cycling use cases where `react-shaders` has issues with mount/unmount (see mamormodels for reference implementation).
+- **Hero background**: Pexels video background in `hero.tsx` (not mesh gradient)
+- **Animated shader backgrounds**: 16 WebGL/CSS components live in the separate templates repo at `labs/templates/shaders/` (aurora, waves, sea, noise, desert-sand, cosmic-waves, accretion, singularity, mesh-gradient, flickering-grid, liquid-noir, marble-ink, silk-flow, dark-smoke, molten-amber, shader-canvas). Copy into client projects as needed. See `templates/pipeline/CUSTOMIZATION.md` in that repo.
 - Do NOT add glow effects, text shimmer, or heavy visual effects — user explicitly removed these
 - Framer Motion animations use `whileInView` with `once: true`
 - **Color classes**: Use semantic Tailwind tokens (`text-foreground`, `text-muted-foreground`, `bg-foreground/5`, `border-border`) — do NOT hardcode `text-white`, `bg-black`, `text-white/60` etc. These break in the opposite theme.
@@ -96,7 +93,7 @@ src/
 │   └── globals.css              # Tailwind v4 config, glass classes, gradient border
 ├── components/
 │   ├── landing/              # Section components + theme-toggle (navbar, hero, stats, how-it-works, comparison, pricing, addons, latest-project, testimonials [unused], faq, contact, footer, theme-toggle)
-│   └── ui/                   # ShadCN + Magic UI + animated shader backgrounds (button, badge, accordion, mesh-gradient, flickering-grid, aurora, waves, sea, noise, desert-sand, cosmic-waves, accretion, singularity, liquid-noir, marble-ink, silk-flow, dark-smoke, molten-amber, shader-canvas)
+│   └── ui/                   # ShadCN primitives used on the landing page (button, card, input, textarea, label)
 ├── i18n/
 │   ├── routing.ts            # Locale config (hu, en, de)
 │   ├── request.ts            # Server request config
@@ -131,7 +128,7 @@ Styling note: landing sections use the Tailark look (borders, `bg-card`, `text-4
 
 ## Client delivery pipeline
 
-`templates/pipeline/` is the client-delivery system: [PLAYBOOK.md](templates/pipeline/PLAYBOOK.md) (flow + tier mapping), CLIENT.md (intake), CUSTOMIZATION.md (visual options), init.sh (`bun run pipeline:init`, clones the golden template). All client projects ship on the gaited-monorepo reference architecture (pnpm + Turborepo, Next.js 16, Tailwind 4 + shadcn/ui + Tailark, Neon + Drizzle, Vercel); the old STAGE-0..6 build-from-scratch docs were removed in favor of a template-repo approach. The `bl-template` golden repo still needs to be created (see PLAYBOOK.md one-time setup).
+Client templates, themes, and shader components live in the separate **`labs/templates`** repo (`pipeline/`, `themes/`, `shaders/`). This landing repo does not include them.
 
 ## Things to avoid
 
