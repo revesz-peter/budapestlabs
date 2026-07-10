@@ -91,18 +91,15 @@ export function Pricing() {
                       </p>
                     </div>
                   ) : (
-                    <span className="my-3 block text-2xl font-semibold">
-                      {t(`${plan.key}.price`)}
-                    </span>
+                    <>
+                      <span className="my-3 block text-2xl font-semibold">
+                        {t(`${plan.key}.price`)}
+                      </span>
+                      <CardDescription className="text-sm">
+                        {`+ ${t(`${plan.key}.monthly`)} · ${t("monthlySuffix")}`}
+                      </CardDescription>
+                    </>
                   )}
-
-                  <CardDescription className="text-sm">
-                    {showTermTotal ? (
-                      <span className="block">{t("prepayIncludes")}</span>
-                    ) : (
-                      `${t(`${plan.key}.monthly`)} · ${t("monthlySuffix")}`
-                    )}
-                  </CardDescription>
                 </CardHeader>
 
                 <CardContent className="space-y-4">

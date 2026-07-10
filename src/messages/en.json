@@ -31,13 +31,11 @@
         "billingToggleAriaLabel": "Show monthly or upfront payment pricing",
         "monthlySuffix": "12 months",
         "prepayBadge": "12% off",
-        "prepayIncludes": "1 year of service included.",
         "starter": {
             "name": "Starter",
             "price": "€0",
-            "description": "A clean, professional website",
             "features": [
-                "Ready: 1-2 days",
+                "Ready: 3-5 days",
                 "3-5 pages, tailored to your business",
                 "Looks great on every phone and computer",
                 "Secure hosting and email included, domain setup included (yearly fee at cost)",
@@ -52,12 +50,11 @@
         "business": {
             "name": "Business",
             "price": "€129",
-            "description": "Booking, notifications, and more",
             "features": [
-                "Ready: 3-5 days",
+                "Ready: 5-7 days",
                 "Everything in Starter, plus:",
                 "6-10 pages",
-                "Online booking system",
+                "Online booking for appointments and calls",
                 "Google Maps and directions",
                 "Automatic email notifications",
                 "Visitor statistics"
@@ -69,9 +66,8 @@
         "pro": {
             "name": "Custom",
             "price": "from €379",
-            "description": "Fully custom, anything is possible",
             "features": [
-                "Ready: 1-2 weeks",
+                "Ready: 2-3 weeks",
                 "Everything in Business, plus:",
                 "Webshop, agency site, brand page, anything",
                 "Custom features built for your needs",
@@ -113,7 +109,7 @@
             },
             "speed": {
                 "question": "How fast will it be ready?",
-                "answer": "Simple sites in 1-2 days, bigger projects in 1-2 weeks. You get an exact date before we start."
+                "answer": "Simple sites in 3-5 days, bigger projects in 2-3 weeks. You get an exact date before we start."
             },
             "language": {
                 "question": "Can additional languages be added to the site?",
@@ -348,7 +344,7 @@
                 },
                 "delivery": {
                     "title": "Delivery timelines",
-                    "content": "The timelines on our website (1-2 days, 3-5 days, 1-2 weeks) are estimates based on typical projects. How long your project takes depends on its complexity and how quickly you can send us your content. We always do our best to deliver on time, but we can't guarantee exact dates. The clock starts once we have everything we need from you (text, images, logo). If there's a delay on your side, that doesn't count against our timeline."
+                    "content": "The timelines on our website (3-5 days, 5-7 days, 2-3 weeks) are estimates based on typical projects. How long your project takes depends on its complexity and how quickly you can send us your content. We always do our best to deliver on time, but we can't guarantee exact dates. The clock starts once we have everything we need from you (text, images, logo). If there's a delay on your side, that doesn't count against our timeline."
                 },
                 "client": {
                     "title": "What we need from you",

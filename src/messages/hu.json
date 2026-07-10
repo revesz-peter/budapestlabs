@@ -31,13 +31,11 @@
         "billingToggleAriaLabel": "Havi vagy egyösszegben fizetés megjelenítése",
         "monthlySuffix": "12 hónap",
         "prepayBadge": "12% kedvezmény",
-        "prepayIncludes": "1 év szolgáltatás jár hozzá.",
         "starter": {
             "name": "Kezdő csomag",
             "price": "0 Ft",
-            "description": "Letisztult, professzionális weboldal",
             "features": [
-                "Elkészül: 1-2 nap",
+                "Elkészül: 3-5 nap",
                 "3-5 oldal, a vállalkozásához igazítva",
                 "Minden telefonon és számítógépen jól mutat",
                 "Üzemeltetés és e-mail benne van, a domain beállítását mi intézzük (éves díj önköltségen)",
@@ -52,12 +50,11 @@
         "business": {
             "name": "Business csomag",
             "price": "49 900 Ft",
-            "description": "Foglalás, értesítések és több",
             "features": [
-                "Elkészül: 3-5 nap",
+                "Elkészül: 5-7 nap",
                 "Minden, ami a Kezdő csomagban, és még:",
                 "6-10 oldal",
-                "Online időpontfoglaló rendszer",
+                "Online időpont- és hívásfoglaló",
                 "Google Térkép és útvonaltervezés",
                 "Automatikus e-mail értesítések",
                 "Látogatottsági statisztika"
@@ -69,9 +66,8 @@
         "pro": {
             "name": "Egyedi megoldás",
             "price": "149 000 Ft-tól",
-            "description": "Teljesen egyedi, bármi megvalósítható",
             "features": [
-                "Elkészül: 1-2 hét",
+                "Elkészül: 2-3 hét",
                 "Minden, ami a Business csomagban, és még:",
                 "Webshop, ügynökségi oldal, márkaoldal, bármi",
                 "Egyedi funkciók az Ön igényei szerint",
@@ -113,7 +109,7 @@
             },
             "speed": {
                 "question": "Milyen gyorsan készül el?",
-                "answer": "Egyszerűbb oldal 1-2 nap, nagyobb projekt 1-2 hét. Pontos dátumot a kezdés előtt kap."
+                "answer": "Egyszerűbb oldal 3-5 nap, nagyobb projekt 2-3 hét. Pontos dátumot a kezdés előtt kap."
             },
             "language": {
                 "question": "További nyelvek igényelhetők az oldalra?",
@@ -348,7 +344,7 @@
                 },
                 "delivery": {
                     "title": "Átadási határidők",
-                    "content": "A weboldalunkon szereplő határidők (1-2 nap, 3-5 nap, 1-2 hét) tipikus projekteken alapuló becslések. A projekt hossza a összetettségtől és attól függ, milyen gyorsan kapjuk meg Öntől a tartalmakat. Mindig igyekszünk időben szállítani, de pontos dátumot nem tudunk garantálni. Az idő akkor indul, amikor mindent megkaptunk Öntől (szöveg, képek, logó). Ha az Ön oldalán van késés, az nem számít bele a határidőnkbe."
+                    "content": "A weboldalunkon szereplő határidők (3-5 nap, 5-7 nap, 2-3 hét) tipikus projekteken alapuló becslések. A projekt hossza a összetettségtől és attól függ, milyen gyorsan kapjuk meg Öntől a tartalmakat. Mindig igyekszünk időben szállítani, de pontos dátumot nem tudunk garantálni. Az idő akkor indul, amikor mindent megkaptunk Öntől (szöveg, képek, logó). Ha az Ön oldalán van késés, az nem számít bele a határidőnkbe."
                 },
                 "client": {
                     "title": "Amire szükségünk van Öntől",

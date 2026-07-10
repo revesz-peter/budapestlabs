@@ -31,13 +31,11 @@
     "billingToggleAriaLabel": "Monatliche oder Einmalzahlung anzeigen",
     "monthlySuffix": "12 Monate",
     "prepayBadge": "12% Rabatt",
-    "prepayIncludes": "1 Jahr Service inklusive.",
     "starter": {
       "name": "Starter",
       "price": "0 €",
-      "description": "Eine klare, professionelle Website",
       "features": [
-        "Fertig: 1-2 Tage",
+        "Fertig: 3-5 Tage",
         "3-5 Seiten, auf Ihr Unternehmen zugeschnitten",
         "Sieht auf jedem Gerät gut aus",
         "Hosting und E-Mail inklusive, Domain-Einrichtung inklusive (jährliche Gebühr zum Selbstkostenpreis)",
@@ -52,12 +50,11 @@
     "business": {
       "name": "Business",
       "price": "129 €",
-      "description": "Buchung, Benachrichtigungen und mehr",
       "features": [
-        "Fertig: 3-5 Tage",
+        "Fertig: 5-7 Tage",
         "Alles im Starter-Paket, plus:",
         "6-10 Seiten",
-        "Online-Buchungssystem",
+        "Online-Buchung für Termine und Anrufe",
         "Google Maps und Wegbeschreibung",
         "Automatische E-Mail-Benachrichtigungen",
         "Besucherstatistiken"
@@ -69,9 +66,8 @@
     "pro": {
       "name": "Custom",
       "price": "ab 379 €",
-      "description": "Komplett individuell, alles ist möglich",
       "features": [
-        "Fertig: 1-2 Wochen",
+        "Fertig: 2-3 Wochen",
         "Alles im Business-Paket, plus:",
         "Webshop, Agentur-Seite, Markenseite, alles",
         "Individuelle Funktionen für Ihre Anforderungen",
@@ -113,7 +109,7 @@
       },
       "speed": {
         "question": "Wie schnell ist die Website fertig?",
-        "answer": "Einfache Websites in 1-2 Tagen, größere in 1-2 Wochen. Den genauen Termin bekommen Sie vor dem Start."
+        "answer": "Einfache Websites in 3-5 Tagen, größere in 2-3 Wochen. Den genauen Termin bekommen Sie vor dem Start."
       },
       "language": {
         "question": "Sind weitere Sprachen für die Website möglich?",
@@ -348,7 +344,7 @@
         },
         "delivery": {
           "title": "Lieferzeiten",
-          "content": "Die Zeitangaben auf unserer Website (1-2 Tage, 3-5 Tage, 1-2 Wochen) sind Schätzungen auf Basis typischer Projekte. Die Dauer hängt von der Komplexität ab und davon, wie schnell Sie uns Ihre Inhalte senden. Wir liefern so schnell wie möglich, können aber keine exakten Termine garantieren. Die Zeit beginnt, sobald wir alles von Ihnen haben (Texte, Bilder, Logo). Verzögerungen auf Ihrer Seite zählen nicht zu unserer Lieferzeit."
+          "content": "Die Zeitangaben auf unserer Website (3-5 Tage, 5-7 Tage, 2-3 Wochen) sind Schätzungen auf Basis typischer Projekte. Die Dauer hängt von der Komplexität ab und davon, wie schnell Sie uns Ihre Inhalte senden. Wir liefern so schnell wie möglich, können aber keine exakten Termine garantieren. Die Zeit beginnt, sobald wir alles von Ihnen haben (Texte, Bilder, Logo). Verzögerungen auf Ihrer Seite zählen nicht zu unserer Lieferzeit."
         },
         "client": {
           "title": "Was wir von Ihnen brauchen",
