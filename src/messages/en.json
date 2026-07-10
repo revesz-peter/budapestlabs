@@ -2,8 +2,7 @@
     "nav": {
         "pricing": "Pricing",
         "faq": "FAQ",
-        "contact": "Contact",
-        "recentWork": "Recent Work"
+        "contact": "Contact"
     },
     "hero": {
         "badge": "€0 up front, from €49/month",
@@ -20,19 +19,6 @@
         "delivery": "average response time",
         "satisfaction": "client satisfaction"
     },
-    "latestProject": {
-        "label": "Recent Work",
-        "title": "Latest project",
-        "subtitle": "Built for a Budapest model management agency.",
-        "projects": {
-            "mamormodels": {
-                "name": "Mamor Models",
-                "industry": "Model Management",
-                "description": "A sleek, fast website that puts their talent front and center.",
-                "cta": "Visit site"
-            }
-        }
-    },
     "pricing": {
         "label": "Pricing",
         "title": "Simple, honest pricing",
@@ -47,7 +33,7 @@
                 "Ready: 1-2 days",
                 "3-5 pages, tailored to your business",
                 "Looks great on every phone and computer",
-                "Hosting and email included, domain set up for you",
+                "Secure hosting and email included, domain setup included (yearly fee at cost)",
                 "Small changes done for you each month",
                 "Hungarian and English versions",
                 "Lifetime warranty"
@@ -122,7 +108,7 @@
             },
             "tech": {
                 "question": "What technology do you use?",
-                "answer": "We build on Next.js, React, TypeScript, and Tailwind CSS, hosted on Vercel with global CDN and SSL. We picked this stack because it loads fast, stays secure, and will still be supported years from now. The same kind of setup used on serious business sites, not a drag-and-drop builder you outgrow. Starter stays lean with no database. Business adds Neon and Drizzle for bookings and customer data. Custom adds Stripe for payments. Each plan only adds what you need."
+                "answer": "We build with modern, future-proof technology: fast loading, strong security, and easy to maintain for years. The same standard used on serious business sites, not a template you outgrow. Each plan includes only what you need: Starter stays simple, Business adds online booking and customer records, Custom adds online payments."
             },
             "partner": {
                 "question": "Need a logo or physical materials?",
@@ -279,28 +265,6 @@
             }
         }
     },
-    "testimonials": {
-        "label": "Testimonials",
-        "title": "What our clients say",
-        "subtitle": "Happy businesses we've helped launch online.",
-        "items": {
-            "t1": {
-                "quote": "I ordered in the morning, and our website was ready by evening. Unbelievable speed, professional quality.",
-                "name": "Anna Kovács",
-                "business": "Bella Beauty Salon"
-            },
-            "t2": {
-                "quote": "The booking system works perfectly. My clients can easily book appointments online.",
-                "name": "Márton Szabó",
-                "business": "FitZone Gym"
-            },
-            "t3": {
-                "quote": "We finally have a modern, fast website. The team was very helpful and professional.",
-                "name": "Eszter Tóth",
-                "business": "Aroma Café"
-            }
-        }
-    },
     "footer": {
         "description": "Premium websites for businesses. From €0 up front, monthly care included.",
         "navigation": "Navigation",
@@ -308,7 +272,6 @@
         "privacy": "Privacy Policy",
         "terms": "Terms of Service",
         "imprint": "Imprint",
-        "rights": "All rights reserved.",
         "madeWith": "Made with ❤️ and ☕️ in Budapest"
     },
     "legal": {
@@ -316,7 +279,7 @@
         "download": "PDF",
         "privacy": {
             "title": "Privacy Policy",
-            "lastUpdated": "Last updated: March 22, 2026",
+            "lastUpdated": "Last updated: July 10, 2026",
             "intro": "Your privacy matters to us. This policy explains what personal data we collect, how we use it, and how we keep it safe.",
             "sections": {
                 "controller": {
@@ -351,7 +314,7 @@
         },
         "terms": {
             "title": "Terms of Service",
-            "lastUpdated": "Last updated: July 9, 2026",
+            "lastUpdated": "Last updated: July 10, 2026",
             "intro": "These are the terms that apply when you work with Budapest Labs. We've kept them straightforward. No surprises.",
             "sections": {
                 "provider": {
@@ -364,7 +327,7 @@
                 },
                 "payment": {
                     "title": "How payment works",
-                    "content": "The prices shown on our website are estimates. Your exact build fee and monthly service fee are fixed in an individual contract before work begins, and the contract prices are the ones that apply. The build fee is due once your website is finished and you have approved it. The monthly service fee starts on the day your site goes live and covers hosting, email, security updates, small content changes, and the lifetime warranty. The domain name is registered in your name, and its yearly registration fee is billed to you at cost. The service agreement runs for a minimum of 12 months; after that it can be cancelled anytime with 30 days' notice. We accept bank transfer, Revolut, and cash. You will receive a proper invoice for every payment, issued in accordance with Hungarian law."
+                    "content": "The prices shown on our website are estimates. Your exact build fee and monthly fee are fixed in an individual contract before work begins, and the contract prices apply. The build fee is due once your website is finished and you have approved it. The monthly fee is the cost of development and covers operation for the contracted period; it starts on the day your site goes live. Domain registration and any paid extras are discussed and written into your contract. The service agreement runs for a minimum of 12 months; after that it can be cancelled anytime with 30 days' notice. We accept bank transfer, Revolut, and cash. You will receive a proper invoice for every payment, issued in accordance with Hungarian law."
                 },
                 "revisions": {
                     "title": "Revisions",

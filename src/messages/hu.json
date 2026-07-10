@@ -2,8 +2,7 @@
     "nav": {
         "pricing": "Árak",
         "faq": "GYIK",
-        "contact": "Kapcsolat",
-        "recentWork": "Munkáink"
+        "contact": "Kapcsolat"
     },
     "hero": {
         "badge": "0 Ft belépő, havi 19 900 Ft-tól",
@@ -20,19 +19,6 @@
         "delivery": "átlagos válaszidő",
         "satisfaction": "ügyfél elégedettség"
     },
-    "latestProject": {
-        "label": "Legutóbbi munkánk",
-        "title": "Legújabb projektünk",
-        "subtitle": "Egy budapesti modellügynökség weboldala.",
-        "projects": {
-            "mamormodels": {
-                "name": "Mamor Models",
-                "industry": "Modell Menedzsment",
-                "description": "Letisztult, gyors oldal, amely a tehetségeket helyezi középpontba.",
-                "cta": "Weboldal megtekintése"
-            }
-        }
-    },
     "pricing": {
         "label": "Árak",
         "title": "Egyszerű, őszinte árazás",
@@ -47,7 +33,7 @@
                 "Elkészül: 1-2 nap",
                 "3-5 oldal, a vállalkozásához igazítva",
                 "Minden telefonon és számítógépen jól mutat",
-                "Üzemeltetés és e-mail benne van, a domaint mi állítjuk be",
+                "Üzemeltetés és e-mail benne van, a domain beállítását mi intézzük (éves díj önköltségen)",
                 "Kisebb módosítások havonta, díjmentesen",
                 "Magyar és angol nyelven",
                 "Életre szóló garancia"
@@ -122,7 +108,7 @@
             },
             "tech": {
                 "question": "Milyen technológiával dolgoznak?",
-                "answer": "Next.js, React, TypeScript és Tailwind CSS alapon dolgozunk, Vercel tárhelyen, globális CDN-nel és SSL-lel. Azért ezt választottuk, mert gyors, biztonságos és évek múlva is karbantartható. Olyan megoldás, amit komoly üzleti oldalakon használnak, nem egy kinőhető sablon vagy weboldal-szerkesztő. A Kezdő csomag adatbázis nélkül marad. A Business Neon és Drizzle adatbázist kap foglalásokhoz és ügyféladatokhoz. Egyedi projektnél Stripe jön online fizetéshez. Minden csomag csak azt kapja, amire tényleg szüksége van."
+                "answer": "Modern, jövőálló technológiával dolgozunk: gyors betöltés, erős biztonság, és évek múlva is karbantartható oldal. Olyan minőség, mint komoly üzleti weboldalakon, nem egy kinőhető sablon. Minden csomag csak azt kapja, amire szüksége van: a Kezdő egyszerű marad, a Business foglalást és ügyfél adatokat kap, az egyedi projekt online fizetést."
             },
             "partner": {
                 "question": "Szüksége van logóra vagy nyomtatott anyagra?",
@@ -279,28 +265,6 @@
             }
         }
     },
-    "testimonials": {
-        "label": "Vélemények",
-        "title": "Mit mondanak ügyfeleink",
-        "subtitle": "Elégedett vállalkozások, akiknek már segítettünk.",
-        "items": {
-            "t1": {
-                "quote": "Reggel megrendeltem, estére kész volt a weboldalunk. Hihetetlen gyorsaság, profi minőség.",
-                "name": "Kovács Anna",
-                "business": "Bella Szépségszalon"
-            },
-            "t2": {
-                "quote": "A foglalási rendszer tökéletesen működik. Az ügyfeleim könnyen tudnak időpontot foglalni online.",
-                "name": "Szabó Márton",
-                "business": "FitZone Edzőterem"
-            },
-            "t3": {
-                "quote": "Végre egy modern, gyors weboldalunk van. A csapat nagyon segítőkész és profeszionális volt.",
-                "name": "Tóth Eszter",
-                "business": "Aroma Kávézó"
-            }
-        }
-    },
     "footer": {
         "description": "Prémium weboldalak vállalkozásoknak. 0 Ft belépőtől, havi üzemeltetéssel.",
         "navigation": "Navigáció",
@@ -308,7 +272,6 @@
         "privacy": "Adatvédelem",
         "terms": "ÁSZF",
         "imprint": "Impresszum",
-        "rights": "Minden jog fenntartva.",
         "madeWith": "Made with ❤️ and ☕️ in Budapest"
     },
     "legal": {
@@ -316,7 +279,7 @@
         "download": "PDF",
         "privacy": {
             "title": "Adatvédelmi nyilatkozat",
-            "lastUpdated": "Utolsó frissítés: 2026. március 22.",
+            "lastUpdated": "Utolsó frissítés: 2026. július 10.",
             "intro": "Az Ön magánszférája fontos számunkra. Ez az adatvédelmi nyilatkozat ismerteti, milyen személyes adatokat gyűjtünk, mire használjuk, és hogyan védjük azokat.",
             "sections": {
                 "controller": {
@@ -351,7 +314,7 @@
         },
         "terms": {
             "title": "Általános Szerződési Feltételek",
-            "lastUpdated": "Utolsó frissítés: 2026. július 9.",
+            "lastUpdated": "Utolsó frissítés: 2026. július 10.",
             "intro": "Ezek a feltételek vonatkoznak a Budapest Labs szolgáltatásaira. Egyszerűen fogalmaztunk. Nincsenek meglepetések.",
             "sections": {
                 "provider": {
@@ -364,7 +327,7 @@
                 },
                 "payment": {
                     "title": "Hogyan működik a fizetés",
-                    "content": "A weboldalunkon feltüntetett árak tájékoztató jellegűek. A pontos kivitelezési díjat és a havi üzemeltetési díjat a munka megkezdése előtt egyedi szerződésben rögzítjük, és a szerződésben szereplő árak az irányadók. A kivitelezés díja akkor esedékes, amikor a weboldal elkészült és Ön jóváhagyta. A havi üzemeltetési díj az élesítés napjától indul, és tartalmazza az üzemeltetést, az e-mailt, a biztonsági frissítéseket, a kisebb tartalmi módosításokat és az életre szóló garanciát. A domain nevet az Ön nevére regisztráljuk, éves díját önköltségi áron Önnek számlázzuk. Az üzemeltetési szerződés legalább 12 hónapra szól; utána bármikor, 30 napos felmondási idővel megszüntethető. Átutalást, Revolutot és készpénzt fogadunk el. Minden fizetésről a magyar jogszabályoknak megfelelő számlát állítunk ki."
+                    "content": "A weboldalunkon feltüntetett árak tájékoztató jellegűek. A pontos kivitelezési és havi díjat a munka megkezdése előtt egyedi szerződésben rögzítjük, és a szerződésben szereplő árak az irányadók. A kivitelezés díja akkor esedékes, amikor a weboldal elkészült és Ön jóváhagyta. A havi díj a fejlesztés költsége, a megkötött időszakra az üzemeltetést is fedezi, és az élesítés napjától indul. A domain regisztrációja és minden fizetős extra kérés külön megbeszélés után kerül a szerződésbe. Az üzemeltetési szerződés legalább 12 hónapra szól; utána bármikor, 30 napos felmondási idővel megszüntethető. Átutalást, Revolutot és készpénzt fogadunk el. Minden fizetésről a magyar jogszabályoknak megfelelő számlát állítunk ki."
                 },
                 "revisions": {
                     "title": "Módosítások",

@@ -2,8 +2,7 @@
   "nav": {
     "pricing": "Preise",
     "faq": "FAQ",
-    "contact": "Kontakt",
-    "recentWork": "Projekte"
+    "contact": "Kontakt"
   },
   "hero": {
     "badge": "0 € Startkosten, ab 49 €/Monat",
@@ -20,19 +19,6 @@
     "delivery": "durchschnittliche Antwortzeit",
     "satisfaction": "Kundenzufriedenheit"
   },
-  "latestProject": {
-    "label": "Projekte",
-    "title": "Aktuelles Projekt",
-    "subtitle": "Gebaut für eine Budapester Model-Agentur.",
-    "projects": {
-      "mamormodels": {
-        "name": "Mamor Models",
-        "industry": "Model Management",
-        "description": "Eine elegante, schnelle Website, die das Talent in den Mittelpunkt stellt.",
-        "cta": "Website besuchen"
-      }
-    }
-  },
   "pricing": {
     "label": "Preise",
     "title": "Einfache, ehrliche Preise",
@@ -47,7 +33,7 @@
         "Fertig: 1-2 Tage",
         "3-5 Seiten, auf Ihr Unternehmen zugeschnitten",
         "Sieht auf jedem Gerät gut aus",
-        "Hosting und E-Mail inklusive, Domain richten wir ein",
+        "Hosting und E-Mail inklusive, Domain-Einrichtung inklusive (jährliche Gebühr zum Selbstkostenpreis)",
         "Kleine Änderungen jeden Monat inklusive",
         "Ungarisch und Englisch inklusive",
         "Lebenslange Garantie"
@@ -122,7 +108,7 @@
       },
       "tech": {
         "question": "Welche Technologie nutzen Sie?",
-        "answer": "Wir bauen auf Next.js, React, TypeScript und Tailwind CSS, gehostet auf Vercel mit globalem CDN und SSL. Diesen Stack wählen wir, weil er schnell lädt, sicher bleibt und langfristig wartbar ist. Dieselbe Art Technologie wie auf ernsthaften Business-Websites, kein Baukasten, den Sie schnell überwachsen. Starter bleibt schlank ohne Datenbank. Business ergänzt Neon und Drizzle für Buchungen und Kundendaten. Custom ergänzt Stripe für Zahlungen. Jedes Paket bekommt nur, was Sie wirklich brauchen."
+        "answer": "Wir arbeiten mit moderner, zukunftssicherer Technologie: schnelle Ladezeiten, starke Sicherheit und langfristig wartbar. Derselbe Standard wie auf ernsthaften Business-Websites, kein Baukasten, den Sie schnell überwachsen. Jedes Paket enthält nur, was Sie brauchen: Starter bleibt schlank, Business ergänzt Online-Buchung und Kundendaten, Custom ergänzt Online-Zahlungen."
       },
       "partner": {
         "question": "Brauche ich Logo oder Drucksachen?",
@@ -279,28 +265,6 @@
       }
     }
   },
-  "testimonials": {
-    "label": "Referenzen",
-    "title": "Was unsere Kunden sagen",
-    "subtitle": "Zufriedene Unternehmen, denen wir beim Online-Start geholfen haben.",
-    "items": {
-      "t1": {
-        "quote": "Ich habe morgens bestellt und unsere Website war abends fertig. Unglaubliche Geschwindigkeit, professionelle Qualität.",
-        "name": "Anna Kovács",
-        "business": "Bella Beauty Salon"
-      },
-      "t2": {
-        "quote": "Das Buchungssystem funktioniert perfekt. Meine Kunden können ganz einfach online Termine buchen.",
-        "name": "Márton Szabó",
-        "business": "FitZone Gym"
-      },
-      "t3": {
-        "quote": "Wir haben endlich eine moderne, schnelle Website. Das Team war sehr hilfsbereit und professionell.",
-        "name": "Eszter Tóth",
-        "business": "Aroma Café"
-      }
-    }
-  },
   "footer": {
     "description": "Premium-Websites für Unternehmen. Ab 0 € Startkosten, monatliche Betreuung inklusive.",
     "navigation": "Navigation",
@@ -308,7 +272,6 @@
     "privacy": "Datenschutz",
     "terms": "AGB",
     "imprint": "Impressum",
-    "rights": "Alle Rechte vorbehalten.",
     "madeWith": "Made with ❤️ and ☕️ in Budapest"
   },
   "legal": {
@@ -316,7 +279,7 @@
     "download": "PDF",
     "privacy": {
       "title": "Datenschutzerklärung",
-      "lastUpdated": "Zuletzt aktualisiert: 22. März 2026",
+      "lastUpdated": "Zuletzt aktualisiert: 10. Juli 2026",
       "intro": "Ihre Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten wir erheben, wie wir sie verwenden und wie wir sie schützen.",
       "sections": {
         "controller": {
@@ -351,7 +314,7 @@
     },
     "terms": {
       "title": "Allgemeine Geschäftsbedingungen",
-      "lastUpdated": "Zuletzt aktualisiert: 9. Juli 2026",
+      "lastUpdated": "Zuletzt aktualisiert: 10. Juli 2026",
       "intro": "Diese Bedingungen gelten für die Zusammenarbeit mit Budapest Labs. Wir haben sie einfach gehalten. Keine Überraschungen.",
       "sections": {
         "provider": {
@@ -364,7 +327,7 @@
         },
         "payment": {
           "title": "So funktioniert die Zahlung",
-          "content": "Die auf unserer Website angezeigten Preise sind Richtwerte. Ihre genaue Erstellungsgebühr und die monatliche Betreuungsgebühr werden vor Arbeitsbeginn in einem individuellen Vertrag festgelegt; es gelten die Vertragspreise. Die Erstellungsgebühr wird fällig, wenn Ihre Website fertig ist und Sie sie freigegeben haben. Die monatliche Gebühr beginnt am Tag des Livegangs und umfasst Hosting, E-Mail, Sicherheitsupdates, kleine Inhaltsänderungen und die lebenslange Garantie. Die Domain wird auf Ihren Namen registriert; ihre jährliche Registrierungsgebühr wird Ihnen zum Selbstkostenpreis berechnet. Der Betreuungsvertrag läuft mindestens 12 Monate; danach kann er jederzeit mit einer Frist von 30 Tagen gekündigt werden. Wir akzeptieren Überweisung, Revolut und Barzahlung. Für jede Zahlung erhalten Sie eine ordnungsgemäße Rechnung nach ungarischem Recht."
+          "content": "Die auf unserer Website angezeigten Preise sind Richtwerte. Ihre genaue Erstellungsgebühr und Monatsgebühr werden vor Arbeitsbeginn in einem individuellen Vertrag festgelegt; es gelten die Vertragspreise. Die Erstellungsgebühr wird fällig, wenn Ihre Website fertig ist und Sie sie freigegeben haben. Die Monatsgebühr ist die Entwicklungskosten und deckt den Betrieb für die vereinbarte Laufzeit ab; sie beginnt am Tag des Livegangs. Domain-Registrierung und kostenpflichtige Sonderwünsche besprechen und vereinbaren wir schriftlich im Vertrag. Der Betreuungsvertrag läuft mindestens 12 Monate; danach kann er jederzeit mit einer Frist von 30 Tagen gekündigt werden. Wir akzeptieren Überweisung, Revolut und Barzahlung. Für jede Zahlung erhalten Sie eine ordnungsgemäße Rechnung nach ungarischem Recht."
         },
         "revisions": {
           "title": "Überarbeitungen",

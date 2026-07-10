@@ -7,7 +7,8 @@
     "build": "node scripts/check-messages.mjs && next build",
     "start": "next start",
     "lint": "eslint . && node scripts/check-messages.mjs",
-    "check:messages": "node scripts/check-messages.mjs"
+    "check:messages": "node scripts/check-messages.mjs",
+    "generate:legal-pdfs": "node scripts/generate-legal-pdfs.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -24,7 +25,6 @@
     "react-hook-form": "^7.71.2",
     "resend": "^6.9.4",
     "tailwind-merge": "^3.5.0",
-    "tw-animate": "^1.0.3",
     "zod": "^4.3.6"
   },
   "devDependencies": {
@@ -33,6 +33,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1",
+    "pdfkit": "^0.17.1",
     "typescript": "^5",
     "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4"

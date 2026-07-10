@@ -5,8 +5,6 @@ import { Stats } from "@/components/landing/stats";
 import { ContentSection } from "@/components/landing/content-section";
 import { Comparison } from "@/components/landing/comparison";
 import { Pricing } from "@/components/landing/pricing";
-// import { Testimonials } from "@/components/landing/testimonials";
-// import { LatestProject } from "@/components/landing/latest-project";
 import { FAQ } from "@/components/landing/faq";
 import { Contact } from "@/components/landing/contact";
 import { Footer } from "@/components/landing/footer";
@@ -96,7 +94,6 @@ export default async function HomePage({
       <Stats />
       <Comparison />
       <Pricing />
-      {/* TODO: Add <Testimonials /> back when real testimonials are available */}
       <FAQ />
       <Contact />
       <Footer />
