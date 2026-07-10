@@ -22,9 +22,16 @@
     "pricing": {
         "label": "Pricing",
         "title": "Simple, honest pricing",
-        "subtitle": "Little or nothing up front, plus a monthly service fee for a minimum of 12 months. Any build fee is only due at delivery.",
+        "subtitle": "Little or nothing up front, plus a monthly fee for 12 months.\nAny build fee is only due at delivery.",
         "choosePlan": "Choose Plan",
         "popular": "Popular",
+        "billingMonthly": "Monthly",
+        "billingTotal": "Upfront",
+        "billingTotalDiscount": "−12%",
+        "billingToggleAriaLabel": "Show monthly or upfront payment pricing",
+        "monthlySuffix": "12 months",
+        "prepayBadge": "12% off",
+        "prepayIncludes": "Hosting for a full year included.",
         "starter": {
             "name": "Starter",
             "price": "€0",
@@ -38,7 +45,9 @@
                 "Hungarian and English versions",
                 "Lifetime warranty"
             ],
-            "monthly": "+ €49/month service"
+            "monthly": "€49/month fee",
+            "termTotal": "€588",
+            "termTotalPrepay": "€517"
         },
         "business": {
             "name": "Business",
@@ -53,7 +62,9 @@
                 "Automatic email notifications",
                 "Visitor statistics"
             ],
-            "monthly": "+ €75/month service"
+            "monthly": "€75/month fee",
+            "termTotal": "€1,029",
+            "termTotalPrepay": "€906"
         },
         "pro": {
             "name": "Custom",
@@ -67,7 +78,9 @@
                 "Accept payments online",
                 "Priority support"
             ],
-            "monthly": "+ from €125/month service"
+            "monthly": "from €125/month fee",
+            "termTotal": "from €1,879",
+            "termTotalPrepay": "from €1,654"
         },
         "disclaimer": "Prices shown are estimates. The exact price and monthly fee are fixed in your contract before we start, with no surprises."
     },
@@ -88,7 +101,7 @@
             },
             "pay": {
                 "question": "When do I pay?",
-                "answer": "The build fee is due when you approve the finished site. The monthly fee starts at go-live, billed each month. Until you approve, you owe nothing."
+                "answer": "The build fee is due when you approve the finished site. The monthly fee starts at go-live, billed each month. You can also pay for 12 months upfront at go-live with a 12% discount, with a full year of hosting included. Details are fixed in your contract. Until you approve, you owe nothing."
             },
             "monthly": {
                 "question": "What does the monthly fee include?",

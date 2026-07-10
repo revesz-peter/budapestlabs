@@ -22,9 +22,16 @@
     "pricing": {
         "label": "Árak",
         "title": "Egyszerű, őszinte árazás",
-        "subtitle": "Alacsony vagy nulla kezdőköltség, plusz havi üzemeltetés, legalább 12 hónapra. A kivitelezés díját csak átadáskor fizeti.",
+        "subtitle": "Alacsony vagy nulla kezdőköltség, plusz havi díj, legalább 12 hónapra.\nA kivitelezés díját csak átadáskor fizeti.",
         "choosePlan": "Csomag választása",
         "popular": "Népszerű",
+        "billingMonthly": "Havi",
+        "billingTotal": "Egyösszegben",
+        "billingTotalDiscount": "−12%",
+        "billingToggleAriaLabel": "Havi vagy egyösszegben fizetés megjelenítése",
+        "monthlySuffix": "12 hónap",
+        "prepayBadge": "12% kedvezmény",
+        "prepayIncludes": "Az üzemeltetés egy évig jár hozzá.",
         "starter": {
             "name": "Kezdő csomag",
             "price": "0 Ft",
@@ -38,7 +45,9 @@
                 "Magyar és angol nyelven",
                 "Életre szóló garancia"
             ],
-            "monthly": "+ 19 900 Ft/hó üzemeltetés"
+            "monthly": "19 900 Ft havi díj",
+            "termTotal": "238 800 Ft",
+            "termTotalPrepay": "210 100 Ft"
         },
         "business": {
             "name": "Business csomag",
@@ -53,7 +62,9 @@
                 "Automatikus e-mail értesítések",
                 "Látogatottsági statisztika"
             ],
-            "monthly": "+ 29 900 Ft/hó üzemeltetés"
+            "monthly": "29 900 Ft havi díj",
+            "termTotal": "408 700 Ft",
+            "termTotalPrepay": "359 700 Ft"
         },
         "pro": {
             "name": "Egyedi megoldás",
@@ -67,7 +78,9 @@
                 "Online fizetés elfogadása",
                 "Kiemelt ügyfélszolgálat"
             ],
-            "monthly": "+ 49 900 Ft/hó-tól üzemeltetés"
+            "monthly": "49 900 Ft-tól havi díj",
+            "termTotal": "747 800 Ft-tól",
+            "termTotalPrepay": "658 000 Ft-tól"
         },
         "disclaimer": "Az itt szereplő árak tájékoztató jellegűek. A pontos árat és a havi díjat a kezdés előtt szerződésben rögzítjük, meglepetések nélkül."
     },
@@ -88,7 +101,7 @@
             },
             "pay": {
                 "question": "Mikor kell fizetnie?",
-                "answer": "A kivitelezés díját jóváhagyáskor, a havi díjat az élesítéstől fizeti, havonta. Jóváhagyás előtt nem tartozik semmivel."
+                "answer": "A kivitelezés díját jóváhagyáskor, a havi díjat az élesítéstől fizeti, havonta. A 12 hónapot egy összegben is fizetheti élesítéskor, 12% kedvezménnyel, az üzemeltetés egy évig jár hozzá. A pontos feltételek a szerződésben szerepelnek. Jóváhagyás előtt nem tartozik semmivel."
             },
             "monthly": {
                 "question": "Mit tartalmaz a havi díj?",

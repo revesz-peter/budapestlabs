@@ -22,9 +22,16 @@
   "pricing": {
     "label": "Preise",
     "title": "Einfache, ehrliche Preise",
-    "subtitle": "Wenig oder nichts im Voraus, plus monatliche Betreuung für mindestens 12 Monate. Eine Erstellungsgebühr zahlen Sie erst bei Lieferung.",
+    "subtitle": "Wenig oder nichts im Voraus, plus monatliche Gebühr für 12 Monate.\nEine Erstellungsgebühr zahlen Sie erst bei Lieferung.",
     "choosePlan": "Paket wählen",
     "popular": "Beliebt",
+    "billingMonthly": "Monatlich",
+    "billingTotal": "Einmalzahlung",
+    "billingTotalDiscount": "−12%",
+    "billingToggleAriaLabel": "Monatliche oder Einmalzahlung anzeigen",
+    "monthlySuffix": "12 Monate",
+    "prepayBadge": "12% Rabatt",
+    "prepayIncludes": "Ein Jahr Betreuung inklusive.",
     "starter": {
       "name": "Starter",
       "price": "0 €",
@@ -38,7 +45,9 @@
         "Ungarisch und Englisch inklusive",
         "Lebenslange Garantie"
       ],
-      "monthly": "+ 49 €/Monat Betreuung"
+      "monthly": "49 € monatliche Gebühr",
+      "termTotal": "588 €",
+      "termTotalPrepay": "517 €"
     },
     "business": {
       "name": "Business",
@@ -53,7 +62,9 @@
         "Automatische E-Mail-Benachrichtigungen",
         "Besucherstatistiken"
       ],
-      "monthly": "+ 75 €/Monat Betreuung"
+      "monthly": "75 € monatliche Gebühr",
+      "termTotal": "1.029 €",
+      "termTotalPrepay": "906 €"
     },
     "pro": {
       "name": "Custom",
@@ -67,7 +78,9 @@
         "Online-Zahlungen akzeptieren",
         "Prioritäts-Support"
       ],
-      "monthly": "+ ab 125 €/Monat Betreuung"
+      "monthly": "ab 125 € monatliche Gebühr",
+      "termTotal": "ab 1.879 €",
+      "termTotalPrepay": "ab 1.654 €"
     },
     "disclaimer": "Die angezeigten Preise sind Richtwerte. Der genaue Preis und die Monatsgebühr werden vor dem Start vertraglich festgelegt, ohne Überraschungen."
   },
@@ -88,7 +101,7 @@
       },
       "pay": {
         "question": "Wann muss ich zahlen?",
-        "answer": "Die Erstellungsgebühr ist bei Freigabe fällig. Die Monatsgebühr beginnt mit dem Livegang, monatlich. Vor der Freigabe schulden Sie nichts."
+        "answer": "Die Erstellungsgebühr ist bei Freigabe fällig. Die Monatsgebühr beginnt mit dem Livegang, monatlich. Alternativ können Sie 12 Monate beim Livegang in einer Summe zahlen, mit 12% Rabatt, ein Jahr Betreuung inklusive. Die genauen Bedingungen stehen im Vertrag. Vor der Freigabe schulden Sie nichts."
       },
       "monthly": {
         "question": "Was ist in der Monatsgebühr enthalten?",

@@ -11,10 +11,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Switch } from "@/components/ui/switch";
 import { Check } from "lucide-react";
+import { cn } from "@/lib/utils";
+import React from "react";
 
 export function Pricing() {
   const t = useTranslations("pricing");
+  const [showTermTotal, setShowTermTotal] = React.useState(false);
 
   const plans = [
     { key: "starter", popular: false },
@@ -29,10 +33,39 @@ export function Pricing() {
           <h2 className="text-center text-4xl font-semibold lg:text-5xl">
             {t("title")}
           </h2>
-          <p>{t("subtitle")}</p>
+          <p className="whitespace-pre-line">{t("subtitle")}</p>
         </div>
 
-        <div className="mt-8 grid gap-6 md:mt-20 md:grid-cols-3">
+        <div className="mt-8 flex flex-col items-center gap-2">
+          <div className="flex items-center gap-3">
+            <span
+              className={cn(
+                "text-sm font-medium transition-colors",
+                !showTermTotal ? "text-foreground" : "text-muted-foreground"
+              )}
+            >
+              {t("billingMonthly")}
+            </span>
+            <Switch
+              checked={showTermTotal}
+              onCheckedChange={setShowTermTotal}
+              aria-label={t("billingToggleAriaLabel")}
+            />
+            <span
+              className={cn(
+                "flex items-center gap-1.5 text-sm font-medium transition-colors",
+                showTermTotal ? "text-foreground" : "text-muted-foreground"
+              )}
+            >
+              {t("billingTotal")}
+              <span className="bg-foreground/10 rounded-full px-1.5 py-0.5 text-xs font-medium">
+                {t("billingTotalDiscount")}
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <div className="mt-8 grid gap-6 md:mt-12 md:grid-cols-3">
           {plans.map((plan) => {
             const features = t.raw(`${plan.key}.features`) as string[];
 
@@ -42,11 +75,33 @@ export function Pricing() {
                   <CardTitle className="font-medium">
                     {t(`${plan.key}.name`)}
                   </CardTitle>
-                  <span className="my-3 block text-2xl font-semibold">
-                    {t(`${plan.key}.price`)}
-                  </span>
+
+                  {showTermTotal ? (
+                    <div className="my-3 space-y-2">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="text-2xl font-semibold">
+                          {t(`${plan.key}.termTotalPrepay`)}
+                        </span>
+                        <span className="border-border rounded-full border px-2 py-0.5 text-xs font-medium">
+                          {t("prepayBadge")}
+                        </span>
+                      </div>
+                      <p className="text-muted-foreground text-sm line-through">
+                        {t(`${plan.key}.termTotal`)}
+                      </p>
+                    </div>
+                  ) : (
+                    <span className="my-3 block text-2xl font-semibold">
+                      {t(`${plan.key}.price`)}
+                    </span>
+                  )}
+
                   <CardDescription className="text-sm">
-                    {t(`${plan.key}.monthly`)}
+                    {showTermTotal ? (
+                      <span className="block">{t("prepayIncludes")}</span>
+                    ) : (
+                      `${t(`${plan.key}.monthly`)} · ${t("monthlySuffix")}`
+                    )}
                   </CardDescription>
                 </CardHeader>
 
