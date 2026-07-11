@@ -49,7 +49,7 @@
         },
         "business": {
             "name": "Business",
-            "price": "€129",
+            "price": "€149",
             "features": [
                 "Ready: 5-7 days",
                 "Everything in Starter, plus:",
@@ -60,12 +60,12 @@
                 "Visitor statistics"
             ],
             "monthly": "€75/month fee",
-            "termTotal": "€1,029",
-            "termTotalPrepay": "€906"
+            "termTotal": "€1,049",
+            "termTotalPrepay": "€923"
         },
         "pro": {
             "name": "Custom",
-            "price": "from €379",
+            "price": "from €499",
             "features": [
                 "Ready: 2-3 weeks",
                 "Everything in Business, plus:",
@@ -75,8 +75,8 @@
                 "Priority support"
             ],
             "monthly": "from €125/month fee",
-            "termTotal": "from €1,879",
-            "termTotalPrepay": "from €1,654"
+            "termTotal": "from €1,999",
+            "termTotalPrepay": "from €1,759"
         },
         "disclaimer": "The information shown here is for guidance only. Your exact price, monthly fee, and expected delivery date are fixed in your contract before we start.",
         "included": {
@@ -109,7 +109,7 @@
             },
             "cost": {
                 "question": "What does it cost?",
-                "answer": "Starter is €0 up front plus €49 a month. Business is €129 plus €75 a month. Custom from €379 plus from €125 a month. You can also pay for 12 months upfront at go-live with a 12% discount. Your price is fixed in the contract before we start."
+                "answer": "Starter is €0 up front plus €49 a month. Business is €149 plus €75 a month. Custom from €499 plus from €125 a month. You can also pay for 12 months upfront at go-live with a 12% discount. Your price is fixed in the contract before we start."
             },
             "pay": {
                 "question": "When do I pay?",
@@ -275,8 +275,8 @@
             "planPlaceholder": "Select a plan...",
             "planOptions": {
                 "starter": "Starter (€0 + €49/month fee)",
-                "business": "Business (€129 + €75/month fee)",
-                "pro": "Custom (from €379 + from €125/month fee)",
+                "business": "Business (€149 + €75/month fee)",
+                "pro": "Custom (from €499 + from €125/month fee)",
                 "unsure": "Not sure yet"
             },
             "message": "Message",

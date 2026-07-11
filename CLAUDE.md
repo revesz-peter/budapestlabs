@@ -64,7 +64,7 @@ Landing page for Budapest Labs — a service delivering professional websites fo
 
 ### Business model & messaging priorities
 
-**Subscription-first pricing (near-zero entry, monthly is the engine):** Starter 0 Ft (€0) up front + 19 900 Ft/mo (€49); Business 49 900 Ft (€129) + 29 900 Ft/mo (€75); Custom from 149 000 Ft (€379) + from 49 900 Ft/mo (€125). Build fee due at approval; monthly starts at go-live; 12-month minimum, then cancel anytime. **Monthly fee = development cost + operation for the contracted period.** Domain registration and paid extras are discussed and written into the contract (domain yearly fee at cost). **Honesty rule:** prices on the page are estimates; exact prices are fixed in the contract. The monthly fee must be disclosed everywhere a price appears.
+**Subscription-first pricing (near-zero entry, monthly is the engine):** Starter 0 Ft (€0) up front + 19 900 Ft/mo (€49); Business 59 900 Ft (€149) + 29 900 Ft/mo (€75); Custom from 199 000 Ft (€499) + from 49 900 Ft/mo (€125). Build fee due at approval; monthly starts at go-live; 12-month minimum, then cancel anytime. **Monthly fee = development cost + operation for the contracted period.** Domain registration and paid extras are discussed and written into the contract (domain yearly fee at cost). **Honesty rule:** prices on the page are estimates; exact prices are fixed in the contract. The monthly fee must be disclosed everywhere a price appears.
 
 The landing page sells on these pillars, in order:
 1. **Premium quality, fast** — custom design, days not weeks (hero headline)

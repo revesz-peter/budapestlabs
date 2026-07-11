@@ -49,7 +49,7 @@
     },
     "business": {
       "name": "Business",
-      "price": "129 €",
+      "price": "149 €",
       "features": [
         "Fertig: 5-7 Tage",
         "Alles im Starter-Paket, plus:",
@@ -60,12 +60,12 @@
         "Besucherstatistiken"
       ],
       "monthly": "75 € monatliche Gebühr",
-      "termTotal": "1.029 €",
-      "termTotalPrepay": "906 €"
+      "termTotal": "1.049 €",
+      "termTotalPrepay": "923 €"
     },
     "pro": {
       "name": "Custom",
-      "price": "ab 379 €",
+      "price": "ab 499 €",
       "features": [
         "Fertig: 2-3 Wochen",
         "Alles im Business-Paket, plus:",
@@ -75,8 +75,8 @@
         "Prioritäts-Support"
       ],
       "monthly": "ab 125 € monatliche Gebühr",
-      "termTotal": "ab 1.879 €",
-      "termTotalPrepay": "ab 1.654 €"
+      "termTotal": "ab 1.999 €",
+      "termTotalPrepay": "ab 1.759 €"
     },
     "disclaimer": "Die hier angegebenen Angaben sind unverbindlich. Der genaue Preis, die Monatsgebühr und der voraussichtliche Termin werden vor dem Start vertraglich festgelegt.",
     "included": {
@@ -109,7 +109,7 @@
       },
       "cost": {
         "question": "Was kostet es?",
-        "answer": "Starter 0 € im Voraus plus 49 € im Monat. Business 129 € plus 75 € im Monat. Custom ab 379 € plus ab 125 € im Monat. Alternativ können Sie 12 Monate beim Livegang in einer Summe zahlen, mit 12% Rabatt. Der Preis wird vor dem Start vertraglich festgelegt."
+        "answer": "Starter 0 € im Voraus plus 49 € im Monat. Business 149 € plus 75 € im Monat. Custom ab 499 € plus ab 125 € im Monat. Alternativ können Sie 12 Monate beim Livegang in einer Summe zahlen, mit 12% Rabatt. Der Preis wird vor dem Start vertraglich festgelegt."
       },
       "pay": {
         "question": "Wann muss ich zahlen?",
@@ -275,8 +275,8 @@
       "planPlaceholder": "Paket wählen...",
       "planOptions": {
         "starter": "Starter (0 € + 49 € monatliche Gebühr)",
-        "business": "Business (129 € + 75 € monatliche Gebühr)",
-        "pro": "Custom (ab 379 € + ab 125 € monatliche Gebühr)",
+        "business": "Business (149 € + 75 € monatliche Gebühr)",
+        "pro": "Custom (ab 499 € + ab 125 € monatliche Gebühr)",
         "unsure": "Noch nicht sicher"
       },
       "message": "Nachricht",

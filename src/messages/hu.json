@@ -49,7 +49,7 @@
         },
         "business": {
             "name": "Business csomag",
-            "price": "49 900 Ft",
+            "price": "59 900 Ft",
             "features": [
                 "Elkészül: 5-7 nap",
                 "Minden, ami a Kezdő csomagban, és még:",
@@ -60,12 +60,12 @@
                 "Látogatottsági statisztika"
             ],
             "monthly": "29 900 Ft havi díj",
-            "termTotal": "408 700 Ft",
-            "termTotalPrepay": "359 700 Ft"
+            "termTotal": "418 700 Ft",
+            "termTotalPrepay": "368 500 Ft"
         },
         "pro": {
             "name": "Egyedi megoldás",
-            "price": "149 000 Ft-tól",
+            "price": "199 000 Ft-tól",
             "features": [
                 "Elkészül: 2-3 hét",
                 "Minden, ami a Business csomagban, és még:",
@@ -75,8 +75,8 @@
                 "Kiemelt ügyfélszolgálat"
             ],
             "monthly": "49 900 Ft-tól havi díj",
-            "termTotal": "747 800 Ft-tól",
-            "termTotalPrepay": "658 000 Ft-tól"
+            "termTotal": "797 800 Ft-tól",
+            "termTotalPrepay": "702 100 Ft-tól"
         },
         "disclaimer": "Az itt szereplő adatok tájékoztató jellegűek. A pontos árat, havi díjat és a várható határidőt a kezdés előtt szerződésben rögzítjük.",
         "included": {
@@ -109,7 +109,7 @@
             },
             "cost": {
                 "question": "Mennyibe kerül az oldal?",
-                "answer": "A Kezdő 0 Ft belépővel indul, havi 19 900 Ft-ért. A Business 49 900 Ft plusz havi 29 900 Ft, az egyedi projektek 149 000 Ft-tól és havi 49 900 Ft-tól. A 12 hónap egy összegben is fizethető élesítéskor, 12% kedvezménnyel. A pontos árat a kezdés előtt szerződésben rögzítjük."
+                "answer": "A Kezdő 0 Ft belépővel indul, havi 19 900 Ft-ért. A Business 59 900 Ft plusz havi 29 900 Ft, az egyedi projektek 199 000 Ft-tól és havi 49 900 Ft-tól. A 12 hónap egy összegben is fizethető élesítéskor, 12% kedvezménnyel. A pontos árat a kezdés előtt szerződésben rögzítjük."
             },
             "pay": {
                 "question": "Mikor kell fizetnie?",
@@ -275,8 +275,8 @@
             "planPlaceholder": "Válasszon csomagot...",
             "planOptions": {
                 "starter": "Kezdő (0 Ft + 19 900 Ft havi díj)",
-                "business": "Business (49 900 Ft + 29 900 Ft havi díj)",
-                "pro": "Egyedi (149 000 Ft-tól + 49 900 Ft-tól havi díj)",
+                "business": "Business (59 900 Ft + 29 900 Ft havi díj)",
+                "pro": "Egyedi (199 000 Ft-tól + 49 900 Ft-tól havi díj)",
                 "unsure": "Még nem tudom"
             },
             "message": "Üzenet",
