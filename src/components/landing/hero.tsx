@@ -123,7 +123,7 @@ export function Hero() {
                   speedSegment={0.3}
                   delay={0.5}
                   as="p"
-                  className="text-muted-foreground mt-6 text-balance text-base md:text-lg"
+                  className="mt-6 text-balance text-base text-foreground md:text-lg"
                 >
                   {t("subtitle")}
                 </TextEffect>
