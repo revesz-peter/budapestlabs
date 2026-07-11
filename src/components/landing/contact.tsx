@@ -79,14 +79,17 @@ export function Contact() {
         <div className="mx-auto mb-8 max-w-xl space-y-3 text-center md:mb-12">
           <h2 className="text-4xl font-medium lg:text-5xl">{t("title")}</h2>
           <p className="text-muted-foreground leading-relaxed">{t("subtitle")}</p>
-          <a
-            href="https://cal.com/peter-budapestlabs"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-foreground inline-block text-sm font-medium underline-offset-4 hover:underline"
-          >
-            {t("consult")}
-          </a>
+          <p className="text-muted-foreground mt-4 text-sm">
+            {t("consultOr")}{" "}
+            <a
+              href="https://cal.com/budapestlabs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-foreground underline decoration-foreground/30 underline-offset-4 transition-colors hover:decoration-foreground"
+            >
+              {t("consult")}
+            </a>
+          </p>
         </div>
 
         <motion.div

@@ -49,7 +49,7 @@ export async function POST(request: Request) {
 
   const { error } = await resend.emails.send({
     from: "Budapest Labs <hello@budapestlabs.com>",
-    to: "budapestlabs@gmail.com",
+    to: "hello@budapestlabs.com",
     replyTo: email,
     subject: `New inquiry from ${name}${business ? ` (${business})` : ""}`,
     html: [

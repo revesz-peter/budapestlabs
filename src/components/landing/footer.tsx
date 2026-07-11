@@ -17,6 +17,12 @@ export function Footer() {
               <p className="mt-3 text-sm text-muted-foreground">
                 {t("footer.description")}
               </p>
+              <a
+                href={`mailto:${t("footer.email")}`}
+                className="mt-3 inline-block text-sm text-muted-foreground transition-colors hover:text-foreground"
+              >
+                {t("footer.email")}
+              </a>
             </div>
 
             {/* Navigation */}

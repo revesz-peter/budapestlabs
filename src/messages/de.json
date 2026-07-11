@@ -260,7 +260,8 @@
     "label": "Kontakt",
     "title": "Kontakt aufnehmen",
     "subtitle": "Schreiben Sie uns, wobei wir Ihnen helfen können. Wir antworten innerhalb von 24 Stunden und senden vor Arbeitsbeginn einen schriftlichen Vertrag mit festen Gebühren und Termin.",
-    "consult": "Kostenlose Beratung buchen",
+    "consultOr": "Oder",
+    "consult": "buchen Sie eine kostenlose Beratung",
     "form": {
       "name": "Name",
       "namePlaceholder": "Ihr Name",
@@ -286,12 +287,13 @@
       "errors": {
         "nameRequired": "Bitte geben Sie Ihren Namen ein",
         "emailRequired": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-        "submit": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns an budapestlabs@gmail.com."
+        "submit": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns an hello@budapestlabs.com."
       }
     }
   },
   "footer": {
     "description": "Premium-Websites für Unternehmen. Ab 0 € Startkosten, monatliche Gebühr inklusive.",
+    "email": "hello@budapestlabs.com",
     "navigation": "Navigation",
     "legal": "Rechtliches",
     "privacy": "Datenschutz",
@@ -309,11 +311,11 @@
       "sections": {
         "controller": {
           "title": "Verantwortlicher",
-          "content": "Budapest Labs (vollständige Geschäftsdaten siehe Impressum).\nE-Mail: budapestlabs@gmail.com"
+          "content": "Budapest Labs (vollständige Geschäftsdaten siehe Impressum).\nE-Mail: hello@budapestlabs.com"
         },
         "collection": {
           "title": "Was wir erheben",
-          "content": "Wenn Sie unser Kontaktformular ausfüllen, erhalten wir: Ihren Namen, Ihre E-Mail-Adresse, Telefonnummer (falls Sie sie angeben), Firmennamen (optional), gewähltes Paket und Ihre Nachricht. Das ist alles. Wir verwenden keine Cookies, Tracking-Skripte oder Analysetools."
+          "content": "Wenn Sie unser Kontaktformular ausfüllen, erhalten wir: Ihren Namen, Ihre E-Mail-Adresse, Telefonnummer (falls Sie sie angeben), Firmennamen (optional), gewähltes Paket und Ihre Nachricht. Das ist alles. Sie können uns auch direkt unter hello@budapestlabs.com schreiben. Wir verwenden keine Cookies, Tracking-Skripte oder Analysetools."
         },
         "basis": {
           "title": "Warum wir sie verwenden dürfen",
@@ -333,7 +335,7 @@
         },
         "rights": {
           "title": "Ihre Rechte",
-          "content": "Nach EU-Recht (DSGVO) können Sie: einsehen, welche Daten wir über Sie haben; fehlerhafte Daten korrigieren lassen; die Löschung Ihrer Daten verlangen; die Verarbeitung einschränken oder ihr widersprechen; oder eine Kopie in einem portablen Format anfordern. Sie können Ihre Einwilligung jederzeit widerrufen. Das betrifft nicht die vorherige Verarbeitung. Schreiben Sie uns einfach an budapestlabs@gmail.com und wir antworten innerhalb von 30 Tagen."
+          "content": "Nach EU-Recht (DSGVO) können Sie: einsehen, welche Daten wir über Sie haben; fehlerhafte Daten korrigieren lassen; die Löschung Ihrer Daten verlangen; die Verarbeitung einschränken oder ihr widersprechen; oder eine Kopie in einem portablen Format anfordern. Sie können Ihre Einwilligung jederzeit widerrufen. Das betrifft nicht die vorherige Verarbeitung. Schreiben Sie uns einfach an hello@budapestlabs.com und wir antworten innerhalb von 30 Tagen."
         }
       }
     },
@@ -344,7 +346,7 @@
       "sections": {
         "provider": {
           "title": "Dienstleister",
-          "content": "Budapest Labs (vollständige Geschäftsdaten siehe Impressum).\nE-Mail: budapestlabs@gmail.com"
+          "content": "Budapest Labs (vollständige Geschäftsdaten siehe Impressum).\nE-Mail: hello@budapestlabs.com"
         },
         "scope": {
           "title": "Was wir machen",
@@ -401,7 +403,7 @@
         },
         "contact": {
           "title": "Kontakt",
-          "content": "E-Mail: budapestlabs@gmail.com\nWebsite: budapestlabs.com"
+          "content": "E-Mail: hello@budapestlabs.com\nWebsite: budapestlabs.com"
         },
         "responsible": {
           "title": "Verantwortlich für den Inhalt",

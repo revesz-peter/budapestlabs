@@ -159,7 +159,7 @@ export function Hero() {
                     className="h-12 rounded-full px-5 text-base hover:bg-zinc-950/5 dark:hover:bg-white/5"
                   >
                     <Link
-                      href="https://cal.com/peter-budapestlabs"
+                      href="https://cal.com/budapestlabs"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

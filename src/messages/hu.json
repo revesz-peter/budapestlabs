@@ -260,7 +260,8 @@
         "label": "Kapcsolat",
         "title": "Lépjen kapcsolatba velünk",
         "subtitle": "Írjon nekünk, miben segíthetünk. 24 órán belül visszajelzünk, a munka előtt pedig szerződést küldünk a pontos díjakkal és határidővel.",
-        "consult": "Ingyenes konzultáció",
+        "consultOr": "Vagy",
+        "consult": "foglaljon ingyenes konzultációt",
         "form": {
             "name": "Név",
             "namePlaceholder": "Az Ön neve",
@@ -286,12 +287,13 @@
             "errors": {
                 "nameRequired": "Kérjük, adja meg a nevét",
                 "emailRequired": "Kérjük, adjon meg egy érvényes email címet",
-                "submit": "Hiba történt. Kérjük, próbálja újra, vagy írjon nekünk: budapestlabs@gmail.com."
+                "submit": "Hiba történt. Kérjük, próbálja újra, vagy írjon nekünk: hello@budapestlabs.com."
             }
         }
     },
     "footer": {
         "description": "Prémium weboldalak vállalkozásoknak. 0 Ft belépőtől, havi díjjal.",
+        "email": "hello@budapestlabs.com",
         "navigation": "Navigáció",
         "legal": "Jogi",
         "privacy": "Adatvédelem",
@@ -309,11 +311,11 @@
             "sections": {
                 "controller": {
                     "title": "Adatkezelő",
-                    "content": "Budapest Labs (további adatok az Impresszumban).\nE-mail: budapestlabs@gmail.com"
+                    "content": "Budapest Labs (további adatok az Impresszumban).\nE-mail: hello@budapestlabs.com"
                 },
                 "collection": {
                     "title": "Mit gyűjtünk",
-                    "content": "A kapcsolatfelvételi űrlap kitöltésekor megkapjuk: a nevét, e-mail címét, telefonszámát (ha megadja), vállalkozása nevét (opcionális), a kiválasztott csomagot és az üzenetét. Ennyi. Nem használunk cookie-kat, nyomkövetőket vagy analitikai eszközöket."
+                    "content": "A kapcsolatfelvételi űrlap kitöltésekor megkapjuk: a nevét, e-mail címét, telefonszámát (ha megadja), vállalkozása nevét (opcionális), a kiválasztott csomagot és az üzenetét. Ennyi. Közvetlenül a hello@budapestlabs.com címre is írhat. Nem használunk cookie-kat, nyomkövetőket vagy analitikai eszközöket."
                 },
                 "basis": {
                     "title": "Miért kezelhetjük",
@@ -333,7 +335,7 @@
                 },
                 "rights": {
                     "title": "Az Ön jogai",
-                    "content": "Az EU joga (GDPR) értelmében Ön: megtekintheti, milyen adatokat tárolunk Önről; kérheti bármi hibás adat javítását; kérheti adatai törlését; korlátozhatja vagy kifogásolhatja az adatkezelést; vagy kérhet egy hordozható másolatot. Hozzájárulását bármikor visszavonhatja. Ez nem érinti a visszavonás előtt végzett adatkezelést. Egyszerűen írjon nekünk az budapestlabs@gmail.com címre, és 30 napon belül válaszolunk."
+                    "content": "Az EU joga (GDPR) értelmében Ön: megtekintheti, milyen adatokat tárolunk Önről; kérheti bármi hibás adat javítását; kérheti adatai törlését; korlátozhatja vagy kifogásolhatja az adatkezelést; vagy kérhet egy hordozható másolatot. Hozzájárulását bármikor visszavonhatja. Ez nem érinti a visszavonás előtt végzett adatkezelést. Egyszerűen írjon nekünk a hello@budapestlabs.com címre, és 30 napon belül válaszolunk."
                 }
             }
         },
@@ -344,7 +346,7 @@
             "sections": {
                 "provider": {
                     "title": "Szolgáltató adatai",
-                    "content": "Budapest Labs (további adatok az Impresszumban).\nE-mail: budapestlabs@gmail.com"
+                    "content": "Budapest Labs (további adatok az Impresszumban).\nE-mail: hello@budapestlabs.com"
                 },
                 "scope": {
                     "title": "Mit csinálunk",
@@ -401,7 +403,7 @@
                 },
                 "contact": {
                     "title": "Kapcsolat",
-                    "content": "E-mail: budapestlabs@gmail.com\nWeboldal: budapestlabs.com"
+                    "content": "E-mail: hello@budapestlabs.com\nWeboldal: budapestlabs.com"
                 },
                 "responsible": {
                     "title": "Tartalomért felelős",

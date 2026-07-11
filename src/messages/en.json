@@ -260,7 +260,8 @@
         "label": "Contact",
         "title": "Get in touch",
         "subtitle": "Tell us what you need help with. We reply within 24 hours and send a written contract with fixed fees and delivery date before any work starts.",
-        "consult": "Book a free consultation",
+        "consultOr": "Or",
+        "consult": "book a free consultation",
         "form": {
             "name": "Name",
             "namePlaceholder": "Your name",
@@ -286,12 +287,13 @@
             "errors": {
                 "nameRequired": "Please enter your name",
                 "emailRequired": "Please enter a valid email",
-                "submit": "Something went wrong. Please try again, or email us at budapestlabs@gmail.com."
+                "submit": "Something went wrong. Please try again, or email us at hello@budapestlabs.com."
             }
         }
     },
     "footer": {
         "description": "Premium websites for businesses. From €0 up front, monthly fee included.",
+        "email": "hello@budapestlabs.com",
         "navigation": "Navigation",
         "legal": "Legal",
         "privacy": "Privacy Policy",
@@ -309,11 +311,11 @@
             "sections": {
                 "controller": {
                     "title": "Data controller",
-                    "content": "Budapest Labs (see Imprint for full business details).\nEmail: budapestlabs@gmail.com"
+                    "content": "Budapest Labs (see Imprint for full business details).\nEmail: hello@budapestlabs.com"
                 },
                 "collection": {
                     "title": "What we collect",
-                    "content": "When you fill out our contact form, we receive: your name, email address, phone number (if you choose to share it), business name (optional), selected plan, and your message. That's it. We don't use cookies, tracking scripts, or analytics tools of any kind."
+                    "content": "When you fill out our contact form, we receive: your name, email address, phone number (if you choose to share it), business name (optional), selected plan, and your message. That's it. You can also write to us directly at hello@budapestlabs.com. We don't use cookies, tracking scripts, or analytics tools of any kind."
                 },
                 "basis": {
                     "title": "Why we're allowed to use it",
@@ -333,7 +335,7 @@
                 },
                 "rights": {
                     "title": "Your rights",
-                    "content": "Under EU law (GDPR), you can: ask to see what data we have about you; correct anything that's wrong; ask us to delete your data; limit or object to how we use it; or request a copy in a portable format. You can also withdraw your consent at any time. This won't affect anything we did before the withdrawal. Just email us at budapestlabs@gmail.com and we'll get back to you within 30 days."
+                    "content": "Under EU law (GDPR), you can: ask to see what data we have about you; correct anything that's wrong; ask us to delete your data; limit or object to how we use it; or request a copy in a portable format. You can also withdraw your consent at any time. This won't affect anything we did before the withdrawal. Just email us at hello@budapestlabs.com and we'll get back to you within 30 days."
                 }
             }
         },
@@ -344,7 +346,7 @@
             "sections": {
                 "provider": {
                     "title": "Service provider",
-                    "content": "Budapest Labs (see Imprint for full business details).\nEmail: budapestlabs@gmail.com"
+                    "content": "Budapest Labs (see Imprint for full business details).\nEmail: hello@budapestlabs.com"
                 },
                 "scope": {
                     "title": "What we do",
@@ -401,7 +403,7 @@
                 },
                 "contact": {
                     "title": "Contact",
-                    "content": "Email: budapestlabs@gmail.com\nWebsite: budapestlabs.com"
+                    "content": "Email: hello@budapestlabs.com\nWebsite: budapestlabs.com"
                 },
                 "responsible": {
                     "title": "Responsible for content",
