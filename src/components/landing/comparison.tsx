@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Check, X, Minus } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { SectionHeader } from "@/components/landing/section-header";
 
 const rowKeys = [
   "delivery",
@@ -75,11 +76,11 @@ export function Comparison() {
   return (
     <section className="py-16 md:py-32">
       <div className="mx-auto max-w-5xl px-6">
-        {/* Header */}
-        <div className="mx-auto mb-8 max-w-xl space-y-6 text-center md:mb-16">
-          <h2 className="text-4xl font-medium lg:text-5xl">{t("title")}</h2>
-          <p>{t("subtitle")}</p>
-        </div>
+        <SectionHeader
+          className="mb-8 md:mb-12"
+          title={t("title")}
+          subtitle={t("subtitle")}
+        />
 
         {/* Table */}
         <motion.div
@@ -122,13 +123,13 @@ export function Comparison() {
                       {t(`rows.${key}.us`)}
                     </span>
                   </td>
-                  <td className="py-4 px-4 text-foreground/35">
+                  <td className="py-4 px-4 text-muted-foreground">
                     <span className="flex items-center gap-2">
                       <CellIcon value={t(`rows.${key}.agency`)} />
                       {t(`rows.${key}.agency`)}
                     </span>
                   </td>
-                  <td className="py-4 px-4 text-foreground/35">
+                  <td className="py-4 px-4 text-muted-foreground">
                     <span className="flex items-center gap-2">
                       <CellIcon value={t(`rows.${key}.diy`)} />
                       {t(`rows.${key}.diy`)}

@@ -11,6 +11,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod/v4";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { SectionHeader } from "@/components/landing/section-header";
 
 const schema = z.object({
   name: z.string().min(1),
@@ -75,11 +76,13 @@ export function Contact() {
 
   return (
     <section id="contact" className="py-16 md:py-32">
-      <div className="mx-auto max-w-2xl px-6">
-        <div className="mx-auto mb-8 max-w-xl space-y-3 text-center md:mb-12">
-          <h2 className="text-4xl font-medium lg:text-5xl">{t("title")}</h2>
-          <p className="text-muted-foreground leading-relaxed">{t("subtitle")}</p>
-          <p className="text-muted-foreground mt-4 text-sm">
+      <div className="mx-auto max-w-5xl px-6">
+        <SectionHeader
+          className="mb-8 md:mb-12"
+          title={t("title")}
+          subtitle={t("subtitle")}
+        >
+          <p className="text-sm text-muted-foreground">
             {t("consultOr")}{" "}
             <a
               href="https://cal.com/budapestlabs"
@@ -90,14 +93,15 @@ export function Contact() {
               {t("consult")}
             </a>
           </p>
-        </div>
+        </SectionHeader>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-        >
+        <div className="mx-auto max-w-2xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
           {submitted ? (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -254,6 +258,7 @@ export function Contact() {
             </form>
           )}
         </motion.div>
+        </div>
       </div>
     </section>
   );

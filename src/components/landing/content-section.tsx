@@ -1,16 +1,18 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { SectionHeader } from "@/components/landing/section-header";
 
 export function ContentSection() {
   const t = useTranslations("content");
 
   return (
     <section className="py-16 md:py-32">
-      <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
-        <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl">
-          {t("title")}
-        </h2>
+      <div className="mx-auto max-w-5xl px-6">
+        <SectionHeader
+          className="mx-0 mb-8 max-w-xl text-left md:mb-12"
+          title={t("title")}
+        />
         <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
           <div className="relative space-y-4">
             <p className="text-muted-foreground">

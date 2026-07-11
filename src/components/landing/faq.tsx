@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Handshake, Fingerprint, Package, Compass, Instagram } from "lucide-react";
+import { SectionHeader } from "@/components/landing/section-header";
 
 const faqKeys = [
   "process",
@@ -95,11 +96,9 @@ export function FAQ() {
         <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr] lg:gap-20">
           <div className="text-center lg:text-left">
             <div className="lg:sticky lg:top-28">
-              <h2 className="text-4xl font-medium lg:text-5xl">{t("title")}</h2>
-              <p className="text-muted-foreground mt-4 text-lg">
-                {t("subtitle")}
-              </p>
-              <div className="mt-8 hidden lg:block">{askUs}</div>
+              <SectionHeader align="left" title={t("title")} subtitle={t("subtitle")}>
+                <div className="hidden lg:block">{askUs}</div>
+              </SectionHeader>
             </div>
           </div>
 

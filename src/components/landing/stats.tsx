@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { SectionHeader } from "@/components/landing/section-header";
 
 const statItems = [
   { value: "7+", key: "experience" as const },
@@ -12,12 +13,13 @@ export function Stats() {
   const t = useTranslations("stats");
 
   return (
-    <section className="py-12 md:py-20">
-      <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
-        <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center">
-          <h2 className="text-4xl font-semibold lg:text-5xl">{t("title")}</h2>
-          <p className="text-muted-foreground">{t("subtitle")}</p>
-        </div>
+    <section className="py-16 md:py-32">
+      <div className="mx-auto max-w-5xl px-6">
+        <SectionHeader
+          className="relative z-10 mb-8 md:mb-12"
+          title={t("title")}
+          subtitle={t("subtitle")}
+        />
 
         <div className="grid gap-3 *:text-center md:grid-cols-3 md:gap-4">
           {statItems.map((item) => (

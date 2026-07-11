@@ -1,85 +1,76 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import * as React from "react";
 import { Moon, Sun } from "lucide-react";
-import { flushSync } from "react-dom";
 import { useTheme } from "next-themes";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
-type Props = React.ComponentProps<typeof Button> & { duration?: number };
+type Props = React.ComponentProps<typeof Button>;
 
 /**
- * Theme toggle with the View Transitions circular reveal, wired through
- * next-themes. Falls back to a plain toggle where the API is unavailable
- * or reduced motion is preferred.
+ * Tailark theme toggle — instant light/dark switch via next-themes.
+ * @see https://github.com/tailark/blocks/blob/main/apps/www/components/theme-toggle.tsx
  */
-export function ThemeToggle({ className, duration = 450, ...props }: Props) {
-  const { resolvedTheme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-  const ref = useRef<HTMLButtonElement>(null);
+export function ThemeToggle({ className, ...props }: Props) {
+  const [mounted, setMounted] = React.useState(false);
+  const { theme, setTheme } = useTheme();
 
-  // Standard next-themes hydration guard — theme is unknown until mounted
-  // eslint-disable-next-line react-hooks/set-state-in-effect
-  useEffect(() => setMounted(true), []);
+  const toggleTheme = React.useCallback(() => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  }, [theme, setTheme]);
 
-  const isDark = resolvedTheme === "dark";
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
 
-  const toggle = useCallback(async () => {
-    const next = isDark ? "light" : "dark";
-    const doc = document as Document & {
-      startViewTransition?: (cb: () => void) => { ready: Promise<void> };
-    };
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key !== "t" && e.key !== "T") return;
 
-    if (!ref.current || typeof doc.startViewTransition !== "function" || reduce) {
-      setTheme(next);
-      return;
-    }
-
-    await doc.startViewTransition(() => {
-      flushSync(() => {
-        setTheme(next);
-        document.documentElement.classList.toggle("dark", next === "dark");
-      });
-    }).ready;
-
-    const { top, left, width, height } = ref.current.getBoundingClientRect();
-    const x = left + width / 2;
-    const y = top + height / 2;
-    const maxRadius = Math.hypot(
-      Math.max(left, window.innerWidth - left),
-      Math.max(top, window.innerHeight - top)
-    );
-
-    document.documentElement.animate(
-      {
-        clipPath: [
-          `circle(0px at ${x}px ${y}px)`,
-          `circle(${maxRadius}px at ${x}px ${y}px)`,
-        ],
-      },
-      {
-        duration,
-        easing: "ease-in-out",
-        pseudoElement: "::view-transition-new(root)",
+      const target = e.target as HTMLElement;
+      if (
+        target.tagName === "INPUT" ||
+        target.tagName === "TEXTAREA" ||
+        target.isContentEditable
+      ) {
+        return;
       }
+
+      toggleTheme();
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [toggleTheme]);
+
+  if (!mounted) {
+    return (
+      <Button
+        type="button"
+        variant="ghost"
+        size="icon"
+        className={cn("text-muted-foreground", className)}
+        aria-label="Toggle theme"
+        {...props}
+      >
+        <Moon className="size-4" />
+      </Button>
     );
-  }, [isDark, setTheme, duration]);
+  }
 
   return (
     <Button
-      ref={ref}
       type="button"
+      onClick={toggleTheme}
       variant="ghost"
       size="icon"
-      onClick={toggle}
-      aria-label="Toggle theme"
       className={cn("text-muted-foreground hover:text-foreground", className)}
+      aria-label="Toggle theme"
       {...props}
     >
-      {mounted && isDark ? <Sun className="size-4" /> : <Moon className="size-4" />}
+      {theme === "dark" ? <Sun className="size-4" /> : <Moon className="size-4" />}
     </Button>
   );
 }

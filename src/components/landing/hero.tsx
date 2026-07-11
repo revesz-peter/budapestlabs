@@ -83,7 +83,7 @@ export function Hero() {
   }, []);
 
   return (
-    <main className="overflow-x-hidden">
+    <div className="overflow-x-hidden">
       <section>
         <div className="relative">
           <div className="relative z-10 flex aspect-2/3 flex-col justify-end px-6 pt-24 lg:aspect-video lg:px-12 lg:pt-36">
@@ -92,10 +92,10 @@ export function Hero() {
                 <AnimatedGroup variants={transitionVariants}>
                   <Link
                     href="#pricing"
-                    className="hover:bg-background dark:hover:border-t-border bg-muted group mb-8 inline-flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950"
+                    className="hover:bg-background bg-muted group mb-8 inline-flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-md shadow-foreground/5 transition-colors duration-300"
                   >
                     <span className="text-foreground text-sm">{t("badge")}</span>
-                    <span className="dark:border-background block h-4 w-0.5 border-l bg-white dark:bg-zinc-700" />
+                    <span className="block h-4 w-0.5 border-l border-border bg-border" />
                     <div className="bg-background group-hover:bg-muted size-6 overflow-hidden rounded-full duration-500">
                       <div className="flex w-12 -translate-x-1/2 duration-500 ease-in-out group-hover:translate-x-0">
                         <span className="flex size-6">
@@ -123,7 +123,7 @@ export function Hero() {
                   speedSegment={0.3}
                   delay={0.5}
                   as="p"
-                  className="mt-6 text-balance text-base md:text-lg"
+                  className="text-muted-foreground mt-6 text-balance text-base md:text-lg"
                 >
                   {t("subtitle")}
                 </TextEffect>
@@ -156,7 +156,7 @@ export function Hero() {
                     asChild
                     size="lg"
                     variant="ghost"
-                    className="h-12 rounded-full px-5 text-base hover:bg-zinc-950/5 dark:hover:bg-white/5"
+                    className="h-12 rounded-full px-5 text-base hover:bg-foreground/5"
                   >
                     <Link
                       href="https://cal.com/budapestlabs"
@@ -171,7 +171,7 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="pointer-events-none absolute inset-1 overflow-hidden rounded-3xl border border-black/10 aspect-2/3 lg:aspect-video lg:rounded-[3rem] dark:border-white/5">
+          <div className="pointer-events-none absolute inset-1 overflow-hidden rounded-3xl border border-border aspect-2/3 lg:aspect-video lg:rounded-[3rem]">
             <video
               ref={videoRef}
               autoPlay
@@ -189,7 +189,7 @@ export function Hero() {
         <div className="group relative m-auto max-w-7xl px-6">
           <div className="flex flex-col items-center md:flex-row">
             <div className="shrink-0 md:border-r md:pr-6">
-              <p className="text-center text-sm whitespace-nowrap md:text-end">
+              <p className="text-muted-foreground text-center text-sm whitespace-nowrap md:text-end">
                 {t("stackLabel")}
               </p>
             </div>
@@ -216,6 +216,6 @@ export function Hero() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

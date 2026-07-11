@@ -5,7 +5,7 @@ export function Footer() {
   const t = useTranslations();
 
   return (
-    <footer className="border-t border-border px-6 pt-16 pb-8 md:px-8 lg:px-16">
+    <footer className="border-t border-border px-6 pt-16 pb-8">
       <div className="mx-auto max-w-6xl">
         <div>
           <div className="grid gap-12 md:grid-cols-3">

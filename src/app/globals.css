@@ -166,11 +166,3 @@ html {
     transition-duration: 0.01ms !important;
   }
 }
-
-/* View Transitions — disable the default cross-fade so the theme toggle's
-   circular reveal (clip-path on ::view-transition-new) is the only animation */
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation: none;
-  mix-blend-mode: normal;
-}
