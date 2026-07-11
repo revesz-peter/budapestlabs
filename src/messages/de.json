@@ -78,7 +78,23 @@
       "termTotal": "ab 1.879 €",
       "termTotalPrepay": "ab 1.654 €"
     },
-    "disclaimer": "Die hier angegebenen Angaben sind unverbindlich. Der genaue Preis, die Monatsgebühr und der voraussichtliche Termin werden vor dem Start vertraglich festgelegt."
+    "disclaimer": "Die hier angegebenen Angaben sind unverbindlich. Der genaue Preis, die Monatsgebühr und der voraussichtliche Termin werden vor dem Start vertraglich festgelegt.",
+    "included": {
+      "title": "Was ist im Preis enthalten?",
+      "body": "Monatlich verteilt sich die Entwicklung auf 12 Monate. In einer Summe zahlen Sie die 12 Monate beim Livegang, mit 12% Rabatt. In beiden Fällen ist 12 Monate lang dasselbe enthalten: Entwicklungskosten, Hosting, verschlüsselte Verbindung, E-Mail, Domain-Einrichtung, Wartung, Backups und monatliche Änderungen. Einzeln zusammen oft über 25-40 € im Monat, ohne Entwickler für jede Änderung.",
+      "triggerLabel": "Was ist im Preis enthalten?",
+      "items": [
+        "Entwicklungskosten",
+        "Website-Hosting",
+        "Verschlüsselte Verbindung",
+        "E-Mail für Formulare und Benachrichtigungen",
+        "Domain-Einrichtung",
+        "Regelmäßige Wartung und Updates",
+        "Backups",
+        "Monatliche Änderungen",
+        "Reparatur bei Defekten"
+      ]
+    }
   },
   "faq": {
     "label": "FAQ",
@@ -101,7 +117,7 @@
       },
       "monthly": {
         "question": "Was ist in der Monatsgebühr enthalten?",
-        "answer": "Die Monatsgebühr ist die Entwicklungskosten und deckt den Betrieb für die vereinbarte Laufzeit ab, mit wenig oder nichts im Voraus. Domain und kostenpflichtige Sonderwünsche besprechen und vereinbaren wir schriftlich im Vertrag. Geht etwas kaputt, reparieren wir es kostenlos."
+        "answer": "Monatlich verteilt sich die Entwicklung auf 12 Monate, mit wenig oder nichts im Voraus. In einer Summe zahlen Sie die 12 Monate beim Livegang, mit 12% Rabatt. In beiden Fällen ist in dieser Zeit alles für den Betrieb dabei: Entwicklungskosten, Hosting, verschlüsselte Verbindung, E-Mail, Domain-Einrichtung, Wartung, Backups und kleine monatliche Änderungen. Einzeln kostet vergleichbares Hosting oft 10-25 € im Monat, dazu kommen Entwicklung und Entwicklerkosten für jede Änderung. Bei uns deckt eine Gebühr das ab. Domain und kostenpflichtige Extras vereinbaren wir schriftlich im Vertrag. Geht etwas kaputt, reparieren wir es kostenlos."
       },
       "term": {
         "question": "Wie lange bin ich gebunden?",

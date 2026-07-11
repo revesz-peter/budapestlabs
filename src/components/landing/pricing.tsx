@@ -12,7 +12,12 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
-import { Check } from "lucide-react";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { Check, Info } from "lucide-react";
 import { cn } from "@/lib/utils";
 import React from "react";
 
@@ -62,6 +67,31 @@ export function Pricing() {
                 {t("billingTotalDiscount")}
               </span>
             </span>
+            <Popover>
+              <PopoverTrigger asChild>
+                <button
+                  type="button"
+                  className="text-muted-foreground hover:text-foreground hover:bg-foreground/5 -mr-1 rounded-full p-1.5 transition-colors"
+                  aria-label={t("included.triggerLabel")}
+                >
+                  <Info className="h-4 w-4" />
+                </button>
+              </PopoverTrigger>
+              <PopoverContent side="bottom" align="center">
+                <p className="text-sm font-medium">{t("included.title")}</p>
+                <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
+                  {t("included.body")}
+                </p>
+                <ul className="mt-3 grid gap-1.5">
+                  {(t.raw("included.items") as string[]).map((item, index) => (
+                    <li key={index} className="flex items-center gap-2 text-sm">
+                      <Check className="size-3 shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </PopoverContent>
+            </Popover>
           </div>
         </div>
 

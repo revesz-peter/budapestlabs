@@ -78,7 +78,23 @@
             "termTotal": "from €1,879",
             "termTotalPrepay": "from €1,654"
         },
-        "disclaimer": "The information shown here is for guidance only. Your exact price, monthly fee, and expected delivery date are fixed in your contract before we start."
+        "disclaimer": "The information shown here is for guidance only. Your exact price, monthly fee, and expected delivery date are fixed in your contract before we start.",
+        "included": {
+            "title": "What's included in the price?",
+            "body": "Pay monthly and development is spread over 12 months. Pay upfront and you settle the full 12 months at go-live, with a 12% discount. Either way, the same bundle is included for 12 months: development cost, hosting, encrypted connection, email, domain setup, maintenance, backups, and monthly edits. Bought separately, that often adds up to over €25-40 a month before you pay a developer for every change.",
+            "triggerLabel": "What's included in the price?",
+            "items": [
+                "Development cost",
+                "Website hosting",
+                "Encrypted connection",
+                "Email for forms and notifications",
+                "Domain setup",
+                "Regular maintenance and updates",
+                "Backups",
+                "Monthly edits",
+                "Fixes when something breaks"
+            ]
+        }
     },
     "faq": {
         "label": "FAQ",
@@ -101,7 +117,7 @@
             },
             "monthly": {
                 "question": "What does the monthly fee include?",
-                "answer": "The monthly fee is the cost of development and covers operation for the contracted period, with little or nothing up front. Domain and any paid extras are discussed and written into your contract. If anything breaks, we fix it free."
+                "answer": "Pay monthly and development is spread over 12 months, with little or nothing up front. Pay upfront and you settle the full 12 months at go-live, with a 12% discount. Either way, everything to run your site is included for those 12 months: development cost, hosting, encrypted connection, email, domain setup, maintenance, backups, and small edits each month. Bought separately, comparable hosting alone often runs €10-25 a month, before development and a developer for every change. With us, one fee covers it. Domain and paid extras are agreed in your contract. If anything breaks, we fix it free."
             },
             "term": {
                 "question": "How long am I committed?",

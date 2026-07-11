@@ -78,7 +78,23 @@
             "termTotal": "747 800 Ft-tól",
             "termTotalPrepay": "658 000 Ft-tól"
         },
-        "disclaimer": "Az itt szereplő adatok tájékoztató jellegűek. A pontos árat, havi díjat és a várható határidőt a kezdés előtt szerződésben rögzítjük."
+        "disclaimer": "Az itt szereplő adatok tájékoztató jellegűek. A pontos árat, havi díjat és a várható határidőt a kezdés előtt szerződésben rögzítjük.",
+        "included": {
+            "title": "Mit tartalmaz a díj?",
+            "body": "Havi fizetésnél a fejlesztés 12 hónapra oszlik el. Egyösszegben a teljes 12 hónapot élesítéskor fizeti, 12% kedvezménnyel. Mindkét esetben 12 hónapig benne van: a fejlesztés költsége, hosting, titkosított kapcsolat, e-mail, domain beállítás, karbantartás, biztonsági mentés és havi módosítások. Külön-külön gyakran havi 8-15 ezer Ft felett is lehet, fejlesztői munkaidő nélkül.",
+            "triggerLabel": "Mit tartalmaz a díj?",
+            "items": [
+                "Fejlesztés költsége",
+                "Hosting és üzemeltetés",
+                "Titkosított kapcsolat",
+                "E-mail űrlapokhoz és értesítésekhez",
+                "Domain beállítás",
+                "Rendszeres karbantartás és frissítések",
+                "Biztonsági mentés",
+                "Havi módosítások",
+                "Javítás, ha elromlik"
+            ]
+        }
     },
     "faq": {
         "label": "GYIK",
@@ -101,7 +117,7 @@
             },
             "monthly": {
                 "question": "Mit tartalmaz a havi díj?",
-                "answer": "A havi díj maga a fejlesztés költsége, és a megkötött időszakra az üzemeltetést is fedezi, kevés vagy nulla előleggel. A domain és minden fizetős extra kérés külön megbeszélés után kerül a szerződésbe. Ha bármi elromlik, ingyen javítjuk."
+                "answer": "Havi fizetésnél a fejlesztés 12 hónapra oszlik el, kevés vagy nulla előleggel. Egyösszegben a teljes 12 hónapot élesítéskor fizeti, 12% kedvezménnyel. Mindkét esetben ezalatt mindent tartalmaz: a fejlesztés költsége, hosting, titkosított kapcsolat, e-mail, domain beállítás, karbantartás, biztonsági mentés és havi módosítások. Külön számolva a hasonló hosting magyar szolgáltatóknál havi 3-8 ezer Ft lehet, és ehhez még jön a fejlesztés és minden módosítás fejlesztői díja. Nálunk egy díj fedi. A domain regisztráció és minden fizetős extra külön kerül a szerződésbe. Ha bármi elromlik, javítjuk."
             },
             "term": {
                 "question": "Meddig szól a szerződés?",
