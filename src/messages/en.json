@@ -5,7 +5,7 @@
         "contact": "Contact"
     },
     "hero": {
-        "badge": "€0 up front, from €49/month",
+        "badge": "€0 up front, from €50/month",
         "title": "A premium website, within days.",
         "subtitle": "Custom design on the latest technology.\nYou only pay when you're happy.",
         "cta": "Get Started",
@@ -36,13 +36,13 @@
                 "Hungarian and English versions",
                 "Lifetime warranty"
             ],
-            "monthly": "€49/month fee",
-            "termTotal": "€588",
-            "termTotalPrepay": "€517"
+            "monthly": "€50/month fee",
+            "termTotal": "€600",
+            "termTotalPrepay": "€528"
         },
         "business": {
             "name": "Business",
-            "price": "€149",
+            "price": "€150",
             "features": [
                 "Ready: 5-7 days",
                 "Everything in Starter, plus:",
@@ -53,12 +53,12 @@
                 "Visitor statistics"
             ],
             "monthly": "€75/month fee",
-            "termTotal": "€1,049",
-            "termTotalPrepay": "€923"
+            "termTotal": "€1,050",
+            "termTotalPrepay": "€924"
         },
         "pro": {
             "name": "Custom",
-            "price": "from €499",
+            "price": "from €500",
             "features": [
                 "Ready: 2-3 weeks",
                 "Everything in Business, plus:",
@@ -68,8 +68,8 @@
                 "Priority support"
             ],
             "monthly": "from €125/month fee",
-            "termTotal": "from €1,999",
-            "termTotalPrepay": "from €1,759"
+            "termTotal": "from €2,000",
+            "termTotalPrepay": "from €1,760"
         },
         "disclaimer": "The information shown here is for guidance only. Your exact price, monthly fee, and expected delivery date are fixed in your contract before we start.",
         "included": {
@@ -102,7 +102,7 @@
             },
             "cost": {
                 "question": "What does it cost?",
-                "answer": "Starter is €0 up front plus €49 a month. Business is €149 plus €75 a month. Custom from €499 plus from €125 a month. You can also pay for 12 months upfront at go-live with a 12% discount. Your price is fixed in the contract before we start."
+                "answer": "Starter is €0 up front plus €50 a month. Business is €150 plus €75 a month. Custom from €500 plus from €125 a month. You can also pay for 12 months upfront at go-live with a 12% discount. Your price is fixed in the contract before we start."
             },
             "pay": {
                 "question": "When do I pay?",
@@ -191,7 +191,7 @@
                 "label": "Price",
                 "diy": "€10-40/month, you do the work",
                 "agency": "€1,000-5,000 one-off",
-                "us": "€0 up front + from €49/month"
+                "us": "€0 up front + from €50/month"
             },
             "effort": {
                 "label": "Your effort",
@@ -267,9 +267,9 @@
             "plan": "Interested in",
             "planPlaceholder": "Select a plan...",
             "planOptions": {
-                "starter": "Starter (€0 + €49/month fee)",
-                "business": "Business (€149 + €75/month fee)",
-                "pro": "Custom (from €499 + from €125/month fee)",
+                "starter": "Starter (€0 + €50/month fee)",
+                "business": "Business (€150 + €75/month fee)",
+                "pro": "Custom (from €500 + from €125/month fee)",
                 "unsure": "Not sure yet"
             },
             "message": "Message",

@@ -5,7 +5,7 @@
         "contact": "Kapcsolat"
     },
     "hero": {
-        "badge": "0 Ft belépő, havi 19 900 Ft-tól",
+        "badge": "0 Ft belépő, havi 20 000 Ft-tól",
         "title": "Prémium weboldal, napokon belül.",
         "subtitle": "Egyedi dizájn, a legmodernebb technológián.\nCsak akkor fizet, ha elégedett.",
         "cta": "Kezdjük el",
@@ -36,13 +36,13 @@
                 "Magyar és angol nyelven",
                 "Életre szóló garancia"
             ],
-            "monthly": "19 900 Ft havi díj",
-            "termTotal": "238 800 Ft",
-            "termTotalPrepay": "210 100 Ft"
+            "monthly": "20 000 Ft havi díj",
+            "termTotal": "240 000 Ft",
+            "termTotalPrepay": "211 200 Ft"
         },
         "business": {
             "name": "Business csomag",
-            "price": "59 900 Ft",
+            "price": "60 000 Ft",
             "features": [
                 "Elkészül: 5-7 nap",
                 "Minden, ami a Kezdő csomagban, és még:",
@@ -52,13 +52,13 @@
                 "Automatikus e-mail értesítések",
                 "Látogatottsági statisztika"
             ],
-            "monthly": "29 900 Ft havi díj",
-            "termTotal": "418 700 Ft",
-            "termTotalPrepay": "368 500 Ft"
+            "monthly": "30 000 Ft havi díj",
+            "termTotal": "420 000 Ft",
+            "termTotalPrepay": "369 600 Ft"
         },
         "pro": {
             "name": "Egyedi megoldás",
-            "price": "199 000 Ft-tól",
+            "price": "200 000 Ft-tól",
             "features": [
                 "Elkészül: 2-3 hét",
                 "Minden, ami a Business csomagban, és még:",
@@ -67,9 +67,9 @@
                 "Online fizetés elfogadása",
                 "Kiemelt ügyfélszolgálat"
             ],
-            "monthly": "49 900 Ft-tól havi díj",
-            "termTotal": "797 800 Ft-tól",
-            "termTotalPrepay": "702 100 Ft-tól"
+            "monthly": "50 000 Ft-tól havi díj",
+            "termTotal": "800 000 Ft-tól",
+            "termTotalPrepay": "704 000 Ft-tól"
         },
         "disclaimer": "Az itt szereplő adatok tájékoztató jellegűek. A pontos árat, havi díjat és a várható határidőt a kezdés előtt szerződésben rögzítjük.",
         "included": {
@@ -102,7 +102,7 @@
             },
             "cost": {
                 "question": "Mennyibe kerül az oldal?",
-                "answer": "A Kezdő 0 Ft belépővel indul, havi 19 900 Ft-ért. A Business 59 900 Ft plusz havi 29 900 Ft, az egyedi projektek 199 000 Ft-tól és havi 49 900 Ft-tól. A 12 hónap egy összegben is fizethető élesítéskor, 12% kedvezménnyel. A pontos árat a kezdés előtt szerződésben rögzítjük."
+                "answer": "A Kezdő 0 Ft belépővel indul, havi 20 000 Ft-ért. A Business 60 000 Ft plusz havi 30 000 Ft, az egyedi projektek 200 000 Ft-tól és havi 50 000 Ft-tól. A 12 hónap egy összegben is fizethető élesítéskor, 12% kedvezménnyel. A pontos árat a kezdés előtt szerződésben rögzítjük."
             },
             "pay": {
                 "question": "Mikor kell fizetnie?",
@@ -191,7 +191,7 @@
                 "label": "Ár",
                 "diy": "4-15 ezer Ft/hó, mindent Ön csinál",
                 "agency": "400 ezer-2M Ft egyszeri",
-                "us": "0 Ft belépő + havi 19 900 Ft-tól"
+                "us": "0 Ft belépő + havi 20 000 Ft-tól"
             },
             "effort": {
                 "label": "Ráfordítás",
@@ -267,9 +267,9 @@
             "plan": "Érdeklődés",
             "planPlaceholder": "Válasszon csomagot...",
             "planOptions": {
-                "starter": "Kezdő (0 Ft + 19 900 Ft havi díj)",
-                "business": "Business (59 900 Ft + 29 900 Ft havi díj)",
-                "pro": "Egyedi (199 000 Ft-tól + 49 900 Ft-tól havi díj)",
+                "starter": "Kezdő (0 Ft + 20 000 Ft havi díj)",
+                "business": "Business (60 000 Ft + 30 000 Ft havi díj)",
+                "pro": "Egyedi (200 000 Ft-tól + 50 000 Ft-tól havi díj)",
                 "unsure": "Még nem tudom"
             },
             "message": "Üzenet",

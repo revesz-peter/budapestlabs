@@ -46,7 +46,7 @@ async function JsonLd({ locale }: { locale: string }) {
       addressLocality: "Budapest",
       addressCountry: "HU",
     },
-    priceRange: locale === "hu" ? "0 Ft belépő + havi 19 900 Ft-tól" : "€0 up front + from €49/month",
+    priceRange: locale === "hu" ? "0 Ft belépő + havi 20 000 Ft-tól" : "€0 up front + from €50/month",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],

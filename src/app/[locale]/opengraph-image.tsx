@@ -5,9 +5,9 @@ export const contentType = "image/png";
 export const alt = "Budapest Labs";
 
 const taglines: Record<string, string> = {
-  hu: "Prémium weboldal, napokon belül. 0 Ft belépő, havi 19 900 Ft-tól.",
-  en: "A premium website, within days. €0 up front, from €49/month.",
-  de: "Eine Premium-Website, in wenigen Tagen. 0 € Startkosten, ab 49 €/Monat.",
+  hu: "Prémium weboldal, napokon belül. 0 Ft belépő, havi 20 000 Ft-tól.",
+  en: "A premium website, within days. €0 up front, from €50/month.",
+  de: "Eine Premium-Website, in wenigen Tagen. 0 € Startkosten, ab 50 €/Monat.",
 };
 
 export default async function OpenGraphImage({

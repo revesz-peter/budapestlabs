@@ -5,7 +5,7 @@
     "contact": "Kontakt"
   },
   "hero": {
-    "badge": "0 € Startkosten, ab 49 €/Monat",
+    "badge": "0 € Startkosten, ab 50 €/Monat",
     "title": "Premium-Website, in wenigen Tagen.",
     "subtitle": "Individuelles Design mit neuester Technologie.\nSie zahlen erst, wenn Sie zufrieden sind.",
     "cta": "Jetzt starten",
@@ -36,13 +36,13 @@
         "Ungarisch und Englisch inklusive",
         "Lebenslange Garantie"
       ],
-      "monthly": "49 € monatliche Gebühr",
-      "termTotal": "588 €",
-      "termTotalPrepay": "517 €"
+      "monthly": "50 € monatliche Gebühr",
+      "termTotal": "600 €",
+      "termTotalPrepay": "528 €"
     },
     "business": {
       "name": "Business",
-      "price": "149 €",
+      "price": "150 €",
       "features": [
         "Fertig: 5-7 Tage",
         "Alles im Starter-Paket, plus:",
@@ -53,12 +53,12 @@
         "Besucherstatistiken"
       ],
       "monthly": "75 € monatliche Gebühr",
-      "termTotal": "1.049 €",
-      "termTotalPrepay": "923 €"
+      "termTotal": "1.050 €",
+      "termTotalPrepay": "924 €"
     },
     "pro": {
       "name": "Custom",
-      "price": "ab 499 €",
+      "price": "ab 500 €",
       "features": [
         "Fertig: 2-3 Wochen",
         "Alles im Business-Paket, plus:",
@@ -68,8 +68,8 @@
         "Prioritäts-Support"
       ],
       "monthly": "ab 125 € monatliche Gebühr",
-      "termTotal": "ab 1.999 €",
-      "termTotalPrepay": "ab 1.759 €"
+      "termTotal": "ab 2.000 €",
+      "termTotalPrepay": "ab 1.760 €"
     },
     "disclaimer": "Die hier angegebenen Angaben sind unverbindlich. Der genaue Preis, die Monatsgebühr und der voraussichtliche Termin werden vor dem Start vertraglich festgelegt.",
     "included": {
@@ -102,7 +102,7 @@
       },
       "cost": {
         "question": "Was kostet es?",
-        "answer": "Starter 0 € im Voraus plus 49 € im Monat. Business 149 € plus 75 € im Monat. Custom ab 499 € plus ab 125 € im Monat. Alternativ können Sie 12 Monate beim Livegang in einer Summe zahlen, mit 12% Rabatt. Der Preis wird vor dem Start vertraglich festgelegt."
+        "answer": "Starter 0 € im Voraus plus 50 € im Monat. Business 150 € plus 75 € im Monat. Custom ab 500 € plus ab 125 € im Monat. Alternativ können Sie 12 Monate beim Livegang in einer Summe zahlen, mit 12% Rabatt. Der Preis wird vor dem Start vertraglich festgelegt."
       },
       "pay": {
         "question": "Wann muss ich zahlen?",
@@ -191,7 +191,7 @@
         "label": "Preis",
         "diy": "10-40 €/Monat, Sie machen die Arbeit",
         "agency": "1.000-5.000 € einmalig",
-        "us": "0 € + ab 49 €/Monat"
+        "us": "0 € + ab 50 €/Monat"
       },
       "effort": {
         "label": "Ihr Aufwand",
@@ -267,9 +267,9 @@
       "plan": "Interesse an",
       "planPlaceholder": "Paket wählen...",
       "planOptions": {
-        "starter": "Starter (0 € + 49 € monatliche Gebühr)",
-        "business": "Business (149 € + 75 € monatliche Gebühr)",
-        "pro": "Custom (ab 499 € + ab 125 € monatliche Gebühr)",
+        "starter": "Starter (0 € + 50 € monatliche Gebühr)",
+        "business": "Business (150 € + 75 € monatliche Gebühr)",
+        "pro": "Custom (ab 500 € + ab 125 € monatliche Gebühr)",
         "unsure": "Noch nicht sicher"
       },
       "message": "Nachricht",
