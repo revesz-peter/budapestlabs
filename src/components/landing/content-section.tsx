@@ -34,7 +34,10 @@ export function ContentSection() {
               </span>
               {t("background1end")}
             </p>
-            <p className="text-muted-foreground">{t("background2")}</p>
+            {t("background2") ? (
+              <p className="text-muted-foreground">{t("background2")}</p>
+            ) : null}
+            <p className="text-muted-foreground">{t("background3")}</p>
             <p className="text-accent-foreground font-semibold">{t("motto")}</p>
           </div>
         </div>
