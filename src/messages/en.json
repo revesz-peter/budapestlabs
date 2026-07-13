@@ -12,13 +12,6 @@
         "demo": "Free Consultation",
         "stackLabel": "Built with"
     },
-    "stats": {
-        "title": "Budapest Labs in numbers",
-        "subtitle": "Experience, speed, and happy clients.",
-        "experience": "years on international projects",
-        "delivery": "average response time",
-        "satisfaction": "client satisfaction"
-    },
     "pricing": {
         "label": "Pricing",
         "title": "Simple, honest pricing",
@@ -414,11 +407,21 @@
     },
     "content": {
         "title": "Quality you can see at first glance.",
-        "p1start": "Every site we build is",
-        "p1bold": "custom designed, never a template.",
-        "p1end": "It loads in a blink and looks flawless on every device.",
-        "p2": "Under the hood you get the same engineering quality the big brands rely on: encrypted connections, 99.99% uptime, and ongoing maintenance so your site runs flawlessly for years.",
-        "background1": "Behind Budapest Labs is a three-time founding engineer. Most recently he built a platform running on 3,000+ enterprise sites, for companies like Nvidia, Datadog, and CrowdStrike.",
-        "background2": "Before that: healthcare and education software for US clients. Your website is built to the same standard."
+        "stackLead": "Under the hood, the same standard big brands rely on:",
+        "stack": [
+            "Production-grade platform, delivered instantly worldwide",
+            "Enterprise-level sign-in and account protection",
+            "Auto-scaling database with high availability and durability",
+            "Global secure hosting with built-in protection and 99.99% uptime",
+            "Email that reaches inboxes, not spam folders",
+            "Branded booking",
+            "Global payments with fraud protection",
+            "Managed operations to keep everything current and secure"
+        ],
+        "background1start": "Budapest Labs is led by a three-time founding engineer. He built a platform running on 3,000+ enterprise sites for companies like ",
+        "background1brands": "Nvidia, Datadog, and CrowdStrike",
+        "background1end": ".",
+        "background2": "Alongside some of the best engineers he has worked with on healthcare and education software for US clients in recent years, the team draws on over a decade of international experience to deliver the highest-quality solutions at a fair price for businesses of any size.",
+        "motto": "We help businesses rebuild their online presence to modern standards."
     }
 }

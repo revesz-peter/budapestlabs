@@ -12,13 +12,6 @@
     "demo": "Kostenlose Beratung",
     "stackLabel": "Gebaut mit"
   },
-  "stats": {
-    "title": "Budapest Labs in Zahlen",
-    "subtitle": "Erfahrung, Tempo und zufriedene Kunden.",
-    "experience": "Jahre auf internationalen Projekten",
-    "delivery": "durchschnittliche Antwortzeit",
-    "satisfaction": "Kundenzufriedenheit"
-  },
   "pricing": {
     "label": "Preise",
     "title": "Einfache, ehrliche Preise",
@@ -414,11 +407,21 @@
   },
   "content": {
     "title": "Qualität, die man auf den ersten Blick sieht.",
-    "p1start": "Jede unserer Websites ist",
-    "p1bold": "individuell gestaltet, nie eine Vorlage.",
-    "p1end": "Sie lädt blitzschnell und sieht auf jedem Gerät makellos aus.",
-    "p2": "Unter der Haube steckt dieselbe technische Qualität, auf die sich die großen Marken verlassen: verschlüsselte Verbindungen, 99,99% Verfügbarkeit und laufende Wartung, damit Ihre Website auch nach Jahren einwandfrei läuft.",
-    "background1": "Hinter Budapest Labs steht ein dreifacher Founding Engineer. Zuletzt baute er eine Plattform, die auf über 3.000 Enterprise-Websites läuft, für Firmen wie Nvidia, Datadog und CrowdStrike.",
-    "background2": "Davor: Gesundheits- und Bildungssoftware für US-Kunden. Ihre Website entsteht mit demselben Anspruch."
+    "stackLead": "Unter der Haube dieselbe Qualität, auf die sich große Marken verlassen:",
+    "stack": [
+      "Produktionsreife Plattform mit sofortiger globaler Auslieferung",
+      "Anmeldung auf Enterprise-Niveau mit Kontoschutz",
+      "Automatisch skalierende Datenbank mit hoher Verfügbarkeit und Beständigkeit",
+      "Globales sicheres Hosting mit integriertem Schutz und 99,99% Verfügbarkeit",
+      "E-Mails, die Posteingänge erreichen, nicht Spam-Ordner",
+      "Markengebundene Buchung",
+      "Globale Zahlungen mit Betrugsschutz",
+      "Betrieb und Wartung, damit alles aktuell und sicher bleibt"
+    ],
+    "background1start": "Budapest Labs wird von einem dreifachen Founding Engineer geleitet. Zuletzt baute er eine Plattform auf über 3.000 Enterprise-Websites für Firmen wie ",
+    "background1brands": "Nvidia, Datadog und CrowdStrike",
+    "background1end": ".",
+    "background2": "Gemeinsam mit einigen der besten Ingenieure, mit denen er in den vergangenen Jahren an Gesundheits- und Bildungssoftware für US-Kunden gearbeitet hat, bringt das Team über ein Jahrzehnt internationale Erfahrung ein, um höchste Qualität zu einem fairen Preis für Unternehmen jeder Größe zu liefern.",
+    "motto": "Wir helfen Unternehmen, ihre Online-Präsenz auf modernen Standard zu bringen."
   }
 }

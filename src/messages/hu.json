@@ -12,13 +12,6 @@
         "demo": "Ingyenes konzultáció",
         "stackLabel": "Ezekkel dolgozunk"
     },
-    "stats": {
-        "title": "Budapest Labs számokban",
-        "subtitle": "Tapasztalat, sebesség és elégedett ügyfelek.",
-        "experience": "év nemzetközi projekteken",
-        "delivery": "átlagos válaszidő",
-        "satisfaction": "ügyfél elégedettség"
-    },
     "pricing": {
         "label": "Árak",
         "title": "Egyszerű, őszinte árazás",
@@ -413,12 +406,22 @@
         }
     },
     "content": {
-        "title": "Minőség, ami első pillantásra látszik.",
-        "p1start": "Minden oldalunk",
-        "p1bold": "egyedi tervezés, nem sablon.",
-        "p1end": "Villámgyorsan tölt be, és minden eszközön kifogástalanul mutat.",
-        "p2": "A háttérben ugyanaz a mérnöki minőség, mint a nagy márkáknál: titkosított kapcsolat, 99,99%-os rendelkezésre állás és folyamatos karbantartás, hogy az oldala évek múlva is kifogástalanul működjön.",
-        "background1": "A Budapest Labs mögött egy háromszoros alapító mérnök áll. Legutóbb egy 3000+ nagyvállalati oldalon futó platformot épített, olyan cégeknek, mint az Nvidia, a Datadog és a CrowdStrike.",
-        "background2": "Korábban amerikai egészségügyi és oktatási szoftvereken dolgozott. Az Ön weboldala is ugyanezzel az igényességgel készül."
+        "title": "Minőség, ami rögtön látszik.",
+        "stackLead": "A háttérben pedig ugyanaz a technológia, amelyet a nagy márkák is használnak:",
+        "stack": [
+            "Gyors, naprakész, a világ bármely pontjáról azonnal betölt",
+            "Védett bejelentkezés",
+            "Adatbázis, amely a forgalommal együtt skálázódik",
+            "Globális tárhely 99,99%-os rendelkezésre állással",
+            "E-mailek, amelyek nem a spam mappában végzik",
+            "Foglalási rendszer az Ön arculatával",
+            "Gyors, megbízható online fizetés",
+            "Az üzemeltetést és karbantartást mi végezzük"
+        ],
+        "background1start": "A Budapest Labs vezetője egy háromszoros alapító. Egy általa fejlesztett platform ma több mint 3000 nagyvállalati weboldalt szolgál ki, köztük ",
+        "background1brands": "az Nvidia, a Datadog és a CrowdStrike",
+        "background1end": " oldalait.",
+        "background2": "Az elmúlt években amerikai egészségügyi és oktatási szoftvereken dolgozott a szakma legjobb mérnökeivel. Csapatunk több mint egy évtizednyi nemzetközi tapasztalattal ugyanezt a színvonalat nyújtja, elérhető áron, kis cégeknek és nagyvállalatoknak egyaránt.",
+        "motto": "Segítünk újjáépíteni vállalkozása online jelenlétét, hogy modern, meggyőző és biztonságos legyen."
     }
 }
