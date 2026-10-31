@@ -2,7 +2,7 @@
 
 ## What this is
 
-Landing page for Budapest Labs — a service delivering professional websites for Hungarian small businesses in days (1-2 days Starter, 3-5 days Business, 1-2 weeks Custom). Single-page marketing site, trilingual (Hungarian default, English and German toggles).
+Landing page for Budapest Labs: a software and AI studio for Hungarian businesses. Services: Claude integrations (connecting invoicing, webshop, CRM to the AI assistant), custom business software, automation and AI agents, websites and webshops, AI training, AI assessment. Quote-based, no prices on the page. Single-page marketing site, trilingual (Hungarian default, English and German toggles).
 
 ## Commands
 
@@ -16,11 +16,11 @@ Landing page for Budapest Labs — a service delivering professional websites fo
 
 - Next.js 16 (App Router, Turbopack), React 19, TypeScript
 - Tailwind CSS v4 (uses `@import "tailwindcss"`, `@theme inline`, `@custom-variant` — NOT v3 syntax)
-- ShadCN-style UI primitives in `src/components/ui/` (button, card, input, textarea, label)
+- ShadCN-style UI primitives in `src/components/ui/` (button, card, input, textarea, label, flow-line)
 - Framer Motion for scroll animations
-- next-intl for i18n (HU/EN/DE, proxy-based locale detection); pages are statically rendered via `generateStaticParams` + `setRequestLocale` — every page component must call `setRequestLocale(locale)` before using translations
+- next-intl for i18n (HU/EN/DE; Hungarian is always the default at `/`, browser-language detection is off in `routing.ts`); pages are statically rendered via `generateStaticParams` + `setRequestLocale` — every page component must call `setRequestLocale(locale)` before using translations
 - next-themes for dark/light mode (class-based toggling on `<html>`)
-- Inter is self-hosted via `next/font` (exposed as `--font-inter`, consumed by `--font-sans` in `globals.css`) — do not add a Google Fonts `<link>`
+- Inter is the only font, self-hosted via `next/font` (`--font-inter` → `--font-sans` in `globals.css`) — do not add a Google Fonts `<link>` or a second typeface
 - Bun as package manager
 
 ## Important conventions
@@ -33,27 +33,34 @@ Landing page for Budapest Labs — a service delivering professional websites fo
 - All user-facing text lives in `src/messages/en.json`, `src/messages/hu.json`, and `src/messages/de.json`
 - Components use `useTranslations("sectionName")` from next-intl
 - All three files must stay in sync — same keys, same structure (`bun run check:messages` enforces this; it also runs as part of `build` and `lint`)
-- **No tech jargon in translations.** The target audience is small business owners, not developers. Say "secure hosting" not "Vercel + SSL + CDN". Say "latest & future-proof" not "Next.js + React".
+- **No tech jargon in translations.** The target audience is business owners, not developers. Say "secure hosting" not "Vercel + SSL + CDN", "connect" not "API" or "MCP". Name only Claude as the AI (never "Claude and/or ChatGPT"). Other product names customers already know are fine in moderation: the systems we connect (Billingo, Számlázz.hu, Shoprenter, UNAS, Shopify, MiniCRM, Slack, ...).
 - **Tone: brief, human, upfront.** Short sentences, no filler, no numbered mega-lists. Copy should read like a person wrote it, not a template.
-- **No em-dashes or en-dashes anywhere in user-facing copy** (messages, titles, meta descriptions). Use periods, commas, or colons; plain hyphens for ranges (1-2 days). The comparison icon matcher in `comparison.tsx` keys off these strings, so keep them hyphenated.
+- **No em-dashes or en-dashes anywhere in user-facing copy** (messages, titles, meta descriptions). Use periods, commas, or colons; plain hyphens for ranges (1-2 days). 
 
 ### Design system
 - **Dark/light mode** via `next-themes` with class strategy (`<html class="dark">`)
   - Default theme: light. Toggle in navbar (Sun/Moon icon) next to language switcher.
   - `globals.css` has `:root` (light) and `.dark` (dark) CSS variable blocks
   - Other theme-dependent CSS (selection) scoped by `.dark` / `:root:not(.dark)`
-- **Dark mode**: Black background (`oklch(0 0 0)`), white text (`oklch(0.97 0 0)`), subtle white-alpha card panels
-- **Light mode**: Near-white background (`oklch(0.985 0 0)`), near-black text (`oklch(0.09 0 0)`), subtle black-alpha card panels
-- Scandinavian minimalism — clean, not flashy — applies to both modes
-- **Accent colors**:
-  - Violet — Popular badge on Business pricing card only
-  - Blue (`#2563eb`) + Teal (`#0d9488`) — accent reference only (hero uses Pexels video, not mesh gradient)
-  - These are the only non-monochrome colors on the site. Step number circles, cards, and all other elements stay monochrome.
-- **Hero background**: Pexels video background in `hero.tsx` (not mesh gradient)
-- **Animated shader backgrounds**: 16 WebGL/CSS components live in the separate templates repo at `labs/templates/shaders/` (aurora, waves, sea, noise, desert-sand, cosmic-waves, accretion, singularity, mesh-gradient, flickering-grid, liquid-noir, marble-ink, silk-flow, dark-smoke, molten-amber, shader-canvas). Copy into client projects as needed. See `templates/pipeline/CUSTOMIZATION.md` in that repo.
-- Do NOT add glow effects, text shimmer, or heavy visual effects — user explicitly removed these
+- **Palette** (earthy, approachable, premium): light mode is linen (`oklch(0.968 0.013 80)`) with espresso ink; dark mode is espresso night (`oklch(0.2 0.014 50)`). Buttons and text stay ink/linen.
+- **Earth tones**: `clay`, `ochre`, `olive`, `moss`, `sand`, `stone` tokens (deep muted versions in dark mode) for card tints, icon tiles, step cards. `brand` (terracotta) leads, `brand-2` (olive) supports: eyebrows, highlighter, flow lines, focus rings, CTA arrow discs.
+- **Type**: Inter only. Each h1/h2 can carry one `<em>` phrase in the message files (rendered with `t.rich(key, rich)` from `section-header.tsx`): upright, terracotta in h2, ochre highlighter in the hero h1.
+- **Glass**: `glass` utility (paper-like frosted panel) for navbar pill, hero chat, diagram card.
+- **Animations** (each a different technique, all respect reduced motion; ask before adding more):
+  - `motion-primitives/contours.tsx`: topographic contour lines that draw in and turn very slowly (hero with ochre "sun", AI panel, contact). Hero contours have scroll parallax.
+  - Hero headline: words rise from a mask; the `<em>` phrase gets an ochre highlighter sweep. Chat card unfolds (rotateX); a safety note card (`hero.chat.noteTitle` / `noteBody`) settles onto its edge.
+  - `motion-primitives/roll-text.tsx`: text roll on hover for CTAs (needs `group/roll` on the button); CTA arrow disc turns -45°.
+  - Section titles slide up from a mask (in-view is observed on the mask wrapper, not the clipped title) with a drawn eyebrow line.
+  - Services: sand curtain wipes up to uncover each card; icon tile fills with terracotta on hover; vignettes animate on hover.
+  - AI diagram: `ui/flow-line.tsx` lines draw in once, then a soft gradient pulse and a data dot travel along each (staggered); the hub ripples slowly. The dot stays at opacity 0 until its SMIL animation is started from JS after the line draws, otherwise it flashes at the SVG origin.
+  - Process: plain 4-card grid, cards rise in with a terracotta top line drawing across. Keep it simple: sticky/scroll-linked stacking was buggy and was removed.
+  - Navbar: reading-progress line, underline-draw hover links.
+- **Hungarian copy**: abbreviation compounds take a hyphen (AI-asszisztens, AI-integráció, AI-ügynök, AI-oktatás, Claude-integráció, Claude-workshop). Speak to the real KKV concerns: data safety, mistakes (show sources, human approval), job fears, "start small with an assessment". Formal "Ön".
+- **No connected-tool lists**: integrations aren't live yet, so don't show tool logos/wordmarks or "connected to X" claims. Chat demo sources are generic ("A számlázójából").
+- **Hero**: contour-map backdrop, audience badge, "AI, ami ismeri a cégét." headline + CTAs + 3 trust ticks left, live-typing glass chat (cycles `hero.chat.items`) with safety note right. The old particle video lives in `hero-video.tsx`, currently unused: keep it, don't delete.
+- **Animated shader backgrounds**: 16 WebGL/CSS components live in the separate templates repo at `labs/templates/shaders/`. Copy into client projects as needed. See `templates/pipeline/CUSTOMIZATION.md` in that repo.
 - Framer Motion animations use `whileInView` with `once: true`
-- **Color classes**: Use semantic Tailwind tokens (`text-foreground`, `text-muted-foreground`, `bg-foreground/5`, `border-border`) — do NOT hardcode `text-white`, `bg-black`, `text-white/60` etc. These break in the opposite theme.
+- **Color classes**: Use semantic Tailwind tokens (`text-foreground`, `text-muted-foreground`, `bg-foreground/5`, `border-border`, `text-brand`) — do NOT hardcode `text-white`, `bg-black`, `text-white/60` etc. These break in the opposite theme.
 
 ### Theme toggle
 - Component: `src/components/landing/theme-toggle.tsx` (Sun/Moon icon button)
@@ -64,15 +71,15 @@ Landing page for Budapest Labs — a service delivering professional websites fo
 
 ### Business model & messaging priorities
 
-**Subscription-first pricing (near-zero entry, monthly is the engine):** Starter 0 Ft (€0) up front + 19 900 Ft/mo (€49); Business 59 900 Ft (€149) + 29 900 Ft/mo (€75); Custom from 199 000 Ft (€499) + from 49 900 Ft/mo (€125). Build fee due at approval; monthly starts at go-live; 12-month minimum, then cancel anytime. **Monthly fee = development cost + operation for the contracted period.** Domain registration and paid extras are discussed and written into the contract (domain yearly fee at cost). **Honesty rule:** prices on the page are estimates; exact prices are fixed in the contract. The monthly fee must be disclosed everywhere a price appears.
+**Quote-based, no prices on the page.** Every project gets an individual quote after a free assessment, with a fixed price per phase in writing. Ongoing operation is a monthly fee agreed in the contract. Never add price figures, packages, or "from X Ft" to the page, metadata, OG image, or JSON-LD.
 
 The landing page sells on these pillars, in order:
-1. **Premium quality, fast** — custom design, days not weeks (hero headline)
-2. **Pay only when happy** — build fee due at approval, walk away before that and pay nothing
-3. **Cheap to get in** — 0 Ft up front on Starter, nothing due until approval
-4. **Zero effort** — we design, build, and run it; small changes included monthly
+1. **AI connected to your business** — Claude answering from the company's own systems (hero + AI section)
+2. **One team, idea to operation** — software, automation, websites, training (services section)
+3. **Safe by default** — read-only access, data stays in their systems and the EU, DPA, revocable access
+4. **No surprises** — free assessment, written plan, fixed price per phase, weekly results, documentation, monthly operation
 
-Infrastructure credibility is carried by the hero stack strip (tech wordmarks + "Built with" label) and the content section's anonymous founder background (3x founding engineer; platform on 3,000+ enterprise sites for Nvidia, Datadog, CrowdStrike; US healthcare and edtech). These are the sanctioned places for tech/brand names in customer-facing copy; everywhere else keep the no-jargon rule and describe benefits, not tools.
+Don't show partner badges (Claude Partner Network, OpenAI) until actually accepted. Don't invent clients, testimonials, or case studies; the chat demo answers are labelled as examples.
 
 ## Project structure
 
@@ -81,7 +88,7 @@ src/
 ├── app/
 │   ├── [locale]/
 │   │   ├── layout.tsx           # Locale layout, metadata, next/font Inter, generateStaticParams
-│   │   ├── page.tsx             # Main page, assembles all sections + JSON-LD structured data
+│   │   ├── page.tsx             # Main page, assembles all sections + JSON-LD (Organization, ProfessionalService; no FAQPage since there is no FAQ section)
 │   │   ├── opengraph-image.tsx  # Generated OG image (per-locale tagline)
 │   │   ├── privacy/page.tsx     # Privacy Policy (minimal layout)
 │   │   ├── terms/page.tsx       # Terms of Service (minimal layout)
@@ -91,8 +98,8 @@ src/
 │   ├── sitemap.ts               # sitemap.xml with hreflang alternates
 │   └── globals.css              # Tailwind v4 config, theme variables
 ├── components/
-│   ├── landing/              # navbar, hero, content-section, stats, comparison, pricing, faq, contact, footer, theme-toggle
-│   └── ui/                   # button, card, input, textarea, label
+│   ├── landing/              # navbar, hero, hero-video (unused), services, ai-integration, process, contact, footer, section-header, theme-toggle
+│   └── ui/                   # button, card, input, textarea, label, flow-line
 ├── i18n/
 │   ├── routing.ts            # Locale config (hu, en, de)
 │   ├── request.ts            # Server request config
@@ -109,19 +116,17 @@ scripts/generate-legal-pdfs.mjs  # Regenerates public/legal PDFs from messages
 
 ## Section order on page
 
-The landing page is built from **Tailark blocks** (tailark.com, shadcn-style marketing blocks) adapted to next-intl. Supporting primitives live in `src/components/logo.tsx`, `src/components/ui/card.tsx`, and `src/components/motion-primitives/` (text-effect, animated-group; they import from framer-motion, not motion/react).
+The landing page is built from **Tailark blocks** (tailark.com, shadcn-style marketing blocks) adapted to next-intl. Supporting primitives live in `src/components/logo.tsx`, `src/components/ui/`, and `src/components/motion-primitives/` (contours, roll-text, plus older text-effect, animated-group, infinite-slider, progressive-blur; they import from framer-motion, not motion/react).
 
-1. Navbar — fixed pill on scroll, language switcher (HU/EN/DE), theme toggle, contact CTA
-2. Hero — Pexels video background, TextEffect headline/subtitle (2 lines), CTA pair, stack strip (12 tech wordmarks + "Built with" / localized label)
-3. Content — quality pitch + anonymous founder background
-4. Stats — 3 static numbers (7+ years, ≤24h response, 100% satisfaction)
-5. Comparison — 10-row table (delivery, price, effort, quality, tech, performance, mobile, SEO, security, warranty, booking)
-6. Pricing — 3 cards: build fee + monthly in description, 12-month term in section subtitle, Popular badge on Business
-7. FAQ — process, cost, pay, monthly, term, speed, language, tech, partner (SUSA STUDIO card inline)
-8. Contact — form + Cal.com link in subtitle
-9. Footer — nav anchors + legal links
+1. Navbar — glass pill on scroll, links (services, AI, process), language switcher, theme toggle, contact CTA
+2. Hero — contour map, headline with highlighted phrase, CTA pair, trust ticks, live glass chat with safety note
+3. Services (`#services`) — earthy bento, 6 cards (ai, software, automation, web, training, audit); `serviceKeys` also feeds the contact form's interest select
+4. AI integration (`#ai`) — rounded sand panel: copy + example questions, flow-line diagram (systems → Claude → team), 3 promise cards
+5. Process (`#process`) — 4 step cards
+6. Contact — form (interest select) + Cal.com link in subtitle
+7. Footer — nav anchors + legal links
 
-Styling: Tailark look (`bg-card`, `text-4xl font-medium lg:text-5xl` headings, `py-16 md:py-32`).
+Styling: `text-4xl font-medium tracking-tight lg:text-5xl` headings with a glass eyebrow pill via `SectionHeader`, `py-16 md:py-32`, generous radii (`rounded-3xl`, buttons `rounded-full`).
 
 ## Client delivery pipeline
 

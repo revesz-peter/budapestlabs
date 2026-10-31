@@ -1,16 +1,14 @@
 import { setRequestLocale } from "next-intl/server";
 import { Navbar } from "@/components/landing/navbar";
 import { Hero } from "@/components/landing/hero";
-import { ContentSection } from "@/components/landing/content-section";
-import { Comparison } from "@/components/landing/comparison";
-import { Pricing } from "@/components/landing/pricing";
-import { FAQ } from "@/components/landing/faq";
+import { Services } from "@/components/landing/services";
+import { AiIntegration } from "@/components/landing/ai-integration";
+import { Process } from "@/components/landing/process";
 import { Contact } from "@/components/landing/contact";
 import { Footer } from "@/components/landing/footer";
 
 async function JsonLd({ locale }: { locale: string }) {
   const messages = (await import(`@/messages/${locale}.json`)).default;
-  const faqItems = messages.faq.items;
 
   const organization = {
     "@context": "https://schema.org",
@@ -26,7 +24,13 @@ async function JsonLd({ locale }: { locale: string }) {
     },
     description: messages.footer.description,
     areaServed: ["HU", "DE", "AT", "CH"],
-    serviceType: "Web Development",
+    serviceType: [
+      "Custom Software Development",
+      "AI Integration",
+      "Business Process Automation",
+      "Web Development",
+      "AI Training",
+    ],
   };
 
   const localBusiness = {
@@ -46,28 +50,12 @@ async function JsonLd({ locale }: { locale: string }) {
       addressLocality: "Budapest",
       addressCountry: "HU",
     },
-    priceRange: locale === "hu" ? "0 Ft belépő + havi 20 000 Ft-tól" : "€0 up front + from €50/month",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       opens: "09:00",
       closes: "18:00",
     },
-  };
-
-  const faqPage = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: Object.values(faqItems as Record<string, { question: string; answer: string }>).map(
-      (item) => ({
-        "@type": "Question",
-        name: item.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: item.answer,
-        },
-      })
-    ),
   };
 
   return (
@@ -79,10 +67,6 @@ async function JsonLd({ locale }: { locale: string }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusiness) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
       />
     </>
   );
@@ -101,10 +85,9 @@ export default async function HomePage({
       <JsonLd locale={locale} />
       <Navbar />
       <Hero />
-      <ContentSection />
-      <Comparison />
-      <Pricing />
-      <FAQ />
+      <Services />
+      <AiIntegration />
+      <Process />
       <Contact />
       <Footer />
     </main>

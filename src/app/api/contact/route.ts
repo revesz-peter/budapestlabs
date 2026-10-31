@@ -7,7 +7,7 @@ const schema = z.object({
   email: z.email().max(320),
   phone: z.string().max(50).optional(),
   business: z.string().max(200).optional(),
-  plan: z.string().max(50).optional(),
+  interest: z.string().max(50).optional(),
   message: z.string().max(5000).optional(),
   // Honeypot — hidden field, humans leave it empty
   website: z.string().max(200).optional(),
@@ -35,7 +35,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid request" }, { status: 400 });
   }
 
-  const { name, email, phone, business, plan, message, website } = parsed.data;
+  const { name, email, phone, business, interest, message, website } = parsed.data;
 
   // Bot filled the honeypot — pretend success, send nothing
   if (website) {
@@ -58,7 +58,7 @@ export async function POST(request: Request) {
       row("Email", email),
       phone ? row("Phone", phone) : "",
       business ? row("Business", business) : "",
-      plan ? row("Plan", plan) : "",
+      interest ? row("Interested in", interest) : "",
       message
         ? `<p><strong>Message:</strong></p><p>${escapeHtml(message).replaceAll("\n", "<br>")}</p>`
         : "",

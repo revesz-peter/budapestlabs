@@ -1,260 +1,142 @@
 {
     "nav": {
-        "pricing": "Árak",
-        "faq": "GYIK",
+        "services": "Szolgáltatások",
+        "ai": "AI-integráció",
+        "process": "Így dolgozunk",
         "contact": "Kapcsolat"
     },
     "hero": {
-        "badge": "0 Ft belépő, havi 20 000 Ft-tól",
-        "title": "Prémium weboldal, napokon belül.",
-        "subtitle": "Egyedi dizájn, a legmodernebb technológián.\nCsak akkor fizet, ha elégedett.",
-        "cta": "Kezdjük el",
-        "demo": "Ingyenes konzultáció",
-        "stackLabel": "Ezekkel dolgozunk"
-    },
-    "pricing": {
-        "label": "Árak",
-        "title": "Egyszerű, őszinte árazás",
-        "subtitle": "Alacsony vagy nulla kezdőköltség, plusz havi díj, legalább 12 hónapra.\nA kivitelezés díját csak átadáskor fizeti.",
-        "choosePlan": "Csomag választása",
-        "popular": "Népszerű",
-        "billingMonthly": "Havi",
-        "billingTotal": "Egyösszegben",
-        "billingTotalDiscount": "−12%",
-        "billingToggleAriaLabel": "Havi vagy egyösszegben fizetés megjelenítése",
-        "monthlySuffix": "12 hónap",
-        "prepayBadge": "12% kedvezmény",
-        "starter": {
-            "name": "Kezdő csomag",
-            "price": "0 Ft",
-            "features": [
-                "Elkészül: 3-5 nap",
-                "3-5 oldal, a vállalkozásához igazítva",
-                "Minden telefonon és számítógépen jól mutat",
-                "Üzemeltetés és e-mail benne van, a domain beállítását mi intézzük (éves díj önköltségen)",
-                "Kisebb módosítások havonta, díjmentesen",
-                "Magyar és angol nyelven",
-                "Életre szóló garancia"
-            ],
-            "monthly": "20 000 Ft havi díj",
-            "termTotal": "240 000 Ft",
-            "termTotalPrepay": "211 200 Ft"
-        },
-        "business": {
-            "name": "Business csomag",
-            "price": "60 000 Ft",
-            "features": [
-                "Elkészül: 5-7 nap",
-                "Minden, ami a Kezdő csomagban, és még:",
-                "6-10 oldal",
-                "Online időpont- és hívásfoglaló",
-                "Google Térkép és útvonaltervezés",
-                "Automatikus e-mail értesítések",
-                "Látogatottsági statisztika"
-            ],
-            "monthly": "30 000 Ft havi díj",
-            "termTotal": "420 000 Ft",
-            "termTotalPrepay": "369 600 Ft"
-        },
-        "pro": {
-            "name": "Egyedi megoldás",
-            "price": "200 000 Ft-tól",
-            "features": [
-                "Elkészül: 2-3 hét",
-                "Minden, ami a Business csomagban, és még:",
-                "Webshop, ügynökségi oldal, márkaoldal, bármi",
-                "Egyedi funkciók az Ön igényei szerint",
-                "Online fizetés elfogadása",
-                "Kiemelt ügyfélszolgálat"
-            ],
-            "monthly": "50 000 Ft-tól havi díj",
-            "termTotal": "800 000 Ft-tól",
-            "termTotalPrepay": "704 000 Ft-tól"
-        },
-        "disclaimer": "Az itt szereplő adatok tájékoztató jellegűek. A pontos árat, havi díjat és a várható határidőt a kezdés előtt szerződésben rögzítjük.",
-        "included": {
-            "title": "Mit tartalmaz a díj?",
-            "body": "Havi fizetésnél a fejlesztés 12 hónapra oszlik el. Egyösszegben a teljes 12 hónapot élesítéskor fizeti, 12% kedvezménnyel. Mindkét esetben 12 hónapig benne van: a fejlesztés költsége, hosting, titkosított kapcsolat, e-mail, domain beállítás, karbantartás, biztonsági mentés és havi módosítások. Külön-külön gyakran havi 8-15 ezer Ft felett is lehet, fejlesztői munkaidő nélkül.",
-            "triggerLabel": "Mit tartalmaz a díj?",
+        "badge": "Kis- és középvállalkozásoknak",
+        "title": "AI, ami <em>ismeri a cégét</em>.",
+        "subtitle": "Összekötjük a Claude-ot a cége rendszereivel, így a csapata egyszerű kérdésekre kap pontos választ a saját adataiból.\nKevesebb adminisztráció, több idő a lényegre.",
+        "cta": "Írjon nekünk",
+        "demo": "Időpontot foglalok",
+        "trust": [
+            "Válasz 24 órán belül",
+            "Ingyenes felmérés",
+            "Szakaszonként fix ár"
+        ],
+        "chat": {
+            "assistant": "Claude",
+            "status": "A cége adataiból válaszol",
+            "label": "Példa",
+            "placeholder": "Kérdezzen bármit a cégéről...",
             "items": [
-                "Fejlesztés költsége",
-                "Hosting és üzemeltetés",
-                "Titkosított kapcsolat",
-                "E-mail űrlapokhoz és értesítésekhez",
-                "Domain beállítás",
-                "Rendszeres karbantartás és frissítések",
-                "Biztonsági mentés",
-                "Havi módosítások",
-                "Javítás, ha elromlik"
-            ]
-        }
-    },
-    "faq": {
-        "label": "GYIK",
-        "title": "Kérdései vannak?",
-        "subtitle": "Röviden és egyenesen.",
-        "more": "Más kérdése van?",
-        "moreCta": "Írjon nekünk, 24 órán belül válaszolunk.",
-        "items": {
-            "process": {
-                "question": "Hogyan működik?",
-                "answer": "Írjon nekünk az űrlapon, vagy foglaljon ingyenes konzultációt. Egyeztetünk a célokról, a megfelelő csomagról és a szükséges tartalmakról. A munka megkezdése előtt írásban megküldjük a szerződést, benne rögzítve a pontos kivitelezési és havi díjat, valamint a várható határidőt. Ezután elkészítjük az oldalt, néhány nap alatt. Ön megtekinti, kér módosítást, majd írásban jóváhagyja. A kivitelezés díja a jóváhagyáskor esedékes, a havi díj az élesítéstől indul. Ha a kész oldal átadása előtt mégsem felel meg, megszakíthatja, és nem tartozik semmivel."
-            },
-            "cost": {
-                "question": "Mennyibe kerül az oldal?",
-                "answer": "A Kezdő 0 Ft belépővel indul, havi 20 000 Ft-ért. A Business 60 000 Ft plusz havi 30 000 Ft, az egyedi projektek 200 000 Ft-tól és havi 50 000 Ft-tól. A 12 hónap egy összegben is fizethető élesítéskor, 12% kedvezménnyel. A pontos árat a kezdés előtt szerződésben rögzítjük."
-            },
-            "pay": {
-                "question": "Mikor kell fizetnie?",
-                "answer": "A kivitelezés díját jóváhagyáskor, a havi díjat az élesítéstől fizeti, havonta. A 12 hónapot egy összegben is fizetheti élesítéskor, 12% kedvezménnyel, 1 év szolgáltatás jár hozzá. A pontos feltételek a szerződésben szerepelnek. Jóváhagyás előtt nem tartozik semmivel."
-            },
-            "monthly": {
-                "question": "Mit tartalmaz a havi díj?",
-                "answer": "Havi fizetésnél a fejlesztés 12 hónapra oszlik el, kevés vagy nulla előleggel. Egyösszegben a teljes 12 hónapot élesítéskor fizeti, 12% kedvezménnyel. Mindkét esetben ezalatt mindent tartalmaz: a fejlesztés költsége, hosting, titkosított kapcsolat, e-mail, domain beállítás, karbantartás, biztonsági mentés és havi módosítások. Külön számolva a hasonló hosting magyar szolgáltatóknál havi 3-8 ezer Ft lehet, és ehhez még jön a fejlesztés és minden módosítás fejlesztői díja. Nálunk egy díj fedi. A domain regisztráció és minden fizetős extra külön kerül a szerződésbe. Ha bármi elromlik, javítjuk."
-            },
-            "term": {
-                "question": "Meddig szól a szerződés?",
-                "answer": "Legalább 12 hónapra, utána bármikor lemondható. Az oldal az Öné marad. Emiatt indulhat akár 0 Ft-ról."
-            },
-            "speed": {
-                "question": "Milyen gyorsan készül el?",
-                "answer": "Egyszerűbb oldal 3-5 nap, nagyobb projekt 2-3 hét. Pontos dátumot a kezdés előtt kap."
-            },
-            "language": {
-                "question": "További nyelvek igényelhetők az oldalra?",
-                "answer": "Magyar és angol alapból benne van. Ha németet vagy más nyelvet is szeretne, teljes fordított változatot készítünk: saját oldalak, nyelvváltó és keresőbeállítás. Egyszeri projektdíj, a kezdés előtt szerződésben rögzítve."
-            },
-            "tech": {
-                "question": "Milyen technológiával dolgoznak?",
-                "answer": "Modern, jövőálló technológiával dolgozunk: gyors betöltés, erős biztonság, és évek múlva is karbantartható oldal. Olyan minőség, mint komoly üzleti weboldalakon, nem egy kinőhető sablon. Minden csomag csak azt kapja, amire szüksége van: a Kezdő egyszerű marad, a Business foglalást és ügyfél adatokat kap, az egyedi projekt online fizetést."
-            },
-            "partner": {
-                "question": "Szüksége van logóra vagy nyomtatott anyagra?",
-                "answer": "Budapesti partnerünk, a SUSA STUDIO logót, nyomtatott anyagokat és art directiont készít. Az ár egyedi megállapodás szerint."
-            }
-        },
-        "partner": {
-            "badge": "Partner",
-            "name": "SUSA STUDIO",
-            "subtitle": "Logó, nyomtatott anyagok és art direction budapesti partnerstúdiónktól.",
-            "pricing": "Egyedi árazás",
-            "instagram": "Instagram",
-            "services": {
-                "identity": {
-                    "name": "Arculattervezés",
-                    "items": [
-                        "Logó & vizuális arculat",
-                        "Egyedi ikonok & illusztrációk",
-                        "Arculati kézikönyv",
-                        "Névalkotás & történetmesélés"
-                    ]
+                {
+                    "question": "Kik tartoznak nekünk 30 napnál régebben?",
+                    "answer": "Három partner, összesen 1 240 000 Ft. A legnagyobb tétel 610 000 Ft, 47 napja lejárt. Megírjam mindegyiknek a barátságos emlékeztetőt?",
+                    "source": "A számlázójából"
                 },
-                "physical": {
-                    "name": "Fizikai megjelenés",
-                    "items": [
-                        "Névjegykártyák & levélpapírok",
-                        "Csomagolás dizájn",
-                        "Bannerek, roll-up-ok & táblák",
-                        "Press falak & installációk"
-                    ]
+                {
+                    "question": "Mit vesznek a vevők gyakran együtt?",
+                    "answer": "A kerámiabögre és a kávébab a rendelések 38%-ában egy kosárba kerül. Érdemes lehet csomagban kínálni.",
+                    "source": "A webshopjából"
                 },
-                "direction": {
-                    "name": "Art Direction",
-                    "items": [
-                        "Vizuális stratégia & koncepció",
-                        "Kreatív irányítás",
-                        "Dizájn minőségbiztosítás",
-                        "Önálló szolgáltatásként is elérhető"
-                    ]
+                {
+                    "question": "Kik nem rendeltek tőlünk három hónapja?",
+                    "answer": "14 vevő, közülük 6 korábban havonta rendelt. Sorba rendezhetem őket az utolsó rendelés értéke szerint.",
+                    "source": "Az ügyfélnyilvántartásából"
                 }
+            ],
+            "noteTitle": "Csak olvas",
+            "noteBody": "Az adat a cégnél marad"
+        }
+    },
+    "services": {
+        "label": "Szolgáltatások",
+        "title": "Amiben <em>segítünk</em>",
+        "subtitle": "Egy jól körülhatárolható feladattal kezdünk, ott, ahol a legtöbb időt nyeri vele. A legtöbb projekt két-három területet ötvöz.",
+        "items": {
+            "ai": {
+                "title": "Céges AI-asszisztens",
+                "description": "A Claude a cége saját adataiból válaszol: számlák, rendelések, ügyfelek. Kérdezni annyi, mint egy kollégától."
+            },
+            "software": {
+                "title": "Egyedi üzleti szoftver",
+                "description": "Ügyfélnyilvántartás, készletkezelés, gyártáskövetés, partnerportál. Ahhoz igazítjuk, ahogy Önök dolgoznak, nem fordítva."
+            },
+            "automation": {
+                "title": "Folyamatautomatizálás és AI-ügynökök",
+                "description": "A beérkező számlák, e-mailek és dokumentumok maguktól a helyükre kerülnek. A fontos döntéseket továbbra is ember hagyja jóvá."
+            },
+            "web": {
+                "title": "Weboldal és webshop",
+                "description": "Gyors, egyedi tervezésű oldal vagy webshop, amely összeér a mögötte lévő rendszerekkel. Napok alatt elkészül."
+            },
+            "training": {
+                "title": "AI-oktatás csapatoknak",
+                "description": "Gyakorlati Claude-workshop, a saját feladataikra építve. Nem kell hozzá informatikai előképzettség."
+            },
+            "audit": {
+                "title": "AI-felmérés",
+                "description": "Feltérképezzük a munkafolyamatokat, és megmutatjuk, hol hoz valódi időmegtakarítást az AI, és hol nem éri meg. Írásos tervet kap."
             }
         }
     },
-    "comparison": {
-        "label": "Összehasonlítás",
-        "title": "Hogyan viszonyulunk?",
-        "subtitle": "Gyors áttekintés a lehetőségeiről.",
-        "columns": {
-            "feature": "",
-            "diy": "Webépítők",
-            "agency": "Hagyományos ügynökség",
-            "us": "Budapest Labs"
+    "ai": {
+        "label": "AI-integráció",
+        "title": "Kérdezze meg a <em>saját cégét</em>.",
+        "subtitle": "A Claude-ot összekötjük a már használt rendszereivel. A csapata hétköznapi nyelven kérdez, és másodpercek alatt választ kap a cég saját adataiból, táblázatokban keresgélés nélkül.",
+        "examplesLabel": "Ilyen kérdésekre válaszol",
+        "examples": [
+            "Kik tartoznak nekünk 30 napnál régebben?",
+            "Mennyi áfát fizetünk ebben a negyedévben?",
+            "Mit vesznek a vevők gyakran együtt?",
+            "Kik nem rendeltek tőlünk három hónapja?"
+        ],
+        "promises": {
+            "readonly": {
+                "title": "Csak olvas, nem ír",
+                "body": "Az asszisztens alapból csak olvassa az adatokat. Ami módosítana, például számlát állítana ki, csak külön kérésre készül, és mindig emberi jóváhagyást kér."
+            },
+            "data": {
+                "title": "Az adat a cégnél marad",
+                "body": "Az adatok a saját rendszereiben maradnak, csak a válaszhoz szükséges részt kérjük le. Adatfeldolgozási szerződést kötünk, EU-s tárhelyen dolgozunk."
+            },
+            "control": {
+                "title": "Önnél a kulcs",
+                "body": "A hozzáférés a cég saját fiókján keresztül működik, és bármikor visszavonható."
+            }
         },
-        "rows": {
-            "delivery": {
-                "label": "Elkészítési idő",
-                "diy": "Hetek vagy hónapok",
-                "agency": "4-8 hét",
-                "us": "Napok, nem hetek"
+        "diagram": {
+            "invoicing": "Számlázó",
+            "webshop": "Webshop",
+            "crm": "Ügyfelek",
+            "documents": "Dokumentumok",
+            "hub": "Claude",
+            "team": "A csapata"
+        },
+        "cta": "Bemutatót kérek"
+    },
+    "process": {
+        "label": "Így dolgozunk",
+        "title": "Világos lépések, <em>meglepetések nélkül</em>.",
+        "subtitle": "Nem kísérletezgetünk az Ön pénzén. Felméréssel indulunk, egy kis, jól körülhatárolható feladattal kezdünk, és csak azt építjük tovább, ami beválik.",
+        "steps": {
+            "assess": {
+                "title": "Ingyenes felmérés",
+                "body": "Átbeszéljük a céljait, megnézzük a jelenlegi eszközöket, és feltérképezzük, hol vész el a legtöbb idő."
             },
-            "price": {
-                "label": "Ár",
-                "diy": "4-15 ezer Ft/hó, mindent Ön csinál",
-                "agency": "400 ezer-2M Ft egyszeri",
-                "us": "0 Ft belépő + havi 20 000 Ft-tól"
+            "plan": {
+                "title": "Írásos terv, fix ár",
+                "body": "Pontos tartalom, ütemezés és szakaszonként fix ár, írásban. Nagyobb munkánál egy kisebb próbaprojekttel kezdünk."
             },
-            "effort": {
-                "label": "Ráfordítás",
-                "diy": "Minden az Ön terhe",
-                "agency": "Megbeszélések, jóváhagyások",
-                "us": "Gyors és egyszerű"
+            "build": {
+                "title": "Építés rövid körökben",
+                "body": "Hétről hétre működő eredményt lát, és menet közben alakíthatunk rajta. Semmi nem kerül élesbe tesztelés nélkül."
             },
-            "quality": {
-                "label": "Dizájn minőség",
-                "diy": "Sablon",
-                "agency": "Egyedi",
-                "us": "Professzionális"
-            },
-            "tech": {
-                "label": "Technológia",
-                "diy": "Elavult platform",
-                "agency": "Változó",
-                "us": "Legmodernebb, jövőálló"
-            },
-            "performance": {
-                "label": "Betöltési sebesség",
-                "diy": "3-8 másodperc",
-                "agency": "1-4 másodperc",
-                "us": "0,5 másodperc alatt"
-            },
-            "mobile": {
-                "label": "Mobilbarát",
-                "diy": "Gyakran hibás",
-                "agency": "Általában igen",
-                "us": "Mindig"
-            },
-            "seo": {
-                "label": "SEO",
-                "diy": "Minimális",
-                "agency": "Külön költség",
-                "us": "Tartalmazza"
-            },
-            "security": {
-                "label": "Biztonság",
-                "diy": "Az Ön felelőssége",
-                "agency": "Változó",
-                "us": "Teljes védelem"
-            },
-            "warranty": {
-                "label": "Garancia",
-                "diy": "Nincs",
-                "agency": "Változó",
-                "us": "Életre szóló"
-            },
-            "booking": {
-                "label": "Foglalás és fizetés",
-                "diy": "Külön költség",
-                "agency": "Külön költség",
-                "us": "Business csomagtól"
+            "run": {
+                "title": "Átadás és üzemeltetés",
+                "body": "Betanítjuk a csapatot, átadjuk a teljes dokumentációt, és havi díjért gondoskodunk a rendszerről."
             }
         }
     },
     "contact": {
         "label": "Kapcsolat",
-        "title": "Lépjen kapcsolatba velünk",
-        "subtitle": "Írjon nekünk, miben segíthetünk. 24 órán belül visszajelzünk, a munka előtt pedig szerződést küldünk a pontos díjakkal és határidővel.",
+        "title": "Beszéljünk a <em>terveiről</em>",
+        "subtitle": "Írja meg pár mondatban, mi visz el most túl sok időt. 24 órán belül válaszolunk, és a munka előtt írásos tervet küldünk tartalommal és árral.",
         "consultOr": "Vagy",
-        "consult": "foglaljon ingyenes konzultációt",
+        "consult": "foglaljon időpontot ingyenes egyeztetésre",
         "form": {
             "name": "Név",
             "namePlaceholder": "Az Ön neve",
@@ -264,16 +146,11 @@
             "phonePlaceholder": "+36 ...",
             "business": "Vállalkozás neve",
             "businessPlaceholder": "Vállalkozás Kft.",
-            "plan": "Érdeklődés",
-            "planPlaceholder": "Válasszon csomagot...",
-            "planOptions": {
-                "starter": "Kezdő (0 Ft + 20 000 Ft havi díj)",
-                "business": "Business (60 000 Ft + 30 000 Ft havi díj)",
-                "pro": "Egyedi (200 000 Ft-tól + 50 000 Ft-tól havi díj)",
-                "unsure": "Még nem tudom"
-            },
+            "interest": "Ami érdekli",
+            "interestPlaceholder": "Válasszon szolgáltatást...",
+            "interestUnsure": "Még nem tudom",
             "message": "Üzenet",
-            "messagePlaceholder": "Meséljen a projektjéről és az elképzeléseiről. Hamarosan felvesszük Önnel a kapcsolatot, és közösen átbeszéljük a részleteket.",
+            "messagePlaceholder": "Milyen programokat használnak most, és melyik feladat visz el a legtöbb időt? Pár mondat is elég.",
             "submit": "Üzenet küldése",
             "successTitle": "Üzenet elküldve!",
             "success": "24 órán belül visszajelzünk.",
@@ -285,7 +162,7 @@
         }
     },
     "footer": {
-        "description": "Prémium weboldalak vállalkozásoknak. 0 Ft belépőtől, havi díjjal.",
+        "description": "Céges AI-asszisztens, egyedi szoftver és weboldal kis- és középvállalkozásoknak. Budapestről.",
         "email": "hello@budapestlabs.com",
         "navigation": "Navigáció",
         "legal": "Jogi",
@@ -299,7 +176,7 @@
         "download": "PDF",
         "privacy": {
             "title": "Adatvédelmi nyilatkozat",
-            "lastUpdated": "Utolsó frissítés: 2026. július 10.",
+            "lastUpdated": "Utolsó frissítés: 2026. október 31.",
             "intro": "Az Ön magánszférája fontos számunkra. Ez az adatvédelmi nyilatkozat ismerteti, milyen személyes adatokat gyűjtünk, mire használjuk, és hogyan védjük azokat.",
             "sections": {
                 "controller": {
@@ -308,7 +185,7 @@
                 },
                 "collection": {
                     "title": "Mit gyűjtünk",
-                    "content": "A kapcsolatfelvételi űrlap kitöltésekor megkapjuk: a nevét, e-mail címét, telefonszámát (ha megadja), vállalkozása nevét (opcionális), a kiválasztott csomagot és az üzenetét. Ennyi. Közvetlenül a hello@budapestlabs.com címre is írhat. Nem használunk cookie-kat, nyomkövetőket vagy analitikai eszközöket."
+                    "content": "A kapcsolatfelvételi űrlap kitöltésekor megkapjuk: a nevét, e-mail címét, telefonszámát (ha megadja), vállalkozása nevét (opcionális), a választott szolgáltatást és az üzenetét. Ennyi. Közvetlenül a hello@budapestlabs.com címre is írhat. Nem használunk cookie-kat, nyomkövetőket vagy analitikai eszközöket."
                 },
                 "basis": {
                     "title": "Miért kezelhetjük",
@@ -316,7 +193,7 @@
                 },
                 "purpose": {
                     "title": "Mire használjuk",
-                    "content": "Kapcsolatfelvételi adatait kizárólag arra használjuk, hogy válaszoljunk a megkeresésére, árajánlatot készítsünk, és elkészítsük a weboldalat. Adatait soha nem adjuk el, nem béreljük ki, és nem osztjuk meg senkivel marketing vagy más, nem kapcsolódó célra."
+                    "content": "Kapcsolatfelvételi adatait kizárólag arra használjuk, hogy válaszoljunk a megkeresésére, ajánlatot készítsünk, és megvalósítsuk a projektet. Adatait soha nem adjuk el, nem béreljük ki, és nem osztjuk meg senkivel marketing vagy más, nem kapcsolódó célra."
                 },
                 "storage": {
                     "title": "Hogyan védjük",
@@ -334,7 +211,7 @@
         },
         "terms": {
             "title": "Általános Szerződési Feltételek",
-            "lastUpdated": "Utolsó frissítés: 2026. július 10.",
+            "lastUpdated": "Utolsó frissítés: 2026. október 31.",
             "intro": "Ezek a feltételek vonatkoznak a Budapest Labs szolgáltatásaira. Egyszerűen fogalmaztunk. Nincsenek meglepetések.",
             "sections": {
                 "provider": {
@@ -343,39 +220,39 @@
                 },
                 "scope": {
                     "title": "Mit csinálunk",
-                    "content": "Weboldalakat tervezünk és építünk magánszemélyek és bármilyen méretű vállalkozások számára, a portfólióktól és márkaoldalaktól a webshopokig és foglalási platformokig. A választott csomagjától függően ez magában foglalhatja: egyedi dizájn és fejlesztés, mobilbarát elrendezés, tárhely és üzembe helyezés, domain és e-mail beállítás, többnyelvű támogatás, foglalási rendszerek, online fizetés, analitika és további funkciók. Ha valami extrára van szüksége, megbeszéljük és közösen megállapodunk. A projekt pontos hatókörét a választott csomag és az írásban rögzített egyéb megállapodások határozzák meg."
+                    "content": "Egyedi szoftvereket, AI-integrációkat (például a rendszerei összekötését a Claude-dal), automatizálásokat, weboldalakat és webshopokat tervezünk, építünk és üzemeltetünk. AI-oktatást és -felmérést is tartunk. Az egyes projektek pontos tartalmát a munka megkezdése előtt írásos ajánlatban vagy szerződésben rögzítjük."
                 },
                 "payment": {
                     "title": "Hogyan működik a fizetés",
-                    "content": "Az itt szereplő adatok tájékoztató jellegűek. A pontos kivitelezési és havi díjat, valamint a várható határidőt a munka megkezdése előtt egyedi szerződésben rögzítjük, és a szerződésben szereplő feltételek az irányadók. A kivitelezés díja akkor esedékes, amikor a weboldal elkészült és Ön jóváhagyta. A havi díj a fejlesztés költsége, a megkötött időszakra az üzemeltetést is fedezi, és az élesítés napjától indul, havonta. A 12 hónapot egy összegben is fizetheti élesítéskor, 12% kedvezménnyel; a pontos feltételek a szerződésben szerepelnek. A domain regisztrációja és minden fizetős extra kérés külön megbeszélés után kerül a szerződésbe. A szerződés legalább 12 hónapra szól; utána bármikor, 30 napos felmondási idővel megszüntethető. Átutalást, Revolutot és készpénzt fogadunk el. Minden fizetésről a magyar jogszabályoknak megfelelő számlát állítunk ki."
+                    "content": "Weboldalunkon nem teszünk közzé árakat. Minden projektre egyedi ajánlatot adunk. A tartalmat, az árat, a fizetési ütemezést és az esetleges havi üzemeltetési díjat a munka megkezdése előtt írásos ajánlatban vagy szerződésben rögzítjük, és a szerződésben szereplő feltételek az irányadók. A nagyobb projekteket szakaszokra bontjuk, mindegyiket saját fix árral. Az üzemeltetést és karbantartást havonta számlázzuk, a szerződés szerint. Átutalást, Revolutot és készpénzt fogadunk el. Minden fizetésről a magyar jogszabályoknak megfelelő számlát állítunk ki."
                 },
                 "revisions": {
-                    "title": "Módosítások",
-                    "content": "Minden csomag tartalmaz egy ingyenes módosítási kört. Ez a dizájn, az elrendezés vagy a tartalom igazítását jelenti. Nem foglalja magában a teljes újrakezdést vagy az eredeti csomagban nem szereplő funkciók hozzáadását. Ha további változtatásra van szüksége, előre szólunk a költségről. Nincsenek meglepetések."
+                    "title": "Visszajelzés és módosítások",
+                    "content": "Minden szakasz tartalmazza az ajánlatban rögzített visszajelzési köröket. Ha a megállapodott tartalmon túl szeretne valamit, előre szólunk a költségről. Nincsenek meglepetések."
                 },
                 "delivery": {
-                    "title": "Átadási határidők",
-                    "content": "A weboldalunkon szereplő határidők (3-5 nap, 5-7 nap, 2-3 hét) tipikus projekteken alapuló becslések. A projekt hossza a összetettségtől és attól függ, milyen gyorsan kapjuk meg Öntől a tartalmakat. Mindig igyekszünk időben szállítani, de pontos dátumot nem tudunk garantálni. Az idő akkor indul, amikor mindent megkaptunk Öntől (szöveg, képek, logó). Ha az Ön oldalán van késés, az nem számít bele a határidőnkbe."
+                    "title": "Határidők",
+                    "content": "A határidőket projektenként és szakaszonként egyeztetjük. Ezek a megállapodott tartalmon alapuló becslések, és attól is függnek, milyen gyorsan kapjuk meg Öntől a szükséges hozzáféréseket, tartalmakat és visszajelzéseket. Az Ön oldalán felmerülő késés nem számít bele a határidőnkbe."
                 },
                 "client": {
                     "title": "Amire szükségünk van Öntől",
-                    "content": "A weboldal elkészítéséhez szükségünk lesz a tartalmaira: szövegek, képek, logó, arculati anyagok. Arra is kérjük, hogy az előnézetet körülbelül egy héten belül nézze át. Ha 14 munkanapon belül nem kapunk visszajelzést, a projektet jóváhagyottnak tekintjük. Kérjük, győződjön meg róla, hogy a tartalom, amit küld, az Öné: bízunk benne, hogy minden anyagra megvannak a jogai."
+                    "content": "Hozzáférésre van szükségünk az érintett rendszerekhez, a projekthez szükséges tartalmakra és információkra, valamint időben érkező visszajelzésre. Kérjük, győződjön meg róla, hogy mindent, amit átad, jogosan oszt meg velünk. Ha az Ön megbízásából személyes adatot kezelünk, külön adatfeldolgozási szerződést kötünk."
                 },
                 "ownership": {
-                    "title": "Kié a weboldal",
-                    "content": "A weboldal az Öné. Ha a hűségidő után felmond, mindent átadunk, amit Önnek készítettünk: a dizájnt, a tartalmat és a kódot. Általános célú eszközöket és kódokat, amelyek nem kifejezetten az Ön projektjéhez készültek, más munkákban is felhasználhatunk. Szívesen szerepeltetnénk az oldalát a portfóliónkban, de ha nem szeretné, csak szóljon."
+                    "title": "Kié mi",
+                    "content": "A kifizetést követően mindaz, amit Önnek építünk, az Öné: a kód, a dokumentáció és minden hozzáférés. Általános célú eszközöket és kódokat, amelyek nem kifejezetten az Ön projektjéhez készültek, más munkákban is felhasználhatunk. Szívesen megemlítenénk a projektet a referenciáink között, de csak az Ön engedélyével."
                 },
                 "thirdparty": {
                     "title": "Harmadik féltől származó szolgáltatások",
-                    "content": "A weboldala harmadik fél szolgáltatásait is használhatja (tárhely, domain, e-mail). Segítünk mindent beállítani, de ezek független szolgáltatások, saját feltételekkel."
+                    "content": "A projektek harmadik fél szolgáltatásaira is épülhetnek, például a Claude-ra, tárhelyre, számlázó- vagy webshopplatformra. Segítünk ezek beállításában, de független szolgáltatások saját feltételekkel és díjakkal, általában az Ön saját fiókján."
                 },
                 "cancellation": {
                     "title": "Lemondás",
-                    "content": "A kész weboldal jóváhagyása előtt bármikor elállhat, ilyenkor nem fizet semmit. A 12 hónapos hűségidő után a szerződés 30 napos felmondási idővel bármikor megszüntethető; ilyenkor a teljes weboldalt átadjuk, és segítünk az átköltöztetésben. A magunk részéről, ha 30 napon belül nem kapjuk meg a tartalmakat, vagy 30 napnál tovább nem érjük el Önt, lezárhatjuk a projektet."
+                    "content": "A projektet két szakasz között leállíthatja, ilyenkor csak a már elkészült szakaszokat fizeti. A havi üzemeltetés a szerződésben rögzítettek szerint mondható le, és segítünk mindent átadni. A magunk részéről, ha 30 napnál tovább nem érjük el Önt, szüneteltethetjük vagy lezárhatjuk a projektet."
                 },
                 "warranty": {
-                    "title": "Életre szóló garancia",
-                    "content": "Egy életre kiállunk a munkánk mellett. Ha valami, amit építettünk, nem úgy működik, ahogy kellene, ingyen javítjuk, függetlenül attól, mennyi idő telt el. Ez az általunk átadott kód hibáira vonatkozik.\n\nNem tartozik ide: új funkciók, dizájnmódosítások, tartalomfrissítések, vagy az Ön vagy harmadik fél által végzett módosításokból eredő problémák. A külső szolgáltatások (tárhelyszolgáltatók, domain-regisztrátorok, API-k) rajtunk kívül állnak.\n\nHa a mögöttes technológia jelentős frissítést igényel az oldal működéséhez, szólunk, és méltányos ajánlatot adunk rá. Ez a garanciától független."
+                    "title": "Garancia",
+                    "content": "Ha valami, amit építettünk, nem a megállapodás szerint működik, a szerződésben rögzített garanciaidőn belül ingyen javítjuk. Amíg havi díjért üzemeltetünk egy rendszert, a javítás mindig benne van.\n\nNem tartozik ide: új funkciók, a tartalom bővítése, vagy az Ön vagy harmadik fél által végzett módosításokból eredő problémák. A külső szolgáltatások (AI-szolgáltatók, tárhely, számlázó- vagy webshopplatformok) rajtunk kívül állnak."
                 },
                 "liability": {
                     "title": "Felelősségünk",
@@ -404,25 +281,5 @@
                 }
             }
         }
-    },
-    "content": {
-        "title": "Minőség, ami rögtön látszik.",
-        "stackLead": "A háttérben pedig ugyanaz a technológia, amelyet a nagy márkák is használnak:",
-        "stack": [
-            "Gyors, naprakész, a világ bármely pontjáról azonnal betölt",
-            "Védett bejelentkezés",
-            "Adatbázis, amely a forgalommal együtt skálázódik",
-            "Globális tárhely 99,99%-os rendelkezésre állással",
-            "E-mailek, amelyek nem a spam mappában végzik",
-            "Foglalási rendszer az Ön arculatával",
-            "Gyors, megbízható online fizetés",
-            "Az üzemeltetést és karbantartást mi végezzük"
-        ],
-        "background1start": "A Budapest Labs vezetője háromszoros alapító mérnök. Egy általa fejlesztett platform ma több mint 3000 nagyvállalati weboldalt szolgál ki, köztük ",
-        "background1brands": "az Nvidia, a Datadog és a CrowdStrike",
-        "background1end": " oldalait.",
-        "background2": "A cég azzal a céllal indult, hogy ugyanazt a színvonalat hozzuk el magyar vállalkozásokhoz, töredék áron, amit eddig csak nagy cégek kaptak meg. Hisszük, hogy erre mindenképp szükség van ahhoz, hogy üzletileg a lehető leghatékonyabban érvényesüljenek.",
-        "background3": "Csapatunk az elmúlt években főként amerikai egészségügyi és oktatási szoftvereken dolgozott együtt. Több mint egy évtizednyi nemzetközi tapasztalattal ugyanezt a színvonalat kínáljuk elérhető áron, kis cégeknek és nagyvállalatoknak egyaránt.",
-        "motto": "Segítünk újjáépíteni vállalkozása online jelenlétét, hogy modern, meggyőző és biztonságos legyen."
     }
 }

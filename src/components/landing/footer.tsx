@@ -31,18 +31,15 @@ export function Footer() {
                 {t("footer.navigation")}
               </p>
               <nav className="flex flex-col gap-2">
-                <a
-                  href="#pricing"
-                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  {t("nav.pricing")}
-                </a>
-                <a
-                  href="#faq"
-                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  {t("nav.faq")}
-                </a>
+                {(["services", "ai", "process"] as const).map((key) => (
+                  <a
+                    key={key}
+                    href={`#${key}`}
+                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                  >
+                    {t(`nav.${key}`)}
+                  </a>
+                ))}
                 <a
                   href="#contact"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"

@@ -11,14 +11,17 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod/v4";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { SectionHeader } from "@/components/landing/section-header";
+import { SectionHeader, rich } from "@/components/landing/section-header";
+import { Contours } from "@/components/motion-primitives/contours";
+import { RollText } from "@/components/motion-primitives/roll-text";
+import { serviceKeys } from "@/components/landing/services";
 
 const schema = z.object({
   name: z.string().min(1),
   email: z.email(),
   phone: z.string().optional(),
   business: z.string().optional(),
-  plan: z.string().optional(),
+  interest: z.string().optional(),
   message: z.string().optional(),
   website: z.string().optional(),
 });
@@ -26,7 +29,7 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 const inputBase =
-  "rounded-xl bg-foreground/5 text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus-visible:ring-0 transition-colors duration-200";
+  "h-11 rounded-2xl bg-background/70 text-foreground placeholder:text-muted-foreground focus:border-brand/50 focus-visible:ring-4 focus-visible:ring-ochre/50 transition-all duration-200";
 
 function FieldError({ message }: { message?: string }) {
   return (
@@ -48,6 +51,7 @@ function FieldError({ message }: { message?: string }) {
 
 export function Contact() {
   const t = useTranslations("contact");
+  const tServices = useTranslations("services");
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState(false);
 
@@ -75,11 +79,14 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="py-16 md:py-32">
-      <div className="mx-auto max-w-5xl px-6">
+    <section id="contact" className="relative overflow-hidden py-16 md:py-32">
+      <Contours seed={3.1} className="pointer-events-none absolute -bottom-64 -left-56 size-180 opacity-70" />
+      <Contours seed={0.7} rings={7} className="pointer-events-none absolute -top-24 -right-48 size-120 opacity-50" />
+      <div className="relative mx-auto max-w-5xl px-6">
         <SectionHeader
           className="mb-8 md:mb-12"
-          title={t("title")}
+          eyebrow={t("label")}
+          title={t.rich("title", rich)}
           subtitle={t("subtitle")}
         >
           <p className="text-sm text-muted-foreground">
@@ -88,7 +95,7 @@ export function Contact() {
               href="https://cal.com/budapestlabs"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-foreground underline decoration-foreground/30 underline-offset-4 transition-colors hover:decoration-foreground"
+              className="font-medium text-foreground underline decoration-brand/50 underline-offset-4 transition-colors hover:decoration-brand"
             >
               {t("consult")}
             </a>
@@ -107,15 +114,15 @@ export function Contact() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="bg-card rounded-2xl border py-20 text-center shadow-sm"
+              className="glass rounded-4xl py-20 text-center"
             >
               <motion.div
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ delay: 0.2, type: "spring", stiffness: 200, damping: 15 }}
-                className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-foreground/5"
+                className="bg-olive mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full"
               >
-                <Check className="h-8 w-8 text-foreground/40" />
+                <Check className="h-8 w-8 text-foreground/70" />
               </motion.div>
               <motion.h3
                 initial={{ opacity: 0, y: 10 }}
@@ -138,7 +145,7 @@ export function Contact() {
             <form
               onSubmit={handleSubmit(onSubmit)}
               noValidate
-              className="bg-card space-y-6 rounded-2xl border p-8 shadow-sm"
+              className="glass space-y-6 rounded-4xl p-6 sm:p-8"
             >
               <input
                 type="text"
@@ -203,28 +210,24 @@ export function Contact() {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="plan" className="text-sm text-foreground/60">
-                  {t("form.plan")}
+                <Label htmlFor="interest" className="text-sm text-foreground/60">
+                  {t("form.interest")}
                 </Label>
                 <select
-                  id="plan"
-                  {...register("plan")}
-                  className="flex h-9 w-full rounded-xl border border-border bg-foreground/5 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-foreground/30 focus:outline-none transition-colors duration-200"
+                  id="interest"
+                  {...register("interest")}
+                  className="flex h-11 w-full rounded-2xl border border-border bg-background/70 px-3 py-2 text-sm text-foreground placeholder:text-muted-foreground focus:border-brand/50 focus:outline-none focus-visible:ring-4 focus-visible:ring-ochre/50 transition-all duration-200"
                 >
                   <option value="" className="bg-background text-muted-foreground">
-                    {t("form.planPlaceholder")}
+                    {t("form.interestPlaceholder")}
                   </option>
-                  <option value="starter" className="bg-background">
-                    {t("form.planOptions.starter")}
-                  </option>
-                  <option value="business" className="bg-background">
-                    {t("form.planOptions.business")}
-                  </option>
-                  <option value="pro" className="bg-background">
-                    {t("form.planOptions.pro")}
-                  </option>
+                  {serviceKeys.map((key) => (
+                    <option key={key} value={key} className="bg-background">
+                      {tServices(`items.${key}.title`)}
+                    </option>
+                  ))}
                   <option value="unsure" className="bg-background">
-                    {t("form.planOptions.unsure")}
+                    {t("form.interestUnsure")}
                   </option>
                 </select>
               </div>
@@ -238,17 +241,17 @@ export function Contact() {
                   {...register("message")}
                   rows={4}
                   placeholder={t("form.messagePlaceholder")}
-                  className={`${inputBase} border-border`}
+                  className={`${inputBase} h-auto min-h-28 border-border`}
                 />
               </div>
 
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full rounded-full bg-foreground text-background hover:bg-foreground/90 disabled:opacity-50"
+                className="group/roll h-12 w-full rounded-full bg-foreground text-base text-background hover:bg-foreground/90 disabled:opacity-50"
               >
-                <Send className="mr-2 h-4 w-4" />
-                {isSubmitting ? "..." : t("form.submit")}
+                <Send className="mr-2 h-4 w-4 transition-transform duration-500 group-hover/roll:translate-x-1 group-hover/roll:-translate-y-0.5" />
+                <RollText>{isSubmitting ? "..." : t("form.submit")}</RollText>
               </Button>
               {submitError && (
                 <p className="text-center text-sm text-red-400">

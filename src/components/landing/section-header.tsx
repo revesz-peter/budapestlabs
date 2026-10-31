@@ -1,7 +1,18 @@
+"use client";
+
 import type { ReactNode } from "react";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
+// Tag handlers for t.rich(): <em> in a title renders as the serif italic accent (styled in globals.css)
+export const rich = {
+  em: (chunks: ReactNode) => <em>{chunks}</em>,
+};
+
+const ease = [0.22, 1, 0.36, 1] as const;
+
 type SectionHeaderProps = {
+  eyebrow?: ReactNode;
   title: ReactNode;
   subtitle?: ReactNode;
   children?: ReactNode;
@@ -10,6 +21,7 @@ type SectionHeaderProps = {
 };
 
 export function SectionHeader({
+  eyebrow,
   title,
   subtitle,
   children,
@@ -24,11 +36,51 @@ export function SectionHeader({
         className
       )}
     >
-      <h2 className="text-4xl font-medium lg:text-5xl">{title}</h2>
+      <div className="space-y-5">
+        {eyebrow != null && eyebrow !== "" && (
+          <div
+            className={cn(
+              "text-brand flex items-center gap-3 text-xs font-medium tracking-[0.18em] uppercase",
+              align === "center" ? "justify-center" : "justify-center lg:justify-start"
+            )}
+          >
+            <motion.span
+              className="bg-brand h-px w-8 origin-left"
+              initial={{ scaleX: 0 }}
+              whileInView={{ scaleX: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, ease }}
+            />
+            {eyebrow}
+          </div>
+        )}
+        {/* title slides up from behind a mask; padding keeps descenders and italics unclipped.
+            The mask itself watches the viewport: the hidden title is fully clipped, so it never "intersects". */}
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-60px" }}
+          className="-mx-[0.1em] overflow-hidden px-[0.1em] pb-[0.15em]"
+        >
+          <motion.h2
+            variants={{ hidden: { y: "105%" }, visible: { y: 0 } }}
+            transition={{ duration: 0.9, ease }}
+            className="text-balance text-4xl font-medium tracking-tight lg:text-5xl"
+          >
+            {title}
+          </motion.h2>
+        </motion.div>
+      </div>
       {subtitle != null && subtitle !== "" && (
-        <p className="text-muted-foreground leading-relaxed whitespace-pre-line">
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.8, delay: 0.2, ease }}
+          className="text-muted-foreground leading-relaxed whitespace-pre-line"
+        >
           {subtitle}
-        </p>
+        </motion.p>
       )}
       {children}
     </div>

@@ -21,17 +21,17 @@ const metaByLocale: Record<string, { title: string; description: string }> = {
     hu: {
         title: "Budapest Labs",
         description:
-            "Prémium weboldal napokon belül, 0 Ft belépővel, havi 20 000 Ft-tól. Tervezés, kivitelezés és havi díj egy kézből.",
+            "Céges AI-asszisztens a saját adataiból, egyedi szoftver, folyamatautomatizálás és weboldal kis- és középvállalkozásoknak. Ingyenes felmérés, szakaszonként fix ár.",
     },
     en: {
         title: "Budapest Labs",
         description:
-            "A premium website within days, €0 up front, from €50/month. Design, build, and monthly fee in one place.",
+            "Company AI assistants built on your own data, custom software, process automation, and websites for small and mid-sized businesses. Free assessment, fixed price per phase.",
     },
     de: {
         title: "Budapest Labs",
         description:
-            "Eine Premium-Website in wenigen Tagen, 0 € Startkosten, ab 50 €/Monat. Design, Umsetzung und monatliche Gebühr aus einer Hand.",
+            "KI-Assistenten auf Ihren eigenen Firmendaten, individuelle Software, Prozessautomatisierung und Websites für kleine und mittlere Unternehmen. Kostenlose Analyse, Festpreis pro Phase.",
     },
 }
 

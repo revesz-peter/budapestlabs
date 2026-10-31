@@ -1,428 +1,285 @@
 {
-  "nav": {
-    "pricing": "Preise",
-    "faq": "FAQ",
-    "contact": "Kontakt"
-  },
-  "hero": {
-    "badge": "0 € Startkosten, ab 50 €/Monat",
-    "title": "Premium-Website, in wenigen Tagen.",
-    "subtitle": "Individuelles Design mit neuester Technologie.\nSie zahlen erst, wenn Sie zufrieden sind.",
-    "cta": "Jetzt starten",
-    "demo": "Kostenlose Beratung",
-    "stackLabel": "Gebaut mit"
-  },
-  "pricing": {
-    "label": "Preise",
-    "title": "Einfache, ehrliche Preise",
-    "subtitle": "Wenig oder nichts im Voraus, plus monatliche Gebühr für 12 Monate.\nEine Erstellungsgebühr zahlen Sie erst bei Lieferung.",
-    "choosePlan": "Paket wählen",
-    "popular": "Beliebt",
-    "billingMonthly": "Monatlich",
-    "billingTotal": "Einmalzahlung",
-    "billingTotalDiscount": "−12%",
-    "billingToggleAriaLabel": "Monatliche oder Einmalzahlung anzeigen",
-    "monthlySuffix": "12 Monate",
-    "prepayBadge": "12% Rabatt",
-    "starter": {
-      "name": "Starter",
-      "price": "0 €",
-      "features": [
-        "Fertig: 3-5 Tage",
-        "3-5 Seiten, auf Ihr Unternehmen zugeschnitten",
-        "Sieht auf jedem Gerät gut aus",
-        "Hosting und E-Mail inklusive, Domain-Einrichtung inklusive (jährliche Gebühr zum Selbstkostenpreis)",
-        "Kleine Änderungen jeden Monat inklusive",
-        "Ungarisch und Englisch inklusive",
-        "Lebenslange Garantie"
-      ],
-      "monthly": "50 € monatliche Gebühr",
-      "termTotal": "600 €",
-      "termTotalPrepay": "528 €"
+    "nav": {
+        "services": "Leistungen",
+        "ai": "KI-Integration",
+        "process": "So arbeiten wir",
+        "contact": "Kontakt"
     },
-    "business": {
-      "name": "Business",
-      "price": "150 €",
-      "features": [
-        "Fertig: 5-7 Tage",
-        "Alles im Starter-Paket, plus:",
-        "6-10 Seiten",
-        "Online-Buchung für Termine und Anrufe",
-        "Google Maps und Wegbeschreibung",
-        "Automatische E-Mail-Benachrichtigungen",
-        "Besucherstatistiken"
-      ],
-      "monthly": "75 € monatliche Gebühr",
-      "termTotal": "1.050 €",
-      "termTotalPrepay": "924 €"
-    },
-    "pro": {
-      "name": "Custom",
-      "price": "ab 500 €",
-      "features": [
-        "Fertig: 2-3 Wochen",
-        "Alles im Business-Paket, plus:",
-        "Webshop, Agentur-Seite, Markenseite, alles",
-        "Individuelle Funktionen für Ihre Anforderungen",
-        "Online-Zahlungen akzeptieren",
-        "Prioritäts-Support"
-      ],
-      "monthly": "ab 125 € monatliche Gebühr",
-      "termTotal": "ab 2.000 €",
-      "termTotalPrepay": "ab 1.760 €"
-    },
-    "disclaimer": "Die hier angegebenen Angaben sind unverbindlich. Der genaue Preis, die Monatsgebühr und der voraussichtliche Termin werden vor dem Start vertraglich festgelegt.",
-    "included": {
-      "title": "Was ist im Preis enthalten?",
-      "body": "Monatlich verteilt sich die Entwicklung auf 12 Monate. In einer Summe zahlen Sie die 12 Monate beim Livegang, mit 12% Rabatt. In beiden Fällen ist 12 Monate lang dasselbe enthalten: Entwicklungskosten, Hosting, verschlüsselte Verbindung, E-Mail, Domain-Einrichtung, Wartung, Backups und monatliche Änderungen. Einzeln zusammen oft über 25-40 € im Monat, ohne Entwickler für jede Änderung.",
-      "triggerLabel": "Was ist im Preis enthalten?",
-      "items": [
-        "Entwicklungskosten",
-        "Website-Hosting",
-        "Verschlüsselte Verbindung",
-        "E-Mail für Formulare und Benachrichtigungen",
-        "Domain-Einrichtung",
-        "Regelmäßige Wartung und Updates",
-        "Backups",
-        "Monatliche Änderungen",
-        "Reparatur bei Defekten"
-      ]
-    }
-  },
-  "faq": {
-    "label": "FAQ",
-    "title": "Haben Sie Fragen?",
-    "subtitle": "Kurz und ehrlich beantwortet.",
-    "more": "Noch etwas unklar?",
-    "moreCta": "Schreiben Sie uns, wir antworten innerhalb von 24 Stunden.",
-    "items": {
-      "process": {
-        "question": "Wie funktioniert es?",
-        "answer": "Schreiben Sie uns über das Formular oder buchen Sie eine kostenlose Beratung. Wir klären Ihre Ziele, empfehlen ein Paket und einigen uns auf die benötigten Inhalte. Vor Beginn der Arbeit erhalten Sie einen schriftlichen Vertrag mit festgelegter Erstellungs- und Monatsgebühr sowie voraussichtlichem Termin. Anschließend bauen wir Ihre Website in wenigen Tagen. Sie prüfen sie, bitten bei Bedarf um Anpassungen und geben schriftlich frei. Die Erstellungsgebühr ist bei Freigabe fällig, die Monatsgebühr beginnt mit dem Livegang. Sind Sie vor der Freigabe nicht zufrieden, können Sie jederzeit zurücktreten, ohne etwas zu zahlen."
-      },
-      "cost": {
-        "question": "Was kostet es?",
-        "answer": "Starter 0 € im Voraus plus 50 € im Monat. Business 150 € plus 75 € im Monat. Custom ab 500 € plus ab 125 € im Monat. Alternativ können Sie 12 Monate beim Livegang in einer Summe zahlen, mit 12% Rabatt. Der Preis wird vor dem Start vertraglich festgelegt."
-      },
-      "pay": {
-        "question": "Wann muss ich zahlen?",
-        "answer": "Die Erstellungsgebühr ist bei Freigabe fällig. Die Monatsgebühr beginnt mit dem Livegang, monatlich. Alternativ können Sie 12 Monate beim Livegang in einer Summe zahlen, mit 12% Rabatt, ein Jahr Betreuung inklusive. Die genauen Bedingungen stehen im Vertrag. Vor der Freigabe schulden Sie nichts."
-      },
-      "monthly": {
-        "question": "Was ist in der Monatsgebühr enthalten?",
-        "answer": "Monatlich verteilt sich die Entwicklung auf 12 Monate, mit wenig oder nichts im Voraus. In einer Summe zahlen Sie die 12 Monate beim Livegang, mit 12% Rabatt. In beiden Fällen ist in dieser Zeit alles für den Betrieb dabei: Entwicklungskosten, Hosting, verschlüsselte Verbindung, E-Mail, Domain-Einrichtung, Wartung, Backups und kleine monatliche Änderungen. Einzeln kostet vergleichbares Hosting oft 10-25 € im Monat, dazu kommen Entwicklung und Entwicklerkosten für jede Änderung. Bei uns deckt eine Gebühr das ab. Domain und kostenpflichtige Extras vereinbaren wir schriftlich im Vertrag. Geht etwas kaputt, reparieren wir es kostenlos."
-      },
-      "term": {
-        "question": "Wie lange bin ich gebunden?",
-        "answer": "Mindestens 12 Monate, danach jederzeit kündbar. Die Website bleibt Ihre. Deshalb ist der Start ab 0 € möglich."
-      },
-      "speed": {
-        "question": "Wie schnell ist die Website fertig?",
-        "answer": "Einfache Websites in 3-5 Tagen, größere in 2-3 Wochen. Den genauen Termin bekommen Sie vor dem Start."
-      },
-      "language": {
-        "question": "Sind weitere Sprachen für die Website möglich?",
-        "answer": "Ungarisch und Englisch sind von Anfang an dabei. Wenn Sie auch Deutsch oder eine weitere Sprache möchten, bauen wir eine vollständige übersetzte Version: eigene Seiten, Sprachumschalter und Suchsetup. Einmalige Projektgebühr, vertraglich vor dem Start vereinbart."
-      },
-      "tech": {
-        "question": "Welche Technologie nutzen Sie?",
-        "answer": "Wir arbeiten mit moderner, zukunftssicherer Technologie: schnelle Ladezeiten, starke Sicherheit und langfristig wartbar. Derselbe Standard wie auf ernsthaften Business-Websites, kein Baukasten, den Sie schnell überwachsen. Jedes Paket enthält nur, was Sie brauchen: Starter bleibt schlank, Business ergänzt Online-Buchung und Kundendaten, Custom ergänzt Online-Zahlungen."
-      },
-      "partner": {
-        "question": "Brauche ich Logo oder Drucksachen?",
-        "answer": "Unser Budapester Partner SUSA STUDIO übernimmt Logo, Druck und Art Direction. Preise auf Anfrage."
-      }
-    },
-    "partner": {
-      "badge": "Partner",
-      "name": "SUSA STUDIO",
-      "subtitle": "Logo, Drucksachen und Art Direction von unserem Budapester Partnerstudio.",
-      "pricing": "Auf Anfrage",
-      "instagram": "Instagram",
-      "services": {
-        "identity": {
-          "name": "Markenidentität",
-          "items": [
-            "Logo & visuelle Identität",
-            "Individuelle Icons & Illustrationen",
-            "Brand Book & Richtlinien",
-            "Namensfindung & Storytelling"
-          ]
-        },
-        "physical": {
-          "name": "Physische Materialien",
-          "items": [
-            "Visitenkarten & Briefpapier",
-            "Verpackungsdesign",
-            "Banner, Roll-ups & Beschilderung",
-            "Pressewände & Installationen"
-          ]
-        },
-        "direction": {
-          "name": "Art Direction",
-          "items": [
-            "Visuelle Strategie & Konzept",
-            "Kreativleitung",
-            "Design-Qualitätskontrolle",
-            "Auch als Einzelleistung buchbar"
-          ]
+    "hero": {
+        "badge": "Für kleine und mittlere Unternehmen",
+        "title": "KI, die <em>Ihr Unternehmen kennt</em>.",
+        "subtitle": "Wir verbinden Claude mit Ihren Firmensystemen, damit Ihr Team auf einfache Fragen genaue Antworten aus den eigenen Daten bekommt.\nWeniger Verwaltung, mehr Zeit für das Wesentliche.",
+        "cta": "Kontakt aufnehmen",
+        "demo": "Termin buchen",
+        "trust": [
+            "Antwort in 24 Stunden",
+            "Kostenlose Analyse",
+            "Festpreis pro Phase"
+        ],
+        "chat": {
+            "assistant": "Claude",
+            "status": "Antwortet aus Ihren Firmendaten",
+            "label": "Beispiel",
+            "placeholder": "Fragen Sie alles zu Ihrem Unternehmen...",
+            "items": [
+                {
+                    "question": "Wer schuldet uns seit über 30 Tagen Geld?",
+                    "answer": "Drei Partner, insgesamt 3.100 €. Der größte Posten: 1.520 €, seit 47 Tagen fällig. Soll ich für jeden eine freundliche Erinnerung entwerfen?",
+                    "source": "Aus Ihrem Rechnungsprogramm"
+                },
+                {
+                    "question": "Was kaufen Kunden oft zusammen?",
+                    "answer": "Keramiktasse und Kaffeebohnen landen in 38 % der Bestellungen im selben Warenkorb. Ein Bundle könnte sich lohnen.",
+                    "source": "Aus Ihrem Webshop"
+                },
+                {
+                    "question": "Wer hat seit drei Monaten nicht bestellt?",
+                    "answer": "14 Kunden, 6 davon haben früher monatlich bestellt. Ich kann sie nach dem Wert der letzten Bestellung sortieren.",
+                    "source": "Aus Ihrer Kundendatei"
+                }
+            ],
+            "noteTitle": "Nur Lesezugriff",
+            "noteBody": "Ihre Daten bleiben bei Ihnen"
         }
-      }
-    }
-  },
-  "comparison": {
-    "label": "Vergleich",
-    "title": "Wie wir uns unterscheiden",
-    "subtitle": "Ein schneller Überblick über Ihre Optionen.",
-    "columns": {
-      "feature": "",
-      "diy": "Baukastensysteme",
-      "agency": "Traditionelle Agentur",
-      "us": "Budapest Labs"
     },
-    "rows": {
-      "delivery": {
-        "label": "Lieferzeit",
-        "diy": "Wochen bis Monate",
-        "agency": "4-8 Wochen",
-        "us": "Tage statt Wochen"
-      },
-      "price": {
-        "label": "Preis",
-        "diy": "10-40 €/Monat, Sie machen die Arbeit",
-        "agency": "1.000-5.000 € einmalig",
-        "us": "0 € + ab 50 €/Monat"
-      },
-      "effort": {
-        "label": "Ihr Aufwand",
-        "diy": "Alles selbst",
-        "agency": "Meetings, Freigaben",
-        "us": "Schnell und mühelos"
-      },
-      "quality": {
-        "label": "Designqualität",
-        "diy": "Standard-Vorlage",
-        "agency": "Individuell",
-        "us": "Professionell"
-      },
-      "tech": {
-        "label": "Technologie",
-        "diy": "Veraltete Plattform",
-        "agency": "Unterschiedlich",
-        "us": "Neueste, zukunftssicher"
-      },
-      "performance": {
-        "label": "Ladegeschwindigkeit",
-        "diy": "3-8 Sekunden",
-        "agency": "1-4 Sekunden",
-        "us": "Unter 0,5 Sekunden"
-      },
-      "mobile": {
-        "label": "Mobiloptimiert",
-        "diy": "Oft fehlerhaft",
-        "agency": "Meistens ja",
-        "us": "Immer"
-      },
-      "seo": {
-        "label": "SEO",
-        "diy": "Minimal",
-        "agency": "Zusatzkosten",
-        "us": "Inklusive"
-      },
-      "security": {
-        "label": "Sicherheit",
-        "diy": "Ihre Verantwortung",
-        "agency": "Unterschiedlich",
-        "us": "Vollständig sicher"
-      },
-      "warranty": {
-        "label": "Garantie",
-        "diy": "Keine",
-        "agency": "Unterschiedlich",
-        "us": "Lebenslang"
-      },
-      "booking": {
-        "label": "Buchung & Zahlungen",
-        "diy": "Zusatzkosten",
-        "agency": "Zusatzkosten",
-        "us": "Ab Business-Paket"
-      }
-    }
-  },
-  "contact": {
-    "label": "Kontakt",
-    "title": "Kontakt aufnehmen",
-    "subtitle": "Schreiben Sie uns, wobei wir Ihnen helfen können. Wir antworten innerhalb von 24 Stunden und senden vor Arbeitsbeginn einen schriftlichen Vertrag mit festen Gebühren und Termin.",
-    "consultOr": "Oder",
-    "consult": "buchen Sie eine kostenlose Beratung",
-    "form": {
-      "name": "Name",
-      "namePlaceholder": "Ihr Name",
-      "email": "E-Mail",
-      "emailPlaceholder": "sie@beispiel.com",
-      "phone": "Telefon",
-      "phonePlaceholder": "+43 / +49 ...",
-      "business": "Firmenname",
-      "businessPlaceholder": "Ihre Firma GmbH",
-      "plan": "Interesse an",
-      "planPlaceholder": "Paket wählen...",
-      "planOptions": {
-        "starter": "Starter (0 € + 50 € monatliche Gebühr)",
-        "business": "Business (150 € + 75 € monatliche Gebühr)",
-        "pro": "Custom (ab 500 € + ab 125 € monatliche Gebühr)",
-        "unsure": "Noch nicht sicher"
-      },
-      "message": "Nachricht",
-      "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt und was Sie sich vorstellen. Wir melden uns in Kürze, um die Details gemeinsam zu besprechen.",
-      "submit": "Nachricht senden",
-      "successTitle": "Nachricht gesendet!",
-      "success": "Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
-      "errors": {
-        "nameRequired": "Bitte geben Sie Ihren Namen ein",
-        "emailRequired": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
-        "submit": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns an hello@budapestlabs.com."
-      }
-    }
-  },
-  "footer": {
-    "description": "Premium-Websites für Unternehmen. Ab 0 € Startkosten, monatliche Gebühr inklusive.",
-    "email": "hello@budapestlabs.com",
-    "navigation": "Navigation",
-    "legal": "Rechtliches",
-    "privacy": "Datenschutz",
-    "terms": "AGB",
-    "imprint": "Impressum",
-    "madeWith": "Made with ❤️ and ☕️ in Budapest"
-  },
-  "legal": {
-    "back": "Zurück zur Startseite",
-    "download": "PDF",
-    "privacy": {
-      "title": "Datenschutzerklärung",
-      "lastUpdated": "Zuletzt aktualisiert: 10. Juli 2026",
-      "intro": "Ihre Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten wir erheben, wie wir sie verwenden und wie wir sie schützen.",
-      "sections": {
-        "controller": {
-          "title": "Verantwortlicher",
-          "content": "Budapest Labs (vollständige Geschäftsdaten siehe Impressum).\nE-Mail: hello@budapestlabs.com"
-        },
-        "collection": {
-          "title": "Was wir erheben",
-          "content": "Wenn Sie unser Kontaktformular ausfüllen, erhalten wir: Ihren Namen, Ihre E-Mail-Adresse, Telefonnummer (falls Sie sie angeben), Firmennamen (optional), gewähltes Paket und Ihre Nachricht. Das ist alles. Sie können uns auch direkt unter hello@budapestlabs.com schreiben. Wir verwenden keine Cookies, Tracking-Skripte oder Analysetools."
-        },
-        "basis": {
-          "title": "Warum wir sie verwenden dürfen",
-          "content": "Wir verarbeiten Ihre Daten, weil Sie sie uns freiwillig gesendet haben. Das ist Ihre Einwilligung nach EU-Datenschutzrecht (DSGVO). Wenn wir zusammenarbeiten, benötigen wir Ihre Angaben auch zur Projektdurchführung. In einigen Fällen bewahren wir Daten zur Erfüllung gesetzlicher oder buchhalterischer Pflichten auf."
-        },
-        "purpose": {
-          "title": "Was wir damit machen",
-          "content": "Wir verwenden Ihre Kontaktdaten ausschließlich, um auf Ihre Anfrage zu antworten, ein Angebot zu erstellen und Ihre Website zu bauen. Wir verkaufen, vermieten oder teilen Ihre Daten niemals mit Dritten für Marketing oder andere nicht zusammenhängende Zwecke."
-        },
-        "storage": {
-          "title": "Wie wir sie schützen",
-          "content": "Ihre Daten werden auf verschlüsselten Servern innerhalb der EU gespeichert. Rechnungen und Buchhaltungsunterlagen werden gemäß dem ungarischen Buchhaltungsgesetz (Gesetz C von 2000, §169) 8 Jahre lang aufbewahrt. Sonstige Geschäftskorrespondenz und Projektdaten werden für die Dauer unserer Zusammenarbeit aufbewahrt, plus bis zu 5 Jahre danach. Danach werden sie dauerhaft gelöscht."
-        },
-        "thirdparty": {
-          "title": "Dienste, die wir nutzen",
-          "content": "Unsere Website wird von Vercel (vercel.com) gehostet, und wir verwenden Resend (resend.com) für die Zustellung von E-Mails aus unserem Kontaktformular. Beide Anbieter verarbeiten Daten in unserem Auftrag gemäß DSGVO-konformer Vereinbarungen. Alle Verbindungen verwenden HTTPS-Verschlüsselung. Vercel speichert standardmäßige Server-Logs (IP-Adresse, Zeitstempel, besuchte Seite), die nach 30 Tagen automatisch gelöscht werden. Ihre Daten werden an niemand anderen weitergegeben."
-        },
-        "rights": {
-          "title": "Ihre Rechte",
-          "content": "Nach EU-Recht (DSGVO) können Sie: einsehen, welche Daten wir über Sie haben; fehlerhafte Daten korrigieren lassen; die Löschung Ihrer Daten verlangen; die Verarbeitung einschränken oder ihr widersprechen; oder eine Kopie in einem portablen Format anfordern. Sie können Ihre Einwilligung jederzeit widerrufen. Das betrifft nicht die vorherige Verarbeitung. Schreiben Sie uns einfach an hello@budapestlabs.com und wir antworten innerhalb von 30 Tagen."
+    "services": {
+        "label": "Leistungen",
+        "title": "Wobei wir <em>helfen</em>",
+        "subtitle": "Wir beginnen mit einer klar umrissenen Aufgabe, dort, wo Sie am meisten Zeit gewinnen. Die meisten Projekte verbinden zwei oder drei Bereiche.",
+        "items": {
+            "ai": {
+                "title": "KI-Assistent fürs Unternehmen",
+                "description": "Claude antwortet aus Ihren eigenen Daten: Rechnungen, Bestellungen, Kunden. Fragen ist so einfach wie bei einem Kollegen."
+            },
+            "software": {
+                "title": "Individuelle Unternehmenssoftware",
+                "description": "Kundendatei, Lager, Produktionsverfolgung, Partnerportale. Gebaut für Ihre Arbeitsweise, nicht umgekehrt."
+            },
+            "automation": {
+                "title": "Prozessautomatisierung und KI-Agenten",
+                "description": "Eingehende Rechnungen, E-Mails und Dokumente landen von selbst am richtigen Ort. Wichtige Schritte gibt weiterhin ein Mensch frei."
+            },
+            "web": {
+                "title": "Websites und Webshops",
+                "description": "Eine schnelle, individuell gestaltete Website oder ein Shop, verbunden mit den Systemen dahinter. In wenigen Tagen fertig."
+            },
+            "training": {
+                "title": "KI-Schulungen für Teams",
+                "description": "Praxis-Workshops zu Claude mit Ihren eigenen Aufgaben. Keine technischen Vorkenntnisse nötig."
+            },
+            "audit": {
+                "title": "KI-Analyse",
+                "description": "Wir erfassen Ihre Abläufe und zeigen, wo KI wirklich Zeit spart und wo es sich nicht lohnt. Sie erhalten einen schriftlichen Plan."
+            }
         }
-      }
     },
-    "terms": {
-      "title": "Allgemeine Geschäftsbedingungen",
-      "lastUpdated": "Zuletzt aktualisiert: 10. Juli 2026",
-      "intro": "Diese Bedingungen gelten für die Zusammenarbeit mit Budapest Labs. Wir haben sie einfach gehalten. Keine Überraschungen.",
-      "sections": {
-        "provider": {
-          "title": "Dienstleister",
-          "content": "Budapest Labs (vollständige Geschäftsdaten siehe Impressum).\nE-Mail: hello@budapestlabs.com"
+    "ai": {
+        "label": "KI-Integration",
+        "title": "Fragen Sie <em>Ihr Unternehmen</em>.",
+        "subtitle": "Wir verbinden Claude mit den Systemen, die Sie schon nutzen. Ihr Team fragt in normaler Sprache und bekommt in Sekunden Antworten aus Ihren eigenen Daten, ohne in Tabellen zu suchen.",
+        "examplesLabel": "Fragen, die er beantwortet",
+        "examples": [
+            "Wer schuldet uns seit über 30 Tagen Geld?",
+            "Wie viel Umsatzsteuer zahlen wir dieses Quartal?",
+            "Was kaufen Kunden oft zusammen?",
+            "Wer hat seit drei Monaten nicht bestellt?"
+        ],
+        "promises": {
+            "readonly": {
+                "title": "Liest nur, schreibt nie",
+                "body": "Standardmäßig liest der Assistent Ihre Daten nur. Alles, was etwas ändern würde, etwa eine Rechnung ausstellen, bauen wir nur auf Wunsch, und es fragt immer zuerst einen Menschen."
+            },
+            "data": {
+                "title": "Ihre Daten bleiben bei Ihnen",
+                "body": "Sie bleiben in Ihren eigenen Systemen, wir holen nur, was eine Antwort braucht. Wir schließen einen Auftragsverarbeitungsvertrag und hosten in der EU."
+            },
+            "control": {
+                "title": "Sie behalten die Schlüssel",
+                "body": "Der Zugang läuft über Ihr eigenes Firmenkonto und lässt sich jederzeit widerrufen."
+            }
         },
-        "scope": {
-          "title": "Was wir machen",
-          "content": "Wir entwerfen und bauen Websites für Privatpersonen und Unternehmen jeder Größe, von Portfolios und Markenseiten bis hin zu Webshops und Buchungsplattformen. Je nach Paket kann das umfassen: individuelles Design und Entwicklung, mobilfreundliche Layouts, Hosting und Bereitstellung, Domain- und E-Mail-Einrichtung, Mehrsprachigkeit, Buchungssysteme, Online-Zahlungen, Analytics und mehr. Wenn Sie etwas Zusätzliches brauchen, besprechen wir das gemeinsam. Der genaue Umfang Ihres Projekts basiert auf dem gewählten Paket und allem, was wir schriftlich vereinbaren."
+        "diagram": {
+            "invoicing": "Rechnungen",
+            "webshop": "Webshop",
+            "crm": "Kunden",
+            "documents": "Dokumente",
+            "hub": "Claude",
+            "team": "Ihr Team"
         },
-        "payment": {
-          "title": "So funktioniert die Zahlung",
-          "content": "Die hier angegebenen Angaben sind unverbindlich. Ihre genaue Erstellungsgebühr, Monatsgebühr und der voraussichtliche Termin werden vor Arbeitsbeginn in einem individuellen Vertrag festgelegt; es gelten die Vertragsbedingungen. Die Erstellungsgebühr wird fällig, wenn Ihre Website fertig ist und Sie sie freigegeben haben. Die Monatsgebühr ist die Entwicklungskosten und deckt den Betrieb für die vereinbarte Laufzeit ab; sie beginnt am Tag des Livegangs, monatlich. Alternativ können Sie 12 Monate beim Livegang in einer Summe zahlen, mit 12% Rabatt; die genauen Bedingungen stehen im Vertrag. Domain-Registrierung und kostenpflichtige Sonderwünsche besprechen und vereinbaren wir schriftlich im Vertrag. Der Vertrag läuft mindestens 12 Monate; danach kann er jederzeit mit einer Frist von 30 Tagen gekündigt werden. Wir akzeptieren Überweisung, Revolut und Barzahlung. Für jede Zahlung erhalten Sie eine ordnungsgemäße Rechnung nach ungarischem Recht."
-        },
-        "revisions": {
-          "title": "Überarbeitungen",
-          "content": "Jedes Paket enthält eine kostenlose Überarbeitungsrunde. Das umfasst Anpassungen an Design, Layout oder Text. Es beinhaltet nicht, von vorne anzufangen oder Funktionen hinzuzufügen, die nicht im ursprünglichen Paket enthalten sind. Wenn Sie weitere Änderungen wünschen, teilen wir Ihnen die Kosten vorab mit. Keine Überraschungen."
-        },
-        "delivery": {
-          "title": "Lieferzeiten",
-          "content": "Die Zeitangaben auf unserer Website (3-5 Tage, 5-7 Tage, 2-3 Wochen) sind Schätzungen auf Basis typischer Projekte. Die Dauer hängt von der Komplexität ab und davon, wie schnell Sie uns Ihre Inhalte senden. Wir liefern so schnell wie möglich, können aber keine exakten Termine garantieren. Die Zeit beginnt, sobald wir alles von Ihnen haben (Texte, Bilder, Logo). Verzögerungen auf Ihrer Seite zählen nicht zu unserer Lieferzeit."
-        },
-        "client": {
-          "title": "Was wir von Ihnen brauchen",
-          "content": "Um Ihre Website zu bauen, brauchen wir Ihre Inhalte: Texte, Bilder, Logo und Branding-Materialien. Wir bitten Sie auch, die Vorschau innerhalb von etwa einer Woche zu prüfen. Wenn wir innerhalb von 14 Werktagen nichts hören, betrachten wir das Projekt als genehmigt. Bitte stellen Sie außerdem sicher, dass die Inhalte, die Sie uns senden, Ihnen gehören: wir vertrauen darauf, dass Sie die Rechte an allem haben."
-        },
-        "ownership": {
-          "title": "Wem gehört was",
-          "content": "Die Website gehört Ihnen. Wenn Sie nach der Mindestlaufzeit kündigen, übergeben wir alles, was wir für Sie gebaut haben: Design, Inhalte und Code. Allgemeine Werkzeuge und Code, die nicht spezifisch für Ihr Projekt sind, dürfen wir weiterverwenden. Wir würden Ihre Website gern in unserem Portfolio zeigen; wenn Sie das nicht möchten, sagen Sie einfach Bescheid."
-        },
-        "thirdparty": {
-          "title": "Drittanbieter-Dienste",
-          "content": "Ihre Website kann Drittanbieter-Dienste nutzen (Hosting, Domain, E-Mail). Wir helfen bei der Einrichtung, aber diese sind unabhängige Dienste mit eigenen Bedingungen."
-        },
-        "cancellation": {
-          "title": "Stornierung",
-          "content": "Vor der Freigabe der fertigen Website können Sie jederzeit zurücktreten und zahlen nichts. Nach der Mindestlaufzeit von 12 Monaten können Sie mit einer Frist von 30 Tagen kündigen; wir übergeben die komplette Website und helfen beim Umzug. Unsererseits können wir das Projekt schließen, wenn wir Ihre Inhalte nicht innerhalb von 30 Tagen erhalten oder Sie über 30 Tage nicht erreichbar sind."
-        },
-        "warranty": {
-          "title": "Lebenslange Garantie",
-          "content": "Wir stehen ein Leben lang hinter unserer Arbeit. Wenn etwas, das wir gebaut haben, nicht mehr wie vorgesehen funktioniert, beheben wir es kostenlos, egal wie viel Zeit vergangen ist. Das umfasst Fehler im Code, den wir geliefert haben.\n\nNicht abgedeckt: neue Funktionen, Designänderungen, Inhaltsaktualisierungen oder Probleme durch Änderungen von Ihnen oder Dritten. Drittanbieter-Dienste (Hosting, Domain-Registrare, APIs) liegen außerhalb unserer Kontrolle.\n\nWenn die zugrunde liegende Technologie ein größeres Update benötigt, informieren wir Sie und machen ein faires Angebot. Das ist von der Garantie getrennt."
-        },
-        "liability": {
-          "title": "Unsere Verantwortung",
-          "content": "Unsere Haftung ist auf den Betrag begrenzt, den Sie für das Projekt bezahlt haben. Wir sind nicht verantwortlich für Probleme nach der Lieferung durch Ihre Änderungen oder Ausfälle von Drittanbieter-Diensten."
-        },
-        "law": {
-          "title": "Rechtliche Details",
-          "content": "Diese Bedingungen unterliegen dem ungarischen Recht. Bei Meinungsverschiedenheiten klären wir das am liebsten persönlich. Verbraucherbeschwerden können auch an die zuständige Schlichtungsstelle gerichtet werden. Kann der Streit nicht anderweitig beigelegt werden, ist das Zentrale Bezirksgericht Buda bzw. je nach Zuständigkeit das Hauptstädtische Gericht Budapest ausschließlich zuständig."
-        }
-      }
+        "cta": "Demo anfragen"
     },
-    "imprint": {
-      "title": "Impressum",
-      "sections": {
-        "company": {
-          "title": "Geschäftsinformationen",
-          "content": "Révész Péter EV (Einzelunternehmer)\nHandelsname: Budapest Labs\nSitz: Budapest, Ungarn\nSteuernummer: 91808745-1-43\nRegistrierungsnummer: 61944978\n\n(Im Folgenden Budapest Labs genannt)"
-        },
-        "contact": {
-          "title": "Kontakt",
-          "content": "E-Mail: hello@budapestlabs.com\nWebsite: budapestlabs.com"
-        },
-        "responsible": {
-          "title": "Verantwortlich für den Inhalt",
-          "content": "Budapest Labs ist verantwortlich für den Inhalt dieser Website nach geltendem ungarischen und EU-Recht."
+    "process": {
+        "label": "So arbeiten wir",
+        "title": "Klare Schritte, <em>keine Überraschungen</em>.",
+        "subtitle": "Wir experimentieren nicht mit Ihrem Geld. Wir beginnen mit einer Analyse, starten mit einer kleinen, klar umrissenen Aufgabe und bauen nur aus, was funktioniert.",
+        "steps": {
+            "assess": {
+                "title": "Kostenlose Analyse",
+                "body": "Wir sprechen über Ihre Ziele, schauen uns Ihre Werkzeuge an und finden heraus, wo die meiste Zeit verloren geht."
+            },
+            "plan": {
+                "title": "Schriftlicher Plan, Festpreis",
+                "body": "Genauer Umfang, Zeitplan und Festpreis pro Phase, schriftlich. Größere Vorhaben starten mit einem kleinen Pilot."
+            },
+            "build": {
+                "title": "Bauen in kurzen Runden",
+                "body": "Sie sehen Woche für Woche funktionierende Ergebnisse und können laufend mitsteuern. Nichts geht ungetestet live."
+            },
+            "run": {
+                "title": "Übergabe und Betrieb",
+                "body": "Wir schulen Ihr Team, übergeben die vollständige Dokumentation und kümmern uns gegen eine monatliche Gebühr um das System."
+            }
         }
-      }
+    },
+    "contact": {
+        "label": "Kontakt",
+        "title": "Sprechen wir über <em>Ihre Pläne</em>",
+        "subtitle": "Schreiben Sie uns in ein paar Sätzen, was gerade zu viel Zeit kostet. Wir antworten innerhalb von 24 Stunden und schicken vor Arbeitsbeginn einen schriftlichen Plan mit Umfang und Preis.",
+        "consultOr": "Oder",
+        "consult": "buchen Sie ein kostenloses Gespräch",
+        "form": {
+            "name": "Name",
+            "namePlaceholder": "Ihr Name",
+            "email": "E-Mail",
+            "emailPlaceholder": "sie@beispiel.com",
+            "phone": "Telefon",
+            "phonePlaceholder": "+43 / +49 ...",
+            "business": "Firmenname",
+            "businessPlaceholder": "Ihre Firma GmbH",
+            "interest": "Interesse an",
+            "interestPlaceholder": "Leistung auswählen...",
+            "interestUnsure": "Noch nicht sicher",
+            "message": "Nachricht",
+            "messagePlaceholder": "Welche Programme nutzen Sie heute, und welche Aufgabe kostet am meisten Zeit? Ein paar Sätze reichen.",
+            "submit": "Nachricht senden",
+            "successTitle": "Nachricht gesendet!",
+            "success": "Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+            "errors": {
+                "nameRequired": "Bitte geben Sie Ihren Namen ein",
+                "emailRequired": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+                "submit": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns an hello@budapestlabs.com."
+            }
+        }
+    },
+    "footer": {
+        "description": "KI-Assistenten, individuelle Software und Websites für kleine und mittlere Unternehmen. Aus Budapest.",
+        "email": "hello@budapestlabs.com",
+        "navigation": "Navigation",
+        "legal": "Rechtliches",
+        "privacy": "Datenschutz",
+        "terms": "AGB",
+        "imprint": "Impressum",
+        "madeWith": "Made with ❤️ and ☕️ in Budapest"
+    },
+    "legal": {
+        "back": "Zurück zur Startseite",
+        "download": "PDF",
+        "privacy": {
+            "title": "Datenschutzerklärung",
+            "lastUpdated": "Zuletzt aktualisiert: 31. Oktober 2026",
+            "intro": "Ihre Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten wir erheben, wie wir sie verwenden und wie wir sie schützen.",
+            "sections": {
+                "controller": {
+                    "title": "Verantwortlicher",
+                    "content": "Budapest Labs (vollständige Geschäftsdaten siehe Impressum).\nE-Mail: hello@budapestlabs.com"
+                },
+                "collection": {
+                    "title": "Was wir erheben",
+                    "content": "Wenn Sie unser Kontaktformular ausfüllen, erhalten wir: Ihren Namen, Ihre E-Mail-Adresse, Telefonnummer (falls Sie sie angeben), Firmennamen (optional), die gewünschte Leistung und Ihre Nachricht. Das ist alles. Sie können uns auch direkt unter hello@budapestlabs.com schreiben. Wir verwenden keine Cookies, Tracking-Skripte oder Analysetools."
+                },
+                "basis": {
+                    "title": "Warum wir sie verwenden dürfen",
+                    "content": "Wir verarbeiten Ihre Daten, weil Sie sie uns freiwillig gesendet haben. Das ist Ihre Einwilligung nach EU-Datenschutzrecht (DSGVO). Wenn wir zusammenarbeiten, benötigen wir Ihre Angaben auch zur Projektdurchführung. In einigen Fällen bewahren wir Daten zur Erfüllung gesetzlicher oder buchhalterischer Pflichten auf."
+                },
+                "purpose": {
+                    "title": "Was wir damit machen",
+                    "content": "Wir verwenden Ihre Kontaktdaten ausschließlich, um auf Ihre Anfrage zu antworten, ein Angebot zu erstellen und Ihr Projekt umzusetzen. Wir verkaufen, vermieten oder teilen Ihre Daten niemals mit Dritten für Marketing oder andere nicht zusammenhängende Zwecke."
+                },
+                "storage": {
+                    "title": "Wie wir sie schützen",
+                    "content": "Ihre Daten werden auf verschlüsselten Servern innerhalb der EU gespeichert. Rechnungen und Buchhaltungsunterlagen werden gemäß dem ungarischen Buchhaltungsgesetz (Gesetz C von 2000, §169) 8 Jahre lang aufbewahrt. Sonstige Geschäftskorrespondenz und Projektdaten werden für die Dauer unserer Zusammenarbeit aufbewahrt, plus bis zu 5 Jahre danach. Danach werden sie dauerhaft gelöscht."
+                },
+                "thirdparty": {
+                    "title": "Dienste, die wir nutzen",
+                    "content": "Unsere Website wird von Vercel (vercel.com) gehostet, und wir verwenden Resend (resend.com) für die Zustellung von E-Mails aus unserem Kontaktformular. Beide Anbieter verarbeiten Daten in unserem Auftrag gemäß DSGVO-konformer Vereinbarungen. Alle Verbindungen verwenden HTTPS-Verschlüsselung. Vercel speichert standardmäßige Server-Logs (IP-Adresse, Zeitstempel, besuchte Seite), die nach 30 Tagen automatisch gelöscht werden. Ihre Daten werden an niemand anderen weitergegeben."
+                },
+                "rights": {
+                    "title": "Ihre Rechte",
+                    "content": "Nach EU-Recht (DSGVO) können Sie: einsehen, welche Daten wir über Sie haben; fehlerhafte Daten korrigieren lassen; die Löschung Ihrer Daten verlangen; die Verarbeitung einschränken oder ihr widersprechen; oder eine Kopie in einem portablen Format anfordern. Sie können Ihre Einwilligung jederzeit widerrufen. Das betrifft nicht die vorherige Verarbeitung. Schreiben Sie uns einfach an hello@budapestlabs.com und wir antworten innerhalb von 30 Tagen."
+                }
+            }
+        },
+        "terms": {
+            "title": "Allgemeine Geschäftsbedingungen",
+            "lastUpdated": "Zuletzt aktualisiert: 31. Oktober 2026",
+            "intro": "Diese Bedingungen gelten für die Zusammenarbeit mit Budapest Labs. Wir haben sie einfach gehalten. Keine Überraschungen.",
+            "sections": {
+                "provider": {
+                    "title": "Dienstleister",
+                    "content": "Budapest Labs (vollständige Geschäftsdaten siehe Impressum).\nE-Mail: hello@budapestlabs.com"
+                },
+                "scope": {
+                    "title": "Was wir tun",
+                    "content": "Wir konzipieren, bauen und betreiben individuelle Software, KI-Integrationen (zum Beispiel die Anbindung Ihrer Systeme an Claude), Automatisierungen, Websites und Webshops. Außerdem bieten wir KI-Schulungen und Analysen an. Der genaue Umfang jedes Projekts wird vor Arbeitsbeginn in einem schriftlichen Angebot oder Vertrag festgelegt."
+                },
+                "payment": {
+                    "title": "So funktioniert die Bezahlung",
+                    "content": "Wir veröffentlichen keine Preise auf unserer Website. Jedes Projekt wird individuell angeboten. Umfang, Preis, Zahlungsplan und eine eventuelle monatliche Betriebsgebühr werden vor Arbeitsbeginn in einem schriftlichen Angebot oder Vertrag festgelegt, und es gelten die Vertragsbedingungen. Größere Projekte werden in Phasen aufgeteilt, jede mit eigenem Festpreis. Laufender Betrieb und Wartung werden monatlich abgerechnet, wie im Vertrag vereinbart. Wir akzeptieren Überweisung, Revolut und Barzahlung. Für jede Zahlung erhalten Sie eine ordnungsgemäße Rechnung nach ungarischem Recht."
+                },
+                "revisions": {
+                    "title": "Feedback und Änderungen",
+                    "content": "Jede Phase enthält die im Angebot festgelegten Feedbackrunden. Wenn Sie etwas außerhalb des vereinbarten Umfangs möchten, nennen wir Ihnen die Kosten vorher. Keine Überraschungen."
+                },
+                "delivery": {
+                    "title": "Zeitpläne",
+                    "content": "Zeitpläne werden für jedes Projekt und jede Phase vereinbart. Sie sind Schätzungen auf Basis des vereinbarten Umfangs und hängen davon ab, wie schnell wir die nötigen Zugänge, Inhalte und Rückmeldungen von Ihnen erhalten. Verzögerungen auf Ihrer Seite zählen nicht gegen unseren Zeitplan."
+                },
+                "client": {
+                    "title": "Was wir von Ihnen brauchen",
+                    "content": "Wir brauchen Zugang zu den betroffenen Systemen, die nötigen Inhalte und Informationen sowie zeitnahes Feedback. Bitte stellen Sie sicher, dass Sie alles, was Sie uns geben, auch teilen dürfen. Wenn wir in Ihrem Auftrag personenbezogene Daten verarbeiten, schließen wir einen separaten Auftragsverarbeitungsvertrag."
+                },
+                "ownership": {
+                    "title": "Wem was gehört",
+                    "content": "Nach Bezahlung gehört Ihnen, was wir für Sie bauen: der Code, die Dokumentation und alle Zugänge. Allgemeine Werkzeuge und Code, die nicht speziell für Ihr Projekt sind, können wir wiederverwenden. Wir würden Ihr Projekt gern in unseren Referenzen nennen, aber nur mit Ihrer Erlaubnis."
+                },
+                "thirdparty": {
+                    "title": "Dienste von Drittanbietern",
+                    "content": "Projekte können auf Diensten von Drittanbietern beruhen, etwa Claude, Hosting, Rechnungs- oder Webshop-Plattformen. Wir helfen bei der Einrichtung, aber es sind unabhängige Dienste mit eigenen Bedingungen und Gebühren, meist auf Ihrem eigenen Konto."
+                },
+                "cancellation": {
+                    "title": "Kündigung",
+                    "content": "Sie können ein Projekt zwischen zwei Phasen beenden und zahlen nur die bereits abgeschlossenen Phasen. Der monatliche Betrieb kann wie im Vertrag festgelegt gekündigt werden, und wir helfen bei der vollständigen Übergabe. Wenn wir Sie über 30 Tage nicht erreichen, können wir das Projekt pausieren oder schließen."
+                },
+                "warranty": {
+                    "title": "Gewährleistung",
+                    "content": "Wenn etwas, das wir gebaut haben, nicht wie vereinbart funktioniert, beheben wir es innerhalb der im Vertrag festgelegten Gewährleistungsfrist kostenlos. Solange wir ein System gegen monatliche Gebühr betreiben, sind Fehlerbehebungen immer enthalten.\n\nNicht abgedeckt: neue Funktionen, Erweiterungen des Umfangs oder Probleme durch Änderungen von Ihnen oder Dritten. Dienste von Drittanbietern (KI-Anbieter, Hosting, Rechnungs- oder Webshop-Plattformen) liegen außerhalb unserer Kontrolle."
+                },
+                "liability": {
+                    "title": "Unsere Verantwortung",
+                    "content": "Unsere Haftung ist auf den Betrag begrenzt, den Sie für das Projekt bezahlt haben. Wir sind nicht verantwortlich für Probleme nach der Lieferung durch Ihre Änderungen oder Ausfälle von Drittanbieter-Diensten."
+                },
+                "law": {
+                    "title": "Rechtliche Details",
+                    "content": "Diese Bedingungen unterliegen dem ungarischen Recht. Bei Meinungsverschiedenheiten klären wir das am liebsten persönlich. Verbraucherbeschwerden können auch an die zuständige Schlichtungsstelle gerichtet werden. Kann der Streit nicht anderweitig beigelegt werden, ist das Zentrale Bezirksgericht Buda bzw. je nach Zuständigkeit das Hauptstädtische Gericht Budapest ausschließlich zuständig."
+                }
+            }
+        },
+        "imprint": {
+            "title": "Impressum",
+            "sections": {
+                "company": {
+                    "title": "Geschäftsinformationen",
+                    "content": "Révész Péter EV (Einzelunternehmer)\nHandelsname: Budapest Labs\nSitz: Budapest, Ungarn\nSteuernummer: 91808745-1-43\nRegistrierungsnummer: 61944978\n\n(Im Folgenden Budapest Labs genannt)"
+                },
+                "contact": {
+                    "title": "Kontakt",
+                    "content": "E-Mail: hello@budapestlabs.com\nWebsite: budapestlabs.com"
+                },
+                "responsible": {
+                    "title": "Verantwortlich für den Inhalt",
+                    "content": "Budapest Labs ist verantwortlich für den Inhalt dieser Website nach geltendem ungarischen und EU-Recht."
+                }
+            }
+        }
     }
-  },
-  "content": {
-    "title": "Qualität, die man auf den ersten Blick sieht.",
-    "stackLead": "Unter der Haube dieselbe Qualität, auf die sich große Marken verlassen:",
-    "stack": [
-      "Produktionsreife Plattform mit sofortiger globaler Auslieferung",
-      "Anmeldung auf Enterprise-Niveau mit Kontoschutz",
-      "Automatisch skalierende Datenbank mit hoher Verfügbarkeit und Beständigkeit",
-      "Globales sicheres Hosting mit integriertem Schutz und 99,99% Verfügbarkeit",
-      "E-Mails, die Posteingänge erreichen, nicht Spam-Ordner",
-      "Markengebundene Buchung",
-      "Globale Zahlungen mit Betrugsschutz",
-      "Betrieb und Wartung, damit alles aktuell und sicher bleibt"
-    ],
-    "background1start": "Budapest Labs wird von einem dreifachen Founding Engineer geleitet. Zuletzt baute er eine Plattform auf über 3.000 Enterprise-Websites für Firmen wie ",
-    "background1brands": "Nvidia, Datadog und CrowdStrike",
-    "background1end": ".",
-    "background2": "",
-    "background3": "Gemeinsam mit einigen der besten Ingenieure, mit denen er in den vergangenen Jahren an Gesundheits- und Bildungssoftware für US-Kunden gearbeitet hat, bringt das Team über ein Jahrzehnt internationale Erfahrung ein, um höchste Qualität zu einem fairen Preis für Unternehmen jeder Größe zu liefern.",
-    "motto": "Wir helfen Unternehmen, ihre Online-Präsenz auf modernen Standard zu bringen."
-  }
 }

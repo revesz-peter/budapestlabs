@@ -1,260 +1,142 @@
 {
     "nav": {
-        "pricing": "Pricing",
-        "faq": "FAQ",
+        "services": "Services",
+        "ai": "AI integration",
+        "process": "How we work",
         "contact": "Contact"
     },
     "hero": {
-        "badge": "€0 up front, from €50/month",
-        "title": "A premium website, within days.",
-        "subtitle": "Custom design on the latest technology.\nYou only pay when you're happy.",
-        "cta": "Get Started",
-        "demo": "Free Consultation",
-        "stackLabel": "Built with"
-    },
-    "pricing": {
-        "label": "Pricing",
-        "title": "Simple, honest pricing",
-        "subtitle": "Little or nothing up front, plus a monthly fee for 12 months.\nAny build fee is only due at delivery.",
-        "choosePlan": "Choose Plan",
-        "popular": "Popular",
-        "billingMonthly": "Monthly",
-        "billingTotal": "Upfront",
-        "billingTotalDiscount": "−12%",
-        "billingToggleAriaLabel": "Show monthly or upfront payment pricing",
-        "monthlySuffix": "12 months",
-        "prepayBadge": "12% off",
-        "starter": {
-            "name": "Starter",
-            "price": "€0",
-            "features": [
-                "Ready: 3-5 days",
-                "3-5 pages, tailored to your business",
-                "Looks great on every phone and computer",
-                "Secure hosting and email included, domain setup included (yearly fee at cost)",
-                "Small changes done for you each month",
-                "Hungarian and English versions",
-                "Lifetime warranty"
-            ],
-            "monthly": "€50/month fee",
-            "termTotal": "€600",
-            "termTotalPrepay": "€528"
-        },
-        "business": {
-            "name": "Business",
-            "price": "€150",
-            "features": [
-                "Ready: 5-7 days",
-                "Everything in Starter, plus:",
-                "6-10 pages",
-                "Online booking for appointments and calls",
-                "Google Maps and directions",
-                "Automatic email notifications",
-                "Visitor statistics"
-            ],
-            "monthly": "€75/month fee",
-            "termTotal": "€1,050",
-            "termTotalPrepay": "€924"
-        },
-        "pro": {
-            "name": "Custom",
-            "price": "from €500",
-            "features": [
-                "Ready: 2-3 weeks",
-                "Everything in Business, plus:",
-                "Webshop, agency site, brand page, anything",
-                "Custom features built for your needs",
-                "Accept payments online",
-                "Priority support"
-            ],
-            "monthly": "from €125/month fee",
-            "termTotal": "from €2,000",
-            "termTotalPrepay": "from €1,760"
-        },
-        "disclaimer": "The information shown here is for guidance only. Your exact price, monthly fee, and expected delivery date are fixed in your contract before we start.",
-        "included": {
-            "title": "What's included in the price?",
-            "body": "Pay monthly and development is spread over 12 months. Pay upfront and you settle the full 12 months at go-live, with a 12% discount. Either way, the same bundle is included for 12 months: development cost, hosting, encrypted connection, email, domain setup, maintenance, backups, and monthly edits. Bought separately, that often adds up to over €25-40 a month before you pay a developer for every change.",
-            "triggerLabel": "What's included in the price?",
+        "badge": "For small and mid-sized businesses",
+        "title": "AI that <em>knows your business</em>.",
+        "subtitle": "We connect Claude to your company's systems, so your team gets accurate answers from your own data just by asking.\nLess admin, more time for what matters.",
+        "cta": "Get in touch",
+        "demo": "Book a call",
+        "trust": [
+            "Reply within 24 hours",
+            "Free assessment",
+            "Fixed price per phase"
+        ],
+        "chat": {
+            "assistant": "Claude",
+            "status": "Answers from your company data",
+            "label": "Example",
+            "placeholder": "Ask anything about your business...",
             "items": [
-                "Development cost",
-                "Website hosting",
-                "Encrypted connection",
-                "Email for forms and notifications",
-                "Domain setup",
-                "Regular maintenance and updates",
-                "Backups",
-                "Monthly edits",
-                "Fixes when something breaks"
-            ]
-        }
-    },
-    "faq": {
-        "label": "FAQ",
-        "title": "Got questions?",
-        "subtitle": "Short, straight answers.",
-        "more": "Something else on your mind?",
-        "moreCta": "Ask us. We reply within 24 hours.",
-        "items": {
-            "process": {
-                "question": "How does it work?",
-                "answer": "Contact us via the form or book a free consultation. We clarify your goals, recommend a plan, and agree on the content needed. Before any work starts, we send a written contract with your exact build fee, monthly fee, and expected delivery date fixed. We then build your site within days. You review it, request changes if needed, and give written approval. The build fee is due on approval. The monthly fee starts at go-live. If you are not satisfied before you approve, you can walk away owing nothing."
-            },
-            "cost": {
-                "question": "What does it cost?",
-                "answer": "Starter is €0 up front plus €50 a month. Business is €150 plus €75 a month. Custom from €500 plus from €125 a month. You can also pay for 12 months upfront at go-live with a 12% discount. Your price is fixed in the contract before we start."
-            },
-            "pay": {
-                "question": "When do I pay?",
-                "answer": "The build fee is due when you approve the finished site. The monthly fee starts at go-live, billed each month. You can also pay for 12 months upfront at go-live with a 12% discount, with a full year of service included. Details are fixed in your contract. Until you approve, you owe nothing."
-            },
-            "monthly": {
-                "question": "What does the monthly fee include?",
-                "answer": "Pay monthly and development is spread over 12 months, with little or nothing up front. Pay upfront and you settle the full 12 months at go-live, with a 12% discount. Either way, everything to run your site is included for those 12 months: development cost, hosting, encrypted connection, email, domain setup, maintenance, backups, and small edits each month. Bought separately, comparable hosting alone often runs €10-25 a month, before development and a developer for every change. With us, one fee covers it. Domain and paid extras are agreed in your contract. If anything breaks, we fix it free."
-            },
-            "term": {
-                "question": "How long am I committed?",
-                "answer": "12 months minimum, then cancel anytime. The site stays yours. That is why you can start at €0."
-            },
-            "speed": {
-                "question": "How fast will it be ready?",
-                "answer": "Simple sites in 3-5 days, bigger projects in 2-3 weeks. You get an exact date before we start."
-            },
-            "language": {
-                "question": "Can additional languages be added to the site?",
-                "answer": "Hungarian and English are included from the start. If you also want German or another language, we add a full translated version with its own pages, language switcher, and search setup. One-time project fee, agreed in your contract before we start."
-            },
-            "tech": {
-                "question": "What technology do you use?",
-                "answer": "We build with modern, future-proof technology: fast loading, strong security, and easy to maintain for years. The same standard used on serious business sites, not a template you outgrow. Each plan includes only what you need: Starter stays simple, Business adds online booking and customer records, Custom adds online payments."
-            },
-            "partner": {
-                "question": "Need a logo or physical materials?",
-                "answer": "Our Budapest partner SUSA STUDIO handles logo, print, and art direction. Pricing on request."
-            }
-        },
-        "partner": {
-            "badge": "Partner",
-            "name": "SUSA STUDIO",
-            "subtitle": "Logo, print materials, and art direction from our Budapest partner studio.",
-            "pricing": "On request",
-            "instagram": "Instagram",
-            "services": {
-                "identity": {
-                    "name": "Brand Identity",
-                    "items": [
-                        "Logo & visual identity",
-                        "Custom icons & illustrations",
-                        "Brand book & guidelines",
-                        "Naming & storytelling"
-                    ]
+                {
+                    "question": "Who has owed us money for over 30 days?",
+                    "answer": "Three partners, €3,100 in total. The largest is €1,520, overdue by 47 days. Should I draft a friendly reminder for each?",
+                    "source": "From your invoicing"
                 },
-                "physical": {
-                    "name": "Physical Materials",
-                    "items": [
-                        "Business cards & stationery",
-                        "Packaging design",
-                        "Banners, roll-ups & signage",
-                        "Press walls & installations"
-                    ]
+                {
+                    "question": "What do customers often buy together?",
+                    "answer": "The ceramic mug and the coffee beans share a basket in 38% of orders. A bundle could work well.",
+                    "source": "From your webshop"
                 },
-                "direction": {
-                    "name": "Art Direction",
-                    "items": [
-                        "Visual strategy & concept",
-                        "Creative direction",
-                        "Design quality control",
-                        "Available as standalone service"
-                    ]
+                {
+                    "question": "Who hasn't ordered from us in three months?",
+                    "answer": "14 customers, 6 of whom used to order monthly. I can sort them by the value of their last order.",
+                    "source": "From your customer records"
                 }
+            ],
+            "noteTitle": "Read-only",
+            "noteBody": "Your data stays with you"
+        }
+    },
+    "services": {
+        "label": "Services",
+        "title": "How we <em>help</em>",
+        "subtitle": "We start with one well-defined task, where it saves you the most time. Most projects combine two or three of these.",
+        "items": {
+            "ai": {
+                "title": "Company AI assistant",
+                "description": "Claude answers from your own data: invoices, orders, customers. Asking is as easy as asking a colleague."
+            },
+            "software": {
+                "title": "Custom business software",
+                "description": "Customer records, inventory, production tracking, partner portals. Built for how you actually work, not the other way around."
+            },
+            "automation": {
+                "title": "Process automation and AI agents",
+                "description": "Incoming invoices, emails, and documents land where they belong on their own. A person still approves anything important."
+            },
+            "web": {
+                "title": "Websites and webshops",
+                "description": "A fast, custom-designed site or webshop, connected to the systems behind it. Ready in days."
+            },
+            "training": {
+                "title": "AI training for teams",
+                "description": "Hands-on Claude workshops built on your own tasks. No technical background needed."
+            },
+            "audit": {
+                "title": "AI assessment",
+                "description": "We map your workflows and show where AI saves real time and where it isn't worth it. You get a written plan."
             }
         }
     },
-    "comparison": {
-        "label": "Compare",
-        "title": "How we compare",
-        "subtitle": "A quick overview of your options.",
-        "columns": {
-            "feature": "",
-            "diy": "DIY Builders",
-            "agency": "Traditional Agency",
-            "us": "Budapest Labs"
+    "ai": {
+        "label": "AI integration",
+        "title": "Ask your business <em>a question</em>.",
+        "subtitle": "We connect Claude to the systems you already use. Your team asks in plain language and gets answers from your own data in seconds, without digging through spreadsheets.",
+        "examplesLabel": "Questions it can answer",
+        "examples": [
+            "Who has owed us money for over 30 days?",
+            "How much VAT do we owe this quarter?",
+            "What do customers often buy together?",
+            "Who hasn't ordered from us in three months?"
+        ],
+        "promises": {
+            "readonly": {
+                "title": "Reads, never writes",
+                "body": "By default the assistant only reads your data. Anything that would change it, like issuing an invoice, is built only on request and always asks a person first."
+            },
+            "data": {
+                "title": "Your data stays with you",
+                "body": "It stays in your own systems, and we fetch only what an answer needs. We sign a data processing agreement and host in the EU."
+            },
+            "control": {
+                "title": "You hold the keys",
+                "body": "Access runs through your own company account and can be revoked at any time."
+            }
         },
-        "rows": {
-            "delivery": {
-                "label": "Delivery time",
-                "diy": "Weeks to months",
-                "agency": "4-8 weeks",
-                "us": "Days, not weeks"
+        "diagram": {
+            "invoicing": "Invoicing",
+            "webshop": "Webshop",
+            "crm": "Customers",
+            "documents": "Documents",
+            "hub": "Claude",
+            "team": "Your team"
+        },
+        "cta": "Request a demo"
+    },
+    "process": {
+        "label": "How we work",
+        "title": "Clear steps, <em>no surprises</em>.",
+        "subtitle": "We don't experiment with your money. We start with an assessment, begin with one small, well-defined task, and only build on what works.",
+        "steps": {
+            "assess": {
+                "title": "Free assessment",
+                "body": "We talk through your goals, look at your current tools, and map where the most time gets lost."
             },
-            "price": {
-                "label": "Price",
-                "diy": "€10-40/month, you do the work",
-                "agency": "€1,000-5,000 one-off",
-                "us": "€0 up front + from €50/month"
+            "plan": {
+                "title": "Written plan, fixed price",
+                "body": "Exact scope, timeline, and a fixed price per phase, in writing. Bigger jobs start with a small pilot."
             },
-            "effort": {
-                "label": "Your effort",
-                "diy": "All on you",
-                "agency": "Meetings, approvals",
-                "us": "Quick and effortless"
+            "build": {
+                "title": "Built in short rounds",
+                "body": "You see working results week by week and can steer as we go. Nothing goes live untested."
             },
-            "quality": {
-                "label": "Design quality",
-                "diy": "Generic template",
-                "agency": "Custom",
-                "us": "Professional"
-            },
-            "tech": {
-                "label": "Technology",
-                "diy": "Outdated platform",
-                "agency": "Varies",
-                "us": "Latest & future-proof"
-            },
-            "performance": {
-                "label": "Page speed",
-                "diy": "3-8 seconds",
-                "agency": "1-4 seconds",
-                "us": "Under 0.5 seconds"
-            },
-            "mobile": {
-                "label": "Mobile optimized",
-                "diy": "Often broken",
-                "agency": "Usually yes",
-                "us": "Always"
-            },
-            "seo": {
-                "label": "SEO",
-                "diy": "Minimal",
-                "agency": "Extra cost",
-                "us": "Included"
-            },
-            "security": {
-                "label": "Security",
-                "diy": "Your responsibility",
-                "agency": "Varies",
-                "us": "Fully secure"
-            },
-            "warranty": {
-                "label": "Warranty",
-                "diy": "None",
-                "agency": "Varies",
-                "us": "Lifetime"
-            },
-            "booking": {
-                "label": "Booking & payments",
-                "diy": "Extra cost",
-                "agency": "Extra cost",
-                "us": "From Business plan"
+            "run": {
+                "title": "Handover and operation",
+                "body": "We train your team, hand over full documentation, and look after the system for a monthly fee."
             }
         }
     },
     "contact": {
         "label": "Contact",
-        "title": "Get in touch",
-        "subtitle": "Tell us what you need help with. We reply within 24 hours and send a written contract with fixed fees and delivery date before any work starts.",
+        "title": "Let's talk about <em>your plans</em>",
+        "subtitle": "Tell us in a few sentences what takes up too much time right now. We reply within 24 hours and send a written plan with scope and price before any work starts.",
         "consultOr": "Or",
-        "consult": "book a free consultation",
+        "consult": "book a free call",
         "form": {
             "name": "Name",
             "namePlaceholder": "Your name",
@@ -264,16 +146,11 @@
             "phonePlaceholder": "+36 ...",
             "business": "Business name",
             "businessPlaceholder": "Your Business Ltd.",
-            "plan": "Interested in",
-            "planPlaceholder": "Select a plan...",
-            "planOptions": {
-                "starter": "Starter (€0 + €50/month fee)",
-                "business": "Business (€150 + €75/month fee)",
-                "pro": "Custom (from €500 + from €125/month fee)",
-                "unsure": "Not sure yet"
-            },
+            "interest": "Interested in",
+            "interestPlaceholder": "Select a service...",
+            "interestUnsure": "Not sure yet",
             "message": "Message",
-            "messagePlaceholder": "Tell us about your project and what you have in mind. We'll reach out shortly to go over the details together.",
+            "messagePlaceholder": "Which tools do you use today, and which task takes the most time? A few sentences are enough.",
             "submit": "Send Message",
             "successTitle": "Message sent!",
             "success": "We'll get back to you within 24 hours.",
@@ -285,7 +162,7 @@
         }
     },
     "footer": {
-        "description": "Premium websites for businesses. From €0 up front, monthly fee included.",
+        "description": "Company AI assistants, custom software, and websites for small and mid-sized businesses. Built in Budapest.",
         "email": "hello@budapestlabs.com",
         "navigation": "Navigation",
         "legal": "Legal",
@@ -299,7 +176,7 @@
         "download": "PDF",
         "privacy": {
             "title": "Privacy Policy",
-            "lastUpdated": "Last updated: July 10, 2026",
+            "lastUpdated": "Last updated: October 31, 2026",
             "intro": "Your privacy matters to us. This policy explains what personal data we collect, how we use it, and how we keep it safe.",
             "sections": {
                 "controller": {
@@ -308,7 +185,7 @@
                 },
                 "collection": {
                     "title": "What we collect",
-                    "content": "When you fill out our contact form, we receive: your name, email address, phone number (if you choose to share it), business name (optional), selected plan, and your message. That's it. You can also write to us directly at hello@budapestlabs.com. We don't use cookies, tracking scripts, or analytics tools of any kind."
+                    "content": "When you fill out our contact form, we receive: your name, email address, phone number (if you choose to share it), business name (optional), the service you're interested in, and your message. That's it. You can also write to us directly at hello@budapestlabs.com. We don't use cookies, tracking scripts, or analytics tools of any kind."
                 },
                 "basis": {
                     "title": "Why we're allowed to use it",
@@ -316,7 +193,7 @@
                 },
                 "purpose": {
                     "title": "What we do with it",
-                    "content": "We use your contact details only to get back to you, put together a quote, and build your website. We will never sell, rent, or share your information with anyone for marketing or any unrelated purpose."
+                    "content": "We use your contact details only to get back to you, put together a proposal, and deliver your project. We will never sell, rent, or share your information with anyone for marketing or any unrelated purpose."
                 },
                 "storage": {
                     "title": "How we keep it safe",
@@ -334,7 +211,7 @@
         },
         "terms": {
             "title": "Terms of Service",
-            "lastUpdated": "Last updated: July 10, 2026",
+            "lastUpdated": "Last updated: October 31, 2026",
             "intro": "These are the terms that apply when you work with Budapest Labs. We've kept them straightforward. No surprises.",
             "sections": {
                 "provider": {
@@ -343,39 +220,39 @@
                 },
                 "scope": {
                     "title": "What we do",
-                    "content": "We design and build websites for individuals and businesses of all sizes, from portfolios and brand pages to webshops and booking platforms. Depending on your plan, this can include: custom design and development, mobile-friendly layouts, hosting and deployment, domain and email setup, multilingual support, booking systems, online payments, analytics, and more. If you need something extra, we'll discuss it and agree on it together. The exact scope of your project is based on the plan you choose and anything else we agree on in writing."
+                    "content": "We design, build, and operate custom software, AI integrations (for example connecting your systems to Claude), automations, websites, and webshops. We also run AI training and assessments. The exact scope of each project is set out in a written offer or contract before work begins."
                 },
                 "payment": {
                     "title": "How payment works",
-                    "content": "The information shown on our website is for guidance only. Your exact build fee, monthly fee, and expected delivery date are fixed in an individual contract before work begins, and the contract terms apply. The build fee is due once your website is finished and you have approved it. The monthly fee is the cost of development and covers operation for the contracted period; it starts on the day your site goes live, billed each month. You can also pay for 12 months upfront at go-live with a 12% discount; details are fixed in your contract. Domain registration and any paid extras are discussed and written into your contract. The service agreement runs for at least 12 months; after that it can be cancelled anytime with 30 days' notice. We accept bank transfer, Revolut, and cash. You will receive a proper invoice for every payment, issued in accordance with Hungarian law."
+                    "content": "We don't publish prices on our website. Every project is quoted individually. The scope, price, payment schedule, and any monthly operation fee are fixed in a written offer or contract before work begins, and the contract terms apply. Larger projects are split into phases, each with its own fixed price. Ongoing operation and maintenance are billed monthly, as agreed in the contract. We accept bank transfer, Revolut, and cash. You will receive a proper invoice for every payment, issued in accordance with Hungarian law."
                 },
                 "revisions": {
-                    "title": "Revisions",
-                    "content": "Every plan comes with one round of revisions at no extra charge. This covers adjustments to the design, layout, or text. It doesn't cover starting from scratch or adding features outside the original plan. If you'd like additional changes beyond that, we'll let you know the cost upfront. No surprises."
+                    "title": "Feedback and changes",
+                    "content": "Each phase includes the feedback rounds set out in your offer. If you'd like something outside the agreed scope, we tell you the cost before we do it. No surprises."
                 },
                 "delivery": {
-                    "title": "Delivery timelines",
-                    "content": "The timelines on our website (3-5 days, 5-7 days, 2-3 weeks) are estimates based on typical projects. How long your project takes depends on its complexity and how quickly you can send us your content. We always do our best to deliver on time, but we can't guarantee exact dates. The clock starts once we have everything we need from you (text, images, logo). If there's a delay on your side, that doesn't count against our timeline."
+                    "title": "Timelines",
+                    "content": "Timelines are agreed for each project and phase. They are estimates based on the agreed scope, and they depend on how quickly we receive the access, content, and feedback we need from you. Delays on your side don't count against our timeline."
                 },
                 "client": {
                     "title": "What we need from you",
-                    "content": "To build your website, we'll need your content: text, images, logo, and any branding materials. We also ask that you review the preview within about a week. If we don't hear back within 14 business days, we'll consider the project approved. Please also make sure the content you send us is yours to use: we trust that you have the rights to everything you provide."
+                    "content": "We need access to the systems we work with, the content and information the project needs, and timely feedback. Please make sure you have the right to share everything you provide. Where we process personal data on your behalf, we sign a separate data processing agreement."
                 },
                 "ownership": {
                     "title": "Who owns what",
-                    "content": "The website is yours. If you cancel after the minimum term, we hand over everything we built for you: design, content, and code. We may use general-purpose tools and code that aren't specific to your project. We'd also love to feature your site in our portfolio, but if you'd rather we didn't, just let us know."
+                    "content": "Once paid, what we build for you is yours: the code, the documentation, and all access. We may reuse general-purpose tools and code that aren't specific to your project. We'd love to mention your project in our references, but only with your permission."
                 },
                 "thirdparty": {
                     "title": "Third-party services",
-                    "content": "Your website may use third-party services (hosting, domain, email). We'll help set everything up, but these are independent services with their own terms."
+                    "content": "Projects may rely on third-party services such as Claude, hosting, invoicing, or webshop platforms. We help set them up, but they are independent services with their own terms and fees, usually on your own account."
                 },
                 "cancellation": {
                     "title": "Cancellation",
-                    "content": "You can walk away at any point before you approve the finished website, and you pay nothing. After the 12-month minimum term you can cancel with 30 days' notice; we hand over the complete website and help you move it wherever you like. On our side, if we don't receive your content within 30 days or can't reach you for over 30 days, we may need to close the project."
+                    "content": "You can stop a project between phases and pay only for the phases already completed. Monthly operation can be cancelled as set out in your contract, and we help you hand everything over. On our side, if we can't reach you for over 30 days, we may pause or close the project."
                 },
                 "warranty": {
-                    "title": "Lifetime warranty",
-                    "content": "We stand behind our work for life. If something we built stops working as intended, we'll fix it at no cost, no matter how much time has passed. This covers bugs and defects in the code we delivered.\n\nWhat's not covered: new features, design changes, content updates, or issues caused by modifications made by you or a third party. Third-party services (hosting providers, domain registrars, APIs) are outside our control.\n\nIf the underlying technology requires a significant update to keep your site functional, we'll let you know and offer a fair quote. That is separate from the warranty."
+                    "title": "Warranty",
+                    "content": "If something we built doesn't work as agreed, we fix it free of charge within the warranty period set in your contract. While we operate a system for a monthly fee, fixes are always included.\n\nNot covered: new features, changes in scope, or issues caused by changes made by you or a third party. Third-party services (AI providers, hosting, invoicing or webshop platforms) are outside our control."
                 },
                 "liability": {
                     "title": "Our responsibility",
@@ -404,25 +281,5 @@
                 }
             }
         }
-    },
-    "content": {
-        "title": "Quality you can see at first glance.",
-        "stackLead": "Under the hood, the same standard big brands rely on:",
-        "stack": [
-            "Production-grade platform, delivered instantly worldwide",
-            "Enterprise-level sign-in and account protection",
-            "Auto-scaling database with high availability and durability",
-            "Global secure hosting with built-in protection and 99.99% uptime",
-            "Email that reaches inboxes, not spam folders",
-            "Branded booking",
-            "Global payments with fraud protection",
-            "Managed operations to keep everything current and secure"
-        ],
-        "background1start": "Budapest Labs is led by a three-time founding engineer. He built a platform running on 3,000+ enterprise sites for companies like ",
-        "background1brands": "Nvidia, Datadog, and CrowdStrike",
-        "background1end": ".",
-        "background2": "",
-        "background3": "Alongside some of the best engineers he has worked with on healthcare and education software for US clients in recent years, the team draws on over a decade of international experience to deliver the highest-quality solutions at a fair price for businesses of any size.",
-        "motto": "We help businesses rebuild their online presence to modern standards."
     }
 }

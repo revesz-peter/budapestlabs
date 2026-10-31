@@ -9,6 +9,8 @@ import { cn } from "@/lib/utils";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter, usePathname, Link as LocaleLink } from "@/i18n/navigation";
 import { ThemeToggle } from "@/components/landing/theme-toggle";
+import { RollText } from "@/components/motion-primitives/roll-text";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 const locales = ["hu", "en", "de"] as const;
 
@@ -19,11 +21,14 @@ export function Navbar() {
   const pathname = usePathname();
   const [menuState, setMenuState] = React.useState(false);
   const [isScrolled, setIsScrolled] = React.useState(false);
+  // thin reading-progress line along the top edge
+  const { scrollYProgress } = useScroll();
+  const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
 
   const menuItems = [
-    { name: t("pricing"), href: "#pricing" },
-    { name: t("faq"), href: "#faq" },
-    { name: t("contact"), href: "#contact" },
+    { name: t("services"), href: "#services" },
+    { name: t("ai"), href: "#ai" },
+    { name: t("process"), href: "#process" },
   ];
 
   React.useEffect(() => {
@@ -61,6 +66,11 @@ export function Navbar() {
 
   return (
     <header>
+      <motion.div
+        aria-hidden="true"
+        style={{ scaleX: progress }}
+        className="bg-brand fixed inset-x-0 top-0 z-30 h-0.5 origin-left"
+      />
       <nav
         data-state={menuState && "active"}
         className="fixed z-20 w-full px-2"
@@ -69,7 +79,7 @@ export function Navbar() {
           className={cn(
             "mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12",
             isScrolled &&
-              "bg-background/50 max-w-4xl rounded-2xl border backdrop-blur-lg lg:px-5"
+              "glass max-w-5xl rounded-2xl lg:px-5"
           )}
         >
           <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
@@ -101,12 +111,12 @@ export function Navbar() {
             </div>
 
             <div className="absolute inset-0 m-auto hidden size-fit lg:block">
-              <ul className="flex gap-8 text-sm">
+              <ul className="flex gap-6 text-sm">
                 {menuItems.map((item, index) => (
                   <li key={index}>
                     <Link
                       href={item.href}
-                      className="text-muted-foreground hover:text-foreground block duration-150"
+                      className="text-muted-foreground hover:text-foreground after:bg-brand relative block duration-150 after:absolute after:inset-x-0 after:-bottom-1 after:h-px after:origin-right after:scale-x-0 after:transition-transform after:duration-500 hover:after:origin-left hover:after:scale-x-100"
                     >
                       <span>{item.name}</span>
                     </Link>
@@ -134,9 +144,9 @@ export function Navbar() {
               <div className="flex w-full flex-col space-y-3 sm:flex-row sm:items-center sm:gap-3 sm:space-y-0 md:w-fit">
                 {languageSwitcher}
                 <ThemeToggle />
-                <Button asChild size="sm">
+                <Button asChild size="sm" className="group/roll px-4">
                   <Link href="#contact" onClick={() => setMenuState(false)}>
-                    <span>{t("contact")}</span>
+                    <RollText>{t("contact")}</RollText>
                   </Link>
                 </Button>
               </div>

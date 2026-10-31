@@ -5,9 +5,9 @@ export const contentType = "image/png";
 export const alt = "Budapest Labs";
 
 const taglines: Record<string, string> = {
-  hu: "Prémium weboldal, napokon belül. 0 Ft belépő, havi 20 000 Ft-tól.",
-  en: "A premium website, within days. €0 up front, from €50/month.",
-  de: "Eine Premium-Website, in wenigen Tagen. 0 € Startkosten, ab 50 €/Monat.",
+  hu: "Kevesebb adminisztráció, több idő a lényegre.",
+  en: "Less admin, more time for what matters.",
+  de: "Weniger Verwaltung, mehr Zeit für das Wesentliche.",
 };
 
 export default async function OpenGraphImage({
@@ -28,15 +28,15 @@ export default async function OpenGraphImage({
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#000",
-          color: "#f7f7f7",
+          backgroundColor: "#f4efe6",
+          color: "#3b2c22",
           fontFamily: "sans-serif",
         }}
       >
         <div style={{ fontSize: 84, fontWeight: 700, letterSpacing: "-0.03em" }}>
           Budapest Labs
         </div>
-        <div style={{ marginTop: 28, fontSize: 34, color: "#a3a3a3" }}>
+        <div style={{ marginTop: 28, fontSize: 34, color: "#9a5a3c" }}>
           {tagline}
         </div>
       </div>

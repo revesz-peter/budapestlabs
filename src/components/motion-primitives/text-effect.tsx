@@ -82,7 +82,11 @@ export function TextEffect({
       variants={container}
       aria-label={children}
     >
-      {segments.map((segment, i) => (
+      {segments.map((segment, i) =>
+        // Plain spaces let the browser collapse them at line wraps
+        per === "word" && /^\s+$/.test(segment) ? (
+          " "
+        ) : (
         <motion.span
           key={`${per}-${i}-${segment}`}
           aria-hidden="true"
@@ -91,7 +95,8 @@ export function TextEffect({
         >
           {segment}
         </motion.span>
-      ))}
+        )
+      )}
     </MotionTag>
   );
 }
