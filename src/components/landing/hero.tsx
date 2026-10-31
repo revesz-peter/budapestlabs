@@ -242,7 +242,7 @@ export function Hero() {
   return (
     <section className="relative overflow-hidden">
       <motion.div aria-hidden="true" style={{ y: contourY }} className="pointer-events-none absolute inset-0">
-        <Contours sun className="absolute -top-56 -right-64 size-200 opacity-45 sm:-right-52 lg:opacity-90 lg:-top-64 lg:-right-56" />
+        <Contours sun className="absolute -top-72 -right-68 size-160 opacity-80 sm:-top-56 sm:-right-52 sm:size-200 sm:opacity-60 lg:-top-64 lg:-right-56 lg:opacity-90" />
         <Contours seed={2.4} rings={8} className="absolute -bottom-72 -left-64 size-160 opacity-60" />
       </motion.div>
       <div aria-hidden="true" className="from-background pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-linear-to-t to-transparent" />

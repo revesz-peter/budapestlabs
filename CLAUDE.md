@@ -47,7 +47,7 @@ Landing page for Budapest Labs: a software and AI studio for Hungarian businesse
 - **Type**: Inter only. Each h1/h2 can carry one `<em>` phrase in the message files (rendered with `t.rich(key, rich)` from `section-header.tsx`): upright, terracotta in h2, ochre highlighter in the hero h1.
 - **Glass**: `glass` utility (paper-like frosted panel) for the hero chat and diagram card. The scrolled navbar pill is `bg-background/50` + `backdrop-blur-lg` + border (the original look; keep it).
 - **Animations** (each a different technique, all respect reduced motion; ask before adding more):
-  - `motion-primitives/contours.tsx`: topographic contour lines that draw in and turn very slowly (hero with ochre "sun", AI panel, contact). Hero contours have scroll parallax.
+  - `motion-primitives/contours.tsx`: topographic contour lines that draw in and turn very slowly (hero with ochre "sun", AI panel, contact). Hero contours have scroll parallax. In-view is watched on the whole SVG (rings cropped by a section's overflow-hidden never "intersect" on their own, which left them undrawn on phones).
   - Hero headline: words rise from a mask; the `<em>` phrase gets an ochre highlighter sweep. Chat card unfolds (rotateX); a safety note card (`hero.chat.noteTitle` / `noteBody`) settles onto its edge.
   - `motion-primitives/roll-text.tsx`: text roll on hover for CTAs (needs `group/roll` on the button); CTA arrow disc turns -45°.
   - Section titles slide up from a mask (in-view is observed on the mask wrapper, not the clipped title) with a drawn eyebrow line.
