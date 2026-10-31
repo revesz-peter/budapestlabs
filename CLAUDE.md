@@ -45,7 +45,7 @@ Landing page for Budapest Labs: a software and AI studio for Hungarian businesse
 - **Palette** (earthy, approachable, premium): light mode is linen (`oklch(0.968 0.013 80)`) with espresso ink; dark mode is espresso night (`oklch(0.2 0.014 50)`). Buttons and text stay ink/linen.
 - **Earth tones**: `clay`, `ochre`, `olive`, `moss`, `sand`, `stone` tokens (deep muted versions in dark mode) for card tints, icon tiles, step cards. `brand` (terracotta) leads, `brand-2` (olive) supports: eyebrows, highlighter, flow lines, focus rings, CTA arrow discs.
 - **Type**: Inter only. Each h1/h2 can carry one `<em>` phrase in the message files (rendered with `t.rich(key, rich)` from `section-header.tsx`): upright, terracotta in h2, ochre highlighter in the hero h1.
-- **Glass**: `glass` utility (paper-like frosted panel) for navbar pill, hero chat, diagram card.
+- **Glass**: `glass` utility (paper-like frosted panel) for the hero chat and diagram card. The scrolled navbar pill is `bg-background/50` + `backdrop-blur-lg` + border (the original look; keep it).
 - **Animations** (each a different technique, all respect reduced motion; ask before adding more):
   - `motion-primitives/contours.tsx`: topographic contour lines that draw in and turn very slowly (hero with ochre "sun", AI panel, contact). Hero contours have scroll parallax.
   - Hero headline: words rise from a mask; the `<em>` phrase gets an ochre highlighter sweep. Chat card unfolds (rotateX); a safety note card (`hero.chat.noteTitle` / `noteBody`) settles onto its edge.
@@ -118,7 +118,7 @@ scripts/generate-legal-pdfs.mjs  # Regenerates public/legal PDFs from messages
 
 The landing page is built from **Tailark blocks** (tailark.com, shadcn-style marketing blocks) adapted to next-intl. Supporting primitives live in `src/components/logo.tsx`, `src/components/ui/`, and `src/components/motion-primitives/` (contours, roll-text, plus older text-effect, animated-group, infinite-slider, progressive-blur; they import from framer-motion, not motion/react).
 
-1. Navbar — glass pill on scroll, links (services, AI, process), language switcher, theme toggle, contact CTA
+1. Navbar — translucent pill on scroll (50% background, blur), links (services, AI, process), language switcher, theme toggle, contact CTA
 2. Hero — contour map, headline with highlighted phrase, CTA pair, trust ticks, live glass chat with safety note
 3. Services (`#services`) — earthy bento, 6 cards (ai, software, automation, web, training, audit); `serviceKeys` also feeds the contact form's interest select
 4. AI integration (`#ai`) — rounded sand panel: copy + example questions, flow-line diagram (systems → Claude → team), 3 promise cards

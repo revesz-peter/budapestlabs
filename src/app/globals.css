@@ -160,7 +160,7 @@
   }
 }
 
-/* Paper-like frosted panel: navbar, chat, promise cards, form */
+/* Paper-like frosted panel: hero chat, diagram card */
 @utility glass {
   background-color: var(--glass);
   border: 1px solid var(--glass-border);
