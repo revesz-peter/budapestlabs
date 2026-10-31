@@ -168,7 +168,7 @@ export function AiIntegration() {
               </div>
               <div className="flex justify-start">
                 <Button asChild size="lg" className="group/roll h-11 rounded-full py-1 pr-1 pl-5">
-                  <Link href="#contact">
+                  <Link href="https://cal.com/budapestlabs" target="_blank" rel="noopener noreferrer">
                     <RollText>{t("cta")}</RollText>
                     <span className="bg-brand text-brand-foreground ml-2 flex size-9 items-center justify-center rounded-full transition-transform duration-500 group-hover/roll:-rotate-45">
                       <ArrowRight className="size-4" />

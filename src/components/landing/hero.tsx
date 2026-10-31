@@ -39,6 +39,9 @@ type Phase = "typing" | "thinking" | "answer";
 function HeroTitle({ text }: { text: string }) {
   const match = text.match(/^(.*?)<em>(.*?)<\/em>(.*)$/);
   const [before, emphasis, after] = match ? match.slice(1) : [text, "", ""];
+  // punctuation right after the phrase stays glued to it, so it never wraps onto its own line
+  const punctuation = after.match(/^[.,!?:;]+/)?.[0] ?? "";
+  const rest = after.slice(punctuation.length);
 
   let index = 0;
   const words = (part: string): ReactNode[] =>
@@ -68,17 +71,20 @@ function HeroTitle({ text }: { text: string }) {
       <span aria-hidden="true">
         {words(before)}
         {emphasis && (
-          <em className="relative isolate inline-block whitespace-nowrap">
-            <motion.span
-              className="bg-ochre absolute inset-x-[-0.02em] bottom-[0.1em] -z-10 h-[0.42em] origin-left rounded-[0.12em] opacity-80 dark:opacity-60"
-              initial={{ scaleX: 0 }}
-              animate={{ scaleX: 1 }}
-              transition={{ delay: 0.9, duration: 0.9, ease }}
-            />
-            {words(emphasis)}
-          </em>
+          <span className="whitespace-nowrap">
+            <em className="relative isolate inline-block">
+              <motion.span
+                className="bg-ochre absolute inset-x-[-0.02em] bottom-[0.1em] -z-10 h-[0.42em] origin-left rounded-[0.12em] opacity-80 dark:opacity-60"
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: 1 }}
+                transition={{ delay: 0.9, duration: 0.9, ease }}
+              />
+              {words(emphasis)}
+            </em>
+            {words(punctuation)}
+          </span>
         )}
-        {words(after)}
+        {words(rest)}
       </span>
     </motion.h1>
   );
@@ -247,7 +253,7 @@ export function Hero() {
       </motion.div>
       <div aria-hidden="true" className="from-background pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-linear-to-t to-transparent" />
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-20 px-6 pt-32 pb-20 lg:grid-cols-[1.15fr_1fr] lg:pt-44 lg:pb-32">
+      <div className="relative mx-auto grid max-w-6xl items-center gap-20 px-6 pt-32 pb-20 *:min-w-0 lg:grid-cols-[1.15fr_1fr] lg:pt-44 lg:pb-32">
         <div>
           <motion.div {...fadeUp(0)}>
             <Link
