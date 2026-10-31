@@ -28,7 +28,6 @@ export function Navbar() {
   const menuItems = [
     { name: t("services"), href: "#services" },
     { name: t("ai"), href: "#ai" },
-    { name: t("process"), href: "#process" },
   ];
 
   React.useEffect(() => {

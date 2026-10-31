@@ -16,7 +16,8 @@ Landing page for Budapest Labs: a software and AI studio for Hungarian businesse
 
 - Next.js 16 (App Router, Turbopack), React 19, TypeScript
 - Tailwind CSS v4 (uses `@import "tailwindcss"`, `@theme inline`, `@custom-variant` — NOT v3 syntax)
-- ShadCN-style UI primitives in `src/components/ui/` (button, card, input, textarea, label, flow-line)
+- `components/landing/feature-card.tsx`: the pastel card shared by Szolgáltatások and the AI examples (pass `inButton` when it's inside a button).
+- ShadCN-style UI primitives in `src/components/ui/` (button, input, textarea, label, badge, flow-line)
 - Framer Motion for scroll animations
 - next-intl for i18n (HU/EN/DE; Hungarian is always the default at `/`, browser-language detection is off in `routing.ts`); pages are statically rendered via `generateStaticParams` + `setRequestLocale` — every page component must call `setRequestLocale(locale)` before using translations
 - next-themes for dark/light mode (class-based toggling on `<html>`)
@@ -51,12 +52,14 @@ Landing page for Budapest Labs: a software and AI studio for Hungarian businesse
   - Hero headline: words rise from a mask; the `<em>` phrase gets an ochre highlighter sweep. Chat card unfolds (rotateX); a safety note card (`hero.chat.noteTitle` / `noteBody`) settles onto its edge.
   - `motion-primitives/roll-text.tsx`: text roll on hover for CTAs (needs `group/roll` on the button); CTA arrow disc turns -45°.
   - Section titles slide up from a mask (in-view is observed on the mask wrapper, not the clipped title) with a drawn eyebrow line.
-  - Services: sand curtain wipes up to uncover each card; icon tile fills with terracotta on hover; vignettes animate on hover.
+  - Services: sand curtain wipes up to uncover each card; on hover (minimal: cards aren't clickable, so no lift and no colour change) icons stay still, and only a short accent line in the card's own colour grows under the title (never terracotta); the AI automation cards use the same `FeatureCard` but are clickable: hover = small lift + peek turn, click = flip; illustrations animate slightly on hover.
   - AI diagram: `ui/flow-line.tsx` lines draw in once, then a soft gradient pulse and a data dot travel along each (staggered); the hub ripples slowly. The dot stays at opacity 0 until its SMIL animation is started from JS after the line draws, otherwise it flashes at the SVG origin.
   - Process: plain 4-card grid, cards just rise in. Keep it simple: no progress lines, no sticky/scroll-linked stacking (both were removed on request).
   - Navbar: reading-progress line, underline-draw hover links.
-- **Hungarian copy**: abbreviation compounds take a hyphen (AI-asszisztens, AI-integráció, AI-ügynök, AI-oktatás, Claude-integráció, Claude-workshop). Short headings (card, step, promise titles, eyebrows) go through `keepHyphens()` from `lib/utils.ts` so they never wrap after "AI-"; headings use `text-balance`, paragraphs `text-pretty`. Speak to the real KKV concerns: data safety, mistakes (show sources, human approval), job fears, "start small with an assessment". Formal "Ön".
-- **No connected-tool lists**: integrations aren't live yet, so don't show tool logos/wordmarks or "connected to X" claims. Chat demo sources are generic ("A számlázójából").
+- **Hungarian copy**: abbreviation compounds take a hyphen (AI-asszisztens, AI-integráció, AI-ügynök, AI-oktatás, Claude-integráció, Claude-workshop). Short headings (card, step, promise titles, eyebrows) go through `keepHyphens()` from `lib/utils.ts` so they never wrap after "AI-"; headings use `text-balance`, paragraphs `text-pretty`. "Claude" takes no article in Hungarian copy ("összekötjük Claude-ot", "Claude-dal", not "a Claude-ot"). Speak to the real KKV concerns: data safety, mistakes (show sources, human approval), job fears, "start small with an assessment". Formal "Ön".
+- **Hover-only effects** use the `can-hover` variant (`@custom-variant` in `globals.css`: hover + fine pointer). Always give touch screens a visible fallback. When screenshot-testing touch with Playwright, take the screenshot via CDP `Page.captureScreenshot`: element screenshots reset emulated hover/pointer media.
+- **Voice agent** (`ai.automations.items.voice`): built on ElevenLabs Agents, named in the tools chips (ElevenLabs, Claude, Twilio, Google Naptár). Verified Oct 2026 in ElevenLabs docs: Hungarian supported by Flash v2.5 and Eleven v3 (not Multilingual v2); Claude selectable as the agent LLM; native Twilio + SIP trunking. Some LLMs are unavailable with EU data residency, so check before promising EU-only hosting for voice.
+- **Tool names**: the AI automation cards' `tools` badges name the tools each job runs on (user asked for this detail). Keep them to tools we can actually deliver; the hero has no scrolling tool strip. Chat demo sources stay generic ("A számlázójából").
 - **Hero**: contour-map backdrop, audience badge, "AI, ami ismeri a cégét." headline + CTAs + 3 trust ticks left, live-typing glass chat (cycles `hero.chat.items`) with safety note right. The old particle video lives in `hero-video.tsx`, currently unused: keep it, don't delete.
 - **Animated shader backgrounds**: 16 WebGL/CSS components live in the separate templates repo at `labs/templates/shaders/`. Copy into client projects as needed. See `templates/pipeline/CUSTOMIZATION.md` in that repo.
 - Framer Motion animations use `whileInView` with `once: true`
@@ -74,7 +77,7 @@ Landing page for Budapest Labs: a software and AI studio for Hungarian businesse
 **Quote-based, no prices on the page.** Every project gets an individual quote after a free assessment, with a fixed price per phase in writing. Ongoing operation is a monthly fee agreed in the contract. Never add price figures, packages, or "from X Ft" to the page, metadata, OG image, or JSON-LD.
 
 The landing page sells on these pillars, in order:
-1. **AI connected to your business** — Claude answering from the company's own systems (hero + AI section)
+1. **AI that does the work** — Claude automating concrete jobs (documents, inbox, customer service, phone, leads, content, reports), not just a chat over company data. Research (Oct 2026): business AI use is ~77% automation (Anthropic Economic Index); SMBs mostly use it for content, customer communication and admin; "ask your data" is one capability, not the pitch
 2. **One team, idea to operation** — software, automation, websites, training (services section)
 3. **Safe by default** — read-only access, data stays in their systems and the EU, DPA, revocable access
 4. **No surprises** — free assessment, written plan, fixed price per phase, weekly results, documentation, monthly operation
@@ -99,7 +102,7 @@ src/
 │   └── globals.css              # Tailwind v4 config, theme variables
 ├── components/
 │   ├── landing/              # navbar, hero, hero-video (unused), services, ai-integration, process, contact, footer, section-header, theme-toggle
-│   └── ui/                   # button, card, input, textarea, label, flow-line
+│   └── ui/                   # button, input, textarea, label, badge, flow-line
 ├── i18n/
 │   ├── routing.ts            # Locale config (hu, en, de)
 │   ├── request.ts            # Server request config
@@ -116,13 +119,13 @@ scripts/generate-legal-pdfs.mjs  # Regenerates public/legal PDFs from messages
 
 ## Section order on page
 
-The landing page is built from **Tailark blocks** (tailark.com, shadcn-style marketing blocks) adapted to next-intl. Supporting primitives live in `src/components/logo.tsx`, `src/components/ui/`, and `src/components/motion-primitives/` (contours, roll-text, plus older text-effect, animated-group, infinite-slider, progressive-blur; they import from framer-motion, not motion/react).
+The landing page is built from **Tailark blocks** (tailark.com, shadcn-style marketing blocks) adapted to next-intl. Supporting primitives live in `src/components/logo.tsx`, `src/components/ui/`, and `src/components/motion-primitives/` (contours, roll-text; they import from framer-motion, not motion/react).
 
 1. Navbar — translucent pill on scroll (50% background, blur), links (services, AI, process), language switcher, theme toggle, contact CTA
 2. Hero — contour map, headline with highlighted phrase, CTA pair, trust ticks, live glass chat with safety note
 3. Services (`#services`) — earthy bento, 6 cards (ai, software, automation, web, training, audit); `serviceKeys` also feeds the contact form's interest select
-4. AI integration (`#ai`) — rounded sand panel: copy + example questions, flow-line diagram (systems → Claude → team), 3 promise cards
-5. Process (`#process`) — 4 step cards
+4. AI integration (`#ai`) — rounded sand panel: "Claude dolgozik a háttérben." header + Cal.com demo CTA, flow-line diagram (invoices/email/phone/webshop → Claude → done work), then `ai-automations.tsx` ("Amit levesz a válláról"): 8 separate flip cards in a 1/2/4-column grid (`ai.automations.items`: invoices, chase, inbox, reports, support, voice [Új], leads, content; each has title, `short`, `example`, 4 `tools`). Picked Oct 2026 to mirror Anthropic's Claude for Small Business workflows (Invoice Chaser, Morning Brief, Lead Triager, Customer Service Triage, Content Strategist) and connectors that exist (HubSpot, Canva, Google Workspace, Microsoft 365, Slack, Stripe, Shopify); Billingo has a public API with NAV reporting and a community MCP server, Számlázz.hu only a paid per-document API. Front = the shared `FeatureCard` (same component as Szolgáltatások: single pastel tint, icon tile, accent line, optional wordless illustration top-right; badge sits next to the title); each job has its own small span-only illustration in `ai-automations.tsx`. Back = espresso with the example and tool badges. Flips on click/tap/Enter (`aria-pressed`); a mouse hover only lifts the card and turns it -10° as a hint (`can-hover`), it does not flip. Card heights h-80/lg:h-[22rem] are measured against the longest German example: re-measure all 3 locales if copy grows. User preferred this over tabs, explorer and scroll-spy layouts. No promise cards or safety line.
+5. Process (`#process`) — 4 step cards. Currently hidden (commented out in `page.tsx`, removed from navbar and footer); keep the component
 6. Contact — form (interest select) + Cal.com link in subtitle
 7. Footer — nav anchors + legal links
 

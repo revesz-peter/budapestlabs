@@ -15,6 +15,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Contours } from "@/components/motion-primitives/contours";
 import { RollText } from "@/components/motion-primitives/roll-text";
+import { keepHyphens } from "@/lib/utils";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -66,7 +67,7 @@ function HeroTitle({ text }: { text: string }) {
       initial="hidden"
       animate="visible"
       aria-label={`${before}${emphasis}${after}`}
-      className="text-balance text-[2.75rem] leading-[1.04] font-medium tracking-[-0.035em] sm:text-6xl xl:text-7xl"
+      className="text-balance text-[1.9rem] leading-[1.08] font-medium tracking-[-0.03em] sm:text-5xl"
     >
       <span aria-hidden="true">
         {words(before)}
@@ -253,7 +254,7 @@ export function Hero() {
       </motion.div>
       <div aria-hidden="true" className="from-background pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-linear-to-t to-transparent" />
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-20 px-6 pt-32 pb-20 *:min-w-0 lg:grid-cols-[1.15fr_1fr] lg:pt-44 lg:pb-32">
+      <div className="relative mx-auto grid max-w-6xl items-center gap-20 px-6 pt-32 pb-20 *:min-w-0 lg:grid-cols-[1.3fr_1fr] lg:gap-16 lg:pt-44 lg:pb-32">
         <div>
           <motion.div {...fadeUp(0)}>
             <Link
@@ -276,7 +277,7 @@ export function Hero() {
             {...fadeUp(0.6)}
             className="text-muted-foreground mt-7 max-w-xl text-base leading-relaxed text-pretty whitespace-pre-line md:text-lg"
           >
-            {t("subtitle")}
+            {keepHyphens(t("subtitle"))}
           </motion.p>
 
           <motion.div

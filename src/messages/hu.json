@@ -7,8 +7,8 @@
     },
     "hero": {
         "badge": "Kis- és középvállalkozásoknak",
-        "title": "AI, ami <em>ismeri a cégét</em>.",
-        "subtitle": "Összekötjük a Claude-ot a cége rendszereivel, így a csapata egyszerű kérdésekre kap pontos választ a saját adataiból.\nKevesebb adminisztráció, több idő a lényegre.",
+        "title": "Szoftver­megoldások és AI, ami <em>ismeri a cégét</em>.",
+        "subtitle": "Egyedi szoftvereket tervezünk és építünk, automatizáljuk a folyamatokat, és összekötjük Claude-ot a rendszereivel.\nKevesebb adminisztráció, több idő a lényegre.",
         "cta": "Írjon nekünk",
         "demo": "Időpontot foglalok",
         "trust": [
@@ -48,8 +48,8 @@
         "subtitle": "Egy jól körülhatárolható feladattal kezdünk, ott, ahol a legtöbb időt nyeri vele. A legtöbb projekt két-három területet ötvöz.",
         "items": {
             "ai": {
-                "title": "Céges AI-asszisztens",
-                "description": "A Claude a cége saját adataiból válaszol: számlák, rendelések, ügyfelek. Kérdezni annyi, mint egy kollégától."
+                "title": "AI-integráció Claude-dal",
+                "description": "Claude átveszi az ismétlődő munkát: számlákat dolgoz fel, leveleket rendez, ügyfeleknek válaszol, és ha kell, a telefont is felveszi."
             },
             "software": {
                 "title": "Egyedi üzleti szoftver",
@@ -75,38 +75,114 @@
     },
     "ai": {
         "label": "AI-integráció",
-        "title": "Kérdezze meg a <em>saját cégét</em>.",
-        "subtitle": "A Claude-ot összekötjük a már használt rendszereivel. A csapata hétköznapi nyelven kérdez, és másodpercek alatt választ kap a cég saját adataiból, táblázatokban keresgélés nélkül.",
-        "examplesLabel": "Ilyen kérdésekre válaszol",
-        "examples": [
-            "Kik tartoznak nekünk 30 napnál régebben?",
-            "Mennyi áfát fizetünk ebben a negyedévben?",
-            "Mit vesznek a vevők gyakran együtt?",
-            "Kik nem rendeltek tőlünk három hónapja?"
-        ],
-        "promises": {
-            "readonly": {
-                "title": "Csak olvas, nem ír",
-                "body": "Az asszisztens alapból csak olvassa az adatokat. Ami módosítana, például számlát állítana ki, csak külön kérésre készül, és mindig emberi jóváhagyást kér."
-            },
-            "data": {
-                "title": "Az adat a cégnél marad",
-                "body": "Az adatok a saját rendszereiben maradnak, csak a válaszhoz szükséges részt kérjük le. Adatfeldolgozási szerződést kötünk, EU-s tárhelyen dolgozunk."
-            },
-            "control": {
-                "title": "Önnél a kulcs",
-                "body": "A hozzáférés a cég saját fiókján keresztül működik, és bármikor visszavonható."
+        "title": "Claude dolgozik <em>a háttérben</em>.",
+        "subtitle": "Claude-ot oda kötjük be, ahol a legtöbb kézi munka van: a beérkező számláktól az ügyfélkérdéseken át a telefonig.",
+        "cta": "Bemutatót kérek",
+        "automations": {
+            "label": "Pár példa arra, mit vehet le a válláról",
+            "subtitle": "Kattintson egy kártyára, és megnézheti, hogyan működik a gyakorlatban.",
+            "flipHint": "Példa",
+            "exampleLabel": "Például",
+            "newBadge": "Új",
+            "items": {
+                "invoices": {
+                    "title": "Számlák és dokumentumok",
+                    "short": "Kiolvassa és rögzíti a beérkező számlák adatait.",
+                    "example": "Hónap végén Claude összegyűjti a beérkezett számlákat, ellenőrzi az adataikat, és rendezett csomagban küldi tovább a könyvelőnek.",
+                    "tools": [
+                        "Claude",
+                        "Gmail",
+                        "Google Drive",
+                        "Billingo"
+                    ]
+                },
+                "chase": {
+                    "title": "Kintlévőségek",
+                    "short": "Udvariasan emlékezteti a késve fizetőket.",
+                    "example": "Három számla lejárt a héten. Claude megírja a személyre szabott emlékeztetőket, Ön jóváhagyja, és már mennek is.",
+                    "tools": [
+                        "Claude",
+                        "Billingo",
+                        "Gmail",
+                        "Outlook"
+                    ]
+                },
+                "inbox": {
+                    "title": "Levelezés rendezése",
+                    "short": "Szétválogatja a leveleket, és megírja a válaszokat.",
+                    "example": "Egy ügyfél a szállítási határidőről kérdez. Claude a megfelelő kollégához teszi a levelet, a válasz piszkozatával együtt.",
+                    "tools": [
+                        "Claude",
+                        "Gmail",
+                        "Outlook",
+                        "Slack"
+                    ]
+                },
+                "reports": {
+                    "title": "Reggeli összefoglaló",
+                    "short": "Minden reggel a legfontosabb számok és teendők.",
+                    "example": "Reggel 8-kor rövid összefoglaló várja: tegnapi bevétel, lejárt számlák és a nap teendői. Kérdezni is lehet tőle.",
+                    "tools": [
+                        "Claude",
+                        "Google Sheets",
+                        "Billingo",
+                        "Slack"
+                    ]
+                },
+                "support": {
+                    "title": "Ügyfélszolgálati asszisztens",
+                    "short": "Azonnal válaszol az ügyfelek kérdéseire, a webshop adataiból is.",
+                    "example": "Este 10-kor egy vásárló megkérdezi, hol tart a rendelése. Claude megnézi a webshopban, és azonnal válaszol: holnap érkezik.",
+                    "tools": [
+                        "Claude",
+                        "Weboldal-chat",
+                        "Shopify",
+                        "WhatsApp"
+                    ]
+                },
+                "voice": {
+                    "title": "Telefonos asszisztens",
+                    "short": "Felveszi a telefont, és időpontot foglal, éjjel-nappal.",
+                    "example": "Ebédszünetben, amikor senki nem ér rá, hívás érkezik. Az asszisztens magyarul felveszi, egyeztet egy időpontot, és Ön e-mailben megkapja az összefoglalót.",
+                    "tools": [
+                        "ElevenLabs",
+                        "Claude",
+                        "Twilio",
+                        "Google Naptár"
+                    ]
+                },
+                "leads": {
+                    "title": "Érdeklődők és árajánlatok",
+                    "short": "Percek alatt válaszol, és elkészíti az ajánlatot.",
+                    "example": "Érdeklődés jön egy nagyobb rendelésre. Pár percen belül kész az ajánlat piszkozata az árlistája alapján, Ön csak átnézi.",
+                    "tools": [
+                        "Claude",
+                        "HubSpot",
+                        "Gmail",
+                        "Google Naptár"
+                    ]
+                },
+                "content": {
+                    "title": "Tartalom a cége hangján",
+                    "short": "Termékleírások és posztok, három nyelven.",
+                    "example": "Feltölt 50 új terméket. A leírások egy délután alatt elkészülnek három nyelven, a cége stílusában.",
+                    "tools": [
+                        "Claude",
+                        "Canva",
+                        "Shopify",
+                        "Google Drive"
+                    ]
+                }
             }
         },
         "diagram": {
-            "invoicing": "Számlázó",
+            "invoices": "Számlák",
+            "email": "E-mail",
+            "phone": "Telefon",
             "webshop": "Webshop",
-            "crm": "Ügyfelek",
-            "documents": "Dokumentumok",
             "hub": "Claude",
-            "team": "A csapata"
-        },
-        "cta": "Bemutatót kérek"
+            "team": "Kész munka"
+        }
     },
     "process": {
         "label": "Így dolgozunk",
@@ -220,7 +296,7 @@
                 },
                 "scope": {
                     "title": "Mit csinálunk",
-                    "content": "Egyedi szoftvereket, AI-integrációkat (például a rendszerei összekötését a Claude-dal), automatizálásokat, weboldalakat és webshopokat tervezünk, építünk és üzemeltetünk. AI-oktatást és -felmérést is tartunk. Az egyes projektek pontos tartalmát a munka megkezdése előtt írásos ajánlatban vagy szerződésben rögzítjük."
+                    "content": "Egyedi szoftvereket, AI-integrációkat (például a rendszerei összekötését Claude-dal), automatizálásokat, weboldalakat és webshopokat tervezünk, építünk és üzemeltetünk. AI-oktatást és -felmérést is tartunk. Az egyes projektek pontos tartalmát a munka megkezdése előtt írásos ajánlatban vagy szerződésben rögzítjük."
                 },
                 "payment": {
                     "title": "Hogyan működik a fizetés",
@@ -244,7 +320,7 @@
                 },
                 "thirdparty": {
                     "title": "Harmadik féltől származó szolgáltatások",
-                    "content": "A projektek harmadik fél szolgáltatásaira is épülhetnek, például a Claude-ra, tárhelyre, számlázó- vagy webshopplatformra. Segítünk ezek beállításában, de független szolgáltatások saját feltételekkel és díjakkal, általában az Ön saját fiókján."
+                    "content": "A projektek harmadik fél szolgáltatásaira is épülhetnek, például Claude-ra, tárhelyre, számlázó- vagy webshopplatformra. Segítünk ezek beállításában, de független szolgáltatások saját feltételekkel és díjakkal, általában az Ön saját fiókján."
                 },
                 "cancellation": {
                     "title": "Lemondás",

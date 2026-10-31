@@ -7,8 +7,8 @@
     },
     "hero": {
         "badge": "Für kleine und mittlere Unternehmen",
-        "title": "KI, die <em>Ihre Firma</em> kennt.",
-        "subtitle": "Wir verbinden Claude mit Ihren Firmensystemen, damit Ihr Team auf einfache Fragen genaue Antworten aus den eigenen Daten bekommt.\nWeniger Verwaltung, mehr Zeit für das Wesentliche.",
+        "title": "Software und KI, die <em>Ihre Firma</em> kennt.",
+        "subtitle": "Wir planen und bauen individuelle Software, automatisieren Ihre Abläufe und verbinden Claude mit Ihren Systemen.\nWeniger Verwaltung, mehr Zeit für das Wesentliche.",
         "cta": "Kontakt aufnehmen",
         "demo": "Termin buchen",
         "trust": [
@@ -48,8 +48,8 @@
         "subtitle": "Wir beginnen mit einer klar umrissenen Aufgabe, dort, wo Sie am meisten Zeit gewinnen. Die meisten Projekte verbinden zwei oder drei Bereiche.",
         "items": {
             "ai": {
-                "title": "KI-Assistent fürs Unternehmen",
-                "description": "Claude antwortet aus Ihren eigenen Daten: Rechnungen, Bestellungen, Kunden. Fragen ist so einfach wie bei einem Kollegen."
+                "title": "KI-Integration mit Claude",
+                "description": "Claude übernimmt die wiederkehrende Arbeit: verarbeitet Rechnungen, sortiert E-Mails, antwortet Kunden und nimmt bei Bedarf auch das Telefon ab."
             },
             "software": {
                 "title": "Individuelle Unternehmenssoftware",
@@ -75,38 +75,114 @@
     },
     "ai": {
         "label": "KI-Integration",
-        "title": "Fragen Sie <em>Ihr Unternehmen</em>.",
-        "subtitle": "Wir verbinden Claude mit den Systemen, die Sie schon nutzen. Ihr Team fragt in normaler Sprache und bekommt in Sekunden Antworten aus Ihren eigenen Daten, ohne in Tabellen zu suchen.",
-        "examplesLabel": "Fragen, die er beantwortet",
-        "examples": [
-            "Wer schuldet uns seit über 30 Tagen Geld?",
-            "Wie viel Umsatzsteuer zahlen wir dieses Quartal?",
-            "Was kaufen Kunden oft zusammen?",
-            "Wer hat seit drei Monaten nicht bestellt?"
-        ],
-        "promises": {
-            "readonly": {
-                "title": "Liest nur, schreibt nie",
-                "body": "Standardmäßig liest der Assistent Ihre Daten nur. Alles, was etwas ändern würde, etwa eine Rechnung ausstellen, bauen wir nur auf Wunsch, und es fragt immer zuerst einen Menschen."
-            },
-            "data": {
-                "title": "Ihre Daten bleiben bei Ihnen",
-                "body": "Sie bleiben in Ihren eigenen Systemen, wir holen nur, was eine Antwort braucht. Wir schließen einen Auftragsverarbeitungsvertrag und hosten in der EU."
-            },
-            "control": {
-                "title": "Sie behalten die Schlüssel",
-                "body": "Der Zugang läuft über Ihr eigenes Firmenkonto und lässt sich jederzeit widerrufen."
+        "title": "Claude arbeitet <em>im Hintergrund</em>.",
+        "subtitle": "Wir setzen Claude dort ein, wo sich Handarbeit stapelt: von eingehenden Rechnungen über Kundenfragen bis zum Telefon.",
+        "cta": "Demo anfragen",
+        "automations": {
+            "label": "Ein paar Beispiele, was sie Ihnen abnehmen kann",
+            "subtitle": "Klicken Sie auf eine Karte, um zu sehen, wie es in der Praxis funktioniert.",
+            "flipHint": "Beispiel",
+            "exampleLabel": "Zum Beispiel",
+            "newBadge": "Neu",
+            "items": {
+                "invoices": {
+                    "title": "Rechnungen und Dokumente",
+                    "short": "Liest eingehende Rechnungen und bereitet sie zur Buchung vor.",
+                    "example": "Am Monatsende sammelt Claude die eingegangenen Rechnungen, prüft die Angaben und schickt sie Ihrem Steuerberater als ordentliches Paket.",
+                    "tools": [
+                        "Claude",
+                        "Gmail",
+                        "Google Drive",
+                        "Billingo"
+                    ]
+                },
+                "chase": {
+                    "title": "Offene Rechnungen",
+                    "short": "Erinnert säumige Zahler höflich.",
+                    "example": "Diese Woche sind drei Rechnungen überfällig geworden. Claude entwirft für jede eine persönliche Erinnerung, Sie geben frei, und sie gehen raus.",
+                    "tools": [
+                        "Claude",
+                        "Billingo",
+                        "Gmail",
+                        "Outlook"
+                    ]
+                },
+                "inbox": {
+                    "title": "Posteingang sortieren",
+                    "short": "Sortiert E-Mails und entwirft die Antworten.",
+                    "example": "Ein Kunde fragt nach der Lieferzeit. Claude leitet die E-Mail an die richtige Person weiter, mit einem Antwortentwurf.",
+                    "tools": [
+                        "Claude",
+                        "Gmail",
+                        "Outlook",
+                        "Slack"
+                    ]
+                },
+                "reports": {
+                    "title": "Morgenbericht",
+                    "short": "Die wichtigsten Zahlen und Aufgaben, jeden Morgen.",
+                    "example": "Um 8 Uhr wartet ein kurzer Bericht: Umsatz von gestern, überfällige Rechnungen und die Aufgaben des Tages. Sie können auch Fragen stellen.",
+                    "tools": [
+                        "Claude",
+                        "Google Sheets",
+                        "Billingo",
+                        "Slack"
+                    ]
+                },
+                "support": {
+                    "title": "Kundenservice-Assistent",
+                    "short": "Beantwortet Kundenfragen sofort, auch mit Daten aus Ihrem Webshop.",
+                    "example": "Um 22 Uhr fragt ein Kunde, wo seine Bestellung ist. Claude schaut im Webshop nach und antwortet sofort: Sie kommt morgen.",
+                    "tools": [
+                        "Claude",
+                        "Website-Chat",
+                        "Shopify",
+                        "WhatsApp"
+                    ]
+                },
+                "voice": {
+                    "title": "Telefonassistent",
+                    "short": "Nimmt Anrufe an und bucht Termine, rund um die Uhr.",
+                    "example": "Mittags ruft jemand an, und niemand hat Zeit. Der Assistent nimmt auf Deutsch ab, vereinbart einen Termin und schickt Ihnen eine Zusammenfassung per E-Mail.",
+                    "tools": [
+                        "ElevenLabs",
+                        "Claude",
+                        "Twilio",
+                        "Google Kalender"
+                    ]
+                },
+                "leads": {
+                    "title": "Anfragen und Angebote",
+                    "short": "Antwortet in Minuten und entwirft das Angebot.",
+                    "example": "Eine Anfrage für eine größere Bestellung kommt rein. Nach wenigen Minuten liegt ein Angebotsentwurf aus Ihrer Preisliste bereit.",
+                    "tools": [
+                        "Claude",
+                        "HubSpot",
+                        "Gmail",
+                        "Google Kalender"
+                    ]
+                },
+                "content": {
+                    "title": "Inhalte in Ihrem Ton",
+                    "short": "Produkttexte und Beiträge in drei Sprachen.",
+                    "example": "Sie stellen 50 neue Produkte ein. Die Beschreibungen sind an einem Nachmittag fertig, in drei Sprachen und in Ihrem Stil.",
+                    "tools": [
+                        "Claude",
+                        "Canva",
+                        "Shopify",
+                        "Google Drive"
+                    ]
+                }
             }
         },
         "diagram": {
-            "invoicing": "Rechnungen",
+            "invoices": "Rechnungen",
+            "email": "E-Mail",
+            "phone": "Telefon",
             "webshop": "Webshop",
-            "crm": "Kunden",
-            "documents": "Dokumente",
             "hub": "Claude",
-            "team": "Ihr Team"
-        },
-        "cta": "Demo anfragen"
+            "team": "Erledigt"
+        }
     },
     "process": {
         "label": "So arbeiten wir",

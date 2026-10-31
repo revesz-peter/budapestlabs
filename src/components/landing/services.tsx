@@ -2,7 +2,6 @@
 
 import type { JSX } from "react";
 import { useTranslations } from "next-intl";
-import { motion } from "framer-motion";
 import {
   Blocks,
   Check,
@@ -12,7 +11,8 @@ import {
   ScanSearch,
   Workflow,
 } from "lucide-react";
-import { cn, keepHyphens } from "@/lib/utils";
+import { cn } from "@/lib/utils";
+import { FeatureCard } from "@/components/landing/feature-card";
 import { SectionHeader, rich } from "@/components/landing/section-header";
 
 export const serviceKeys = [
@@ -24,16 +24,15 @@ export const serviceKeys = [
   "audit",
 ] as const;
 
+// Each card keeps its own pastel; the accent line under the title uses the same colour at full strength.
 const cards = {
-  ai: { icon: MessagesSquare, tint: "bg-clay/55", span: "lg:col-span-2" },
-  software: { icon: Blocks, tint: "bg-sand", span: "" },
-  automation: { icon: Workflow, tint: "bg-olive/55", span: "" },
-  web: { icon: Globe, tint: "bg-stone/60", span: "" },
-  training: { icon: GraduationCap, tint: "bg-ochre/50", span: "" },
-  audit: { icon: ScanSearch, tint: "bg-moss/45", span: "lg:col-span-2" },
+  ai: { icon: MessagesSquare, tint: "bg-clay/55", fill: "bg-clay", span: "lg:col-span-2" },
+  software: { icon: Blocks, tint: "bg-sand", fill: "bg-stone", span: "" },
+  automation: { icon: Workflow, tint: "bg-olive/55", fill: "bg-olive", span: "" },
+  web: { icon: Globe, tint: "bg-stone/60", fill: "bg-stone", span: "" },
+  training: { icon: GraduationCap, tint: "bg-ochre/50", fill: "bg-ochre", span: "" },
+  audit: { icon: ScanSearch, tint: "bg-moss/45", fill: "bg-moss", span: "lg:col-span-2" },
 } as const;
-
-const ease = [0.22, 1, 0.36, 1] as const;
 
 // Wordless mini illustrations for the two wide cards
 function ChatVignette() {
@@ -92,46 +91,21 @@ export function Services() {
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {serviceKeys.map((key, i) => {
-            const { icon: Icon, tint, span } = cards[key];
+            const { icon: Icon, tint, fill, span } = cards[key];
             const Vignette = vignettes[key];
             return (
-              <div
+              <FeatureCard
                 key={key}
-                className={cn(
-                  "group hover:border-brand/30 relative flex min-h-60 flex-col overflow-hidden rounded-3xl border p-7 transition-colors duration-500",
-                  tint,
-                  span
-                )}
-              >
-                {/* curtain that wipes up to uncover the card */}
-                <motion.div
-                  aria-hidden="true"
-                  className="bg-background absolute inset-0 z-20 origin-top"
-                  initial={{ scaleY: 1 }}
-                  whileInView={{ scaleY: 0 }}
-                  viewport={{ once: true, margin: "-60px" }}
-                  transition={{ duration: 0.9, delay: (i % 3) * 0.1, ease }}
-                />
-
-                <span className="bg-background/80 relative flex size-12 items-center justify-center overflow-hidden rounded-2xl">
-                  <span className="bg-brand absolute inset-0 scale-0 rounded-full transition-transform duration-500 ease-out group-hover:scale-150" />
-                  <Icon
-                    className="text-foreground group-hover:text-brand-foreground relative size-5 transition-colors duration-500"
-                    strokeWidth={1.6}
-                  />
-                </span>
-                {Vignette && (
-                  <div aria-hidden="true" className="absolute top-7 right-7 hidden lg:block">
-                    <Vignette />
-                  </div>
-                )}
-                <div className="relative mt-auto space-y-2 pt-10">
-                  <h3 className="text-lg font-medium text-balance">{keepHyphens(t(`items.${key}.title`))}</h3>
-                  <p className="text-foreground/70 max-w-md text-sm leading-relaxed text-pretty">
-                    {t(`items.${key}.description`)}
-                  </p>
-                </div>
-              </div>
+                icon={Icon}
+                tint={tint}
+                accent={fill}
+                title={t(`items.${key}.title`)}
+                description={t(`items.${key}.description`)}
+                illustration={Vignette && <Vignette />}
+                illustrationClassName="hidden lg:block"
+                className={cn("min-h-60", span)}
+                revealIndex={i}
+              />
             );
           })}
         </div>

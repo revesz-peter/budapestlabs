@@ -6,36 +6,28 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
-  Contact,
-  Database,
-  FileText,
-  KeyRound,
+  ClipboardCheck,
+  Mail,
+  Phone,
   Receipt,
-  ShieldCheck,
   ShoppingBag,
   Sparkles,
-  Users,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FlowLine } from "@/components/ui/flow-line";
 import { Contours } from "@/components/motion-primitives/contours";
 import { RollText } from "@/components/motion-primitives/roll-text";
 import { SectionHeader, rich } from "@/components/landing/section-header";
-import { cn, keepHyphens } from "@/lib/utils";
+import { AiAutomations } from "@/components/landing/ai-automations";
+import { cn } from "@/lib/utils";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-const promises = [
-  { key: "readonly", icon: ShieldCheck, tint: "bg-olive" },
-  { key: "data", icon: Database, tint: "bg-clay" },
-  { key: "control", icon: KeyRound, tint: "bg-ochre" },
-] as const;
-
 const sources = [
-  { key: "invoicing", icon: Receipt, tint: "bg-clay" },
-  { key: "webshop", icon: ShoppingBag, tint: "bg-ochre" },
-  { key: "crm", icon: Contact, tint: "bg-olive" },
-  { key: "documents", icon: FileText, tint: "bg-stone" },
+  { key: "invoices", icon: Receipt, tint: "bg-clay" },
+  { key: "email", icon: Mail, tint: "bg-ochre" },
+  { key: "phone", icon: Phone, tint: "bg-olive" },
+  { key: "webshop", icon: ShoppingBag, tint: "bg-stone" },
 ] as const;
 
 function ConnectionDiagram() {
@@ -110,7 +102,7 @@ function ConnectionDiagram() {
         className="bg-background/85 relative z-10 flex max-w-20 flex-col items-center gap-1.5 rounded-xl border px-2 py-2.5 text-center text-xs text-balance sm:max-w-none sm:gap-2 sm:rounded-2xl sm:px-4 sm:py-3 sm:text-sm sm:whitespace-nowrap"
       >
         <span className="bg-moss flex size-8 items-center justify-center rounded-full">
-          <Users className="size-4" strokeWidth={1.75} />
+          <ClipboardCheck className="size-4" strokeWidth={1.75} />
         </span>
         {t("team")}
       </motion.div>
@@ -132,14 +124,13 @@ function ConnectionDiagram() {
 
 export function AiIntegration() {
   const t = useTranslations("ai");
-  const examples = t.raw("examples") as string[];
 
   return (
     <section id="ai" className="px-2 py-8 md:px-4 md:py-16">
-      <div className="bg-sand relative overflow-hidden rounded-[2.5rem] border py-16 md:rounded-[3rem] md:py-28">
+      <div className="bg-sand relative overflow-clip rounded-[2.5rem] border py-16 md:rounded-[3rem] md:py-28">
         <Contours seed={1.2} className="pointer-events-none absolute -top-40 -right-40 size-160 opacity-80" />
 
-        <div className="relative mx-auto max-w-5xl px-5 sm:px-6">
+        <div className="relative mx-auto max-w-6xl px-5 sm:px-6">
           <div className="grid items-center gap-10 *:min-w-0 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
             <SectionHeader
               align="start"
@@ -148,24 +139,6 @@ export function AiIntegration() {
               title={t.rich("title", rich)}
               subtitle={t("subtitle")}
             >
-              <div className="space-y-3 text-left">
-                <p className="text-muted-foreground text-sm">{t("examplesLabel")}</p>
-                <ul className="divide-foreground/10 divide-y border-y border-foreground/10 text-sm">
-                  {examples.map((example, i) => (
-                    <motion.li
-                      key={example}
-                      initial={{ opacity: 0, x: -10 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: 0.3 + i * 0.08, ease }}
-                      className="group/q flex items-center justify-between gap-3 py-2.5"
-                    >
-                      {example}
-                      <ArrowRight className="text-brand size-3.5 shrink-0 -translate-x-2 opacity-0 transition-all duration-300 group-hover/q:translate-x-0 group-hover/q:opacity-100" />
-                    </motion.li>
-                  ))}
-                </ul>
-              </div>
               <div className="flex justify-start">
                 <Button asChild size="lg" className="group/roll h-11 rounded-full py-1 pr-1 pl-5">
                   <Link href="https://cal.com/budapestlabs" target="_blank" rel="noopener noreferrer">
@@ -189,26 +162,10 @@ export function AiIntegration() {
             </motion.div>
           </div>
 
-          <div className="mt-12 grid gap-4 sm:grid-cols-3 md:mt-16">
-            {promises.map(({ key, icon: Icon, tint }, i) => (
-              <motion.div
-                key={key}
-                initial={{ opacity: 0, y: 30, rotate: i === 1 ? 0 : i === 0 ? -1.5 : 1.5 }}
-                whileInView={{ opacity: 1, y: 0, rotate: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.8, delay: i * 0.12, ease }}
-                className="bg-background/80 space-y-3 rounded-3xl border p-6"
-              >
-                <span className={cn("flex size-9 items-center justify-center rounded-xl", tint)}>
-                  <Icon className="size-4" strokeWidth={1.75} />
-                </span>
-                <h3 className="font-medium text-balance">{keepHyphens(t(`promises.${key}.title`))}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed text-pretty">
-                  {t(`promises.${key}.body`)}
-                </p>
-              </motion.div>
-            ))}
+          <div className="mt-14 md:mt-20">
+            <AiAutomations />
           </div>
+
         </div>
       </div>
     </section>

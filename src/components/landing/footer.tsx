@@ -31,7 +31,7 @@ export function Footer() {
                 {t("footer.navigation")}
               </p>
               <nav className="flex flex-col gap-2">
-                {(["services", "ai", "process"] as const).map((key) => (
+                {(["services", "ai"] as const).map((key) => (
                   <a
                     key={key}
                     href={`#${key}`}

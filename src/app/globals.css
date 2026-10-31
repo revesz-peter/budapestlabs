@@ -2,6 +2,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Devices with a real mouse/trackpad: hover-only reveals live behind this */
+@custom-variant can-hover {
+  @media (hover: hover) and (pointer: fine) {
+    @slot;
+  }
+}
+
 /* Light mode (default): linen and sand, espresso ink, earthy accents */
 :root {
   --radius: 0.875rem;

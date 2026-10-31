@@ -7,8 +7,8 @@
     },
     "hero": {
         "badge": "For small and mid-sized businesses",
-        "title": "AI that knows <em>your business</em>.",
-        "subtitle": "We connect Claude to your company's systems, so your team gets accurate answers from your own data just by asking.\nLess admin, more time for what matters.",
+        "title": "Software and AI that knows <em>your business</em>.",
+        "subtitle": "We design and build custom software, automate your processes, and connect Claude to your systems.\nLess admin, more time for what matters.",
         "cta": "Get in touch",
         "demo": "Book a call",
         "trust": [
@@ -48,8 +48,8 @@
         "subtitle": "We start with one well-defined task, where it saves you the most time. Most projects combine two or three of these.",
         "items": {
             "ai": {
-                "title": "Company AI assistant",
-                "description": "Claude answers from your own data: invoices, orders, customers. Asking is as easy as asking a colleague."
+                "title": "AI integration with Claude",
+                "description": "Claude takes over the repetitive work: processes invoices, sorts email, answers customers, and picks up the phone if you need it to."
             },
             "software": {
                 "title": "Custom business software",
@@ -75,38 +75,114 @@
     },
     "ai": {
         "label": "AI integration",
-        "title": "Ask your business <em>a question</em>.",
-        "subtitle": "We connect Claude to the systems you already use. Your team asks in plain language and gets answers from your own data in seconds, without digging through spreadsheets.",
-        "examplesLabel": "Questions it can answer",
-        "examples": [
-            "Who has owed us money for over 30 days?",
-            "How much VAT do we owe this quarter?",
-            "What do customers often buy together?",
-            "Who hasn't ordered from us in three months?"
-        ],
-        "promises": {
-            "readonly": {
-                "title": "Reads, never writes",
-                "body": "By default the assistant only reads your data. Anything that would change it, like issuing an invoice, is built only on request and always asks a person first."
-            },
-            "data": {
-                "title": "Your data stays with you",
-                "body": "It stays in your own systems, and we fetch only what an answer needs. We sign a data processing agreement and host in the EU."
-            },
-            "control": {
-                "title": "You hold the keys",
-                "body": "Access runs through your own company account and can be revoked at any time."
+        "title": "Claude works <em>in the background</em>.",
+        "subtitle": "We put Claude where the manual work piles up: from incoming invoices to customer questions and phone calls.",
+        "cta": "Request a demo",
+        "automations": {
+            "label": "A few examples of what it can take off your plate",
+            "subtitle": "Click a card to see how it works in practice.",
+            "flipHint": "Example",
+            "exampleLabel": "For example",
+            "newBadge": "New",
+            "items": {
+                "invoices": {
+                    "title": "Invoices and documents",
+                    "short": "Reads incoming invoices and gets them ready to book.",
+                    "example": "At month end, Claude collects the invoices that came in, checks their details, and sends them to your accountant as one tidy package.",
+                    "tools": [
+                        "Claude",
+                        "Gmail",
+                        "Google Drive",
+                        "Billingo"
+                    ]
+                },
+                "chase": {
+                    "title": "Overdue invoices",
+                    "short": "Politely reminds late payers.",
+                    "example": "Three invoices went overdue this week. Claude drafts a personal reminder for each, you approve, and they're sent.",
+                    "tools": [
+                        "Claude",
+                        "Billingo",
+                        "Gmail",
+                        "Outlook"
+                    ]
+                },
+                "inbox": {
+                    "title": "Inbox triage",
+                    "short": "Sorts your email and drafts the replies.",
+                    "example": "A customer asks about delivery times. Claude routes the email to the right colleague, with a draft reply attached.",
+                    "tools": [
+                        "Claude",
+                        "Gmail",
+                        "Outlook",
+                        "Slack"
+                    ]
+                },
+                "reports": {
+                    "title": "Morning brief",
+                    "short": "The key numbers and to-dos, every morning.",
+                    "example": "At 8 am a short brief is waiting: yesterday's revenue, overdue invoices and today's to-dos. You can ask it questions too.",
+                    "tools": [
+                        "Claude",
+                        "Google Sheets",
+                        "Billingo",
+                        "Slack"
+                    ]
+                },
+                "support": {
+                    "title": "Customer service assistant",
+                    "short": "Answers customer questions instantly, using your webshop data too.",
+                    "example": "At 10 pm a customer asks where their order is. Claude checks the webshop and answers right away: it arrives tomorrow.",
+                    "tools": [
+                        "Claude",
+                        "Website chat",
+                        "Shopify",
+                        "WhatsApp"
+                    ]
+                },
+                "voice": {
+                    "title": "Phone assistant",
+                    "short": "Answers the phone and books appointments, day and night.",
+                    "example": "A call comes in over lunch, when nobody's free. The assistant picks up in Hungarian, books an appointment, and emails you a summary.",
+                    "tools": [
+                        "ElevenLabs",
+                        "Claude",
+                        "Twilio",
+                        "Google Calendar"
+                    ]
+                },
+                "leads": {
+                    "title": "Leads and quotes",
+                    "short": "Replies within minutes and drafts the quote.",
+                    "example": "An inquiry arrives for a large order. Within minutes there's a draft quote based on your price list, ready for you to check.",
+                    "tools": [
+                        "Claude",
+                        "HubSpot",
+                        "Gmail",
+                        "Google Calendar"
+                    ]
+                },
+                "content": {
+                    "title": "Content in your voice",
+                    "short": "Product descriptions and posts, in three languages.",
+                    "example": "You add 50 new products. The descriptions are done in an afternoon, in three languages, in your company's style.",
+                    "tools": [
+                        "Claude",
+                        "Canva",
+                        "Shopify",
+                        "Google Drive"
+                    ]
+                }
             }
         },
         "diagram": {
-            "invoicing": "Invoicing",
+            "invoices": "Invoices",
+            "email": "Email",
+            "phone": "Phone",
             "webshop": "Webshop",
-            "crm": "Customers",
-            "documents": "Documents",
             "hub": "Claude",
-            "team": "Your team"
-        },
-        "cta": "Request a demo"
+            "team": "Work done"
+        }
     },
     "process": {
         "label": "How we work",
