@@ -12,7 +12,7 @@ import {
   ScanSearch,
   Workflow,
 } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, keepHyphens } from "@/lib/utils";
 import { SectionHeader, rich } from "@/components/landing/section-header";
 
 export const serviceKeys = [
@@ -126,8 +126,8 @@ export function Services() {
                   </div>
                 )}
                 <div className="relative mt-auto space-y-2 pt-10">
-                  <h3 className="text-lg font-medium">{t(`items.${key}.title`)}</h3>
-                  <p className="text-foreground/70 max-w-md text-sm leading-relaxed">
+                  <h3 className="text-lg font-medium text-balance">{keepHyphens(t(`items.${key}.title`))}</h3>
+                  <p className="text-foreground/70 max-w-md text-sm leading-relaxed text-pretty">
                     {t(`items.${key}.description`)}
                   </p>
                 </div>

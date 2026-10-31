@@ -2,7 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
+import { cn, keepHyphens } from "@/lib/utils";
 import { SectionHeader, rich } from "@/components/landing/section-header";
 
 const steps = [
@@ -48,8 +48,8 @@ export function Process() {
               <span className="text-brand text-sm font-semibold tabular-nums">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <h3 className="mt-8 text-lg font-medium">{t(`steps.${key}.title`)}</h3>
-              <p className="text-foreground/70 mt-3 text-sm leading-relaxed">
+              <h3 className="mt-8 text-lg font-medium text-balance">{keepHyphens(t(`steps.${key}.title`))}</h3>
+              <p className="text-foreground/70 mt-3 text-sm leading-relaxed text-pretty">
                 {t(`steps.${key}.body`)}
               </p>
             </motion.li>

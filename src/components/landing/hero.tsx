@@ -268,7 +268,7 @@ export function Hero() {
 
           <motion.p
             {...fadeUp(0.6)}
-            className="text-muted-foreground mt-7 max-w-xl text-base leading-relaxed whitespace-pre-line md:text-lg"
+            className="text-muted-foreground mt-7 max-w-xl text-base leading-relaxed text-pretty whitespace-pre-line md:text-lg"
           >
             {t("subtitle")}
           </motion.p>

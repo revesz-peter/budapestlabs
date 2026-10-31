@@ -21,7 +21,7 @@ import { FlowLine } from "@/components/ui/flow-line";
 import { Contours } from "@/components/motion-primitives/contours";
 import { RollText } from "@/components/motion-primitives/roll-text";
 import { SectionHeader, rich } from "@/components/landing/section-header";
-import { cn } from "@/lib/utils";
+import { cn, keepHyphens } from "@/lib/utils";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -53,7 +53,7 @@ function ConnectionDiagram() {
   return (
     <div
       ref={containerRef}
-      className="relative flex h-80 items-center justify-between gap-8 sm:gap-12"
+      className="relative flex h-72 items-center justify-between gap-3 sm:h-80 sm:gap-12"
     >
       <div className="relative z-10 flex flex-col gap-3">
         {sources.map(({ key, icon: Icon, tint }, i) => (
@@ -64,9 +64,9 @@ function ConnectionDiagram() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 + i * 0.1, ease }}
-            className="bg-background/85 flex items-center gap-2 rounded-2xl border py-1.5 pr-3 pl-1.5 text-xs sm:text-sm"
+            className="bg-background/85 flex items-center gap-1.5 rounded-xl border py-1 pr-2.5 pl-1 text-xs sm:gap-2 sm:rounded-2xl sm:py-1.5 sm:pr-3 sm:pl-1.5 sm:text-sm"
           >
-            <span className={cn("flex size-7 items-center justify-center rounded-xl", tint)}>
+            <span className={cn("flex size-6 items-center justify-center rounded-lg sm:size-7 sm:rounded-xl", tint)}>
               <Icon className="size-3.5" strokeWidth={1.75} />
             </span>
             {t(key)}
@@ -91,7 +91,7 @@ function ConnectionDiagram() {
             whileInView={{ scale: 1, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.5, ease }}
-            className="from-brand to-ochre relative flex size-16 items-center justify-center rounded-full bg-linear-to-br shadow-lg shadow-brand/20 sm:size-20"
+            className="from-brand to-ochre relative flex size-14 items-center justify-center rounded-full bg-linear-to-br shadow-lg shadow-brand/20 sm:size-20"
           >
             <Sparkles className="text-brand-foreground size-6" />
           </motion.span>
@@ -107,7 +107,7 @@ function ConnectionDiagram() {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.7, ease }}
-        className="bg-background/85 relative z-10 flex max-w-24 flex-col items-center gap-2 rounded-2xl border px-3 py-3 text-center text-xs sm:max-w-none sm:px-4 sm:text-sm sm:whitespace-nowrap"
+        className="bg-background/85 relative z-10 flex max-w-20 flex-col items-center gap-1.5 rounded-xl border px-2 py-2.5 text-center text-xs text-balance sm:max-w-none sm:gap-2 sm:rounded-2xl sm:px-4 sm:py-3 sm:text-sm sm:whitespace-nowrap"
       >
         <span className="bg-moss flex size-8 items-center justify-center rounded-full">
           <Users className="size-4" strokeWidth={1.75} />
@@ -139,10 +139,10 @@ export function AiIntegration() {
       <div className="bg-sand relative overflow-hidden rounded-[2.5rem] border py-16 md:rounded-[3rem] md:py-28">
         <Contours seed={1.2} className="pointer-events-none absolute -top-40 -right-40 size-160 opacity-80" />
 
-        <div className="relative mx-auto max-w-5xl px-6">
-          <div className="grid items-center gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
+        <div className="relative mx-auto max-w-5xl px-5 sm:px-6">
+          <div className="grid items-center gap-10 *:min-w-0 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
             <SectionHeader
-              align="left"
+              align="start"
               className="mx-0"
               eyebrow={t("label")}
               title={t.rich("title", rich)}
@@ -166,7 +166,7 @@ export function AiIntegration() {
                   ))}
                 </ul>
               </div>
-              <div className="flex justify-center lg:justify-start">
+              <div className="flex justify-start">
                 <Button asChild size="lg" className="group/roll h-11 rounded-full py-1 pr-1 pl-5">
                   <Link href="#contact">
                     <RollText>{t("cta")}</RollText>
@@ -183,7 +183,7 @@ export function AiIntegration() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.9, ease }}
-              className="glass rounded-4xl p-4 sm:p-6"
+              className="glass rounded-3xl p-3 sm:rounded-4xl sm:p-6"
             >
               <ConnectionDiagram />
             </motion.div>
@@ -202,8 +202,8 @@ export function AiIntegration() {
                 <span className={cn("flex size-9 items-center justify-center rounded-xl", tint)}>
                   <Icon className="size-4" strokeWidth={1.75} />
                 </span>
-                <h3 className="font-medium">{t(`promises.${key}.title`)}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <h3 className="font-medium text-balance">{keepHyphens(t(`promises.${key}.title`))}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed text-pretty">
                   {t(`promises.${key}.body`)}
                 </p>
               </motion.div>

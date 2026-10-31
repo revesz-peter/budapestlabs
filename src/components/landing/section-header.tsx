@@ -2,9 +2,9 @@
 
 import type { ReactNode } from "react";
 import { motion } from "framer-motion";
-import { cn } from "@/lib/utils";
+import { cn, keepHyphens } from "@/lib/utils";
 
-// Tag handlers for t.rich(): <em> in a title renders as the serif italic accent (styled in globals.css)
+// Tag handlers for t.rich(): <em> in a title renders as the terracotta accent (styled in globals.css)
 export const rich = {
   em: (chunks: ReactNode) => <em>{chunks}</em>,
 };
@@ -16,7 +16,8 @@ type SectionHeaderProps = {
   title: ReactNode;
   subtitle?: ReactNode;
   children?: ReactNode;
-  align?: "center" | "left";
+  // "left" centres on small screens and aligns left from lg; "start" is left-aligned everywhere
+  align?: "center" | "left" | "start";
   className?: string;
 };
 
@@ -32,7 +33,9 @@ export function SectionHeader({
     <div
       className={cn(
         "mx-auto max-w-xl space-y-6",
-        align === "center" ? "text-center" : "text-center lg:text-left",
+        align === "center" && "text-center",
+        align === "left" && "text-center lg:text-left",
+        align === "start" && "text-left",
         className
       )}
     >
@@ -41,7 +44,9 @@ export function SectionHeader({
           <div
             className={cn(
               "text-brand flex items-center gap-3 text-xs font-medium tracking-[0.18em] uppercase",
-              align === "center" ? "justify-center" : "justify-center lg:justify-start"
+              align === "center" && "justify-center",
+              align === "left" && "justify-center lg:justify-start",
+              align === "start" && "justify-start"
             )}
           >
             <motion.span
@@ -51,7 +56,7 @@ export function SectionHeader({
               viewport={{ once: true }}
               transition={{ duration: 0.8, ease }}
             />
-            {eyebrow}
+            {typeof eyebrow === "string" ? keepHyphens(eyebrow) : eyebrow}
           </div>
         )}
         {/* title slides up from behind a mask; padding keeps descenders and italics unclipped.
@@ -77,7 +82,7 @@ export function SectionHeader({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.8, delay: 0.2, ease }}
-          className="text-muted-foreground leading-relaxed whitespace-pre-line"
+          className="text-muted-foreground leading-relaxed text-pretty whitespace-pre-line"
         >
           {subtitle}
         </motion.p>
