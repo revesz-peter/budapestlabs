@@ -53,7 +53,7 @@ Landing page for Budapest Labs: a software and AI studio for Hungarian businesse
   - Section titles slide up from a mask (in-view is observed on the mask wrapper, not the clipped title) with a drawn eyebrow line.
   - Services: sand curtain wipes up to uncover each card; icon tile fills with terracotta on hover; vignettes animate on hover.
   - AI diagram: `ui/flow-line.tsx` lines draw in once, then a soft gradient pulse and a data dot travel along each (staggered); the hub ripples slowly. The dot stays at opacity 0 until its SMIL animation is started from JS after the line draws, otherwise it flashes at the SVG origin.
-  - Process: plain 4-card grid, cards rise in with a terracotta top line drawing across. Keep it simple: sticky/scroll-linked stacking was buggy and was removed.
+  - Process: plain 4-card grid, cards just rise in. Keep it simple: no progress lines, no sticky/scroll-linked stacking (both were removed on request).
   - Navbar: reading-progress line, underline-draw hover links.
 - **Hungarian copy**: abbreviation compounds take a hyphen (AI-asszisztens, AI-integráció, AI-ügynök, AI-oktatás, Claude-integráció, Claude-workshop). Short headings (card, step, promise titles, eyebrows) go through `keepHyphens()` from `lib/utils.ts` so they never wrap after "AI-"; headings use `text-balance`, paragraphs `text-pretty`. Speak to the real KKV concerns: data safety, mistakes (show sources, human approval), job fears, "start small with an assessment". Formal "Ön".
 - **No connected-tool lists**: integrations aren't live yet, so don't show tool logos/wordmarks or "connected to X" claims. Chat demo sources are generic ("A számlázójából").

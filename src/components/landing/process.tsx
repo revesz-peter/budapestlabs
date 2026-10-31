@@ -35,16 +35,8 @@ export function Process() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.7, delay: index * 0.1, ease }}
-              className={cn("relative flex flex-col overflow-hidden rounded-3xl border p-7", tint)}
+              className={cn("flex flex-col rounded-3xl border p-7", tint)}
             >
-              <motion.span
-                aria-hidden="true"
-                className="bg-brand absolute inset-x-0 top-0 h-1 origin-left"
-                initial={{ scaleX: 0 }}
-                whileInView={{ scaleX: 1 }}
-                viewport={{ once: true, margin: "-60px" }}
-                transition={{ duration: 0.9, delay: 0.3 + index * 0.1, ease }}
-              />
               <span className="text-brand text-sm font-semibold tabular-nums">
                 {String(index + 1).padStart(2, "0")}
               </span>
