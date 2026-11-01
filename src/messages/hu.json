@@ -6,7 +6,7 @@
         "contact": "Kapcsolat"
     },
     "hero": {
-        "badge": "Kis- és középvállalkozásoknak",
+        "badge": "KKV-knak és nagyvállalatoknak",
         "title": "Szoftver­megoldások és AI, ami <em>ismeri a cégét</em>.",
         "subtitle": "Egyedi szoftvereket tervezünk és építünk, automatizáljuk a folyamatokat, és összekötjük Claude-ot a rendszereivel.\nKevesebb adminisztráció, több idő a lényegre.",
         "cta": "Írjon nekünk",
@@ -80,100 +80,99 @@
         "cta": "Bemutatót kérek",
         "automations": {
             "label": "Pár példa arra, mit vehet le a válláról",
-            "subtitle": "Kattintson egy kártyára, és megnézheti, hogyan működik a gyakorlatban.",
-            "flipHint": "Példa",
             "exampleLabel": "Például",
             "newBadge": "Új",
             "items": {
                 "invoices": {
                     "title": "Számlák és dokumentumok",
-                    "short": "Kiolvassa és rögzíti a beérkező számlák adatait.",
+                    "description": "Claude kiolvassa a beérkező PDF-számlákat és szállítóleveleket, egyezteti az összegeket és a határidőket. Hónap végén rendezett csomagban továbbítja őket a könyvelőnek.",
                     "example": "Hónap végén Claude összegyűjti a beérkezett számlákat, ellenőrzi az adataikat, és rendezett csomagban küldi tovább a könyvelőnek.",
                     "tools": [
-                        "Claude",
-                        "Gmail",
-                        "Google Drive",
-                        "Billingo"
+                        "Claude Agent Skill",
+                        "Gmail MCP",
+                        "Google Drive MCP",
+                        "Billingo API"
                     ]
                 },
                 "chase": {
-                    "title": "Kintlévőségek",
-                    "short": "Udvariasan emlékezteti a késve fizetőket.",
+                    "title": "Emlékeztetők",
+                    "description": "Ütemezetten figyeli a lejárt számlákat, a megválaszolatlan ajánlatokat és a lejáró szerződéseket. Mindegyikhez személyre szabott üzenetet ír, amit Ön hagy jóvá.",
                     "example": "Három számla lejárt a héten. Claude megírja a személyre szabott emlékeztetőket, Ön jóváhagyja, és már mennek is.",
                     "tools": [
-                        "Claude",
-                        "Billingo",
-                        "Gmail",
-                        "Outlook"
+                        "Claude ütemezett feladat",
+                        "Billingo API",
+                        "Gmail / Outlook MCP",
+                        "Google Calendar MCP"
                     ]
                 },
                 "inbox": {
                     "title": "Levelezés rendezése",
-                    "short": "Szétválogatja a leveleket, és megírja a válaszokat.",
+                    "description": "Elolvassa, címkézi és a megfelelő kollégához irányítja a beérkező leveleket. A válasz piszkozatát a korábbi levelezés és a céges anyagok alapján írja meg.",
                     "example": "Egy ügyfél a szállítási határidőről kérdez. Claude a megfelelő kollégához teszi a levelet, a válasz piszkozatával együtt.",
                     "tools": [
-                        "Claude",
-                        "Gmail",
-                        "Outlook",
-                        "Slack"
+                        "Gmail MCP",
+                        "Microsoft 365 MCP",
+                        "Slack MCP",
+                        "Claude Agent SDK"
                     ]
                 },
                 "reports": {
                     "title": "Reggeli összefoglaló",
-                    "short": "Minden reggel a legfontosabb számok és teendők.",
+                    "description": "Minden reggel ütemezetten összegyűjti a számokat a számlázóból és a táblázatokból, és rövid összefoglalót küld Slackre vagy e-mailben. Ha valami szokatlan, kiemeli.",
                     "example": "Reggel 8-kor rövid összefoglaló várja: tegnapi bevétel, lejárt számlák és a nap teendői. Kérdezni is lehet tőle.",
                     "tools": [
-                        "Claude",
-                        "Google Sheets",
-                        "Billingo",
-                        "Slack"
+                        "Claude ütemezett feladat",
+                        "Google Sheets MCP",
+                        "Billingo API",
+                        "Slack MCP"
                     ]
                 },
                 "support": {
                     "title": "Ügyfélszolgálati asszisztens",
-                    "short": "Azonnal válaszol az ügyfelek kérdéseire, a webshop adataiból is.",
+                    "description": "A weboldalon és WhatsAppon azonnal válaszol a cége saját tudásbázisa és a webshop adatai alapján. Ha nem biztos a válaszban, átadja az ügyet a csapatnak.",
                     "example": "Este 10-kor egy vásárló megkérdezi, hol tart a rendelése. Claude megnézi a webshopban, és azonnal válaszol: holnap érkezik.",
                     "tools": [
-                        "Claude",
-                        "Weboldal-chat",
-                        "Shopify",
-                        "WhatsApp"
+                        "Claude API",
+                        "Shopify Storefront MCP",
+                        "WhatsApp Cloud API",
+                        "RAG tudásbázis"
                     ]
                 },
                 "voice": {
                     "title": "Telefonos asszisztens",
-                    "short": "Felveszi a telefont, és időpontot foglal, éjjel-nappal.",
+                    "description": "Természetes magyar hangon veszi fel a telefont, Claude értelmezi a kérést, és szabad időpontot foglal a naptárban. Minden hívás után összefoglaló érkezik a beszélgetésről.",
                     "example": "Ebédszünetben, amikor senki nem ér rá, hívás érkezik. Az asszisztens magyarul felveszi, egyeztet egy időpontot, és Ön e-mailben megkapja az összefoglalót.",
                     "tools": [
-                        "ElevenLabs",
-                        "Claude",
-                        "Twilio",
-                        "Google Naptár"
+                        "ElevenLabs Agents",
+                        "Claude (LLM)",
+                        "Twilio / SIP",
+                        "Google Calendar MCP"
                     ]
                 },
                 "leads": {
                     "title": "Érdeklődők és árajánlatok",
-                    "short": "Percek alatt válaszol, és elkészíti az ajánlatot.",
+                    "description": "Percek alatt válaszol az új érdeklődőknek, rögzíti őket a CRM-ben, és az árlistája alapján megírja az ajánlat piszkozatát. Ha kell, időpontot is egyeztet.",
                     "example": "Érdeklődés jön egy nagyobb rendelésre. Pár percen belül kész az ajánlat piszkozata az árlistája alapján, Ön csak átnézi.",
                     "tools": [
-                        "Claude",
-                        "HubSpot",
-                        "Gmail",
-                        "Google Naptár"
+                        "HubSpot MCP",
+                        "Gmail MCP",
+                        "Google Calendar MCP",
+                        "Claude Agent Skill"
                     ]
                 },
                 "content": {
                     "title": "Tartalom a cége hangján",
-                    "short": "Termékleírások és posztok, három nyelven.",
+                    "description": "A cége hangján ír termékleírásokat, posztokat és hírleveleket magyarul, angolul és németül. A képi anyagokat Canvában készíti elő, a leírásokat a webshopba tölti.",
                     "example": "Feltölt 50 új terméket. A leírások egy délután alatt elkészülnek három nyelven, a cége stílusában.",
                     "tools": [
-                        "Claude",
-                        "Canva",
-                        "Shopify",
-                        "Google Drive"
+                        "Claude Agent Skill",
+                        "Canva MCP",
+                        "Shopify Admin API",
+                        "Google Drive MCP"
                     ]
                 }
-            }
+            },
+            "techLabel": "Technológia"
         },
         "diagram": {
             "invoices": "Számlák",
@@ -238,7 +237,7 @@
         }
     },
     "footer": {
-        "description": "Céges AI-asszisztens, egyedi szoftver és weboldal kis- és középvállalkozásoknak. Budapestről.",
+        "description": "Céges AI-asszisztens, egyedi szoftver és weboldal KKV-knak és nagyvállalatoknak.",
         "email": "hello@budapestlabs.com",
         "navigation": "Navigáció",
         "legal": "Jogi",
