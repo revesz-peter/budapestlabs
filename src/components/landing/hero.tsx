@@ -99,7 +99,7 @@ function SafetyNote({ title, body }: { title: string; body: string }) {
       initial={{ opacity: 0, y: 16, scale: 0.95 }}
       animate={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.8, delay: 1.5, ease }}
-      className="bg-background absolute -right-3 bottom-[4.25rem] z-10 sm:bottom-24 flex items-center gap-3 rounded-2xl border py-3 pr-5 pl-3 shadow-xl shadow-foreground/10 sm:-right-12"
+      className="bg-background absolute -right-3 bottom-[4.25rem] z-10 sm:bottom-24 flex items-center gap-3 rounded-2xl border py-3 pr-5 pl-3 shadow-xl shadow-foreground/10 sm:-right-12 dark:shadow-black/50"
     >
       <span className="bg-olive flex size-9 shrink-0 items-center justify-center rounded-xl">
         <ShieldCheck className="size-4.5" strokeWidth={1.75} />

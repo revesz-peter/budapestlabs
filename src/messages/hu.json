@@ -207,6 +207,21 @@
             }
         }
     },
+    "team": {
+        "label": "Csapat",
+        "title": "Mérnöki precizitás. <em>Bizonyított tapasztalat.</em>",
+        "subtitle": "Személyesen tervezzük, építjük és üzemeltetjük a rendszereit, az első beszélgetéstől az átadás utánig.",
+        "members": {
+            "kristof": {
+                "name": "Rétfalvi Kristóf",
+                "role": "Társalapító"
+            },
+            "peter": {
+                "name": "Révész Péter",
+                "role": "Társalapító"
+            }
+        }
+    },
     "contact": {
         "label": "Kapcsolat",
         "title": "Beszéljünk a <em>terveiről</em>",

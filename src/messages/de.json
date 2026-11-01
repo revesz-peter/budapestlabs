@@ -207,6 +207,21 @@
             }
         }
     },
+    "team": {
+        "label": "Team",
+        "title": "Von Ingenieuren gebaut. <em>Von Erfahrung getragen.</em>",
+        "subtitle": "Wir planen, bauen und betreiben Ihre Systeme persönlich, vom ersten Gespräch bis lange nach der Übergabe.",
+        "members": {
+            "kristof": {
+                "name": "Kristóf Rétfalvi",
+                "role": "Mitgründer"
+            },
+            "peter": {
+                "name": "Péter Révész",
+                "role": "Mitgründer"
+            }
+        }
+    },
     "contact": {
         "label": "Kontakt",
         "title": "Sprechen wir über <em>Ihre Pläne</em>",

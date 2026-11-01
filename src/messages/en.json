@@ -207,6 +207,21 @@
             }
         }
     },
+    "team": {
+        "label": "Team",
+        "title": "Built by engineers. <em>Backed by experience.</em>",
+        "subtitle": "We design, build and run your systems ourselves, from the first call to long after handover.",
+        "members": {
+            "kristof": {
+                "name": "Kristóf Rétfalvi",
+                "role": "Co-founder"
+            },
+            "peter": {
+                "name": "Péter Révész",
+                "role": "Co-founder"
+            }
+        }
+    },
     "contact": {
         "label": "Contact",
         "title": "Let's talk about <em>your plans</em>",

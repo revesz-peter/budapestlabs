@@ -3,6 +3,7 @@ import { Navbar } from "@/components/landing/navbar";
 import { Hero } from "@/components/landing/hero";
 import { Services } from "@/components/landing/services";
 import { AiIntegration } from "@/components/landing/ai-integration";
+import { Team } from "@/components/landing/team";
 import { Contact } from "@/components/landing/contact";
 import { Footer } from "@/components/landing/footer";
 
@@ -87,6 +88,7 @@ export default async function HomePage({
       <Services />
       <AiIntegration />
       {/* <Process /> hidden for now; component kept in components/landing/process.tsx */}
+      <Team />
       <Contact />
       <Footer />
     </main>
