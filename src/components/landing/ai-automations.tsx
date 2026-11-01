@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { cn, keepHyphens } from "@/lib/utils";
+import { PixelBubble, PixelCritter } from "@/components/landing/pixel-claude";
 
 // The Szolgáltatások / Így dolgozunk pastels
 const automations = [
@@ -36,17 +37,27 @@ const automations = [
 export function AiAutomations() {
   const t = useTranslations("ai.automations");
   const trackRef = useRef<HTMLDivElement>(null);
+  const barXRef = useRef<HTMLDivElement>(null);
+  const barYRef = useRef<HTMLDivElement>(null);
+  const frame = useRef(0);
   const [active, setActive] = useState(0);
-  const [progress, setProgress] = useState(0);
 
+  // The bars follow the exact scroll position (card 1 = 1/8 ... card 8 = 8/8, continuous in between).
+  // They are moved with a transform once per frame, without React re-renders or CSS transitions,
+  // so they track the finger smoothly.
   function onScroll(event: UIEvent<HTMLDivElement>) {
     const el = event.currentTarget;
-    const horizontal = el.scrollWidth > el.clientWidth + 1;
-    const pos = horizontal ? el.scrollLeft : el.scrollTop;
-    const size = horizontal ? el.clientWidth : el.clientHeight;
-    const max = horizontal ? el.scrollWidth - el.clientWidth : el.scrollHeight - el.clientHeight;
-    setProgress(max > 0 ? pos / max : 0);
-    setActive(Math.min(automations.length - 1, Math.round(pos / size)));
+    cancelAnimationFrame(frame.current);
+    frame.current = requestAnimationFrame(() => {
+      const horizontal = el.scrollWidth > el.clientWidth + 1;
+      const pos = horizontal ? el.scrollLeft : el.scrollTop;
+      const size = horizontal ? el.clientWidth : el.clientHeight;
+      const position = Math.min(automations.length - 1, Math.max(0, pos / size));
+      const scale = (position + 1) / automations.length;
+      if (barXRef.current) barXRef.current.style.transform = `scaleX(${scale})`;
+      if (barYRef.current) barYRef.current.style.transform = `scaleY(${scale})`;
+      setActive(Math.round(position));
+    });
   }
 
   function goTo(i: number) {
@@ -65,8 +76,9 @@ export function AiAutomations() {
         <nav aria-label={t("label")} className="relative max-lg:hidden">
           <div className="bg-foreground/10 absolute top-1 bottom-1 left-0 w-0.5 rounded-full">
             <div
-              className="bg-brand w-full rounded-full transition-[height] duration-150"
-              style={{ height: `${Math.max(progress, 1 / automations.length) * 100}%` }}
+              ref={barYRef}
+              className="bg-brand h-full w-full origin-top rounded-full will-change-transform"
+              style={{ transform: `scaleY(${1 / automations.length})` }}
             />
           </div>
           <ol className="space-y-0.5 pl-5">
@@ -92,12 +104,13 @@ export function AiAutomations() {
           </ol>
         </nav>
 
-        <div className="min-w-0">
+        <div className="relative min-w-0">
           {/* horizontal progress bar (phones) */}
           <div className="bg-foreground/10 mb-3 h-0.5 overflow-hidden rounded-full lg:hidden">
             <div
-              className="bg-brand h-full rounded-full transition-[width] duration-150"
-              style={{ width: `${Math.max(progress, 1 / automations.length) * 100}%` }}
+              ref={barXRef}
+              className="bg-brand h-full w-full origin-left rounded-full will-change-transform"
+              style={{ transform: `scaleX(${1 / automations.length})` }}
             />
           </div>
 
@@ -151,6 +164,20 @@ export function AiAutomations() {
               );
             })}
           </div>
+
+          {/* easter egg: once the last example is reached, a critter peeks over the panel's corner */}
+          <span
+            aria-hidden="true"
+            className={cn(
+              "absolute right-8 bottom-full z-10 transition-[translate,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none max-lg:hidden",
+              active === automations.length - 1 ? "translate-y-0.5 opacity-100" : "translate-y-4 opacity-0"
+            )}
+          >
+            <PixelCritter className="h-4 w-5" />
+            <PixelBubble className={cn("left-auto right-0 translate-x-0", active === automations.length - 1 ? "opacity-100 delay-300" : "opacity-0")}>
+              {t("critter")}
+            </PixelBubble>
+          </span>
         </div>
       </div>
     </div>

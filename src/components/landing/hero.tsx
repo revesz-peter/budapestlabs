@@ -3,6 +3,7 @@
 import { useEffect, useState, type ReactNode } from "react";
 import Link from "next/link";
 import { ArrowRight, ArrowUp, CalendarDays, Check, Lock, ShieldCheck, Sparkles } from "lucide-react";
+import { PixelBubble, PixelCritter } from "@/components/landing/pixel-claude";
 import { useTranslations } from "next-intl";
 import {
   AnimatePresence,
@@ -296,9 +297,19 @@ export function Hero() {
               asChild
               size="lg"
               variant="ghost"
-              className="group/roll hover:bg-sand h-12 rounded-full border px-5 text-base"
+              className="group/roll hover:bg-sand relative h-12 rounded-full border px-5 text-base"
             >
               <Link href="https://cal.com/budapestlabs" target="_blank" rel="noopener noreferrer">
+                {/* easter egg: a critter peeks over the button's top edge on hover */}
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute right-6 bottom-full translate-y-2 opacity-0 transition-[translate,opacity] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] can-hover:group-hover/roll:translate-y-0.5 can-hover:group-hover/roll:opacity-100 motion-reduce:transition-none"
+                >
+                  <PixelCritter className="h-3.5 w-4.5" />
+                  <PixelBubble className="right-0 left-auto translate-x-0 text-[11px] opacity-0 delay-150 can-hover:group-hover/roll:opacity-100">
+                    {t("bookCritter")}
+                  </PixelBubble>
+                </span>
                 <CalendarDays className="text-muted-foreground" />
                 <RollText>{t("demo")}</RollText>
               </Link>

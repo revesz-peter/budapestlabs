@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
+import { PixelClaude } from "@/components/landing/pixel-claude";
 
 export function Footer() {
   const t = useTranslations();
@@ -80,7 +81,9 @@ export function Footer() {
 
         <div className="mt-12 border-t border-border pt-8">
           <p className="text-center text-sm text-muted-foreground">
-            {t("footer.madeWith")}
+            {t.rich("footer.madeWith", {
+              claude: () => <PixelClaude whisper={t("footer.easterEgg")} />,
+            })}
           </p>
         </div>
       </div>
