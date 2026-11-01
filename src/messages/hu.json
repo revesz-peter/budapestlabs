@@ -40,8 +40,7 @@
             ],
             "noteTitle": "Csak olvas",
             "noteBody": "Az adat a cégnél marad"
-        },
-        "bookCritter": "Juhú!"
+        }
     },
     "services": {
         "label": "Szolgáltatások",

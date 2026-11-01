@@ -40,8 +40,7 @@
             ],
             "noteTitle": "Read-only",
             "noteBody": "Your data stays with you"
-        },
-        "bookCritter": "Woohoo!"
+        }
     },
     "services": {
         "label": "Services",
