@@ -1,6 +1,5 @@
 "use client";
 
-import type { ReactNode } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -15,10 +14,8 @@ const members = [
   { key: "kristof", tint: "bg-olive/55", accent: "bg-olive" },
 ] as const;
 
-// <b> markers in the copy are rendered as plain text (no bolding)
-const plain = { b: (chunks: ReactNode) => chunks };
 
-/** One card per person: portrait, name and role, then a lead line and a flowing paragraph of details. */
+/** One card per person: portrait, name and role, then a lead line and the bio as plain paragraphs. */
 export function Team() {
   const t = useTranslations("team");
 
@@ -48,16 +45,23 @@ export function Team() {
                 </div>
               </div>
 
-              {/* lead, then the details as one flowing paragraph */}
+              {/* lead, then the bio as plain paragraphs */}
               <p className="mt-6 text-lg leading-snug font-medium tracking-tight text-pretty">{t(`members.${key}.lead`)}</p>
-              <p className="text-foreground/75 mt-3 leading-relaxed text-pretty">
-                {(t.raw(`members.${key}.points`) as string[]).map((_, n) => (
-                  <span key={n}>
-                    {n > 0 && " "}
-                    {t.rich(`members.${key}.points.${n}`, plain)}
-                  </span>
+              <div className="text-foreground/75 mt-3 space-y-3 leading-relaxed text-pretty">
+                {(t.raw(`members.${key}.bio`) as string[]).map((paragraph) => (
+                  <p key={paragraph.slice(0, 24)}>{paragraph}</p>
                 ))}
-              </p>
+              </div>
+
+              {/* quiet certification tag, pinned to the bottom so both cards line it up */}
+              <div className="mt-auto pt-6">
+                <div className="border-foreground/10 text-muted-foreground inline-flex items-center gap-2 rounded-full border py-1 pr-3 pl-2 text-xs">
+                  <PixelCritter className="h-2.5 w-3.5" />
+                  <span>
+                    <span className="text-foreground/80 font-medium">{t("certified.title")}</span> {t("certified.subtitle")}
+                  </span>
+                </div>
+              </div>
             </motion.li>
           ))}
         </ul>

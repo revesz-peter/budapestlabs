@@ -211,25 +211,25 @@
         "label": "Team",
         "title": "Built by engineers. <em>Backed by experience.</em>",
         "subtitle": "We design, build and run your systems ourselves, from the first call to long after handover.",
+        "certified": {
+            "title": "Anthropic‑certified",
+            "subtitle": "Claude developer"
+        },
         "members": {
             "peter": {
                 "name": "Péter Révész",
                 "role": "Co-founder",
-                "lead": "Full‑stack engineer, two‑time founder and Anthropic‑certified Claude developer.",
-                "points": [
-                    "Has worked at <b>startups</b> backed by <b>Fusion VC</b> and <b>Hiventures</b>, and on US healthcare and edtech products for <b>enterprise clients</b>.",
-                    "On a founding team, he built a platform that ran on <b>3,000+ enterprise sites</b>, including <b>Nvidia</b>, <b>Datadog</b> and <b>CrowdStrike</b>.",
-                    "Builds <b>scalable</b>, <b>secure</b> and <b>reliable</b> systems from zero, from design all the way to delivery."
+                "lead": "Full‑stack engineer and two‑time founder.",
+                "bio": [
+                    "His expertise covers the full product and engineering lifecycle, from customer discovery to architecting secure cloud‑native systems. He has worked at startups backed by Fusion VC and Hiventures, and on US healthcare and edtech products for enterprise clients. On a founding team, he built a platform that ran on 3,000+ enterprise sites, including Nvidia, Datadog and CrowdStrike. He builds scalable, secure and reliable systems from zero, from design all the way to delivery."
                 ]
             },
             "kristof": {
                 "name": "Kristóf Rétfalvi",
                 "role": "Co-founder",
                 "lead": "Several years of experience building web and mobile applications.",
-                "points": [
-                    "Has worked on <b>business web apps</b>, <b>healthcare systems</b>, <b>real‑time video communication platforms</b> and <b>mobile apps</b>.",
-                    "Builds complex features independently, does technical design, and coordinates entire parts of projects.",
-                    "Puts a strong focus on <b>quality execution</b>, <b>user experience</b> and <b>reliable operation</b>."
+                "bio": [
+                    "Has worked on business web apps, healthcare systems, real‑time video communication platforms and mobile apps. Builds complex features independently, does technical design, and coordinates entire parts of projects. Puts a strong focus on quality execution, user experience and reliable operation."
                 ]
             }
         }
