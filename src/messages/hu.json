@@ -212,13 +212,25 @@
         "title": "Mérnöki precizitás. <em>Bizonyított tapasztalat.</em>",
         "subtitle": "Személyesen tervezzük, építjük és üzemeltetjük a rendszereit, az első beszélgetéstől az átadás utánig.",
         "members": {
-            "kristof": {
-                "name": "Rétfalvi Kristóf",
-                "role": "Társalapító"
-            },
             "peter": {
                 "name": "Révész Péter",
-                "role": "Társalapító"
+                "role": "Társalapító",
+                "lead": "Full‑stack mérnök és kétszeres alapító, az Anthropic által minősített Claude‑fejlesztő.",
+                "points": [
+                    "Dolgozott a <b>Fusion VC</b> és a <b>Hiventures</b> által támogatott <b>startupokban</b>, valamint amerikai egészségügyi és oktatási termékeken <b>nagyvállalati ügyfeleknek</b>.",
+                    "Alapító csapat tagjaként épített platformot, amely <b>3000+ nagyvállalati oldalon</b> futott, köztük az <b>Nvidia</b>, a <b>Datadog</b> és a <b>CrowdStrike</b> oldalain.",
+                    "Nulláról épít <b>skálázható</b>, <b>biztonságos</b> és <b>megbízható</b> rendszereket, a tervezéstől a teljes megvalósításig."
+                ]
+            },
+            "kristof": {
+                "name": "Rétfalvi Kristóf",
+                "role": "Társalapító",
+                "lead": "Több éves tapasztalat webes és mobil alkalmazások fejlesztésében.",
+                "points": [
+                    "Dolgozott <b>üzleti webalkalmazásokon</b>, <b>egészségügyi rendszereken</b>, <b>valós idejű videókommunikációs platformokon</b> és <b>mobilapplikációkon</b>.",
+                    "Komplex funkciók önálló fejlesztése, technikai tervezés és teljes projektrészek koordinálása.",
+                    "Kiemelt figyelmet fordít a <b>minőségi megvalósításra</b>, a <b>felhasználói élményre</b> és a <b>megbízható működésre</b>."
+                ]
             }
         }
     },

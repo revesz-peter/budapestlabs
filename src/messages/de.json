@@ -212,13 +212,25 @@
         "title": "Von Ingenieuren gebaut. <em>Von Erfahrung getragen.</em>",
         "subtitle": "Wir planen, bauen und betreiben Ihre Systeme persönlich, vom ersten Gespräch bis lange nach der Übergabe.",
         "members": {
-            "kristof": {
-                "name": "Kristóf Rétfalvi",
-                "role": "Mitgründer"
-            },
             "peter": {
                 "name": "Péter Révész",
-                "role": "Mitgründer"
+                "role": "Mitgründer",
+                "lead": "Full‑Stack‑Entwickler, zweifacher Gründer und von Anthropic zertifizierter Claude‑Entwickler.",
+                "points": [
+                    "Arbeitete in von <b>Fusion VC</b> und <b>Hiventures</b> finanzierten <b>Startups</b> sowie an US‑Gesundheits- und Bildungsprodukten für <b>Großkunden</b>.",
+                    "Baute im Gründerteam eine Plattform, die auf über <b>3.000 Unternehmensseiten</b> lief, darunter <b>Nvidia</b>, <b>Datadog</b> und <b>CrowdStrike</b>.",
+                    "Baut <b>skalierbare</b>, <b>sichere</b> und <b>zuverlässige</b> Systeme von null an, vom Entwurf bis zur Umsetzung."
+                ]
+            },
+            "kristof": {
+                "name": "Kristóf Rétfalvi",
+                "role": "Mitgründer",
+                "lead": "Mehrjährige Erfahrung in der Entwicklung von Web- und Mobilanwendungen.",
+                "points": [
+                    "Hat an <b>Business‑Webanwendungen</b>, <b>Gesundheitssystemen</b>, <b>Plattformen für Echtzeit‑Videokommunikation</b> und <b>mobilen Apps</b> gearbeitet.",
+                    "Entwickelt komplexe Funktionen eigenständig, erstellt technische Konzepte und koordiniert ganze Projektteile.",
+                    "Legt besonderen Wert auf <b>hochwertige Umsetzung</b>, <b>Nutzererlebnis</b> und <b>zuverlässigen Betrieb</b>."
+                ]
             }
         }
     },
