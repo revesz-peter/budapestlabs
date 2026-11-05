@@ -219,17 +219,17 @@
             "peter": {
                 "name": "Révész Péter",
                 "role": "Társalapító",
-                "lead": "Full‑stack mérnök és kétszeres alapító.",
+                "lead": "Alapító szoftvermérnök.",
                 "bio": [
-                    "Szakértelme a teljes termék- és fejlesztési életciklust lefedi, az ügyféligények feltárásától a biztonságos, felhőnatív rendszerek megtervezéséig. Dolgozott a Fusion VC és a Hiventures által támogatott startupokban, valamint amerikai egészségügyi és oktatási termékeken nagyvállalati ügyfeleknek. Alapító csapat tagjaként épített platformot, amely 3000+ nagyvállalati oldalon futott, köztük az Nvidia, a Datadog és a CrowdStrike oldalain. Nulláról épít skálázható, biztonságos és megbízható rendszereket, a tervezéstől a teljes megvalósításig."
+                    "Szakértelme a teljes termék- és fejlesztési életciklust lefedi, az ügyféligények feltárásától a biztonságos, skálázható, felhőnatív rendszerek megtervezéséig. Dolgozott a Fusion VC és a Hiventures által támogatott startupokban, valamint amerikai egészségügyi és oktatási termékeken nagyvállalati ügyfeleknek. Alapító csapat tagjaként épített platformot, amely 3000+ nagyvállalati oldalon futott, köztük az Nvidia, a Datadog és a CrowdStrike oldalain."
                 ]
             },
             "kristof": {
                 "name": "Rétfalvi Kristóf",
                 "role": "Társalapító",
-                "lead": "Több éves tapasztalat webes és mobil alkalmazások fejlesztésében.",
+                "lead": "Szoftverfejlesztő mérnök.",
                 "bio": [
-                    "Dolgozott üzleti webalkalmazásokon, egészségügyi rendszereken, valós idejű videókommunikációs platformokon és mobilapplikációkon. Komplex funkciók önálló fejlesztése, technikai tervezés és teljes projektrészek koordinálása. Kiemelt figyelmet fordít a minőségi megvalósításra, a felhasználói élményre és a megbízható működésre."
+                    "Több éves tapasztalata van webes és mobil alkalmazások fejlesztésében. Dolgozott üzleti webalkalmazásokon, amerikai egészségügyi rendszereken, valós idejű videókommunikációs platformokon és mobilapplikációkon. Munkái során feladata volt komplex funkciók önálló fejlesztése, technikai tervezés és teljes projektrészek koordinálása. Kiemelt figyelmet fordít a minőségi megvalósításra, a felhasználói élményre és a megbízható működésre."
                 ]
             }
         }

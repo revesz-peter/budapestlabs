@@ -219,17 +219,17 @@
             "peter": {
                 "name": "Péter Révész",
                 "role": "Mitgründer",
-                "lead": "Full‑Stack‑Entwickler und zweifacher Gründer.",
+                "lead": "Gründungs‑Softwareingenieur.",
                 "bio": [
-                    "Seine Expertise deckt den gesamten Produkt- und Entwicklungszyklus ab, von der Kundenforschung bis zur Architektur sicherer Cloud‑native‑Systeme. Er arbeitete in von Fusion VC und Hiventures finanzierten Startups sowie an US‑Gesundheits- und Bildungsprodukten für Großkunden. Im Gründerteam baute er eine Plattform, die auf über 3.000 Unternehmensseiten lief, darunter Nvidia, Datadog und CrowdStrike. Er baut skalierbare, sichere und zuverlässige Systeme von null an, vom Entwurf bis zur Umsetzung."
+                    "Seine Expertise deckt den gesamten Produkt- und Entwicklungszyklus ab, von der Kundenforschung bis zur Architektur sicherer, skalierbarer Cloud‑native‑Systeme. Er arbeitete in von Fusion VC und Hiventures finanzierten Startups sowie an US‑Gesundheits- und Bildungsprodukten für Großkunden. Im Gründerteam baute er eine Plattform, die auf über 3.000 Unternehmensseiten lief, darunter Nvidia, Datadog und CrowdStrike."
                 ]
             },
             "kristof": {
                 "name": "Kristóf Rétfalvi",
                 "role": "Mitgründer",
-                "lead": "Mehrjährige Erfahrung in der Entwicklung von Web- und Mobilanwendungen.",
+                "lead": "Softwareingenieur.",
                 "bio": [
-                    "Hat an Business‑Webanwendungen, Gesundheitssystemen, Plattformen für Echtzeit‑Videokommunikation und mobilen Apps gearbeitet. Entwickelt komplexe Funktionen eigenständig, erstellt technische Konzepte und koordiniert ganze Projektteile. Legt besonderen Wert auf hochwertige Umsetzung, Nutzererlebnis und zuverlässigen Betrieb."
+                    "Er hat mehrjährige Erfahrung in der Entwicklung von Web- und Mobilanwendungen. Er arbeitete an Business‑Webanwendungen, US‑Gesundheitssystemen, Plattformen für Echtzeit‑Videokommunikation und mobilen Apps. Zu seinen Aufgaben gehörten die eigenständige Entwicklung komplexer Funktionen, technische Konzeption und die Koordination ganzer Projektteile. Besonderen Wert legt er auf hochwertige Umsetzung, Nutzererlebnis und zuverlässigen Betrieb."
                 ]
             }
         }
