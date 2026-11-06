@@ -145,7 +145,7 @@ Two surfaces, one list (`lib/projects.ts`):
 
 To add a project: an entry in `lib/projects.ts` (`tech` isn't translated), a screenshot in `public/projects/`, a 16x16 pixel icon in `project-icon.tsx`, and `projects.items.<slug>` in all 3 message files (`name`, `type`, `description`, `solutions`). Only list real work and name tech from the project's actual dependencies: no invented results or client quotes. Unlaunched work gets `status: "building"` (shown on the tile and in the modal) and is named "Project <one word>" (Project Gradio, Project Thrift, Project Scanner), not translated. No screenshot or verified tech yet: `image: null`, `tech: []`. Thrift and Scanner have no repo yet.
 
-Gaited: the user is the contractor; they confirmed it may be used as a portfolio piece. Gaited Community, Inc. owns the work, and the agreements restrict sharing screenshots and proprietary details without written consent, so keep it to what is on the card: no roadmap, internal architecture, pricing or code. Only claim what works: account flows, onboarding, per-type interfaces, admin console, data export and deletion (the marketplace, careers and community screens still show demo content). The cohort is the user's statement; it was not findable on ec.co in Nov 2026. Gradio has `url: null` on purpose: its live landing page still shows placeholder "Megbíznak bennünk" logos (Vercel, Spotify) and template avatars; add the URL once they're gone.
+Gaited: keep it to what is on the card: no roadmap, internal architecture, pricing or code. Only claim what works: account flows, onboarding, per-type interfaces, admin console, data export and deletion. Gradio has `url: null` until its live page is ready to link.
 
 ## Client delivery pipeline
 
