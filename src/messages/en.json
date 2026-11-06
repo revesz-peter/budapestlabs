@@ -2,6 +2,7 @@
     "nav": {
         "services": "Services",
         "ai": "AI integration",
+        "projects": "Projects",
         "process": "How we work",
         "contact": "Contact"
     },
@@ -182,6 +183,152 @@
             "webshop": "Webshop",
             "hub": "Claude",
             "team": "Work done"
+        }
+    },
+    "projects": {
+        "meta": {
+            "title": "Projects",
+            "description": "A selection of our projects: websites, apps and platforms."
+        },
+        "label": "Projects",
+        "title": "A selection of <em>our projects.</em>",
+        "subtitle": "Click a square to see what we solved and what it's built with.",
+        "visit": "View live site",
+        "solutionsTitle": "Solutions",
+        "techTitle": "Technology",
+        "screenshotAlt": "Screenshot of the {name} website",
+        "items": {
+            "palbau": {
+                "name": "Pál Bau",
+                "type": "Website",
+                "description": "A website for a general contractor building family homes in Pest county. Visitors see how their house comes together and what they get in writing, then request a show home visit.",
+                "solutions": [
+                    {
+                        "title": "The house builds as you scroll",
+                        "body": "A 3D house goes up in six steps, from foundation to terrace, so the building process makes sense at a glance."
+                    },
+                    {
+                        "title": "Answers on the first visit",
+                        "body": "Six questions every home builder asks: price, schedule, payment, faults, inspections. The answers are right there on the site."
+                    },
+                    {
+                        "title": "Show home visit requests",
+                        "body": "A short form lets visitors request a visit, and the request reaches the contractor by email."
+                    },
+                    {
+                        "title": "Hungarian and English",
+                        "body": "The whole site is available in both languages."
+                    }
+                ]
+            },
+            "gaited": {
+                "name": "Gaited",
+                "type": "Platform",
+                "description": "A career and networking platform for equestrian professionals and brands. Gaited has been accepted into the Nashville Entrepreneur Center's Fall 2026 PreFlight cohort.",
+                "solutions": [
+                    {
+                        "title": "Accounts for equestrians and brands",
+                        "body": "Sign up with email or Google, confirmed with a code, with password reset included."
+                    },
+                    {
+                        "title": "A separate experience for each",
+                        "body": "Equestrians and brands see different menus and content, in light or dark mode."
+                    },
+                    {
+                        "title": "Guided profile setup",
+                        "body": "A step-by-step form helps new members fill in their profile after joining, and saves everything."
+                    },
+                    {
+                        "title": "An admin console for the team",
+                        "body": "Sign-up statistics, member management and a verification queue in one place, with an audit trail."
+                    },
+                    {
+                        "title": "Privacy built in",
+                        "body": "Members can download their data and delete their account."
+                    }
+                ]
+            },
+            "gradio": {
+                "name": "Project Gradio",
+                "type": "App",
+                "description": "An exam prep app for Hungarian high school students, starting with history. The goal: instant marking, clear explanations, and whatever a student gets wrong comes back. Currently in development.",
+                "solutions": [
+                    {
+                        "title": "A waitlist for launch",
+                        "body": "A landing page where people can sign up and hear as soon as it opens."
+                    },
+                    {
+                        "title": "Sign-up and login",
+                        "body": "Personal accounts with email and password, confirmed by email."
+                    },
+                    {
+                        "title": "A home page for each student",
+                        "body": "Students land here after logging in. It's where their results by topic and practice suggestions will live."
+                    },
+                    {
+                        "title": "Web and phone on one base",
+                        "body": "iOS and Android come after the web version, built on the same foundation."
+                    }
+                ]
+            },
+            "thrift": {
+                "name": "Project Thrift",
+                "type": "App",
+                "description": "A secondhand fashion app where people post a style they're after, not a specific item. Others accept it as a paid quest and hunt through thrift stores for matching pieces.",
+                "solutions": [
+                    {
+                        "title": "A style, not a product",
+                        "body": "People describe the style they want rather than one specific item."
+                    },
+                    {
+                        "title": "Paid quests",
+                        "body": "Others can accept a post as a paid quest."
+                    },
+                    {
+                        "title": "A treasure hunt in thrift stores",
+                        "body": "Quest takers search thrift stores for matching pieces, which turns thrifting into a rewarded treasure hunt."
+                    }
+                ]
+            },
+            "scanner": {
+                "name": "Project Scanner",
+                "type": "Mobile app",
+                "description": "A mobile app that scans food and cosmetics and instantly rates how healthy they are. It helps people find better options at a glance.",
+                "solutions": [
+                    {
+                        "title": "An instant rating",
+                        "body": "Scan a product and see right away how healthy it is."
+                    },
+                    {
+                        "title": "Ingredients explained",
+                        "body": "The app explains what each ingredient does."
+                    },
+                    {
+                        "title": "Easy-read symbols",
+                        "body": "Simple symbols flag things like vegan or free-from products."
+                    },
+                    {
+                        "title": "Better options at a glance",
+                        "body": "It helps people quickly find a better choice."
+                    }
+                ]
+            }
+        },
+        "cta": "Yours could be next.",
+        "close": "Close",
+        "status": {
+            "building": "In development",
+            "preflight": "PreFlight, Fall 2026"
+        },
+        "teaser": {
+            "title": "A few of <em>our projects.</em>",
+            "subtitle": "Click an icon to see what's behind it.",
+            "button": "All projects"
+        },
+        "locked": {
+            "name": "NDA",
+            "note": "Confidential",
+            "label": "NDA project, confidential"
         }
     },
     "process": {

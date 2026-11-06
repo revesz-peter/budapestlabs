@@ -16,6 +16,8 @@ type SectionHeaderProps = {
   title: ReactNode;
   subtitle?: ReactNode;
   children?: ReactNode;
+  // h1 for a page's own title (the em accent needs its colour here: globals.css only sets it for h2)
+  as?: "h1" | "h2";
   // "left" centres on small screens and aligns left from lg; "start" is left-aligned everywhere
   align?: "center" | "left" | "start";
   className?: string;
@@ -26,9 +28,12 @@ export function SectionHeader({
   title,
   subtitle,
   children,
+  as = "h2",
   align = "center",
   className,
 }: SectionHeaderProps) {
+  const Heading = as === "h1" ? motion.h1 : motion.h2;
+
   return (
     <div
       className={cn(
@@ -67,13 +72,16 @@ export function SectionHeader({
           viewport={{ once: true, margin: "-60px" }}
           className="-mx-[0.1em] overflow-hidden px-[0.1em] pb-[0.15em]"
         >
-          <motion.h2
+          <Heading
             variants={{ hidden: { y: "105%" }, visible: { y: 0 } }}
             transition={{ duration: 0.9, ease }}
-            className="text-balance text-4xl font-medium tracking-tight lg:text-5xl"
+            className={cn(
+              "text-balance text-4xl font-medium tracking-tight lg:text-5xl",
+              as === "h1" && "[&_em]:text-brand"
+            )}
           >
             {title}
-          </motion.h2>
+          </Heading>
         </motion.div>
       </div>
       {subtitle != null && subtitle !== "" && (

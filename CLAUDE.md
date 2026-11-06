@@ -94,6 +94,7 @@ src/
 │   │   ├── layout.tsx           # Locale layout, metadata, next/font Inter, generateStaticParams
 │   │   ├── page.tsx             # Main page, assembles all sections + JSON-LD (Organization, ProfessionalService; no FAQPage since there is no FAQ section)
 │   │   ├── opengraph-image.tsx  # Generated OG image (per-locale tagline)
+│   │   ├── projects/page.tsx    # Project library: squares + modal
 │   │   ├── privacy/page.tsx     # Privacy Policy (minimal layout)
 │   │   ├── terms/page.tsx       # Terms of Service (minimal layout)
 │   │   └── imprint/page.tsx     # Imprint (minimal layout)
@@ -126,12 +127,25 @@ The landing page is built from **Tailark blocks** (tailark.com, shadcn-style mar
 2. Hero — contour map, headline with highlighted phrase, CTA pair, trust ticks, live glass chat with safety note
 3. Services (`#services`) — earthy bento, 6 cards (ai, software, automation, web, training, audit); `serviceKeys` also feeds the contact form's interest select
 4. AI integration (`#ai`) — rounded sand panel: "Claude dolgozik a háttérben." header + Cal.com demo CTA, flow-line diagram (invoices/email/phone/webshop → Claude → done work), then `ai-automations.tsx` ("Pár példa arra, mit vehet le a válláról"): 8 examples (`ai.automations.items`: invoices, chase, inbox, reports, support, voice [Új], leads, content; each has title, two-sentence `description`, `example`, 4 `tools` shown as monospace tech badges under a `techLabel` ("Technológia"); no subtitle), picked Oct 2026 to mirror Anthropic's Claude for Small Business workflows. Compact fixed-height panel (section should stay small): desktop = side menu of the 8 jobs with a vertical progress bar on the left, the examples scroll vertically inside a `lg:h-72` snap container on the right (one per stop, each in its own pastel); clicking a menu item scrolls the panel. Phones = horizontal swipe with a progress bar on top. Every slide must fit the fixed height in all 3 locales; re-check if copy grows. User rejected before: sidebar tabs, explorer, Tailark scroll-spy rows, flip cards, sticky colour panel and stacking cards (too much space/focus), gradients, illustrations on these cards.
+4b. Projects teaser (`#projects`): see the Projects section below
 5. Process (`#process`) — 4 step cards. Currently hidden (commented out in `page.tsx`, removed from navbar and footer); keep the component
 6. Team (`#team`, `team.tsx`, custom: Tailark's team blocks need a paid plan) — two compact cards (stacked on phones): large pastel portrait (pixel-critter placeholder until real photos), name, accent line, role (Társalapító), then a `lead` line and `bio` paragraphs (plain text: no bullets, no bold, no tags), and at the bottom a subtle outlined tag with a tiny pixel critter (`team.certified.title`/`subtitle`: "Anthropic-minősített" / "Claude-fejlesztő", both members, per the user; no Anthropic logo). Keep Péter's bio to one paragraph (the full CV summary was too long). Péter's 3000+ sites platform is past tense ("futott"). No stats panels, company lists or highlight stripes (removed at the user's request: facts go into the bio text). Péter's facts come from his CV (Nov 2026): two-time founder (not 3×), Anthropic-certified, Midbound (Fusion VC, platform on 3000+ enterprise sites incl. Nvidia, Datadog, CrowdStrike), NIX United (US healthcare/edtech for enterprise clients), Vidarex (Hiventures, cloud-based AI-powered video surveillance platform). Don't add "10+ years" or other unbacked claims. Kristóf's bio was supplied by the user.
 7. Contact — form (interest select) + Cal.com link in subtitle
 8. Footer — nav anchors + legal links
 
 Styling: `text-4xl font-medium tracking-tight lg:text-5xl` headings with a glass eyebrow pill via `SectionHeader`, `py-16 md:py-32`, generous radii (`rounded-3xl`, buttons `rounded-full`).
+
+## Projects
+
+Two surfaces, one list (`lib/projects.ts`):
+- **Main page** (`projects-teaser.tsx`, between AI and Team): small pixel-icon squares drifting over a contour panel; hover enlarges and shows the name; a click opens that project in the library via `/projects#<slug>`. Not draggable: tried and rejected, it made it unclear whether the icons are clickable. Locked icons have no hover effect.
+- **Library** (`/projects`, `projects.tsx`, linked from navbar and footer): a wall of same-size squares. Hover gently enlarges; click turns the tile into a modal (shared `layoutId`, `max-w-3xl`, larger text, scrolls inside itself, screenshots at natural proportions, never cropped), and closing glides it back into its square. The open project lives in the URL hash, so the back button closes it. `lockedProjects` are lock squares with no modal and no details. The "+ Legyen a következő az Öné." tile links to the contact form on the main page; dashed empty slots finish the grid to a multiple of 12. There is no contact form on this page.
+- **Wording**: this is a selection, not the full list (the team has done far more work than is shown). Headlines must not imply otherwise: no "what we've built so far".
+- **Motion level**: the user found tilt, bounce, big scale, dimming neighbours and a critter here too gamified. Keep it calm: small hover, no overshoot.
+
+To add a project: an entry in `lib/projects.ts` (`tech` isn't translated), a screenshot in `public/projects/`, a 16x16 pixel icon in `project-icon.tsx`, and `projects.items.<slug>` in all 3 message files (`name`, `type`, `description`, `solutions`). Only list real work and name tech from the project's actual dependencies: no invented results or client quotes. Unlaunched work gets `status: "building"` (shown on the tile and in the modal) and is named "Project <one word>" (Project Gradio, Project Thrift, Project Scanner), not translated. No screenshot or verified tech yet: `image: null`, `tech: []`. Thrift and Scanner have no repo yet.
+
+Gaited: the user is the contractor; they confirmed it may be used as a portfolio piece. Gaited Community, Inc. owns the work, and the agreements restrict sharing screenshots and proprietary details without written consent, so keep it to what is on the card: no roadmap, internal architecture, pricing or code. Only claim what works: account flows, onboarding, per-type interfaces, admin console, data export and deletion (the marketplace, careers and community screens still show demo content). The cohort is the user's statement; it was not findable on ec.co in Nov 2026. Gradio has `url: null` on purpose: its live landing page still shows placeholder "Megbíznak bennünk" logos (Vercel, Spotify) and template avatars; add the URL once they're gone.
 
 ## Client delivery pipeline
 

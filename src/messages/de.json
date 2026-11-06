@@ -2,6 +2,7 @@
     "nav": {
         "services": "Leistungen",
         "ai": "KI-Integration",
+        "projects": "Projekte",
         "process": "So arbeiten wir",
         "contact": "Kontakt"
     },
@@ -182,6 +183,152 @@
             "webshop": "Webshop",
             "hub": "Claude",
             "team": "Erledigt"
+        }
+    },
+    "projects": {
+        "meta": {
+            "title": "Projekte",
+            "description": "Eine Auswahl unserer Projekte: Websites, Apps und Plattformen."
+        },
+        "label": "Projekte",
+        "title": "Eine Auswahl <em>unserer Projekte.</em>",
+        "subtitle": "Klicken Sie auf ein Feld und sehen Sie, was wir gelöst haben und womit es gebaut ist.",
+        "visit": "Live ansehen",
+        "solutionsTitle": "Lösungen",
+        "techTitle": "Technologie",
+        "screenshotAlt": "Screenshot der Website von {name}",
+        "items": {
+            "palbau": {
+                "name": "Pál Bau",
+                "type": "Website",
+                "description": "Eine Website für einen Generalunternehmer, der Einfamilienhäuser im Komitat Pest baut. Besucher sehen, wie ihr Haus entsteht und was sie schriftlich bekommen, und fragen dann einen Termin im Musterhaus an.",
+                "solutions": [
+                    {
+                        "title": "Das Haus entsteht beim Scrollen",
+                        "body": "Ein 3D-Haus wächst in sechs Schritten vom Fundament bis zur Terrasse, so ist der Bauablauf auf einen Blick klar."
+                    },
+                    {
+                        "title": "Antworten schon beim ersten Besuch",
+                        "body": "Sechs Fragen, die alle Bauherren stellen: Preis, Termine, Zahlung, Mängel, Kontrolle. Die Antworten stehen direkt auf der Seite."
+                    },
+                    {
+                        "title": "Terminanfragen fürs Musterhaus",
+                        "body": "Über ein kurzes Formular lässt sich ein Termin anfragen, die Anfrage kommt per E-Mail beim Bauunternehmer an."
+                    },
+                    {
+                        "title": "Ungarisch und Englisch",
+                        "body": "Die gesamte Website gibt es in beiden Sprachen."
+                    }
+                ]
+            },
+            "gaited": {
+                "name": "Gaited",
+                "type": "Plattform",
+                "description": "Eine Karriere- und Networking-Plattform für Fachleute und Marken aus der Pferdewelt. Gaited wurde in die PreFlight-Kohorte Herbst 2026 des Nashville Entrepreneur Center aufgenommen.",
+                "solutions": [
+                    {
+                        "title": "Konten für Reiter und Marken",
+                        "body": "Registrierung per E-Mail oder Google, mit Code bestätigt, inklusive Passwort-Zurücksetzung."
+                    },
+                    {
+                        "title": "Eine eigene Oberfläche für beide",
+                        "body": "Reiter und Marken sehen unterschiedliche Menüs und Inhalte, im hellen wie im dunklen Modus."
+                    },
+                    {
+                        "title": "Geführte Profileinrichtung",
+                        "body": "Ein Formular führt neue Mitglieder Schritt für Schritt durch ihr Profil und speichert alles."
+                    },
+                    {
+                        "title": "Admin-Konsole fürs Team",
+                        "body": "Anmeldestatistiken, Mitgliederverwaltung und Prüfwarteschlange an einem Ort, mit Protokoll."
+                    },
+                    {
+                        "title": "Datenschutz inklusive",
+                        "body": "Mitglieder können ihre Daten herunterladen und ihr Konto löschen."
+                    }
+                ]
+            },
+            "gradio": {
+                "name": "Project Gradio",
+                "type": "App",
+                "description": "Eine App zur Abiturvorbereitung für ungarische Oberstufenschüler, zuerst für Geschichte. Das Ziel: sofortige Korrektur, verständliche Erklärungen, und was falsch war, kommt wieder. Derzeit in Entwicklung.",
+                "solutions": [
+                    {
+                        "title": "Warteliste zum Start",
+                        "body": "Eine Landingpage, auf der sich Interessierte eintragen und zum Start Bescheid bekommen."
+                    },
+                    {
+                        "title": "Registrierung und Login",
+                        "body": "Eigene Konten mit E-Mail und Passwort, per E-Mail bestätigt."
+                    },
+                    {
+                        "title": "Eine Startseite für jeden Schüler",
+                        "body": "Hier landen Schüler nach dem Login. Hier werden ihre Ergebnisse nach Themen und Übungsvorschläge zu sehen sein."
+                    },
+                    {
+                        "title": "Web und Handy auf einer Basis",
+                        "body": "Nach der Webversion kommen iOS und Android, auf derselben Grundlage gebaut."
+                    }
+                ]
+            },
+            "thrift": {
+                "name": "Project Thrift",
+                "type": "App",
+                "description": "Eine Secondhand-Mode-App, in der Nutzer einen gesuchten Stil posten, kein bestimmtes Teil. Andere nehmen das als bezahlte Quest an und suchen in Secondhand-Läden nach passenden Stücken.",
+                "solutions": [
+                    {
+                        "title": "Ein Stil, kein Produkt",
+                        "body": "Nutzer beschreiben den gewünschten Stil statt eines bestimmten Teils."
+                    },
+                    {
+                        "title": "Bezahlte Quests",
+                        "body": "Andere können einen Beitrag als bezahlte Quest annehmen."
+                    },
+                    {
+                        "title": "Schatzsuche im Secondhand-Laden",
+                        "body": "Die Quest-Teilnehmer suchen in Secondhand-Läden nach passenden Stücken. So wird Stöbern zur belohnten Schatzsuche."
+                    }
+                ]
+            },
+            "scanner": {
+                "name": "Project Scanner",
+                "type": "Mobile App",
+                "description": "Eine mobile App, die Lebensmittel und Kosmetik scannt und sofort bewertet, wie gesund sie sind. So finden Nutzer auf einen Blick bessere Alternativen.",
+                "solutions": [
+                    {
+                        "title": "Sofortige Bewertung",
+                        "body": "Produkt scannen und sofort sehen, wie gesund es ist."
+                    },
+                    {
+                        "title": "Zutaten verständlich erklärt",
+                        "body": "Die App erklärt, was jede Zutat bewirkt."
+                    },
+                    {
+                        "title": "Leicht lesbare Symbole",
+                        "body": "Einfache Symbole zeigen zum Beispiel, ob ein Produkt vegan oder frei von bestimmten Stoffen ist."
+                    },
+                    {
+                        "title": "Bessere Wahl auf einen Blick",
+                        "body": "Die App hilft, schnell eine bessere Alternative zu finden."
+                    }
+                ]
+            }
+        },
+        "cta": "Ihres könnte das nächste sein.",
+        "close": "Schließen",
+        "status": {
+            "building": "In Entwicklung",
+            "preflight": "PreFlight, Herbst 2026"
+        },
+        "teaser": {
+            "title": "Einige <em>unserer Projekte.</em>",
+            "subtitle": "Klicken Sie auf ein Symbol und sehen Sie, was dahintersteckt.",
+            "button": "Alle Projekte"
+        },
+        "locked": {
+            "name": "NDA",
+            "note": "Vertraulich",
+            "label": "NDA-Projekt, vertraulich"
         }
     },
     "process": {

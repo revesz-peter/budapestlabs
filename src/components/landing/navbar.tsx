@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { Logo } from "@/components/logo";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -26,8 +25,10 @@ export function Navbar() {
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
 
   const menuItems = [
-    { name: t("services"), href: "#services" },
-    { name: t("ai"), href: "#ai" },
+    // absolute, so these also work from /projects
+    { name: t("services"), href: "/#services" },
+    { name: t("ai"), href: "/#ai" },
+    { name: t("projects"), href: "/projects" },
   ];
 
   React.useEffect(() => {
@@ -113,12 +114,12 @@ export function Navbar() {
               <ul className="flex gap-6 text-sm">
                 {menuItems.map((item, index) => (
                   <li key={index}>
-                    <Link
+                    <LocaleLink
                       href={item.href}
                       className="text-muted-foreground hover:text-foreground after:bg-brand relative block duration-150 after:absolute after:inset-x-0 after:-bottom-1 after:h-px after:origin-right after:scale-x-0 after:transition-transform after:duration-500 hover:after:origin-left hover:after:scale-x-100"
                     >
                       <span>{item.name}</span>
-                    </Link>
+                    </LocaleLink>
                   </li>
                 ))}
               </ul>
@@ -129,13 +130,13 @@ export function Navbar() {
                 <ul className="space-y-6 text-base">
                   {menuItems.map((item, index) => (
                     <li key={index}>
-                      <Link
+                      <LocaleLink
                         href={item.href}
                         onClick={() => setMenuState(false)}
                         className="text-muted-foreground hover:text-foreground block duration-150"
                       >
                         <span>{item.name}</span>
-                      </Link>
+                      </LocaleLink>
                     </li>
                   ))}
                 </ul>
@@ -144,9 +145,9 @@ export function Navbar() {
                 {languageSwitcher}
                 <ThemeToggle />
                 <Button asChild size="sm" className="group/roll px-4">
-                  <Link href="#contact" onClick={() => setMenuState(false)}>
+                  <LocaleLink href="/#contact" onClick={() => setMenuState(false)}>
                     <RollText>{t("contact")}</RollText>
-                  </Link>
+                  </LocaleLink>
                 </Button>
               </div>
             </div>

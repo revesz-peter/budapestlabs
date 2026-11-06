@@ -2,6 +2,7 @@
     "nav": {
         "services": "Szolgáltatások",
         "ai": "AI-integráció",
+        "projects": "Projektek",
         "process": "Így dolgozunk",
         "contact": "Kapcsolat"
     },
@@ -182,6 +183,152 @@
             "webshop": "Webshop",
             "hub": "Claude",
             "team": "Kész munka"
+        }
+    },
+    "projects": {
+        "meta": {
+            "title": "Projektek",
+            "description": "Válogatás a projektjeinkből: weboldalak, alkalmazások és platformok."
+        },
+        "label": "Projektek",
+        "title": "Válogatás a <em>projektjeinkből.</em>",
+        "subtitle": "Kattintson egy négyzetre, és megmutatjuk, mit oldottunk meg és miből épült.",
+        "visit": "Megnézem élőben",
+        "solutionsTitle": "Megoldások",
+        "techTitle": "Technológia",
+        "screenshotAlt": "{name}: a weboldal képernyőképe",
+        "items": {
+            "palbau": {
+                "name": "Pál Bau",
+                "type": "Weboldal",
+                "description": "Weboldal egy családi házakat építő generálkivitelezőnek, Pest vármegyében. A látogató látja, hogyan épül fel a háza és mit kap írásban, majd időpontot kér a bemutatóházba.",
+                "solutions": [
+                    {
+                        "title": "A ház görgetés közben felépül",
+                        "body": "Egy 3D-s ház hat lépésben készül el az alaptól a teraszig, így az építkezés menete első ránézésre érthető."
+                    },
+                    {
+                        "title": "Válaszok már az első látogatáskor",
+                        "body": "Hat kérdés, ami minden építtetőt foglalkoztat: ár, határidő, fizetés, hibák, ellenőrzés. A válaszok ott vannak az oldalon."
+                    },
+                    {
+                        "title": "Időpontkérés a bemutatóházba",
+                        "body": "Egy rövid űrlapon időpontot lehet kérni, és a kérés e-mailben megérkezik a kivitelezőhöz."
+                    },
+                    {
+                        "title": "Magyarul és angolul",
+                        "body": "A teljes oldal két nyelven érhető el."
+                    }
+                ]
+            },
+            "gaited": {
+                "name": "Gaited",
+                "type": "Platform",
+                "description": "Karrier- és kapcsolatépítő platform a lovas világ szakembereinek és márkáinak. A Gaited bekerült a Nashville Entrepreneur Center 2026 őszi PreFlight programjába.",
+                "solutions": [
+                    {
+                        "title": "Fiók lovasoknak és márkáknak",
+                        "body": "Regisztráció e-mailben vagy Google-fiókkal, kóddal megerősítve, jelszó-visszaállítással."
+                    },
+                    {
+                        "title": "Saját felület mindkét fióktípusnak",
+                        "body": "Lovasok és márkák más menüt és más tartalmat látnak, világos és sötét módban is."
+                    },
+                    {
+                        "title": "Profil-beállítás lépésről lépésre",
+                        "body": "Egy vezetett űrlap segít belépés után kitölteni a profilt, és minden adatot elment."
+                    },
+                    {
+                        "title": "Adminfelület a csapatnak",
+                        "body": "Regisztrációs statisztikák, tagkezelés és ellenőrzési sor egy helyen, naplózva."
+                    },
+                    {
+                        "title": "Adatvédelem beépítve",
+                        "body": "A tagok letölthetik az adataikat, és törölhetik a fiókjukat."
+                    }
+                ]
+            },
+            "gradio": {
+                "name": "Project Gradio",
+                "type": "Alkalmazás",
+                "description": "Érettségi-felkészítő alkalmazás középiskolásoknak, történelemmel az élen. A cél: azonnali javítás, érthető magyarázat, és amit a diák elront, az visszajön. Jelenleg fejlesztés alatt áll.",
+                "solutions": [
+                    {
+                        "title": "Várólista az induláshoz",
+                        "body": "Bemutatkozó oldal, ahol az érdeklődők feliratkozhatnak, és szólunk nekik, amint indul."
+                    },
+                    {
+                        "title": "Regisztráció és belépés",
+                        "body": "Saját fiók e-mail-címmel és jelszóval, e-mailes megerősítéssel."
+                    },
+                    {
+                        "title": "Saját kezdőlap a diáknak",
+                        "body": "Belépés után ide érkezik a diák. Itt lesznek a témakörönkénti eredményei és a gyakorlási javaslatok."
+                    },
+                    {
+                        "title": "Web és telefon egy alapon",
+                        "body": "A webes után jön az iOS és az Android, ugyanarra az alapra építve."
+                    }
+                ]
+            },
+            "thrift": {
+                "name": "Project Thrift",
+                "type": "Alkalmazás",
+                "description": "Használtruhás alkalmazás, ahol a felhasználó nem egy konkrét darabot keres, hanem egy stílust ír ki. Mások fizetett küldetésként elvállalják, és a turikban vadásznak a hozzá illő darabokra.",
+                "solutions": [
+                    {
+                        "title": "Stílust keres, nem terméket",
+                        "body": "A felhasználó azt írja le, milyen stílust szeretne, nem egy konkrét ruhadarabot."
+                    },
+                    {
+                        "title": "Fizetett küldetések",
+                        "body": "A kiírást mások fizetett küldetésként vállalhatják el."
+                    },
+                    {
+                        "title": "Kincsvadászat a turikban",
+                        "body": "A küldetést vállalók a használtruha-boltokban keresik a megfelelő darabokat, így a turkálásból jutalmazott kincsvadászat lesz."
+                    }
+                ]
+            },
+            "scanner": {
+                "name": "Project Scanner",
+                "type": "Mobilalkalmazás",
+                "description": "Mobilalkalmazás, amely beolvassa az élelmiszereket és a kozmetikumokat, és azonnal megmutatja, mennyire egészségesek. Egy pillantással segít jobb terméket választani.",
+                "solutions": [
+                    {
+                        "title": "Azonnali értékelés",
+                        "body": "Beolvasás után rögtön látszik, mennyire egészséges a termék."
+                    },
+                    {
+                        "title": "Érthető összetevők",
+                        "body": "Az alkalmazás elmagyarázza, mire való minden egyes összetevő."
+                    },
+                    {
+                        "title": "Könnyen olvasható jelölések",
+                        "body": "Egyszerű jelek mutatják például, ha egy termék vegán vagy valamitől mentes."
+                    },
+                    {
+                        "title": "Jobb választás egy pillantással",
+                        "body": "Segít gyorsan megtalálni a jobb terméket."
+                    }
+                ]
+            }
+        },
+        "cta": "Legyen a következő az Öné.",
+        "close": "Bezárás",
+        "status": {
+            "building": "Fejlesztés alatt",
+            "preflight": "PreFlight, 2026 ősz"
+        },
+        "teaser": {
+            "title": "Néhány a <em>projektjeink közül.</em>",
+            "subtitle": "Kattintson egy ikonra, és megmutatjuk, mi van mögötte.",
+            "button": "Összes projekt"
+        },
+        "locked": {
+            "name": "NDA",
+            "note": "Titoktartás alatt",
+            "label": "NDA-projekt, titoktartás alatt"
         }
     },
     "process": {
