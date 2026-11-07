@@ -1,6 +1,6 @@
 import type { Project } from "@/lib/projects";
 
-// 16×16 pixel art, same spirit as the Claude critter. Fixed colours: they read on the pastel tiles in both themes.
+// 16×16 pixel art, same spirit as the Claude critter. Fixed colours read on the pastel tiles in both themes.
 const colors: Record<string, string> = {
   R: "#A9553A", // terracotta
   r: "#7E3D28", // dark terracotta
@@ -10,6 +10,7 @@ const colors: Record<string, string> = {
   G: "#7C8B4F", // olive
   Y: "#E8BD5F", // ochre
   S: "#8E8578", // stone
+  F: "currentColor", // follows the text colour, for art that has to read on its tile in both themes
 };
 
 type IconName = Project["slug"] | "lock";
@@ -32,6 +33,44 @@ const icons: Record<IconName, string[]> = {
     "..WWWWWDDWWWWW..",
     "..WWWWWDDWWWWW..",
     "GGGGGGGGGGGGGGGG",
+    "................",
+  ],
+  // a magnifying glass finding a person
+  scouting: [
+    "................",
+    "....RRRRRR......",
+    "...RRWWWWRR.....",
+    "..RRWWDDWWRR....",
+    "..RWWWDDWWWR....",
+    "..RWWWWWWWWR....",
+    "..RWWDDDDWWR....",
+    "..RWWDDDDWWR....",
+    "..RRWWWWWWRR....",
+    "...RRWWWWRR.....",
+    "....RRRRRRrr....",
+    "..........rrr...",
+    "...........rrr..",
+    "............rrr.",
+    ".............rr.",
+    "................",
+  ],
+  // the serif M of the Mamor Models logo
+  mamor: [
+    "................",
+    "................",
+    ".FFFF......FFFF.",
+    "...FFF....FFF...",
+    "...FFF....FFF...",
+    "...FFFF..FFFF...",
+    "...FF.F..F.FF...",
+    "...FF.FFFF.FF...",
+    "...FF..FF..FF...",
+    "...FF..FF..FF...",
+    "...FF......FF...",
+    "...FF......FF...",
+    "..FFFF....FFFF..",
+    ".FFFFFF..FFFFFF.",
+    "................",
     "................",
   ],
   // a horseshoe

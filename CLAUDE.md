@@ -143,7 +143,9 @@ A section on the main page (`#projects`, `projects.tsx`, between AI and Team, li
 - **Wording**: this is a selection, not the full list (the team has done far more work than is shown). Headlines must not imply otherwise: no "what we've built so far".
 - **Motion level**: the user found tilt, bounce, big scale, dimming neighbours and a critter here too gamified. Keep it calm: small hover, no overshoot.
 
-To add a project: an entry in `lib/projects.ts` (`tech` isn't translated), a screenshot in `public/projects/`, a 16x16 pixel icon in `project-icon.tsx`, and `projects.items.<slug>` in all 3 message files (`name`, `type`, `description`, `solutions`). Only list real work and name tech from the project's actual dependencies: no invented results or client quotes. Unlaunched work gets `status: "building"` (shown in the modal) and is named "Project <one word>" (Project Gradio, Project Thrift, Project Scanner), not translated. No screenshot or verified tech yet: `image: null`, `tech: []`. Thrift and Scanner have no repo yet.
+To add a project: an entry in `lib/projects.ts` (`tech` isn't translated), a full-window 16:10 screenshot in `public/projects/` (1200x750 at 2x, all the same ratio), a 16x16 pixel icon in `project-icon.tsx`, and `projects.items.<slug>` in all 3 message files (`name`, `type`, `description`, `solutions`). Only list real work and name tech from the project's actual dependencies: no invented results or client quotes. Unlaunched work gets `status: "building"` (shown in the modal) and is named "Project <one word>" (Project Gradio, Project Mamor, Project Thrift, Project Scanner), not translated. No screenshot or verified tech yet: `image: null`, `tech: []`. Thrift and Scanner have no repo yet.
+
+Scouting: first-screen screenshot only (sample applicants appear further down the live page). Copy claims only what the code does, so check its repo before adding to it.
 
 Gaited: keep it to what is on the card: no roadmap, internal architecture, pricing or code. Only claim what works: account flows, onboarding, per-type interfaces, admin console, data export and deletion. Gradio has `url: null` until its live page is ready to link.
 

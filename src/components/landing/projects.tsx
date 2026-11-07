@@ -25,7 +25,7 @@ const modalRadius = { borderRadius: 16 };
 // Plain squares fill the spots in `plainSpots` (first ones first), the "+" square is always last.
 const perBlock = 12;
 const plainSpots = [1, 6, 9, 4, 10];
-const plainTints = ["bg-moss/30", "bg-sand/80", "bg-clay/30", "bg-ochre/30", "bg-stone/45"];
+const plainTints = ["bg-moss/30", "bg-sand/80", "bg-clay/30", "bg-stone/45", "bg-ochre/30"];
 
 type MosaicCell =
   | { kind: "project"; project: Project }

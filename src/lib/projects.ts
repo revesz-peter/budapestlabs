@@ -1,4 +1,4 @@
-// To add a project: an entry here, a screenshot in public/projects/ (any proportions: imageSize keeps it uncropped), a pixel icon in project-icon.tsx, and projects.items.<slug> in all 3 message files.
+// To add a project: an entry here, a full-window 16:10 screenshot in public/projects/ (1200x750 at 2x), a pixel icon in project-icon.tsx, and projects.items.<slug> in all 3 message files.
 // url: the live site, or null to leave the link out of the modal.
 // image: null shows the pixel icon large instead; tech: [] hides that block. Only list tech the project really uses.
 // status: a key under projects.status, shown in the modal. "building" = not launched yet: those are named "Project <one word>".
@@ -16,18 +16,36 @@ export const projects = [
     slug: "gaited",
     url: "https://gaited-monorepo.vercel.app",
     image: "/projects/gaited.jpg",
-    imageSize: [2400, 1499],
+    imageSize: [2400, 1500],
     tint: "bg-olive/55",
     tech: ["Next.js", "Neon Postgres", "Neon Auth", "Drizzle", "Vercel"],
     status: "preflight",
   },
   {
+    slug: "scouting",
+    url: "https://scouting.agency",
+    image: "/projects/scouting.jpg",
+    imageSize: [2400, 1500],
+    tint: "bg-ochre/80",
+    tech: ["Next.js", "Neon Postgres", "Neon Auth", "Resend", "Vercel"],
+    status: null,
+  },
+  {
     slug: "gradio",
     url: null,
     image: "/projects/gradio.jpg",
-    imageSize: [2400, 1433],
+    imageSize: [2400, 1500],
     tint: "bg-moss/55",
     tech: ["Next.js", "Expo", "tRPC", "Better Auth", "Neon"],
+    status: "building",
+  },
+  {
+    slug: "mamor",
+    url: null,
+    image: "/projects/mamor.jpg",
+    imageSize: [2400, 1500],
+    tint: "bg-brand/30",
+    tech: ["Next.js", "Framer Motion", "WebGL"],
     status: "building",
   },
   {

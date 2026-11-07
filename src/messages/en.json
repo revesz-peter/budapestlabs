@@ -244,6 +244,29 @@
                     }
                 ]
             },
+            "scouting": {
+                "name": "Scouting",
+                "type": "Platform",
+                "description": "A platform for model agencies and the scouts who work for them. From application to signing, everything runs in one system instead of an inbox, a spreadsheet and a group chat.",
+                "solutions": [
+                    {
+                        "title": "Six stages, one screen",
+                        "body": "Every applicant follows the same path: application, pre-selection, casting, board vote, onboarding, then the agency's roster."
+                    },
+                    {
+                        "title": "Search and a shared decision",
+                        "body": "Applicants can be filtered by height, age and measurements. In the final vote, you can see who voted what, with their notes."
+                    },
+                    {
+                        "title": "A personal link and card for scouts",
+                        "body": "Each scout gets their own application link and a card with a QR code. Anyone who applies through it is credited to them automatically."
+                    },
+                    {
+                        "title": "Payouts and a downloadable roster",
+                        "body": "What scouts are owed is tracked in the same place, and the roster downloads as a spreadsheet."
+                    }
+                ]
+            },
             "gradio": {
                 "name": "Project Gradio",
                 "type": "App",
@@ -264,6 +287,29 @@
                     {
                         "title": "Web and phone on one base",
                         "body": "iOS and Android come after the web version, built on the same foundation."
+                    }
+                ]
+            },
+            "mamor": {
+                "name": "Project Mamor",
+                "type": "Website",
+                "description": "A website for a model agency. Visitors are greeted by a moving backdrop, and from there reach the list of models and their profiles.",
+                "solutions": [
+                    {
+                        "title": "A profile for every model",
+                        "body": "Height, measurements, shoe size, eye and hair colour are all in one place."
+                    },
+                    {
+                        "title": "Full-screen search",
+                        "body": "Results narrow as you type, and you can step through them with the keyboard."
+                    },
+                    {
+                        "title": "A moving backdrop on the home page",
+                        "body": "Surfaces that recall marble and silk take turns, which gives the page character even without photos."
+                    },
+                    {
+                        "title": "Made for phones too",
+                        "body": "The pages work well on a small screen."
                     }
                 ]
             },

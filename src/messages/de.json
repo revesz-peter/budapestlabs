@@ -244,6 +244,29 @@
                     }
                 ]
             },
+            "scouting": {
+                "name": "Scouting",
+                "type": "Plattform",
+                "description": "Eine Plattform für Modelagenturen und die Scouts, die für sie arbeiten. Von der Bewerbung bis zur Vertragsunterzeichnung läuft alles in einem System, statt in Postfach, Tabelle und Gruppenchat.",
+                "solutions": [
+                    {
+                        "title": "Sechs Schritte, eine Oberfläche",
+                        "body": "Alle Bewerber durchlaufen denselben Weg: Bewerbung, Vorauswahl, Casting, Abstimmung, Aufnahme, dann die Modelliste der Agentur."
+                    },
+                    {
+                        "title": "Suche und gemeinsame Entscheidung",
+                        "body": "Bewerber lassen sich nach Größe, Alter und Maßen filtern. Bei der Abstimmung ist sichtbar, wer wie gestimmt hat, samt Notizen."
+                    },
+                    {
+                        "title": "Eigener Link und Karte für Scouts",
+                        "body": "Jeder Scout erhält einen eigenen Bewerbungslink und eine Karte mit QR-Code. Wer sich darüber bewirbt, wird automatisch diesem Scout zugeordnet."
+                    },
+                    {
+                        "title": "Auszahlungen und Liste zum Herunterladen",
+                        "body": "Was Scouts zusteht, ist am selben Ort zu sehen, und die Modelliste lässt sich als Tabelle herunterladen."
+                    }
+                ]
+            },
             "gradio": {
                 "name": "Project Gradio",
                 "type": "App",
@@ -264,6 +287,29 @@
                     {
                         "title": "Web und Handy auf einer Basis",
                         "body": "Nach der Webversion kommen iOS und Android, auf derselben Grundlage gebaut."
+                    }
+                ]
+            },
+            "mamor": {
+                "name": "Project Mamor",
+                "type": "Website",
+                "description": "Eine Website für eine Modelagentur. Besucher empfängt ein bewegter Hintergrund, von dort geht es zur Modelliste und zu den Profilen.",
+                "solutions": [
+                    {
+                        "title": "Ein Profil für jedes Model",
+                        "body": "Größe, Maße, Schuhgröße, Augen- und Haarfarbe stehen an einem Ort."
+                    },
+                    {
+                        "title": "Suche im Vollbild",
+                        "body": "Die Treffer werden beim Tippen weniger, und per Tastatur lässt sich durch sie blättern."
+                    },
+                    {
+                        "title": "Bewegter Hintergrund auf der Startseite",
+                        "body": "Flächen, die an Marmor und Seide erinnern, wechseln sich ab. So hat die Seite auch ohne Fotos Charakter."
+                    },
+                    {
+                        "title": "Auch fürs Handy gemacht",
+                        "body": "Die Seiten funktionieren auch auf kleinen Bildschirmen gut."
                     }
                 ]
             },

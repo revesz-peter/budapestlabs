@@ -244,6 +244,29 @@
                     }
                 ]
             },
+            "scouting": {
+                "name": "Scouting",
+                "type": "Platform",
+                "description": "Platform modellügynökségeknek és a nekik dolgozó scoutoknak. A jelentkezéstől a szerződtetésig minden egy rendszerben történik, postafiók, táblázat és csoportos chat helyett.",
+                "solutions": [
+                    {
+                        "title": "Hat lépés, egy felületen",
+                        "body": "Minden jelentkező ugyanazon az úton halad: jelentkezés, előszűrés, casting, szavazás, beléptetés, majd felkerül az ügynökség névsorára."
+                    },
+                    {
+                        "title": "Keresés és közös döntés",
+                        "body": "A jelentkezők magasság, kor és méretek szerint szűrhetők. A végső szavazásnál látszik, ki mit szavazott, és milyen megjegyzéssel."
+                    },
+                    {
+                        "title": "Saját link és kártya a scoutoknak",
+                        "body": "Minden scout saját jelentkezési linket és QR-kódos kártyát kap. Aki ezen keresztül jelentkezik, automatikusan hozzá kerül."
+                    },
+                    {
+                        "title": "Kifizetések és letölthető névsor",
+                        "body": "A scoutoknak járó összeg ugyanott követhető, a névsor pedig táblázatként letölthető."
+                    }
+                ]
+            },
             "gradio": {
                 "name": "Project Gradio",
                 "type": "Alkalmazás",
@@ -264,6 +287,29 @@
                     {
                         "title": "Web és telefon egy alapon",
                         "body": "A webes után jön az iOS és az Android, ugyanarra az alapra építve."
+                    }
+                ]
+            },
+            "mamor": {
+                "name": "Project Mamor",
+                "type": "Weboldal",
+                "description": "Weboldal egy modellügynökségnek. A látogatót mozgó háttér fogadja, innen jut el a modellek listájához és adatlapjaihoz.",
+                "solutions": [
+                    {
+                        "title": "Saját adatlap minden modellnek",
+                        "body": "Egy helyen látszik a magasság, a méretek, a cipőméret, a szem- és a hajszín."
+                    },
+                    {
+                        "title": "Keresés teljes képernyőn",
+                        "body": "A találatok gépelés közben szűkülnek, és billentyűzettel is végig lehet lépkedni rajtuk."
+                    },
+                    {
+                        "title": "Mozgó háttér a kezdőlapon",
+                        "body": "Márványra és selyemre emlékeztető felületek váltják egymást, így az oldal fotók nélkül is karakteres."
+                    },
+                    {
+                        "title": "Telefonra igazítva",
+                        "body": "Az oldalak kis képernyőn is jól használhatók."
                     }
                 ]
             },
