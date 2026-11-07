@@ -186,13 +186,9 @@
         }
     },
     "projects": {
-        "meta": {
-            "title": "Projektek",
-            "description": "Válogatás a projektjeinkből: weboldalak, alkalmazások és platformok."
-        },
         "label": "Projektek",
-        "title": "Válogatás a <em>projektjeinkből.</em>",
-        "subtitle": "Kattintson egy négyzetre, és megmutatjuk, mit oldottunk meg és miből épült.",
+        "title": "Néhány a <em>projektjeink közül.</em>",
+        "subtitle": "Kattintson egy ikonra, és megmutatjuk, mi van mögötte.",
         "visit": "Megnézem élőben",
         "solutionsTitle": "Megoldások",
         "techTitle": "Technológia",
@@ -320,16 +316,11 @@
             "building": "Fejlesztés alatt",
             "preflight": "PreFlight, 2026 ősz"
         },
-        "teaser": {
-            "title": "Néhány a <em>projektjeink közül.</em>",
-            "subtitle": "Kattintson egy ikonra, és megmutatjuk, mi van mögötte.",
-            "button": "Összes projekt"
-        },
         "locked": {
             "name": "NDA",
-            "note": "Titoktartás alatt",
             "label": "NDA-projekt, titoktartás alatt"
-        }
+        },
+        "expandImage": "Kép nagyítása"
     },
     "process": {
         "label": "Így dolgozunk",

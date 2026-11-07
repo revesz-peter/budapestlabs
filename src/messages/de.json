@@ -186,13 +186,9 @@
         }
     },
     "projects": {
-        "meta": {
-            "title": "Projekte",
-            "description": "Eine Auswahl unserer Projekte: Websites, Apps und Plattformen."
-        },
         "label": "Projekte",
-        "title": "Eine Auswahl <em>unserer Projekte.</em>",
-        "subtitle": "Klicken Sie auf ein Feld und sehen Sie, was wir gelöst haben und womit es gebaut ist.",
+        "title": "Einige <em>unserer Projekte.</em>",
+        "subtitle": "Klicken Sie auf ein Symbol und sehen Sie, was dahintersteckt.",
         "visit": "Live ansehen",
         "solutionsTitle": "Lösungen",
         "techTitle": "Technologie",
@@ -320,16 +316,11 @@
             "building": "In Entwicklung",
             "preflight": "PreFlight, Herbst 2026"
         },
-        "teaser": {
-            "title": "Einige <em>unserer Projekte.</em>",
-            "subtitle": "Klicken Sie auf ein Symbol und sehen Sie, was dahintersteckt.",
-            "button": "Alle Projekte"
-        },
         "locked": {
             "name": "NDA",
-            "note": "Vertraulich",
             "label": "NDA-Projekt, vertraulich"
-        }
+        },
+        "expandImage": "Bild vergrößern"
     },
     "process": {
         "label": "So arbeiten wir",

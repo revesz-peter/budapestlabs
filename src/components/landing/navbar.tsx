@@ -25,10 +25,9 @@ export function Navbar() {
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
 
   const menuItems = [
-    // absolute, so these also work from /projects
     { name: t("services"), href: "/#services" },
     { name: t("ai"), href: "/#ai" },
-    { name: t("projects"), href: "/projects" },
+    { name: t("projects"), href: "/#projects" },
   ];
 
   React.useEffect(() => {

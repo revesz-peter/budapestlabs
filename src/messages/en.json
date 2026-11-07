@@ -186,13 +186,9 @@
         }
     },
     "projects": {
-        "meta": {
-            "title": "Projects",
-            "description": "A selection of our projects: websites, apps and platforms."
-        },
         "label": "Projects",
-        "title": "A selection of <em>our projects.</em>",
-        "subtitle": "Click a square to see what we solved and what it's built with.",
+        "title": "A few of <em>our projects.</em>",
+        "subtitle": "Click an icon to see what's behind it.",
         "visit": "View live site",
         "solutionsTitle": "Solutions",
         "techTitle": "Technology",
@@ -320,16 +316,11 @@
             "building": "In development",
             "preflight": "PreFlight, Fall 2026"
         },
-        "teaser": {
-            "title": "A few of <em>our projects.</em>",
-            "subtitle": "Click an icon to see what's behind it.",
-            "button": "All projects"
-        },
         "locked": {
             "name": "NDA",
-            "note": "Confidential",
             "label": "NDA project, confidential"
-        }
+        },
+        "expandImage": "Enlarge image"
     },
     "process": {
         "label": "How we work",

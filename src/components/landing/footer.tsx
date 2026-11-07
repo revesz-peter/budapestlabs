@@ -42,7 +42,7 @@ export function Footer() {
                   </Link>
                 ))}
                 <Link
-                  href="/projects"
+                  href="/#projects"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {t("nav.projects")}
