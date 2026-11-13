@@ -31,6 +31,15 @@ export const projects = [
     status: null,
   },
   {
+    slug: "motorworks",
+    url: "https://car-mechanic-budapest.vercel.app",
+    image: "/projects/motorworks.jpg",
+    imageSize: [2400, 1500],
+    tint: "bg-olive/30",
+    tech: ["React", "Vite", "Motion", "Vercel"],
+    status: "demo",
+  },
+  {
     slug: "gradio",
     url: null,
     image: "/projects/gradio.jpg",

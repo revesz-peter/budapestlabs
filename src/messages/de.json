@@ -267,6 +267,29 @@
                     }
                 ]
             },
+            "motorworks": {
+                "name": "BP Motorworks",
+                "type": "Website",
+                "description": "Eine Demo-Website für eine Autowerkstatt in Budapest. Autofahrer sehen die Leistungen mit Startpreisen, den Ablauf und die Öffnungszeiten und finden auf derselben Seite das Formular für eine Terminanfrage.",
+                "solutions": [
+                    {
+                        "title": "Leistungen mit Startpreisen",
+                        "body": "Sechs Leistungen, jeweils mit Startpreis, und ein klarer Hinweis: Der Endpreis steht nach der Inspektion fest."
+                    },
+                    {
+                        "title": "Der Ablauf in vier Schritten",
+                        "body": "Buchung, Inspektion, Freigabe des Angebots, Abholung. Autofahrer wissen vorher, was sie erwartet."
+                    },
+                    {
+                        "title": "Terminanfrage in wenigen Feldern",
+                        "body": "Name, Telefon, Automodell und gewünschte Leistung, daneben Adresse, Karte und Öffnungszeiten."
+                    },
+                    {
+                        "title": "Ungarisch und Englisch",
+                        "body": "Die ganze Seite gibt es in beiden Sprachen, und sie merkt sich die Wahl des Besuchers."
+                    }
+                ]
+            },
             "gradio": {
                 "name": "Project Gradio",
                 "type": "App",
@@ -360,7 +383,8 @@
         "close": "Schließen",
         "status": {
             "building": "In Entwicklung",
-            "preflight": "PreFlight, Herbst 2026"
+            "preflight": "PreFlight, Herbst 2026",
+            "demo": "Demoseite"
         },
         "locked": {
             "name": "NDA",

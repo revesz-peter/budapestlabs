@@ -267,6 +267,29 @@
                     }
                 ]
             },
+            "motorworks": {
+                "name": "BP Motorworks",
+                "type": "Weboldal",
+                "description": "Mintaoldal egy budapesti autószerviznek. Az autós egy helyen látja a szolgáltatásokat kiinduló árral, a munka menetét és a nyitvatartást, és ugyanitt megtalálja az időpontkérő űrlapot.",
+                "solutions": [
+                    {
+                        "title": "Szolgáltatások kiinduló árral",
+                        "body": "Hat szolgáltatás, mindegyik a kiinduló árával, alatta pedig világosan: a végleges ár az átvizsgálás után dől el."
+                    },
+                    {
+                        "title": "A munka menete négy lépésben",
+                        "body": "Foglalás, átvizsgálás, az árajánlat jóváhagyása, átvétel. Az autós előre tudja, mire számíthat."
+                    },
+                    {
+                        "title": "Időpontkérés pár mezővel",
+                        "body": "Név, telefonszám, autó típusa és a kért szolgáltatás, mellette cím, térkép és nyitvatartás."
+                    },
+                    {
+                        "title": "Magyarul és angolul",
+                        "body": "A teljes oldal két nyelven érhető el, és megjegyzi a látogató választását."
+                    }
+                ]
+            },
             "gradio": {
                 "name": "Project Gradio",
                 "type": "Alkalmazás",
@@ -360,7 +383,8 @@
         "close": "Bezárás",
         "status": {
             "building": "Fejlesztés alatt",
-            "preflight": "PreFlight, 2026 ősz"
+            "preflight": "PreFlight, 2026 ősz",
+            "demo": "Mintaoldal"
         },
         "locked": {
             "name": "NDA",

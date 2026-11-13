@@ -267,6 +267,29 @@
                     }
                 ]
             },
+            "motorworks": {
+                "name": "BP Motorworks",
+                "type": "Website",
+                "description": "A demo website for a Budapest car repair shop. Drivers see the services with starting prices, how the work goes and the opening hours, and find the booking form on the same page.",
+                "solutions": [
+                    {
+                        "title": "Services with starting prices",
+                        "body": "Six services, each with its starting price, and a clear note that the final price is set after inspection."
+                    },
+                    {
+                        "title": "The job in four steps",
+                        "body": "Booking, inspection, approving the quote, pickup. Drivers know what to expect before they arrive."
+                    },
+                    {
+                        "title": "Booking in a few fields",
+                        "body": "Name, phone, car model and the service needed, next to the address, map and opening hours."
+                    },
+                    {
+                        "title": "Hungarian and English",
+                        "body": "The whole site works in both languages and remembers the visitor's choice."
+                    }
+                ]
+            },
             "gradio": {
                 "name": "Project Gradio",
                 "type": "App",
@@ -360,7 +383,8 @@
         "close": "Close",
         "status": {
             "building": "In development",
-            "preflight": "PreFlight, Fall 2026"
+            "preflight": "PreFlight, Fall 2026",
+            "demo": "Demo site"
         },
         "locked": {
             "name": "NDA",

@@ -54,6 +54,25 @@ const icons: Record<IconName, string[]> = {
     ".............rr.",
     "................",
   ],
+  // a car, for the car repair shop
+  motorworks: [
+    "................",
+    "................",
+    "................",
+    "................",
+    ".....RRRRRR.....",
+    "....RBBRBBBR....",
+    "...RBBBRBBBBR...",
+    ".RRRRRRRRRRRRRR.",
+    "RRRRRRRRRRRRRRRY",
+    "RRRRRRRRRRRRRRRR",
+    "rrrDDDrrrrDDDrrr",
+    "..DDSDD..DDSDD..",
+    "...DDD....DDD...",
+    "................",
+    "................",
+    "................",
+  ],
   // the serif M of the Mamor Models logo
   mamor: [
     "................",
