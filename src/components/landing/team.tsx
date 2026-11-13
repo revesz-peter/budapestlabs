@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { SectionHeader, rich } from "@/components/landing/section-header";
@@ -8,10 +9,10 @@ import { PixelCritter } from "@/components/landing/pixel-claude";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-// Placeholder portraits: a pastel tile with a pixel Claude, until real photos are in
+// Portraits: a photo filling the tile, or a pixel Claude on the pastel tile until the photo is in
 const members = [
-  { key: "peter", tint: "bg-clay/55", accent: "bg-clay" },
-  { key: "kristof", tint: "bg-olive/55", accent: "bg-olive" },
+  { key: "peter", tint: "bg-clay/55", accent: "bg-clay", photo: "/team/peter.jpg" },
+  { key: "kristof", tint: "bg-olive/55", accent: "bg-olive", photo: "/team/kristof.jpg" },
 ] as const;
 
 
@@ -25,7 +26,7 @@ export function Team() {
         <SectionHeader align="start" className="mx-0" eyebrow={t("label")} title={t.rich("title", rich)} subtitle={t("subtitle")} />
 
         <ul className="mt-12 grid gap-5 md:mt-16 md:grid-cols-2 lg:gap-6">
-          {members.map(({ key, tint, accent }, i) => (
+          {members.map(({ key, tint, accent, photo }, i) => (
             <motion.li
               key={key}
               initial={{ opacity: 0, y: 24 }}
@@ -35,8 +36,12 @@ export function Team() {
               className="group bg-card flex flex-col rounded-[2rem] border p-6 md:p-8"
             >
               <div className="flex items-center gap-5">
-                <span className={cn("flex size-20 shrink-0 items-center justify-center rounded-3xl border md:size-24", tint)}>
-                  <PixelCritter className="h-8 w-11 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-1 motion-reduce:transition-none md:h-10 md:w-13" />
+                <span className={cn("relative flex size-20 shrink-0 items-center justify-center overflow-hidden rounded-3xl border md:size-24", tint)}>
+                  {photo ? (
+                    <Image src={photo} alt={t(`members.${key}.name`)} fill sizes="96px" className="object-cover object-top" />
+                  ) : (
+                    <PixelCritter className="h-8 w-11 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-1 motion-reduce:transition-none md:h-10 md:w-13" />
+                  )}
                 </span>
                 <div className="space-y-1.5">
                   <h3 className="text-xl font-medium tracking-tight md:text-2xl">{t(`members.${key}.name`)}</h3>
