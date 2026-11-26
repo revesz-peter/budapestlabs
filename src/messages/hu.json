@@ -197,7 +197,7 @@
             "palbau": {
                 "name": "Pál Bau",
                 "type": "Weboldal",
-                "description": "Weboldal egy családi házakat építő generálkivitelezőnek, Pest vármegyében. A látogató látja, hogyan épül fel a háza és mit kap írásban, majd időpontot kér a bemutatóházba.",
+                "description": "Kétnyelvű Next.js-weboldal egy családi házakat építő generálkivitelezőnek, Pest vármegyében. A görgetésre vezérelt Three.js-modell hat fázisban építi fel a házat, az időpontkéréseket Zod ellenőrzi, és Resenden keresztül érkeznek meg e-mailben.",
                 "solutions": [
                     {
                         "title": "A ház görgetés közben felépül",
@@ -220,7 +220,7 @@
             "gaited": {
                 "name": "Gaited",
                 "type": "Platform",
-                "description": "Karrier- és kapcsolatépítő platform a lovas világ szakembereinek és márkáinak. A Gaited bekerült a Nashville Entrepreneur Center 2026 őszi PreFlight programjába.",
+                "description": "Szerepkör-alapú karrier- és kapcsolatépítő platform a lovas világ szakembereinek és márkáinak, Next.js, Neon Postgres és Drizzle alapokon. A Gaited bekerült a Nashville Entrepreneur Center 2026 őszi PreFlight programjába.",
                 "solutions": [
                     {
                         "title": "Fiók lovasoknak és márkáknak",
@@ -244,10 +244,10 @@
                     }
                 ]
             },
-            "scouting": {
-                "name": "Scouting",
+            "scoutingdot": {
+                "name": "Scoutingdot",
                 "type": "Platform",
-                "description": "Platform modellügynökségeknek és a nekik dolgozó scoutoknak. A jelentkezéstől a szerződtetésig minden egy rendszerben történik, postafiók, táblázat és csoportos chat helyett.",
+                "description": "Több ügynökséget kiszolgáló (multi-tenant) platform modellügynökségeknek és scoutjaiknak, Next.js és Neon Postgres alapokon. A jelentkezők hatlépcsős folyamaton haladnak végig, minden lépésük naplózva van, a saját linkek és QR-kártyák pedig a megfelelő scouthoz kötik a jelentkezést.",
                 "solutions": [
                     {
                         "title": "Hat lépés, egy felületen",
@@ -293,7 +293,7 @@
             "gradio": {
                 "name": "Project Gradio",
                 "type": "Alkalmazás",
-                "description": "Érettségi-felkészítő alkalmazás középiskolásoknak, történelemmel az élen. A cél: azonnali javítás, érthető magyarázat, és amit a diák elront, az visszajön. Jelenleg fejlesztés alatt áll.",
+                "description": "Érettségi-felkészítő alkalmazás középiskolásoknak, történelemmel az élen. Turborepo monorepóban készül: most Next.js, utána Expo iOS-re és Androidra, közös, típusbiztos tRPC API-val. A cél: azonnali javítás, érthető magyarázat, és amit a diák elront, az visszajön.",
                 "solutions": [
                     {
                         "title": "Várólista az induláshoz",
@@ -316,7 +316,7 @@
             "mamor": {
                 "name": "Project Mamor",
                 "type": "Weboldal",
-                "description": "Weboldal egy modellügynökségnek. A látogatót mozgó háttér fogadja, innen jut el a modellek listájához és adatlapjaihoz.",
+                "description": "Next.js-weboldal egy modellügynökségnek, statikusan generált modelladatlapokkal. A mozgó hátterek egyedi WebGL-shaderek, a billentyűzettel is kezelhető keresőfelület pedig gépelés közben szűri a találatokat.",
                 "solutions": [
                     {
                         "title": "Saját adatlap minden modellnek",
@@ -339,7 +339,7 @@
             "thrift": {
                 "name": "Project Thrift",
                 "type": "Alkalmazás",
-                "description": "Használtruhás alkalmazás, ahol a felhasználó nem egy konkrét darabot keres, hanem egy stílust ír ki. Mások fizetett küldetésként elvállalják, és a turikban vadásznak a hozzá illő darabokra.",
+                "description": "Kétoldalú piactér-alkalmazás használt ruhákhoz. A felhasználó nem konkrét darabot keres, hanem stílust ír ki, mások pedig fizetett küldetésként elvállalják, és a turikban vadásznak a hozzá illő darabokra.",
                 "solutions": [
                     {
                         "title": "Stílust keres, nem terméket",
@@ -358,7 +358,7 @@
             "scanner": {
                 "name": "Project Scanner",
                 "type": "Mobilalkalmazás",
-                "description": "Mobilalkalmazás, amely beolvassa az élelmiszereket és a kozmetikumokat, és azonnal megmutatja, mennyire egészségesek. Egy pillantással segít jobb terméket választani.",
+                "description": "Beolvasásra pontozó mobilalkalmazás élelmiszerekhez és kozmetikumokhoz. Azonnal értékeli a terméket, összetevőnként elemzi, és jobb alternatívákat javasol.",
                 "solutions": [
                     {
                         "title": "Azonnali értékelés",

@@ -22,9 +22,9 @@ export const projects = [
     status: "preflight",
   },
   {
-    slug: "scouting",
+    slug: "scoutingdot",
     url: "https://scouting.agency",
-    image: "/projects/scouting.jpg",
+    image: "/projects/scoutingdot.jpg",
     imageSize: [2400, 1500],
     tint: "bg-ochre/80",
     tech: ["Next.js", "Neon Postgres", "Neon Auth", "Resend", "Vercel"],

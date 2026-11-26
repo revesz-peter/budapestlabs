@@ -197,7 +197,7 @@
             "palbau": {
                 "name": "Pál Bau",
                 "type": "Website",
-                "description": "A website for a general contractor building family homes in Pest county. Visitors see how their house comes together and what they get in writing, then request a show home visit.",
+                "description": "A bilingual Next.js site for a general contractor building family homes in Pest county. A scroll-driven Three.js model assembles the house in six phases, and visit requests are validated with Zod and delivered by email through Resend.",
                 "solutions": [
                     {
                         "title": "The house builds as you scroll",
@@ -220,7 +220,7 @@
             "gaited": {
                 "name": "Gaited",
                 "type": "Platform",
-                "description": "A career and networking platform for equestrian professionals and brands. Gaited has been accepted into the Nashville Entrepreneur Center's Fall 2026 PreFlight cohort.",
+                "description": "A role-based career and networking platform for equestrian professionals and brands, built on Next.js, Neon Postgres and Drizzle. Gaited has been accepted into the Nashville Entrepreneur Center's Fall 2026 PreFlight cohort.",
                 "solutions": [
                     {
                         "title": "Accounts for equestrians and brands",
@@ -244,10 +244,10 @@
                     }
                 ]
             },
-            "scouting": {
-                "name": "Scouting",
+            "scoutingdot": {
+                "name": "Scoutingdot",
                 "type": "Platform",
-                "description": "A platform for model agencies and the scouts who work for them. From application to signing, everything runs in one system instead of an inbox, a spreadsheet and a group chat.",
+                "description": "A multi-tenant platform for model agencies and their scouts, built on Next.js and Neon Postgres. Applicants move through a six-stage pipeline with an event log of every move, and personal links and QR cards attribute each application to its scout.",
                 "solutions": [
                     {
                         "title": "Six stages, one screen",
@@ -293,7 +293,7 @@
             "gradio": {
                 "name": "Project Gradio",
                 "type": "App",
-                "description": "An exam prep app for Hungarian high school students, starting with history. The goal: instant marking, clear explanations, and whatever a student gets wrong comes back. Currently in development.",
+                "description": "An exam prep app for Hungarian high school students, starting with history. It's a Turborepo monorepo: Next.js now, Expo for iOS and Android next, both on one type-safe tRPC API. The goal: instant marking, clear explanations, and whatever a student gets wrong comes back.",
                 "solutions": [
                     {
                         "title": "A waitlist for launch",
@@ -316,7 +316,7 @@
             "mamor": {
                 "name": "Project Mamor",
                 "type": "Website",
-                "description": "A website for a model agency. Visitors are greeted by a moving backdrop, and from there reach the list of models and their profiles.",
+                "description": "A Next.js website for a model agency, with statically generated model profiles. The moving backdrops are custom WebGL fragment shaders, and a keyboard-navigable search overlay filters results as you type.",
                 "solutions": [
                     {
                         "title": "A profile for every model",
@@ -339,7 +339,7 @@
             "thrift": {
                 "name": "Project Thrift",
                 "type": "App",
-                "description": "A secondhand fashion app where people post a style they're after, not a specific item. Others accept it as a paid quest and hunt through thrift stores for matching pieces.",
+                "description": "A two-sided marketplace app for secondhand fashion. People post a style brief rather than a specific item, and others accept it as a paid quest and hunt through thrift stores for matching pieces.",
                 "solutions": [
                     {
                         "title": "A style, not a product",
@@ -358,7 +358,7 @@
             "scanner": {
                 "name": "Project Scanner",
                 "type": "Mobile app",
-                "description": "A mobile app that scans food and cosmetics and instantly rates how healthy they are. It helps people find better options at a glance.",
+                "description": "A scan-to-score mobile app for food and cosmetics. It rates a product on the spot, breaks it down ingredient by ingredient and surfaces better alternatives.",
                 "solutions": [
                     {
                         "title": "An instant rating",

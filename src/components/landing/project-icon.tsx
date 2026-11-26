@@ -36,7 +36,7 @@ const icons: Record<IconName, string[]> = {
     "................",
   ],
   // a magnifying glass finding a person
-  scouting: [
+  scoutingdot: [
     "................",
     "....RRRRRR......",
     "...RRWWWWRR.....",

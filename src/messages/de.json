@@ -197,7 +197,7 @@
             "palbau": {
                 "name": "Pál Bau",
                 "type": "Website",
-                "description": "Eine Website für einen Generalunternehmer, der Einfamilienhäuser im Komitat Pest baut. Besucher sehen, wie ihr Haus entsteht und was sie schriftlich bekommen, und fragen dann einen Termin im Musterhaus an.",
+                "description": "Eine zweisprachige Next.js-Website für einen Generalunternehmer, der in der Region Pest Einfamilienhäuser baut. Ein scrollgesteuertes Three.js-Modell baut das Haus in sechs Phasen auf, Besichtigungsanfragen werden mit Zod geprüft und per Resend als E-Mail zugestellt.",
                 "solutions": [
                     {
                         "title": "Das Haus entsteht beim Scrollen",
@@ -220,7 +220,7 @@
             "gaited": {
                 "name": "Gaited",
                 "type": "Plattform",
-                "description": "Eine Karriere- und Networking-Plattform für Fachleute und Marken aus der Pferdewelt. Gaited wurde in die PreFlight-Kohorte Herbst 2026 des Nashville Entrepreneur Center aufgenommen.",
+                "description": "Eine rollenbasierte Karriere- und Netzwerkplattform für Fachleute und Marken aus der Reitsportwelt, gebaut mit Next.js, Neon Postgres und Drizzle. Gaited wurde in die PreFlight-Kohorte Herbst 2026 des Nashville Entrepreneur Center aufgenommen.",
                 "solutions": [
                     {
                         "title": "Konten für Reiter und Marken",
@@ -244,10 +244,10 @@
                     }
                 ]
             },
-            "scouting": {
-                "name": "Scouting",
+            "scoutingdot": {
+                "name": "Scoutingdot",
                 "type": "Plattform",
-                "description": "Eine Plattform für Modelagenturen und die Scouts, die für sie arbeiten. Von der Bewerbung bis zur Vertragsunterzeichnung läuft alles in einem System, statt in Postfach, Tabelle und Gruppenchat.",
+                "description": "Eine mandantenfähige Plattform für Modelagenturen und ihre Scouts, gebaut mit Next.js und Neon Postgres. Bewerber durchlaufen eine Pipeline mit sechs Stufen, jeder Schritt wird protokolliert, und persönliche Links und QR-Karten ordnen jede Bewerbung ihrem Scout zu.",
                 "solutions": [
                     {
                         "title": "Sechs Schritte, eine Oberfläche",
@@ -293,7 +293,7 @@
             "gradio": {
                 "name": "Project Gradio",
                 "type": "App",
-                "description": "Eine App zur Abiturvorbereitung für ungarische Oberstufenschüler, zuerst für Geschichte. Das Ziel: sofortige Korrektur, verständliche Erklärungen, und was falsch war, kommt wieder. Derzeit in Entwicklung.",
+                "description": "Eine App zur Abiturvorbereitung für ungarische Oberstufenschüler, zuerst für Geschichte. Sie entsteht in einem Turborepo-Monorepo: jetzt Next.js, danach Expo für iOS und Android, beide auf einer typsicheren tRPC-API. Das Ziel: sofortige Korrektur, verständliche Erklärungen, und was falsch war, kommt wieder.",
                 "solutions": [
                     {
                         "title": "Warteliste zum Start",
@@ -316,7 +316,7 @@
             "mamor": {
                 "name": "Project Mamor",
                 "type": "Website",
-                "description": "Eine Website für eine Modelagentur. Besucher empfängt ein bewegter Hintergrund, von dort geht es zur Modelliste und zu den Profilen.",
+                "description": "Eine Next.js-Website für eine Modelagentur, mit statisch generierten Modelprofilen. Die bewegten Hintergründe sind eigene WebGL-Fragment-Shader, und ein per Tastatur bedienbares Such-Overlay filtert die Treffer beim Tippen.",
                 "solutions": [
                     {
                         "title": "Ein Profil für jedes Model",
@@ -339,7 +339,7 @@
             "thrift": {
                 "name": "Project Thrift",
                 "type": "App",
-                "description": "Eine Secondhand-Mode-App, in der Nutzer einen gesuchten Stil posten, kein bestimmtes Teil. Andere nehmen das als bezahlte Quest an und suchen in Secondhand-Läden nach passenden Stücken.",
+                "description": "Eine zweiseitige Marktplatz-App für Secondhand-Mode. Nutzer posten ein Stil-Briefing statt eines bestimmten Teils, andere nehmen es als bezahlte Quest an und suchen in Secondhand-Läden nach passenden Stücken.",
                 "solutions": [
                     {
                         "title": "Ein Stil, kein Produkt",
@@ -358,7 +358,7 @@
             "scanner": {
                 "name": "Project Scanner",
                 "type": "Mobile App",
-                "description": "Eine mobile App, die Lebensmittel und Kosmetik scannt und sofort bewertet, wie gesund sie sind. So finden Nutzer auf einen Blick bessere Alternativen.",
+                "description": "Eine Scan-to-Score-App für Lebensmittel und Kosmetik. Sie bewertet ein Produkt sofort, schlüsselt es Zutat für Zutat auf und schlägt bessere Alternativen vor.",
                 "solutions": [
                     {
                         "title": "Sofortige Bewertung",
