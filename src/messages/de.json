@@ -430,7 +430,7 @@
         "members": {
             "peter": {
                 "name": "Péter Révész",
-                "role": "Mitgründer",
+                "role": "Mitgründer & CEO",
                 "lead": "Gründungs‑Softwareingenieur.",
                 "bio": [
                     "Seine Expertise deckt den gesamten Produkt- und Entwicklungszyklus ab, von der Kundenforschung bis zur Architektur sicherer, skalierbarer Cloud‑native‑Systeme. Er arbeitete in von Fusion VC und Hiventures finanzierten Startups sowie an US‑Gesundheits- und Bildungsprodukten für Großkunden. Im Gründerteam baute er eine Plattform, die auf über 3.000 Unternehmensseiten lief, darunter Nvidia, Datadog und CrowdStrike."
@@ -438,7 +438,7 @@
             },
             "kristof": {
                 "name": "Kristóf Rétfalvi",
-                "role": "Mitgründer",
+                "role": "Mitgründer & CTO",
                 "lead": "Softwareingenieur.",
                 "bio": [
                     "Er hat mehrjährige Erfahrung in der Entwicklung von Web- und Mobilanwendungen. Er arbeitete an Business‑Webanwendungen, US‑Gesundheitssystemen, Plattformen für Echtzeit‑Videokommunikation und mobilen Apps. Zu seinen Aufgaben gehörten die eigenständige Entwicklung komplexer Funktionen, technische Konzeption und die Koordination ganzer Projektteile. Besonderen Wert legt er auf hochwertige Umsetzung, Nutzererlebnis und zuverlässigen Betrieb."

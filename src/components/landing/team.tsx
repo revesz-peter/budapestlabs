@@ -9,10 +9,11 @@ import { PixelCritter } from "@/components/landing/pixel-claude";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-// Portraits: a photo filling the tile, or a pixel Claude on the pastel tile until the photo is in
+// Portraits: a photo filling the tile, or a pixel Claude on the pastel tile until the photo is in.
+// `fit` lines the faces up: Péter's sits a little lower in his photo, so a 4% zoom from the bottom lifts it level with Kristóf's.
 const members = [
-  { key: "peter", tint: "bg-clay/55", accent: "bg-clay", photo: "/team/peter.jpg" },
-  { key: "kristof", tint: "bg-olive/55", accent: "bg-olive", photo: "/team/kristof.jpg" },
+  { key: "peter", tint: "bg-clay/55", accent: "bg-clay", photo: "/team/peter.jpg", fit: "origin-bottom scale-[1.04]" },
+  { key: "kristof", tint: "bg-olive/55", accent: "bg-olive", photo: "/team/kristof.jpg", fit: "" },
 ] as const;
 
 
@@ -26,7 +27,7 @@ export function Team() {
         <SectionHeader align="start" className="mx-0" eyebrow={t("label")} title={t.rich("title", rich)} subtitle={t("subtitle")} />
 
         <ul className="mt-12 grid gap-5 md:mt-16 md:grid-cols-2 lg:gap-6">
-          {members.map(({ key, tint, accent, photo }, i) => (
+          {members.map(({ key, tint, accent, photo, fit }, i) => (
             <motion.li
               key={key}
               initial={{ opacity: 0, y: 24 }}
@@ -38,7 +39,7 @@ export function Team() {
               <div className="flex items-center gap-5">
                 <span className={cn("relative flex size-20 shrink-0 items-center justify-center overflow-hidden rounded-3xl border md:size-24", tint)}>
                   {photo ? (
-                    <Image src={photo} alt={t(`members.${key}.name`)} fill sizes="96px" className="object-cover object-top" />
+                    <Image src={photo} alt={t(`members.${key}.name`)} fill sizes="96px" className={cn("object-cover object-top", fit)} />
                   ) : (
                     <PixelCritter className="h-8 w-11 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:-translate-y-1 motion-reduce:transition-none md:h-10 md:w-13" />
                   )}

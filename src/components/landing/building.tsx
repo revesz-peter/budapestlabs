@@ -87,7 +87,7 @@ export function Building() {
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 md:gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-8">
         <SectionHeader align="start" className="mx-0" eyebrow={t("label")} title={t.rich("title", rich)} />
 
-        <div className="grid w-full max-w-xl shrink-0">
+        <div className="isolate grid w-full max-w-xl shrink-0">
           {/* Redhorse: deep terracotta, lower right */}
           <motion.div
             {...rise(1)}
