@@ -478,7 +478,7 @@
         "navigation": "Navigáció",
         "legal": "Jogi",
         "privacy": "Adatvédelem",
-        "terms": "ÁSZF",
+        "terms": "Feltételek",
         "imprint": "Impresszum",
         "madeWith": "Made with ❤️, ☕️ and <claude></claude> in Budapest",
         "easterEgg": "Pszt… hagyd dolgozni Claude-ot."
@@ -488,12 +488,12 @@
         "download": "PDF",
         "privacy": {
             "title": "Adatvédelmi nyilatkozat",
-            "lastUpdated": "Utolsó frissítés: 2026. október 31.",
+            "lastUpdated": "Utolsó frissítés: 2026. november 26.",
             "intro": "Az Ön magánszférája fontos számunkra. Ez az adatvédelmi nyilatkozat ismerteti, milyen személyes adatokat gyűjtünk, mire használjuk, és hogyan védjük azokat.",
             "sections": {
                 "controller": {
                     "title": "Adatkezelő",
-                    "content": "Budapest Labs (további adatok az Impresszumban).\nE-mail: hello@budapestlabs.com"
+                    "content": "Révész Péter, magánszemélyként. A Budapest Labs egyelőre koncepció, nem bejegyzett vállalkozás (részletek az Impresszumban).\nE-mail: hello@budapestlabs.com"
                 },
                 "collection": {
                     "title": "Mit gyűjtünk",
@@ -501,15 +501,15 @@
                 },
                 "basis": {
                     "title": "Miért kezelhetjük",
-                    "content": "Azért kezeljük az adatait, mert Ön önként elküldte nekünk. Ez az Ön hozzájárulása az EU adatvédelmi joga (GDPR) értelmében. Ha együtt kezdünk dolgozni, az adataira a projekt megvalósításához is szükségünk van. Bizonyos esetekben jogi vagy számviteli kötelezettségek miatt is megőrizhetjük az adatokat."
+                    "content": "Azért kezeljük az adatait, mert Ön önként elküldte nekünk. Ez az Ön hozzájárulása az EU adatvédelmi joga (GDPR) értelmében."
                 },
                 "purpose": {
                     "title": "Mire használjuk",
-                    "content": "Kapcsolatfelvételi adatait kizárólag arra használjuk, hogy válaszoljunk a megkeresésére, ajánlatot készítsünk, és megvalósítsuk a projektet. Adatait soha nem adjuk el, nem béreljük ki, és nem osztjuk meg senkivel marketing vagy más, nem kapcsolódó célra."
+                    "content": "Kapcsolatfelvételi adatait kizárólag arra használjuk, hogy válaszoljunk a megkeresésére, és megbeszéljük az ötletét. Adatait soha nem adjuk el, nem béreljük ki, és nem osztjuk meg senkivel marketing vagy más, nem kapcsolódó célra."
                 },
                 "storage": {
                     "title": "Hogyan védjük",
-                    "content": "Adatait az Európai Unióban található titkosított szervereken tároljuk. A számlákat és könyvelési bizonylatokat a magyar számviteli törvény (2000. évi C. törvény §169) szerint 8 évig őrizzük meg. Egyéb üzleti levelezést és projektadatokat az üzleti kapcsolat időtartama alatt, majd azt követően legfeljebb 5 évig tároljuk. Utána véglegesen töröljük."
+                    "content": "Adatait az Európai Unióban található titkosított szervereken tároljuk. Az üzeneteket a beszélgetés idejére, majd legfeljebb 1 évig őrizzük, utána véglegesen töröljük. Ha kéri, hamarabb is."
                 },
                 "thirdparty": {
                     "title": "Szolgáltatások, amelyekre támaszkodunk",
@@ -522,66 +522,50 @@
             }
         },
         "terms": {
-            "title": "Általános Szerződési Feltételek",
-            "lastUpdated": "Utolsó frissítés: 2026. október 31.",
-            "intro": "Ezek a feltételek vonatkoznak a Budapest Labs szolgáltatásaira. Egyszerűen fogalmaztunk. Nincsenek meglepetések.",
+            "title": "Felhasználási feltételek",
+            "lastUpdated": "Utolsó frissítés: 2026. november 26.",
+            "intro": "A Budapest Labs egyelőre koncepció. Ezek a feltételek a weboldal használatára vonatkoznak, nem szolgáltatásra vagy szerződésre.",
             "sections": {
-                "provider": {
-                    "title": "Szolgáltató adatai",
-                    "content": "Budapest Labs (további adatok az Impresszumban).\nE-mail: hello@budapestlabs.com"
+                "status": {
+                    "title": "Koncepció, még nem vállalkozás",
+                    "content": "A Budapest Labs jelenleg nem bejegyzett cég vagy egyéni vállalkozás, és nincs adószáma. Nem árul szolgáltatást, nem köt szerződést, nem fogad el fizetést, és nem állít ki számlát."
                 },
-                "scope": {
-                    "title": "Mit csinálunk",
-                    "content": "Egyedi szoftvereket, AI-integrációkat (például a rendszerei összekötését Claude-dal), automatizálásokat, weboldalakat és webshopokat tervezünk, építünk és üzemeltetünk. AI-oktatást és -felmérést is tartunk. Az egyes projektek pontos tartalmát a munka megkezdése előtt írásos ajánlatban vagy szerződésben rögzítjük."
+                "website": {
+                    "title": "Mire való ez az oldal",
+                    "content": "Azt mutatja be, hogyan szeretnénk dolgozni, ha a vállalkozás megalakul. A szolgáltatások, a munkamódszer (ingyenes felmérés, írásos terv, fix ár szakaszonként) és a példák terveket írnak le, nem ajánlatot. A csevegő bemutató válaszai és az AI-példák illusztrációk."
                 },
-                "payment": {
-                    "title": "Hogyan működik a fizetés",
-                    "content": "Weboldalunkon nem teszünk közzé árakat. Minden projektre egyedi ajánlatot adunk. A tartalmat, az árat, a fizetési ütemezést és az esetleges havi üzemeltetési díjat a munka megkezdése előtt írásos ajánlatban vagy szerződésben rögzítjük, és a szerződésben szereplő feltételek az irányadók. A nagyobb projekteket szakaszokra bontjuk, mindegyiket saját fix árral. Az üzemeltetést és karbantartást havonta számlázzuk, a szerződés szerint. Átutalást, Revolutot és készpénzt fogadunk el. Minden fizetésről a magyar jogszabályoknak megfelelő számlát állítunk ki."
+                "contact": {
+                    "title": "Ha ír nekünk",
+                    "content": "Egy üzenet vagy egy beszélgetés egyik félnek sem jelent kötelezettséget. Szívesen válaszolunk és átbeszéljük az ötletét. Megbízást csak akkor vállalunk, ha a vállalkozás már létezik, és akkor is írásos szerződéssel."
                 },
-                "revisions": {
-                    "title": "Visszajelzés és módosítások",
-                    "content": "Minden szakasz tartalmazza az ajánlatban rögzített visszajelzési köröket. Ha a megállapodott tartalmon túl szeretne valamit, előre szólunk a költségről. Nincsenek meglepetések."
+                "future": {
+                    "title": "Ha megalakul a vállalkozás",
+                    "content": "Közzétesszük a vállalkozás adatait és a teljes ÁSZF-et, és frissítjük az Impresszumot és az Adatvédelmi nyilatkozatot."
                 },
-                "delivery": {
-                    "title": "Határidők",
-                    "content": "A határidőket projektenként és szakaszonként egyeztetjük. Ezek a megállapodott tartalmon alapuló becslések, és attól is függnek, milyen gyorsan kapjuk meg Öntől a szükséges hozzáféréseket, tartalmakat és visszajelzéseket. Az Ön oldalán felmerülő késés nem számít bele a határidőnkbe."
-                },
-                "client": {
-                    "title": "Amire szükségünk van Öntől",
-                    "content": "Hozzáférésre van szükségünk az érintett rendszerekhez, a projekthez szükséges tartalmakra és információkra, valamint időben érkező visszajelzésre. Kérjük, győződjön meg róla, hogy mindent, amit átad, jogosan oszt meg velünk. Ha az Ön megbízásából személyes adatot kezelünk, külön adatfeldolgozási szerződést kötünk."
-                },
-                "ownership": {
-                    "title": "Kié mi",
-                    "content": "A kifizetést követően mindaz, amit Önnek építünk, az Öné: a kód, a dokumentáció és minden hozzáférés. Általános célú eszközöket és kódokat, amelyek nem kifejezetten az Ön projektjéhez készültek, más munkákban is felhasználhatunk. Szívesen megemlítenénk a projektet a referenciáink között, de csak az Ön engedélyével."
-                },
-                "thirdparty": {
-                    "title": "Harmadik féltől származó szolgáltatások",
-                    "content": "A projektek harmadik fél szolgáltatásaira is épülhetnek, például Claude-ra, tárhelyre, számlázó- vagy webshopplatformra. Segítünk ezek beállításában, de független szolgáltatások saját feltételekkel és díjakkal, általában az Ön saját fiókján."
-                },
-                "cancellation": {
-                    "title": "Lemondás",
-                    "content": "A projektet két szakasz között leállíthatja, ilyenkor csak a már elkészült szakaszokat fizeti. A havi üzemeltetés a szerződésben rögzítettek szerint mondható le, és segítünk mindent átadni. A magunk részéről, ha 30 napnál tovább nem érjük el Önt, szüneteltethetjük vagy lezárhatjuk a projektet."
-                },
-                "warranty": {
-                    "title": "Garancia",
-                    "content": "Ha valami, amit építettünk, nem a megállapodás szerint működik, a szerződésben rögzített garanciaidőn belül ingyen javítjuk. Amíg havi díjért üzemeltetünk egy rendszert, a javítás mindig benne van.\n\nNem tartozik ide: új funkciók, a tartalom bővítése, vagy az Ön vagy harmadik fél által végzett módosításokból eredő problémák. A külső szolgáltatások (AI-szolgáltatók, tárhely, számlázó- vagy webshopplatformok) rajtunk kívül állnak."
+                "brands": {
+                    "title": "Márkanevek",
+                    "content": "Az oldalon említett termékek és szolgáltatások (például Claude, Billingo, Shopify) a tulajdonosaik védjegyei. Az említésük nem jelent partnerséget vagy támogatást."
                 },
                 "liability": {
-                    "title": "Felelősségünk",
-                    "content": "Felelősségünk a projektért kifizetett összegre korlátozódik. Nem felelünk az átadás utáni módosításokból származó problémákért, vagy harmadik fél szolgáltatások kieséséért."
+                    "title": "Felelősség",
+                    "content": "Az oldalon található információk tájékoztató jellegűek. Igyekszünk pontosak lenni, de nem vállalunk felelősséget az oldal tartalmára alapozott döntésekért."
                 },
                 "law": {
-                    "title": "Jogi részletek",
-                    "content": "Ezekre a feltételekre a magyar jog az irányadó. Ha bármilyen nézeteltérés lenne, inkább személyesen megbeszéljük. Fogyasztói panasz esetén a területileg illetékes békéltető testülethez is fordulhat. Ha a vita más módon nem rendezhető, a Budai Központi Kerületi Bíróság, illetve hatáskörtől függően a Fővárosi Törvényszék illetékes."
+                    "title": "Irányadó jog",
+                    "content": "Ezekre a feltételekre a magyar jog az irányadó."
                 }
             }
         },
         "imprint": {
             "title": "Impresszum",
             "sections": {
-                "company": {
-                    "title": "Vállalkozás adatai",
-                    "content": "Révész Péter EV\nKereskedelmi név: Budapest Labs\nSzékhely: Budapest, Magyarország\nAdószám: 91808745-1-43\nNyilvántartási szám: 61944978\n\n(A továbbiakban: Budapest Labs)"
+                "status": {
+                    "title": "Státusz",
+                    "content": "A Budapest Labs egyelőre koncepció, nem bejegyzett cég vagy egyéni vállalkozás. Nincs székhelye, adószáma vagy nyilvántartási száma. Ha megalakul a vállalkozás, itt közzétesszük az adatait."
+                },
+                "operator": {
+                    "title": "A weboldal üzemeltetője",
+                    "content": "Révész Péter, magánszemély\nBudapest, Magyarország"
                 },
                 "contact": {
                     "title": "Kapcsolat",
@@ -589,7 +573,7 @@
                 },
                 "responsible": {
                     "title": "Tartalomért felelős",
-                    "content": "Budapest Labs felelős ezen weboldal tartalmáért a vonatkozó magyar és EU jogszabályoknak megfelelően."
+                    "content": "Révész Péter felel ezen weboldal tartalmáért a vonatkozó magyar és EU jogszabályoknak megfelelően."
                 }
             }
         }

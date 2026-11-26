@@ -30,7 +30,8 @@ export default function ImprintPage({
   const locale = useLocale();
 
   const sectionKeys = [
-    "company",
+    "status",
+    "operator",
     "contact",
     "responsible",
   ] as const;

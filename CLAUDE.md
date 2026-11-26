@@ -77,6 +77,8 @@ Landing page for Budapest Labs: a software and AI studio for Hungarian businesse
 
 **Quote-based, no prices on the page.** Every project gets an individual quote after a free assessment, with a fixed price per phase in writing. Ongoing operation is a monthly fee agreed in the contract. Never add price figures, packages, or "from X Ft" to the page, metadata, OG image, or JSON-LD.
 
+**Legal status: a concept, not a business yet** (Nov 2026: no longer run as an EV). There is no registered company, tax number or registration number, so never add them. The legal pages say so: the imprint has a status section and names Révész Péter as the private individual operating the site, the terms are website Terms of Use (no services, contracts, payments or invoices), and the privacy policy names him as data controller with no accounting retention. When a business is founded, restore company details and full ÁSZF.
+
 The landing page sells on these pillars, in order:
 1. **AI that does the work** — Claude automating concrete jobs (documents, inbox, customer service, phone, leads, content, reports), not just a chat over company data. Research (Oct 2026): business AI use is ~77% automation (Anthropic Economic Index); SMBs mostly use it for content, customer communication and admin; "ask your data" is one capability, not the pitch
 2. **One team, idea to operation** — software, automation, websites, training (services section)

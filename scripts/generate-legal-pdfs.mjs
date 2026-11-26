@@ -23,23 +23,18 @@ const docs = {
   terms: {
     file: "terms-of-service.pdf",
     sectionKeys: [
-      "provider",
-      "scope",
-      "payment",
-      "revisions",
-      "delivery",
-      "client",
-      "ownership",
-      "thirdparty",
-      "cancellation",
-      "warranty",
+      "status",
+      "website",
+      "contact",
+      "future",
+      "brands",
       "liability",
       "law",
     ],
   },
   imprint: {
     file: "imprint.pdf",
-    sectionKeys: ["company", "contact", "responsible"],
+    sectionKeys: ["status", "operator", "contact", "responsible"],
   },
 };
 

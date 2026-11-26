@@ -478,7 +478,7 @@
         "navigation": "Navigation",
         "legal": "Rechtliches",
         "privacy": "Datenschutz",
-        "terms": "AGB",
+        "terms": "Nutzungsbedingungen",
         "imprint": "Impressum",
         "madeWith": "Made with ❤️, ☕️ and <claude></claude> in Budapest",
         "easterEgg": "Pssst… lass Claude arbeiten."
@@ -488,12 +488,12 @@
         "download": "PDF",
         "privacy": {
             "title": "Datenschutzerklärung",
-            "lastUpdated": "Zuletzt aktualisiert: 31. Oktober 2026",
+            "lastUpdated": "Zuletzt aktualisiert: 26. November 2026",
             "intro": "Ihre Privatsphäre ist uns wichtig. Diese Datenschutzerklärung erläutert, welche personenbezogenen Daten wir erheben, wie wir sie verwenden und wie wir sie schützen.",
             "sections": {
                 "controller": {
                     "title": "Verantwortlicher",
-                    "content": "Budapest Labs (vollständige Geschäftsdaten siehe Impressum).\nE-Mail: hello@budapestlabs.com"
+                    "content": "Péter Révész als Privatperson. Budapest Labs ist vorerst ein Konzept, kein eingetragenes Unternehmen (siehe Impressum).\nE-Mail: hello@budapestlabs.com"
                 },
                 "collection": {
                     "title": "Was wir erheben",
@@ -501,15 +501,15 @@
                 },
                 "basis": {
                     "title": "Warum wir sie verwenden dürfen",
-                    "content": "Wir verarbeiten Ihre Daten, weil Sie sie uns freiwillig gesendet haben. Das ist Ihre Einwilligung nach EU-Datenschutzrecht (DSGVO). Wenn wir zusammenarbeiten, benötigen wir Ihre Angaben auch zur Projektdurchführung. In einigen Fällen bewahren wir Daten zur Erfüllung gesetzlicher oder buchhalterischer Pflichten auf."
+                    "content": "Wir verarbeiten Ihre Daten, weil Sie sie uns freiwillig gesendet haben. Das ist Ihre Einwilligung nach EU-Datenschutzrecht (DSGVO)."
                 },
                 "purpose": {
                     "title": "Was wir damit machen",
-                    "content": "Wir verwenden Ihre Kontaktdaten ausschließlich, um auf Ihre Anfrage zu antworten, ein Angebot zu erstellen und Ihr Projekt umzusetzen. Wir verkaufen, vermieten oder teilen Ihre Daten niemals mit Dritten für Marketing oder andere nicht zusammenhängende Zwecke."
+                    "content": "Wir verwenden Ihre Kontaktdaten ausschließlich, um auf Ihre Anfrage zu antworten und Ihre Idee mit Ihnen zu besprechen. Wir verkaufen, vermieten oder teilen Ihre Daten niemals mit Dritten für Marketing oder andere nicht zusammenhängende Zwecke."
                 },
                 "storage": {
                     "title": "Wie wir sie schützen",
-                    "content": "Ihre Daten werden auf verschlüsselten Servern innerhalb der EU gespeichert. Rechnungen und Buchhaltungsunterlagen werden gemäß dem ungarischen Buchhaltungsgesetz (Gesetz C von 2000, §169) 8 Jahre lang aufbewahrt. Sonstige Geschäftskorrespondenz und Projektdaten werden für die Dauer unserer Zusammenarbeit aufbewahrt, plus bis zu 5 Jahre danach. Danach werden sie dauerhaft gelöscht."
+                    "content": "Ihre Daten werden auf verschlüsselten Servern innerhalb der EU gespeichert. Nachrichten bewahren wir für die Dauer des Austauschs auf, plus bis zu 1 Jahr danach, und löschen sie dann dauerhaft. Auf Wunsch auch früher."
                 },
                 "thirdparty": {
                     "title": "Dienste, die wir nutzen",
@@ -522,66 +522,50 @@
             }
         },
         "terms": {
-            "title": "Allgemeine Geschäftsbedingungen",
-            "lastUpdated": "Zuletzt aktualisiert: 31. Oktober 2026",
-            "intro": "Diese Bedingungen gelten für die Zusammenarbeit mit Budapest Labs. Wir haben sie einfach gehalten. Keine Überraschungen.",
+            "title": "Nutzungsbedingungen",
+            "lastUpdated": "Zuletzt aktualisiert: 26. November 2026",
+            "intro": "Budapest Labs ist vorerst ein Konzept. Diese Bedingungen gelten für die Nutzung dieser Website, nicht für eine Dienstleistung oder einen Vertrag.",
             "sections": {
-                "provider": {
-                    "title": "Dienstleister",
-                    "content": "Budapest Labs (vollständige Geschäftsdaten siehe Impressum).\nE-Mail: hello@budapestlabs.com"
+                "status": {
+                    "title": "Ein Konzept, noch kein Unternehmen",
+                    "content": "Budapest Labs ist kein eingetragenes Unternehmen oder Einzelunternehmen und hat keine Steuernummer. Es verkauft keine Dienstleistungen, schließt keine Verträge, nimmt keine Zahlungen an und stellt keine Rechnungen aus."
                 },
-                "scope": {
-                    "title": "Was wir tun",
-                    "content": "Wir konzipieren, bauen und betreiben individuelle Software, KI-Integrationen (zum Beispiel die Anbindung Ihrer Systeme an Claude), Automatisierungen, Websites und Webshops. Außerdem bieten wir KI-Schulungen und Analysen an. Der genaue Umfang jedes Projekts wird vor Arbeitsbeginn in einem schriftlichen Angebot oder Vertrag festgelegt."
+                "website": {
+                    "title": "Wozu diese Seite dient",
+                    "content": "Sie zeigt, wie wir arbeiten möchten, sobald das Unternehmen gegründet ist. Die Leistungen, die Arbeitsweise (kostenlose Analyse, schriftlicher Plan, Festpreis pro Phase) und die Beispiele beschreiben Pläne, kein Angebot. Die Antworten der Chat-Demo und die KI-Beispiele sind Illustrationen."
                 },
-                "payment": {
-                    "title": "So funktioniert die Bezahlung",
-                    "content": "Wir veröffentlichen keine Preise auf unserer Website. Jedes Projekt wird individuell angeboten. Umfang, Preis, Zahlungsplan und eine eventuelle monatliche Betriebsgebühr werden vor Arbeitsbeginn in einem schriftlichen Angebot oder Vertrag festgelegt, und es gelten die Vertragsbedingungen. Größere Projekte werden in Phasen aufgeteilt, jede mit eigenem Festpreis. Laufender Betrieb und Wartung werden monatlich abgerechnet, wie im Vertrag vereinbart. Wir akzeptieren Überweisung, Revolut und Barzahlung. Für jede Zahlung erhalten Sie eine ordnungsgemäße Rechnung nach ungarischem Recht."
+                "contact": {
+                    "title": "Wenn Sie uns schreiben",
+                    "content": "Eine Nachricht oder ein Gespräch verpflichtet keine Seite zu etwas. Wir antworten gern und besprechen Ihre Idee. Aufträge übernehmen wir erst, wenn das Unternehmen besteht, und dann nur mit schriftlichem Vertrag."
                 },
-                "revisions": {
-                    "title": "Feedback und Änderungen",
-                    "content": "Jede Phase enthält die im Angebot festgelegten Feedbackrunden. Wenn Sie etwas außerhalb des vereinbarten Umfangs möchten, nennen wir Ihnen die Kosten vorher. Keine Überraschungen."
+                "future": {
+                    "title": "Sobald das Unternehmen gegründet ist",
+                    "content": "Wir veröffentlichen seine Angaben und vollständige AGB und aktualisieren Impressum und Datenschutzerklärung."
                 },
-                "delivery": {
-                    "title": "Zeitpläne",
-                    "content": "Zeitpläne werden für jedes Projekt und jede Phase vereinbart. Sie sind Schätzungen auf Basis des vereinbarten Umfangs und hängen davon ab, wie schnell wir die nötigen Zugänge, Inhalte und Rückmeldungen von Ihnen erhalten. Verzögerungen auf Ihrer Seite zählen nicht gegen unseren Zeitplan."
-                },
-                "client": {
-                    "title": "Was wir von Ihnen brauchen",
-                    "content": "Wir brauchen Zugang zu den betroffenen Systemen, die nötigen Inhalte und Informationen sowie zeitnahes Feedback. Bitte stellen Sie sicher, dass Sie alles, was Sie uns geben, auch teilen dürfen. Wenn wir in Ihrem Auftrag personenbezogene Daten verarbeiten, schließen wir einen separaten Auftragsverarbeitungsvertrag."
-                },
-                "ownership": {
-                    "title": "Wem was gehört",
-                    "content": "Nach Bezahlung gehört Ihnen, was wir für Sie bauen: der Code, die Dokumentation und alle Zugänge. Allgemeine Werkzeuge und Code, die nicht speziell für Ihr Projekt sind, können wir wiederverwenden. Wir würden Ihr Projekt gern in unseren Referenzen nennen, aber nur mit Ihrer Erlaubnis."
-                },
-                "thirdparty": {
-                    "title": "Dienste von Drittanbietern",
-                    "content": "Projekte können auf Diensten von Drittanbietern beruhen, etwa Claude, Hosting, Rechnungs- oder Webshop-Plattformen. Wir helfen bei der Einrichtung, aber es sind unabhängige Dienste mit eigenen Bedingungen und Gebühren, meist auf Ihrem eigenen Konto."
-                },
-                "cancellation": {
-                    "title": "Kündigung",
-                    "content": "Sie können ein Projekt zwischen zwei Phasen beenden und zahlen nur die bereits abgeschlossenen Phasen. Der monatliche Betrieb kann wie im Vertrag festgelegt gekündigt werden, und wir helfen bei der vollständigen Übergabe. Wenn wir Sie über 30 Tage nicht erreichen, können wir das Projekt pausieren oder schließen."
-                },
-                "warranty": {
-                    "title": "Gewährleistung",
-                    "content": "Wenn etwas, das wir gebaut haben, nicht wie vereinbart funktioniert, beheben wir es innerhalb der im Vertrag festgelegten Gewährleistungsfrist kostenlos. Solange wir ein System gegen monatliche Gebühr betreiben, sind Fehlerbehebungen immer enthalten.\n\nNicht abgedeckt: neue Funktionen, Erweiterungen des Umfangs oder Probleme durch Änderungen von Ihnen oder Dritten. Dienste von Drittanbietern (KI-Anbieter, Hosting, Rechnungs- oder Webshop-Plattformen) liegen außerhalb unserer Kontrolle."
+                "brands": {
+                    "title": "Markennamen",
+                    "content": "Auf dieser Seite genannte Produkte und Dienste (zum Beispiel Claude, Billingo, Shopify) sind Marken ihrer Inhaber. Ihre Nennung bedeutet keine Partnerschaft oder Empfehlung."
                 },
                 "liability": {
-                    "title": "Unsere Verantwortung",
-                    "content": "Unsere Haftung ist auf den Betrag begrenzt, den Sie für das Projekt bezahlt haben. Wir sind nicht verantwortlich für Probleme nach der Lieferung durch Ihre Änderungen oder Ausfälle von Drittanbieter-Diensten."
+                    "title": "Haftung",
+                    "content": "Die Informationen auf dieser Seite dienen nur der allgemeinen Information. Wir bemühen uns um Richtigkeit, haften aber nicht für Entscheidungen, die darauf beruhen."
                 },
                 "law": {
-                    "title": "Rechtliche Details",
-                    "content": "Diese Bedingungen unterliegen dem ungarischen Recht. Bei Meinungsverschiedenheiten klären wir das am liebsten persönlich. Verbraucherbeschwerden können auch an die zuständige Schlichtungsstelle gerichtet werden. Kann der Streit nicht anderweitig beigelegt werden, ist das Zentrale Bezirksgericht Buda bzw. je nach Zuständigkeit das Hauptstädtische Gericht Budapest ausschließlich zuständig."
+                    "title": "Anwendbares Recht",
+                    "content": "Für diese Bedingungen gilt ungarisches Recht."
                 }
             }
         },
         "imprint": {
             "title": "Impressum",
             "sections": {
-                "company": {
-                    "title": "Geschäftsinformationen",
-                    "content": "Révész Péter EV (Einzelunternehmer)\nHandelsname: Budapest Labs\nSitz: Budapest, Ungarn\nSteuernummer: 91808745-1-43\nRegistrierungsnummer: 61944978\n\n(Im Folgenden Budapest Labs genannt)"
+                "status": {
+                    "title": "Status",
+                    "content": "Budapest Labs ist vorerst ein Konzept, kein eingetragenes Unternehmen oder Einzelunternehmen. Es gibt keinen Firmensitz, keine Steuernummer und keine Registrierungsnummer. Sobald das Unternehmen gegründet ist, veröffentlichen wir hier seine Angaben."
+                },
+                "operator": {
+                    "title": "Betreiber der Website",
+                    "content": "Péter Révész, Privatperson\nBudapest, Ungarn"
                 },
                 "contact": {
                     "title": "Kontakt",
@@ -589,7 +573,7 @@
                 },
                 "responsible": {
                     "title": "Verantwortlich für den Inhalt",
-                    "content": "Budapest Labs ist verantwortlich für den Inhalt dieser Website nach geltendem ungarischen und EU-Recht."
+                    "content": "Péter Révész ist für den Inhalt dieser Website gemäß dem geltenden ungarischen und EU-Recht verantwortlich."
                 }
             }
         }

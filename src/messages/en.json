@@ -478,7 +478,7 @@
         "navigation": "Navigation",
         "legal": "Legal",
         "privacy": "Privacy Policy",
-        "terms": "Terms of Service",
+        "terms": "Terms of Use",
         "imprint": "Imprint",
         "madeWith": "Made with ❤️, ☕️ and <claude></claude> in Budapest",
         "easterEgg": "Shh… let Claude work."
@@ -488,12 +488,12 @@
         "download": "PDF",
         "privacy": {
             "title": "Privacy Policy",
-            "lastUpdated": "Last updated: October 31, 2026",
+            "lastUpdated": "Last updated: November 26, 2026",
             "intro": "Your privacy matters to us. This policy explains what personal data we collect, how we use it, and how we keep it safe.",
             "sections": {
                 "controller": {
                     "title": "Data controller",
-                    "content": "Budapest Labs (see Imprint for full business details).\nEmail: hello@budapestlabs.com"
+                    "content": "Péter Révész, as a private individual. Budapest Labs is a concept for now, not a registered business (see the Imprint).\nEmail: hello@budapestlabs.com"
                 },
                 "collection": {
                     "title": "What we collect",
@@ -501,15 +501,15 @@
                 },
                 "basis": {
                     "title": "Why we're allowed to use it",
-                    "content": "We handle your data because you chose to send it to us. That's your consent under EU data protection law (GDPR). If we start working together, we also need your details to deliver the project. In some cases, we may keep records to meet legal or accounting requirements."
+                    "content": "We handle your data because you chose to send it to us. That's your consent under EU data protection law (GDPR)."
                 },
                 "purpose": {
                     "title": "What we do with it",
-                    "content": "We use your contact details only to get back to you, put together a proposal, and deliver your project. We will never sell, rent, or share your information with anyone for marketing or any unrelated purpose."
+                    "content": "We use your contact details only to get back to you and talk through your idea. We will never sell, rent, or share your information with anyone for marketing or any unrelated purpose."
                 },
                 "storage": {
                     "title": "How we keep it safe",
-                    "content": "Your data is stored on encrypted servers within the European Union. Invoices and accounting records are kept for 8 years as required by Hungarian accounting law (Act C of 2000, §169). Other business correspondence and project data is kept for the duration of our working relationship, plus up to 5 years afterwards. After that, it's permanently deleted."
+                    "content": "Your data is stored on encrypted servers within the European Union. Messages are kept while we're talking, plus up to 1 year afterwards, and then permanently deleted. Sooner if you ask."
                 },
                 "thirdparty": {
                     "title": "Services we rely on",
@@ -522,66 +522,50 @@
             }
         },
         "terms": {
-            "title": "Terms of Service",
-            "lastUpdated": "Last updated: October 31, 2026",
-            "intro": "These are the terms that apply when you work with Budapest Labs. We've kept them straightforward. No surprises.",
+            "title": "Terms of Use",
+            "lastUpdated": "Last updated: November 26, 2026",
+            "intro": "Budapest Labs is a concept for now. These terms cover the use of this website, not a service or a contract.",
             "sections": {
-                "provider": {
-                    "title": "Service provider",
-                    "content": "Budapest Labs (see Imprint for full business details).\nEmail: hello@budapestlabs.com"
+                "status": {
+                    "title": "A concept, not a business yet",
+                    "content": "Budapest Labs is not a registered company or sole proprietorship, and has no tax number. It doesn't sell services, sign contracts, take payments, or issue invoices."
                 },
-                "scope": {
-                    "title": "What we do",
-                    "content": "We design, build, and operate custom software, AI integrations (for example connecting your systems to Claude), automations, websites, and webshops. We also run AI training and assessments. The exact scope of each project is set out in a written offer or contract before work begins."
+                "website": {
+                    "title": "What this site is for",
+                    "content": "It shows how we'd like to work once the business is founded. The services, the way of working (free assessment, written plan, fixed price per phase) and the examples describe plans, not an offer. The chat demo answers and the AI examples are illustrations."
                 },
-                "payment": {
-                    "title": "How payment works",
-                    "content": "We don't publish prices on our website. Every project is quoted individually. The scope, price, payment schedule, and any monthly operation fee are fixed in a written offer or contract before work begins, and the contract terms apply. Larger projects are split into phases, each with its own fixed price. Ongoing operation and maintenance are billed monthly, as agreed in the contract. We accept bank transfer, Revolut, and cash. You will receive a proper invoice for every payment, issued in accordance with Hungarian law."
+                "contact": {
+                    "title": "If you write to us",
+                    "content": "A message or a conversation creates no obligation for either side. We're happy to reply and talk through your idea. We'll only take on paid work once the business exists, and then only with a written contract."
                 },
-                "revisions": {
-                    "title": "Feedback and changes",
-                    "content": "Each phase includes the feedback rounds set out in your offer. If you'd like something outside the agreed scope, we tell you the cost before we do it. No surprises."
+                "future": {
+                    "title": "Once the business is founded",
+                    "content": "We'll publish its details and full terms of service, and update the Imprint and the Privacy Policy."
                 },
-                "delivery": {
-                    "title": "Timelines",
-                    "content": "Timelines are agreed for each project and phase. They are estimates based on the agreed scope, and they depend on how quickly we receive the access, content, and feedback we need from you. Delays on your side don't count against our timeline."
-                },
-                "client": {
-                    "title": "What we need from you",
-                    "content": "We need access to the systems we work with, the content and information the project needs, and timely feedback. Please make sure you have the right to share everything you provide. Where we process personal data on your behalf, we sign a separate data processing agreement."
-                },
-                "ownership": {
-                    "title": "Who owns what",
-                    "content": "Once paid, what we build for you is yours: the code, the documentation, and all access. We may reuse general-purpose tools and code that aren't specific to your project. We'd love to mention your project in our references, but only with your permission."
-                },
-                "thirdparty": {
-                    "title": "Third-party services",
-                    "content": "Projects may rely on third-party services such as Claude, hosting, invoicing, or webshop platforms. We help set them up, but they are independent services with their own terms and fees, usually on your own account."
-                },
-                "cancellation": {
-                    "title": "Cancellation",
-                    "content": "You can stop a project between phases and pay only for the phases already completed. Monthly operation can be cancelled as set out in your contract, and we help you hand everything over. On our side, if we can't reach you for over 30 days, we may pause or close the project."
-                },
-                "warranty": {
-                    "title": "Warranty",
-                    "content": "If something we built doesn't work as agreed, we fix it free of charge within the warranty period set in your contract. While we operate a system for a monthly fee, fixes are always included.\n\nNot covered: new features, changes in scope, or issues caused by changes made by you or a third party. Third-party services (AI providers, hosting, invoicing or webshop platforms) are outside our control."
+                "brands": {
+                    "title": "Brand names",
+                    "content": "Products and services named on this site (for example Claude, Billingo, Shopify) are trademarks of their owners. Naming them doesn't mean a partnership or endorsement."
                 },
                 "liability": {
-                    "title": "Our responsibility",
-                    "content": "Our liability is limited to the amount you paid for the project. We're not responsible for issues caused by changes you make after delivery, or for third-party service outages."
+                    "title": "Liability",
+                    "content": "The information on this site is for general information only. We try to keep it accurate, but we're not liable for decisions based on it."
                 },
                 "law": {
-                    "title": "Legal details",
-                    "content": "These terms follow Hungarian law. If there's ever a disagreement, we'd prefer to work it out together first. Consumer complaints may also be directed to the competent conciliation body. If the dispute cannot be resolved otherwise, the Buda Central District Court or, depending on jurisdiction, the Budapest Capital Regional Court shall have exclusive jurisdiction."
+                    "title": "Governing law",
+                    "content": "These terms are governed by Hungarian law."
                 }
             }
         },
         "imprint": {
             "title": "Imprint",
             "sections": {
-                "company": {
-                    "title": "Business information",
-                    "content": "Révész Péter EV (sole proprietor)\nTrade name: Budapest Labs\nSeat: Budapest, Hungary\nTax number: 91808745-1-43\nRegistration number: 61944978\n\n(Hereinafter referred to as Budapest Labs)"
+                "status": {
+                    "title": "Status",
+                    "content": "Budapest Labs is a concept for now, not a registered company or sole proprietorship. It has no registered seat, tax number or registration number. Once the business is founded, its details will be published here."
+                },
+                "operator": {
+                    "title": "Website operator",
+                    "content": "Péter Révész, private individual\nBudapest, Hungary"
                 },
                 "contact": {
                     "title": "Contact",
@@ -589,7 +573,7 @@
                 },
                 "responsible": {
                     "title": "Responsible for content",
-                    "content": "Budapest Labs is responsible for the content of this website under applicable Hungarian and EU law."
+                    "content": "Péter Révész is responsible for the content of this website in accordance with applicable Hungarian and EU law."
                 }
             }
         }

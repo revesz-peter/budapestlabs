@@ -1,6 +1,6 @@
 import { use } from "react";
 import { useTranslations, useLocale } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ArrowLeft, Download } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import type { Metadata } from "next";
@@ -11,12 +11,8 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  return {
-    title:
-      locale === "hu"
-        ? "ÁSZF | Budapest Labs"
-        : "Terms of Service | Budapest Labs",
-  };
+  const t = await getTranslations({ locale, namespace: "legal" });
+  return { title: `${t("terms.title")} | Budapest Labs` };
 }
 
 export default function TermsPage({
@@ -30,16 +26,11 @@ export default function TermsPage({
   const locale = useLocale();
 
   const sectionKeys = [
-    "provider",
-    "scope",
-    "payment",
-    "revisions",
-    "delivery",
-    "client",
-    "ownership",
-    "thirdparty",
-    "cancellation",
-    "warranty",
+    "status",
+    "website",
+    "contact",
+    "future",
+    "brands",
     "liability",
     "law",
   ] as const;
