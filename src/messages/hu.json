@@ -392,6 +392,10 @@
         },
         "expandImage": "Kép nagyítása"
     },
+    "building": {
+        "label": "Csendben épül",
+        "title": "Amin most <em>dolgozunk.</em>"
+    },
     "process": {
         "label": "Így dolgozunk",
         "title": "Világos lépések, <em>meglepetések nélkül</em>.",

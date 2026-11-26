@@ -392,6 +392,10 @@
         },
         "expandImage": "Enlarge image"
     },
+    "building": {
+        "label": "In stealth",
+        "title": "What we're <em>building.</em>"
+    },
     "process": {
         "label": "How we work",
         "title": "Clear steps, <em>no surprises</em>.",

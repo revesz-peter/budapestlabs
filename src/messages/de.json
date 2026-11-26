@@ -392,6 +392,10 @@
         },
         "expandImage": "Bild vergrößern"
     },
+    "building": {
+        "label": "Im Verborgenen",
+        "title": "Woran wir <em>bauen.</em>"
+    },
     "process": {
         "label": "So arbeiten wir",
         "title": "Klare Schritte, <em>keine Überraschungen</em>.",
