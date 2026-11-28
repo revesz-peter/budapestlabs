@@ -232,11 +232,6 @@ body::before {
   35%, 100% { transform: translateX(240%) skewX(-12deg); }
 }
 
-@keyframes holo-float {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(6%, -8%) scale(1.08); }
-}
-
 /* The diamond before each product name: colour from --diamond, resting opacity from --glow */
 @keyframes diamond-pulse {
   0%, 100% { opacity: var(--glow); scale: 1; box-shadow: 0 0 4px 0 var(--diamond); }

@@ -11,10 +11,9 @@ const ease = [0.22, 1, 0.36, 1] as const;
 // Frosted glass in the site palette: see-through cards over warm glowing orbs (terracotta, ochre,
 // olive), with a pearl rim (`holo-rim`), a soft sheen (`holo-sheen`) and a light sweep.
 // The cards follow the theme: milky glass on linen, smoky glass at night.
-const frost: CSSProperties = {
-  backdropFilter: "blur(24px) saturate(1.4)",
-  WebkitBackdropFilter: "blur(24px) saturate(1.4)",
-};
+// No backdrop-filter and no moving or filter-blurred orbs: re-blurring animated content every frame
+// made this section and the navbar (which has its own backdrop blur) flicker. The orbs are already
+// soft gradients, so translucent cards over them read as frosted glass anyway.
 
 // Wrath: clear glass. Redhorse: glass tinted terracotta.
 const wrathGlass =
@@ -22,12 +21,13 @@ const wrathGlass =
 const redhorseGlass =
   "bg-[oklch(0.78_0.11_40/0.42)] shadow-[inset_0_1px_0_oklch(1_0_0/0.6),0_30px_60px_-30px_oklch(0.5_0.14_35/0.5)] dark:bg-[oklch(0.45_0.11_38/0.42)] dark:shadow-[inset_0_1px_0_oklch(1_0_0/0.12),0_30px_60px_-30px_oklch(0_0_0/0.7)]";
 
-// Warm orbs behind the deck, for the glass to blur: brighter takes on brand, ochre, olive and clay
+// Warm orbs behind the deck, static radial gradients: brighter takes on brand, ochre, olive and clay.
+// Kept inside the deck's width so they never widen the page on phones.
 const blobs = [
-  { className: "left-[2%] top-[4%] size-52", color: "oklch(0.68 0.16 40)", delay: "0s" },
-  { className: "right-[4%] top-[14%] size-44", color: "oklch(0.84 0.14 78)", delay: "-5s" },
-  { className: "left-[30%] bottom-[0%] size-48", color: "oklch(0.74 0.11 118)", delay: "-9s" },
-  { className: "right-[22%] bottom-[14%] size-36", color: "oklch(0.74 0.12 25)", delay: "-3s" },
+  { className: "left-[0%] -top-[6%] size-80", color: "oklch(0.68 0.16 40)" },
+  { className: "right-[0%] top-[8%] size-72", color: "oklch(0.84 0.14 78)" },
+  { className: "left-[20%] -bottom-[6%] size-64", color: "oklch(0.74 0.11 118)" },
+  { className: "right-[14%] bottom-[10%] size-56", color: "oklch(0.74 0.12 25)" },
 ];
 
 /** The shiny layers on a card: pearl rim, drifting sheen and a light sweep every few seconds. */
@@ -122,15 +122,15 @@ export function Building() {
               key={b.color}
               aria-hidden="true"
               className={cn(
-                "pointer-events-none absolute -z-10 rounded-full opacity-60 blur-3xl animate-[holo-float_16s_ease-in-out_infinite] dark:opacity-40",
+                "pointer-events-none absolute -z-10 opacity-55 dark:opacity-35",
                 b.className,
               )}
-              style={{ background: b.color, animationDelay: b.delay }}
+              style={{ background: `radial-gradient(closest-side, ${b.color}, transparent)` }}
             />
           ))}
 
           {/* Redhorse: terracotta-tinted glass, on top */}
-          <motion.div {...rise(0)} style={frost} className={cn(card, redhorseGlass, "z-10 pb-10 sm:mr-10 md:pb-12")}>
+          <motion.div {...rise(0)} className={cn(card, redhorseGlass, "z-10 pb-10 sm:mr-10 md:pb-12")}>
             <Holo delay={1.4} />
             <h3 className={name}>
               <Diamond className="[--diamond:var(--brand)]" glow={0.7} delay={1.4} />
@@ -141,7 +141,7 @@ export function Building() {
           </motion.div>
 
           {/* Wrath: clear glass, offset below */}
-          <motion.div {...rise(1)} style={frost} className={cn(card, wrathGlass, "z-20 -mt-4 sm:ml-10")}>
+          <motion.div {...rise(1)} className={cn(card, wrathGlass, "z-20 -mt-4 sm:ml-10")}>
             <Holo />
             <h3 className={name}>
               <Diamond className="[--diamond:var(--foreground)]" glow={0.75} />
