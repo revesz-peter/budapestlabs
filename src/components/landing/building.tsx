@@ -55,16 +55,39 @@ function Holo({ delay = 0 }: { delay?: number }) {
 // Redhorse is an orchestrator, never "a platform".
 const products = {
   redhorse: {
-    quote:
-      "A cloud-first orchestrator for AI coding agents. They run in parallel in isolated sandboxes, test their own work and come back with a pull request, launched and steered from iOS. Run it in your own cloud, or rent a ready-made server from us in a few clicks. At its core, a transport-layer security runtime enforces deterministic policies, so a prompt injection can't leak secrets or trigger unauthorized tool calls.",
-    tech: ["isolated sandboxes", "transport-layer runtime", "deterministic policy", "bring your own cloud", "managed servers", "iOS"],
+    quote: [
+      "A cloud-first orchestrator for AI coding agents. Connect a repo with scoped access, add a setup script and encrypted secrets, and start a task. Agents run in parallel in isolated sandboxes, check their work in a real browser and come back with a pull request, test runs, screenshots and logs attached. Review comments go straight back to the agent, and sensitive actions wait for your approval.",
+      "Steer it from the CLI, web, desktop, iOS, or from other agents over MCP. Run it in your own cloud, or rent a ready-made server from us in a few clicks. At its core, a transport-layer security runtime enforces deterministic policies, so a prompt injection can't leak secrets or trigger unauthorized tool calls.",
+    ],
+    tech: [
+      "isolated sandboxes",
+      "browser checks",
+      "human approval",
+      "review loop",
+      "transport-layer runtime",
+      "your cloud or ours",
+      "MCP",
+      "CLI · web · desktop · iOS",
+    ],
   },
   wrath: {
-    quote:
-      "Cybersecurity and UI/UX audits against live systems on a defined set of checks, so vulnerabilities and usability issues surface before users find them.",
-    tech: ["live targets", "defined checks", "security", "UI/UX", "runs on Redhorse"],
+    quote: [
+      "Cybersecurity and UI/UX audits against live systems. A defined set of checks runs the same way every time, as agents in isolated sandboxes on Redhorse, so vulnerabilities and usability issues surface before users find them, and regressions show up the moment they appear.",
+    ],
+    tech: ["live targets", "defined checks", "repeatable runs", "security + UI/UX", "runs on Redhorse"],
   },
 };
+
+/** A quoted description: opening mark on the first paragraph, closing mark on the last. */
+function Quote({ paragraphs }: { paragraphs: string[] }) {
+  return paragraphs.map((text, i) => (
+    <p key={i} lang="en" className={body}>
+      {i === 0 && "“"}
+      {text}
+      {i === paragraphs.length - 1 && "”"}
+    </p>
+  ));
+}
 const card = "relative flex flex-col overflow-hidden rounded-xl p-6 md:p-8";
 const name = "relative flex items-center gap-3 font-mono text-xl tracking-tight";
 const body = "relative mt-3 text-sm text-pretty text-muted-foreground";
@@ -136,7 +159,7 @@ export function Building() {
               <Diamond className="[--diamond:var(--brand)]" glow={0.7} delay={1.4} />
               redhorse
             </h3>
-            <p lang="en" className={body}>“{products.redhorse.quote}”</p>
+            <Quote paragraphs={products.redhorse.quote} />
             <Chips items={products.redhorse.tech} />
           </motion.div>
 
@@ -148,7 +171,7 @@ export function Building() {
               wrath
             </h3>
             <p lang="en" className="relative mt-2 text-sm italic text-muted-foreground">Righteous fury, automated.</p>
-            <p lang="en" className={body}>“{products.wrath.quote}”</p>
+            <Quote paragraphs={products.wrath.quote} />
             <Chips items={products.wrath.tech} />
           </motion.div>
         </div>
