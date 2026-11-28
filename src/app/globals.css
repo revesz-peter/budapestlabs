@@ -210,6 +210,88 @@ body::before {
   background-size: 256px 256px;
 }
 
+/* Frosted glass for the stealth deck (building.tsx), in the earth palette: a pearl rim that
+   turns slowly through linen, ochre, terracotta and olive, a soft warm sheen, and a light sweep */
+@property --holo-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes holo-spin {
+  to { --holo-angle: 360deg; }
+}
+
+@keyframes holo-drift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes holo-shine {
+  0% { transform: translateX(-120%) skewX(-12deg); }
+  35%, 100% { transform: translateX(240%) skewX(-12deg); }
+}
+
+@keyframes holo-float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(6%, -8%) scale(1.08); }
+}
+
+/* The diamond before each product name: colour from --diamond, resting opacity from --glow */
+@keyframes diamond-pulse {
+  0%, 100% { opacity: var(--glow); scale: 1; box-shadow: 0 0 4px 0 var(--diamond); }
+  50% { opacity: 1; scale: 1.12; box-shadow: 0 0 12px 1px var(--diamond); }
+}
+
+@utility holo-rim {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  pointer-events: none;
+  background: conic-gradient(
+    from var(--holo-angle),
+    oklch(1 0 0 / 0.95),
+    oklch(0.86 0.12 80 / 0.9),
+    oklch(0.68 0.15 40 / 0.85),
+    oklch(1 0 0 / 0.5),
+    oklch(0.76 0.09 118 / 0.85),
+    oklch(0.9 0.05 70 / 0.9),
+    oklch(1 0 0 / 0.95)
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
+  animation: holo-spin 14s linear infinite;
+}
+
+.dark .holo-rim {
+  opacity: 0.55;
+}
+
+@utility holo-sheen {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    linear-gradient(150deg, oklch(1 0 0 / 0.45), transparent 38%),
+    linear-gradient(
+      115deg,
+      transparent 20%,
+      oklch(0.86 0.12 80 / 0.22) 38%,
+      oklch(0.7 0.14 40 / 0.18) 52%,
+      oklch(0.78 0.08 118 / 0.2) 66%,
+      transparent 82%
+    );
+  background-size: 100% 100%, 300% 300%;
+  animation: holo-drift 14s ease-in-out infinite alternate;
+}
+
+.dark .holo-sheen {
+  opacity: 0.45;
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;

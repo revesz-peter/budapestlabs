@@ -2,76 +2,105 @@
 
 import type { CSSProperties } from "react";
 import { useTranslations } from "next-intl";
-import { motion, useReducedMotion } from "framer-motion";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { SectionHeader, rich } from "@/components/landing/section-header";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-// Redacted lines: widths in %, one per row
-const redacted = [
-  [34, 18, 26],
-  [22, 40],
+// Frosted glass in the site palette: see-through cards over warm glowing orbs (terracotta, ochre,
+// olive), with a pearl rim (`holo-rim`), a soft sheen (`holo-sheen`) and a light sweep.
+// The cards follow the theme: milky glass on linen, smoky glass at night.
+const frost: CSSProperties = {
+  backdropFilter: "blur(24px) saturate(1.4)",
+  WebkitBackdropFilter: "blur(24px) saturate(1.4)",
+};
+
+// Wrath: clear glass. Redhorse: glass tinted terracotta.
+const wrathGlass =
+  "bg-[oklch(1_0_0/0.38)] shadow-[inset_0_1px_0_oklch(1_0_0/0.7),0_30px_60px_-30px_oklch(0.45_0.1_40/0.45)] dark:bg-[oklch(0.25_0.017_50/0.42)] dark:shadow-[inset_0_1px_0_oklch(1_0_0/0.12),0_30px_60px_-30px_oklch(0_0_0/0.7)]";
+const redhorseGlass =
+  "bg-[oklch(0.78_0.11_40/0.42)] shadow-[inset_0_1px_0_oklch(1_0_0/0.6),0_30px_60px_-30px_oklch(0.5_0.14_35/0.5)] dark:bg-[oklch(0.45_0.11_38/0.42)] dark:shadow-[inset_0_1px_0_oklch(1_0_0/0.12),0_30px_60px_-30px_oklch(0_0_0/0.7)]";
+
+// Warm orbs behind the deck, for the glass to blur: brighter takes on brand, ochre, olive and clay
+const blobs = [
+  { className: "left-[2%] top-[4%] size-52", color: "oklch(0.68 0.16 40)", delay: "0s" },
+  { className: "right-[4%] top-[14%] size-44", color: "oklch(0.84 0.14 78)", delay: "-5s" },
+  { className: "left-[30%] bottom-[0%] size-48", color: "oklch(0.74 0.11 118)", delay: "-9s" },
+  { className: "right-[22%] bottom-[14%] size-36", color: "oklch(0.74 0.12 25)", delay: "-3s" },
 ];
 
-// The products' colours come from the site palette, darkened: espresso ink for Wrath, deep
-// terracotta for Redhorse, linen text. They stay dark in both themes, so they are fixed values
-// rather than theme tokens (which would flip to light cards in dark mode).
-const linen = "oklch(0.968 0.013 80)";
-const ember = "oklch(0.72 0.12 45)";
-
-const wrathCard: CSSProperties = {
-  // a faint terracotta glow in one corner
-  background: "radial-gradient(80% 90% at 100% 120%, oklch(0.45 0.11 40 / 0.35), transparent 60%), oklch(0.24 0.028 45)",
-  color: linen,
-  borderColor: "oklch(0.968 0.013 80 / 0.1)",
-  boxShadow: "0 24px 48px -24px oklch(0.2 0.03 45 / 0.55)",
-};
-
-const redhorseCard: CSSProperties = {
-  background: "oklch(0.36 0.1 35)",
-  color: linen,
-};
-
-// Both cards share one grid cell, so they stack. Wrath sits upper left, Redhorse lower right,
-// the same size, so neither reads as the background of the other.
-// Names and Wrath's slogan are brand copy, not translated.
-// Explicit z-index: once the rise-in ends the front card has no transform, and would paint under the translated ones.
-const layer = "relative col-start-1 row-start-1 rounded-xl";
-
-/** Blurred-out lines standing in for details we don't share yet. */
-function Redacted({ rows }: { rows: number[][] }) {
+/** The shiny layers on a card: pearl rim, drifting sheen and a light sweep every few seconds. */
+function Holo({ delay = 0 }: { delay?: number }) {
   return (
-    <div aria-hidden="true" className="mt-4 space-y-2.5">
-      {rows.map((row, r) => (
-        <div key={r} className="flex gap-2">
-          {row.map((w, i) => (
-            <span key={i} style={{ width: `${w}%`, background: linen }} className="h-2.5 rounded-[3px] opacity-10" />
-          ))}
-        </div>
-      ))}
-    </div>
+    <>
+      <span aria-hidden="true" className="holo-sheen" style={{ animationDelay: `${-delay * 3}s` }} />
+      <span aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit]">
+        <span
+          className="absolute inset-y-0 left-0 w-1/2 animate-[holo-shine_11s_ease-in-out_infinite] opacity-70 dark:opacity-40"
+          style={{
+            background: "linear-gradient(90deg, transparent, oklch(1 0 0 / 0.14) 35%, oklch(1 0 0 / 0.2) 50%, oklch(1 0 0 / 0.14) 65%, transparent)",
+            animationDelay: `${1 + delay}s`,
+          }}
+        />
+      </span>
+      <span aria-hidden="true" className="holo-rim" style={{ animationDelay: `${-delay * 2}s` }} />
+    </>
   );
 }
 
-/** The small diamond before a name. It glows a little brighter and fades back, slowly, like a heartbeat. */
-function Diamond({ color, glow, delay = 0 }: { color: string; glow: number; delay?: number }) {
-  const still = useReducedMotion();
-  const shadow = (blur: number) => `0 0 ${blur}px ${color}`;
+// Two glass cards in a loose stack: Redhorse on top, Wrath offset below and
+// laid over Redhorse's bottom padding only, so no text is covered. Names, Wrath's slogan, the quoted
+// descriptions and the chips are English brand copy in every locale, not translated.
+// Redhorse is an orchestrator, never "a platform".
+const products = {
+  redhorse: {
+    quote:
+      "A cloud-first orchestrator for AI coding agents. They run in parallel in isolated sandboxes, test their own work and come back with a pull request, launched and steered from iOS. Run it in your own cloud, or rent a ready-made server from us in a few clicks. At its core, a transport-layer security runtime enforces deterministic policies, so a prompt injection can't leak secrets or trigger unauthorized tool calls.",
+    tech: ["isolated sandboxes", "transport-layer runtime", "deterministic policy", "bring your own cloud", "managed servers", "iOS"],
+  },
+  wrath: {
+    quote:
+      "Cybersecurity and UI/UX audits against live systems on a defined set of checks, so vulnerabilities and usability issues surface before users find them.",
+    tech: ["live targets", "defined checks", "security", "UI/UX", "runs on Redhorse"],
+  },
+};
+const card = "relative overflow-hidden rounded-xl p-6 md:p-8";
+const name = "relative flex items-center gap-3 font-mono text-xl tracking-tight";
+const body = "relative mt-3 text-sm text-pretty text-muted-foreground";
+
+/** Tech chips under a card's text, monospace like the badges in the AI examples. */
+function Chips({ items }: { items: string[] }) {
   return (
-    <motion.span
+    <ul className="relative mt-5 flex flex-wrap gap-1.5">
+      {items.map((item) => (
+        <li
+          key={item}
+          className="rounded-md border border-foreground/10 bg-background/40 px-2 py-0.5 font-mono text-[11px] tracking-tight text-foreground/80"
+        >
+          {item}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/** The small diamond before a name. It glows brighter, swells very slightly and fades back, like a
+ *  heartbeat (`diamond-pulse` in globals.css). Its colour comes from a CSS variable, so it can flip with
+ *  the theme: dark on linen, light at night. */
+function Diamond({ className, glow, delay = 0 }: { className: string; glow: number; delay?: number }) {
+  return (
+    <span
       aria-hidden="true"
-      className="size-1.5 shrink-0 rotate-45"
-      style={{ background: color }}
-      initial={{ opacity: glow, boxShadow: shadow(4) }}
-      animate={still ? undefined : { opacity: [glow, 1, glow], boxShadow: [shadow(4), shadow(12), shadow(4)] }}
-      transition={{ duration: 2.8, delay, repeat: Infinity, ease: "easeInOut" }}
+      className={cn("size-2 shrink-0 rotate-45 animate-[diamond-pulse_2.8s_ease-in-out_infinite] bg-(--diamond)", className)}
+      style={{ "--glow": glow, animationDelay: `${delay}s`, opacity: glow } as CSSProperties}
     />
   );
 }
 
-/** What we're building, kept deliberately vague: two separate products as a deck of cards, names only.
- *  Redhorse (cloud agent orchestrator) and Wrath (cyber security audits) stand on their own; neither runs on the other. */
+/** What we're building, still in stealth: two products as glass cards: a name, a quoted English description and tech chips.
+ *  Redhorse (an orchestrator) runs AI coding agents in isolated sandboxes behind a transport-layer security runtime;
+ *  Wrath runs security and UI/UX audits against live systems, on Redhorse. */
 export function Building() {
   const t = useTranslations("building");
 
@@ -87,28 +116,40 @@ export function Building() {
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 md:gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-8">
         <SectionHeader align="start" className="mx-0" eyebrow={t("label")} title={t.rich("title", rich)} />
 
-        <div className="isolate grid w-full max-w-xl shrink-0">
-          {/* Redhorse: deep terracotta, lower right */}
-          <motion.div
-            {...rise(1)}
-            style={redhorseCard}
-            className={cn(layer, "z-10 mt-24 ml-8 flex flex-col justify-end p-6 md:ml-14 md:p-8")}
-          >
-            <span className="flex items-center gap-3 font-mono text-xl tracking-tight">
-              <Diamond color={linen} glow={0.45} delay={1.4} />
+        <div className="relative isolate flex w-full max-w-xl shrink-0 flex-col">
+          {blobs.map((b) => (
+            <span
+              key={b.color}
+              aria-hidden="true"
+              className={cn(
+                "pointer-events-none absolute -z-10 rounded-full opacity-60 blur-3xl animate-[holo-float_16s_ease-in-out_infinite] dark:opacity-40",
+                b.className,
+              )}
+              style={{ background: b.color, animationDelay: b.delay }}
+            />
+          ))}
+
+          {/* Redhorse: terracotta-tinted glass, on top */}
+          <motion.div {...rise(0)} style={frost} className={cn(card, redhorseGlass, "z-10 pb-10 sm:mr-10 md:pb-12")}>
+            <Holo delay={1.4} />
+            <h3 className={name}>
+              <Diamond className="[--diamond:var(--brand)]" glow={0.7} delay={1.4} />
               redhorse
-            </span>
-            <Redacted rows={[redacted[1]]} />
+            </h3>
+            <p lang="en" className={body}>“{products.redhorse.quote}”</p>
+            <Chips items={products.redhorse.tech} />
           </motion.div>
 
-          {/* Wrath: espresso, upper left */}
-          <motion.div {...rise(0)} style={wrathCard} className={cn(layer, "z-20 mr-8 mb-24 border p-6 md:mr-14 md:p-8")}>
-            <span className="flex items-center gap-3 font-mono text-xl tracking-tight">
-              <Diamond color={ember} glow={0.6} />
+          {/* Wrath: clear glass, offset below */}
+          <motion.div {...rise(1)} style={frost} className={cn(card, wrathGlass, "z-20 -mt-4 sm:ml-10")}>
+            <Holo />
+            <h3 className={name}>
+              <Diamond className="[--diamond:var(--foreground)]" glow={0.75} />
               wrath
-            </span>
-            <p className="mt-8 text-sm italic opacity-75">Righteous fury, automated.</p>
-            <Redacted rows={redacted} />
+            </h3>
+            <p lang="en" className="relative mt-2 text-sm italic text-muted-foreground">Righteous fury, automated.</p>
+            <p lang="en" className={body}>“{products.wrath.quote}”</p>
+            <Chips items={products.wrath.tech} />
           </motion.div>
         </div>
       </div>
