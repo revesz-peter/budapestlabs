@@ -210,8 +210,8 @@ body::before {
   background-size: 256px 256px;
 }
 
-/* Frosted glass for the stealth deck (building.tsx), in the earth palette: a pearl rim in linen,
-   ochre, terracotta and olive, a soft warm sheen, and a light sweep. Rim and sheen are static on
+/* Frosted glass for the stealth deck (building.tsx), in the earth palette: a glass rim (bright top-left
+   edge fading to faint terracotta), a soft warm sheen, and a light sweep. Rim and sheen are static on
    purpose: animating them (a turning conic gradient, a drifting background) repainted the cards every
    frame and made the section and the blurred navbar flicker. Only the sweep moves, by transform. */
 @keyframes holo-shine {
@@ -231,15 +231,12 @@ body::before {
   border-radius: inherit;
   padding: 1px;
   pointer-events: none;
-  background: conic-gradient(
-    from var(--holo-angle, 0deg),
+  /* light catching the glass: a bright top-left edge fading to a faint terracotta bottom-right */
+  background: linear-gradient(
+    150deg,
     oklch(1 0 0 / 0.95),
-    oklch(0.86 0.12 80 / 0.9),
-    oklch(0.68 0.15 40 / 0.85),
-    oklch(1 0 0 / 0.5),
-    oklch(0.76 0.09 118 / 0.85),
-    oklch(0.9 0.05 70 / 0.9),
-    oklch(1 0 0 / 0.95)
+    oklch(1 0 0 / 0.55) 40%,
+    oklch(0.57 0.13 40 / 0.28)
   );
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
@@ -247,7 +244,12 @@ body::before {
 }
 
 .dark .holo-rim {
-  opacity: 0.55;
+  background: linear-gradient(
+    150deg,
+    oklch(1 0 0 / 0.3),
+    oklch(1 0 0 / 0.08) 40%,
+    oklch(0.72 0.12 45 / 0.3)
+  );
 }
 
 @utility holo-sheen {

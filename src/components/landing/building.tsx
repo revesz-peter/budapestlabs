@@ -9,7 +9,7 @@ import { SectionHeader, rich } from "@/components/landing/section-header";
 const ease = [0.22, 1, 0.36, 1] as const;
 
 // Frosted glass in the site palette: see-through cards over warm glowing orbs (terracotta, ochre,
-// olive), with a pearl rim (`holo-rim`), a soft sheen (`holo-sheen`) and a light sweep.
+// olive), with a glass rim (`holo-rim`), a soft sheen (`holo-sheen`) and a light sweep.
 // The cards follow the theme: milky glass on linen, smoky glass at night.
 // No backdrop-filter and no moving or filter-blurred orbs: re-blurring animated content every frame
 // made this section and the navbar (which has its own backdrop blur) flicker. The orbs are already
@@ -30,7 +30,7 @@ const blobs = [
   { className: "right-[14%] bottom-[10%] size-56", color: "oklch(0.74 0.12 25)" },
 ];
 
-/** The shiny layers on a card: a static pearl rim and sheen, and a faint light sweep every few seconds. */
+/** The shiny layers on a card: a static glass rim and sheen, and a faint light sweep every few seconds. */
 function Holo({ delay = 0 }: { delay?: number }) {
   return (
     <>
@@ -45,13 +45,12 @@ function Holo({ delay = 0 }: { delay?: number }) {
           }}
         />
       </span>
-      <span aria-hidden="true" className="holo-rim" style={{ "--holo-angle": `${120 + delay * 100}deg` } as CSSProperties} />
+      <span aria-hidden="true" className="holo-rim" />
     </>
   );
 }
 
-// Two glass cards in a loose stack: Redhorse on top, Wrath offset below and
-// laid over Redhorse's bottom padding only, so no text is covered. Names, Wrath's slogan, the quoted
+// Heading on top, then the two glass cards side by side at equal height (stacked on phones), chips pinned to the bottom. Names, Wrath's slogan, the quoted
 // descriptions and the chips are English brand copy in every locale, not translated.
 // Redhorse is an orchestrator, never "a platform".
 const products = {
@@ -66,14 +65,14 @@ const products = {
     tech: ["live targets", "defined checks", "security", "UI/UX", "runs on Redhorse"],
   },
 };
-const card = "relative overflow-hidden rounded-xl p-6 md:p-8";
+const card = "relative flex flex-col overflow-hidden rounded-xl p-6 md:p-8";
 const name = "relative flex items-center gap-3 font-mono text-xl tracking-tight";
 const body = "relative mt-3 text-sm text-pretty text-muted-foreground";
 
 /** Tech chips under a card's text, monospace like the badges in the AI examples. */
 function Chips({ items }: { items: string[] }) {
   return (
-    <ul className="relative mt-5 flex flex-wrap gap-1.5">
+    <ul className="relative mt-auto flex flex-wrap gap-1.5 pt-5">
       {items.map((item) => (
         <li
           key={item}
@@ -114,10 +113,10 @@ export function Building() {
 
   return (
     <section id="projects" className="py-16 md:py-24">
-      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 md:gap-12 lg:flex-row lg:items-center lg:justify-between lg:gap-8">
+      <div className="mx-auto max-w-6xl px-6">
         <SectionHeader align="start" className="mx-0" eyebrow={t("label")} title={t.rich("title", rich)} />
 
-        <div className="relative isolate flex w-full max-w-xl shrink-0 flex-col">
+        <div className="relative isolate mt-12 grid gap-5 md:mt-16 md:grid-cols-2 lg:gap-6">
           {blobs.map((b) => (
             <span
               key={b.color}
@@ -130,8 +129,8 @@ export function Building() {
             />
           ))}
 
-          {/* Redhorse: terracotta-tinted glass, on top */}
-          <motion.div {...rise(0)} className={cn(card, redhorseGlass, "z-10 pb-10 sm:mr-10 md:pb-12")}>
+          {/* Redhorse: terracotta-tinted glass, left */}
+          <motion.div {...rise(0)} className={cn(card, redhorseGlass)}>
             <Holo delay={1.4} />
             <h3 className={name}>
               <Diamond className="[--diamond:var(--brand)]" glow={0.7} delay={1.4} />
@@ -141,8 +140,8 @@ export function Building() {
             <Chips items={products.redhorse.tech} />
           </motion.div>
 
-          {/* Wrath: clear glass, offset below */}
-          <motion.div {...rise(1)} className={cn(card, wrathGlass, "z-20 -mt-4 sm:ml-10")}>
+          {/* Wrath: clear glass, right */}
+          <motion.div {...rise(1)} className={cn(card, wrathGlass)}>
             <Holo />
             <h3 className={name}>
               <Diamond className="[--diamond:var(--foreground)]" glow={0.75} />
