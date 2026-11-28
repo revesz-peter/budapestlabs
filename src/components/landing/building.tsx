@@ -30,21 +30,22 @@ const blobs = [
   { className: "right-[14%] bottom-[10%] size-56", color: "oklch(0.74 0.12 25)" },
 ];
 
-/** The shiny layers on a card: pearl rim, drifting sheen and a light sweep every few seconds. */
+/** The shiny layers on a card: a static pearl rim and sheen, and a faint light sweep every few seconds. */
 function Holo({ delay = 0 }: { delay?: number }) {
   return (
     <>
-      <span aria-hidden="true" className="holo-sheen" style={{ animationDelay: `${-delay * 3}s` }} />
-      <span aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit]">
+      <span aria-hidden="true" className="holo-sheen" />
+      {/* translateZ(0) gives the rounded clip its own layer: Safari flickers when a moving child is clipped by overflow + radius */}
+      <span aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit] [transform:translateZ(0)]">
         <span
-          className="absolute inset-y-0 left-0 w-1/2 animate-[holo-shine_11s_ease-in-out_infinite] opacity-70 dark:opacity-40"
+          className="absolute inset-y-0 left-0 w-1/2 animate-[holo-shine_11s_ease-in-out_infinite] opacity-70 will-change-transform dark:opacity-40"
           style={{
             background: "linear-gradient(90deg, transparent, oklch(1 0 0 / 0.14) 35%, oklch(1 0 0 / 0.2) 50%, oklch(1 0 0 / 0.14) 65%, transparent)",
             animationDelay: `${1 + delay}s`,
           }}
         />
       </span>
-      <span aria-hidden="true" className="holo-rim" style={{ animationDelay: `${-delay * 2}s` }} />
+      <span aria-hidden="true" className="holo-rim" style={{ "--holo-angle": `${120 + delay * 100}deg` } as CSSProperties} />
     </>
   );
 }
@@ -92,7 +93,7 @@ function Diamond({ className, glow, delay = 0 }: { className: string; glow: numb
   return (
     <span
       aria-hidden="true"
-      className={cn("size-2 shrink-0 rotate-45 animate-[diamond-pulse_2.8s_ease-in-out_infinite] bg-(--diamond)", className)}
+      className={cn("size-2 shrink-0 rotate-45 animate-[diamond-pulse_2.8s_ease-in-out_infinite] bg-(--diamond) shadow-[0_0_8px_var(--diamond)] will-change-[opacity,scale]", className)}
       style={{ "--glow": glow, animationDelay: `${delay}s`, opacity: glow } as CSSProperties}
     />
   );

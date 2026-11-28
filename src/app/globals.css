@@ -210,23 +210,10 @@ body::before {
   background-size: 256px 256px;
 }
 
-/* Frosted glass for the stealth deck (building.tsx), in the earth palette: a pearl rim that
-   turns slowly through linen, ochre, terracotta and olive, a soft warm sheen, and a light sweep */
-@property --holo-angle {
-  syntax: "<angle>";
-  inherits: false;
-  initial-value: 0deg;
-}
-
-@keyframes holo-spin {
-  to { --holo-angle: 360deg; }
-}
-
-@keyframes holo-drift {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-
+/* Frosted glass for the stealth deck (building.tsx), in the earth palette: a pearl rim in linen,
+   ochre, terracotta and olive, a soft warm sheen, and a light sweep. Rim and sheen are static on
+   purpose: animating them (a turning conic gradient, a drifting background) repainted the cards every
+   frame and made the section and the blurred navbar flicker. Only the sweep moves, by transform. */
 @keyframes holo-shine {
   0% { transform: translateX(-120%) skewX(-12deg); }
   35%, 100% { transform: translateX(240%) skewX(-12deg); }
@@ -234,8 +221,8 @@ body::before {
 
 /* The diamond before each product name: colour from --diamond, resting opacity from --glow */
 @keyframes diamond-pulse {
-  0%, 100% { opacity: var(--glow); scale: 1; box-shadow: 0 0 4px 0 var(--diamond); }
-  50% { opacity: 1; scale: 1.12; box-shadow: 0 0 12px 1px var(--diamond); }
+  0%, 100% { opacity: var(--glow); scale: 1; }
+  50% { opacity: 1; scale: 1.12; }
 }
 
 @utility holo-rim {
@@ -245,7 +232,7 @@ body::before {
   padding: 1px;
   pointer-events: none;
   background: conic-gradient(
-    from var(--holo-angle),
+    from var(--holo-angle, 0deg),
     oklch(1 0 0 / 0.95),
     oklch(0.86 0.12 80 / 0.9),
     oklch(0.68 0.15 40 / 0.85),
@@ -257,7 +244,6 @@ body::before {
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
   mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
-  animation: holo-spin 14s linear infinite;
 }
 
 .dark .holo-rim {
@@ -280,7 +266,7 @@ body::before {
       transparent 82%
     );
   background-size: 100% 100%, 300% 300%;
-  animation: holo-drift 14s ease-in-out infinite alternate;
+  background-position: 0 0, 35% 50%;
 }
 
 .dark .holo-sheen {
